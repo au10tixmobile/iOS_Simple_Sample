@@ -1,0 +1,6 @@
+framework module Pods_Au10Tix_DemoTests {
+  umbrella header "Pods-Au10Tix_DemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

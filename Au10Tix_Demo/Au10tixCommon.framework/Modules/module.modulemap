@@ -1,0 +1,11 @@
+framework module Au10tixCommon {
+  umbrella header "Au10tixCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixCommon.Swift {
+    header "Au10tixCommon-Swift.h"
+    requires objc
+}
