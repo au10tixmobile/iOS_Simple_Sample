@@ -16,6 +16,7 @@ final class MainViewController: BaseViewController {
     private struct Constants {
         static let holdAlfa: CGFloat = 0.3
         static let one: CGFloat = 1.0
+        static let message: String = "The data couldn’t be read"
     }
     
     // MARK: - IBOutlets
@@ -74,10 +75,12 @@ private extension MainViewController {
             
             DispatchQueue.main.async {
                 PKHUD.sharedHUD.hide()
-                self.presentErrorAlertWith(message:"The data couldn’t be read")
+                self.presentErrorAlertWith(message: Constants.message)
             }
         }
     }
+    
+     // MARK: - hold / unhold Actions
     
     func holdActions() {
         btnSDC.isUserInteractionEnabled = false

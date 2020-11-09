@@ -14,6 +14,12 @@ import PKHUD
 
 final class PFLUIViewController: BaseViewController {
     
+    // MARK: - Constants
+    
+    private struct Constants {
+        static let successMessage: String = "Success"
+    }
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak private var lblResult: UILabel!
@@ -78,7 +84,7 @@ private extension PFLUIViewController {
     func showResults() {
         lblResult.isHidden = false
         imResult.isHidden = false
-        lblResult.text = "Success"
+        lblResult.text =  Constants.successMessage
         imResult.image = passiveFaceLivenessSessionResultImage?.uiImage
     }
 }

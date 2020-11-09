@@ -12,6 +12,12 @@ import PKHUD
 
 final class SDCUIViewController: BaseViewController {
     
+    // MARK: - Constants
+    
+    private struct Constants {
+        static let successMessage: String = "Success"
+    }
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak private var lblResult: UILabel!
@@ -76,7 +82,7 @@ private extension SDCUIViewController {
     func showResults() {
         lblResult.isHidden = false
         imResult.isHidden = false
-        lblResult.text = "Success"
+        lblResult.text = Constants.successMessage
         imResult.image = documentCaptureSessionResultImage?.uiImage
     }
 }
