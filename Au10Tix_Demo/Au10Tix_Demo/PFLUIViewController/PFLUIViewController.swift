@@ -48,7 +48,7 @@ private extension PFLUIViewController {
         PKHUD.sharedHUD.show()
         Au10tixCore.shared.prepare(with: accessToken) { result in
             switch result {
-            case .success(let _):
+            case .success( _):
                 Au10tixCore.shared.delegate = self
                 self.showPFLUIComponent()
                 PKHUD.sharedHUD.hide()
