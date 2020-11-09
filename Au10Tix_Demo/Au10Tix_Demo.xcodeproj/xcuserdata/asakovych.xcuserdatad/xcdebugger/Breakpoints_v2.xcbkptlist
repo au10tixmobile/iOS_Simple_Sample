@@ -23,54 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "13957AC2-78D6-4990-8E7F-DEE31264B005"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "preparePFLUIComponent()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "13957AC2-78D6-4990-8E7F-DEE31264B005 - 9e21a5ff8f3e2cbb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Au10tixCommon.Au10Error&gt;) -&gt; () in Au10Tix_Demo.PFLUIViewController.(preparePFLUIComponent in _17F084BAA95E6A8B196A4F7C2399F2E5)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo/Au10Tix_Demo/Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "244">
-               </Location>
-               <Location
-                  uuid = "13957AC2-78D6-4990-8E7F-DEE31264B005 - 9e21a5ff8f3e2cbb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Au10tixCommon.Au10Error&gt;) -&gt; () in Au10Tix_Demo.PFLUIViewController.(preparePFLUIComponent in _17F084BAA95E6A8B196A4F7C2399F2E5)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo/Au10Tix_Demo/Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "268">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7FC0A8E7-8D85-4BA1-910B-4D71D8785E82"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

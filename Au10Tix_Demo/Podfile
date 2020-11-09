@@ -5,7 +5,7 @@ target 'Au10Tix_Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-   pod 'PKHUD'
+  pod 'PKHUD'
 
   target 'Au10Tix_DemoTests' do
     inherit! :search_paths

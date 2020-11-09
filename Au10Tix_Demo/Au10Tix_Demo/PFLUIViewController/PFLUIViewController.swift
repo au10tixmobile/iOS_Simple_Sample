@@ -48,7 +48,7 @@ private extension PFLUIViewController {
         PKHUD.sharedHUD.show()
         Au10tixCore.shared.prepare(with: accessToken) { result in
             switch result {
-            case .success(let sessionId):
+            case .success(let _):
                 Au10tixCore.shared.delegate = self
                 self.showPFLUIComponent()
                 PKHUD.sharedHUD.hide()
@@ -99,9 +99,9 @@ extension PFLUIViewController: Au10tixSessionDelegate {
         
         if result.isKind(of: PassiveFaceLivenessSessionResult.self) {
             
-            let r = result as! PassiveFaceLivenessSessionResult
+            let faceLivenessSessionResult = result as! PassiveFaceLivenessSessionResult
             
-            passiveFaceLivenessSessionResultImage = r.image
+            passiveFaceLivenessSessionResultImage = faceLivenessSessionResult.image
         }
     }
 }

@@ -61,7 +61,7 @@ private extension MainViewController {
     func autorisation() {
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
         PKHUD.sharedHUD.show()
-        userSessionManager.getJWTToken(jwtToken: "", onSuccess: { tokenData in
+        userSessionManager.getJWTToken(token: nil, onSuccess: { tokenData in
             
             self.tokenJWT = tokenData.accessToken
             
@@ -106,7 +106,7 @@ private extension MainViewController {
 
 // MARK: - MainViewControllerOutput
 
-extension MainViewController  {
+extension MainViewController {
     
     func showPFLViewContrller(with tokenJWT: String) {
         NavigationManager(navigationController).pushToPFLViewController(with: tokenJWT)

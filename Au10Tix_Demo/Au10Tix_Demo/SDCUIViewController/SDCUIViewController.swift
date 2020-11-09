@@ -46,7 +46,7 @@ private extension SDCUIViewController {
         
         Au10tixCore.shared.prepare(with: token) { result in
             switch result {
-            case .success(let sessionId):
+            case .success( _):
                 Au10tixCore.shared.delegate = self
                 self.showSDCUIComponent()
                 PKHUD.sharedHUD.hide()

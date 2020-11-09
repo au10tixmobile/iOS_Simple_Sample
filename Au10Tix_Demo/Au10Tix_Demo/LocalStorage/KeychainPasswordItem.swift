@@ -1,6 +1,4 @@
 //
-//  KeychainPasswordItem.swift
-//  ReceptionApp
 //
 //  Created by Anton Sakovych on 07.10.2020.
 //  Copyright © 2020 au10tix. All rights reserved.
