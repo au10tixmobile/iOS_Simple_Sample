@@ -92,16 +92,16 @@ private extension SDCUIViewController {
 extension SDCUIViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        print(" update ------------------------- \(update)")
+        debugPrint(" update ------------------------- \(update)")
     }
     
     func didGetError(_ error: Au10tixSessionError) {
-        print(" error -------------------- \(error)")
+        debugPrint(" error -------------------- \(error)")
     }
     
     func didGetResult(_ result: Au10tixSessionResult) {
         
-        print(" result ----------------------------- \(result)")
+        debugPrint(" result ----------------------------- \(result)")
         
         
         if result.isKind(of: SmartDocumentCaptureSessionResult.self) {

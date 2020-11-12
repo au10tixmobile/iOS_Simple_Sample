@@ -8,7 +8,7 @@ import Foundation
 
 // MARK: - RefreshTokenData
 
-public struct RefreshTokenData: Modelable {
+public struct RefreshTokenData: Codable {
     public let tokenType: String
     public let expiresIn: Int
     public let accessToken, scope: String

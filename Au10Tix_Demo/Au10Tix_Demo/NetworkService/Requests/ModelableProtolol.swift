@@ -7,12 +7,3 @@
 import Foundation
 
 
-// MARK: -Modelable
-
-protocol Modelable: Codable {
-   // -  Protocol Configuration
-}
-
-extension Modelable {
-    // -
-}

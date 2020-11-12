@@ -33,7 +33,7 @@
 		9C65127C255998BD00BA79AA /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65127A255998BD00BA79AA /* Dictionary+Utils.swift */; };
 		9C77473125599C9C00D50830 /* ErrorHandel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77471A25599C9C00D50830 /* ErrorHandel.swift */; };
 		9C77473225599C9C00D50830 /* ModelableProtolol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77471C25599C9C00D50830 /* ModelableProtolol.swift */; };
-		9C77473325599C9C00D50830 /* GetEndantityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77471F25599C9C00D50830 /* GetEndantityRequest.swift */; };
+		9C77473325599C9C00D50830 /* GeIdentityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77471F25599C9C00D50830 /* GeIdentityRequest.swift */; };
 		9C77473425599C9C00D50830 /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77472125599C9C00D50830 /* RefreshTokenRequest.swift */; };
 		9C77473525599C9C00D50830 /* RefreshTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77472225599C9C00D50830 /* RefreshTokenData.swift */; };
 		9C77473625599C9C00D50830 /* BeginProcessingIdentityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77472425599C9C00D50830 /* BeginProcessingIdentityData.swift */; };
@@ -118,7 +118,7 @@
 		9C65127A255998BD00BA79AA /* Dictionary+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utils.swift"; sourceTree = "<group>"; };
 		9C77471A25599C9C00D50830 /* ErrorHandel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandel.swift; sourceTree = "<group>"; };
 		9C77471C25599C9C00D50830 /* ModelableProtolol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelableProtolol.swift; sourceTree = "<group>"; };
-		9C77471F25599C9C00D50830 /* GetEndantityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEndantityRequest.swift; sourceTree = "<group>"; };
+		9C77471F25599C9C00D50830 /* GeIdentityRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeIdentityRequest.swift; sourceTree = "<group>"; };
 		9C77472125599C9C00D50830 /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
 		9C77472225599C9C00D50830 /* RefreshTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenData.swift; sourceTree = "<group>"; };
 		9C77472425599C9C00D50830 /* BeginProcessingIdentityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginProcessingIdentityData.swift; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 		9C77471E25599C9C00D50830 /* GetEndantity */ = {
 			isa = PBXGroup;
 			children = (
-				9C77471F25599C9C00D50830 /* GetEndantityRequest.swift */,
+				9C77471F25599C9C00D50830 /* GeIdentityRequest.swift */,
 			);
 			path = GetEndantity;
 			sourceTree = "<group>";
@@ -757,7 +757,7 @@
 				9C1A459025385A4E00B5DBC0 /* KeychainPasswordItem.swift in Sources */,
 				9C77473125599C9C00D50830 /* ErrorHandel.swift in Sources */,
 				9C77473825599C9C00D50830 /* Headers.swift in Sources */,
-				9C77473325599C9C00D50830 /* GetEndantityRequest.swift in Sources */,
+				9C77473325599C9C00D50830 /* GeIdentityRequest.swift in Sources */,
 				9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */,
 				9C65127B255998BD00BA79AA /* NSMutableData+Utils.swift in Sources */,
 				9CAADCFA25389AF60013F9DB /* SDCUIViewController.swift in Sources */,

@@ -39,6 +39,7 @@ struct LocalStorage {
             do {
                 try KeychainPasswordItem(service: value.rawValue, account: value.rawValue).deleteItem()
             } catch {
+                
                 debugPrint("catch error:\(error)")
             }
             

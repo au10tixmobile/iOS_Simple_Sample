@@ -10,8 +10,16 @@ import Foundation
 struct RefreshTokenRequest: Requestable {
     var jwtToken: String
     
+    enum Scope: String, CaseIterable {
+        case pfl
+        case sdc
+        case mobilesdk
+    }
+    
+    private var scope = Scope.allCases.compactMap{ $0.rawValue }.joined(separator: " ")
+    
     private var masterToken: String = ""
-    private let scope = "pfl sdc mobilesdk"
+  //  private let scope = "pfl sdc mobilesdk"
     
     
     var url: String {
@@ -27,8 +35,8 @@ struct RefreshTokenRequest: Requestable {
     }
     
     var parameters: Parameters? {
-        return["scope" : "pfl sdc mobilesdk",
-               "client_assertion" : masterToken]}
+        return["scope": scope,
+               "client_assertion": masterToken]}
     
     init(masterToken: String) {
         self.masterToken = masterToken

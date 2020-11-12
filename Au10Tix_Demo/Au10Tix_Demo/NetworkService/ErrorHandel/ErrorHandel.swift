@@ -39,7 +39,7 @@ enum HTTPStatusCode: Int {
     }
 }
 
-struct ErrorHandel: Modelable, Equatable {
+struct ErrorHandel: Codable, Equatable {
     var errors: [ErrorNetwork]
 }
 
@@ -58,7 +58,7 @@ extension ErrorHandel {
     }
 }
 
-struct ErrorNetwork: Modelable, Equatable {
+struct ErrorNetwork: Codable, Equatable {
     var status: Int
     var title: String
 }

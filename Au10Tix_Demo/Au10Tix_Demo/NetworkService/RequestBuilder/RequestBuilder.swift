@@ -56,7 +56,8 @@ private extension RequestBuilder {
                     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 }
             } catch {
-                print("Parameter encoding failed.")
+                return
+                debugPrint("Parameter encoding failed.")
             }
         }
     }
@@ -77,11 +78,15 @@ private extension RequestBuilder {
     
     func encodeMultipart(urlRequest: inout URLRequest, with body: Requestable) {
         
-        let httpBody = NSMutableData()
+        var httpBody = Data() //to  Data()
         
         if  let encodePaparameters = body.parameters {
             for (key, value) in encodePaparameters {
-                httpBody.appendString(convertFormField(named: key, value: value as! String, using: body.boundary))
+                
+                
+                httpBody.append(convertFormField(named: key, value: value as! String, using: body.boundary))
+                
+               // httpBody.appendString(convertFormField(named: key, value: value as! String, using: body.boundary))
             }
         }
         
@@ -93,29 +98,31 @@ private extension RequestBuilder {
                                             fileData: attachment.data,
                                             using:  body.boundary))
             
-            httpBody.appendString("--\(body.boundary)--")
+            httpBody.append("--\(body.boundary)--".data(using: .utf8)!)
         }
         
         urlRequest.httpBody = httpBody as Data
     }
     
-    func convertFormField(named name: String, value: String, using boundary: String) -> String {
+    func convertFormField(named name: String, value: String, using boundary: String) -> Data {
         var fieldString = "--\(boundary)\r\n"
         fieldString += "Content-Disposition: form-data; name=\"\(name)\"\r\n"
         fieldString += "\r\n"
         fieldString += "\(value)\r\n"
         
-        return fieldString
+        return fieldString.data(using: .utf8)!
     }
     
     func convertFileData(fieldName: String, fileName: String, mimeType: String, fileData: Data, using boundary: String) -> Data {
         let data = NSMutableData()
         
-        data.appendString("--\(boundary)\r\n")
-        data.appendString("Content-Disposition: form-data; name=\"\(fieldName)\"; filename=\"\(fileName)\"\r\n")
-        data.appendString("Content-Type: \(mimeType)\r\n\r\n")
+
+        
+        data.append("--\(boundary)--".data(using: .utf8)!)
+        data.append("Content-Disposition: form-data; name=\"\(fieldName)\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
+        data.append("Content-Type: \(mimeType)\r\n\r\n".data(using: .utf8)!)
         data.append(fileData)
-        data.appendString("\r\n")
+        data.append("\r\n".data(using: .utf8)!)
         
         return data as Data
     }

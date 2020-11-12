@@ -8,7 +8,7 @@ import Foundation
 
 // MARK: - RefreshTokenData
 
-public struct BeginProcessingIdentityData: Modelable {
+public struct BeginProcessingIdentityData: Codable {
     public let requestID: String
     public let requestStateCode: Int
     

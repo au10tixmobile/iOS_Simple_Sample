@@ -60,7 +60,7 @@ extension UserSessionManager {
             return
         }
         
-        let requestBody = GetEndantityRequest(masterToken: token, requestId: requestId)
+        let requestBody = GeIdentityRequest(masterToken: token, requestId: requestId)
         
         runGetEndantity(request: requestBody, onSuccess: onSuccess, onError: onError)
     }

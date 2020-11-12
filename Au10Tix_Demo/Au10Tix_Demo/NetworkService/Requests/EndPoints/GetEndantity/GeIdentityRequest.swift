@@ -6,7 +6,7 @@
 
 import Foundation
 
-struct GetEndantityRequest: Requestable {
+struct GeIdentityRequest: Requestable {
     
     private var jwtToken: String
     private var requestId = ""
@@ -20,7 +20,7 @@ struct GetEndantityRequest: Requestable {
     }
     
     var headers: HTTPHeaders {
-        return Headers.main(additional: ["Authorization": "JWT " + jwtToken])
+        return ["Authorization": "JWT " + jwtToken]
     }
     
     init(masterToken: String, requestId: String) {
