@@ -7,112 +7,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45"
+            uuid = "ECFE243A-2DF6-49A6-93FC-1E2C4063F767"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "customSmartDocumentFeatureManager()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "didGetUpdate(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45 - 35fa1904f5ba45b0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45 - ecd29365951e8e3b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "220">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1"
+            uuid = "02A33B73-C7C6-404B-8570-1F4E61A8AA17"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+            filePath = "Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "customSmartDocumentFeatureManager()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1 - ecd29365951e8e79"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1 - 715f21d62fda6cb2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
-                  moduleName = "Au10Tix_Demo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "PFLUIViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "56586FFF-29BD-4DC3-A417-5DB9E1F9B136"
+            uuid = "CCE2C1AF-9F05-4EAE-B9D2-1E128E82AA1C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "PFLUIViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44F2CDE1-B7A3-42E5-87D7-DE90CDC51FFF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "customSmartDocumentFeatureManager()"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "didGetResult(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E94A852-8199-48EC-A0C1-E5D6706C931B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "showPassiveFaceLiveness()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7145BB8-54FC-47E3-ADD3-2747F31F947D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "didGetUpdate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "349ADD0C-FD7E-461C-8C32-B3E85D91A5BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "didGetUpdate(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79DA7359-22A5-4F97-A616-2A288A8A0A65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "didGetResult(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2F5A9C1-1F7C-4312-9164-55BF10870D1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "showPFLUIComponent()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -6,11 +6,31 @@
 //
 
 import UIKit
+import Au10tixCore
+import Au10tixCommon
+import Au10PassiveFaceLiveness
+import Au10SmartDocumentCaptureFeature
+
 
 final class ResultViewController: UIViewController {
     
+    // MARK: - Constants
+    
+    private struct Constants {
+//        static let successMessage: String = "Success"
+    }
+    
+    
     // MARK: - IBOutlets
     
-    @IBOutlet weak private var lblResult: UILabel!
-    @IBOutlet weak private var imResult: UIImageView!
+    @IBOutlet weak  var lblResult: UILabel!
+    @IBOutlet weak  var imResult: UIImageView!
+    
+    
+     var documentCaptureSessionResultImage: Au10Image?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imResult.image = documentCaptureSessionResultImage?.uiImage
+    }
 }

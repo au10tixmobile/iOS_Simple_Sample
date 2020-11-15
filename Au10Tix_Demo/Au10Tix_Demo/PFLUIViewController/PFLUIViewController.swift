@@ -10,24 +10,14 @@ import Au10tixCore
 import Au10tixCommon
 import Au10PassiveFaceLiveness
 import AVFoundation
-import PKHUD
+
 
 final class PFLUIViewController: UIViewController, AlertPresentable {
     
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let successMessage: String = "Success"
-    }
-    
     // MARK: - IBOutlets
     
-    @IBOutlet weak private var lblResult: UILabel!
-    @IBOutlet weak private var imResult: UIImageView!
-    
-    // MARK: - Pablic properties
-    
-    var accessToken = ""
+    @IBOutlet private weak var cameraView: UIView!
+    @IBOutlet private weak var lblInfo: UILabel!
     
     // MARK: - Private properties
     
@@ -37,13 +27,12 @@ final class PFLUIViewController: UIViewController, AlertPresentable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // ---------
         
-       
-        
-        customPreparingPassiveFaceLivenessFeatureManager()
-        // -------------
-       // preparePFLUIComponent()
+        showPassiveFaceLiveness()
     }
+    
+  
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -57,64 +46,46 @@ private extension PFLUIViewController {
     
     // Prepare SDK
     
-    
-    // PassiveFaceLivenes
-    
-func customPreparingPassiveFaceLivenessFeatureManager() {
+    func showPassiveFaceLiveness() {
         let featureManager = Au10PassiveFaceLivenessFeatureManager()
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-            Au10tixCore.shared.delegate = self
+           
             DispatchQueue.main.async {
-                Au10tixCore.shared.startSession(with: featureManager, previewView:
-                    self.view)
-//                Au10tixCore.shared.takeStillImage()
-//                Au10tixCore.shared.resumeCapturingState()
-//                Au10tixCore.shared.validateImage(imageData) // для сохранения изображения  и повторного проверки
-            }
-        }
-    }
-    
-    
-    
-    func preparePFLUIComponent() {
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
-        PKHUD.sharedHUD.show()
-        Au10tixCore.shared.prepare(with: accessToken) { result in
-            switch result {
-            case .success( _):
                 Au10tixCore.shared.delegate = self
-                self.showPFLUIComponent()
-                PKHUD.sharedHUD.hide()
-            case .failure(let error):
-                PKHUD.sharedHUD.hide()
-                self.presentErrorAlertWith(message: "Failed with error \(error)")
+                Au10tixCore.shared.startSession(with: featureManager, previewView:
+                                                    self.cameraView)
+                    
             }
         }
     }
     
-    // showSDCUIComponent
     
-    func showPFLUIComponent() {
+    func rrr (qualityFault: QualityFault) -> String{
         
-        let configs = UIComponentConfigs(appLogo: UIImage(), // add logo
-            actionButtonTint: UIColor.red,// add Tint:
-            titleTextColor: UIColor.blue,// add title:
-            errorTextColor: UIColor.green,// add error:
-            canUploadImage: true,
-            showCloseButton: true)
-        
-        let viewController = PFLViewController(configs: configs, delegate: self)
-        viewController.modalPresentationStyle = .fullScreen
-        self.present(viewController, animated: true, completion: nil)
+        switch qualityFault {
+        case .unstable:
+            return "unstable"
+        case .deviceNotVerticle:
+            return "deviceNotVerticle"
+        case .faceNotDetectedInImage:
+            return "faceNotDetectedInImage"
+        case .tooManyFaces:
+            return "tooManyFaces"
+        case .faceTooFarFromCamera:
+            return "faceTooFarFromCamera"
+        case .faceTooCloseToCamera:
+            return "faceTooCloseToCamera"
+        case .faceNotFacingDirectlyAtCamera:
+            return "faceNotFacingDirectlyAtCamera"
+        case .holdSteady:
+            return "holdSteady"
+        case .noFault:
+            return "noFault"
+        }
     }
+   
     
-    func showResults() {
-        lblResult.isHidden = false
-        imResult.isHidden = false
-        lblResult.text =  Constants.successMessage
-        imResult.image = passiveFaceLivenessSessionResultImage?.uiImage
-    }
 }
 
 // MARK: Au10tixSessionDelegate
@@ -122,8 +93,19 @@ func customPreparingPassiveFaceLivenessFeatureManager() {
 extension PFLUIViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        debugPrint(" update ------------------------- \(update)")
+        
+        if update.isKind(of: PassiveFaceLivenessSessionUpdate.self) {
+        
+            let tesst = update as! PassiveFaceLivenessSessionUpdate
+            if let item = tesst.qualityFeedback?.first {
+                lblInfo.text = rrr(qualityFault: item)
+            } else {
+                lblInfo.text = ""
+            }
+        }
     }
+    
+
     
     func didGetError(_ error: Au10tixSessionError) {
         debugPrint(" error -------------------- \(error)")
@@ -144,7 +126,7 @@ extension PFLUIViewController: Au10tixSessionDelegate {
 
 extension PFLUIViewController {
     
- 
+    
     func pushToPFLViewController(with viewModel: String) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -152,9 +134,7 @@ extension PFLUIViewController {
             return
         }
         
-        //controller.accessToken = viewModel
-        
-        
+        controller.imResult.image = passiveFaceLivenessSessionResultImage?.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
 }
