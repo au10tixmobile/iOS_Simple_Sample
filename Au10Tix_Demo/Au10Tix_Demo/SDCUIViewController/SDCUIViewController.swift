@@ -9,8 +9,10 @@ import Au10tixCore
 import Au10tixCommon
 import Au10SmartDocumentCaptureFeature
 import PKHUD
+import AVFoundation
 
-final class SDCUIViewController: BaseViewController {
+
+final class SDCUIViewController:  UIViewController, AlertPresentable {
     
     // MARK: - Constants
     
@@ -36,9 +38,17 @@ final class SDCUIViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // ------
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
-        PKHUD.sharedHUD.show()
-        prepareSDCUIComponent(accessToken)
+       // PKHUD.sharedHUD.contentView = PKHUDProgressView()
+      //  PKHUD.sharedHUD.show()
+       // prepareSDCUIComponent(accessToken)
+        //self.showSDCUIComponent()
+        customSmartDocumentFeatureManager()
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        Au10tixCore.shared.stopSession()
     }
 }
 
@@ -48,19 +58,40 @@ private extension SDCUIViewController {
     
     // Prepare SDK
     
-    func prepareSDCUIComponent(_ token: String) {
+    
+    func customSmartDocumentFeatureManager() {
         
-        Au10tixCore.shared.prepare(with: token) { result in
-            switch result {
-            case .success( _):
-                Au10tixCore.shared.delegate = self
-                self.showSDCUIComponent()
-                PKHUD.sharedHUD.hide()
-            case .failure(let error):
-                PKHUD.sharedHUD.hide()
-                self.presentErrorAlertWith(message: "Failed with error \(error)")
+        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager()
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            guard granted else { return }
+            Au10tixCore.shared.delegate = self
+            DispatchQueue.main.async {
+                Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager, previewView:
+                    self.view)
             }
         }
+    }
+    
+    
+    
+    
+    func prepareSDCUIComponent(_ token: String) {
+      
+       // Au10tixCore.shared.startSession(with: FeatureManager, previewView: <#T##UIView#>)
+        
+        
+        
+//        Au10tixCore.shared.prepare(with: token) { result in
+//            switch result {
+//            case .success( _):
+//                Au10tixCore.shared.delegate = self
+//                self.showSDCUIComponent()
+//                PKHUD.sharedHUD.hide()
+//            case .failure(let error):
+//                PKHUD.sharedHUD.hide()
+//                self.presentErrorAlertWith(message: "Failed with error \(error)")
+//            }
+//        }
     }
     
     // showSDCUIComponent

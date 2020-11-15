@@ -7,9 +7,14 @@
 
 import UIKit
 import Au10tixCore
+import Au10tixCommon
+import Au10PassiveFaceLiveness
+import Au10SmartDocumentCaptureFeature
+import AVFoundation
 import PKHUD
 
-final class MainViewController: BaseViewController {
+
+final class MainViewController: UIViewController, AlertPresentable {
     
     // MARK: - Constants
     
@@ -21,8 +26,8 @@ final class MainViewController: BaseViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet private weak var btnSDC: BaseButton!
-    @IBOutlet private weak var btnPFL: BaseButton!
+    @IBOutlet private weak var btnSDC: UIButton!
+    @IBOutlet private weak var btnPFL: UIButton!
     
     // MARK: - Private properties
     
@@ -36,9 +41,41 @@ final class MainViewController: BaseViewController {
         
         // -----------
         
-        bind()
+        // bind()
         holdActions()
-        autorisation()
+        preparation()
+    }
+    
+    // showSDCUIComponent
+    
+    @IBAction func showPFLUIComponent() {
+        
+        let configs = UIComponentConfigs(appLogo: UIImage(), // add logo
+                                         actionButtonTint: UIColor.red,// add Tint:
+                                         titleTextColor: UIColor.blue,// add title:
+                                         errorTextColor: UIColor.green,// add error:
+                                         canUploadImage: true,
+                                         showCloseButton: true)
+        
+        let viewController = PFLViewController(configs: configs, delegate: self)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    // showSDCUIComponent
+    
+    @IBAction func showSDCUIComponent() {
+        
+        let configs = UIComponentConfigs(appLogo: UIImage(),
+                                         actionButtonTint: UIColor.red,
+                                         titleTextColor: UIColor.blue,
+                                         errorTextColor: UIColor.green,
+                                         canUploadImage: true,
+                                         showCloseButton: true)
+        
+        let viewController = SDCViewController(configs: configs, delegate: self)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
     }
 }
 
@@ -46,25 +83,23 @@ final class MainViewController: BaseViewController {
 
 private extension MainViewController {
     
-    // MARK: - Bind
     
-    func bind() {
-        btnSDC.bind { _ in
-            self.btnSDCAction()
-        }
-        btnPFL.bind { _ in
-            self.btnPFLAction()
-        }
-    }
+    
     
     // MARK: - Autorisation
     
-    func autorisation() {
+    func preparation() {
+        
+        
+        
+        
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
         PKHUD.sharedHUD.show()
         userSessionManager.getJWTToken(token: nil, onSuccess: { tokenData in
             
             self.tokenJWT = tokenData.accessToken
+            
+            self.prepareSDCUIComponent(tokenData.accessToken)
             
             DispatchQueue.main.async {
                 self.unholdActions()
@@ -80,7 +115,31 @@ private extension MainViewController {
         }
     }
     
-     // MARK: - hold / unhold Actions
+    
+    
+    
+    
+    // Prepare SDK
+    
+    func prepareSDCUIComponent(_ token: String) {
+        
+        Au10tixCore.shared.prepare(with: token) { result in
+            switch result {
+            case .success( let sesssionId):
+                
+                PKHUD.sharedHUD.hide()
+            case .failure(let error):
+                PKHUD.sharedHUD.hide()
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    // MARK: - hold / unhold Actions
     
     func holdActions() {
         btnSDC.isUserInteractionEnabled = false
@@ -96,14 +155,15 @@ private extension MainViewController {
         btnPFL.alpha = Constants.one
     }
     
+    
     // MARK: - Actions
     
-    func btnSDCAction() {
-        showSDCViewContrller(with: tokenJWT)
+    @IBAction func btnSDCAction() {
+        pushToPFLViewController(with: tokenJWT)
     }
     
-    func btnPFLAction() {
-        showPFLViewContrller(with: tokenJWT)
+    @IBAction func btnPFLAction() {
+        showSDCViewContrller(with: tokenJWT)
     }
 }
 
@@ -111,11 +171,53 @@ private extension MainViewController {
 
 extension MainViewController {
     
-    func showPFLViewContrller(with tokenJWT: String) {
-        NavigationManager(navigationController).pushToPFLViewController(with: tokenJWT)
+    
+    func pushToPFLViewController(with viewModel: String) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let controller = storyBoard.instantiateViewController(withIdentifier: "PFLUIViewController") as? PFLUIViewController else {
+            return
+        }
+        
+        //controller.accessToken = viewModel
+        
+        
+        navigationController?.pushViewController(controller, animated: true)
     }
     
-    func showSDCViewContrller(with tokenJWT: String) {
-        NavigationManager(navigationController).showSDCViewContrller(with: tokenJWT)
+    func showSDCViewContrller(with viewModel: String) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let controller = storyBoard.instantiateViewController(withIdentifier: "SDCUIViewController") as? SDCUIViewController else {
+            return
+        }
+    
+        navigationController?.pushViewController(controller, animated: true)
+    }
+}
+
+// MARK: Au10tixSessionDelegate
+
+extension MainViewController: Au10tixSessionDelegate {
+    
+    func didGetUpdate(_ update: Au10tixSessionUpdate) {
+        debugPrint(" update ------------------------- \(update)")
+    }
+    
+    func didGetError(_ error: Au10tixSessionError) {
+        debugPrint(" error -------------------- \(error)")
+    }
+    
+    func didGetResult(_ result: Au10tixSessionResult) {
+        
+        debugPrint(" result ----------------------------- \(result)")
+        
+        
+        if result.isKind(of: SmartDocumentCaptureSessionResult.self) {
+            
+            //            documentCaptureSessionResultImage = result.image
+            //            showResults()
+        }
     }
 }

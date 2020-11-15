@@ -56,8 +56,13 @@ private extension RequestBuilder {
                     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 }
             } catch {
+                debugPrint(error)
                 return
-                debugPrint("Parameter encoding failed.")
+               
+                
+//                catch {
+//                    return (nil, ErrorHandel(error: error))
+//                }
             }
         }
     }
@@ -114,10 +119,8 @@ private extension RequestBuilder {
     }
     
     func convertFileData(fieldName: String, fileName: String, mimeType: String, fileData: Data, using boundary: String) -> Data {
-        let data = NSMutableData()
-        
-
-        
+        var data = Data()
+       
         data.append("--\(boundary)--".data(using: .utf8)!)
         data.append("Content-Disposition: form-data; name=\"\(fieldName)\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
         data.append("Content-Type: \(mimeType)\r\n\r\n".data(using: .utf8)!)

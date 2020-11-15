@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "89DF904A-C06B-4605-AA35-13B5A0CF3733"
+   uuid = "569A2031-0514-4695-A0B5-4D728ECAB7D0"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "customSmartDocumentFeatureManager()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45 - 35fa1904f5ba45b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "DF52C7C4-EDE1-480A-BD03-F9FE0E94EF45 - ecd29365951e8e3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "customSmartDocumentFeatureManager()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1 - ecd29365951e8e79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "AEF0821A-D807-446E-841F-57A4D13FF7D1 - 715f21d62fda6cb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Bool) -&gt; () in Au10Tix_Demo.SDCUIViewController.(customSmartDocumentFeatureManager in _C95451EC00C9AA5B7D5276C064085A6D)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56586FFF-29BD-4DC3-A417-5DB9E1F9B136"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/SDCUIViewController/SDCUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "customSmartDocumentFeatureManager()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

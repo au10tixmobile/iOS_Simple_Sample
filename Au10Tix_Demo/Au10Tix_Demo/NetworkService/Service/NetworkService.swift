@@ -19,19 +19,18 @@ final class NetworkService {
                                   onSuccess: @escaping (M) -> (),
                                   onError: @escaping (ErrorHandel) -> ()) {
         
-
-        
         let request = builder.buildRequest(from: body)
+        // if request is good elsse error
         
-        NetworkLogger.log(request: request)
         
         task = session.dataTask(with: request, completionHandler: {[weak self] data, response, error in
             
-            guard let self = self else { return }
+           // guard let self = self else { return }
            
-            guard self.errorVerification(dataError: error, onError: onError) else {
-                return
-            }
+//            guard self.errorVerification(dataError: error, onError: onError) else {
+//                self.handleNonSucessResponse(data: data, onError: onError)
+//                return
+//            }
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 return
@@ -41,15 +40,14 @@ final class NetworkService {
             
             switch statusCode {
             case .success:
-                self.handleSuccessResponse(data: data, onSuccess: onSuccess, onError: onError)
+                self?.handleSuccessResponse(data: data, onSuccess: onSuccess, onError: onError)
             default:
-                self.handleNonSucessResponse(data: data, onError: onError)
+                self?.handleNonSucessResponse(data: data, onError: onError)
             }
         })
         
         self.task?.resume()
     }
-    
     
     // MARK: error Verifying
     
@@ -65,7 +63,6 @@ final class NetworkService {
     deinit {
         self.task?.cancel()
     }
-    
     
     private func handleSuccessResponse<M: Codable>(data: Data?, onSuccess: @escaping (M) -> Void, onError: @escaping (ErrorHandel) -> ()) {
         let codableResult: (model: M?, parseError: ErrorHandel?) = decodeData(data: data)
@@ -96,5 +93,4 @@ private  func decodeData<M: Codable>(data: Data?) -> (model: M?, parseError: Err
         } catch {
             return (nil, ErrorHandel(error: error))
         }
-
 }

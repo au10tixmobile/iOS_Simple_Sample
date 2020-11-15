@@ -12,7 +12,7 @@ import Au10PassiveFaceLiveness
 import AVFoundation
 import PKHUD
 
-final class PFLUIViewController: BaseViewController {
+final class PFLUIViewController: UIViewController, AlertPresentable {
     
     // MARK: - Constants
     
@@ -38,8 +38,16 @@ final class PFLUIViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
+        customPreparingPassiveFaceLivenessFeatureManager()
         // -------------
-        preparePFLUIComponent()
+       // preparePFLUIComponent()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        Au10tixCore.shared.stopSession()
     }
 }
 
@@ -48,6 +56,26 @@ final class PFLUIViewController: BaseViewController {
 private extension PFLUIViewController {
     
     // Prepare SDK
+    
+    
+    // PassiveFaceLivenes
+    
+func customPreparingPassiveFaceLivenessFeatureManager() {
+        let featureManager = Au10PassiveFaceLivenessFeatureManager()
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            guard granted else { return }
+            Au10tixCore.shared.delegate = self
+            DispatchQueue.main.async {
+                Au10tixCore.shared.startSession(with: featureManager, previewView:
+                    self.view)
+//                Au10tixCore.shared.takeStillImage()
+//                Au10tixCore.shared.resumeCapturingState()
+//                Au10tixCore.shared.validateImage(imageData) // для сохранения изображения  и повторного проверки
+            }
+        }
+    }
+    
+    
     
     func preparePFLUIComponent() {
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
@@ -109,5 +137,24 @@ extension PFLUIViewController: Au10tixSessionDelegate {
             
             passiveFaceLivenessSessionResultImage = faceLivenessSessionResult.image
         }
+    }
+}
+
+// MARK: - MainViewControllerOutput
+
+extension PFLUIViewController {
+    
+ 
+    func pushToPFLViewController(with viewModel: String) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let controller = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+            return
+        }
+        
+        //controller.accessToken = viewModel
+        
+        
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
