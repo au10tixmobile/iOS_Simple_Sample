@@ -84,7 +84,7 @@ private extension MainViewController {
             }
         }) { error in
             DispatchQueue.main.async {
-                self.presentErrorAlertWith(message: Constants.message)
+                self.presentErrorAlertWith(message: error.errors.first?.title ?? "")
             }
         }
     }

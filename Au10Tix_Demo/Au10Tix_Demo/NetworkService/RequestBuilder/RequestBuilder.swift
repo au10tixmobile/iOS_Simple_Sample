@@ -9,8 +9,8 @@ import Foundation
 struct RequestBuilder {
     
     typealias Parameters = [String: Any]
-    
-    func buildRequest(from body: Requestable) -> URLRequest {
+//    (request: URLRequest, parseError: ErrorHandel?
+    func buildRequest(from body: Requestable) -> URLRequest? {
         
         // Base URL
         
@@ -32,7 +32,10 @@ struct RequestBuilder {
         case .queryString:
             encodeQuery(urlRequest: &request, with: body)
         case .jsonEncoding:
-            encodeJSON(urlRequest: &request, with: body)
+            
+            guard encodeJSONWithError(urlRequest: &request, with: body) else {
+                return nil}
+            
         case .multipart:
             encodeMultipart(urlRequest: &request, with: body)
         }
@@ -45,7 +48,7 @@ struct RequestBuilder {
 
 private extension RequestBuilder {
     
-    func encodeJSON(urlRequest: inout URLRequest, with body: Requestable) {
+    func encodeJSONWithError(urlRequest: inout URLRequest, with body: Requestable) ->  Bool {
         
         if  let encodePaparameters = body.parameters {
             do {
@@ -55,16 +58,13 @@ private extension RequestBuilder {
                 if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
                     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 }
-            } catch {
-                debugPrint(error)
-                return
-               
                 
-//                catch {
-//                    return (nil, ErrorHandel(error: error))
-//                }
+                return false
+            } catch {
+                return true
             }
         }
+        return false
     }
     
     // Query
@@ -87,8 +87,6 @@ private extension RequestBuilder {
         
         if  let encodePaparameters = body.parameters {
             for (key, value) in encodePaparameters {
-                
-                
                 httpBody.append(convertFormField(named: key, value: value as! String, using: body.boundary))
                 
                // httpBody.appendString(convertFormField(named: key, value: value as! String, using: body.boundary))

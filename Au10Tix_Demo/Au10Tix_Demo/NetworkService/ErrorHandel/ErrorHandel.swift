@@ -56,6 +56,14 @@ extension ErrorHandel {
     static func emptyErrorWith(code: Int) -> ErrorHandel {
         return ErrorHandel(errors: [ErrorNetwork(status: code, title: "Something wrong with code: \(code)")])
     }
+    
+    static var jsonSerializationError: ErrorHandel {
+        return ErrorHandel(errors: [ErrorNetwork(status: 100, title: "json Serialization Error")])
+    }
+    
+    static var unknownError: ErrorHandel {
+        return ErrorHandel(errors: [ErrorNetwork(status: 0, title: "Unknown Error")])
+    }
 }
 
 struct ErrorNetwork: Codable, Equatable {
