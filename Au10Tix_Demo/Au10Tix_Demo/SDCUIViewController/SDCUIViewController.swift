@@ -61,8 +61,21 @@ private extension SDCUIViewController {
 extension SDCUIViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        debugPrint(" update ------------------------- \(update)")
         
+        if update.isKind(of: SmartDocumentCaptureSessionUpdate.self) {
+            
+            let tesst = update as! SmartDocumentCaptureSessionUpdate
+            print(tesst.blurScore)
+            print(tesst.blurStatus)
+            print(tesst.darkStatus)
+            print(tesst.idStatus)
+            print(tesst.isResult)
+            print(tesst.isValidDocument)
+            
+            print(tesst.reflectionStatus)
+            
+            lblInfo.text = "blurScore - \(tesst.blurScore) ,blurStatus - \(tesst.blurStatus),darkStatus - \(tesst.darkStatus) ,idStatus - \(tesst.idStatus), isValidDocument - \(tesst.isValidDocument), "
+        }
         
     }
     

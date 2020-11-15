@@ -6,10 +6,7 @@
 //
 
 import UIKit
-import Au10tixCore
-import Au10tixCommon
-import Au10PassiveFaceLiveness
-import Au10SmartDocumentCaptureFeature
+
 
 
 final class ResultViewController: UIViewController {
@@ -27,10 +24,10 @@ final class ResultViewController: UIViewController {
     @IBOutlet weak  var imResult: UIImageView!
     
     
-     var documentCaptureSessionResultImage: Au10Image?
+     var documentCaptureSessionResultImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imResult.image = documentCaptureSessionResultImage?.uiImage
+        imResult.image = documentCaptureSessionResultImage
     }
 }
