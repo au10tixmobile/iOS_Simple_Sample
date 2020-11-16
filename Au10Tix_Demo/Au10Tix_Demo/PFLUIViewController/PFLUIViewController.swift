@@ -21,7 +21,7 @@ final class PFLUIViewController: UIViewController, AlertPresentable {
     
     // MARK: - Private properties
     
-    private var passiveFaceLivenessSessionResultImage: Au10Image?
+    private var passiveFaceLivenessSessionResultImage: UIImage?
     
     // MARK: - Life cycle
     
@@ -32,12 +32,12 @@ final class PFLUIViewController: UIViewController, AlertPresentable {
         showPassiveFaceLiveness()
     }
     
-  
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        Au10tixCore.shared.stopSession()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+       
     }
+    
+  
 }
 
 // MARK: Private Methods
@@ -50,18 +50,27 @@ private extension PFLUIViewController {
         let featureManager = Au10PassiveFaceLivenessFeatureManager()
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-           
+            
             DispatchQueue.main.async {
                 Au10tixCore.shared.delegate = self
                 Au10tixCore.shared.startSession(with: featureManager, previewView:
                                                     self.cameraView)
-                    
+                
             }
         }
     }
     
-    
-    func rrr (qualityFault: QualityFault) -> String{
+    func getStringValue (passiveFaceLivenessUpdateType: PassiveFaceLivenessUpdateType) -> String {
+        switch passiveFaceLivenessUpdateType {
+        case .imageCaptured:
+            return "imageCaptured"
+        case .qualityFeedback:
+            return "qualityFeedback"
+        case .passedThreshold:
+            return "passedThreshold"
+        }
+    }
+    func getStringValue (qualityFault: QualityFault) -> String {
         
         switch qualityFault {
         case .unstable:
@@ -84,9 +93,11 @@ private extension PFLUIViewController {
             return "noFault"
         }
     }
-   
-    
 }
+
+
+
+
 
 // MARK: Au10tixSessionDelegate
 
@@ -95,17 +106,22 @@ extension PFLUIViewController: Au10tixSessionDelegate {
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
         if update.isKind(of: PassiveFaceLivenessSessionUpdate.self) {
-        
-            let tesst = update as! PassiveFaceLivenessSessionUpdate
-            if let item = tesst.qualityFeedback?.first {
-                lblInfo.text = rrr(qualityFault: item)
+            
+            let sessionUpdate = update as! PassiveFaceLivenessSessionUpdate
+            if let item = sessionUpdate.qualityFeedback?.first {
+                lblInfo.text = "qualityFeedback - \(getStringValue(qualityFault: item))"
             } else {
-                lblInfo.text = ""
+            
+                lblInfo.text = "PassiveFaceLivenessUpdateType - \(getStringValue(passiveFaceLivenessUpdateType: sessionUpdate.passiveFaceLivenessUpdateType))"
+                
+                passiveFaceLivenessSessionResultImage = UIImage(data: sessionUpdate.capturedImage!)
+                
+                toResults()
             }
         }
     }
     
-
+    
     
     func didGetError(_ error: Au10tixSessionError) {
         debugPrint(" error -------------------- \(error)")
@@ -117,7 +133,7 @@ extension PFLUIViewController: Au10tixSessionDelegate {
             
             let faceLivenessSessionResult = result as! PassiveFaceLivenessSessionResult
             
-            passiveFaceLivenessSessionResultImage = faceLivenessSessionResult.image
+            passiveFaceLivenessSessionResultImage = faceLivenessSessionResult.image?.uiImage
         }
     }
 }
@@ -127,14 +143,17 @@ extension PFLUIViewController: Au10tixSessionDelegate {
 extension PFLUIViewController {
     
     
-    func pushToPFLViewController(with viewModel: String) {
+    func toResults() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let controller = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        controller.imResult.image = passiveFaceLivenessSessionResultImage?.uiImage
+        Au10tixCore.shared.stopSession()
+        cameraView.removeFromSuperview()
+        lblInfo.text = ""
+        controller.documentCaptureSessionResultImage = passiveFaceLivenessSessionResultImage
         navigationController?.pushViewController(controller, animated: true)
     }
 }

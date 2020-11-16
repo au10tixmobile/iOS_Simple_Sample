@@ -30,8 +30,8 @@ final class SDCUIViewController:  UIViewController, AlertPresentable {
         customSmartDocumentFeatureManager()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         Au10tixCore.shared.stopSession()
     }
 }
@@ -43,11 +43,11 @@ private extension SDCUIViewController {
     // Prepare SDK
 
     func customSmartDocumentFeatureManager() {
-        
+        Au10tixCore.shared.delegate = self
         let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager()
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-            Au10tixCore.shared.delegate = self
+   
             DispatchQueue.main.async {
                 Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager, previewView:
                                                     self.cameraView)

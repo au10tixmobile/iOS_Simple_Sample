@@ -221,6 +221,17 @@ extension MainViewController: Au10tixSessionDelegate {
             print(tesst.stabilityStatus?.rawValue as Any)
         }
         
+        
+        if update.isKind(of: PassiveFaceLivenessSessionUpdate.self) {
+            
+            let passiveFaceLivenessSessionUpdate = update as! PassiveFaceLivenessSessionUpdate
+            
+            print(passiveFaceLivenessSessionUpdate.faceBoundingBox)
+            print(passiveFaceLivenessSessionUpdate.passiveFaceLivenessUpdateType)
+            print(passiveFaceLivenessSessionUpdate.qualityFeedback)
+           
+        }
+        
         debugPrint(" update ------------------------- \(update)")
     }
     
