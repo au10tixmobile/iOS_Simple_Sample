@@ -10,24 +10,19 @@ import Au10tixCommon
 import Au10SmartDocumentCaptureFeature
 import AVFoundation
 
-
-final class SDCUIViewController:  UIViewController, AlertPresentable {
+final class SDCUIViewController: UIViewController {
     
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
     @IBOutlet private weak var lblInfo: UILabel!
     
-    // MARK: - Private properties
-    
-    private var documentCaptureSessionResultImage: Au10Image?
-    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // ------
-        customSmartDocumentFeatureManager()
+        prepare()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,18 +36,30 @@ final class SDCUIViewController:  UIViewController, AlertPresentable {
 private extension SDCUIViewController {
     
     // Prepare SDK
-
-    func customSmartDocumentFeatureManager() {
-        Au10tixCore.shared.delegate = self
+    
+    func prepare() {
+        
         let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager()
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-   
+            Au10tixCore.shared.delegate = self
             DispatchQueue.main.async {
-                Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager, previewView:
-                                                    self.cameraView)
+                Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager,
+                                                previewView: self.cameraView)
             }
         }
+    }
+    
+    // MARK: - Open ResultViewController
+    
+    func openResultsViewController(_ resultImage: UIImage) {
+        
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+            return
+        }
+        
+        controller.resultImage = resultImage
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
 
@@ -62,50 +69,28 @@ extension SDCUIViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
-        if update.isKind(of: SmartDocumentCaptureSessionUpdate.self) {
-            
-            let tesst = update as! SmartDocumentCaptureSessionUpdate
-            print(tesst.blurScore)
-            print(tesst.blurStatus)
-            print(tesst.darkStatus)
-            print(tesst.idStatus)
-            print(tesst.isResult)
-            print(tesst.isValidDocument)
-            
-            print(tesst.reflectionStatus)
-            
-            lblInfo.text = "blurScore - \(tesst.blurScore) ,blurStatus - \(tesst.blurStatus),darkStatus - \(tesst.darkStatus) ,idStatus - \(tesst.idStatus), isValidDocument - \(tesst.isValidDocument), "
-        }
+        // MARK: - SmartDocumentCaptureSessionUpdate
         
+        if let documentSessionUpdate = update as? SmartDocumentCaptureSessionUpdate {
+            lblInfo.text = "reflectionStatus - \(documentSessionUpdate.reflectionStatus)"
+        }
     }
     
     func didGetError(_ error: Au10tixSessionError) {
-        debugPrint(" error -------------------- \(error)")
+        debugPrint(" error -\(error)")
     }
     
     func didGetResult(_ result: Au10tixSessionResult) {
         
-        debugPrint(" result ----------------------------- \(result)")
+        // MARK: - SmartDocumentCaptureSessionResult
         
-        
-        if result.isKind(of: SmartDocumentCaptureSessionResult.self) {
+        if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
             
-            documentCaptureSessionResultImage = result.image
-            showResults()
+            guard let resultImage = documentSessionResult.image?.uiImage else {
+                return
+            }
+            
+            openResultsViewController(resultImage)
         }
-    }
-}
-
-extension SDCUIViewController {
-    
-    func showResults() {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        guard let controller = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.imResult.image = documentCaptureSessionResultImage?.uiImage
-        navigationController?.pushViewController(controller, animated: true)
     }
 }

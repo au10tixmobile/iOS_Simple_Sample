@@ -39,7 +39,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="btnSDCAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPD-Oy-MV6"/>
+                                            <action selector="btnPFLAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7W-z4-JAL"/>
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-LK-fpa">
@@ -61,7 +61,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="btnPFLAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXm-aa-i4J"/>
+                                            <action selector="btnSDCAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dw8-6W-5ev"/>
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-fT-fcA">

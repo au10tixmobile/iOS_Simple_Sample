@@ -11,16 +11,7 @@ import Au10tixCommon
 import Au10PassiveFaceLiveness
 import Au10SmartDocumentCaptureFeature
 
-
-final class MainViewController: UIViewController, AlertPresentable {
-    
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let holdAlfa: CGFloat = 0.3
-        static let one: CGFloat = 1.0
-        static let message: String = "The data couldn’t be read"
-    }
+final class MainViewController: UIViewController {
     
     // MARK: - IBOutlets
     
@@ -28,12 +19,6 @@ final class MainViewController: UIViewController, AlertPresentable {
     @IBOutlet private weak var btnPFL: UIButton!
     @IBOutlet private weak var btnSDCwithUI: UIButton!
     @IBOutlet private weak var btnPFLwithUI: UIButton!
-
-    // MARK: - Private properties
-    
-    private let userSessionManager = UserSessionManager()
-
-    private var resultImage: UIImage?
     
     // MARK: - Life cycle
     
@@ -41,97 +26,56 @@ final class MainViewController: UIViewController, AlertPresentable {
         super.viewDidLoad()
         
         // -----------
-        holdActions()
-        preparation()
+        prepare()
     }
 }
 
 // MARK: - MainViewControllerActions
 
-extension MainViewController {
+private extension MainViewController {
     
     // MARK: - Actions
     
     @IBAction func btnSDCAction() {
-        pushToPFLViewController()
+        openSDCViewContrller()
     }
-    
     @IBAction func btnPFLAction() {
-        showSDCViewContrller()
+        openPFLViewController()
     }
     
     @IBAction func btnSDCwithUIAction() {
-        showSDCUIComponent()
+        openSDCUIComponent()
     }
     
     @IBAction func btnPFLwithUIAction() {
-        showPFLUIComponent()
+        openPFLUIComponent()
     }
 }
 
-
-// MARK: - MainViewController
+// MARK: Private Methods
 
 private extension MainViewController {
     
-    // MARK: - SSDK Preparation
+    // MARK: - SDK Preparation
     
-    func preparation() {
+    func prepare() {
         
-        userSessionManager.getJWTToken(token: nil, onSuccess: { tokenData in
-            DispatchQueue.main.async {
-                self.prepareSDCUIComponent(tokenData.accessToken)
-            }
-        }) { error in
-            DispatchQueue.main.async {
-                self.presentErrorAlertWith(message: error.errors.first?.title ?? "")
-            }
-        }
-    }
-    
-    func prepareSDCUIComponent(_ token: String) {
+        #warning("Please Insert the token from the server here")
         
-        Au10tixCore.shared.prepare(with: token) { result in
+        Au10tixCore.shared.prepare(with: "") { result in
             switch result {
-            case .success(_):
-                
-                self.unholdActions()
-            case .failure(_):
-                self.presentErrorAlertWith(message: Constants.message)
-                
+            case .success(let sessionID):
+                debugPrint("sessionID -\(sessionID)")
+            case .failure(let error):
+                debugPrint("error -\(error)")
             }
         }
     }
     
-    // MARK: - hold / unhold Actions
-    
-    func holdActions() {
-        btnSDC.isUserInteractionEnabled = false
-        btnSDC.alpha = Constants.holdAlfa
-        btnPFL.isUserInteractionEnabled = false
-        btnPFL.alpha = Constants.holdAlfa
-        
-        btnSDCwithUI.isUserInteractionEnabled = false
-        btnSDCwithUI.alpha = Constants.holdAlfa
-        btnPFLwithUI.isUserInteractionEnabled = false
-        btnPFLwithUI.alpha = Constants.holdAlfa
-    }
-    
-    func unholdActions() {
-        btnSDC.isUserInteractionEnabled = true
-        btnSDC.alpha = Constants.one
-        btnPFL.isUserInteractionEnabled = true
-        btnPFL.alpha = Constants.one
-        btnSDCwithUI.isUserInteractionEnabled = true
-        btnSDCwithUI.alpha =  Constants.one
-        btnPFLwithUI.isUserInteractionEnabled = true
-        btnPFLwithUI.alpha =  Constants.one
-    }
-    
     // MARK: - showSDCUIComponent
     
-    func showSDCUIComponent() {
-
+    func openSDCUIComponent() {
+        
         let configs = UIComponentConfigs(appLogo: UIImage(),
                                          actionButtonTint: UIColor.green,
                                          titleTextColor: UIColor.green,
@@ -139,15 +83,14 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         
-        let viewController = SDCViewController(configs: configs, delegate: self)
-        viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: true, completion: nil)
+        let controller = SDCViewController(configs: configs, delegate: self)
+        present(controller, animated: true, completion: nil)
     }
     
-    // MARK: - showSDCUIComponent
+    // MARK: - Open PFLUIComponent
     
-    func showPFLUIComponent() {
-
+    func openPFLUIComponent() {
+        
         let configs = UIComponentConfigs(appLogo: UIImage(),
                                          actionButtonTint: UIColor.green,
                                          titleTextColor: UIColor.green,
@@ -155,48 +98,41 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         
-        let viewController = PFLViewController(configs: configs, delegate: self)
-        viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: true, completion: nil)
+        let controller = PFLViewController(configs: configs, delegate: self)
+        present(controller, animated: true, completion: nil)
     }
     
-    // MARK: - PFLViewController
+    // MARK: - Open PFLViewController
     
-    func pushToPFLViewController() {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    func openPFLViewController() {
         
-        guard let controller = storyBoard.instantiateViewController(withIdentifier: "PFLUIViewController") as? PFLUIViewController else {
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PFLUIViewController") as? PFLUIViewController else {
             return
         }
         
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    // MARK: - SDCViewContrller
+    // MARK: - Open SDCViewContrller
     
-    func showSDCViewContrller() {
+    func openSDCViewContrller() {
         
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        guard let controller = storyBoard.instantiateViewController(withIdentifier: "SDCUIViewController") as? SDCUIViewController else {
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SDCUIViewController") as? SDCUIViewController else {
             return
         }
         
         navigationController?.pushViewController(controller, animated: true)
     }
     
+    // MARK: - Open ResultViewController
     
-    // MARK: - SDCViewContrller
-    
-    func openResults() {
+    func openResultsViewController(_ resultImage: UIImage) {
         
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        guard let controller = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        controller.documentCaptureSessionResultImage = resultImage
+        controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
     }
 }
@@ -206,53 +142,33 @@ private extension MainViewController {
 extension MainViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        
-        if update.isKind(of: SmartDocumentCaptureSessionUpdate.self) {
-            
-            let tesst = update as! SmartDocumentCaptureSessionUpdate
-            print(tesst.blurScore)
-            print(tesst.blurStatus)
-            print(tesst.darkStatus)
-            print(tesst.idStatus)
-            print(tesst.isResult)
-            print(tesst.isValidDocument)
-            
-            print(tesst.reflectionStatus)
-            print(tesst.stabilityStatus?.rawValue as Any)
-        }
-        
-        
-        if update.isKind(of: PassiveFaceLivenessSessionUpdate.self) {
-            
-            let passiveFaceLivenessSessionUpdate = update as! PassiveFaceLivenessSessionUpdate
-            
-            print(passiveFaceLivenessSessionUpdate.faceBoundingBox)
-            print(passiveFaceLivenessSessionUpdate.passiveFaceLivenessUpdateType)
-            print(passiveFaceLivenessSessionUpdate.qualityFeedback)
-           
-        }
-        
-        debugPrint(" update ------------------------- \(update)")
+        debugPrint(" update -\(update)")
     }
     
     func didGetError(_ error: Au10tixSessionError) {
-        debugPrint(" error -------------------- \(error)")
+        debugPrint(" error -\(error)")
     }
     
     func didGetResult(_ result: Au10tixSessionResult) {
         
-        if result.isKind(of: PassiveFaceLivenessSessionResult.self) {
+        // MARK: - PassiveFaceLivenessSessionResult
+        
+        if let livenessResult = result as? PassiveFaceLivenessSessionResult {
             
-            let faceLivenessSessionResult = result as! PassiveFaceLivenessSessionResult
-            
-            resultImage = UIImage(data: faceLivenessSessionResult.imageData)
-            openResults()
+            guard let resultImage = UIImage(data: livenessResult.imageData) else {
+                return
+            }
+            openResultsViewController(resultImage)
         }
         
-        if result.isKind(of: SmartDocumentCaptureSessionResult.self) {
+        // MARK: - SmartDocumentCaptureSessionResult
+        
+        if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
             
-            resultImage = result.image?.uiImage
-            openResults()
+            guard let resultImage = documentSessionResult.image?.uiImage else {
+                return
+            }
+            openResultsViewController(resultImage)
         }
     }
 }
