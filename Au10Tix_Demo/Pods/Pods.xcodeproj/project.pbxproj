@@ -7,199 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */; };
-		38F34CBD9B4A3BAC8CBE5D84A3174C58 /* Pods-Au10Tix_Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2466C2FBFE29D7126FAF2B4801D2DAD /* Pods-Au10Tix_Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40C0B4EE5ED54DC01F9B04C06DE60531 /* Pods-Au10Tix_DemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC69B0E12DD6528958929577C2DA643 /* Pods-Au10Tix_DemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */; };
-		4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */; };
-		45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */; };
-		46959133E5414BDDE3595E7BDB75F406 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BEEC1A2057EA563390FE2C48053CD5 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m */; };
-		47D4C9248AB4C7E36D7D897232F4671E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */; };
-		4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401962679DF6B20EF00A4A776007D8AB /* Window.swift */; };
-		6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */; };
-		6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */; };
-		6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */; };
-		702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */; };
-		704766130B17D3DC29F50B571D19BA80 /* Pods-Au10Tix_Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E42B6AF59C0B7498C39196477DFC3392 /* Pods-Au10Tix_Demo-dummy.m */; };
-		7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */; };
-		7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		841F7710E28E4E44133E35ADB10B16B6 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3357E5DDF5632782395D946CC9FCF1E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */; };
-		AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */; };
-		C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */; };
-		C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */; };
-		C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */; };
-		CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */; };
-		CC31B9004C994A00126D87B2B4B17A35 /* Pods-Au10Tix_DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 113A395BE5DC057BDB08F1766CBB208B /* Pods-Au10Tix_DemoTests-dummy.m */; };
-		E29662EE4D61BD4A04B41FEEF5DBCF71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E44A499C0DA89D2F5BC7F89D53EF779A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E85114844014CAD712081BBF6B7A67EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E97AC7BA800A0DFF5343DAC83D0AB539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714E713734B65F42E0097CD56F96454 /* Images.xcassets */; };
-		F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */; };
+		73CB1E5BBF72F73A6BE785F196C7DEF4 /* Pods-Au10Tix_Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B1E48354A170F7C67995CD4757F7D7 /* Pods-Au10Tix_Demo-dummy.m */; };
+		D3B4C64ACA7C9186D94A8B64A7E3D822 /* Pods-Au10Tix_Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F07F1FA19AF954CD37733D203197B50 /* Pods-Au10Tix_Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E05F913589325ED9EBB67ECD2EC23BBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1F1105EC8B0CCB6120471BB2ECAFF04C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7F7332F1050B42A501616421AC869EB;
-			remoteInfo = "PKHUD-PKHUDResources";
-		};
-		D5ABF0D1D8EB3B9B30B1ED3687CD8484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
-			remoteInfo = PKHUD;
-		};
-		ED7A1AE8F1E1FD602767A311AB16C960 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
-			remoteInfo = PKHUD;
-		};
-		EDF51CB7A1DC4C892613353A75396009 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 776DD7D7DB4137BFC70279E1F9E8C697;
-			remoteInfo = "Pods-Au10Tix_Demo";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		00C57307A42A3CF84E34FDED5FF7CB8E /* Pods-Au10Tix_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		026919FCA9CABA29671DA4F32EA3F8D5 /* Pods_Au10Tix_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Au10Tix_Demo.framework; path = "Pods-Au10Tix_Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
-		05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKHUD.framework; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		113A395BE5DC057BDB08F1766CBB208B /* Pods-Au10Tix_DemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Au10Tix_DemoTests-dummy.m"; sourceTree = "<group>"; };
-		125815329E6FFC4CBE110EDA7C47B75D /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.modulemap"; sourceTree = "<group>"; };
-		13D06B028BEA3E9F3247F1FE33C33B4C /* Pods-Au10Tix_Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Au10Tix_Demo.modulemap"; sourceTree = "<group>"; };
-		1DFF4652943B767E9A0FBCEC39778DAC /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-PKHUD-Info.plist"; sourceTree = "<group>"; };
-		236EFF1798AA8D165357C8C51BFBD88D /* Pods-Au10Tix_DemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Au10Tix_DemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-umbrella.h"; sourceTree = "<group>"; };
-		2D55AD2B6550FE70AF4B33A44319CC1C /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-Info.plist"; sourceTree = "<group>"; };
-		35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.debug.xcconfig; sourceTree = "<group>"; };
-		3EBC79551A4816EFC86137736DA02EFA /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		401962679DF6B20EF00A4A776007D8AB /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
-		42FC6DDC525102C44B1E7956563916D8 /* Pods-Au10Tix_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		49AABB72A87043A39756259761CE0E2C /* Pods-Au10Tix_Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Au10Tix_Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A8F85AAD956A243CB72967BFB98832C /* Pods-Au10Tix_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B80AD1F846C74CD439059CFEC92C349 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D8684FDED1240F268034380ABF0D4A7 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
-		6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
-		6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSquareBaseView.swift; path = PKHUD/PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
-		6CAB43A9DD4EE14CB571D48613FA853B /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6E54B27CAA98806685611CF5EF6E043F /* Pods_Au10Tix_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Au10Tix_DemoTests.framework; path = "Pods-Au10Tix_DemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F07F1FA19AF954CD37733D203197B50 /* Pods-Au10Tix_Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Au10Tix_Demo-umbrella.h"; sourceTree = "<group>"; };
+		321681F5FE0697B5E0E09A5807A3569D /* Pods-Au10Tix_Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Au10Tix_Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41B5268EC4770B07AA4C11B5A0F7BCF6 /* Pods-Au10Tix_Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E731724E0AC72DBF994F4820608DCEC /* Pods-Au10Tix_Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-Info.plist"; sourceTree = "<group>"; };
+		51B1E48354A170F7C67995CD4757F7D7 /* Pods-Au10Tix_Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Au10Tix_Demo-dummy.m"; sourceTree = "<group>"; };
+		6625215505AC3C89FBFC76A2A536F327 /* Pods-Au10Tix_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
-		7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKHUD.h; path = PKHUD/PKHUD.h; sourceTree = "<group>"; };
-		7714E713734B65F42E0097CD56F96454 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
-		7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimating.swift; path = PKHUD/PKHUDAnimating.swift; sourceTree = "<group>"; };
-		82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDWideBaseView.swift; path = PKHUD/PKHUDWideBaseView.swift; sourceTree = "<group>"; };
-		8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimation.swift; path = PKHUD/PKHUDAnimation.swift; sourceTree = "<group>"; };
-		8E580F152369EE8436A1C5EC7A002236 /* Pods-Au10Tix_DemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Au10Tix_DemoTests.modulemap"; sourceTree = "<group>"; };
-		90A22D020CCCD9421CAC92BBEA004752 /* Pods-Au10Tix_DemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_DemoTests-Info.plist"; sourceTree = "<group>"; };
-		98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2466C2FBFE29D7126FAF2B4801D2DAD /* Pods-Au10Tix_Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Au10Tix_Demo-umbrella.h"; sourceTree = "<group>"; };
-		A3BEEC1A2057EA563390FE2C48053CD5 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m"; sourceTree = "<group>"; };
-		A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
-		AC541B696EEB2E9AFB6618873A024CE7 /* Pods-Au10Tix_DemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_DemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		AD40A3E32AC22F368E7440A2B2C0C2B2 /* PKHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PKHUD.modulemap; sourceTree = "<group>"; };
-		B874453ADF327CD69BE77D064A60F012 /* Pods-Au10Tix_Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Au10Tix_Demo-frameworks.sh"; sourceTree = "<group>"; };
-		BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PKHUDResources.bundle; path = "PKHUD-PKHUDResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C216CFD9F51532A75827485B3418F905 /* Pods-Au10Tix_Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-Info.plist"; sourceTree = "<group>"; };
-		C45B7AF2FB96B893CA1AC8AD5ACF65F8 /* PKHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-prefix.pch"; sourceTree = "<group>"; };
-		CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDTextView.swift; path = PKHUD/PKHUDTextView.swift; sourceTree = "<group>"; };
-		CBC69B0E12DD6528958929577C2DA643 /* Pods-Au10Tix_DemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Au10Tix_DemoTests-umbrella.h"; sourceTree = "<group>"; };
-		D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
-		D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = PKHUD/WindowRootViewController.swift; sourceTree = "<group>"; };
-		D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
-		DC60477FE125E3DC5EE793D42325E02A /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF863B236D6F48FD65E950F9CCFBC6A0 /* Pods-Au10Tix_Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Au10Tix_Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
-		E3357E5DDF5632782395D946CC9FCF1E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h"; sourceTree = "<group>"; };
-		E42B6AF59C0B7498C39196477DFC3392 /* Pods-Au10Tix_Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Au10Tix_Demo-dummy.m"; sourceTree = "<group>"; };
-		F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.release.xcconfig; sourceTree = "<group>"; };
-		F83C9CD5C75698CC9DB4808F743C4DF7 /* Pods-Au10Tix_DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_DemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		FD2A64C016418B9886B1297FD4CE7F4B /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
-		FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDProgressView.swift; path = PKHUD/PKHUDProgressView.swift; sourceTree = "<group>"; };
-		FEB0ABB5D62B047B8CD17D16B59E74CA /* Pods_Au10Tix_Demo_Au10Tix_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Au10Tix_Demo_Au10Tix_DemoUITests.framework; path = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEFABFBAD41FB9A50FBDF9B3C781CD5 /* Pods-Au10Tix_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10Tix_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F8AAFCFDDAC0C131461C588DF3381B2F /* Pods-Au10Tix_Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Au10Tix_Demo.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0635C74F4A69BD4BA583C1084F9A6582 /* Frameworks */ = {
+		05019D8615F7034DF9940A670D0C542C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D4C9248AB4C7E36D7D897232F4671E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E44A499C0DA89D2F5BC7F89D53EF779A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DC73663CD7E2A04D6BD7EA0D8175BD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		698E22CD66C68DB6ED139D724DE0991F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E85114844014CAD712081BBF6B7A67EF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C2BAAB1F273849A92566CF0BEDBA0FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E29662EE4D61BD4A04B41FEEF5DBCF71 /* Foundation.framework in Frameworks */,
+				E05F913589325ED9EBB67ECD2EC23BBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04ABCDDE2648A1C775D487595DB8D7EC /* Pods */ = {
+		42F39484B5EE4DDC4EB2B5EECB4D0637 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8E0FA0EE3A771117717F2D769CF52D9 /* PKHUD */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		40D25CADE164C2AEC3D471D05DD3B6A6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7714E713734B65F42E0097CD56F96454 /* Images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		56BD65EF3CABA2CD6D418F07DAD5EB50 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
-				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
 				026919FCA9CABA29671DA4F32EA3F8D5 /* Pods_Au10Tix_Demo.framework */,
-				FEB0ABB5D62B047B8CD17D16B59E74CA /* Pods_Au10Tix_Demo_Au10Tix_DemoUITests.framework */,
-				6E54B27CAA98806685611CF5EF6E043F /* Pods_Au10Tix_DemoTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,55 +54,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		598841EFE227966CA8E9BBDE6FC3A199 /* Support Files */ = {
+		5B9BBF6B5F985EFC059A8C060B0AD0F4 /* Pods-Au10Tix_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				AD40A3E32AC22F368E7440A2B2C0C2B2 /* PKHUD.modulemap */,
-				517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */,
-				FD2A64C016418B9886B1297FD4CE7F4B /* PKHUD-Info.plist */,
-				C45B7AF2FB96B893CA1AC8AD5ACF65F8 /* PKHUD-prefix.pch */,
-				2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */,
-				35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */,
-				F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */,
-				1DFF4652943B767E9A0FBCEC39778DAC /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */,
+				F8AAFCFDDAC0C131461C588DF3381B2F /* Pods-Au10Tix_Demo.modulemap */,
+				321681F5FE0697B5E0E09A5807A3569D /* Pods-Au10Tix_Demo-acknowledgements.markdown */,
+				41B5268EC4770B07AA4C11B5A0F7BCF6 /* Pods-Au10Tix_Demo-acknowledgements.plist */,
+				51B1E48354A170F7C67995CD4757F7D7 /* Pods-Au10Tix_Demo-dummy.m */,
+				4E731724E0AC72DBF994F4820608DCEC /* Pods-Au10Tix_Demo-Info.plist */,
+				1F07F1FA19AF954CD37733D203197B50 /* Pods-Au10Tix_Demo-umbrella.h */,
+				6625215505AC3C89FBFC76A2A536F327 /* Pods-Au10Tix_Demo.debug.xcconfig */,
+				BDEFABFBAD41FB9A50FBDF9B3C781CD5 /* Pods-Au10Tix_Demo.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PKHUD";
+			name = "Pods-Au10Tix_Demo";
+			path = "Target Support Files/Pods-Au10Tix_Demo";
 			sourceTree = "<group>";
 		};
-		C8E0FA0EE3A771117717F2D769CF52D9 /* PKHUD */ = {
+		BDFFD98CD0B0ED4F2187AD85951E5CE1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */,
-				98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */,
-				7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */,
-				028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */,
-				7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */,
-				8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */,
-				732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */,
-				E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */,
-				FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */,
-				D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */,
-				6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */,
-				D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */,
-				6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */,
-				CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */,
-				82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */,
-				401962679DF6B20EF00A4A776007D8AB /* Window.swift */,
-				D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */,
-				40D25CADE164C2AEC3D471D05DD3B6A6 /* Resources */,
-				598841EFE227966CA8E9BBDE6FC3A199 /* Support Files */,
-			);
-			name = PKHUD;
-			path = PKHUD;
-			sourceTree = "<group>";
-		};
-		C99E366EB0FC072521D9DF96D70CE311 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E85D1D2CA5FC3BA39F5B7709CEE70CBF /* Pods-Au10Tix_Demo */,
-				DADBF4E52B6D404CB71393DFCE6030DE /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests */,
-				F492D611BDC86B167C14EFBE74F972D2 /* Pods-Au10Tix_DemoTests */,
+				5B9BBF6B5F985EFC059A8C060B0AD0F4 /* Pods-Au10Tix_Demo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -270,9 +83,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				04ABCDDE2648A1C775D487595DB8D7EC /* Pods */,
-				56BD65EF3CABA2CD6D418F07DAD5EB50 /* Products */,
-				C99E366EB0FC072521D9DF96D70CE311 /* Targets Support Files */,
+				42F39484B5EE4DDC4EB2B5EECB4D0637 /* Products */,
+				BDFFD98CD0B0ED4F2187AD85951E5CE1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,187 +96,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DADBF4E52B6D404CB71393DFCE6030DE /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				125815329E6FFC4CBE110EDA7C47B75D /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.modulemap */,
-				4B80AD1F846C74CD439059CFEC92C349 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.markdown */,
-				3EBC79551A4816EFC86137736DA02EFA /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-acknowledgements.plist */,
-				A3BEEC1A2057EA563390FE2C48053CD5 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m */,
-				4D8684FDED1240F268034380ABF0D4A7 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-frameworks.sh */,
-				2D55AD2B6550FE70AF4B33A44319CC1C /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-Info.plist */,
-				E3357E5DDF5632782395D946CC9FCF1E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h */,
-				DC60477FE125E3DC5EE793D42325E02A /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig */,
-				6CAB43A9DD4EE14CB571D48613FA853B /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */,
-			);
-			name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests";
-			path = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests";
-			sourceTree = "<group>";
-		};
-		E85D1D2CA5FC3BA39F5B7709CEE70CBF /* Pods-Au10Tix_Demo */ = {
-			isa = PBXGroup;
-			children = (
-				13D06B028BEA3E9F3247F1FE33C33B4C /* Pods-Au10Tix_Demo.modulemap */,
-				49AABB72A87043A39756259761CE0E2C /* Pods-Au10Tix_Demo-acknowledgements.markdown */,
-				DF863B236D6F48FD65E950F9CCFBC6A0 /* Pods-Au10Tix_Demo-acknowledgements.plist */,
-				E42B6AF59C0B7498C39196477DFC3392 /* Pods-Au10Tix_Demo-dummy.m */,
-				B874453ADF327CD69BE77D064A60F012 /* Pods-Au10Tix_Demo-frameworks.sh */,
-				C216CFD9F51532A75827485B3418F905 /* Pods-Au10Tix_Demo-Info.plist */,
-				A2466C2FBFE29D7126FAF2B4801D2DAD /* Pods-Au10Tix_Demo-umbrella.h */,
-				42FC6DDC525102C44B1E7956563916D8 /* Pods-Au10Tix_Demo.debug.xcconfig */,
-				00C57307A42A3CF84E34FDED5FF7CB8E /* Pods-Au10Tix_Demo.release.xcconfig */,
-			);
-			name = "Pods-Au10Tix_Demo";
-			path = "Target Support Files/Pods-Au10Tix_Demo";
-			sourceTree = "<group>";
-		};
-		F492D611BDC86B167C14EFBE74F972D2 /* Pods-Au10Tix_DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				8E580F152369EE8436A1C5EC7A002236 /* Pods-Au10Tix_DemoTests.modulemap */,
-				236EFF1798AA8D165357C8C51BFBD88D /* Pods-Au10Tix_DemoTests-acknowledgements.markdown */,
-				AC541B696EEB2E9AFB6618873A024CE7 /* Pods-Au10Tix_DemoTests-acknowledgements.plist */,
-				113A395BE5DC057BDB08F1766CBB208B /* Pods-Au10Tix_DemoTests-dummy.m */,
-				90A22D020CCCD9421CAC92BBEA004752 /* Pods-Au10Tix_DemoTests-Info.plist */,
-				CBC69B0E12DD6528958929577C2DA643 /* Pods-Au10Tix_DemoTests-umbrella.h */,
-				4A8F85AAD956A243CB72967BFB98832C /* Pods-Au10Tix_DemoTests.debug.xcconfig */,
-				F83C9CD5C75698CC9DB4808F743C4DF7 /* Pods-Au10Tix_DemoTests.release.xcconfig */,
-			);
-			name = "Pods-Au10Tix_DemoTests";
-			path = "Target Support Files/Pods-Au10Tix_DemoTests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2BF7A761EBB4253A3899534DBEAC48E3 /* Headers */ = {
+		3B39CCFD85ECC7A20C7563B8DF703CF3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C0B4EE5ED54DC01F9B04C06DE60531 /* Pods-Au10Tix_DemoTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		508F8DF5D138FEBEAF237143D33C87C1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841F7710E28E4E44133E35ADB10B16B6 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7642C8CA606580C09455BD332FD97040 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38F34CBD9B4A3BAC8CBE5D84A3174C58 /* Pods-Au10Tix_Demo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77FE06C24F3D9A30969AF6292046EA64 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */,
-				AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */,
+				D3B4C64ACA7C9186D94A8B64A7E3D822 /* Pods-Au10Tix_Demo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		015CD383091B670DCEB220902BA38B23 /* Pods-Au10Tix_DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BACA82B6294D7AA64EC65E58FE86CC5 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_DemoTests" */;
-			buildPhases = (
-				2BF7A761EBB4253A3899534DBEAC48E3 /* Headers */,
-				47D5EB7DB5FB3B56F1F01F7FB2EB79C1 /* Sources */,
-				698E22CD66C68DB6ED139D724DE0991F /* Frameworks */,
-				7FAE0D26125609F4F873317D8D8A30DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E385E76B461F0439FB446DFE7E99DF4E /* PBXTargetDependency */,
-			);
-			name = "Pods-Au10Tix_DemoTests";
-			productName = "Pods-Au10Tix_DemoTests";
-			productReference = 6E54B27CAA98806685611CF5EF6E043F /* Pods_Au10Tix_DemoTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		364873017BA37260EF589D44B6B73D21 /* PKHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */;
-			buildPhases = (
-				77FE06C24F3D9A30969AF6292046EA64 /* Headers */,
-				CAA693190E7E902B5A46F8B6A4723E98 /* Sources */,
-				0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */,
-				4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D85D0EE9EB020CE874385F5C0C2D5B31 /* PBXTargetDependency */,
-			);
-			name = PKHUD;
-			productName = PKHUD;
-			productReference = 05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		776DD7D7DB4137BFC70279E1F9E8C697 /* Pods-Au10Tix_Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7190CC444B0FCC490816EBFD5FF6B25 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo" */;
+			buildConfigurationList = 5CE6C17D3E0F889B51D5A28929BFC9A6 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo" */;
 			buildPhases = (
-				7642C8CA606580C09455BD332FD97040 /* Headers */,
-				DFCFD899B6ED90A8C3E45D451E92761C /* Sources */,
-				8C2BAAB1F273849A92566CF0BEDBA0FA /* Frameworks */,
-				00A4FC0EF53D438C1BB8908E165E79FA /* Resources */,
+				3B39CCFD85ECC7A20C7563B8DF703CF3 /* Headers */,
+				1D1DC50AAFB5259063868392FFF2AACB /* Sources */,
+				05019D8615F7034DF9940A670D0C542C /* Frameworks */,
+				176D6851D2F17FC0545B6B7530E94A9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1498532AE94AC3CC3698A06855159673 /* PBXTargetDependency */,
 			);
 			name = "Pods-Au10Tix_Demo";
 			productName = "Pods-Au10Tix_Demo";
 			productReference = 026919FCA9CABA29671DA4F32EA3F8D5 /* Pods_Au10Tix_Demo.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		992B418DB785F39CD9B07193F8DF5822 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 699EA88234F55EAE5683D60C38770B0C /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo-Au10Tix_DemoUITests" */;
-			buildPhases = (
-				508F8DF5D138FEBEAF237143D33C87C1 /* Headers */,
-				9B8D030E87A6EDB0FAFF89524311746E /* Sources */,
-				0635C74F4A69BD4BA583C1084F9A6582 /* Frameworks */,
-				5E0875C17320BFCF7A9E22FE3F9EACB8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7F4C3771B2CC6124C4689C2FCA0B4620 /* PBXTargetDependency */,
-			);
-			name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests";
-			productName = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests";
-			productReference = FEB0ABB5D62B047B8CD17D16B59E74CA /* Pods_Au10Tix_Demo_Au10Tix_DemoUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0B54C9BD699C138068CB81B8DF9485F /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */;
-			buildPhases = (
-				82BE878F764B0BC5C491EE02A4879DFB /* Sources */,
-				2DC73663CD7E2A04D6BD7EA0D8175BD6 /* Frameworks */,
-				25DE0D6AB181E40DBFF879D454992B9F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PKHUD-PKHUDResources";
-			productName = "PKHUD-PKHUDResources";
-			productReference = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -484,51 +146,17 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 56BD65EF3CABA2CD6D418F07DAD5EB50 /* Products */;
+			productRefGroup = 42F39484B5EE4DDC4EB2B5EECB4D0637 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				364873017BA37260EF589D44B6B73D21 /* PKHUD */,
-				A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */,
 				776DD7D7DB4137BFC70279E1F9E8C697 /* Pods-Au10Tix_Demo */,
-				992B418DB785F39CD9B07193F8DF5822 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests */,
-				015CD383091B670DCEB220902BA38B23 /* Pods-Au10Tix_DemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00A4FC0EF53D438C1BB8908E165E79FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		25DE0D6AB181E40DBFF879D454992B9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E97AC7BA800A0DFF5343DAC83D0AB539 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E0875C17320BFCF7A9E22FE3F9EACB8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FAE0D26125609F4F873317D8D8A30DB /* Resources */ = {
+		176D6851D2F17FC0545B6B7530E94A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,110 +166,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		47D5EB7DB5FB3B56F1F01F7FB2EB79C1 /* Sources */ = {
+		1D1DC50AAFB5259063868392FFF2AACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC31B9004C994A00126D87B2B4B17A35 /* Pods-Au10Tix_DemoTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82BE878F764B0BC5C491EE02A4879DFB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B8D030E87A6EDB0FAFF89524311746E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46959133E5414BDDE3595E7BDB75F406 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAA693190E7E902B5A46F8B6A4723E98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */,
-				4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */,
-				8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */,
-				B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */,
-				37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */,
-				45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */,
-				6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */,
-				C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */,
-				702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */,
-				C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */,
-				7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */,
-				F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */,
-				C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */,
-				6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */,
-				442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */,
-				4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */,
-				4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFCFD899B6ED90A8C3E45D451E92761C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				704766130B17D3DC29F50B571D19BA80 /* Pods-Au10Tix_Demo-dummy.m in Sources */,
+				73CB1E5BBF72F73A6BE785F196C7DEF4 /* Pods-Au10Tix_Demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1498532AE94AC3CC3698A06855159673 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PKHUD;
-			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
-			targetProxy = ED7A1AE8F1E1FD602767A311AB16C960 /* PBXContainerItemProxy */;
-		};
-		7F4C3771B2CC6124C4689C2FCA0B4620 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PKHUD;
-			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
-			targetProxy = D5ABF0D1D8EB3B9B30B1ED3687CD8484 /* PBXContainerItemProxy */;
-		};
-		D85D0EE9EB020CE874385F5C0C2D5B31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PKHUD-PKHUDResources";
-			target = A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */;
-			targetProxy = 1F1105EC8B0CCB6120471BB2ECAFF04C /* PBXContainerItemProxy */;
-		};
-		E385E76B461F0439FB446DFE7E99DF4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Au10Tix_Demo";
-			target = 776DD7D7DB4137BFC70279E1F9E8C697 /* Pods-Au10Tix_Demo */;
-			targetProxy = EDF51CB7A1DC4C892613353A75396009 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0DE0133E1BAF3FD79034F16E22B32D59 /* Release */ = {
+		103A0783ABB1ADC803A74D5E8CEA96E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
-				IBSC_MODULE = PKHUD;
-				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = PKHUDResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		26029386570784A7BEDB3C95724FF9E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42FC6DDC525102C44B1E7956563916D8 /* Pods-Au10Tix_Demo.debug.xcconfig */;
+			baseConfigurationReference = BDEFABFBAD41FB9A50FBDF9B3C781CD5 /* Pods-Au10Tix_Demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -663,206 +201,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		264EEEF3137512DFDF34589DB38C82E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
-				PRODUCT_MODULE_NAME = PKHUD;
-				PRODUCT_NAME = PKHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2F27375A9980F9C8C1C3571FB2CE9D97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC60477FE125E3DC5EE793D42325E02A /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3B7FCDFEB3A8D9576E775A2EDDBD9DC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
-				IBSC_MODULE = PKHUD;
-				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = PKHUDResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		456A92C02A0359B730B407D39AAC8BCC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00C57307A42A3CF84E34FDED5FF7CB8E /* Pods-Au10Tix_Demo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4ABEFB2E1440D49121F0042068850CA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F83C9CD5C75698CC9DB4808F743C4DF7 /* Pods-Au10Tix_DemoTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		556920D49E4BDB09F70AF40EBEB2C127 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CAB43A9DD4EE14CB571D48613FA853B /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -939,43 +277,6 @@
 			};
 			name = Release;
 		};
-		7077368D7C7A052B2F7746B71E6EDCA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A8F85AAD956A243CB72967BFB98832C /* Pods-Au10Tix_DemoTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		8E6A8FF58D100B7F9B1943F455C00F02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1042,10 +343,12 @@
 			};
 			name = Debug;
 		};
-		E8886BE148557B679CA1F8E825F0F735 /* Release */ = {
+		C4C43F89A83D9C491008EA5062C067E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */;
+			baseConfigurationReference = 6625215505AC3C89FBFC76A2A536F327 /* Pods-Au10Tix_Demo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1054,50 +357,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
-				PRODUCT_MODULE_NAME = PKHUD;
-				PRODUCT_NAME = PKHUD;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				264EEEF3137512DFDF34589DB38C82E9 /* Debug */,
-				E8886BE148557B679CA1F8E825F0F735 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BACA82B6294D7AA64EC65E58FE86CC5 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7077368D7C7A052B2F7746B71E6EDCA6 /* Debug */,
-				4ABEFB2E1440D49121F0042068850CA2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1107,29 +392,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		699EA88234F55EAE5683D60C38770B0C /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo-Au10Tix_DemoUITests" */ = {
+		5CE6C17D3E0F889B51D5A28929BFC9A6 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F27375A9980F9C8C1C3571FB2CE9D97 /* Debug */,
-				556920D49E4BDB09F70AF40EBEB2C127 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0B54C9BD699C138068CB81B8DF9485F /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B7FCDFEB3A8D9576E775A2EDDBD9DC5 /* Debug */,
-				0DE0133E1BAF3FD79034F16E22B32D59 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B7190CC444B0FCC490816EBFD5FF6B25 /* Build configuration list for PBXNativeTarget "Pods-Au10Tix_Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26029386570784A7BEDB3C95724FF9E9 /* Debug */,
-				456A92C02A0359B730B407D39AAC8BCC /* Release */,
+				C4C43F89A83D9C491008EA5062C067E7 /* Debug */,
+				103A0783ABB1ADC803A74D5E8CEA96E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
