@@ -14,10 +14,58 @@
             filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "openPFLUIComponent()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "963D85C0-81CF-479F-A654-92B0AFE53E58"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/MainViewController/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "prepare()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "963D85C0-81CF-479F-A654-92B0AFE53E58 - e0af4cb4dd24984c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Au10Tix_Demo.MainViewController.(prepare in _679E37291B614F49087CC112C8496D0C)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/MainViewController/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "963D85C0-81CF-479F-A654-92B0AFE53E58 - d6b39ab82697643c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, Au10tixCommon.Au10Error&gt;) -&gt; () in Au10Tix_Demo.MainViewController.(prepare in _679E37291B614F49087CC112C8496D0C)() -&gt; ()"
+                  moduleName = "Au10Tix_Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asakovych/Documents/Au10Tix_Demo_Git/Au10Tix_Demo/Au10Tix_Demo/MainViewController/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

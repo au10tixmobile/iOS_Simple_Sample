@@ -39,11 +39,12 @@ private extension PFLUIViewController {
     // Prepare SDK
     
     func prepare() {
+        Au10tixCore.shared.delegate = self
         
         let featureManager = Au10PassiveFaceLivenessFeatureManager()
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-            Au10tixCore.shared.delegate = self
+       
             DispatchQueue.main.async {
                 Au10tixCore.shared.startSession(with: featureManager,
                                                 previewView: self.cameraView)
@@ -104,6 +105,17 @@ extension PFLUIViewController: Au10tixSessionDelegate {
                 return
             }
             
+            guard let imageCaptured = livenessUpdate.capturedImage else {
+                return
+            }
+            
+          //  Provide a button for the user to approve the image and start liveness check
+          //  Provide a button for the user to resume capturing
+            
+            
+         //   When liveness check is in taking place , use UIActivityIndicator view to indicate the liveness check is in progress
+          //  When done, navigate to result screen with the image and the liveness check result.
+     
             lblInfo.text = "qualityFeedback - \(getStringValue(qualityFeedback))"
         }
     }

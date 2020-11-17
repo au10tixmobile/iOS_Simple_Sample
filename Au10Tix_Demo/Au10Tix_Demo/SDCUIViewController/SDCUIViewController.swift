@@ -38,11 +38,12 @@ private extension SDCUIViewController {
     // Prepare SDK
     
     func prepare() {
+        Au10tixCore.shared.delegate = self
         
-        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager()
+        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager(isSmart: true)
         AVCaptureDevice.requestAccess(for: .video) { granted in
             guard granted else { return }
-            Au10tixCore.shared.delegate = self
+            
             DispatchQueue.main.async {
                 Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager,
                                                 previewView: self.cameraView)
@@ -72,8 +73,16 @@ extension SDCUIViewController: Au10tixSessionDelegate {
         // MARK: - SmartDocumentCaptureSessionUpdate
         
         if let documentSessionUpdate = update as? SmartDocumentCaptureSessionUpdate {
-            lblInfo.text = "reflectionStatus - \(documentSessionUpdate.reflectionStatus)"
+            lblInfo.text = "reflectionStatus - \(documentSessionUpdate.reflectionStatus) \n" +
+                "blurScore - \(documentSessionUpdate.blurScore)  \n " +
+                "reflectionScore - \(documentSessionUpdate.reflectionScore)  \n " +
+                "quadrangle - \(documentSessionUpdate.quadrangle)  \n" +
+                "stabilityStatus - \(documentSessionUpdate.stabilityStatus)  \n" +
+                "isValidDocument - \(documentSessionUpdate.isValidDocument)  \n" +
         }
+        
+      //  Please show all quality faults
+
     }
     
     func didGetError(_ error: Au10tixSessionError) {

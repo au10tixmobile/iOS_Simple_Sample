@@ -39,6 +39,7 @@ private extension MainViewController {
     @IBAction func btnSDCAction() {
         openSDCViewContrller()
     }
+    
     @IBAction func btnPFLAction() {
         openPFLViewController()
     }
@@ -60,7 +61,7 @@ private extension MainViewController {
     
     func prepare() {
         
-        #warning("Please Insert the token from the server here")
+        #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
         Au10tixCore.shared.prepare(with: "") { result in
             switch result {
