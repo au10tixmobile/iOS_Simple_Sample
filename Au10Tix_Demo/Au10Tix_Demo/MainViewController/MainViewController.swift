@@ -20,6 +20,10 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var btnSDCwithUI: UIButton!
     @IBOutlet private weak var btnPFLwithUI: UIButton!
     
+    // MARK: - Private Properties
+    
+    private var resultIsAlreadyShown = false
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -27,6 +31,11 @@ final class MainViewController: UIViewController {
         
         // -----------
         prepare()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        resultIsAlreadyShown = false
     }
 }
 
@@ -63,17 +72,17 @@ private extension MainViewController {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
-        Au10tixCore.shared.prepare(with: "") { result in
+        Au10tixCore.shared.prepare(with: "") { [weak self] result in
             switch result {
             case .success(let sessionID):
                 debugPrint("sessionID -\(sessionID)")
             case .failure(let error):
-                debugPrint("error -\(error)")
+                self?.showAlert(error.localizedDescription)
             }
         }
     }
     
-    // MARK: - showSDCUIComponent
+    // MARK: - Open SDCUIComponent
     
     func openSDCUIComponent() {
         
@@ -129,12 +138,25 @@ private extension MainViewController {
     
     func openResultsViewController(_ resultImage: UIImage) {
         
+        guard resultIsAlreadyShown == false else {
+            return
+        }
+        
         guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
+        resultIsAlreadyShown = true
         controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: - UIAlertController
+    
+    func showAlert(_ text: String) {
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -159,6 +181,7 @@ extension MainViewController: Au10tixSessionDelegate {
             guard let resultImage = UIImage(data: livenessResult.imageData) else {
                 return
             }
+            
             openResultsViewController(resultImage)
         }
         
@@ -169,6 +192,7 @@ extension MainViewController: Au10tixSessionDelegate {
             guard let resultImage = documentSessionResult.image?.uiImage else {
                 return
             }
+            
             openResultsViewController(resultImage)
         }
     }

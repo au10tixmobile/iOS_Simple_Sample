@@ -62,6 +62,42 @@ private extension SDCUIViewController {
         controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    // MARK: - Show Updates
+    
+    func showDetails(_ update: SmartDocumentCaptureSessionUpdate) {
+        let blurScore = "blurScore \(update.blurScore)\n"
+        let reflectionScore = "reflectionScore \(update.reflectionScore)\n"
+        let darkScore = "darkScore \(update.darkScore)\n"
+        let idStatus = "idStatus \(update.idStatus)\n"
+        let blurStatus = "blurStatus \(update.blurStatus)\n"
+        let reflectionStatus = "reflectionStatus \(update.reflectionStatus)\n"
+        let darkStatus = "darkStatus \(update.darkStatus)\n"
+        let stabilityStatus = "StabilityStatus \(getStringValue(update.stabilityStatus))\n"
+        
+        lblInfo.text = blurScore +
+            reflectionScore +
+            blurScore +
+            darkScore +
+            idStatus +
+            blurStatus +
+            reflectionStatus +
+            darkStatus +
+            stabilityStatus
+    }
+    
+    // Get StabilityStatus String Value
+    
+    func getStringValue(_ stabilityStatus: SmartDocumentCaptureSessionUpdate.StabilityStatus?) -> String {
+        switch stabilityStatus {
+        case .stable:
+            return "stable"
+        case .notStable:
+            return "notStable"
+        case .none:
+            return ""
+        }
+    }
 }
 
 // MARK: Au10tixSessionDelegate
@@ -73,16 +109,8 @@ extension SDCUIViewController: Au10tixSessionDelegate {
         // MARK: - SmartDocumentCaptureSessionUpdate
         
         if let documentSessionUpdate = update as? SmartDocumentCaptureSessionUpdate {
-            lblInfo.text = "reflectionStatus - \(documentSessionUpdate.reflectionStatus) \n" +
-                "blurScore - \(documentSessionUpdate.blurScore)  \n " +
-                "reflectionScore - \(documentSessionUpdate.reflectionScore)  \n " +
-                "quadrangle - \(documentSessionUpdate.quadrangle)  \n" +
-                "stabilityStatus - \(documentSessionUpdate.stabilityStatus)  \n" +
-                "isValidDocument - \(documentSessionUpdate.isValidDocument)  \n" +
+            showDetails(documentSessionUpdate)
         }
-        
-      //  Please show all quality faults
-
     }
     
     func didGetError(_ error: Au10tixSessionError) {

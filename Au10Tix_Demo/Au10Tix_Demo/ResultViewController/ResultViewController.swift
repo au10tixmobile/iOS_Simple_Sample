@@ -12,10 +12,12 @@ final class ResultViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet private weak var imResult: UIImageView!
+    @IBOutlet private weak var lblResult: UILabel!
     
     // MARK: - Public properties
     
     var resultImage: UIImage?
+    var resultString: String?
     
     // MARK: - Life cycle
     
@@ -33,6 +35,10 @@ private extension ResultViewController {
     func prepare() {
         if resultImage != nil {
             imResult.image = resultImage
+        }
+        
+        if resultString != nil {
+            lblResult.text = resultString
         }
     }
 }
