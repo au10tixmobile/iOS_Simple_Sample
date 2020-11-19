@@ -188,8 +188,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCommon;
 @import Au10tixCore;
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -219,6 +219,11 @@ SWIFT_CLASS("_TtC23Au10PassiveFaceLiveness37Au10PassiveFaceLivenessFeatureManage
 
 
 
+@interface Au10tixCore (SWIFT_EXTENSION(Au10PassiveFaceLiveness))
+- (void)validateImage:(NSData * _Nonnull)imageData;
+- (void)resumeCapturingState;
+@end
+
 typedef SWIFT_ENUM_NAMED(NSInteger, Au10xFaceError, "FaceError", closed) {
   Au10xFaceErrorFaceTooClose = 100,
   Au10xFaceErrorFaceTooCloseToBorder = 101,
@@ -229,33 +234,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Au10xFaceError, "FaceError", closed) {
   Au10xFaceErrorTooManyFaces = 106,
   Au10xFaceErrorInternalError = 107,
 };
-
-@class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
-@class NSCoder;
-
-/// PFLViewController provide an UI/UX for using Au10Tix’s Passive-Face-Liveness Feature
-SWIFT_CLASS_NAMED("PFLViewController")
-@interface Au10xPFLViewController : UIComponentBaseViewController
-- (void)viewDidLoad;
-- (void)mainButtonAction;
-- (void)leftButtonAction;
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-@class Au10tixSessionUpdate;
-@class Au10tixSessionError;
-@class Au10tixSessionResult;
-
-@interface Au10xPFLViewController (SWIFT_EXTENSION(Au10PassiveFaceLiveness)) <Au10tixSessionDelegate>
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
-
 
 
 SWIFT_CLASS_NAMED("PassiveFaceLivenessSessionError")
@@ -272,6 +250,32 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Au10tixPassiveFaceLivenessSessionErrorType, 
 SWIFT_CLASS_NAMED("PassiveFaceLivenessSessionResult")
 @interface Au10tixPassiveFaceLivenessSessionResult : Au10tixSessionResult
 @end
+
+
+SWIFT_CLASS("_TtC23Au10PassiveFaceLiveness32PassiveFaceLivenessSessionUpdate")
+@interface PassiveFaceLivenessSessionUpdate : Au10tixSessionUpdate
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, closed) {
+  PassiveFaceLivenessUpdateTypeImageCaptured = 0,
+  PassiveFaceLivenessUpdateTypeQualityFeedback = 1,
+  PassiveFaceLivenessUpdateTypePassedThreshold = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, QualityFault, closed) {
+  QualityFaultUnstable = 0,
+  QualityFaultDeviceNotVerticle = 1,
+  QualityFaultFaceNotDetectedInImage = 2,
+  QualityFaultTooManyFaces = 3,
+  QualityFaultFaceTooFarFromCamera = 4,
+  QualityFaultFaceTooCloseToCamera = 5,
+  QualityFaultFaceNotFacingDirectlyAtCamera = 6,
+  QualityFaultHoldSteady = 7,
+  QualityFaultNoFault = 8,
+};
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

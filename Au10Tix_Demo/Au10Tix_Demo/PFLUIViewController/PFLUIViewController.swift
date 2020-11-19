@@ -7,7 +7,7 @@
 
 import UIKit
 import Au10tixCore
-import Au10tixCommon
+//import Au10tixCommon
 import Au10PassiveFaceLiveness
 import AVFoundation
 

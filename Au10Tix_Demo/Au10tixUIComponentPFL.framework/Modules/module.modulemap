@@ -1,0 +1,11 @@
+framework module Au10tixUIComponentPFL {
+  umbrella header "Au10tixUIComponentPFL-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixUIComponentPFL.Swift {
+    header "Au10tixUIComponentPFL-Swift.h"
+    requires objc
+}

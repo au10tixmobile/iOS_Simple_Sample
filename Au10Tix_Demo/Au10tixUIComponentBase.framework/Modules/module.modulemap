@@ -1,0 +1,11 @@
+framework module Au10tixUIComponentBase {
+  umbrella header "Au10tixUIComponentBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixUIComponentBase.Swift {
+    header "Au10tixUIComponentBase-Swift.h"
+    requires objc
+}

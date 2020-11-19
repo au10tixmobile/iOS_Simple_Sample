@@ -7,7 +7,9 @@
 
 import UIKit
 import Au10tixCore
-import Au10tixCommon
+import Au10tixUIComponentBase
+import Au10tixUIComponentPFL
+import Au10tixUIComponentSDC
 import Au10PassiveFaceLiveness
 import Au10SmartDocumentCaptureFeature
 

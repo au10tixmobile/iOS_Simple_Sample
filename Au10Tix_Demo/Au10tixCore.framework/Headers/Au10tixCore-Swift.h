@@ -188,10 +188,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCommon;
 @import CoreGraphics;
 @import CoreVideo;
 @import Foundation;
+@import ImageIO;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -224,7 +224,95 @@ SWIFT_PROTOCOL("_TtP11Au10tixCore13Au10CoreToApp_")
 - (void)didGetUpdate:(FeatureSessionUpdate * _Nonnull)update;
 @end
 
+
+SWIFT_CLASS("_TtC11Au10tixCore9Au10Error")
+@interface Au10Error : NSObject
+@property (nonatomic, readonly) NSInteger code;
+@property (nonatomic, readonly, copy) NSString * _Nonnull message;
+@property (nonatomic, readonly, copy) NSString * _Nullable originalMethodName;
+@property (nonatomic, readonly, copy) NSDate * _Nonnull time;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 @class NSError;
+
+@interface Au10Error (SWIFT_EXTENSION(Au10tixCore))
+@property (nonatomic, readonly, strong) NSError * _Nonnull nsError;
+@end
+
+
+SWIFT_CLASS("_TtC11Au10tixCore23Au10FeatureSessionError")
+@interface Au10FeatureSessionError : Au10Error
+@end
+
+
+SWIFT_CLASS("_TtC11Au10tixCore24Au10FeatureSessionResult")
+@interface Au10FeatureSessionResult : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class Au10tixSessionResult;
+@class Au10tixSessionError;
+@class Au10tixSessionUpdate;
+@class Au10Update;
+
+SWIFT_PROTOCOL("_TtP11Au10tixCore17Au10FeatureToCore_")
+@protocol Au10FeatureToCore
+- (void)didFinishSessionWithResult:(Au10tixSessionResult * _Nullable)result error:(Au10tixSessionError * _Nullable)error;
+- (void)didGetFeatureSessionUpdateWithUpdate:(Au10tixSessionUpdate * _Nonnull)update;
+- (void)didGetFeatureSessionFrameWithFrame:(Au10Update * _Nonnull)frame;
+@end
+
+@class CIImage;
+enum Au10ImageSource : NSInteger;
+@class UIImage;
+@class CIContext;
+
+SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
+@interface Au10Image : NSObject
+@property (nonatomic, readonly, strong) CIImage * _Nonnull ciImage;
+@property (nonatomic, readonly) enum Au10ImageSource source;
+@property (nonatomic, readonly, strong) UIImage * _Nonnull uiImage;
+@property (nonatomic, readonly) NSInteger width;
+@property (nonatomic, readonly) NSInteger height;
+@property (nonatomic, readonly) UIImageOrientation uiOrientation;
+@property (nonatomic, readonly) CGImagePropertyOrientation cgOrientation;
+- (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
+/// Convert the CIImage to binary data in order to send it to the BOS server
+- (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CIContext * _Nonnull sharedContext;)
++ (CIContext * _Nonnull)sharedContext SWIFT_WARN_UNUSED_RESULT;
++ (NSData * _Nullable)scaledWithImage:(CIImage * _Nonnull)image for:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, Au10ImageSource, closed) {
+  Au10ImageSourceCamera = 0,
+  Au10ImageSourceAlbum = 1,
+};
+
+
+SWIFT_CLASS("_TtC11Au10tixCore14Au10Quadrangle")
+@interface Au10Quadrangle : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
+@interface Au10Update : NSObject
+@property (nonatomic, strong) Au10Quadrangle * _Nullable quad;
+@property (nonatomic, copy) NSData * _Nullable data;
+@property (nonatomic, strong) Au10Image * _Nullable image;
+- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 /// The entry point to Au10tix Services.
 /// Make sure to call <code>prepare(for:withDelegate:completionHandler:)</code> method to configure this object
@@ -251,25 +339,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tixCore 
 
 
 @interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
-- (void)readPassportNFCWith:(NSString * _Nonnull)mrz;
-- (void)readPassportNFCWith:(NSString * _Nonnull)documentNumber expiryDate:(NSDate * _Nonnull)expiryDate birthDate:(NSDate * _Nonnull)birthDate;
-@end
-
-
-
-
-
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
 - (void)takeStillImage;
 - (void)selectImageFromPhotoLibrary;
-- (void)validateImage:(NSData * _Nonnull)imageData;
-- (void)resumeCapturingState;
 @end
 
-@class Au10Update;
-@class Au10tixSessionResult;
-@class Au10tixSessionError;
-@class Au10tixSessionUpdate;
+
+
 @class UIImageView;
 
 @interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore)) <Au10FeatureToCore>
@@ -289,93 +364,47 @@ SWIFT_PROTOCOL("_TtP11Au10tixCore22Au10tixSessionDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC11Au10tixCore19Au10tixSessionError")
+@interface Au10tixSessionError : Au10Error
+@end
+
+
+SWIFT_CLASS("_TtC11Au10tixCore20Au10tixSessionResult")
+@interface Au10tixSessionResult : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11Au10tixCore20Au10tixSessionUpdate")
+@interface Au10tixSessionUpdate : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, CaptureMode, closed) {
+  CaptureModeAuto = 1,
+  CaptureModeManual = 2,
+};
+
+
+SWIFT_CLASS("_TtC11Au10tixCore20FeatureSessionUpdate")
+@interface FeatureSessionUpdate : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @interface AU10JSONRequestGenerator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-@class Au10xUIComponentConfigs;
-@class NSCoder;
-@class NSBundle;
-
-/// An abstract base class for UI-Components ViewController
-/// Do not use this class directrly, use its subclasses instead
-SWIFT_CLASS("_TtC11Au10tixCore29UIComponentBaseViewController")
-@interface UIComponentBaseViewController : UIViewController
-- (void)leftButtonAction;
-- (void)rightButtonAction;
-- (void)mainButtonAction;
-/// Initializes a new UIComponentBaseViewController with the provided configurations and delegate.
-/// \param configs The basic UI configurations (logo, colors)
-///
-/// \param delegate An object to receive results of the process
-///
-///
-/// returns:
-/// A beautiful, brand-new SDCViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-/// A required Initializer for UIComponentBaseViewController with storyboard
-/// This init is not supported because you can not pass configs
-/// \param coder The object represent data driven from Storyboard
-///
-///
-/// returns:
-/// A fattal error
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-/// Close the UIComponent View Controller using UIViewController’s dismiss method
-- (void)closeButtonAction;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-
-
-
-
-
-@class UIImage;
-@class UIColor;
-
-/// A class to represent the UI configurations for UI-Components View Controller
-SWIFT_CLASS_NAMED("UIComponentConfigs")
-@interface Au10xUIComponentConfigs : NSObject
-/// Initializes a new UIComponentConfigs with default configurations and logo
-/// \param appLogo The Hosting app’s logo image
-///
-///
-/// returns:
-/// An instance of UIComponentConfigs
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nonnull)appLogo;
-/// Initializes a new UIComponentConfigs
-/// \param appLogo The Hosting app’s logo image
-///
-/// \param actionButtonTint The action button tint
-///
-/// \param titleTextColor The titles text colors
-///
-/// \param errorTextColor The error text color
-///
-/// \param canUploadImage Determine whether uploading image from photo library is supported
-///
-/// \param showCloseButton Determine whether to display close button
-///
-///
-/// returns:
-/// An instance of UIComponentConfigs
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nonnull)appLogo actionButtonTint:(UIColor * _Nonnull)actionButtonTint titleTextColor:(UIColor * _Nonnull)titleTextColor errorTextColor:(UIColor * _Nonnull)errorTextColor canUploadImage:(BOOL)canUploadImage showCloseButton:(BOOL)showCloseButton OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore18UICompsButtonsView")
-@interface UICompsButtonsView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
+typedef SWIFT_ENUM(NSInteger, SessionResultCode, closed) {
+  SessionResultCodeSuccess = 0,
+  SessionResultCodeFailure = 1,
+  SessionResultCodeError = 2,
+  SessionResultCodeStopped = 3,
+};
 
 
 

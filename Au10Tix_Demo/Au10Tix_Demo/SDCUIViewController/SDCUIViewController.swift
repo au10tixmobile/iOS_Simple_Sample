@@ -6,7 +6,7 @@
 //
 import UIKit
 import Au10tixCore
-import Au10tixCommon
+//import Au10tixCommon
 import Au10SmartDocumentCaptureFeature
 import AVFoundation
 

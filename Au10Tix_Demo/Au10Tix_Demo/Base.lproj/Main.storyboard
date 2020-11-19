@@ -171,16 +171,33 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z6-Qa-2gu">
+                                <rect key="frame" x="20" y="746" width="350" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="afv-vj-rTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="popToRoot" destination="GNO-6z-vN8" eventType="touchUpInside" id="bb8-BB-RuF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lKF-Ky-zP1"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="lKF-Ky-zP1" firstAttribute="bottom" secondItem="8Z6-Qa-2gu" secondAttribute="bottom" constant="20" id="2Kl-fD-Wco"/>
                             <constraint firstItem="lKF-Ky-zP1" firstAttribute="trailing" secondItem="6Md-hn-fnb" secondAttribute="trailing" constant="20" id="2ej-gA-5r5"/>
                             <constraint firstItem="lKF-Ky-zP1" firstAttribute="trailing" secondItem="hqe-AT-NQA" secondAttribute="trailing" constant="20" id="Khc-NW-LcZ"/>
+                            <constraint firstItem="8Z6-Qa-2gu" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="NvR-fl-tGu"/>
                             <constraint firstItem="hqe-AT-NQA" firstAttribute="top" secondItem="6Md-hn-fnb" secondAttribute="bottom" constant="22" id="aCY-gX-BtR"/>
                             <constraint firstItem="6Md-hn-fnb" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="fFK-OZ-Kym"/>
                             <constraint firstItem="hqe-AT-NQA" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="gUe-C4-NiU"/>
                             <constraint firstItem="6Md-hn-fnb" firstAttribute="top" secondItem="lKF-Ky-zP1" secondAttribute="top" constant="35" id="oz5-IF-VkV"/>
+                            <constraint firstItem="lKF-Ky-zP1" firstAttribute="trailing" secondItem="8Z6-Qa-2gu" secondAttribute="trailing" constant="20" id="w5c-ts-V1x"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="uPb-S5-Qpv"/>

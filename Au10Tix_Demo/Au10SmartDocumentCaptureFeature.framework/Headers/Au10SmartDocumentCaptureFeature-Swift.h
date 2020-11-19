@@ -188,7 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCommon;
 @import Au10tixCore;
 @import ObjectiveC;
 #endif
@@ -213,45 +212,6 @@ SWIFT_CLASS("_TtC31Au10SmartDocumentCaptureFeature30Au10SmartDocumentSessionUpda
 @interface Au10SmartDocumentSessionUpdate : FeatureSessionUpdate
 - (BOOL)isValidDocument SWIFT_WARN_UNUSED_RESULT;
 @end
-
-@class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
-@class NSCoder;
-
-/// SDCViewController provide an UI/UX for using Au10Tix’s Smart-Document-Capture Feature
-SWIFT_CLASS_NAMED("SDCViewController")
-@interface Au10xSDCViewController : UIComponentBaseViewController
-/// Initializes a new SDCViewController with the provided configurations and delegate.
-/// \param configs The basic UI configurations (logo, colors)
-///
-/// \param delegate An object to receive results of the process
-///
-/// \param subTitle A test to display as the sub-title
-///
-///
-/// returns:
-/// A beautiful, brand-new SDCViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate subTitle:(NSString * _Nullable)subTitle OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (void)mainButtonAction;
-- (void)leftButtonAction;
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate SWIFT_UNAVAILABLE;
-@end
-
-
-
-@class Au10tixSessionUpdate;
-@class Au10tixSessionError;
-@class Au10tixSessionResult;
-
-@interface Au10xSDCViewController (SWIFT_EXTENSION(Au10SmartDocumentCaptureFeature)) <Au10tixSessionDelegate>
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
-
 
 
 SWIFT_CLASS_NAMED("SmartDocumentCaptureSessionError")
@@ -284,6 +244,15 @@ SWIFT_CLASS_NAMED("SmartDocumentFeatureManager")
 @end
 
 
+
+
+@class Au10Image;
+
+SWIFT_CLASS("_TtC31Au10SmartDocumentCaptureFeature32SmartDocumentFeatureSessionFrame")
+@interface SmartDocumentFeatureSessionFrame : Au10Update
+@property (nonatomic, readonly) BOOL isValid;
+- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 

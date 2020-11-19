@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2C7A58518349B106F75B4E9B /* Pods_Au10Tix_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E226E047BB8521AEA26CC2 /* Pods_Au10Tix_Demo.framework */; };
-		9C0C0A81255C0D5200B2E035 /* Au10tixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A60255C019A00B2E035 /* Au10tixCore.framework */; };
-		9C0C0A82255C0D5200B2E035 /* Au10tixCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A60255C019A00B2E035 /* Au10tixCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C0C0A83255C0D5400B2E035 /* Au10tixCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A5E255C019900B2E035 /* Au10tixCommon.framework */; };
-		9C0C0A84255C0D5400B2E035 /* Au10tixCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A5E255C019900B2E035 /* Au10tixCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C0C0A85255C0D5600B2E035 /* Au10SourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A62255C019A00B2E035 /* Au10SourceManager.framework */; };
-		9C0C0A86255C0D5600B2E035 /* Au10SourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A62255C019A00B2E035 /* Au10SourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C0C0A87255C0D5700B2E035 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A63255C019A00B2E035 /* Au10SmartDocumentCaptureFeature.framework */; };
-		9C0C0A88255C0D5700B2E035 /* Au10SmartDocumentCaptureFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A63255C019A00B2E035 /* Au10SmartDocumentCaptureFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C0C0A89255C0D5800B2E035 /* Au10PassiveFaceLiveness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A5F255C019A00B2E035 /* Au10PassiveFaceLiveness.framework */; };
-		9C0C0A8A255C0D5800B2E035 /* Au10PassiveFaceLiveness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A5F255C019A00B2E035 /* Au10PassiveFaceLiveness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C0C0A8B255C0D5A00B2E035 /* Au10DetectorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A61255C019A00B2E035 /* Au10DetectorManager.framework */; };
-		9C0C0A8C255C0D5A00B2E035 /* Au10DetectorManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C0A61255C019A00B2E035 /* Au10DetectorManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E08F2566840A00C28A22 /* Au10tixUIComponentPFL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0872566840A00C28A22 /* Au10tixUIComponentPFL.framework */; };
+		9C50E0902566840A00C28A22 /* Au10tixUIComponentPFL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0872566840A00C28A22 /* Au10tixUIComponentPFL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E0912566840A00C28A22 /* Au10PassiveFaceLiveness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0882566840A00C28A22 /* Au10PassiveFaceLiveness.framework */; };
+		9C50E0922566840A00C28A22 /* Au10PassiveFaceLiveness.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0882566840A00C28A22 /* Au10PassiveFaceLiveness.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E0932566840A00C28A22 /* Au10SourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0892566840A00C28A22 /* Au10SourceManager.framework */; };
+		9C50E0942566840A00C28A22 /* Au10SourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E0892566840A00C28A22 /* Au10SourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E0952566840A00C28A22 /* Au10tixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08A2566840A00C28A22 /* Au10tixCore.framework */; };
+		9C50E0962566840A00C28A22 /* Au10tixCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08A2566840A00C28A22 /* Au10tixCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E0972566840A00C28A22 /* Au10tixUIComponentSDC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08B2566840A00C28A22 /* Au10tixUIComponentSDC.framework */; };
+		9C50E0982566840A00C28A22 /* Au10tixUIComponentSDC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08B2566840A00C28A22 /* Au10tixUIComponentSDC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E0992566840A00C28A22 /* Au10DetectorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08C2566840A00C28A22 /* Au10DetectorManager.framework */; };
+		9C50E09A2566840A00C28A22 /* Au10DetectorManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08C2566840A00C28A22 /* Au10DetectorManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E09B2566840A00C28A22 /* Au10tixUIComponentBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08D2566840A00C28A22 /* Au10tixUIComponentBase.framework */; };
+		9C50E09C2566840A00C28A22 /* Au10tixUIComponentBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08D2566840A00C28A22 /* Au10tixUIComponentBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C50E09D2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework */; };
+		9C50E09E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50E08E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -31,18 +35,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9C1A457F25384E9900B5DBC0 /* Embed Frameworks */ = {
+		9C50E078256683EE00C28A22 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9C0C0A86255C0D5600B2E035 /* Au10SourceManager.framework in Embed Frameworks */,
-				9C0C0A8C255C0D5A00B2E035 /* Au10DetectorManager.framework in Embed Frameworks */,
-				9C0C0A84255C0D5400B2E035 /* Au10tixCommon.framework in Embed Frameworks */,
-				9C0C0A88255C0D5700B2E035 /* Au10SmartDocumentCaptureFeature.framework in Embed Frameworks */,
-				9C0C0A82255C0D5200B2E035 /* Au10tixCore.framework in Embed Frameworks */,
-				9C0C0A8A255C0D5800B2E035 /* Au10PassiveFaceLiveness.framework in Embed Frameworks */,
+				9C50E0942566840A00C28A22 /* Au10SourceManager.framework in Embed Frameworks */,
+				9C50E09A2566840A00C28A22 /* Au10DetectorManager.framework in Embed Frameworks */,
+				9C50E09E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework in Embed Frameworks */,
+				9C50E0982566840A00C28A22 /* Au10tixUIComponentSDC.framework in Embed Frameworks */,
+				9C50E0902566840A00C28A22 /* Au10tixUIComponentPFL.framework in Embed Frameworks */,
+				9C50E0962566840A00C28A22 /* Au10tixCore.framework in Embed Frameworks */,
+				9C50E0922566840A00C28A22 /* Au10PassiveFaceLiveness.framework in Embed Frameworks */,
+				9C50E09C2566840A00C28A22 /* Au10tixUIComponentBase.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,12 +60,14 @@
 		24E226E047BB8521AEA26CC2 /* Pods_Au10Tix_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Au10Tix_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B481C64135558934482EB33 /* Pods-Au10Tix_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7F1CBAD3F9536BF60DC464 /* Pods-Au10Tix_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C0C0A5E255C019900B2E035 /* Au10tixCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixCommon.framework; sourceTree = "<group>"; };
-		9C0C0A5F255C019A00B2E035 /* Au10PassiveFaceLiveness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10PassiveFaceLiveness.framework; sourceTree = "<group>"; };
-		9C0C0A60255C019A00B2E035 /* Au10tixCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixCore.framework; sourceTree = "<group>"; };
-		9C0C0A61255C019A00B2E035 /* Au10DetectorManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10DetectorManager.framework; sourceTree = "<group>"; };
-		9C0C0A62255C019A00B2E035 /* Au10SourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SourceManager.framework; sourceTree = "<group>"; };
-		9C0C0A63255C019A00B2E035 /* Au10SmartDocumentCaptureFeature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SmartDocumentCaptureFeature.framework; sourceTree = "<group>"; };
+		9C50E0872566840A00C28A22 /* Au10tixUIComponentPFL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentPFL.framework; sourceTree = "<group>"; };
+		9C50E0882566840A00C28A22 /* Au10PassiveFaceLiveness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10PassiveFaceLiveness.framework; sourceTree = "<group>"; };
+		9C50E0892566840A00C28A22 /* Au10SourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SourceManager.framework; sourceTree = "<group>"; };
+		9C50E08A2566840A00C28A22 /* Au10tixCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixCore.framework; sourceTree = "<group>"; };
+		9C50E08B2566840A00C28A22 /* Au10tixUIComponentSDC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentSDC.framework; sourceTree = "<group>"; };
+		9C50E08C2566840A00C28A22 /* Au10DetectorManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10DetectorManager.framework; sourceTree = "<group>"; };
+		9C50E08D2566840A00C28A22 /* Au10tixUIComponentBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentBase.framework; sourceTree = "<group>"; };
+		9C50E08E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SmartDocumentCaptureFeature.framework; sourceTree = "<group>"; };
 		9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFLUIViewController.swift; sourceTree = "<group>"; };
 		9CA6D956253749FC00E48DDD /* Au10Tix_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Au10Tix_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6D959253749FC00E48DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,13 +88,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0C0A85255C0D5600B2E035 /* Au10SourceManager.framework in Frameworks */,
-				9C0C0A81255C0D5200B2E035 /* Au10tixCore.framework in Frameworks */,
-				9C0C0A8B255C0D5A00B2E035 /* Au10DetectorManager.framework in Frameworks */,
-				9C0C0A83255C0D5400B2E035 /* Au10tixCommon.framework in Frameworks */,
+				9C50E09D2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */,
+				9C50E09B2566840A00C28A22 /* Au10tixUIComponentBase.framework in Frameworks */,
+				9C50E0972566840A00C28A22 /* Au10tixUIComponentSDC.framework in Frameworks */,
+				9C50E0912566840A00C28A22 /* Au10PassiveFaceLiveness.framework in Frameworks */,
+				9C50E0992566840A00C28A22 /* Au10DetectorManager.framework in Frameworks */,
+				9C50E08F2566840A00C28A22 /* Au10tixUIComponentPFL.framework in Frameworks */,
+				9C50E0932566840A00C28A22 /* Au10SourceManager.framework in Frameworks */,
+				9C50E0952566840A00C28A22 /* Au10tixCore.framework in Frameworks */,
 				2C7A58518349B106F75B4E9B /* Pods_Au10Tix_Demo.framework in Frameworks */,
-				9C0C0A89255C0D5800B2E035 /* Au10PassiveFaceLiveness.framework in Frameworks */,
-				9C0C0A87255C0D5700B2E035 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +119,14 @@
 		9C1A456E25384C2500B5DBC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C0C0A61255C019A00B2E035 /* Au10DetectorManager.framework */,
-				9C0C0A5F255C019A00B2E035 /* Au10PassiveFaceLiveness.framework */,
-				9C0C0A63255C019A00B2E035 /* Au10SmartDocumentCaptureFeature.framework */,
-				9C0C0A62255C019A00B2E035 /* Au10SourceManager.framework */,
-				9C0C0A5E255C019900B2E035 /* Au10tixCommon.framework */,
-				9C0C0A60255C019A00B2E035 /* Au10tixCore.framework */,
+				9C50E08C2566840A00C28A22 /* Au10DetectorManager.framework */,
+				9C50E0882566840A00C28A22 /* Au10PassiveFaceLiveness.framework */,
+				9C50E08E2566840A00C28A22 /* Au10SmartDocumentCaptureFeature.framework */,
+				9C50E0892566840A00C28A22 /* Au10SourceManager.framework */,
+				9C50E08A2566840A00C28A22 /* Au10tixCore.framework */,
+				9C50E08D2566840A00C28A22 /* Au10tixUIComponentBase.framework */,
+				9C50E0872566840A00C28A22 /* Au10tixUIComponentPFL.framework */,
+				9C50E08B2566840A00C28A22 /* Au10tixUIComponentSDC.framework */,
 				24E226E047BB8521AEA26CC2 /* Pods_Au10Tix_Demo.framework */,
 			);
 			name = Frameworks;
@@ -197,7 +209,7 @@
 				9CA6D952253749FC00E48DDD /* Sources */,
 				9CA6D953253749FC00E48DDD /* Frameworks */,
 				9CA6D954253749FC00E48DDD /* Resources */,
-				9C1A457F25384E9900B5DBC0 /* Embed Frameworks */,
+				9C50E078256683EE00C28A22 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,16 +450,17 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XUDNCA924;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/\"",
-					"\"$(SRCROOT)/Au10SmartDocumentCaptureFeature.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10DetectorManager.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10PassiveFaceLiveness.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10SmartDocumentCaptureFeature.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10tixCommon.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10tixCore.framework\"",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/**",
+					"\"$(SRCROOT)/Au10DetectorManager.framework\"/**",
+					"\"$(SRCROOT)/Au10PassiveFaceLiveness.framework\"/**",
+					"\"$(SRCROOT)/Au10SourceManager.framework\"/**",
+					"\"$(SRCROOT)/Au10tixCore.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentBase.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentPFL.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentSDC.framework\"/**",
 				);
 				INFOPLIST_FILE = Au10Tix_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -471,16 +484,17 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XUDNCA924;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/\"",
-					"\"$(SRCROOT)/Au10SmartDocumentCaptureFeature.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10DetectorManager.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10PassiveFaceLiveness.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10SmartDocumentCaptureFeature.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10tixCommon.framework\"",
-					"\"$(SRCROOT)/../../Au10tix_SDK_Objective-C/Au10tix_SDK_Objective-C/Au10tixCore.framework\"",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/**",
+					"\"$(SRCROOT)/Au10DetectorManager.framework\"/**",
+					"\"$(SRCROOT)/Au10PassiveFaceLiveness.framework\"/**",
+					"\"$(SRCROOT)/Au10SourceManager.framework\"/**",
+					"\"$(SRCROOT)/Au10tixCore.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentBase.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentPFL.framework\"/**",
+					"\"$(SRCROOT)/Au10tixUIComponentSDC.framework\"/**",
 				);
 				INFOPLIST_FILE = Au10Tix_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

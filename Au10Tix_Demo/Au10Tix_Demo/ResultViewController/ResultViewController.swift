@@ -41,4 +41,8 @@ private extension ResultViewController {
             lblResult.text = resultString
         }
     }
+    
+    @IBAction func popToRoot() {
+        self.navigationController?.popViewController(animated: false)
+    }
 }
