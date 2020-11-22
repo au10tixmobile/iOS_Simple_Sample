@@ -41,8 +41,13 @@ private extension ResultViewController {
             lblResult.text = resultString
         }
     }
+}
+
+// MARK: Actions
+
+private extension ResultViewController {
     
     @IBAction func popToRoot() {
-        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }

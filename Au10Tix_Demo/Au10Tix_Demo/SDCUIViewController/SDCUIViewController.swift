@@ -6,7 +6,6 @@
 //
 import UIKit
 import Au10tixCore
-//import Au10tixCommon
 import Au10SmartDocumentCaptureFeature
 import AVFoundation
 
@@ -53,7 +52,11 @@ private extension SDCUIViewController {
     
     // MARK: - Open ResultViewController
     
-    func openResultsViewController(_ resultImage: UIImage) {
+    func openSDCResults(_ result: SmartDocumentCaptureSessionResult) {
+        
+        guard let resultImage = result.image?.uiImage else {
+            return
+        }
         
         guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
@@ -66,24 +69,20 @@ private extension SDCUIViewController {
     // MARK: - Show Updates
     
     func showDetails(_ update: SmartDocumentCaptureSessionUpdate) {
-        let blurScore = "blurScore \(update.blurScore)\n"
-        let reflectionScore = "reflectionScore \(update.reflectionScore)\n"
-        let darkScore = "darkScore \(update.darkScore)\n"
-        let idStatus = "idStatus \(update.idStatus)\n"
-        let blurStatus = "blurStatus \(update.blurStatus)\n"
-        let reflectionStatus = "reflectionStatus \(update.reflectionStatus)\n"
-        let darkStatus = "darkStatus \(update.darkStatus)\n"
-        let stabilityStatus = "StabilityStatus \(getStringValue(update.stabilityStatus))\n"
+        lblInfo.text = getUpdatesList(update).joined(separator: "\n")
+    }
+    
+    // MARK: - Updates List
+    
+    func getUpdatesList(_ update: SmartDocumentCaptureSessionUpdate) -> [String] {
         
-        lblInfo.text = blurScore +
-            reflectionScore +
-            blurScore +
-            darkScore +
-            idStatus +
-            blurStatus +
-            reflectionStatus +
-            darkStatus +
-            stabilityStatus
+        return ["blurScore \(update.blurScore)",
+                "reflectionScore \(update.reflectionScore)",
+                "idStatus \(update.idStatus)",
+                "blurStatus \(update.blurStatus)",
+                "reflectionStatus \(update.reflectionStatus)",
+                "darkStatus \(update.darkStatus)",
+                "StabilityStatus \(getStringValue(update.stabilityStatus))"]
     }
     
     // Get StabilityStatus String Value
@@ -122,12 +121,7 @@ extension SDCUIViewController: Au10tixSessionDelegate {
         // MARK: - SmartDocumentCaptureSessionResult
         
         if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
-            
-            guard let resultImage = documentSessionResult.image?.uiImage else {
-                return
-            }
-            
-            openResultsViewController(resultImage)
+            openSDCResults(documentSessionResult)
         }
     }
 }

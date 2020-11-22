@@ -23,7 +23,7 @@
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r13-rX-Xvj">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="146.66666666666666"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PASSIVE FACE LIVENESS">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -34,7 +34,7 @@
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-LK-fpa">
                                         <rect key="frame" x="0.0" y="178.66666666666669" width="350" height="146.33333333333331"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SMART DOCUMENT CAPTURING">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -45,7 +45,7 @@
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-fT-fcA">
                                         <rect key="frame" x="0.0" y="357" width="350" height="146.66666666666663"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SDC with UIComponents">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -56,7 +56,7 @@
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1d-iH-iUt">
                                         <rect key="frame" x="0.0" y="535.66666666666663" width="350" height="146.33333333333337"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PFL with UIComponents">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -117,7 +117,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6G-ir-wVd">
-                                <rect key="frame" x="16" y="545" width="358" height="250"/>
+                                <rect key="frame" x="16" y="500" width="358" height="295"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -127,7 +127,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="g6G-ir-wVd" firstAttribute="leading" secondItem="wSl-NN-ohG" secondAttribute="leading" constant="16" id="E6T-8e-0Z4"/>
-                            <constraint firstItem="g6G-ir-wVd" firstAttribute="top" secondItem="wzV-Zx-Knw" secondAttribute="bottom" constant="57" id="EXH-SX-tSR"/>
+                            <constraint firstItem="g6G-ir-wVd" firstAttribute="top" secondItem="wzV-Zx-Knw" secondAttribute="bottom" constant="12" id="EXH-SX-tSR"/>
                             <constraint firstItem="wSl-NN-ohG" firstAttribute="bottom" secondItem="wzV-Zx-Knw" secondAttribute="bottom" constant="322" id="F2c-oR-b6x"/>
                             <constraint firstItem="wzV-Zx-Knw" firstAttribute="trailing" secondItem="wSl-NN-ohG" secondAttribute="trailing" id="OgR-LD-m9J"/>
                             <constraint firstItem="wSl-NN-ohG" firstAttribute="trailing" secondItem="g6G-ir-wVd" secondAttribute="trailing" constant="16" id="Rcf-K7-Qk8"/>
@@ -162,11 +162,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-AT-NQA">
-                                <rect key="frame" x="20" y="437" width="350" height="220"/>
+                                <rect key="frame" x="20" y="437" width="350" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="seC-Mi-zZ4"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -194,6 +191,7 @@
                             <constraint firstItem="lKF-Ky-zP1" firstAttribute="trailing" secondItem="hqe-AT-NQA" secondAttribute="trailing" constant="20" id="Khc-NW-LcZ"/>
                             <constraint firstItem="8Z6-Qa-2gu" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="NvR-fl-tGu"/>
                             <constraint firstItem="hqe-AT-NQA" firstAttribute="top" secondItem="6Md-hn-fnb" secondAttribute="bottom" constant="22" id="aCY-gX-BtR"/>
+                            <constraint firstItem="8Z6-Qa-2gu" firstAttribute="top" secondItem="hqe-AT-NQA" secondAttribute="bottom" constant="8" id="ca5-xw-jTa"/>
                             <constraint firstItem="6Md-hn-fnb" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="fFK-OZ-Kym"/>
                             <constraint firstItem="hqe-AT-NQA" firstAttribute="leading" secondItem="lKF-Ky-zP1" secondAttribute="leading" constant="20" id="gUe-C4-NiU"/>
                             <constraint firstItem="6Md-hn-fnb" firstAttribute="top" secondItem="lKF-Ky-zP1" secondAttribute="top" constant="35" id="oz5-IF-VkV"/>
@@ -220,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szs-FF-Lll">
-                                <rect key="frame" x="0.0" y="88" width="390" height="567"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="402"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IJl-1k-aMd">
@@ -256,18 +254,28 @@
                                     <action selector="agreedAction" destination="Q9y-Ba-GpX" eventType="touchUpInside" id="HC9-Mo-dt5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaI-FR-ceh">
+                                <rect key="frame" x="16" y="498" width="358" height="164"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jut-8N-odx"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jut-8N-odx" firstAttribute="trailing" secondItem="TaI-FR-ceh" secondAttribute="trailing" constant="16" id="4eV-NJ-dwf"/>
                             <constraint firstItem="iPx-ue-Phg" firstAttribute="centerY" secondItem="AAR-V9-8NX" secondAttribute="centerY" id="99e-MD-7DR"/>
                             <constraint firstItem="szs-FF-Lll" firstAttribute="leading" secondItem="jut-8N-odx" secondAttribute="leading" id="CoK-Mi-Pmt"/>
                             <constraint firstItem="jut-8N-odx" firstAttribute="bottom" secondItem="AAR-V9-8NX" secondAttribute="bottom" constant="72" id="DdM-Jq-kq3"/>
-                            <constraint firstItem="jut-8N-odx" firstAttribute="bottom" secondItem="szs-FF-Lll" secondAttribute="bottom" constant="155" id="POE-6h-rOs"/>
+                            <constraint firstItem="jut-8N-odx" firstAttribute="bottom" secondItem="szs-FF-Lll" secondAttribute="bottom" constant="320" id="POE-6h-rOs"/>
+                            <constraint firstItem="TaI-FR-ceh" firstAttribute="leading" secondItem="jut-8N-odx" secondAttribute="leading" constant="16" id="QGu-2D-D3c"/>
+                            <constraint firstItem="TaI-FR-ceh" firstAttribute="top" secondItem="szs-FF-Lll" secondAttribute="bottom" constant="8" symbolic="YES" id="QLZ-1e-6P3"/>
                             <constraint firstItem="szs-FF-Lll" firstAttribute="top" secondItem="jut-8N-odx" secondAttribute="top" id="Qil-CF-JJU"/>
                             <constraint firstItem="IJl-1k-aMd" firstAttribute="leading" secondItem="jut-8N-odx" secondAttribute="leading" constant="20" id="Qxx-X5-Xti"/>
                             <constraint firstItem="iPx-ue-Phg" firstAttribute="leading" secondItem="jut-8N-odx" secondAttribute="leading" constant="22" id="SwG-yk-aWb"/>
                             <constraint firstItem="szs-FF-Lll" firstAttribute="trailing" secondItem="jut-8N-odx" secondAttribute="trailing" id="Xhz-Hm-KEu"/>
+                            <constraint firstItem="iPx-ue-Phg" firstAttribute="top" secondItem="TaI-FR-ceh" secondAttribute="bottom" constant="4" id="ZLz-bY-xeP"/>
                             <constraint firstItem="jut-8N-odx" firstAttribute="trailing" secondItem="IJl-1k-aMd" secondAttribute="trailing" constant="20" id="ePV-rj-cW6"/>
                             <constraint firstItem="jut-8N-odx" firstAttribute="bottom" secondItem="IJl-1k-aMd" secondAttribute="bottom" constant="320" id="mTq-Hs-HBd"/>
                             <constraint firstItem="IJl-1k-aMd" firstAttribute="top" secondItem="jut-8N-odx" secondAttribute="top" constant="20" id="oxg-D9-1aa"/>
@@ -281,6 +289,7 @@
                         <outlet property="btnChooseAnother" destination="iPx-ue-Phg" id="LFA-ru-wue"/>
                         <outlet property="cameraView" destination="szs-FF-Lll" id="rFe-vI-Vdn"/>
                         <outlet property="imPreview" destination="IJl-1k-aMd" id="8fg-3U-EAA"/>
+                        <outlet property="lblInfo" destination="TaI-FR-ceh" id="x9p-Gh-nkF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCH-xf-R3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

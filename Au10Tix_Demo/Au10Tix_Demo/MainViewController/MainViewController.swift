@@ -32,6 +32,8 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         
         // -----------
+        
+        uiPreparation()
         prepare()
     }
     
@@ -138,9 +140,12 @@ private extension MainViewController {
     
     // MARK: - Open ResultViewController
     
-    func openResultsViewController(_ resultImage: UIImage) {
+    func openPFLResults(_ result: PassiveFaceLivenessSessionResult) {
         
-        guard resultIsAlreadyShown == false else {
+        guard let resultImage = UIImage(data: result.imageData),
+              result.isAnalyzed,
+              resultIsAlreadyShown == false,
+              result.faceError == nil else {
             return
         }
         
@@ -148,7 +153,24 @@ private extension MainViewController {
             return
         }
         
+        controller.resultString = getResultText(result).joined(separator: "\n")
         resultIsAlreadyShown = true
+        controller.resultImage = resultImage
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: - openSDCResults
+    
+    func openSDCResults(_ result: SmartDocumentCaptureSessionResult) {
+        
+        guard let resultImage = result.image?.uiImage else {
+            return
+        }
+        
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+            return
+        }
+        
         controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -159,6 +181,55 @@ private extension MainViewController {
         let alert = UIAlertController(title: "Error", message: text, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    // Get Results Text Value
+    
+    func getResultText(_ result: PassiveFaceLivenessSessionResult) -> [String] {
+        
+        return ["isAnalyzed - \(result.isAnalyzed)\n",
+                "score - \(result.score ?? 0)\n",
+                "quality - \(result.quality ?? 0)\n",
+                "probability - \(result.probability ?? 0)\n",
+                "faceError -\(getFaceErrortStringValue(result.faceError))\n"]
+    }
+    
+    // Get FaceError String Value
+    
+    func getFaceErrortStringValue(_ faceError: FaceError?) -> String {
+        switch faceError {
+        case .faceAngleTooLarge:
+            return "faceAngleTooLarge"
+        case .faceCropped:
+            return "faceCropped"
+        case .faceNotFound:
+            return "faceNotFound"
+        case .faceTooClose:
+            return "faceTooClose"
+        case .faceTooCloseToBorder:
+            return "faceTooCloseToBorder"
+        case .faceTooSmall:
+            return "faceTooSmall"
+        case .internalError:
+            return "internalError"
+        case .tooManyFaces:
+            return "tooManyFaces"
+        case .none:
+            return "none"
+        }
+    }
+    
+    // MARK: - Buttons Preparation
+    
+    func uiPreparation() {
+        btnSDC.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        btnSDC.titleLabel?.textAlignment = NSTextAlignment.center
+        btnPFL.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        btnPFL.titleLabel?.textAlignment = NSTextAlignment.center
+        btnSDCwithUI.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        btnSDCwithUI.titleLabel?.textAlignment = NSTextAlignment.center
+        btnPFLwithUI.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        btnPFLwithUI.titleLabel?.textAlignment = NSTextAlignment.center
     }
 }
 
@@ -179,23 +250,13 @@ extension MainViewController: Au10tixSessionDelegate {
         // MARK: - PassiveFaceLivenessSessionResult
         
         if let livenessResult = result as? PassiveFaceLivenessSessionResult {
-            
-            guard let resultImage = UIImage(data: livenessResult.imageData) else {
-                return
-            }
-            
-            openResultsViewController(resultImage)
+            openPFLResults(livenessResult)
         }
         
         // MARK: - SmartDocumentCaptureSessionResult
         
         if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
-            
-            guard let resultImage = documentSessionResult.image?.uiImage else {
-                return
-            }
-            
-            openResultsViewController(resultImage)
+            openSDCResults(documentSessionResult)
         }
     }
 }
