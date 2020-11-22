@@ -35,6 +35,7 @@ final class MainViewController: UIViewController {
         
         uiPreparation()
         prepare()
+        addObserver()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -230,6 +231,19 @@ private extension MainViewController {
         btnSDCwithUI.titleLabel?.textAlignment = NSTextAlignment.center
         btnPFLwithUI.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         btnPFLwithUI.titleLabel?.textAlignment = NSTextAlignment.center
+    }
+    
+    // MARK: - Observer
+    
+    func addObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleExpirationNotification(_:)),
+                                               name: .au10tixCoreTokenExpiration, object: nil)
+    }
+    
+    @objc func handleExpirationNotification (_ sender: Notification) {
+        let alert = UIAlertController(title: "Error", message: "Session Is Expired", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
