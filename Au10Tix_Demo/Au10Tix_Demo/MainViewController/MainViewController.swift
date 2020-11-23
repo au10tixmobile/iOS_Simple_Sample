@@ -243,7 +243,13 @@ private extension MainViewController {
     @objc func handleExpirationNotification (_ sender: Notification) {
         let alert = UIAlertController(title: "Error", message: "Session Is Expired", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        
+        if var topController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController {
+            if let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            topController.present(alert, animated: true, completion: nil)
+        }
     }
 }
 
