@@ -40,8 +40,9 @@ private extension SDCUIViewController {
         Au10tixCore.shared.delegate = self
         
         let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager(isSmart: true)
-        AVCaptureDevice.requestAccess(for: .video) { granted in
+        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
             guard granted else { return }
+            guard let self = self else { return }
             
             DispatchQueue.main.async {
                 Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager,
@@ -69,12 +70,12 @@ private extension SDCUIViewController {
     // MARK: - Show Updates
     
     func showDetails(_ update: SmartDocumentCaptureSessionUpdate) {
-        lblInfo.text = getUpdatesList(update).joined(separator: "\n")
+        lblInfo.text = getUpdatesList(update)
     }
     
     // MARK: - Updates List
     
-    func getUpdatesList(_ update: SmartDocumentCaptureSessionUpdate) -> [String] {
+    func getUpdatesList(_ update: SmartDocumentCaptureSessionUpdate) -> String {
         
         return ["blurScore \(update.blurScore)",
                 "reflectionScore \(update.reflectionScore)",
@@ -82,20 +83,29 @@ private extension SDCUIViewController {
                 "blurStatus \(update.blurStatus)",
                 "reflectionStatus \(update.reflectionStatus)",
                 "darkStatus \(update.darkStatus)",
-                "StabilityStatus \(getStringValue(update.stabilityStatus))"]
+                "StabilityStatus \(getStringValue(update.stabilityStatus))"].joined(separator: "\n")
     }
     
     // Get StabilityStatus String Value
     
-    func getStringValue(_ stabilityStatus: SmartDocumentCaptureSessionUpdate.StabilityStatus?) -> String {
+    func getStringValue(_ error: SmartDocumentCaptureSessionUpdate.StabilityStatus?) -> String {
+        
+        guard let stabilityStatus = error else {return "none"}
+        
         switch stabilityStatus {
         case .stable:
             return "stable"
         case .notStable:
             return "notStable"
-        case .none:
-            return ""
         }
+    }
+    
+    // MARK: - UIAlertController
+    
+    func showAlert(_ text: String) {
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
@@ -113,7 +123,7 @@ extension SDCUIViewController: Au10tixSessionDelegate {
     }
     
     func didGetError(_ error: Au10tixSessionError) {
-        debugPrint(" error -\(error)")
+        showAlert(error.localizedDescription)
     }
     
     func didGetResult(_ result: Au10tixSessionResult) {

@@ -48,6 +48,6 @@ private extension ResultViewController {
 private extension ResultViewController {
     
     @IBAction func popToRoot() {
-        self.navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

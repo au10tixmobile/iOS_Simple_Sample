@@ -22,10 +22,6 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var btnSDCwithUI: UIButton!
     @IBOutlet private weak var btnPFLwithUI: UIButton!
     
-    // MARK: - Private Properties
-    
-    private var resultIsAlreadyShown = false
-    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -36,11 +32,6 @@ final class MainViewController: UIViewController {
         uiPreparation()
         prepare()
         addObserver()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        resultIsAlreadyShown = false
     }
 }
 
@@ -145,7 +136,6 @@ private extension MainViewController {
         
         guard let resultImage = UIImage(data: result.imageData),
               result.isAnalyzed,
-              resultIsAlreadyShown == false,
               result.faceError == nil else {
             return
         }
@@ -154,8 +144,7 @@ private extension MainViewController {
             return
         }
         
-        controller.resultString = getResultText(result).joined(separator: "\n")
-        resultIsAlreadyShown = true
+        controller.resultString = getResultText(result)
         controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -179,25 +168,28 @@ private extension MainViewController {
     // MARK: - UIAlertController
     
     func showAlert(_ text: String) {
-        let alert = UIAlertController(title: "Error", message: text, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     // Get Results Text Value
     
-    func getResultText(_ result: PassiveFaceLivenessSessionResult) -> [String] {
+    func getResultText(_ result: PassiveFaceLivenessSessionResult) -> String {
         
-        return ["isAnalyzed - \(result.isAnalyzed)\n",
-                "score - \(result.score ?? 0)\n",
-                "quality - \(result.quality ?? 0)\n",
-                "probability - \(result.probability ?? 0)\n",
-                "faceError -\(getFaceErrortStringValue(result.faceError))\n"]
+        return ["isAnalyzed - \(result.isAnalyzed)",
+                "score - \(result.score ?? 0)",
+                "quality - \(result.quality ?? 0)",
+                "probability - \(result.probability ?? 0)",
+                "faceError -\(getFaceErrortStringValue(result.faceError))"].joined(separator: "\n")
     }
     
     // Get FaceError String Value
     
-    func getFaceErrortStringValue(_ faceError: FaceError?) -> String {
+    func getFaceErrortStringValue(_ error: FaceError?) -> String {
+        
+        guard let faceError = error else {return "none"}
+        
         switch faceError {
         case .faceAngleTooLarge:
             return "faceAngleTooLarge"
@@ -215,22 +207,20 @@ private extension MainViewController {
             return "internalError"
         case .tooManyFaces:
             return "tooManyFaces"
-        case .none:
-            return "none"
         }
     }
     
     // MARK: - Buttons Preparation
     
     func uiPreparation() {
-        btnSDC.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        btnSDC.titleLabel?.textAlignment = NSTextAlignment.center
-        btnPFL.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        btnPFL.titleLabel?.textAlignment = NSTextAlignment.center
-        btnSDCwithUI.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        btnSDCwithUI.titleLabel?.textAlignment = NSTextAlignment.center
-        btnPFLwithUI.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
-        btnPFLwithUI.titleLabel?.textAlignment = NSTextAlignment.center
+        btnSDC.titleLabel?.lineBreakMode = .byWordWrapping
+        btnSDC.titleLabel?.textAlignment = .center
+        btnPFL.titleLabel?.lineBreakMode = .byWordWrapping
+        btnPFL.titleLabel?.textAlignment = .center
+        btnSDCwithUI.titleLabel?.lineBreakMode = .byWordWrapping
+        btnSDCwithUI.titleLabel?.textAlignment = .center
+        btnPFLwithUI.titleLabel?.lineBreakMode = .byWordWrapping
+        btnPFLwithUI.titleLabel?.textAlignment = .center
     }
     
     // MARK: - Observer
@@ -240,9 +230,9 @@ private extension MainViewController {
                                                name: .au10tixCoreTokenExpiration, object: nil)
     }
     
-    @objc func handleExpirationNotification (_ sender: Notification) {
-        let alert = UIAlertController(title: "Error", message: "Session Is Expired", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+    @objc func handleExpirationNotification(_ sender: Notification) {
+        let alert = UIAlertController(title: "Error", message: "Session Is Expired", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         if var topController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController {
             if let presentedViewController = topController.presentedViewController {

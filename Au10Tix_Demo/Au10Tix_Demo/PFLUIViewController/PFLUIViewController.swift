@@ -23,7 +23,7 @@ final class PFLUIViewController: UIViewController {
     // MARK: - Private Properties
     
     private var capturedImageData: Data?
-    private var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    private var activityIndicator = UIActivityIndicatorView(style: .large)
     
     // MARK: - Life cycle
     
@@ -49,8 +49,9 @@ private extension PFLUIViewController {
         Au10tixCore.shared.delegate = self
         
         let featureManager = Au10PassiveFaceLivenessFeatureManager()
-        AVCaptureDevice.requestAccess(for: .video) { granted in
+        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
             guard granted else { return }
+            guard let self = self else { return }
             
             DispatchQueue.main.async {
                 Au10tixCore.shared.startSession(with: featureManager,
@@ -88,25 +89,28 @@ private extension PFLUIViewController {
             return
         }
         
-        controller.resultString = getResultText(result).joined(separator: "\n")
+        controller.resultString = getResultText(result)
         controller.resultImage = resultImage
         navigationController?.pushViewController(controller, animated: true)
     }
     
     // Get Results Text Value
     
-    func getResultText(_ result: PassiveFaceLivenessSessionResult) -> [String] {
+    func getResultText(_ result: PassiveFaceLivenessSessionResult) ->  String {
         
-        return ["isAnalyzed - \(result.isAnalyzed)\n",
-                "score - \(result.score ?? 0)\n",
-                "quality - \(result.quality ?? 0)\n",
-                "probability - \(result.probability ?? 0)\n",
-                "faceError -\(getFaceErrortStringValue(result.faceError))\n"]
+        return ["isAnalyzed - \(result.isAnalyzed)",
+                "score - \(result.score ?? 0)",
+                "quality - \(result.quality ?? 0)",
+                "probability - \(result.probability ?? 0)",
+                "faceError -\(getFaceErrortStringValue(result.faceError))"].joined(separator: "\n")
     }
     
     // Get FaceError String Value
     
-    func getFaceErrortStringValue(_ faceError: FaceError?) -> String {
+    func getFaceErrortStringValue(_ error: FaceError?) -> String {
+        
+        guard let faceError = error else {return "none"}
+        
         switch faceError {
         case .faceAngleTooLarge:
             return "faceAngleTooLarge"
@@ -124,8 +128,6 @@ private extension PFLUIViewController {
             return "internalError"
         case .tooManyFaces:
             return "tooManyFaces"
-        case .none:
-            return "none"
         }
     }
     
@@ -133,10 +135,10 @@ private extension PFLUIViewController {
     
     func showActivityIndicator() {
         activityIndicator.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
-        activityIndicator.center = CGPoint(x: self.view.bounds.size.width / 2,
-                                           y: self.view.bounds.height / 2)
-        view.addSubview(self.activityIndicator)
-        self.activityIndicator.startAnimating()
+        activityIndicator.center = CGPoint(x: view.bounds.size.width / 2,
+                                           y: view.bounds.height / 2)
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
     }
     
     func hideActivityIndicator() {
@@ -148,21 +150,24 @@ private extension PFLUIViewController {
     
     func showDetails(_ update: PassiveFaceLivenessSessionUpdate) {
         
-        lblInfo.text = getUpdatesList(update).joined(separator: "\n")
+        lblInfo.text = getUpdatesList(update)
     }
     
     // Get Updates List
     
-    func getUpdatesList(_ update: PassiveFaceLivenessSessionUpdate) -> [String] {
+    func getUpdatesList(_ update: PassiveFaceLivenessSessionUpdate) -> String {
         
         return ["qualityFeedback - \(getQualityFaultStringValue(update.qualityFeedback?.first))",
-                "passiveFaceLivenessUpdateType - \(getPassiveFaceLivenessUpdateStringValue(update.passiveFaceLivenessUpdateType))"]
+                "passiveFaceLivenessUpdateType - \(getPassiveFaceLivenessUpdateStringValue(update.passiveFaceLivenessUpdateType))"].joined(separator: "\n")
     }
     
     // Get QualityFault String Value
     
-    func getQualityFaultStringValue(_ qualityFault: QualityFault?) -> String {
-        switch qualityFault {
+    func getQualityFaultStringValue(_ error: QualityFault?) -> String {
+        
+        guard let faceError = error else {return "none"}
+        
+        switch faceError {
         case .unstable:
             return "unstable"
         case .deviceNotVerticle:
@@ -181,8 +186,6 @@ private extension PFLUIViewController {
             return "holdSteady"
         case .noFault:
             return "noFault"
-        case .none:
-            return "none"
         }
     }
     
@@ -197,6 +200,14 @@ private extension PFLUIViewController {
         case .qualityFeedback:
             return "qualityFeedback"
         }
+    }
+    
+    // MARK: - UIAlertController
+    
+    func showAlert(_ text: String) {
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
 
@@ -242,7 +253,7 @@ extension PFLUIViewController: Au10tixSessionDelegate {
     }
     
     func didGetError(_ error: Au10tixSessionError) {
-        debugPrint(" error -\(error)")
+        showAlert(error.localizedDescription)
     }
     
     func didGetResult(_ result: Au10tixSessionResult) {
