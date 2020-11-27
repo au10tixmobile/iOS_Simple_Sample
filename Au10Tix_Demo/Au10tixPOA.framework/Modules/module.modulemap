@@ -1,0 +1,11 @@
+framework module Au10tixPOA {
+  umbrella header "Au10tixPOA-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixPOA.Swift {
+    header "Au10tixPOA-Swift.h"
+    requires objc
+}
