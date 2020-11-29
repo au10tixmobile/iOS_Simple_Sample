@@ -15,7 +15,6 @@ final class POAUIViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
-    @IBOutlet private weak var lblInfo: UILabel!
     
     // MARK: - Life cycle
     
@@ -67,18 +66,6 @@ private extension POAUIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    // MARK: - Show Updates
-    
-    func showDetails(_ update: ProofOfAddressSessionUpdate) {
-        lblInfo.text = getUpdatesList(update)
-    }
-    
-    // MARK: - Updates List
-    
-    func getUpdatesList(_ update: ProofOfAddressSessionUpdate) -> String {
-        return ""
-    }
-    
     // MARK: - UIAlertController
     
     func showAlert(_ text: String) {
@@ -94,11 +81,6 @@ extension POAUIViewController: Au10tixSessionDelegate {
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
-        // MARK: - ProofOfAddressSessionUpdate
-        
-        if let proofOfAddressSessionUpdate = update as? ProofOfAddressSessionUpdate {
-            showDetails(proofOfAddressSessionUpdate)
-        }
     }
     
     func didGetError(_ error: Au10tixSessionError) {

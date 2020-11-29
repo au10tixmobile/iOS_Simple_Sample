@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9ABB400F-1682-4385-B8D3-1D7118E2B22B"
+            uuid = "B88B3B1B-0CBB-49DB-A701-FAB04DBF019E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Au10Tix_Demo/PFLUIViewController/PFLUIViewController.swift"
+            filePath = "Au10Tix_Demo/POAViewController/POAUIViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "prepare()"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "didGetResult(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA0BC6C5-2E1E-4FAC-BE5B-D7FAD5BD76C6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Au10Tix_Demo/POAViewController/POAUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "didGetResult(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

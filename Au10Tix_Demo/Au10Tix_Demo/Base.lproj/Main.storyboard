@@ -329,39 +329,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-g5-POI">
-                                <rect key="frame" x="0.0" y="88" width="390" height="400"/>
+                                <rect key="frame" x="0.0" y="110" width="390" height="678"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-Et-Di0">
-                                <rect key="frame" x="16" y="500" width="358" height="295"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="poy-mA-yT2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nDe-Et-Di0" firstAttribute="top" secondItem="Hfb-g5-POI" secondAttribute="bottom" constant="12" id="3Qc-nC-lqY"/>
-                            <constraint firstItem="poy-mA-yT2" firstAttribute="bottom" secondItem="nDe-Et-Di0" secondAttribute="bottom" constant="15" id="V1s-BK-eak"/>
-                            <constraint firstItem="poy-mA-yT2" firstAttribute="trailing" secondItem="nDe-Et-Di0" secondAttribute="trailing" constant="16" id="XSw-9B-veE"/>
-                            <constraint firstItem="Hfb-g5-POI" firstAttribute="trailing" secondItem="poy-mA-yT2" secondAttribute="trailing" id="ZJP-pj-pWS"/>
-                            <constraint firstItem="poy-mA-yT2" firstAttribute="bottom" secondItem="Hfb-g5-POI" secondAttribute="bottom" constant="322" id="cVl-QV-ssb"/>
-                            <constraint firstItem="Hfb-g5-POI" firstAttribute="leading" secondItem="poy-mA-yT2" secondAttribute="leading" id="f60-dE-v97"/>
-                            <constraint firstItem="nDe-Et-Di0" firstAttribute="leading" secondItem="poy-mA-yT2" secondAttribute="leading" constant="16" id="joO-29-U01"/>
-                            <constraint firstItem="Hfb-g5-POI" firstAttribute="top" secondItem="poy-mA-yT2" secondAttribute="top" id="nXa-EG-15h"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="leading" secondItem="poy-mA-yT2" secondAttribute="leading" id="SGt-8t-uWG"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="trailing" secondItem="poy-mA-yT2" secondAttribute="trailing" id="SK8-Gg-327"/>
+                            <constraint firstItem="poy-mA-yT2" firstAttribute="bottom" secondItem="Hfb-g5-POI" secondAttribute="bottom" constant="22" id="rKG-c7-rmf"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="top" secondItem="poy-mA-yT2" secondAttribute="top" constant="22" id="udZ-yt-3o9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PROOF OF ADDRESS" id="bfq-FK-bkN"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="cameraView" destination="Hfb-g5-POI" id="fNk-gr-4aY"/>
-                        <outlet property="lblInfo" destination="nDe-Et-Di0" id="blr-2W-2Ro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRG-zS-AbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11" y="161"/>
+            <point key="canvasLocation" x="10.769230769230768" y="160.66350710900474"/>
         </scene>
     </scenes>
     <resources>
