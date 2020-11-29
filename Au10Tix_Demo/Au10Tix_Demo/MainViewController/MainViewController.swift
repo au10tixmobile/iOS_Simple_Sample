@@ -12,6 +12,9 @@ import Au10tixUIComponentPFL
 import Au10tixUIComponentSDC
 import Au10PassiveFaceLiveness
 import Au10SmartDocumentCaptureFeature
+import Au10tixUIComponentPOA
+import Au10tixPOA
+
 
 final class MainViewController: UIViewController {
     
@@ -19,8 +22,10 @@ final class MainViewController: UIViewController {
     
     @IBOutlet private weak var btnSDC: UIButton!
     @IBOutlet private weak var btnPFL: UIButton!
+    @IBOutlet private weak var btnPOA: UIButton!
     @IBOutlet private weak var btnSDCwithUI: UIButton!
     @IBOutlet private weak var btnPFLwithUI: UIButton!
+    @IBOutlet private weak var btnPOAwithUI: UIButton!
     
     // MARK: - Life cycle
     
@@ -49,12 +54,20 @@ private extension MainViewController {
         openPFLViewController()
     }
     
+    @IBAction func btnPOAAction() {
+        openPOAViewContrller() 
+    }
+    
     @IBAction func btnSDCwithUIAction() {
         openSDCUIComponent()
     }
     
     @IBAction func btnPFLwithUIAction() {
         openPFLUIComponent()
+    }
+    
+    @IBAction func btnPOAwithUIAction() {
+        openPOAUIComponent()
     }
 }
 
@@ -108,6 +121,20 @@ private extension MainViewController {
         present(controller, animated: true, completion: nil)
     }
     
+    // MARK: - Open PFLUIComponent
+    
+    func openPOAUIComponent() {
+        
+        let configs = UIComponentConfigs(appLogo: UIImage(),
+                                         actionButtonTint: UIColor.green,
+                                         titleTextColor: UIColor.green,
+                                         errorTextColor: UIColor.green,
+                                         canUploadImage: true,
+                                         showCloseButton: true)
+        let controller = POAViewController(configs: configs, delegate: self)
+        present(controller, animated: true, completion: nil)
+    }
+    
     // MARK: - Open PFLViewController
     
     func openPFLViewController() {
@@ -124,6 +151,17 @@ private extension MainViewController {
     func openSDCViewContrller() {
         
         guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SDCUIViewController") as? SDCUIViewController else {
+            return
+        }
+        
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: - Open SDCViewContrller
+    
+    func openPOAViewContrller() {
+        
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "POAUIViewController") as? POAUIViewController else {
             return
         }
         
@@ -152,6 +190,22 @@ private extension MainViewController {
     // MARK: - openSDCResults
     
     func openSDCResults(_ result: SmartDocumentCaptureSessionResult) {
+        
+        guard let resultImage = result.image?.uiImage else {
+            return
+        }
+        
+        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
+            return
+        }
+        
+        controller.resultImage = resultImage
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: - openPOAResults
+    
+    func openPOAResults(_ result: ProofOfAddressSessionResult) {
         
         guard let resultImage = result.image?.uiImage else {
             return
@@ -217,10 +271,14 @@ private extension MainViewController {
         btnSDC.titleLabel?.textAlignment = .center
         btnPFL.titleLabel?.lineBreakMode = .byWordWrapping
         btnPFL.titleLabel?.textAlignment = .center
+        btnPOA.titleLabel?.lineBreakMode = .byWordWrapping
+        btnPOA.titleLabel?.textAlignment = .center
         btnSDCwithUI.titleLabel?.lineBreakMode = .byWordWrapping
         btnSDCwithUI.titleLabel?.textAlignment = .center
         btnPFLwithUI.titleLabel?.lineBreakMode = .byWordWrapping
         btnPFLwithUI.titleLabel?.textAlignment = .center
+        btnPOAwithUI.titleLabel?.lineBreakMode = .byWordWrapping
+        btnPOAwithUI.titleLabel?.textAlignment = .center
     }
     
     // MARK: - Observer
@@ -267,6 +325,12 @@ extension MainViewController: Au10tixSessionDelegate {
         
         if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
             openSDCResults(documentSessionResult)
+        }
+        
+        // MARK: - ProofOfAddressSessionResult
+        
+        if let poaResult = result as? ProofOfAddressSessionResult {
+            openPOAResults(poaResult)
         }
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ue-f4-uLy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ue-f4-uLy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,19 +20,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-to-eqc">
                                 <rect key="frame" x="20" y="108" width="350" height="682"/>
                                 <subviews>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r13-rX-Xvj">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="146.66666666666666"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-6n-s1i">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="87"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PASSIVE FACE LIVENESS">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnPFLAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7W-z4-JAL"/>
+                                            <action selector="btnPFLAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWz-Vs-sSq"/>
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-LK-fpa">
-                                        <rect key="frame" x="0.0" y="178.66666666666669" width="350" height="146.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="119" width="350" height="87"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SMART DOCUMENT CAPTURING">
@@ -42,8 +42,19 @@
                                             <action selector="btnSDCAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dw8-6W-5ev"/>
                                         </connections>
                                     </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r13-rX-Xvj">
+                                        <rect key="frame" x="0.0" y="238" width="350" height="87"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <state key="normal" title="PROOF OF ADDRESS">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPOAAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2d-HC-PvA"/>
+                                        </connections>
+                                    </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-fT-fcA">
-                                        <rect key="frame" x="0.0" y="357" width="350" height="146.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="357" width="350" height="87"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SDC with UIComponents">
@@ -54,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1d-iH-iUt">
-                                        <rect key="frame" x="0.0" y="535.66666666666663" width="350" height="146.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="476" width="350" height="87"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PFL with UIComponents">
@@ -62,6 +73,17 @@
                                         </state>
                                         <connections>
                                             <action selector="btnPFLwithUIAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="kVQ-a0-s8p"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-1J-iBZ">
+                                        <rect key="frame" x="0.0" y="595" width="350" height="87"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <state key="normal" title="POA with UIComponents">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPOAwithUIAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHx-Xo-A5U"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -78,9 +100,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Au10tix" id="Lyk-2H-qP3"/>
                     <connections>
-                        <outlet property="btnPFL" destination="Ny7-LK-fpa" id="mU6-8X-nBm"/>
+                        <outlet property="btnPFL" destination="uzN-6n-s1i" id="Y4n-CV-YTd"/>
                         <outlet property="btnPFLwithUI" destination="u1d-iH-iUt" id="bJC-tv-68X"/>
-                        <outlet property="btnSDC" destination="r13-rX-Xvj" id="8AH-pI-nbB"/>
+                        <outlet property="btnPOA" destination="r13-rX-Xvj" id="oof-vz-Mfh"/>
+                        <outlet property="btnPOAwithUI" destination="MPT-1J-iBZ" id="Ded-Wf-WP2"/>
+                        <outlet property="btnSDC" destination="Ny7-LK-fpa" id="SiB-qG-u68"/>
                         <outlet property="btnSDCwithUI" destination="hqy-fT-fcA" id="1cL-0F-MSN"/>
                     </connections>
                 </viewController>
@@ -145,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjC-Ne-Pbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="-174.38423645320196"/>
+            <point key="canvasLocation" x="11" y="-546"/>
         </scene>
         <!--Results-->
         <scene sceneID="Trb-7X-e7I">
@@ -207,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTR-NI-rru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.30769230769226" y="162.08530805687204"/>
+            <point key="canvasLocation" x="1875" y="162"/>
         </scene>
         <!--PASSIVE FACE LIVENESS-->
         <scene sceneID="z2o-hh-0kM">
@@ -294,7 +318,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCH-xf-R3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.846153846153847" y="756.39810426540282"/>
+            <point key="canvasLocation" x="11" y="839"/>
+        </scene>
+        <!--PROOF OF ADDRESS-->
+        <scene sceneID="II8-QN-QI4">
+            <objects>
+                <viewController storyboardIdentifier="POAUIViewController" id="not-rb-wDK" customClass="POAUIViewController" customModule="Au10Tix_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsb-D0-dGc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-g5-POI">
+                                <rect key="frame" x="0.0" y="88" width="390" height="400"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-Et-Di0">
+                                <rect key="frame" x="16" y="500" width="358" height="295"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="poy-mA-yT2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nDe-Et-Di0" firstAttribute="top" secondItem="Hfb-g5-POI" secondAttribute="bottom" constant="12" id="3Qc-nC-lqY"/>
+                            <constraint firstItem="poy-mA-yT2" firstAttribute="bottom" secondItem="nDe-Et-Di0" secondAttribute="bottom" constant="15" id="V1s-BK-eak"/>
+                            <constraint firstItem="poy-mA-yT2" firstAttribute="trailing" secondItem="nDe-Et-Di0" secondAttribute="trailing" constant="16" id="XSw-9B-veE"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="trailing" secondItem="poy-mA-yT2" secondAttribute="trailing" id="ZJP-pj-pWS"/>
+                            <constraint firstItem="poy-mA-yT2" firstAttribute="bottom" secondItem="Hfb-g5-POI" secondAttribute="bottom" constant="322" id="cVl-QV-ssb"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="leading" secondItem="poy-mA-yT2" secondAttribute="leading" id="f60-dE-v97"/>
+                            <constraint firstItem="nDe-Et-Di0" firstAttribute="leading" secondItem="poy-mA-yT2" secondAttribute="leading" constant="16" id="joO-29-U01"/>
+                            <constraint firstItem="Hfb-g5-POI" firstAttribute="top" secondItem="poy-mA-yT2" secondAttribute="top" id="nXa-EG-15h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PROOF OF ADDRESS" id="bfq-FK-bkN"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraView" destination="Hfb-g5-POI" id="fNk-gr-4aY"/>
+                        <outlet property="lblInfo" destination="nDe-Et-Di0" id="blr-2W-2Ro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRG-zS-AbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="161"/>
         </scene>
     </scenes>
     <resources>
