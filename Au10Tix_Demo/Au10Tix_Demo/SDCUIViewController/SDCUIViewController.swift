@@ -109,6 +109,15 @@ private extension SDCUIViewController {
     }
 }
 
+// MARK: Actions
+
+private extension SDCUIViewController {
+    
+    @IBAction func takeStillImage() {
+        Au10tixCore.shared.takeStillImage()
+    }
+}
+
 // MARK: Au10tixSessionDelegate
 
 extension SDCUIViewController: Au10tixSessionDelegate {

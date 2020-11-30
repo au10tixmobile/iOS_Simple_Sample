@@ -75,6 +75,15 @@ private extension POAUIViewController {
     }
 }
 
+// MARK: Actions
+
+private extension POAUIViewController {
+    
+    @IBAction func takeStillImage() {
+        Au10tixCore.shared.takeStillImage()
+    }
+}
+
 // MARK: Au10tixSessionDelegate
 
 extension POAUIViewController: Au10tixSessionDelegate {

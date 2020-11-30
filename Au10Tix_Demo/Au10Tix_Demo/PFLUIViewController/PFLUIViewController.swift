@@ -17,6 +17,7 @@ final class PFLUIViewController: UIViewController {
     @IBOutlet private weak var cameraView: UIView!
     @IBOutlet private weak var imPreview: UIImageView!
     @IBOutlet private weak var btnAgree: UIButton!
+    @IBOutlet private weak var btnStillImage: UIButton!
     @IBOutlet private weak var btnChooseAnother: UIButton!
     @IBOutlet private weak var lblInfo: UILabel!
     
@@ -73,6 +74,7 @@ private extension PFLUIViewController {
         imPreview.isHidden = false
         btnAgree.isHidden = false
         btnChooseAnother.isHidden = false
+        btnStillImage.isHidden = true
     }
     
     // MARK: - Open ResultViewController
@@ -229,7 +231,12 @@ private extension PFLUIViewController {
         imPreview.isHidden = true
         btnAgree.isHidden = true
         btnChooseAnother.isHidden = true
+        btnStillImage.isHidden = false
         Au10tixCore.shared.resumeCapturingState()
+    }
+    
+    @IBAction func takeStillImage() {
+        Au10tixCore.shared.takeStillImage()
     }
 }
 
