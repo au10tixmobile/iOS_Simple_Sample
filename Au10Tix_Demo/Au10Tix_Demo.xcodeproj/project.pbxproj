@@ -15,7 +15,6 @@
 		9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6D962253749FE00E48DDD /* Assets.xcassets */; };
 		9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6D964253749FE00E48DDD /* LaunchScreen.storyboard */; };
 		9CAADCFA25389AF60013F9DB /* SDCUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAADCF925389AF60013F9DB /* SDCUIViewController.swift */; };
-		9CC2B6642570FC38006522D1 /* Au10tixCore in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2B65A2570FC37006522D1 /* Au10tixCore */; };
 		9CC2B6742570FD30006522D1 /* Au10tixUIComponentPOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B6732570FD30006522D1 /* Au10tixUIComponentPOA.framework */; };
 		9CC2B6752570FD30006522D1 /* Au10tixUIComponentPOA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B6732570FD30006522D1 /* Au10tixUIComponentPOA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CC2B67C2570FF80006522D1 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B6602570FC38006522D1 /* Au10SmartDocumentCaptureFeature.framework */; };
@@ -28,8 +27,6 @@
 		9CC2B6832570FFB5006522D1 /* Au10SourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B6582570FC37006522D1 /* Au10SourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CC2B6842570FFB7006522D1 /* Au10tixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B66D2570FC4E006522D1 /* Au10tixCore.framework */; };
 		9CC2B6852570FFB7006522D1 /* Au10tixCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B66D2570FC4E006522D1 /* Au10tixCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CC2B6862570FFB8006522D1 /* Au10tixPOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B65C2570FC38006522D1 /* Au10tixPOA.framework */; };
-		9CC2B6872570FFB8006522D1 /* Au10tixPOA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B65C2570FC38006522D1 /* Au10tixPOA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CC2B6882570FFBA006522D1 /* Au10tixUIComponentBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B65B2570FC37006522D1 /* Au10tixUIComponentBase.framework */; };
 		9CC2B6892570FFBA006522D1 /* Au10tixUIComponentBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B65B2570FC37006522D1 /* Au10tixUIComponentBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CC2B68A2570FFBB006522D1 /* Au10tixUIComponentPFL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B65D2570FC38006522D1 /* Au10tixUIComponentPFL.framework */; };
@@ -38,6 +35,8 @@
 		9CC2B68D2570FFBD006522D1 /* Au10tixUIComponentSDC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC2B6612570FC38006522D1 /* Au10tixUIComponentSDC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CC2B69425712116006522D1 /* POAUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2B69325712116006522D1 /* POAUIViewController.swift */; };
 		9CE444D625601B700066A8BC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE444D525601B700066A8BC /* ResultViewController.swift */; };
+		9CF873552574F24800EDDECA /* Au10tixPOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF873542574F24800EDDECA /* Au10tixPOA.framework */; };
+		9CF873562574F24800EDDECA /* Au10tixPOA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF873542574F24800EDDECA /* Au10tixPOA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,7 +50,7 @@
 				9CC2B6892570FFBA006522D1 /* Au10tixUIComponentBase.framework in Embed Frameworks */,
 				9CC2B67D2570FF80006522D1 /* Au10SmartDocumentCaptureFeature.framework in Embed Frameworks */,
 				9CC2B6812570FFB3006522D1 /* Au10PassiveFaceLiveness.framework in Embed Frameworks */,
-				9CC2B6872570FFB8006522D1 /* Au10tixPOA.framework in Embed Frameworks */,
+				9CF873562574F24800EDDECA /* Au10tixPOA.framework in Embed Frameworks */,
 				9CC2B67F2570FFB2006522D1 /* Au10DetectorManager.framework in Embed Frameworks */,
 				9CC2B68D2570FFBD006522D1 /* Au10tixUIComponentSDC.framework in Embed Frameworks */,
 				9CC2B6832570FFB5006522D1 /* Au10SourceManager.framework in Embed Frameworks */,
@@ -79,9 +78,7 @@
 		9CAADCF925389AF60013F9DB /* SDCUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCUIViewController.swift; sourceTree = "<group>"; };
 		9CC2B6582570FC37006522D1 /* Au10SourceManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SourceManager.framework; sourceTree = "<group>"; };
 		9CC2B6592570FC37006522D1 /* Au10DetectorManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10DetectorManager.framework; sourceTree = "<group>"; };
-		9CC2B65A2570FC37006522D1 /* Au10tixCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Au10tixCore; path = "../../../Downloads/fw version 26.Nov.2020/Au10tixCore"; sourceTree = "<group>"; };
 		9CC2B65B2570FC37006522D1 /* Au10tixUIComponentBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentBase.framework; sourceTree = "<group>"; };
-		9CC2B65C2570FC38006522D1 /* Au10tixPOA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Au10tixPOA.framework; path = "../../../Downloads/fw version 26.Nov.2020/Au10tixPOA.framework"; sourceTree = "<group>"; };
 		9CC2B65D2570FC38006522D1 /* Au10tixUIComponentPFL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentPFL.framework; sourceTree = "<group>"; };
 		9CC2B65E2570FC38006522D1 /* Au10PassiveFaceLiveness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10PassiveFaceLiveness.framework; sourceTree = "<group>"; };
 		9CC2B6602570FC38006522D1 /* Au10SmartDocumentCaptureFeature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10SmartDocumentCaptureFeature.framework; sourceTree = "<group>"; };
@@ -90,6 +87,8 @@
 		9CC2B6732570FD30006522D1 /* Au10tixUIComponentPOA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixUIComponentPOA.framework; sourceTree = "<group>"; };
 		9CC2B69325712116006522D1 /* POAUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POAUIViewController.swift; sourceTree = "<group>"; };
 		9CE444D525601B700066A8BC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9CF873532574F23000EDDECA /* Au10tixCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Au10tixCore; sourceTree = "<group>"; };
+		9CF873542574F24800EDDECA /* Au10tixPOA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Au10tixPOA.framework; sourceTree = "<group>"; };
 		BBEAD4EB58907193D5D49896 /* Pods-Au10Tix_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo.release.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		C4D1E70F5853C41FB53A7CDC /* Pods-Au10Tix_DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FABBA745992C65A75EBDFD85 /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,8 +107,8 @@
 				9CC2B67C2570FF80006522D1 /* Au10SmartDocumentCaptureFeature.framework in Frameworks */,
 				9CC2B6882570FFBA006522D1 /* Au10tixUIComponentBase.framework in Frameworks */,
 				9CC2B6802570FFB3006522D1 /* Au10PassiveFaceLiveness.framework in Frameworks */,
-				9CC2B6862570FFB8006522D1 /* Au10tixPOA.framework in Frameworks */,
 				9CC2B6742570FD30006522D1 /* Au10tixUIComponentPOA.framework in Frameworks */,
+				9CF873552574F24800EDDECA /* Au10tixPOA.framework in Frameworks */,
 				9CC2B68A2570FFBB006522D1 /* Au10tixUIComponentPFL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,14 +132,14 @@
 		9C1A456E25384C2500B5DBC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CF873542574F24800EDDECA /* Au10tixPOA.framework */,
+				9CF873532574F23000EDDECA /* Au10tixCore */,
 				9CC2B6732570FD30006522D1 /* Au10tixUIComponentPOA.framework */,
 				9CC2B66D2570FC4E006522D1 /* Au10tixCore.framework */,
 				9CC2B6592570FC37006522D1 /* Au10DetectorManager.framework */,
 				9CC2B65E2570FC38006522D1 /* Au10PassiveFaceLiveness.framework */,
 				9CC2B6602570FC38006522D1 /* Au10SmartDocumentCaptureFeature.framework */,
 				9CC2B6582570FC37006522D1 /* Au10SourceManager.framework */,
-				9CC2B65A2570FC37006522D1 /* Au10tixCore */,
-				9CC2B65C2570FC38006522D1 /* Au10tixPOA.framework */,
 				9CC2B65B2570FC37006522D1 /* Au10tixUIComponentBase.framework */,
 				9CC2B65D2570FC38006522D1 /* Au10tixUIComponentPFL.framework */,
 				9CC2B6612570FC38006522D1 /* Au10tixUIComponentSDC.framework */,
@@ -283,7 +282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC2B6642570FC38006522D1 /* Au10tixCore in Resources */,
 				9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
 				9CA6D961253749FC00E48DDD /* Main.storyboard in Resources */,
