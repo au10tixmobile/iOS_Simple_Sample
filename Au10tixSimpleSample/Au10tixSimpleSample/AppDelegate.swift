@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+// AppDelegate.swift
 // Au10tixSimpleSample
 //
 // Create By Au10tixon.

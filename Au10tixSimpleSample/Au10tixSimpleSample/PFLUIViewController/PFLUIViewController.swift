@@ -40,11 +40,13 @@ final class PFLUIViewController: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension PFLUIViewController {
     
-    // Prepare SDK
+    /**
+     Calls the start Session function of the Au10tixCore with the Au10PassiveFaceLivenessFeatureManager.
+     */
     
     func prepare() {
         Au10tixCore.shared.delegate = self
@@ -213,7 +215,7 @@ private extension PFLUIViewController {
     }
 }
 
-// MARK: Actions
+// MARK: - Actions
 
 private extension PFLUIViewController {
     
@@ -240,9 +242,13 @@ private extension PFLUIViewController {
     }
 }
 
-// MARK: Au10tixSessionDelegate
+// MARK: - HANDLE SESSION EVENTS
 
 extension PFLUIViewController: Au10tixSessionDelegate {
+    
+    /**
+     Gets called whenever the session has an update.
+     */
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
@@ -259,9 +265,17 @@ extension PFLUIViewController: Au10tixSessionDelegate {
         }
     }
     
+    /**
+     Gets called whenever the session has an error.
+     */
+    
     func didGetError(_ error: Au10tixSessionError) {
         showAlert(error.localizedDescription)
     }
+    
+    /**
+     Gets called when the feature session has a conclusive result .
+     */
     
     func didGetResult(_ result: Au10tixSessionResult) {
         

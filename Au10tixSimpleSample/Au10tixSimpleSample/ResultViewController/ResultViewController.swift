@@ -28,7 +28,7 @@ final class ResultViewController: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension ResultViewController {
     

@@ -1,5 +1,5 @@
 //
-// ViewController.swift
+// MainViewController.swift
 // Au10tixSimpleSample
 //
 // Create By Au10tixon.
@@ -14,7 +14,6 @@ import Au10PassiveFaceLiveness
 import Au10SmartDocumentCaptureFeature
 import Au10tixUIComponentPOA
 import Au10tixPOA
-
 
 final class MainViewController: UIViewController {
     
@@ -40,43 +39,15 @@ final class MainViewController: UIViewController {
     }
 }
 
-// MARK: - MainViewControllerActions
-
-private extension MainViewController {
-    
-    // MARK: - Actions
-    
-    @IBAction func btnSDCAction() {
-        openSDCViewContrller()
-    }
-    
-    @IBAction func btnPFLAction() {
-        openPFLViewController()
-    }
-    
-    @IBAction func btnPOAAction() {
-        openPOAViewContrller() 
-    }
-    
-    @IBAction func btnSDCwithUIAction() {
-        openSDCUIComponent()
-    }
-    
-    @IBAction func btnPFLwithUIAction() {
-        openPFLUIComponent()
-    }
-    
-    @IBAction func btnPOAwithUIAction() {
-        openPOAUIComponent()
-    }
-}
-
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension MainViewController {
     
     // MARK: - SDK Preparation
-    
+    /**
+     Use this method to prepare Au10tix SDK.
+     - warning: Use the JWT retrieved from your backend. See Au10tix guide for more info.
+     */
     func prepare() {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
@@ -91,7 +62,10 @@ private extension MainViewController {
         }
     }
     
-    // MARK: - Open SDCUIComponent
+    // MARK: - Open SMART DOCUMENT CAPTURING UI component
+    /**
+     Use this method to initialize the SMART DOCUMENT CAPTURING UI component.
+     */
     
     func openSDCUIComponent() {
         
@@ -106,7 +80,10 @@ private extension MainViewController {
         present(controller, animated: true, completion: nil)
     }
     
-    // MARK: - Open PFLUIComponent
+    // MARK: - Open PASSIVE FACE LIVENESS UI component.
+    /**
+     Use this method to initialize the PASSIVE FACE LIVENESS UI component.
+     */
     
     func openPFLUIComponent() {
         
@@ -121,7 +98,10 @@ private extension MainViewController {
         present(controller, animated: true, completion: nil)
     }
     
-    // MARK: - Open PFLUIComponent
+    // MARK: - Open PROOF OF ADDRESS UI component.
+    /**
+     Use this method to initialize the PROOF OF ADDRESS UI component.
+     */
     
     func openPOAUIComponent() {
         
@@ -157,7 +137,7 @@ private extension MainViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    // MARK: - Open SDCViewContrller
+    // MARK: - Open POAUIViewController
     
     func openPOAViewContrller() {
         
@@ -227,8 +207,6 @@ private extension MainViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    // Get Results Text Value
-    
     func getResultText(_ result: PassiveFaceLivenessSessionResult) -> String {
         
         return ["isAnalyzed - \(result.isAnalyzed)",
@@ -237,8 +215,6 @@ private extension MainViewController {
                 "probability - \(result.probability ?? 0)",
                 "faceError -\(getFaceErrortStringValue(result.faceError))"].joined(separator: "\n")
     }
-    
-    // Get FaceError String Value
     
     func getFaceErrortStringValue(_ error: FaceError?) -> String {
         
@@ -301,17 +277,58 @@ private extension MainViewController {
     }
 }
 
-// MARK: Au10tixSessionDelegate
+// MARK: - Actions
+
+private extension MainViewController {
+    
+    @IBAction func btnSDCAction() {
+        openSDCViewContrller()
+    }
+    
+    @IBAction func btnPFLAction() {
+        openPFLViewController()
+    }
+    
+    @IBAction func btnPOAAction() {
+        openPOAViewContrller()
+    }
+    
+    @IBAction func btnSDCwithUIAction() {
+        openSDCUIComponent()
+    }
+    
+    @IBAction func btnPFLwithUIAction() {
+        openPFLUIComponent()
+    }
+    
+    @IBAction func btnPOAwithUIAction() {
+        openPOAUIComponent()
+    }
+}
+
+// MARK: - HANDLE SESSION EVENTS
 
 extension MainViewController: Au10tixSessionDelegate {
+    
+    /**
+     Gets called whenever the session has an update. 
+     */
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         debugPrint(" update -\(update)")
     }
     
+    /**
+     Gets called whenever the session has an error.
+     */
+    
     func didGetError(_ error: Au10tixSessionError) {
         debugPrint(" error -\(error)")
     }
+    
+    /**
+     Gets called when the feature session has a conclusive result .
+     */
     
     func didGetResult(_ result: Au10tixSessionResult) {
         

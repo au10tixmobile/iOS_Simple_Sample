@@ -4,6 +4,7 @@
 //
 // Create By Au10tixon.
 //
+
 import UIKit
 import Au10tixCore
 import Au10SmartDocumentCaptureFeature
@@ -30,11 +31,13 @@ final class SDCUIViewController: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension SDCUIViewController {
     
-    // Prepare SDK
+    /**
+     Calls the start Session function of the Au10tixCore with the SmartDocumentFeatureManager.
+     */
     
     func prepare() {
         Au10tixCore.shared.delegate = self
@@ -109,7 +112,7 @@ private extension SDCUIViewController {
     }
 }
 
-// MARK: Actions
+// MARK: - Actions
 
 private extension SDCUIViewController {
     
@@ -118,9 +121,13 @@ private extension SDCUIViewController {
     }
 }
 
-// MARK: Au10tixSessionDelegate
+// MARK: - HANDLE SESSION EVENTS
 
 extension SDCUIViewController: Au10tixSessionDelegate {
+    
+    /**
+     Gets called whenever the session has an update.
+     */
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
@@ -131,9 +138,17 @@ extension SDCUIViewController: Au10tixSessionDelegate {
         }
     }
     
+    /**
+     Gets called whenever the session has an error.
+     */
+    
     func didGetError(_ error: Au10tixSessionError) {
         showAlert(error.localizedDescription)
     }
+    
+    /**
+     Gets called when the feature session has a conclusive result .
+     */
     
     func didGetResult(_ result: Au10tixSessionResult) {
         

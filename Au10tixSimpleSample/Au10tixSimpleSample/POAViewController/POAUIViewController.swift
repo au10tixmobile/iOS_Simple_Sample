@@ -30,11 +30,13 @@ final class POAUIViewController: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension POAUIViewController {
     
-    // Prepare SDK
+    /**
+     Calls the start Session function of the Au10tixCore with the ProofOfAddressFeatureManager.
+     */
     
     func prepare() {
         Au10tixCore.shared.delegate = self
@@ -75,7 +77,7 @@ private extension POAUIViewController {
     }
 }
 
-// MARK: Actions
+// MARK: - Actions
 
 private extension POAUIViewController {
     
@@ -84,17 +86,29 @@ private extension POAUIViewController {
     }
 }
 
-// MARK: Au10tixSessionDelegate
+// MARK: - HANDLE SESSION EVENTS
 
 extension POAUIViewController: Au10tixSessionDelegate {
+    
+    /**
+     Gets called whenever the session has an update.
+     */
     
     func didGetUpdate(_ update: Au10tixSessionUpdate) {
         
     }
     
+    /**
+     Gets called whenever the session has an error.
+     */
+    
     func didGetError(_ error: Au10tixSessionError) {
         showAlert(error.localizedDescription)
     }
+    
+    /**
+     Gets called when the feature session has a conclusive result .
+     */
     
     func didGetResult(_ result: Au10tixSessionResult) {
         
