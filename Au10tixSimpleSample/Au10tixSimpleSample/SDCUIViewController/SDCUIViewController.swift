@@ -7,7 +7,7 @@
 
 import UIKit
 import Au10tixCore
-import Au10SmartDocumentCaptureFeature
+import Au10tixSmartDocumentCaptureKit
 import AVFoundation
 
 final class SDCUIViewController: UIViewController {
@@ -42,7 +42,7 @@ private extension SDCUIViewController {
     func prepare() {
         Au10tixCore.shared.delegate = self
         
-        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager(isSmart: true)
+        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager(isSmart: true, isFrontSide: true)
         AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
             guard granted else { return }
             guard let self = self else { return }

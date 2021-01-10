@@ -1,5 +1,5 @@
 framework module Au10SourceManager {
-  umbrella header "source-manager-umbrella.h"
+  umbrella header "Au10SourceManager-umbrella.h"
 
   export *
   module * { export * }

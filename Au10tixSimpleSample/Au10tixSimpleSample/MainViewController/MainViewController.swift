@@ -7,13 +7,13 @@
 
 import UIKit
 import Au10tixCore
-import Au10tixUIComponentBase
-import Au10tixUIComponentPFL
-import Au10tixUIComponentSDC
-import Au10PassiveFaceLiveness
-import Au10SmartDocumentCaptureFeature
-import Au10tixUIComponentPOA
-import Au10tixPOA
+import Au10tixBaseUI
+import Au10tixProofOfAddressKit
+import Au10tixSmartDocumentCaptureKit
+import Au10tixPassiveFaceLivenessKit
+import Au10tixProofOfAddressUI
+import Au10tixSmartDocumentCaptureUI
+import Au10tixPassiveFaceLivenessUI
 
 final class MainViewController: UIViewController {
     
@@ -76,7 +76,7 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         
-        let controller = SDCViewController(configs: configs, delegate: self)
+        let controller = SDCViewController(configs: configs, delegate: self, isFrontSide: true)
         present(controller, animated: true, completion: nil)
     }
     

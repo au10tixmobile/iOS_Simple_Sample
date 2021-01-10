@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 import Au10tixCore
-import Au10tixPOA
+import Au10tixProofOfAddressKit
 
 final class POAUIViewController: UIViewController {
     

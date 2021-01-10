@@ -7,7 +7,7 @@
 
 import UIKit
 import Au10tixCore
-import Au10PassiveFaceLiveness
+import Au10tixPassiveFaceLivenessKit
 import AVFoundation
 
 final class PFLUIViewController: UIViewController {

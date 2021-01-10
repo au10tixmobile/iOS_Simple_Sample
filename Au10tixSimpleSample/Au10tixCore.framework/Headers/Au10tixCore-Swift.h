@@ -347,11 +347,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tixCore 
 @end
 
 
-
 @interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
 - (void)pauseCamera;
 - (void)resumeCamera;
 @end
+
 
 
 
