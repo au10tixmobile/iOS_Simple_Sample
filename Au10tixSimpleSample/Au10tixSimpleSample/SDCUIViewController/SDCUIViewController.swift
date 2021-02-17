@@ -8,10 +8,10 @@
 import UIKit
 import Au10tixCore
 import Au10tixSmartDocumentCaptureKit
-import AVFoundation
 
 final class SDCUIViewController: UIViewController {
     
+    private let sdcSession = SDCSession()
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
@@ -27,7 +27,7 @@ final class SDCUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Au10tixCore.shared.stopSession()
+        sdcSession.stop()
     }
 }
 
@@ -40,67 +40,57 @@ private extension SDCUIViewController {
      */
     
     func prepare() {
-        Au10tixCore.shared.delegate = self
-        
-        let au10SmartDocumentFeatureManager = SmartDocumentFeatureManager(isSmart: true, isFrontSide: true)
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            guard granted else { return }
+        guard let token = Au10tixCore.shared.bearerToken else { return }
+        sdcSession.delegate = self
+        sdcSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
-            
-            DispatchQueue.main.async {
-                Au10tixCore.shared.startSession(with: au10SmartDocumentFeatureManager,
-                                                previewView: self.cameraView)
+            switch result {
+            case .failure(let prepareError):
+                self.showAlert("Prepare Error: \(prepareError)")
+            case .success(let sessionId):
+                debugPrint("start with sessionId: " + sessionId)
             }
         }
     }
     
     // MARK: - Open ResultViewController
     
-    func openSDCResults(_ result: SmartDocumentCaptureSessionResult) {
-        
-        guard let resultImage = result.image?.uiImage else {
+    func openSDCResults(_ image: Au10Image) {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultImage = resultImage
+        controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: - Show Updates
     
-    func showDetails(_ update: SmartDocumentCaptureSessionUpdate) {
-        lblInfo.text = getUpdatesList(update)
+    func showDetails(_ processingStatus: SDCProcessingStatus) {
+        lblInfo.text = getUpdatesList(processingStatus)
     }
     
     // MARK: - Updates List
     
-    func getUpdatesList(_ update: SmartDocumentCaptureSessionUpdate) -> String {
+    func getUpdatesList(_ processingStatus: SDCProcessingStatus) -> String {
         
-        return ["blurScore \(update.blurScore)",
-                "reflectionScore \(update.reflectionScore)",
-                "idStatus \(update.idStatus)",
-                "blurStatus \(update.blurStatus)",
-                "reflectionStatus \(update.reflectionStatus)",
-                "darkStatus \(update.darkStatus)",
-                "StabilityStatus \(getStringValue(update.stabilityStatus))"].joined(separator: "\n")
-    }
-    
-    // Get StabilityStatus String Value
-    
-    func getStringValue(_ error: SmartDocumentCaptureSessionUpdate.StabilityStatus?) -> String {
+        var arr: [String] = []
         
-        guard let stabilityStatus = error else {return "none"}
-        
-        switch stabilityStatus {
-        case .stable:
-            return "stable"
-        case .notStable:
-            return "notStable"
+        if let idStatus = processingStatus.idStatus {
+            arr += ["reflectionScore: \(idStatus)"]
         }
+                
+        if let closeStatus = processingStatus.closeStatus {
+            arr += ["closeStatus: \(closeStatus)"]
+        }
+        
+        if let tooFarStatus = processingStatus.tooFarStatus {
+            arr += ["tooFarStatus: \(tooFarStatus)"]
+        }
+        
+        arr += ["isValid: \(processingStatus.isValid)"]
+        
+        return arr.joined(separator: "\n")
     }
     
     // MARK: - UIAlertController
@@ -117,45 +107,33 @@ private extension SDCUIViewController {
 private extension SDCUIViewController {
     
     @IBAction func takeStillImage() {
-        Au10tixCore.shared.takeStillImage()
+        sdcSession.captureImage()
     }
 }
 
 // MARK: - HANDLE SESSION EVENTS
 
-extension SDCUIViewController: Au10tixSessionDelegate {
+extension SDCUIViewController: SDCSessionDelegate {
     
     /**
-     Gets called whenever the session has an update.
+    Gets Called when Smart Documet session failed
      */
-    
-    func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        
-        // MARK: - SmartDocumentCaptureSessionUpdate
-        
-        if let documentSessionUpdate = update as? SmartDocumentCaptureSessionUpdate {
-            showDetails(documentSessionUpdate)
-        }
+    func sdcSession(_ sdcSession: SDCSession, didFailWithError error: SDCSessionError) {
+        showAlert("SDCError \(error)")
     }
     
     /**
-     Gets called whenever the session has an error.
+    Gets Called when Smart Documet result is received and processed
      */
-    
-    func didGetError(_ error: Au10tixSessionError) {
-        showAlert(error.localizedDescription)
+    func sdcSession(_ sdcSession: SDCSession, didProcess processingStatus: SDCProcessingStatus) {
+        showDetails(processingStatus)
     }
     
     /**
-     Gets called when the feature session has a conclusive result .
+    Gets Called when document was taken
      */
-    
-    func didGetResult(_ result: Au10tixSessionResult) {
-        
-        // MARK: - SmartDocumentCaptureSessionResult
-        
-        if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
-            openSDCResults(documentSessionResult)
-        }
+    func sdcSession(_ sdcSession: SDCSession, didCapture image: Au10Image, croppedImage: Au10Image?, with processingStatus: SDCProcessingStatus) {
+        openSDCResults(croppedImage ?? image)
     }
+    
 }
