@@ -161,7 +161,6 @@ private extension MainViewController {
     // MARK: - Open ResultViewController
     
     func openPFLResult(_ image: UIImage, resultString: String) {
-        
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }

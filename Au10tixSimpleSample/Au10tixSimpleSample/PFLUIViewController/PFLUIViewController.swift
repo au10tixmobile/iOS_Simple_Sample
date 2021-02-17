@@ -8,10 +8,10 @@
 import UIKit
 import Au10tixCore
 import Au10tixPassiveFaceLivenessKit
-import AVFoundation
 
 final class PFLUIViewController: UIViewController {
     
+    private let pflSession = PFLSession()
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
@@ -36,7 +36,7 @@ final class PFLUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Au10tixCore.shared.stopSession()
+        pflSession.stop()
     }
 }
 
@@ -49,16 +49,15 @@ private extension PFLUIViewController {
      */
     
     func prepare() {
-        Au10tixCore.shared.delegate = self
-        
-        let featureManager = Au10PassiveFaceLivenessFeatureManager()
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            guard granted else { return }
+        guard let token = Au10tixCore.shared.bearerToken else { return }
+        pflSession.delegate = self
+        pflSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
-            
-            DispatchQueue.main.async {
-                Au10tixCore.shared.startSession(with: featureManager,
-                                                previewView: self.cameraView)
+            switch result {
+            case .failure(let prepareError):
+                self.showAlert("Prepare Error: \(prepareError)")
+            case .success(let sessionId):
+                debugPrint("start with sessionId: " + sessionId)
             }
         }
     }
@@ -81,37 +80,114 @@ private extension PFLUIViewController {
     
     // MARK: - Open ResultViewController
     
-    func openPFLResults(_ result: PassiveFaceLivenessSessionResult) {
-        
-        guard let resultImage = UIImage(data: result.imageData),
-              result.isAnalyzed,
-              result.faceError == nil else {
+    func openPFLResult(_ image: UIImage, resultString: String) {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultString = getResultText(result)
-        controller.resultImage = resultImage
+        controller.resultString = resultString
+        controller.resultImage = image
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    // Get Results Text Value
+    // MARK: - Activity Indicator Actions
     
-    func getResultText(_ result: PassiveFaceLivenessSessionResult) ->  String {
-        
-        return ["isAnalyzed - \(result.isAnalyzed)",
-                "score - \(result.score ?? 0)",
-                "quality - \(result.quality ?? 0)",
-                "probability - \(result.probability ?? 0)",
-                "faceError -\(getFaceErrortStringValue(result.faceError))"].joined(separator: "\n")
+    func showActivityIndicator() {
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
+        activityIndicator.center = CGPoint(x: view.bounds.size.width / 2,
+                                           y: view.bounds.height / 2)
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
     }
     
-    // Get FaceError String Value
+    func hideActivityIndicator() {
+        activityIndicator.stopAnimating()
+        activityIndicator.removeFromSuperview()
+    }
+   
+    // Get QualityFault String Value
     
-    func getFaceErrortStringValue(_ error: FaceError?) -> String {
+    private func getQualityFaultStringValue(_ fault: QualityFault?) -> String {
+        
+        guard let fault = fault else {return "none"}
+        
+        switch fault {
+        case .unstable:
+            return "unstable"
+        case .deviceNotVerticle:
+            return "deviceNotVerticle"
+        case .faceNotDetectedInImage:
+            return "faceNotDetectedInImage"
+        case .tooManyFaces:
+            return "tooManyFaces"
+        case .faceTooFarFromCamera:
+            return "faceTooFarFromCamera"
+        case .faceTooCloseToCamera:
+            return "faceTooCloseToCamera"
+        case .faceNotFacingDirectlyAtCamera:
+            return "faceNotFacingDirectlyAtCamera"
+        case .holdSteady:
+            return "holdSteady"
+        case .noFault:
+            return "noFault"
+        }
+    }
+    
+    // MARK: - UIAlertController
+    
+    func showAlert(_ text: String) {
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+}
+
+// MARK: - Actions
+
+private extension PFLUIViewController {
+    
+    @IBAction func agreedAction() {
+        guard let imageData = capturedImageData else {
+            return
+        }
+        
+        showActivityIndicator()
+        pflSession.validateImage(imageData)
+    }
+    
+    @IBAction func resumeCapturing() {
+        cameraView.isHidden = false
+        imPreview.isHidden = true
+        btnAgree.isHidden = true
+        btnChooseAnother.isHidden = true
+        btnStillImage.isHidden = false
+        pflSession.recapture()
+    }
+    
+    @IBAction func takeStillImage() {
+        pflSession.captureImage()
+    }
+}
+
+// MARK: - HANDLE SESSION EVENTS
+
+extension PFLUIViewController: PFLSessionDelegate {
+    
+    /**
+    Gets Called upon image sample is captured
+     */
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, faceBoundingBox: CGRect?) {
+        showPreviewImage(image)
+    }
+    
+    /**
+    Gets Called for quality feedbcak while capturing session is running
+     */
+    func pflSession(_ pflSession: PFLSession, didRecieve qualityFeedback: QualityFaultOptions) {
+        lblInfo.text = getQualityFaultStringValue(qualityFeedback.first)
+    }
+    
+    private func getFaceErrortStringValue(_ error: FaceError?) -> String {
         
         guard let faceError = error else {return "none"}
         
@@ -135,157 +211,34 @@ private extension PFLUIViewController {
         }
     }
     
-    // MARK: - Activity Indicator Actions
-    
-    func showActivityIndicator() {
-        activityIndicator.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
-        activityIndicator.center = CGPoint(x: view.bounds.size.width / 2,
-                                           y: view.bounds.height / 2)
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-    }
-    
-    func hideActivityIndicator() {
-        activityIndicator.stopAnimating()
-        activityIndicator.removeFromSuperview()
-    }
-    
-    // MARK: - Show Updates
-    
-    func showDetails(_ update: PassiveFaceLivenessSessionUpdate) {
+    private func getPflResultText(_ result: PFLResponse) -> String {
         
-        lblInfo.text = getUpdatesList(update)
-    }
-    
-    // Get Updates List
-    
-    func getUpdatesList(_ update: PassiveFaceLivenessSessionUpdate) -> String {
-        
-        return ["qualityFeedback - \(getQualityFaultStringValue(update.qualityFeedback?.first))",
-                "passiveFaceLivenessUpdateType - \(getPassiveFaceLivenessUpdateStringValue(update.passiveFaceLivenessUpdateType))"].joined(separator: "\n")
-    }
-    
-    // Get QualityFault String Value
-    
-    func getQualityFaultStringValue(_ error: QualityFault?) -> String {
-        
-        guard let faceError = error else {return "none"}
-        
-        switch faceError {
-        case .unstable:
-            return "unstable"
-        case .deviceNotVerticle:
-            return "deviceNotVerticle"
-        case .faceNotDetectedInImage:
-            return "faceNotDetectedInImage"
-        case .tooManyFaces:
-            return "tooManyFaces"
-        case .faceTooFarFromCamera:
-            return "faceTooFarFromCamera"
-        case .faceTooCloseToCamera:
-            return "faceTooCloseToCamera"
-        case .faceNotFacingDirectlyAtCamera:
-            return "faceNotFacingDirectlyAtCamera"
-        case .holdSteady:
-            return "holdSteady"
-        case .noFault:
-            return "noFault"
-        }
-    }
-    
-    // Get PassiveFaceLivenessUpdateType String Value
-    
-    func getPassiveFaceLivenessUpdateStringValue(_ passiveFaceLivenessUpdateType: PassiveFaceLivenessUpdateType) -> String {
-        switch passiveFaceLivenessUpdateType {
-        case .imageCaptured:
-            return "imageCaptured"
-        case .passedThreshold:
-            return "passedThreshold"
-        case .qualityFeedback:
-            return "qualityFeedback"
-        }
-    }
-    
-    // MARK: - UIAlertController
-    
-    func showAlert(_ text: String) {
-        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
-}
-
-// MARK: - Actions
-
-private extension PFLUIViewController {
-    
-    @IBAction func agreedAction() {
-        guard let imageData = capturedImageData else {
-            return
-        }
-        
-        showActivityIndicator()
-        Au10tixCore.shared.validateImage(imageData)
-    }
-    
-    @IBAction func resumeCapturing() {
-        cameraView.isHidden = false
-        imPreview.isHidden = true
-        btnAgree.isHidden = true
-        btnChooseAnother.isHidden = true
-        btnStillImage.isHidden = false
-        Au10tixCore.shared.resumeCapturingState()
-    }
-    
-    @IBAction func takeStillImage() {
-        Au10tixCore.shared.takeStillImage()
-    }
-}
-
-// MARK: - HANDLE SESSION EVENTS
-
-extension PFLUIViewController: Au10tixSessionDelegate {
-    
-    /**
-     Gets called whenever the session has an update.
-     */
-    
-    func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        
-        // MARK: - PassiveFaceLivenessSessionUpdate
-        
-        if let livenessUpdate = update as? PassiveFaceLivenessSessionUpdate {
-            
-            showDetails(livenessUpdate)
-            guard let imageCaptured = livenessUpdate.capturedImage else {
-                return
-            }
-            
-            showPreviewImage(imageCaptured)
-        }
+        return ["score - \(result.score ?? 0)",
+                "quality - \(result.quality ?? 0)",
+                "probability - \(result.probability ?? 0)",
+                "faceError -\(getFaceErrortStringValue(result.error_code?.toFaceError))"].joined(separator: "\n")
     }
     
     /**
-     Gets called whenever the session has an error.
+    Gets Called when on PFL liveness check result
      */
-    
-    func didGetError(_ error: Au10tixSessionError) {
-        showAlert(error.localizedDescription)
+    func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
+        guard let uiImage = UIImage(data: image) else { return }
+        self.openPFLResult(uiImage, resultString: getPflResultText(result))
     }
     
     /**
-     Gets called when the feature session has a conclusive result .
+    Gets Called when PFL passed liveness probabillity
      */
-    
-    func didGetResult(_ result: Au10tixSessionResult) {
-        
-        // MARK: - PassiveFaceLivenessSessionResult
-        
-        hideActivityIndicator()
-        
-        if let livenessResult = result as? PassiveFaceLivenessSessionResult {
-            
-            openPFLResults(livenessResult)
-        }
+    func pflSession(_ pflSession: PFLSession, didPassProbabilityThresholdFor image: Data) {
+        lblInfo.text = "Passed ProbabilityThreshold"
     }
+    
+    /**
+    Gets Called when PFL failed
+     */
+    func pflSession(_ pflSession: PFLSession, didFailWith error: PFLSessionError) {
+        showAlert("PFLError \(error)")
+    }
+    
 }
