@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 import Au10tixCore
 import Au10tixBaseUI
 import Au10tixProofOfAddressKit
@@ -42,6 +43,34 @@ final class MainViewController: UIViewController {
 // MARK: - Private Methods
 
 private extension MainViewController {
+    
+    
+    // MARK: - SDK Preparation
+    /**
+     Use this method to prepare Au10tix SDK.
+     - warning: Use the JWT retrieved from your backend. See Au10tix guide for more info.
+     */
+    func prepare() {
+        
+        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+            guard granted else { return }
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.showAlert("Video Permission was not granted")
+            }
+        }
+        
+        #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
+        
+        Au10tixCore.shared.prepare(with: "") { [weak self] result in
+            switch result {
+            case .success(let sessionID):
+                debugPrint("sessionID -\(sessionID)")
+            case .failure(let error):
+                self?.showAlert(error.localizedDescription)
+            }
+        }
+    }
     
     // MARK: - Open SMART DOCUMENT CAPTURING UI component
     /**

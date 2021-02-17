@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AVFoundation
 import Au10tixCore
 import Au10tixProofOfAddressKit
 
@@ -39,22 +38,16 @@ private extension POAUIViewController {
      */
     
     func prepare() {
+        guard let token = Au10tixCore.shared.bearerToken else { return }
         poaSession.delegate = self
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            guard granted else { return }
+        
+        self.poaSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
-            
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                self.poaSession.start(with: <#T##String#>, previewView: self.cameraView) { [weak self](result) in
-                    guard let self = self else { return }
-                    switch result {
-                    case .failure(let prepareError):
-                        self.showAlert("Prepare Error: \(prepareError)")
-                    case .success(let sessionId):
-                        debugPrint("start with sessionId: " + sessionId)
-                    }
-                }
+            switch result {
+            case .failure(let prepareError):
+                self.showAlert("Prepare Error: \(prepareError)")
+            case .success(let sessionId):
+                debugPrint("start with sessionId: " + sessionId)
             }
         }
     }
