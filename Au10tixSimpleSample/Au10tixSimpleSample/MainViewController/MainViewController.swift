@@ -15,18 +15,14 @@ import Au10tixPassiveFaceLivenessKit
 import Au10tixProofOfAddressUI
 import Au10tixSmartDocumentCaptureUI
 import Au10tixPassiveFaceLivenessUI
+import Au10tixBEKit
 
 final class MainViewController: UIViewController {
     
     private var pflResultString: String?
-    // MARK: - IBOutlets
     
-    @IBOutlet private weak var btnSDC: UIButton!
-    @IBOutlet private weak var btnPFL: UIButton!
-    @IBOutlet private weak var btnPOA: UIButton!
-    @IBOutlet private weak var btnSDCwithUI: UIButton!
-    @IBOutlet private weak var btnPFLwithUI: UIButton!
-    @IBOutlet private weak var btnPOAwithUI: UIButton!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var stackView: UIStackView!
     
     // MARK: - Life cycle
     
@@ -208,18 +204,13 @@ private extension MainViewController {
     // MARK: - Buttons Preparation
     
     func uiPreparation() {
-        btnSDC.titleLabel?.lineBreakMode = .byWordWrapping
-        btnSDC.titleLabel?.textAlignment = .center
-        btnPFL.titleLabel?.lineBreakMode = .byWordWrapping
-        btnPFL.titleLabel?.textAlignment = .center
-        btnPOA.titleLabel?.lineBreakMode = .byWordWrapping
-        btnPOA.titleLabel?.textAlignment = .center
-        btnSDCwithUI.titleLabel?.lineBreakMode = .byWordWrapping
-        btnSDCwithUI.titleLabel?.textAlignment = .center
-        btnPFLwithUI.titleLabel?.lineBreakMode = .byWordWrapping
-        btnPFLwithUI.titleLabel?.textAlignment = .center
-        btnPOAwithUI.titleLabel?.lineBreakMode = .byWordWrapping
-        btnPOAwithUI.titleLabel?.textAlignment = .center
+        stackView.arrangedSubviews
+            .compactMap{ $0 as? UIButton }
+            .compactMap{ $0.titleLabel}
+            .forEach {
+                $0.lineBreakMode = .byWordWrapping
+                $0.textAlignment = .center
+            }
     }
     
     // MARK: - Observer
@@ -268,6 +259,21 @@ private extension MainViewController {
     
     @IBAction func btnPOAwithUIAction() {
         openPOAUIComponent()
+    }
+    
+    @IBAction func sendIdvRequest(sender: UIButton) {
+        let originalTitle = sender.title(for: .normal)
+        sender.setTitle("Sending...", for: .normal)
+        Au10tixBackendKit.shared.sendIDVerificationFlow { [weak self] result in
+            guard let self = self else { return }
+            sender.setTitle(originalTitle, for: .normal)
+            switch result {
+            case .success(let requestId):
+                self.showAlert("✅ RequestId: " + requestId)
+            case .failure(let error):
+                self.showAlert("❌ \(error)")
+            }
+        }
     }
 }
 
