@@ -86,6 +86,7 @@ private extension MainViewController {
                                          showCloseButton: true)
         
         let controller = SDCViewController(configs: configs, navigationDelegate: self)
+        controller.sdcDelegate = self
         present(controller, animated: true, completion: nil)
     }
     
