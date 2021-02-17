@@ -86,7 +86,7 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         
-        let controller = SDCViewController(configs: configs, delegate: self, isFrontSide: true)
+        let controller = SDCViewController(configs: configs, navigationDelegate: self)
         present(controller, animated: true, completion: nil)
     }
     
@@ -104,7 +104,7 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         
-        let controller = PFLViewController(configs: configs, delegate: self)
+        let controller = PFLViewController(configs: configs, navigationDelegate: self)
         present(controller, animated: true, completion: nil)
     }
     
@@ -121,7 +121,7 @@ private extension MainViewController {
                                          errorTextColor: UIColor.green,
                                          canUploadImage: true,
                                          showCloseButton: true)
-        let controller = POAViewController(configs: configs, delegate: self)
+        let controller = POAViewController(configs: configs, navigationDelegate: self)
         present(controller, animated: true, completion: nil)
     }
     
@@ -160,52 +160,36 @@ private extension MainViewController {
     
     // MARK: - Open ResultViewController
     
-    func openPFLResults(_ result: PassiveFaceLivenessSessionResult) {
+    func openPFLResult(_ image: UIImage, resultString: String) {
         
-        guard let resultImage = UIImage(data: result.imageData),
-              result.isAnalyzed,
-              result.faceError == nil else {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultString = getResultText(result)
-        controller.resultImage = resultImage
+        controller.resultString = resultString
+        controller.resultImage = image
         navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: - openSDCResults
     
-    func openSDCResults(_ result: SmartDocumentCaptureSessionResult) {
-        
-        guard let resultImage = result.image?.uiImage else {
+    func openSDCResult(_ image: Au10Image) {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultImage = resultImage
+        controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: - openPOAResults
     
-    func openPOAResults(_ result: ProofOfAddressSessionResult) {
-        
-        guard let resultImage = result.image?.uiImage else {
+    func openPOAResult(_ image: Au10Image) {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultImage = resultImage
+        controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -215,39 +199,6 @@ private extension MainViewController {
         let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-    
-    func getResultText(_ result: PassiveFaceLivenessSessionResult) -> String {
-        
-        return ["isAnalyzed - \(result.isAnalyzed)",
-                "score - \(result.score ?? 0)",
-                "quality - \(result.quality ?? 0)",
-                "probability - \(result.probability ?? 0)",
-                "faceError -\(getFaceErrortStringValue(result.faceError))"].joined(separator: "\n")
-    }
-    
-    func getFaceErrortStringValue(_ error: FaceError?) -> String {
-        
-        guard let faceError = error else {return "none"}
-        
-        switch faceError {
-        case .faceAngleTooLarge:
-            return "faceAngleTooLarge"
-        case .faceCropped:
-            return "faceCropped"
-        case .faceNotFound:
-            return "faceNotFound"
-        case .faceTooClose:
-            return "faceTooClose"
-        case .faceTooCloseToBorder:
-            return "faceTooCloseToBorder"
-        case .faceTooSmall:
-            return "faceTooSmall"
-        case .internalError:
-            return "internalError"
-        case .tooManyFaces:
-            return "tooManyFaces"
-        }
     }
     
     // MARK: - Buttons Preparation
@@ -316,48 +267,141 @@ private extension MainViewController {
     }
 }
 
-// MARK: - HANDLE SESSION EVENTS
+//MARK: - POASessionDelegate
 
-extension MainViewController: Au10tixSessionDelegate {
+extension MainViewController: POASessionDelegate {
     
     /**
-     Gets called whenever the session has an update. 
+    Gets Called when Proof Of Address session failed
      */
-    
-    func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        debugPrint(" update -\(update)")
+    func poaSession(_ poaSession: POASession, didFailWith error: POASessionError) {
+        
     }
     
     /**
-     Gets called whenever the session has an error.
+    Gets Called when Proof Of Address image was taken
      */
+    func poaSession(_ poaSession: POASession, didCapture image: Au10Image, with frameData: Au10Update) {
+        openPOAResult(image)
+    }
     
-    func didGetError(_ error: Au10tixSessionError) {
-        debugPrint(" error -\(error)")
+}
+
+//MARK: - SDCSessionDelegate
+
+extension MainViewController: SDCSessionDelegate {
+    
+    /**
+    Gets Called when Smart Documet session failed
+     */
+    func sdcSession(_ sdcSession: SDCSession, didFailWithError error: SDCSessionError) {
+        
     }
     
     /**
-     Gets called when the feature session has a conclusive result .
+    Gets Called when Smart Documet result is received and processed
      */
+    func sdcSession(_ sdcSession: SDCSession, didProcess processingStatus: SDCProcessingStatus) {
+        
+    }
     
-    func didGetResult(_ result: Au10tixSessionResult) {
+    /**
+    Gets Called when document was taken
+     */
+    func sdcSession(_ sdcSession: SDCSession, didCapture image: Au10Image, croppedImage: Au10Image?, with processingStatus: SDCProcessingStatus) {
+        openSDCResult(croppedImage ?? image)
+    }
+    
+}
+
+//MARK: - PFLSessionDelegate
+
+extension MainViewController: PFLSessionDelegate {
+    
+    /**
+    Gets Called upon image sample is captured
+     */
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, faceBoundingBox: CGRect?) {
         
-        // MARK: - PassiveFaceLivenessSessionResult
+    }
+    
+    /**
+    Gets Called for quality feedbcak while capturing session is running
+     */
+    func pflSession(_ pflSession: PFLSession, didRecieve qualityFeedback: QualityFaultOptions) {
         
-        if let livenessResult = result as? PassiveFaceLivenessSessionResult {
-            openPFLResults(livenessResult)
-        }
+    }
+    
+    private func getFaceErrortStringValue(_ error: FaceError?) -> String {
         
-        // MARK: - SmartDocumentCaptureSessionResult
+        guard let faceError = error else {return "none"}
         
-        if let documentSessionResult = result as? SmartDocumentCaptureSessionResult {
-            openSDCResults(documentSessionResult)
-        }
-        
-        // MARK: - ProofOfAddressSessionResult
-        
-        if let poaResult = result as? ProofOfAddressSessionResult {
-            openPOAResults(poaResult)
+        switch faceError {
+        case .faceAngleTooLarge:
+            return "faceAngleTooLarge"
+        case .faceCropped:
+            return "faceCropped"
+        case .faceNotFound:
+            return "faceNotFound"
+        case .faceTooClose:
+            return "faceTooClose"
+        case .faceTooCloseToBorder:
+            return "faceTooCloseToBorder"
+        case .faceTooSmall:
+            return "faceTooSmall"
+        case .internalError:
+            return "internalError"
+        case .tooManyFaces:
+            return "tooManyFaces"
         }
     }
+    
+    private func getPflResultText(_ result: PFLResponse) -> String {
+        
+        return ["score - \(result.score ?? 0)",
+                "quality - \(result.quality ?? 0)",
+                "probability - \(result.probability ?? 0)",
+                "faceError -\(getFaceErrortStringValue(result.error_code?.toFaceError))"].joined(separator: "\n")
+    }
+    
+    /**
+    Gets Called when on PFL liveness check result
+     */
+    func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
+        guard let uiImage = UIImage(data: image) else { return }
+        self.openPFLResult(uiImage, resultString: getPflResultText(result))
+    }
+    
+    /**
+    Gets Called when PFL passed liveness probabillity
+     */
+    func pflSession(_ pflSession: PFLSession, didPassProbabilityThresholdFor image: Data) {
+        
+    }
+    
+    /**
+    Gets Called when PFL failed
+     */
+    func pflSession(_ pflSession: PFLSession, didFailWith error: PFLSessionError) {
+        
+    }
+    
+}
+
+extension MainViewController: UIComponentViewControllerNavigationDelegate {
+    /**
+     Gets called whenever an UI-Comp finished.
+     */
+    func uiComponentViewControllerDidFinish(_ controller: UIComponentBaseViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    /**
+     Gets called whenever an UI-Comp close button pressed.
+     */
+    func uiComponentViewControllerDidPressClose(_ controller: UIComponentBaseViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
