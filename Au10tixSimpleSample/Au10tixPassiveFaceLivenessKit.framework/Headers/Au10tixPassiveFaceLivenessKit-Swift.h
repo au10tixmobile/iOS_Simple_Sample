@@ -188,9 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCore;
-@import Foundation;
-@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -208,21 +205,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
-SWIFT_CLASS("_TtC29Au10tixPassiveFaceLivenessKit37Au10PassiveFaceLivenessFeatureManager")
-@interface Au10PassiveFaceLivenessFeatureManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithDisableAutomaticCapturing:(BOOL)disableAutomaticCapturing OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixPassiveFaceLivenessKit))
-- (void)validateImage:(NSData * _Nonnull)imageData;
-- (void)resumeCapturingState;
-@end
-
 typedef SWIFT_ENUM_NAMED(NSInteger, Au10xFaceError, "FaceError", closed) {
   Au10xFaceErrorFaceTooClose = 100,
   Au10xFaceErrorFaceTooCloseToBorder = 101,
@@ -233,29 +215,6 @@ typedef SWIFT_ENUM_NAMED(NSInteger, Au10xFaceError, "FaceError", closed) {
   Au10xFaceErrorTooManyFaces = 106,
   Au10xFaceErrorInternalError = 107,
 };
-
-
-SWIFT_CLASS_NAMED("PassiveFaceLivenessSessionError")
-@interface Au10tixPassiveFaceLivenessSessionError : Au10tixSessionError
-@end
-
-typedef SWIFT_ENUM_NAMED(NSInteger, Au10tixPassiveFaceLivenessSessionErrorType, "PassiveFaceLivenessSessionErrorType", closed) {
-  Au10tixPassiveFaceLivenessSessionErrorTypeSessionInvalid = 0,
-  Au10tixPassiveFaceLivenessSessionErrorTypeLivenessFailure = 1,
-  Au10tixPassiveFaceLivenessSessionErrorTypeNetworkError = 2,
-};
-
-
-SWIFT_CLASS_NAMED("PassiveFaceLivenessSessionResult")
-@interface Au10tixPassiveFaceLivenessSessionResult : Au10tixSessionResult
-@end
-
-
-SWIFT_CLASS("_TtC29Au10tixPassiveFaceLivenessKit32PassiveFaceLivenessSessionUpdate")
-@interface PassiveFaceLivenessSessionUpdate : Au10tixSessionUpdate
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, closed) {
   PassiveFaceLivenessUpdateTypeImageCaptured = 0,

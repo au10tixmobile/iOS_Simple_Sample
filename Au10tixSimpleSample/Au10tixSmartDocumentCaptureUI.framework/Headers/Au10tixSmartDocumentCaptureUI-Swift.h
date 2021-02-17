@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Au10tixBaseUI;
-@import Au10tixCore;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -208,41 +207,36 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
+@protocol UIComponentViewControllerNavigationDelegate;
 @class NSCoder;
 
 /// SDCViewController provide an UI/UX for using Au10Tix’s Smart-Document-Capture Feature
 SWIFT_CLASS_NAMED("SDCViewController")
 @interface Au10xSDCViewController : UIComponentBaseViewController
 /// Initializes a new SDCViewController with the provided configurations and delegate.
-/// \param configs The basic UI configurations (logo, colors)
-///
-/// \param delegate An object to receive results of the process
-///
-/// \param subTitle A test to display as the sub-title
-///
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     configs: The basic UI configurations (logo, colors)
+///   </li>
+///   <li>
+///     delegate: An object to receive results of the process
+///   </li>
+/// </ul>
 ///
 /// returns:
-/// A beautiful, brand-new SDCViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate isFrontSide:(BOOL)isFrontSide subTitle:(NSString * _Nullable)subTitle OBJC_DESIGNATED_INITIALIZER;
+/// A new SDCViewController instance
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (void)mainButtonAction;
 - (void)leftButtonAction;
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate SWIFT_UNAVAILABLE;
 @end
 
 
-@class Au10tixSessionUpdate;
-@class Au10tixSessionError;
-@class Au10tixSessionResult;
-
-@interface Au10xSDCViewController (SWIFT_EXTENSION(Au10tixSmartDocumentCaptureUI)) <Au10tixSessionDelegate>
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
 
 
 

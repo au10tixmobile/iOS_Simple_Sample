@@ -211,7 +211,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
+@protocol UIComponentViewControllerNavigationDelegate;
 @class NSCoder;
 @class NSBundle;
 
@@ -222,15 +222,13 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 - (void)leftButtonAction;
 - (void)rightButtonAction;
 - (void)mainButtonAction;
-/// Initializes a new UIComponentBaseViewController with the provided configurations and delegate.
+/// Initializes a new UIComponentBaseViewController with the provided configurations.
 /// \param configs The basic UI configurations (logo, colors)
-///
-/// \param delegate An object to receive results of the process
 ///
 ///
 /// returns:
 /// A beautiful, brand-new SDCViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 /// A required Initializer for UIComponentBaseViewController with storyboard
 /// This init is not supported because you can not pass configs
 /// \param coder The object represent data driven from Storyboard
@@ -240,7 +238,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 /// A fattal error
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLayoutSubviews;
 /// Close the UIComponent View Controller using UIViewController’s dismiss method
 - (void)closeButtonAction;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
@@ -290,6 +288,21 @@ SWIFT_CLASS_NAMED("UIComponentConfigs")
 - (nonnull instancetype)initWithAppLogo:(UIImage * _Nonnull)appLogo actionButtonTint:(UIColor * _Nonnull)actionButtonTint titleTextColor:(UIColor * _Nonnull)titleTextColor errorTextColor:(UIColor * _Nonnull)errorTextColor canUploadImage:(BOOL)canUploadImage showCloseButton:(BOOL)showCloseButton OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI23UIComponentProgressView")
+@interface UIComponentProgressView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate_")
+@protocol UIComponentViewControllerNavigationDelegate
+- (void)uiComponentViewControllerDidFinish:(UIComponentBaseViewController * _Nonnull)controller;
+- (void)uiComponentViewControllerDidPressClose:(UIComponentBaseViewController * _Nonnull)controller;
 @end
 
 

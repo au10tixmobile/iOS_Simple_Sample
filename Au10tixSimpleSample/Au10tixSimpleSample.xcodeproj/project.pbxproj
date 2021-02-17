@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EC4440025AB390A00692D48 /* Au10tixSmartDocumentCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F525AB390800692D48 /* Au10tixSmartDocumentCaptureKit.framework */; };
-		1EC4440125AB390A00692D48 /* Au10tixProofOfAddressKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F625AB390800692D48 /* Au10tixProofOfAddressKit.framework */; };
-		1EC4440225AB390A00692D48 /* Au10SourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F725AB390800692D48 /* Au10SourceManager.framework */; };
-		1EC4440325AB390A00692D48 /* Au10tixProofOfAddressUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F825AB390900692D48 /* Au10tixProofOfAddressUI.framework */; };
-		1EC4440425AB390A00692D48 /* Au10tixBEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F925AB390900692D48 /* Au10tixBEKit.framework */; };
-		1EC4440525AB390A00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FA25AB390900692D48 /* Au10tixPassiveFaceLivenessKit.framework */; };
-		1EC4440625AB390A00692D48 /* Au10tixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FB25AB390900692D48 /* Au10tixCore.framework */; };
-		1EC4440725AB390A00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FC25AB390A00692D48 /* Au10tixPassiveFaceLivenessUI.framework */; };
-		1EC4440825AB390A00692D48 /* Au10DetectorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FD25AB390A00692D48 /* Au10DetectorManager.framework */; };
-		1EC4440925AB390A00692D48 /* Au10tixBaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FE25AB390A00692D48 /* Au10tixBaseUI.framework */; };
-		1EC4440A25AB390A00692D48 /* Au10tixSmartDocumentCaptureUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FF25AB390A00692D48 /* Au10tixSmartDocumentCaptureUI.framework */; };
+		1EC4440C25AB39F300692D48 /* Au10DetectorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FD25AB390A00692D48 /* Au10DetectorManager.framework */; };
+		1EC4440D25AB39F300692D48 /* Au10DetectorManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FD25AB390A00692D48 /* Au10DetectorManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4440E25AB39F500692D48 /* Au10SourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F725AB390800692D48 /* Au10SourceManager.framework */; };
+		1EC4440F25AB39F500692D48 /* Au10SourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F725AB390800692D48 /* Au10SourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441025AB39F600692D48 /* Au10tixBaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FE25AB390A00692D48 /* Au10tixBaseUI.framework */; };
+		1EC4441125AB39F600692D48 /* Au10tixBaseUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FE25AB390A00692D48 /* Au10tixBaseUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441225AB39F800692D48 /* Au10tixBEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F925AB390900692D48 /* Au10tixBEKit.framework */; };
+		1EC4441325AB39F800692D48 /* Au10tixBEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F925AB390900692D48 /* Au10tixBEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441425AB39F900692D48 /* Au10tixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FB25AB390900692D48 /* Au10tixCore.framework */; };
+		1EC4441525AB39F900692D48 /* Au10tixCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FB25AB390900692D48 /* Au10tixCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441625AB39FA00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FA25AB390900692D48 /* Au10tixPassiveFaceLivenessKit.framework */; };
+		1EC4441725AB39FA00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FA25AB390900692D48 /* Au10tixPassiveFaceLivenessKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441825AB39FC00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FC25AB390A00692D48 /* Au10tixPassiveFaceLivenessUI.framework */; };
+		1EC4441925AB39FC00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FC25AB390A00692D48 /* Au10tixPassiveFaceLivenessUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441A25AB39FD00692D48 /* Au10tixProofOfAddressKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F625AB390800692D48 /* Au10tixProofOfAddressKit.framework */; };
+		1EC4441B25AB39FD00692D48 /* Au10tixProofOfAddressKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F625AB390800692D48 /* Au10tixProofOfAddressKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441C25AB39FE00692D48 /* Au10tixProofOfAddressUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F825AB390900692D48 /* Au10tixProofOfAddressUI.framework */; };
+		1EC4441D25AB39FE00692D48 /* Au10tixProofOfAddressUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F825AB390900692D48 /* Au10tixProofOfAddressUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4441E25AB3A0000692D48 /* Au10tixSmartDocumentCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F525AB390800692D48 /* Au10tixSmartDocumentCaptureKit.framework */; };
+		1EC4441F25AB3A0000692D48 /* Au10tixSmartDocumentCaptureKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443F525AB390800692D48 /* Au10tixSmartDocumentCaptureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4442025AB3A0100692D48 /* Au10tixSmartDocumentCaptureUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FF25AB390A00692D48 /* Au10tixSmartDocumentCaptureUI.framework */; };
+		1EC4442125AB3A0100692D48 /* Au10tixSmartDocumentCaptureUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC443FF25AB390A00692D48 /* Au10tixSmartDocumentCaptureUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -37,6 +48,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1EC4440F25AB39F500692D48 /* Au10SourceManager.framework in Embed Frameworks */,
+				1EC4441325AB39F800692D48 /* Au10tixBEKit.framework in Embed Frameworks */,
+				1EC4441725AB39FA00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Embed Frameworks */,
+				1EC4440D25AB39F300692D48 /* Au10DetectorManager.framework in Embed Frameworks */,
+				1EC4441F25AB3A0000692D48 /* Au10tixSmartDocumentCaptureKit.framework in Embed Frameworks */,
+				1EC4441525AB39F900692D48 /* Au10tixCore.framework in Embed Frameworks */,
+				1EC4441D25AB39FE00692D48 /* Au10tixProofOfAddressUI.framework in Embed Frameworks */,
+				1EC4441925AB39FC00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Embed Frameworks */,
+				1EC4441125AB39F600692D48 /* Au10tixBaseUI.framework in Embed Frameworks */,
+				1EC4442125AB3A0100692D48 /* Au10tixSmartDocumentCaptureUI.framework in Embed Frameworks */,
+				1EC4441B25AB39FD00692D48 /* Au10tixProofOfAddressKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,18 +104,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC4440125AB390A00692D48 /* Au10tixProofOfAddressKit.framework in Frameworks */,
-				1EC4440325AB390A00692D48 /* Au10tixProofOfAddressUI.framework in Frameworks */,
-				1EC4440525AB390A00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Frameworks */,
-				1EC4440925AB390A00692D48 /* Au10tixBaseUI.framework in Frameworks */,
-				1EC4440025AB390A00692D48 /* Au10tixSmartDocumentCaptureKit.framework in Frameworks */,
-				1EC4440225AB390A00692D48 /* Au10SourceManager.framework in Frameworks */,
-				1EC4440825AB390A00692D48 /* Au10DetectorManager.framework in Frameworks */,
+				1EC4440C25AB39F300692D48 /* Au10DetectorManager.framework in Frameworks */,
+				1EC4441625AB39FA00692D48 /* Au10tixPassiveFaceLivenessKit.framework in Frameworks */,
+				1EC4441A25AB39FD00692D48 /* Au10tixProofOfAddressKit.framework in Frameworks */,
+				1EC4441225AB39F800692D48 /* Au10tixBEKit.framework in Frameworks */,
+				1EC4440E25AB39F500692D48 /* Au10SourceManager.framework in Frameworks */,
 				A9C4AF1223F8DBDB3D8F4900 /* Pods_Au10tixSimpleSample.framework in Frameworks */,
-				1EC4440625AB390A00692D48 /* Au10tixCore.framework in Frameworks */,
-				1EC4440425AB390A00692D48 /* Au10tixBEKit.framework in Frameworks */,
-				1EC4440725AB390A00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Frameworks */,
-				1EC4440A25AB390A00692D48 /* Au10tixSmartDocumentCaptureUI.framework in Frameworks */,
+				1EC4441E25AB3A0000692D48 /* Au10tixSmartDocumentCaptureKit.framework in Frameworks */,
+				1EC4441025AB39F600692D48 /* Au10tixBaseUI.framework in Frameworks */,
+				1EC4441C25AB39FE00692D48 /* Au10tixProofOfAddressUI.framework in Frameworks */,
+				1EC4441425AB39F900692D48 /* Au10tixCore.framework in Frameworks */,
+				1EC4441825AB39FC00692D48 /* Au10tixPassiveFaceLivenessUI.framework in Frameworks */,
+				1EC4442025AB3A0100692D48 /* Au10tixSmartDocumentCaptureUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +135,13 @@
 				EE406B244DEBB41DA62CA3AE /* Pods-Au10tixSimpleSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		1E771D3425DD269100BEABDF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		9C1A456E25384C2500B5DBC0 /* Frameworks */ = {
@@ -187,6 +216,7 @@
 		9CA6D958253749FC00E48DDD /* Au10tixSimpleSample */ = {
 			isa = PBXGroup;
 			children = (
+				1E771D3425DD269100BEABDF /* Shared */,
 				9CC2B69225712107006522D1 /* POAViewController */,
 				9CA1E3792562A334007DEBBC /* ResultViewController */,
 				9C77473E25599DAB00D50830 /* MainViewController */,

@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
-@import CoreVideo;
 @import Foundation;
 @import ImageIO;
 @import ObjectiveC;
@@ -211,61 +210,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class Au10Quadrangle;
-@class Au10FeatureSessionResult;
-@class Au10Error;
-@class FeatureSessionUpdate;
-
-SWIFT_PROTOCOL("_TtP11Au10tixCore13Au10CoreToApp_")
-@protocol Au10CoreToApp
-- (void)didGetUpdateWithRect:(CGRect)rect frame:(CVImageBufferRef _Nullable)frame;
-- (void)didGetUpdateWithQuadrangle:(Au10Quadrangle * _Nonnull)quadrangle frame:(CVImageBufferRef _Nullable)frame;
-- (void)didGetResultWithResult:(Au10FeatureSessionResult * _Nullable)result error:(Au10Error * _Nullable)error;
-- (void)didGetUpdate:(FeatureSessionUpdate * _Nonnull)update;
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore9Au10Error")
-@interface Au10Error : NSObject
-@property (nonatomic, readonly) NSInteger code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull message;
-@property (nonatomic, readonly, copy) NSString * _Nullable originalMethodName;
-@property (nonatomic, readonly, copy) NSDate * _Nonnull time;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@class NSError;
-
-@interface Au10Error (SWIFT_EXTENSION(Au10tixCore))
-@property (nonatomic, readonly, strong) NSError * _Nonnull nsError;
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore23Au10FeatureSessionError")
-@interface Au10FeatureSessionError : Au10Error
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore24Au10FeatureSessionResult")
-@interface Au10FeatureSessionResult : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class Au10tixSessionResult;
-@class Au10tixSessionError;
-@class Au10tixSessionUpdate;
-@class Au10Update;
-
-SWIFT_PROTOCOL("_TtP11Au10tixCore17Au10FeatureToCore_")
-@protocol Au10FeatureToCore
-- (void)didFinishSessionWithResult:(Au10tixSessionResult * _Nullable)result error:(Au10tixSessionError * _Nullable)error;
-- (void)didGetFeatureSessionUpdateWithUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetFeatureSessionFrameWithFrame:(Au10Update * _Nonnull)frame;
-@end
-
 @class CIImage;
 enum Au10ImageSource : NSInteger;
 @class UIImage;
@@ -275,10 +219,11 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 @interface Au10Image : NSObject
 @property (nonatomic, readonly, strong) CIImage * _Nonnull ciImage;
 @property (nonatomic, readonly) enum Au10ImageSource source;
+@property (nonatomic, readonly) CGImageRef _Nullable cgImage;
 @property (nonatomic, readonly, strong) UIImage * _Nonnull uiImage;
 @property (nonatomic, readonly) NSInteger width;
 @property (nonatomic, readonly) NSInteger height;
-@property (nonatomic, readonly) UIImageOrientation uiOrientation;
+@property (nonatomic, readonly) enum UIImageOrientation uiOrientation;
 @property (nonatomic, readonly) CGImagePropertyOrientation cgOrientation;
 - (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
 /// Convert the CIImage to binary data in order to send it to the BOS server
@@ -291,8 +236,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CIContext * 
 @end
 
 typedef SWIFT_ENUM(NSInteger, Au10ImageSource, closed) {
-  Au10ImageSourceCamera = 0,
-  Au10ImageSourceAlbum = 1,
+  Au10ImageSourceCameraVideoFrame = 0,
+  Au10ImageSourceCameraCapture = 1,
+  Au10ImageSourceExternal = 2,
 };
 
 
@@ -309,6 +255,8 @@ SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
 @property (nonatomic, copy) NSData * _Nullable data;
 @property (nonatomic, strong) Au10Image * _Nullable image;
 - (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+/// Returns the image cropped according to quad data
+- (Au10Image * _Nullable)croppedImage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -323,98 +271,26 @@ SWIFT_CLASS("_TtC11Au10tixCore11Au10tixCore")
 /// the SDK shared instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tixCore * _Nonnull shared;)
 + (Au10tixCore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// This method intent is to configure Au10tix SDK with the client prefrences
-/// \param jwt The token that enables the communication with the SDK
-///
-/// \param completion call when the prepare finishes, returns the session id on success and error on failure.
-///
-- (void)prepareWith:(NSString * _Nonnull)jwt keepSessionID:(BOOL)keepSessionID completion:(void (^ _Nonnull)(NSString * _Nonnull, NSError * _Nullable))completion;
-- (void)stopSession;
 /// Use this method to reset the session-id, Operation is depend on configuration (allowSessionIdReset), and existance of a sessionId
 /// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
 ///
 - (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
-
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
-- (void)takeStillImage;
-@end
-
-
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
-- (void)provideWithImage:(NSData * _Nonnull)image exif:(NSDictionary<NSString *, id> * _Nonnull)exif orientation:(CGImagePropertyOrientation)orientation;
-@end
-
-
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
-- (void)pauseCamera;
-- (void)resumeCamera;
-@end
-
-
-
-
 @class UIImageView;
 
-@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore)) <Au10FeatureToCore>
-- (void)didGetFeatureSessionFrameWithFrame:(Au10Update * _Nonnull)frame;
-- (void)didFinishSessionWithResult:(Au10tixSessionResult * _Nullable)result error:(Au10tixSessionError * _Nullable)error;
-- (void)didGetFeatureSessionUpdateWithUpdate:(Au10tixSessionUpdate * _Nonnull)update;
+@interface Au10tixCore (SWIFT_EXTENSION(Au10tixCore))
 - (CGRect)denormalized:(CGRect)normalizedRect in:(UIImageView * _Nonnull)imageView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 
-SWIFT_PROTOCOL("_TtP11Au10tixCore22Au10tixSessionDelegate_")
-@protocol Au10tixSessionDelegate
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore19Au10tixSessionError")
-@interface Au10tixSessionError : Au10Error
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore20Au10tixSessionResult")
-@interface Au10tixSessionResult : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC11Au10tixCore20Au10tixSessionUpdate")
-@interface Au10tixSessionUpdate : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM(NSInteger, CaptureMode, closed) {
-  CaptureModeAuto = 1,
-  CaptureModeManual = 2,
-};
-
-
-SWIFT_CLASS("_TtC11Au10tixCore20FeatureSessionUpdate")
-@interface FeatureSessionUpdate : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @interface AU10JSONRequestGenerator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-typedef SWIFT_ENUM(NSInteger, SessionResultCode, closed) {
-  SessionResultCodeSuccess = 0,
-  SessionResultCodeFailure = 1,
-  SessionResultCodeError = 2,
-  SessionResultCodeStopped = 3,
-};
 
 
 

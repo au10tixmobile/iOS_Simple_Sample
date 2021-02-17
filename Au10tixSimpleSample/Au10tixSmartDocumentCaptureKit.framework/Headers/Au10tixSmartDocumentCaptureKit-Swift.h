@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Au10tixCore;
-@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -207,57 +206,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
-SWIFT_CLASS("_TtC30Au10tixSmartDocumentCaptureKit30Au10SmartDocumentSessionUpdate")
-@interface Au10SmartDocumentSessionUpdate : FeatureSessionUpdate
-- (BOOL)isValidDocument SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS_NAMED("SmartDocumentCaptureSessionError")
-@interface Au10tixSmartDocumentCaptureSessionError : Au10tixSessionError
-@end
-
-typedef SWIFT_ENUM(NSInteger, SmartDocumentCaptureSessionErrorType, closed) {
-  SmartDocumentCaptureSessionErrorTypeSmartDocumentCaptureFailure = 0,
-};
-
-
-SWIFT_CLASS_NAMED("SmartDocumentCaptureSessionResult")
-@interface Au10tixSmartDocumentCaptureSessionResult : Au10tixSessionResult
-@end
-
-
-SWIFT_CLASS_NAMED("SmartDocumentCaptureSessionUpdate")
-@interface Au10tixSmartDocumentCaptureSessionUpdate : Au10tixSessionUpdate
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS_NAMED("SmartDocumentFeatureManager")
-@interface Au10SmartDocumentFeatureManager : NSObject
-@property (nonatomic) enum CaptureMode captureMode;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithIsSmart:(BOOL)isSmart isFrontSide:(BOOL)isFrontSide OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
 @class Au10Image;
 
-SWIFT_CLASS("_TtC30Au10tixSmartDocumentCaptureKit32SmartDocumentFeatureSessionFrame")
-@interface SmartDocumentFeatureSessionFrame : Au10Update
+SWIFT_CLASS("_TtC30Au10tixSmartDocumentCaptureKit19SDCProcessingStatus")
+@interface SDCProcessingStatus : Au10Update
 @property (nonatomic, readonly) BOOL isValid;
-- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image SWIFT_UNAVAILABLE;
 @end
 
-
-
-SWIFT_CLASS("_TtC30Au10tixSmartDocumentCaptureKit19SmartDocumentResult")
-@interface SmartDocumentResult : Au10FeatureSessionResult
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

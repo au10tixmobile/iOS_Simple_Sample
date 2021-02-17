@@ -188,8 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCore;
-@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -206,36 +204,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixProofOfAddressKit",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
-
-
-SWIFT_CLASS_NAMED("ProofOfAddressFeatureManager")
-@interface Au10ProofOfAddressFeatureManager : NSObject
-@property (nonatomic, copy) NSString * _Nullable sessionId;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-SWIFT_CLASS_NAMED("ProofOfAddressSessionError")
-@interface Au10tixProofOfAddressSessionError : Au10tixSessionError
-@end
-
-typedef SWIFT_ENUM(NSInteger, ProofOfAddressSessionErrorType, closed) {
-  ProofOfAddressSessionErrorTypeSessionInvalid = 0,
-  ProofOfAddressSessionErrorTypeProofOfAddressFailure = 1,
-};
-
-
-SWIFT_CLASS_NAMED("ProofOfAddressSessionResult")
-@interface Au10tixProofOfAddressSessionResult : Au10tixSessionResult
-@end
-
-
-SWIFT_CLASS_NAMED("ProofOfAddressSessionUpdate")
-@interface Au10tixProofOfAddressSessionUpdate : Au10tixSessionUpdate
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

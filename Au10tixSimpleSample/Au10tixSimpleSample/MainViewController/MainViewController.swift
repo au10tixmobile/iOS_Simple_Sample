@@ -43,25 +43,6 @@ final class MainViewController: UIViewController {
 
 private extension MainViewController {
     
-    // MARK: - SDK Preparation
-    /**
-     Use this method to prepare Au10tix SDK.
-     - warning: Use the JWT retrieved from your backend. See Au10tix guide for more info.
-     */
-    func prepare() {
-        
-        #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
-        
-        Au10tixCore.shared.prepare(with: "") { [weak self] result in
-            switch result {
-            case .success(let sessionID):
-                debugPrint("sessionID -\(sessionID)")
-            case .failure(let error):
-                self?.showAlert(error.localizedDescription)
-            }
-        }
-    }
-    
     // MARK: - Open SMART DOCUMENT CAPTURING UI component
     /**
      Use this method to initialize the SMART DOCUMENT CAPTURING UI component.

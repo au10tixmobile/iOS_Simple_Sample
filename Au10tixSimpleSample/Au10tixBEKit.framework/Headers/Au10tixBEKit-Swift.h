@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -206,16 +207,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class Au10tixSessionResult;
+@class Au10Image;
 @class NSNumber;
 
+/// A class to collect the sessions result
 SWIFT_CLASS("_TtC12Au10tixBEKit18BOSInteractorCache")
 @interface BOSInteractorCache : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BOSInteractorCache * _Nonnull shared;)
 + (BOSInteractorCache * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)appendWithResult:(Au10tixSessionResult * _Nonnull)result type:(NSNumber * _Nonnull)type;
+/// Append an image to the cache
+/// This method designed for internal use using Obj-C Refelection
+/// \param image An <em>image</em> recevied from Au10tix specific session.
+///
+/// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
+///
+- (void)appendWithImage:(Au10Image * _Nonnull)image type:(NSNumber * _Nonnull)type;
+/// Append a data map result to the cache
+/// This method designed for internal use using Obj-C Refelection
+/// \param sessionInfo A <em>sessionInfo</em> recevied from Au10tix specific session.
+///
+/// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
+///
+- (void)appendWithSessionInfo:(NSDictionary<NSString *, NSData *> * _Nonnull)sessionInfo type:(NSNumber * _Nonnull)type;
 @end
 
 #if __has_attribute(external_source_symbol)

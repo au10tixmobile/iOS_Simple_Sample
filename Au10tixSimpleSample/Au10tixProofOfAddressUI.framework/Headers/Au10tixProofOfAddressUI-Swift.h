@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Au10tixBaseUI;
-@import Au10tixCore;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -208,7 +207,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
+@protocol UIComponentViewControllerNavigationDelegate;
 @class NSCoder;
 
 SWIFT_CLASS_NAMED("POAViewController")
@@ -224,35 +223,22 @@ SWIFT_CLASS_NAMED("POAViewController")
 ///   <li>
 ///     delegate: An object to receive results of the process
 ///   </li>
-///   <li>
-///     subTitle: A test to display as the sub-title
-///   </li>
 /// </ul>
 ///
 /// returns:
 /// A beautiful, brand-new POAViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate subTitle:(NSString * _Nullable)subTitle OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (void)mainButtonAction;
 - (void)leftButtonAction;
 - (void)rightButtonAction;
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate SWIFT_UNAVAILABLE;
 @end
 
 
 
 
-@class Au10tixSessionUpdate;
-@class Au10tixSessionError;
-@class Au10tixSessionResult;
-
-@interface Au10xPOAViewController (SWIFT_EXTENSION(Au10tixProofOfAddressUI)) <Au10tixSessionDelegate>
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

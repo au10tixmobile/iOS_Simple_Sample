@@ -12,8 +12,8 @@ import Au10tixProofOfAddressKit
 
 final class POAUIViewController: UIViewController {
     
+    private let poaSession = POASession()
     // MARK: - IBOutlets
-    
     @IBOutlet private weak var cameraView: UIView!
     
     // MARK: - Life cycle
@@ -26,7 +26,7 @@ final class POAUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        Au10tixCore.shared.stopSession()
+        poaSession.stop()
     }
 }
 
@@ -39,32 +39,35 @@ private extension POAUIViewController {
      */
     
     func prepare() {
-        Au10tixCore.shared.delegate = self
-        let proofOfAddressFeatureManager = ProofOfAddressFeatureManager()
+        poaSession.delegate = self
         AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
             guard granted else { return }
             guard let self = self else { return }
             
-            DispatchQueue.main.async {
-                Au10tixCore.shared.startSession(with: proofOfAddressFeatureManager,
-                                                previewView: self.cameraView)
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.poaSession.start(with: <#T##String#>, previewView: self.cameraView) { [weak self](result) in
+                    guard let self = self else { return }
+                    switch result {
+                    case .failure(let prepareError):
+                        self.showAlert("Prepare Error: \(prepareError)")
+                    case .success(let sessionId):
+                        debugPrint("start with sessionId: " + sessionId)
+                    }
+                }
             }
         }
     }
     
     // MARK: - openPOAResults
     
-    func openPOAResults(_ result: ProofOfAddressSessionResult) {
+    func openPOAResult(image: Au10Image) {
         
-        guard let resultImage = result.image?.uiImage else {
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
         }
         
-        guard let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
-            return
-        }
-        
-        controller.resultImage = resultImage
+        controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -82,40 +85,26 @@ private extension POAUIViewController {
 private extension POAUIViewController {
     
     @IBAction func takeStillImage() {
-        Au10tixCore.shared.takeStillImage()
+        poaSession.captureImage()
     }
 }
 
 // MARK: - HANDLE SESSION EVENTS
 
-extension POAUIViewController: Au10tixSessionDelegate {
-    
-    /**
-     Gets called whenever the session has an update.
-     */
-    
-    func didGetUpdate(_ update: Au10tixSessionUpdate) {
-        
-    }
+extension POAUIViewController: POASessionDelegate {
     
     /**
      Gets called whenever the session has an error.
      */
-    
-    func didGetError(_ error: Au10tixSessionError) {
-        showAlert(error.localizedDescription)
+    func poaSession(_ poaSession: POASession, didFailWith error: POASessionError) {
+        showAlert("POASessionError \(error)")
     }
     
     /**
      Gets called when the feature session has a conclusive result .
      */
-    
-    func didGetResult(_ result: Au10tixSessionResult) {
-        
-        // MARK: - ProofOfAddressSessionResult
-        
-        if let poaResult = result as? ProofOfAddressSessionResult {
-            openPOAResults(poaResult)
-        }
+    func poaSession(_ poaSession: POASession, didCapture image: Au10Image, with frameData: Au10Update) {
+        openPOAResult(image: image)
     }
+        
 }

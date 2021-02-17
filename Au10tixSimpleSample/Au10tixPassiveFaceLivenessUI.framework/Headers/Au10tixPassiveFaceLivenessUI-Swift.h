@@ -189,7 +189,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Au10tixBaseUI;
-@import Au10tixCore;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -209,7 +208,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @class Au10xUIComponentConfigs;
-@protocol Au10tixSessionDelegate;
+@protocol UIComponentViewControllerNavigationDelegate;
 @class NSCoder;
 
 /// PFLViewController provide an UI/UX for using Au10Tix’s Passive-Face-Liveness Feature
@@ -219,21 +218,12 @@ SWIFT_CLASS_NAMED("PFLViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)mainButtonAction;
 - (void)leftButtonAction;
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs delegate:(id <Au10tixSessionDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 
-@class Au10tixSessionUpdate;
-@class Au10tixSessionError;
-@class Au10tixSessionResult;
-
-@interface Au10xPFLViewController (SWIFT_EXTENSION(Au10tixPassiveFaceLivenessUI)) <Au10tixSessionDelegate>
-- (void)didGetUpdate:(Au10tixSessionUpdate * _Nonnull)update;
-- (void)didGetError:(Au10tixSessionError * _Nonnull)error;
-- (void)didGetResult:(Au10tixSessionResult * _Nonnull)result;
-@end
 
 
 #if __has_attribute(external_source_symbol)
