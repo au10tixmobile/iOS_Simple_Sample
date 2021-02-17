@@ -12,6 +12,7 @@ import Au10tixPassiveFaceLivenessKit
 final class PFLUIViewController: UIViewController {
     
     private let pflSession = PFLSession()
+    private var pflResultString: String?
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
@@ -223,8 +224,7 @@ extension PFLUIViewController: PFLSessionDelegate {
     Gets Called when on PFL liveness check result
      */
     func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
-        guard let uiImage = UIImage(data: image) else { return }
-        self.openPFLResult(uiImage, resultString: getPflResultText(result))
+        self.pflResultString = getPflResultText(result)
     }
     
     /**
@@ -232,6 +232,8 @@ extension PFLUIViewController: PFLSessionDelegate {
      */
     func pflSession(_ pflSession: PFLSession, didPassProbabilityThresholdFor image: Data) {
         lblInfo.text = "Passed ProbabilityThreshold"
+        guard let uiImage = UIImage(data: image) else { return }
+        self.openPFLResult(uiImage, resultString: self.pflResultString ?? "")
     }
     
     /**

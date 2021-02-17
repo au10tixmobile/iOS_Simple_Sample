@@ -18,6 +18,7 @@ import Au10tixPassiveFaceLivenessUI
 
 final class MainViewController: UIViewController {
     
+    private var pflResultString: String?
     // MARK: - IBOutlets
     
     @IBOutlet private weak var btnSDC: UIButton!
@@ -53,21 +54,23 @@ private extension MainViewController {
     func prepare() {
         
         AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            guard granted else { return }
-            DispatchQueue.main.async {
-                guard let self = self else { return }
-                self.showAlert("Video Permission was not granted")
+            if !granted {
+                DispatchQueue.main.async {
+                    guard let self = self else { return }
+                    self.showAlert("Video Permission was not granted")
+                }
             }
         }
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
         Au10tixCore.shared.prepare(with: "") { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let sessionID):
                 debugPrint("sessionID -\(sessionID)")
             case .failure(let error):
-                self?.showAlert(error.localizedDescription)
+                self.showAlert(error.localizedDescription)
             }
         }
     }
@@ -105,6 +108,7 @@ private extension MainViewController {
                                          showCloseButton: true)
         
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
+        controller.pflDelegate = self
         present(controller, animated: true, completion: nil)
     }
     
@@ -122,6 +126,7 @@ private extension MainViewController {
                                          canUploadImage: true,
                                          showCloseButton: true)
         let controller = POAViewController(configs: configs, navigationDelegate: self)
+        controller.poaDelegate = self
         present(controller, animated: true, completion: nil)
     }
     
@@ -367,15 +372,15 @@ extension MainViewController: PFLSessionDelegate {
     Gets Called when on PFL liveness check result
      */
     func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
-        guard let uiImage = UIImage(data: image) else { return }
-        self.openPFLResult(uiImage, resultString: getPflResultText(result))
+        self.pflResultString = getPflResultText(result)
     }
     
     /**
     Gets Called when PFL passed liveness probabillity
      */
     func pflSession(_ pflSession: PFLSession, didPassProbabilityThresholdFor image: Data) {
-        
+        guard let uiImage = UIImage(data: image) else { return }
+        self.openPFLResult(uiImage, resultString: self.pflResultString ?? "")
     }
     
     /**
