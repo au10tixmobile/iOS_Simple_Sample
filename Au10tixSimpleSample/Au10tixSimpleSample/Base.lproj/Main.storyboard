@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="108" width="374" height="734"/>
                                 <subviews>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-6n-s1i">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PASSIVE FACE LIVENESS">
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny7-LK-fpa">
-                                        <rect key="frame" x="0.0" y="109.5" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="96" width="374" height="63.5"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SMART DOCUMENT CAPTURING">
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r13-rX-Xvj">
-                                        <rect key="frame" x="0.0" y="219" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="191.5" width="374" height="64"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PROOF OF ADDRESS">
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-fT-fcA">
-                                        <rect key="frame" x="0.0" y="328.5" width="374" height="77"/>
+                                        <rect key="frame" x="0.0" y="287.5" width="374" height="63.5"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="SDC with UIComponents">
@@ -66,7 +66,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1d-iH-iUt">
-                                        <rect key="frame" x="0.0" y="437.5" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="383" width="374" height="64"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="PFL with UIComponents">
@@ -77,7 +77,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-1J-iBZ">
-                                        <rect key="frame" x="0.0" y="547" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="479" width="374" height="63.5"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
                                         <state key="normal" title="POA with UIComponents">
@@ -88,13 +88,23 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ec-4o-pXE">
-                                        <rect key="frame" x="0.0" y="656.5" width="374" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="574.5" width="374" height="64"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="🚀 ID Verification Request"/>
                                         <connections>
                                             <action selector="sendIdvRequestWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pu-Ee-PSl"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj6-2y-ljE">
+                                        <rect key="frame" x="0.0" y="670.5" width="374" height="63.5"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="🚀 POA Request"/>
+                                        <connections>
+                                            <action selector="sendPoaRequestWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oTb-2W-dKP"/>
                                         </connections>
                                     </button>
                                 </subviews>

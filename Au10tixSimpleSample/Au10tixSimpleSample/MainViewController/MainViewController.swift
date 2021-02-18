@@ -32,7 +32,7 @@ final class MainViewController: UIViewController {
         // -----------
         
         uiPreparation()
-        prepare()
+        requestVideoPermission()
         addObserver()
     }
 }
@@ -41,22 +41,29 @@ final class MainViewController: UIViewController {
 
 private extension MainViewController {
     
-    
+    private func requestVideoPermission() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        case .authorized:
+            self.prepare()
+        case .denied, .restricted:
+            self.showAlert("Video Permission was not granted")
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] _ in
+                DispatchQueue.main.async {
+                    guard let self = self else { return }
+                    self.requestVideoPermission()
+                }
+            }
+        @unknown default:
+            fatalError()
+        }
+    }
     // MARK: - SDK Preparation
     /**
      Use this method to prepare Au10tix SDK.
      - warning: Use the JWT retrieved from your backend. See Au10tix guide for more info.
      */
     func prepare() {
-        
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            if !granted {
-                DispatchQueue.main.async {
-                    guard let self = self else { return }
-                    self.showAlert("Video Permission was not granted")
-                }
-            }
-        }
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
@@ -265,8 +272,8 @@ private extension MainViewController {
     @IBAction func sendIdvRequest(sender: UIButton) {
         let originalTitle = sender.title(for: .normal)
         sender.setTitle("Sending...", for: .normal)
-        Au10tixBackendKit.shared.sendIDVerificationFlow { [weak self] result in
-            guard let self = self else { return }
+        Au10tixBackendKit.shared.sendIDVerificationFlow { [weak self, weak sender] result in
+            guard let self = self, let sender = sender else { return }
             sender.setTitle(originalTitle, for: .normal)
             switch result {
             case .success(let requestId):
@@ -275,6 +282,48 @@ private extension MainViewController {
                 self.showAlert("❌ \(error)")
             }
         }
+    }
+    
+    @IBAction func sendPoaRequest(sender: UIButton) {
+        let alert = UIAlertController(title: "Proof Of Address Validation", message: "Fill details for comparison", preferredStyle: .alert)
+        alert.addTextField {
+            $0.placeholder = "First Name"
+            $0.textContentType = .givenName
+        }
+        
+        alert.addTextField {
+            $0.placeholder = "Last Name"
+            $0.textContentType = .familyName
+        }
+        
+        alert.addTextField {
+            $0.placeholder = "Address"
+            $0.textContentType = .fullStreetAddress
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        alert.addAction(UIAlertAction(title: "🚀 Send", style: .default, handler: { [weak self, weak sender](_) in
+            guard let self = self, let sender = sender else { return }
+            guard let firstName = alert.textFields?[0].text,
+                  let lastName = alert.textFields?[1].text,
+                  let address = alert.textFields?[2].text else { return }
+            
+            let originalTitle = sender.title(for: .normal)
+            sender.setTitle("Sending...", for: .normal)
+            
+            Au10tixBackendKit.shared.sendProofOfAddress(firstName: firstName, lastName: lastName, address: address) { [weak self, weak sender](result) in
+                guard let self = self, let sender = sender else { return }
+                sender.setTitle(originalTitle, for: .normal)
+                switch result {
+                case .success(let requestId):
+                    self.showAlert("✅ RequestId: " + requestId)
+                case .failure(let error):
+                    self.showAlert("❌ \(error)")
+                }
+            }
+        }))
+        
+        
     }
 }
 
