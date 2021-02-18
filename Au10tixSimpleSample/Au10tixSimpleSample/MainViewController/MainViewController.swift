@@ -46,7 +46,7 @@ private extension MainViewController {
         case .authorized:
             self.prepare()
         case .denied, .restricted:
-            self.showAlert("Video Permission was not granted")
+            self.showAlert("Video Permission was not granted", isError: true)
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { [weak self] _ in
                 DispatchQueue.main.async {
@@ -73,7 +73,7 @@ private extension MainViewController {
             case .success(let sessionID):
                 debugPrint("sessionID -\(sessionID)")
             case .failure(let error):
-                self.showAlert(error.localizedDescription)
+                self.showAlert(error.localizedDescription, isError: true)
             }
         }
     }
@@ -203,8 +203,8 @@ private extension MainViewController {
     
     // MARK: - UIAlertController
     
-    func showAlert(_ text: String) {
-        let alert = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+    func showAlert(_ text: String, isError: Bool) {
+        let alert = UIAlertController(title: isError ? "Error ☹️" : "Success 😀", message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
@@ -277,9 +277,9 @@ private extension MainViewController {
             sender.setTitle(originalTitle, for: .normal)
             switch result {
             case .success(let requestId):
-                self.showAlert("✅ RequestId: " + requestId)
+                self.showAlert("✅ RequestId: " + requestId, isError: false)
             case .failure(let error):
-                self.showAlert("❌ \(error)")
+                self.showAlert("❌ \(error)", isError: true)
             }
         }
     }
@@ -316,14 +316,14 @@ private extension MainViewController {
                 sender.setTitle(originalTitle, for: .normal)
                 switch result {
                 case .success(let requestId):
-                    self.showAlert("✅ RequestId: " + requestId)
+                    self.showAlert("✅ RequestId: " + requestId, isError: false)
                 case .failure(let error):
-                    self.showAlert("❌ \(error)")
+                    self.showAlert("❌ \(error)", isError: true)
                 }
             }
         }))
         
-        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
