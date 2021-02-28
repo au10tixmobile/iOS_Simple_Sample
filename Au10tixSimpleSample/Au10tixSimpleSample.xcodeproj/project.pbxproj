@@ -489,14 +489,9 @@
 					"$(inherited)/**",
 					"$(PROJECT_DIR)/**",
 					"\"$(SRCROOT)/Au10DetectorManager.framework\"/**",
-					"\"$(SRCROOT)/Au10PassiveFaceLiveness.framework\"/**",
 					"\"$(SRCROOT)/Au10SourceManager.framework\"/**",
 					"\"$(SRCROOT)/Au10tixCore.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentBase.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentPFL.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentSDC.framework\"/**",
 					"$(PROJECT_DIR)/**",
-					"\"$(SRCROOT)/Au10SmartDocumentCaptureFeature.framework\"/**",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Au10tixSimpleSample/Info.plist;
@@ -527,14 +522,9 @@
 					"$(inherited)/**",
 					"$(PROJECT_DIR)/**",
 					"\"$(SRCROOT)/Au10DetectorManager.framework\"/**",
-					"\"$(SRCROOT)/Au10PassiveFaceLiveness.framework\"/**",
 					"\"$(SRCROOT)/Au10SourceManager.framework\"/**",
 					"\"$(SRCROOT)/Au10tixCore.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentBase.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentPFL.framework\"/**",
-					"\"$(SRCROOT)/Au10tixUIComponentSDC.framework\"/**",
 					"$(PROJECT_DIR)/**",
-					"\"$(SRCROOT)/Au10SmartDocumentCaptureFeature.framework\"/**",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Au10tixSimpleSample/Info.plist;

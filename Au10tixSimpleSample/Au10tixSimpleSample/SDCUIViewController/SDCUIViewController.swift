@@ -76,16 +76,8 @@ private extension SDCUIViewController {
         
         var arr: [String] = []
         
-        if let idStatus = processingStatus.idStatus {
-            arr += ["reflectionScore: \(idStatus)"]
-        }
-                
-        if let closeStatus = processingStatus.closeStatus {
-            arr += ["closeStatus: \(closeStatus)"]
-        }
-        
-        if let tooFarStatus = processingStatus.tooFarStatus {
-            arr += ["tooFarStatus: \(tooFarStatus)"]
+        if let feedback = processingStatus.feedback {
+            arr += ["feedback: \(feedback)"]
         }
         
         arr += ["isValid: \(processingStatus.isValid)"]

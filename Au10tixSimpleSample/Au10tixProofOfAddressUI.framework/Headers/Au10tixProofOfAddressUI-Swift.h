@@ -230,7 +230,6 @@ SWIFT_CLASS_NAMED("POAViewController")
 - (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
 - (void)mainButtonAction;
 - (void)leftButtonAction;
 - (void)rightButtonAction;
