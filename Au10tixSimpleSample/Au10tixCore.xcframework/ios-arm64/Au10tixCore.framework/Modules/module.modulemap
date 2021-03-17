@@ -1,0 +1,4 @@
+framework module Au10tixCore {
+  header "Au10tixCore-Swift.h"
+  requires objc
+}

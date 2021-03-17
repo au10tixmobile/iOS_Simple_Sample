@@ -1,0 +1,181 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+@_exported import Au10tixBaseUI
+import Au10tixCore
+import Foundation
+import PhotosUI
+import Swift
+import UIKit
+@objc public protocol UIComponentViewControllerNavigationDelegate : AnyObject {
+  @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+  @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+}
+@objc open class UIComponentBaseViewController : UIKit.UIViewController {
+  final public let configs: Au10tixBaseUI.UIComponentConfigs
+  weak public var salientAreaView: UIKit.UIView!
+  weak open var capturedImageView: UIKit.UIImageView?
+  open var timeoutMessage: Swift.String {
+    get
+  }
+  open var cameraSession: Au10tixCore.CameraSession? {
+    get
+  }
+  weak public var navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate?
+  weak public var previewView: UIKit.UIView! {
+    get
+  }
+  public var state: Au10tixBaseUI.UIComponentBaseViewController.UIState {
+    get
+    set
+  }
+  open var headline: Swift.String {
+    get
+  }
+  open var subHeadline: Swift.String? {
+    get
+  }
+  open var capturedImageRequiredTransform: CoreGraphics.CGAffineTransform {
+    get
+  }
+  @objc open func leftButtonAction()
+  @objc open func rightButtonAction()
+  @objc open func mainButtonAction()
+  open func showFeatureFeed()
+  open func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  open func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  open func timeoutViewShouldRefresh()
+  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func viewDidLayoutSubviews()
+  @objc public func closeButtonAction()
+  public func operationFinished()
+  public typealias ActionButtonImage = Au10tixBaseUI.UICompsButtonsView.ActionButtonImage
+  public typealias ActionButton = Au10tixBaseUI.UICompsButtonsView.ActionButton
+  public typealias ActionButtonBehavior = Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior
+  public func update(image: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonImage, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func update(behavior: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonBehavior, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func showProgress(_ show: Swift.Bool)
+  public func showToast(with text: Swift.String)
+  public func hideToast()
+  public func show(instruction: Swift.String?, hideBackground: Swift.Bool = false)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension UICompsButtonsView {
+  public enum ActionButton {
+    case right
+    case left
+    case main
+    public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButton, b: Au10tixBaseUI.UICompsButtonsView.ActionButton) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum ActionButtonImage {
+    case upload
+    case retakeLarge
+    case retakeSmall
+    case camera
+    case checkmark
+    public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum ActionButtonBehavior {
+    case visible
+    case hidden
+    case tempHidden
+    case tempVisible
+    public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponentProgressView : UIKit.UIView {
+  @objc deinit
+  @objc override dynamic public func layoutSubviews()
+  public func runEndlessly()
+  public func stopEndlessly()
+}
+extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, UIKit.UIImagePickerControllerDelegate {
+  public struct LibraryImageResult {
+    public let data: Foundation.Data
+    public let exif: [Swift.String : Any]
+    public let orientation: ImageIO.CGImagePropertyOrientation
+  }
+  public enum LibraryImageError : Swift.Error {
+    case unAuthorized
+    case cancelled
+    case failedToRetreiveAsset
+    public static func == (a: Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError, b: Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public typealias LibraryImageCompletion = (Swift.Result<Au10tixBaseUI.UIComponentBaseViewController.LibraryImageResult, Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError>) -> Swift.Void
+  public func selectImageFromLibrary(with completion: @escaping Au10tixBaseUI.UIComponentBaseViewController.LibraryImageCompletion)
+  @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+extension String {
+  public var localized: Swift.String {
+    get
+  }
+}
+@objc(Au10xUIComponentConfigs) final public class UIComponentConfigs : ObjectiveC.NSObject {
+  final public let appLogo: UIKit.UIImage
+  final public let actionButtonTint: UIKit.UIColor
+  final public let titleTextColor: UIKit.UIColor
+  final public let errorTextColor: UIKit.UIColor
+  final public let canUploadImage: Swift.Bool
+  final public let showCloseButton: Swift.Bool
+  @objc convenience public init(appLogo: UIKit.UIImage)
+  @objc public init(appLogo: UIKit.UIImage, actionButtonTint: UIKit.UIColor, titleTextColor: UIKit.UIColor, errorTextColor: UIKit.UIColor, canUploadImage: Swift.Bool, showCloseButton: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class UICompsButtonsView : UIKit.UIView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension UIColor {
+  public static var uiCompsAu10tixBlack: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixRed: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGreen: UIKit.UIColor? {
+    get
+  }
+}
+extension UIComponentBaseViewController {
+  public enum UIState : Swift.Equatable {
+    case capturing
+    case takingManualImage
+    case imageCaptured(image: UIKit.UIImage)
+    public var isCapturing: Swift.Bool {
+      get
+    }
+    public var canShowErrorMessages: Swift.Bool {
+      get
+    }
+    public static func == (a: Au10tixBaseUI.UIComponentBaseViewController.UIState, b: Au10tixBaseUI.UIComponentBaseViewController.UIState) -> Swift.Bool
+  }
+}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButton : Swift.Equatable {}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButton : Swift.Hashable {}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButtonImage : Swift.Equatable {}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButtonImage : Swift.Hashable {}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior : Swift.Equatable {}
+extension Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior : Swift.Hashable {}
+extension Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError : Swift.Equatable {}
+extension Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError : Swift.Hashable {}

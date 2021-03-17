@@ -1,0 +1,40 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10DetectorManager
+@_exported import Au10DetectorManager
+import Au10tixCore
+import CoreGraphics
+import Foundation
+import Swift
+import UIKit
+import Vision
+final public class FaceDetector {
+  public init()
+  @objc deinit
+  public static func isAvailable() -> Swift.Bool
+  final public func detectFace(view: UIKit.UIView, in imageBuffer: CoreVideo.CVImageBuffer, completionBlock: @escaping (Swift.Result<[Au10DetectorManager.Face], Swift.Error>) -> Swift.Void)
+  final public func detectFace(in image: Foundation.Data, completion: @escaping (Swift.Result<[Au10DetectorManager.Face], Swift.Error>) -> Swift.Void)
+}
+public enum DetectorType {
+  case face
+  case document
+  case nfc
+  public static func == (a: Au10DetectorManager.DetectorType, b: Au10DetectorManager.DetectorType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct Face {
+  public var boundingBox: CoreGraphics.CGRect?
+  public var isSmiling: Swift.Bool?
+  public var smilingConfidence: Swift.Int?
+  public var isLeftEyeClosed: Swift.Bool
+  public var isRightEyeClosed: Swift.Bool
+  public var pitch: Swift.Float?
+  public var yaw: Swift.Float?
+  public var roll: Swift.Float?
+  public init(boundingBox: CoreGraphics.CGRect? = nil, isSmiling: Swift.Bool? = nil, smilingConfidence: Swift.Int? = nil, isLeftEyeClosed: Swift.Bool = false, isRightEyeClosed: Swift.Bool = false, pitch: Swift.Float? = nil, yaw: Swift.Float? = nil, roll: Swift.Float? = nil)
+}
+extension Au10DetectorManager.DetectorType : Swift.Equatable {}
+extension Au10DetectorManager.DetectorType : Swift.Hashable {}

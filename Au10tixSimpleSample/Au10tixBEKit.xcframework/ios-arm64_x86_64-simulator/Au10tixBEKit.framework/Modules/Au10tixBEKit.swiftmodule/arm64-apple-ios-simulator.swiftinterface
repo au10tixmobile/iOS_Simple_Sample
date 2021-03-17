@@ -1,0 +1,69 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBEKit
+@_exported import Au10tixBEKit
+import Au10tixCore
+import Foundation
+import Swift
+import SystemConfiguration
+@_hasMissingDesignatedInitializers public class F2FFactory : Au10tixBEKit.BOSInteractorFactory {
+  public init()
+  public func providePfl(image: Au10tixCore.Au10Image)
+  public func provideComparison(image: Foundation.Data)
+  @objc deinit
+}
+public enum Au10tixBEKitError : Swift.Error {
+  case missingData
+  case coreIsInactive
+  case networkError(error: Swift.Error)
+  case serializationError(error: Swift.Error)
+  case parseError(error: Swift.Error)
+  case cancelled
+}
+@_hasMissingDesignatedInitializers public class IDVFactory : Au10tixBEKit.BOSInteractorFactory {
+  public init(dataTypes: [Au10tixBEKit.DataType])
+  public func provideSdcFront(image: Au10tixCore.Au10Image)
+  public func provideSdcBack(image: Au10tixCore.Au10Image)
+  public func providePfl(image: Au10tixCore.Au10Image)
+  public func providePoa(image: Au10tixCore.Au10Image)
+  @objc deinit
+}
+public enum DataType : Swift.Int {
+  case pfl
+  case idDocFront
+  case idDocBack
+  case imageForCompare
+  case poa
+  case nfcData
+  case personalDetails
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BOSInteractorCache : ObjectiveC.NSObject {
+  @objc public static let shared: Au10tixBEKit.BOSInteractorCache
+  @objc public func append(image: Au10tixCore.Au10Image, type: Foundation.NSNumber)
+  @objc public func append(sessionInfo: [Swift.String : Foundation.Data], type: Foundation.NSNumber)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BOSInteractorFactory {
+  @objc deinit
+}
+public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> Swift.Void
+@_hasMissingDesignatedInitializers public class Au10tixBackendKit {
+  public static let shared: Au10tixBEKit.Au10tixBackendKit
+  public func send(factory: Au10tixBEKit.BOSInteractorFactory, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func sendIDVerificationFlow(dataTypes: [Au10tixBEKit.DataType] = [.idDocFront], beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func sendFaceToFace(photoForComparison: Foundation.Data, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func sendProofOfAddress(firstName: Swift.String, lastName: Swift.String, address: Swift.String, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func sendPassportNfc(beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func cancelRequest()
+  public func cleanCache()
+  public func destroy()
+  @objc deinit
+}
+extension Au10tixBEKit.DataType : Swift.Equatable {}
+extension Au10tixBEKit.DataType : Swift.Hashable {}
+extension Au10tixBEKit.DataType : Swift.RawRepresentable {}

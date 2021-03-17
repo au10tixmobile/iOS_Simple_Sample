@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureUI
+import Au10tixBaseUI
+import Au10tixCore
+import Au10tixSmartDocumentCaptureKit
+@_exported import Au10tixSmartDocumentCaptureUI
+import Foundation
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xSDCViewController) @_objcRuntimeName(Au10xSDCViewController) final public class SDCViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixCore.FrontSideSupporter {
+  final public var isFrontSide: Swift.Bool {
+    get
+    set
+  }
+  override final public var headline: Swift.String {
+    get
+  }
+  override final public var subHeadline: Swift.String? {
+    get
+  }
+  override final public var cameraSession: Au10tixCore.CameraSession? {
+    get
+  }
+  final public var showCaptureButton: Swift.Bool {
+    get
+    set
+  }
+  weak final public var sdcDelegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
+  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @objc override final public func viewDidLoad()
+  override final public func showFeatureFeed()
+  override final public func timeoutViewShouldRefresh()
+  @objc override final public func mainButtonAction()
+  @objc override final public func leftButtonAction()
+  override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @objc deinit
+}
+extension SDCViewController : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
+  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+}

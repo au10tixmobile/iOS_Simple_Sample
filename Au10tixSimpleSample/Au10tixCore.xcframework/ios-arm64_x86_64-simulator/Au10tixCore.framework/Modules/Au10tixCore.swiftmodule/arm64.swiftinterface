@@ -1,0 +1,654 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixCore
+import AVFoundation
+import CoreGraphics
+import CoreImage
+import CoreVideo
+import Foundation
+import ImageIO
+import QuartzCore
+import Swift
+import SystemConfiguration
+import UIKit
+public enum ReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+extension NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+final public class Reachability {
+  public typealias NetworkReachable = (Au10tixCore.Reachability) -> Swift.Void
+  public typealias NetworkUnreachable = (Au10tixCore.Reachability) -> Swift.Void
+  public enum Connection : Swift.CustomStringConvertible {
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: Au10tixCore.Reachability.Connection, b: Au10tixCore.Reachability.Connection) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  final public var whenReachable: Au10tixCore.Reachability.NetworkReachable?
+  final public var whenUnreachable: Au10tixCore.Reachability.NetworkUnreachable?
+  final public var allowsCellularConnection: Swift.Bool
+  final public var notificationCenter: Foundation.NotificationCenter
+  final public var connection: Au10tixCore.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension Reachability {
+  final public func startNotifier() throws
+  final public func stopNotifier()
+  final public var description: Swift.String {
+    get
+  }
+}
+public struct LoggerInfo : Swift.Codable {
+  public init(file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line, time: Foundation.Date = Date())
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct LoggingEngine : Au10tixCore.AnalyticsEngine {
+  public func record(event: Au10tixCore.AnalyticsEvent)
+}
+public protocol Authenticator {
+  var isActive: Swift.Bool { get }
+  var baseURL: Swift.String? { get }
+  var bosBaseURL: Swift.String? { get }
+  func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+}
+public enum ValidationError : Swift.Error {
+  case invalidClaim(Swift.String)
+  case expired
+  case nonce
+}
+public protocol AnalyticsEvent {
+  var name: Swift.String { get }
+  var metadata: Swift.Dictionary<Swift.String, Any> { get }
+  var technicalDetails: Au10tixCore.LoggerInfo? { get }
+  var loggingInformation: Au10tixCore.LoggableInfo? { get }
+  func record()
+}
+extension AnalyticsEvent {
+  public var metadata: Swift.Dictionary<Swift.String, Swift.String> {
+    get
+  }
+  public func record()
+}
+public protocol JWT {
+  var header: [Swift.String : Any] { get }
+  var body: [Swift.String : Any] { get }
+  var signature: Swift.String? { get }
+  var string: Swift.String { get }
+  var expiresAt: Foundation.Date? { get }
+  var issuer: Swift.String? { get }
+  var subject: Swift.String? { get }
+  var audience: [Swift.String]? { get }
+  var issuedAt: Foundation.Date? { get }
+  var notBefore: Foundation.Date? { get }
+  var identifier: Swift.String? { get }
+  var expired: Swift.Bool { get }
+}
+extension JWT {
+  public func claim(name: Swift.String) -> Au10tixCore.Claim
+}
+public class LogzIoEngine : Au10tixCore.AnalyticsEngine, Au10tixCore.BatchShipper {
+  public init?(data: Foundation.Data)
+  public func record(event: Au10tixCore.AnalyticsEvent)
+  public func shipQueuedEvents()
+  @objc deinit
+}
+public protocol FeatureConfiguration : Swift.Decodable {
+}
+public class CompositeAnalyticsEngine : Au10tixCore.AnalyticsEngine, Au10tixCore.BatchShipper {
+  public init(engines: Au10tixCore.AnalyticsEngine...)
+  public func record(event: Au10tixCore.AnalyticsEvent)
+  public func shipQueuedEvents()
+  public func getAllEngines<T>(of type: T) -> [T] where T : Au10tixCore.AnalyticsEngine
+  @objc deinit
+}
+public struct Au10NetworkResponse<Body> {
+  public let statusCode: Swift.Int
+  public let body: Body
+}
+public struct Au10SessionCaptureFrameUpdate<Frame> {
+}
+@_hasMissingDesignatedInitializers final public class Au10Constants {
+  public enum ModuleType : Swift.String, Swift.Codable {
+    case null
+    case selfie
+    case passport
+    case passiveFaceLiveness
+    case smartDocumentCapture
+    case proofOfAddress
+    case demoApp
+    case backend
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Event {
+    public enum Environment : Swift.String, Swift.Codable {
+      case development
+      case production
+      case test
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Module : Swift.String, Swift.Codable {
+      case mobileSDK
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Category : Swift.String, Swift.Codable {
+      case session
+      case `init`
+      case permission
+      case networking
+      case licensing
+      case requestGenerator
+      case customParameters
+      case imageProcessing
+      case passport
+      case imageCapture
+      case backend
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Action : Swift.String, Swift.Codable {
+      case prepare
+      case start
+      case stop
+      case pause
+      case crop
+      case captureStillImage
+      case location
+      case addItem
+      case response
+      case error
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Level : Swift.String, Swift.Codable {
+      case info
+      case error
+      case debug
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+  }
+  @objc deinit
+}
+public protocol NFCPassportReaderSession {
+  func readNFC(with mrz: Swift.String)
+  func readNFC(with documentNumber: Swift.String, expiryDate: Foundation.Date, birthDate: Foundation.Date)
+}
+public class Au10NetworkRequest {
+  public struct DefaultValue {
+    public static let path: Swift.String?
+    public static let headers: [Au10tixCore.HTTPHeader]
+    public static let queryItems: [Foundation.URLQueryItem]?
+    public static let httpBody: Foundation.Data?
+    public static let timeoutInterval: Swift.Double
+  }
+  final public let method: Au10tixCore.HTTPMethod
+  final public let baseURL: Foundation.URL
+  final public let path: Swift.String?
+  final public let headers: [Au10tixCore.HTTPHeader]?
+  final public let queryItems: [Foundation.URLQueryItem]?
+  final public let httpBody: Foundation.Data?
+  final public let timeoutInterval: Foundation.TimeInterval
+  required public init(method: Au10tixCore.HTTPMethod, baseURL: Foundation.URL, path: Swift.String? = DefaultValue.path, headers: [Au10tixCore.HTTPHeader] = DefaultValue.headers, queryItems: [Foundation.URLQueryItem]? = DefaultValue.queryItems, httpBody: Foundation.Data? = DefaultValue.httpBody, timeoutInterval: Foundation.TimeInterval = DefaultValue.timeoutInterval)
+  convenience public init<Body>(method: Au10tixCore.HTTPMethod, baseURL: Foundation.URL, path: Swift.String? = DefaultValue.path, headers: [Au10tixCore.HTTPHeader] = DefaultValue.headers, queryItems: [Foundation.URLQueryItem]? = DefaultValue.queryItems, body: Body, timeoutInterval: Foundation.TimeInterval = DefaultValue.timeoutInterval) throws where Body : Swift.Encodable
+  @objc deinit
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case put
+  case post
+  case delete
+  case head
+  case options
+  case trace
+  case connect
+  case patch
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct HTTPHeader {
+  public let field: Swift.String
+  public let value: Swift.String
+  public init(field: Swift.String, value: Swift.String)
+}
+extension HTTPHeader {
+  public enum Fields : Swift.String {
+    case contentType
+    case contentLength
+    case userAgent
+    case authorization
+    case sessionID
+    case sdkVersion
+    case sdkType
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Values {
+    case json
+    case bearer(value: Swift.String)
+    case mobileSDK
+  }
+}
+extension HTTPHeader {
+  public init(field: Au10tixCore.HTTPHeader.Fields, value: Au10tixCore.HTTPHeader.Values)
+  public init(field: Au10tixCore.HTTPHeader.Fields, value: Swift.String)
+}
+extension HTTPHeader : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Au10NetworkRequest : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol BearerTokenAdvertizer : AnyObject {
+  var bearerToken: Swift.String? { get }
+}
+@objc public enum Au10ImageSource : Swift.Int {
+  case cameraVideoFrame
+  case cameraCapture
+  case external
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class Au10Image : ObjectiveC.NSObject {
+  @objc final public let ciImage: CoreImage.CIImage
+  @objc final public let source: Au10tixCore.Au10ImageSource
+  @objc public var cgImage: CoreGraphics.CGImage? {
+    @objc get
+  }
+  @objc public var uiImage: UIKit.UIImage {
+    @objc get
+  }
+  @objc public var width: Swift.Int {
+    @objc get
+  }
+  @objc public var height: Swift.Int {
+    @objc get
+  }
+  @objc public var uiOrientation: UIKit.UIImage.Orientation {
+    @objc get
+  }
+  @objc public var cgOrientation: ImageIO.CGImagePropertyOrientation {
+    @objc get
+  }
+  @objc public init(ciImage: CoreImage.CIImage, source: Au10tixCore.Au10ImageSource)
+  @objc public func convertImageToData() -> Foundation.Data?
+  @objc public static let sharedContext: CoreImage.CIContext
+  @objc public static func scaled(image: CoreImage.CIImage, for size: CoreGraphics.CGSize) -> Foundation.Data?
+  @objc deinit
+  @objc override dynamic public init()
+}
+public class RequestDataBuilder {
+  public init()
+  public func build() -> Au10tixCore.RequestData
+  @discardableResult
+  public func withFrontDocument() -> Au10tixCore.RequestDataBuilder
+  @discardableResult
+  public func withBackDocument() -> Au10tixCore.RequestDataBuilder
+  @discardableResult
+  public func withPOA() -> Au10tixCore.RequestDataBuilder
+  @discardableResult
+  public func useTag() -> Au10tixCore.RequestDataBuilder
+  @objc deinit
+}
+public struct IDTokenValidation {
+  public let issuer: Swift.String
+  public let audience: Swift.String
+  public init(issuer: Swift.String, audience: Swift.String)
+  public func validate(_ jwt: Au10tixCore.JWT, nonce: Swift.String? = nil) -> Au10tixCore.ValidationError?
+}
+public protocol AnalyticsEngine {
+  func record(event: Au10tixCore.AnalyticsEvent)
+}
+open class TokenLifeCycleHandler {
+  public init()
+  @objc deinit
+  @objc open func handleTokenExpiration()
+  @objc open func handleTokenRenewal()
+}
+public struct Claim {
+  public var rawValue: Any? {
+    get
+  }
+  public var string: Swift.String? {
+    get
+  }
+  public var double: Swift.Double? {
+    get
+  }
+  public var integer: Swift.Int? {
+    get
+  }
+  public var date: Foundation.Date? {
+    get
+  }
+  public var array: [Swift.String]? {
+    get
+  }
+}
+public class SessionTimeoutHandler : Au10tixCore.Timeoutable {
+  public var timeoutTimer: Foundation.Timer?
+  weak public var session: Au10tixCore.Au10tixSession?
+  weak public var timeoutableSessionDelegate: Au10tixCore.TimeoutableSessionDelegate?
+  public var timeoutInterval: Foundation.TimeInterval
+  public var appLifeCycleTimeoutHandler: Au10tixCore.AppLifeCycleSessionTimeoutHandler?
+  required public init(session: Au10tixCore.Au10tixSession, sessionDelegate: Au10tixCore.TimeoutableSessionDelegate)
+  public func notifyTimeout()
+  public func applicationStateRequiresTimeoutTimerActivation()
+  @objc deinit
+}
+extension CGImagePropertyOrientation {
+  public init(_ orientation: UIKit.UIImage.Orientation)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Au10tix : ObjectiveC.NSObject, Au10tixCore.BearerTokenAdvertizer, Au10tixCore.Authenticator, Au10tixCore.SessionDetailsAdvertizer {
+  final public var isActive: Swift.Bool {
+    get
+  }
+  final public var tokenExpirationDate: Foundation.Date? {
+    get
+  }
+  final public var configurationsRawData: Foundation.Data? {
+    get
+  }
+  final public var bearerToken: Swift.String? {
+    get
+  }
+  final public var baseURL: Swift.String? {
+    get
+  }
+  final public var bosBaseURL: Swift.String? {
+    get
+  }
+  final public var sessionId: Swift.String? {
+    get
+  }
+  @objc public static let shared: Au10tixCore.Au10tix
+  final public func prepare(with jwt: Swift.String, keepSessionID: Swift.Bool = false, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  final public func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  @objc final public func resetSessionId(with completion: @escaping (Swift.String?) -> Swift.Void)
+  @objc deinit
+}
+extension Au10tix {
+  @objc final public func denormalized(_ normalizedRect: CoreGraphics.CGRect, in imageView: UIKit.UIImageView) -> CoreGraphics.CGRect
+}
+public enum DecodeError : Foundation.LocalizedError {
+  case invalidBase64Url(Swift.String)
+  case invalidJSON(Swift.String)
+  case invalidPartCount(Swift.String, Swift.Int)
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public typealias NetworkServiceCompletion = (Swift.Result<Au10tixCore.Au10NetworkResponse<Foundation.Data?>, Swift.Error>) -> Swift.Void
+public struct Au10NetworkClientImpl {
+  public init(configuration: Foundation.URLSessionConfiguration = .default)
+}
+extension Au10NetworkClientImpl {
+  @discardableResult
+  public func perform(_ request: Au10tixCore.Au10NetworkRequest, _ completion: @escaping Au10tixCore.NetworkServiceCompletion) -> Foundation.URLSessionDataTask?
+}
+public protocol Timeoutable : AnyObject {
+  var session: Au10tixCore.Au10tixSession? { get }
+  var timeoutableSessionDelegate: Au10tixCore.TimeoutableSessionDelegate? { get }
+  var timeoutTimer: Foundation.Timer? { get set }
+  var timeoutInterval: Foundation.TimeInterval { get set }
+  var appLifeCycleTimeoutHandler: Au10tixCore.AppLifeCycleSessionTimeoutHandler? { get }
+  func startTimeoutCountdown()
+  func stopTimeoutCountdown()
+  func notifyTimeout()
+  func applicationStateRequiresTimeoutTimerActivation()
+}
+extension Timeoutable {
+  public func startTimeoutCountdown()
+  public func stopTimeoutCountdown()
+}
+public struct SessionTimeoutInterval {
+  public static let short: Swift.Double
+  public static let regular: Swift.Double
+}
+public struct Au10JWTParser {
+  public enum JWTError : Swift.Error {
+    case invalidJWT
+    case expired
+    case missingData
+    public static func == (a: Au10tixCore.Au10JWTParser.JWTError, b: Au10tixCore.Au10JWTParser.JWTError) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public struct JWTPayload {
+    public let jwt: Swift.String
+    public let apiUrl: Swift.String
+    public let bosUrl: Swift.String
+    public let expirationDate: Foundation.Date
+  }
+  public func readPayload(from jwtString: Swift.String) throws -> Au10tixCore.Au10JWTParser.JWTPayload
+}
+extension NSNotification.Name {
+  public static var au10tixCoreTokenExpiration: Foundation.Notification.Name {
+    get
+  }
+  public static var au10tixCoreTokenRenewal: Foundation.Notification.Name {
+    get
+  }
+}
+public protocol BatchShipper : Au10tixCore.AnalyticsEngine {
+  func shipQueuedEvents()
+}
+@objc @objcMembers open class Au10Update : ObjectiveC.NSObject {
+  @objc public var quad: Au10tixCore.Au10Quadrangle?
+  public var boundingBox: CoreGraphics.CGRect?
+  @objc public var data: Foundation.Data?
+  @objc public var image: Au10tixCore.Au10Image?
+  public var topLeft: CoreGraphics.CGPoint? {
+    get
+  }
+  public var topRight: CoreGraphics.CGPoint? {
+    get
+  }
+  public var bottomLeft: CoreGraphics.CGPoint? {
+    get
+  }
+  public var bottomRight: CoreGraphics.CGPoint? {
+    get
+  }
+  @objc public init(image: Au10tixCore.Au10Image?)
+  @objc public func croppedImage() -> Au10tixCore.Au10Image?
+  @objc deinit
+  @objc override dynamic public init()
+}
+public struct MultipartDataBuilder {
+  public struct Params {
+    public init(name: Swift.String, value: Swift.String?, data: Foundation.Data?)
+  }
+  public init(boundary: Swift.String)
+  public func insert(params: [Au10tixCore.MultipartDataBuilder.Params], to multipart: Foundation.Data) -> Foundation.Data
+}
+public protocol CameraSession {
+  func captureImage()
+  func pauseCamera()
+  func resumeCamera()
+}
+public struct SessionParameters {
+  public let bearerToken: Swift.String
+  public let sessionID: Swift.String
+  public let baseURL: Swift.String
+  public let configuration: Au10tixCore.FeatureConfiguration?
+  public init(token: Swift.String, id: Swift.String, baseURL: Swift.String, configuration: Au10tixCore.FeatureConfiguration?)
+}
+@_hasMissingDesignatedInitializers final public class Analytics {
+  public static func addEngine(_ engine: Au10tixCore.AnalyticsEngine?)
+  public static func getAllEngines<T>(of type: T) -> [T] where T : Au10tixCore.AnalyticsEngine
+  public static func record(event: Au10tixCore.AnalyticsEvent, withUniqueEngine: Au10tixCore.AnalyticsEngine? = nil)
+  public static func shipQueuedEvents()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AppLifeCycleSessionTimeoutHandler {
+  @objc deinit
+}
+public enum Au10tixCorePrepareError : Swift.Error {
+  case badJWT
+  case missingUrlInJWT
+  case noServerResponse
+  case networkError(error: Swift.Error)
+  case parsingResponseFailed
+  case invalidSessionParameters
+  case failedToStartSession(error: Swift.Error)
+}
+public struct LoggableInfo : Swift.Codable {
+  public init(level: Au10tixCore.Au10Constants.Event.Level = .info, category: Au10tixCore.Au10Constants.Event.Category? = nil, sessionId: Swift.String? = nil, action: Au10tixCore.Au10Constants.Event.Action? = nil, module: Au10tixCore.Au10Constants.ModuleType? = nil, errorCode: Swift.String? = nil)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class Au10Quadrangle : ObjectiveC.NSObject {
+  public var topLeft: CoreGraphics.CGPoint
+  public var topRight: CoreGraphics.CGPoint
+  public var bottomLeft: CoreGraphics.CGPoint
+  public var bottomRight: CoreGraphics.CGPoint
+  public init(topLeft: CoreGraphics.CGPoint, topRight: CoreGraphics.CGPoint, bottomLeft: CoreGraphics.CGPoint, bottomRight: CoreGraphics.CGPoint)
+  convenience public init(x1: Swift.Int, x2: Swift.Int, y1: Swift.Int, y2: Swift.Int)
+  public func implementRatio(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol TimeoutableSessionDelegate : AnyObject {
+  func sessionTimedout(_ session: Au10tixCore.Timeoutable)
+}
+public struct RequestData : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @objc(A0JWT) public class _JWT : ObjectiveC.NSObject {
+  @objc public var header: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public var body: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public var signature: Swift.String? {
+    @objc get
+  }
+  @objc public var expiresAt: Foundation.Date? {
+    @objc get
+  }
+  @objc public var expired: Swift.Bool {
+    @objc get
+  }
+  @objc public class func decode(jwt jwtValue: Swift.String) throws -> Au10tixCore._JWT
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol ImageProvidableSession {
+  func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+}
+public protocol SessionDetailsAdvertizer : AnyObject {
+  var sessionId: Swift.String? { get }
+  var configurationsRawData: Foundation.Data? { get }
+}
+public protocol FrontSideSupporter {
+  var isFrontSide: Swift.Bool { get set }
+}
+@_inheritsConvenienceInitializers @objc(AU10JSONRequestGenerator) public class JSONRequestGenerator : ObjectiveC.NSObject {
+  public func makeSingleSideRequest() throws -> Foundation.Data
+  public func makeSingleSideWithPOA() throws -> Foundation.Data
+  public func makeDoubleSideRequest() throws -> Foundation.Data
+  public func makeDoubleSideWithPOA() throws -> Foundation.Data
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers final public class AnalyticsPacemaker {
+  @objc deinit
+}
+public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
+public protocol Au10tixSession : AnyObject {
+  var isAvailable: Swift.Bool { get }
+  var isCameraActive: Swift.Bool { get }
+  var authenticator: Au10tixCore.Au10tixSessionAuthenticator { get }
+  func prepare(with token: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  func stop()
+}
+extension Au10tixSession {
+  public func prepare(with token: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+}
+extension Au10tixCore.Reachability.Connection : Swift.Equatable {}
+extension Au10tixCore.Reachability.Connection : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.ModuleType : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.ModuleType : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.ModuleType : Swift.RawRepresentable {}
+extension Au10tixCore.Au10Constants.Event.Environment : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.Event.Environment : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.Event.Environment : Swift.RawRepresentable {}
+extension Au10tixCore.Au10Constants.Event.Module : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.Event.Module : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.Event.Module : Swift.RawRepresentable {}
+extension Au10tixCore.Au10Constants.Event.Category : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.Event.Category : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.Event.Category : Swift.RawRepresentable {}
+extension Au10tixCore.Au10Constants.Event.Action : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.Event.Action : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.Event.Action : Swift.RawRepresentable {}
+extension Au10tixCore.Au10Constants.Event.Level : Swift.Equatable {}
+extension Au10tixCore.Au10Constants.Event.Level : Swift.Hashable {}
+extension Au10tixCore.Au10Constants.Event.Level : Swift.RawRepresentable {}
+extension Au10tixCore.HTTPMethod : Swift.Equatable {}
+extension Au10tixCore.HTTPMethod : Swift.Hashable {}
+extension Au10tixCore.HTTPMethod : Swift.RawRepresentable {}
+extension Au10tixCore.HTTPHeader.Fields : Swift.Equatable {}
+extension Au10tixCore.HTTPHeader.Fields : Swift.Hashable {}
+extension Au10tixCore.HTTPHeader.Fields : Swift.RawRepresentable {}
+extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
+extension Au10tixCore.Au10ImageSource : Swift.Hashable {}
+extension Au10tixCore.Au10ImageSource : Swift.RawRepresentable {}
+extension Au10tixCore.Au10JWTParser.JWTError : Swift.Equatable {}
+extension Au10tixCore.Au10JWTParser.JWTError : Swift.Hashable {}
