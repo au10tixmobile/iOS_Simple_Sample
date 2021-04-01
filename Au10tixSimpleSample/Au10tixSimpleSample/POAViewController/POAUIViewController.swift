@@ -38,7 +38,7 @@ private extension POAUIViewController {
      */
     
     func prepare() {
-        guard let token = Au10tixCore.shared.bearerToken else { return }
+        guard let token = Au10tix.shared.bearerToken else { return }
         poaSession.delegate = self
         
         self.poaSession.start(with: token, previewView: self.cameraView) { [weak self](result) in

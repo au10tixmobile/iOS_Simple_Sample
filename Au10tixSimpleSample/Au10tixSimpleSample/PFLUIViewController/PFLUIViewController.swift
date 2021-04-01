@@ -25,7 +25,7 @@ final class PFLUIViewController: UIViewController {
     // MARK: - Private Properties
     
     private var capturedImageData: Data?
-    private var activityIndicator = UIActivityIndicatorView(style: .large)
+    private var activityIndicator = UIActivityIndicatorView(style: .white)
     
     // MARK: - Life cycle
     
@@ -50,7 +50,7 @@ private extension PFLUIViewController {
      */
     
     func prepare() {
-        guard let token = Au10tixCore.shared.bearerToken else { return }
+        guard let token = Au10tix.shared.bearerToken else { return }
         pflSession.delegate = self
         pflSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }

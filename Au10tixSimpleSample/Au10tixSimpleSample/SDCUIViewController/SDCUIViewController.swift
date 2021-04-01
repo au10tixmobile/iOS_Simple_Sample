@@ -40,7 +40,7 @@ private extension SDCUIViewController {
      */
     
     func prepare() {
-        guard let token = Au10tixCore.shared.bearerToken else { return }
+        guard let token = Au10tix.shared.bearerToken else { return }
         sdcSession.delegate = self
         sdcSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
