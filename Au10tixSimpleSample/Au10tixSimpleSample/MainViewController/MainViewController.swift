@@ -16,6 +16,8 @@ import Au10tixProofOfAddressUI
 import Au10tixSmartDocumentCaptureUI
 import Au10tixPassiveFaceLivenessUI
 import Au10tixBEKit
+import Au10tixLivenessKit
+import Au10tixLivenessUI
 
 final class MainViewController: UIViewController {
     
@@ -67,7 +69,7 @@ private extension MainViewController {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
-        Au10tix.shared.prepare(with: "") { [weak self] result in
+        Au10tix.shared.prepare(with: "eyJraWQiOiI0OW56OENVQXlhandMV1UwNHlLLTF6azE5Z2lYQVZWSmp3WWdsbVhxSXBZIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULklKdThUeWtuUnNUQnpBMXJGUFJjTVdkQks0OTViU1dlelItVWpScGs5OUEiLCJpc3MiOiJodHRwczovL2xvZ2luLmF1MTB0aXguY29tL29hdXRoMi9hdXMzbWx0czVzYmU5V0Q4VjM1NyIsImF1ZCI6ImF1MTB0aXgiLCJpYXQiOjE2MTk2OTU1MTksImV4cCI6MTYxOTY5NjExOSwiY2lkIjoiMG9hM25yNGI5Ym12NjBuQWUzNTciLCJzY3AiOlsic2RjIiwicGZsIiwibW9iaWxlc2RrIl0sImdsb2JhbEFwaVVybCI6Imh0dHBzOi8vd2V1LWNtLWFwaW0tZGV2LmF6dXJlLWFwaS5uZXQiLCJzdWIiOiIwb2EzbnI0YjlibXY2MG5BZTM1NyIsImFwaVVybCI6Imh0dHBzOi8vd2V1LWNtLWFwaW0tZGV2LmF6dXJlLWFwaS5uZXQiLCJib3NVcmwiOiJodHRwczovL2Jvcy13ZWIuYXUxMHRpeHNlcnZpY2VzZGV2LmNvbSIsImNsaWVudE9yZ2FuaXphdGlvbk5hbWUiOiJBVTEwdFRJWCIsImNsaWVudE9yZ2FuaXphdGlvbklkIjoiMzI2In0.G6BevJY_JSjMOApD6_4zY8YiWNRk8EzmfePhY65PyzL0L4jEwxIXkbp2wJciXWVskeOSuUyEQNf8OlYPFkG7vomei6xDnpfMOdzL1hupKTxBDsz6VkijUU2lgFm4gSi-VT9qnHpzKGm7rtL4zb-CRvAzsbrzw-60eziIhvdPExqmGJObGsPPExWaIHovMh1NaoPzqPbSpzHKGG2Vh3uQa6lR-A4fEUT-lZL1KcV0thKthkP_tSBfOiIwQIbBP7_RRxNdetxyqUqXa9fkLty98uVtA1811VrMvy4xfQKi7Cd-49A_HXlEs4mIJV2t6KeA1tyvT01YaqwB-49AB7UEbw") { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let sessionID):
@@ -114,6 +116,26 @@ private extension MainViewController {
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
         controller.pflDelegate = self
         present(controller, animated: true, completion: nil)
+    }
+    
+    // MARK: - Open LIVENESS UI component.
+    /**
+     Use this method to initialize the LIVENESS UI component.
+     */
+    
+    func openLivenessUIComponent() {
+        let configs = UIComponentConfigs(appLogo: UIImage(),
+                                         actionButtonTint: UIColor.green,
+                                         titleTextColor: UIColor.green,
+                                         errorTextColor: UIColor.green,
+                                         canUploadImage: true,
+                                         showCloseButton: true)
+        
+        let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
+        livenessVC.livenessSessionConfigs = LivenessSession.Configs(maxPflRetries: 3, maxAflRetries: 3, isPflMandatory: true)
+        livenessVC.aflSessionConfigs = AFLSessionConfigs(maxRetries: 1, gesturesCount: 3, gestureTimeoutInterval: 7)
+        livenessVC.livenessSessionDelegate = self
+        self.present(livenessVC, animated: true, completion: nil)
     }
     
     // MARK: - Open PROOF OF ADDRESS UI component.
@@ -267,6 +289,10 @@ private extension MainViewController {
     
     @IBAction func btnPOAwithUIAction() {
         openPOAUIComponent()
+    }
+    
+    @IBAction func btnLivenessWithUIAction() {
+        openLivenessUIComponent()
     }
     
     @IBAction func sendIdvRequest(sender: UIButton) {
@@ -458,6 +484,47 @@ extension MainViewController: PFLSessionDelegate {
     
 }
 
+
+extension MainViewController: LivenessSessionDelegate {
+    
+    /**
+    Gets Called when Liveness finished
+     */
+    func livenessSession(_ session: LivenessSession, didFinishWithResult result: LivenessSessionResult) {
+        
+    }
+    
+    /**
+    Gets Called when Liveness has an update
+     */
+    func livenessSession(_ session: LivenessSession, didReceiveAnUpdate update: LivenessSessionUpdate) {
+        
+    }
+    
+    /**
+    Gets Called when Liveness failed
+     */
+    func livenessSession(_ session: LivenessSession, didFailWithError error: LivenessSessionError) {
+        
+    }
+    
+    /**
+    Gets Called when Liveness waiting for user action due to 'reason'
+     */
+    func livenessSession(_ session: LivenessSession, waitingForUserAction reason: LivenessSessionWaitingForUserReason) {
+        //you can show some UI prior to proceedToNextStep invokation
+        session.proceedToNextStep()
+    }
+    
+    /**
+    Gets Called when Liveness session screen recording failed
+     */
+    func livenessSession(_ session: LivenessSession, didFailScreenRecordingWith error: ScreenRecorderError) {
+        
+    }
+    
+}
+
 extension MainViewController: UIComponentViewControllerNavigationDelegate {
     /**
      Gets called whenever an UI-Comp finished.
@@ -475,3 +542,4 @@ extension MainViewController: UIComponentViewControllerNavigationDelegate {
     
     
 }
+
