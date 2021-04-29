@@ -69,7 +69,7 @@ private extension MainViewController {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
         
-        Au10tix.shared.prepare(with: "eyJraWQiOiI0OW56OENVQXlhandMV1UwNHlLLTF6azE5Z2lYQVZWSmp3WWdsbVhxSXBZIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULklKdThUeWtuUnNUQnpBMXJGUFJjTVdkQks0OTViU1dlelItVWpScGs5OUEiLCJpc3MiOiJodHRwczovL2xvZ2luLmF1MTB0aXguY29tL29hdXRoMi9hdXMzbWx0czVzYmU5V0Q4VjM1NyIsImF1ZCI6ImF1MTB0aXgiLCJpYXQiOjE2MTk2OTU1MTksImV4cCI6MTYxOTY5NjExOSwiY2lkIjoiMG9hM25yNGI5Ym12NjBuQWUzNTciLCJzY3AiOlsic2RjIiwicGZsIiwibW9iaWxlc2RrIl0sImdsb2JhbEFwaVVybCI6Imh0dHBzOi8vd2V1LWNtLWFwaW0tZGV2LmF6dXJlLWFwaS5uZXQiLCJzdWIiOiIwb2EzbnI0YjlibXY2MG5BZTM1NyIsImFwaVVybCI6Imh0dHBzOi8vd2V1LWNtLWFwaW0tZGV2LmF6dXJlLWFwaS5uZXQiLCJib3NVcmwiOiJodHRwczovL2Jvcy13ZWIuYXUxMHRpeHNlcnZpY2VzZGV2LmNvbSIsImNsaWVudE9yZ2FuaXphdGlvbk5hbWUiOiJBVTEwdFRJWCIsImNsaWVudE9yZ2FuaXphdGlvbklkIjoiMzI2In0.G6BevJY_JSjMOApD6_4zY8YiWNRk8EzmfePhY65PyzL0L4jEwxIXkbp2wJciXWVskeOSuUyEQNf8OlYPFkG7vomei6xDnpfMOdzL1hupKTxBDsz6VkijUU2lgFm4gSi-VT9qnHpzKGm7rtL4zb-CRvAzsbrzw-60eziIhvdPExqmGJObGsPPExWaIHovMh1NaoPzqPbSpzHKGG2Vh3uQa6lR-A4fEUT-lZL1KcV0thKthkP_tSBfOiIwQIbBP7_RRxNdetxyqUqXa9fkLty98uVtA1811VrMvy4xfQKi7Cd-49A_HXlEs4mIJV2t6KeA1tyvT01YaqwB-49AB7UEbw") { [weak self] result in
+        Au10tix.shared.prepare(with: "") { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let sessionID):
