@@ -1,81 +1,14 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixPassiveFaceLivenessKit
-import Au10DetectorManager
 import Au10tixCore
+import Au10tixDetectorManager
 @_exported import Au10tixPassiveFaceLivenessKit
 import Au10tixSourceManager
-import CoreGraphics
 import CoreVideo
 import Foundation
 import Swift
 import UIKit
-public typealias QualityFaultOptions = Swift.Set<Au10tixPassiveFaceLivenessKit.QualityFault>
-@objc public enum QualityFault : Swift.Int {
-  case unstable
-  case deviceNotVerticle
-  case faceNotDetectedInImage
-  case tooManyFaces
-  case faceTooFarFromCamera
-  case faceTooCloseToCamera
-  case faceNotFacingDirectlyAtCamera
-  case holdSteady
-  case noFault
-  public typealias RawValue = Swift.Int
-  public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers public class PFLSession : Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
-  public var isAvailable: Swift.Bool {
-    get
-  }
-  public var isCameraActive: Swift.Bool {
-    get
-  }
-  public var authenticator: Au10tixCore.Au10tixSessionAuthenticator
-  weak public var delegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
-  convenience public init()
-  public func set(responseQueue: Dispatch.DispatchQueue)
-  public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
-  public func stop()
-  public func captureImage()
-  public func pauseCamera()
-  public func resumeCamera()
-  public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
-  public func recapture()
-  public func validateImage(_ image: Foundation.Data)
-  public func validateLiveness(for probability: Swift.Double) -> Swift.Bool
-  @objc deinit
-}
-extension PFLSession : Au10tixCore.TimeoutableSessionDelegate {
-  public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
-}
-public enum PFLSessionError : Swift.Error {
-  case timedout
-  case sessionTokenExpired
-  case retriesEnded
-  case livenessCheckFailed(error: Swift.Error)
-  case networkError(_: Swift.Error)
-}
-public protocol PFLSessionDelegate : AnyObject {
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, faceBoundingBox: CoreGraphics.CGRect?)
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didRecieve qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didConcludeWith result: Au10tixPassiveFaceLivenessKit.PFLResponse, for image: Foundation.Data)
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
-}
-@objc public enum PassiveFaceLivenessUpdateType : Swift.Int {
-  case imageCaptured
-  case qualityFeedback
-  case passedThreshold
-  public typealias RawValue = Swift.Int
-  public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc(Au10xFaceError) public enum FaceError : Swift.Int {
   case faceTooClose = 100
   case faceTooCloseToBorder
@@ -129,15 +62,86 @@ public struct PFLResponse : Swift.Decodable {
   public let error_code: Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode?
   public init(from decoder: Swift.Decoder) throws
 }
-extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Equatable {}
-extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Hashable {}
-extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.RawRepresentable {}
-extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.Equatable {}
-extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.Hashable {}
-extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.RawRepresentable {}
+public typealias QualityFaultOptions = Swift.Set<Au10tixPassiveFaceLivenessKit.QualityFault>
+public enum QualityFault : Swift.Int {
+  case unstable
+  case deviceNotVerticle
+  case faceNotDetectedInImage
+  case tooManyFaces
+  case faceTooFarFromCamera
+  case faceTooCloseToCamera
+  case faceNotFacingDirectlyAtCamera
+  case moveUp
+  case moveDown
+  case moveLeft
+  case moveRight
+  case holdSteady
+  case noFault
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PFLSessionError : Swift.Error {
+  case timedout
+  case sessionTokenExpired
+  case retriesEnded
+  case livenessCheckFailed(error: Swift.Error)
+  case networkError(_: Swift.Error)
+}
+public protocol PFLSessionDelegate : AnyObject {
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, faceBoundingBox: CoreGraphics.CGRect?)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didRecieve qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didConcludeWith result: Au10tixPassiveFaceLivenessKit.PFLResponse, for image: Foundation.Data)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
+}
+@_hasMissingDesignatedInitializers public class PFLSession : Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
+  public var isAvailable: Swift.Bool {
+    get
+  }
+  public var isCameraActive: Swift.Bool {
+    get
+  }
+  public var authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  weak public var delegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
+  convenience public init()
+  public func set(responseQueue: Dispatch.DispatchQueue)
+  public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  public func stop()
+  public func captureImage()
+  public func pauseCamera()
+  public func resumeCamera()
+  public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  public func recapture()
+  public func validateImage(_ image: Foundation.Data)
+  public func validateLiveness(for probability: Swift.Double) -> Swift.Bool
+  @objc deinit
+}
+extension PFLSession : Au10tixCore.TimeoutableSessionDelegate {
+  public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
+}
+@objc public enum PassiveFaceLivenessUpdateType : Swift.Int {
+  case imageCaptured
+  case qualityFeedback
+  case passedThreshold
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension Au10tixPassiveFaceLivenessKit.FaceError : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.FaceError : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.FaceError : Swift.RawRepresentable {}
 extension Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode : Swift.RawRepresentable {}
+extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Equatable {}
+extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Hashable {}
+extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.RawRepresentable {}
+extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.Equatable {}
+extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.Hashable {}
+extension Au10tixPassiveFaceLivenessKit.PassiveFaceLivenessUpdateType : Swift.RawRepresentable {}

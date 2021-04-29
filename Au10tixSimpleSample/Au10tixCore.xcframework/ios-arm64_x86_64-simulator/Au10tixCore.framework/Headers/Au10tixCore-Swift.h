@@ -215,7 +215,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class CIImage;
 enum Au10ImageSource : NSInteger;
 @class UIImage;
-@class CIContext;
 
 SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 @interface Au10Image : NSObject
@@ -230,9 +229,6 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 - (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
 /// Convert the CIImage to binary data in order to send it to the BOS server
 - (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CIContext * _Nonnull sharedContext;)
-+ (CIContext * _Nonnull)sharedContext SWIFT_WARN_UNUSED_RESULT;
-+ (NSData * _Nullable)scaledWithImage:(CIImage * _Nonnull)image for:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -279,12 +275,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _N
 - (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
-@class UIImageView;
-
-@interface Au10tix (SWIFT_EXTENSION(Au10tixCore))
-- (CGRect)denormalized:(CGRect)normalizedRect in:(UIImageView * _Nonnull)imageView SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 
 
@@ -293,7 +283,6 @@ SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @interface AU10JSONRequestGenerator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 /// Decodes a JWT
@@ -539,7 +528,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class CIImage;
 enum Au10ImageSource : NSInteger;
 @class UIImage;
-@class CIContext;
 
 SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 @interface Au10Image : NSObject
@@ -554,9 +542,6 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 - (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
 /// Convert the CIImage to binary data in order to send it to the BOS server
 - (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CIContext * _Nonnull sharedContext;)
-+ (CIContext * _Nonnull)sharedContext SWIFT_WARN_UNUSED_RESULT;
-+ (NSData * _Nullable)scaledWithImage:(CIImage * _Nonnull)image for:(CGSize)size SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -603,12 +588,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _N
 - (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
-@class UIImageView;
-
-@interface Au10tix (SWIFT_EXTENSION(Au10tixCore))
-- (CGRect)denormalized:(CGRect)normalizedRect in:(UIImageView * _Nonnull)imageView SWIFT_WARN_UNUSED_RESULT;
-@end
-
 
 
 
@@ -617,7 +596,6 @@ SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @interface AU10JSONRequestGenerator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 /// Decodes a JWT

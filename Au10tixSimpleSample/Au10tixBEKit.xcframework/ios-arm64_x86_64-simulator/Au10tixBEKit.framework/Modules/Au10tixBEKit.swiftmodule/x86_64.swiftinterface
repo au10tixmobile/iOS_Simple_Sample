@@ -6,6 +6,15 @@ import Au10tixCore
 import Foundation
 import Swift
 import SystemConfiguration
+@_hasMissingDesignatedInitializers public class IDVFactory : Au10tixBEKit.BOSInteractorFactory {
+  public init(dataTypes: [Au10tixBEKit.DataType])
+  public func provideSdcFront(image: Au10tixCore.Au10Image)
+  public func provideSdcBack(image: Au10tixCore.Au10Image)
+  public func providePfl(image: Au10tixCore.Au10Image)
+  public func providePoa(image: Au10tixCore.Au10Image)
+  public func provideAfl(dictionary: [Swift.String : Swift.String])
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class F2FFactory : Au10tixBEKit.BOSInteractorFactory {
   public init()
   public func providePfl(image: Au10tixCore.Au10Image)
@@ -20,14 +29,6 @@ public enum Au10tixBEKitError : Swift.Error {
   case parseError(error: Swift.Error)
   case cancelled
 }
-@_hasMissingDesignatedInitializers public class IDVFactory : Au10tixBEKit.BOSInteractorFactory {
-  public init(dataTypes: [Au10tixBEKit.DataType])
-  public func provideSdcFront(image: Au10tixCore.Au10Image)
-  public func provideSdcBack(image: Au10tixCore.Au10Image)
-  public func providePfl(image: Au10tixCore.Au10Image)
-  public func providePoa(image: Au10tixCore.Au10Image)
-  @objc deinit
-}
 public enum DataType : Swift.Int {
   case pfl
   case idDocFront
@@ -36,20 +37,12 @@ public enum DataType : Swift.Int {
   case poa
   case nfcData
   case personalDetails
+  case afl
   public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
   public var rawValue: Swift.Int {
     get
   }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BOSInteractorCache : ObjectiveC.NSObject {
-  @objc public static let shared: Au10tixBEKit.BOSInteractorCache
-  @objc public func append(image: Au10tixCore.Au10Image, type: Foundation.NSNumber)
-  @objc public func append(sessionInfo: [Swift.String : Foundation.Data], type: Foundation.NSNumber)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class BOSInteractorFactory {
-  @objc deinit
 }
 public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> Swift.Void
 @_hasMissingDesignatedInitializers public class Au10tixBackendKit {
@@ -62,6 +55,16 @@ public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit
   public func cancelRequest()
   public func cleanCache()
   public func destroy()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BOSInteractorFactory {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BOSInteractorCache : ObjectiveC.NSObject {
+  @objc public static let shared: Au10tixBEKit.BOSInteractorCache
+  @objc public func append(image: Au10tixCore.Au10Image, type: Foundation.NSNumber)
+  @objc public func append(sessionInfo: [Swift.String : Foundation.Data], type: Foundation.NSNumber)
+  @objc public func append(sessionJson: [Swift.String : Swift.String], type: Foundation.NSNumber)
   @objc deinit
 }
 extension Au10tixBEKit.DataType : Swift.Equatable {}

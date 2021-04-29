@@ -13,12 +13,25 @@ import ImageIO
 import QuartzCore
 import Swift
 import UIKit
+public protocol Au10tixSourceManagerProtocol {
+  func startSession(for source: Au10tixSourceManager.SourceType, delegate: Au10tixSourceManager.Au10SourceToSession?, with configurations: [Swift.String : Any], previewView: UIKit.UIView) throws
+  func stopCameraSession()
+  func stopAllSessions()
+  func captureStillImage()
+  func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  func runFakeCameraSession()
+  func resumeCamera()
+  func pauseCamera()
+  func isSourceAvailable(sourceType: Au10tixSourceManager.SourceType) -> Swift.Bool
+  func isCameraActive() -> Swift.Bool
+  func imageResolution() -> CoreGraphics.CGSize
+  func setFaceMetadataDetection(delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
+}
 public struct Au10CaptureFrameUpdate {
   public var imageBuffer: CoreVideo.CVImageBuffer
-  public var sourceType: Swift.String
   public let cameraIntrinsicData: CoreFoundation.CFTypeRef?
   public let exifOrientation: ImageIO.CGImagePropertyOrientation
-  public init(data: CoreVideo.CVImageBuffer, cameraIntrinsicData: CoreFoundation.CFTypeRef?, exifOrientation: ImageIO.CGImagePropertyOrientation, sourceType: Swift.String)
+  public init(data: CoreVideo.CVImageBuffer, cameraIntrinsicData: CoreFoundation.CFTypeRef?, exifOrientation: ImageIO.CGImagePropertyOrientation)
 }
 public protocol Au10SourceToSession : AnyObject {
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didGetSourceError sourceError: Swift.Error)
@@ -29,6 +42,21 @@ public protocol Au10SourceToSession : AnyObject {
 public protocol Au10MotionSourceDelegate : AnyObject {
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetectStability isStable: Swift.Bool)
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetectFacingAngle isInRange: Swift.Bool)
+}
+public protocol Au10MetadataOutputDelegate : AnyObject {
+  func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetect metadataFaceObject: Au10tixSourceManager.Au10MetadataFaceObject)
+}
+public enum SourceType {
+  case undefined
+  case cameraFront(record: Swift.Bool = false)
+  case cameraBack(record: Swift.Bool = false)
+  case mic
+  case nfc
+  case stability
+  case facingAngle
+}
+extension SourceType : Swift.Equatable {
+  public static func == (a: Au10tixSourceManager.SourceType, b: Au10tixSourceManager.SourceType) -> Swift.Bool
 }
 public struct CameraConfiguration {
   public enum Position : Swift.String, Swift.Codable {
@@ -51,20 +79,6 @@ public struct CameraConfiguration {
     public func hash(into hasher: inout Swift.Hasher)
   }
 }
-public enum SourceType : Swift.String {
-  case undefined
-  case cameraFront
-  case cameraBack
-  case mic
-  case nfc
-  case stability
-  case facingAngle
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
 final public class CaptureSampleUpdate {
   final public let sample: Foundation.Data
   final public let source: Au10tixCore.Au10ImageSource
@@ -78,22 +92,30 @@ final public class CaptureSampleUpdate {
   }
   @objc deinit
 }
-public protocol Au10tixSourceManagerProtocol {
-  func startSession(for source: Au10tixSourceManager.SourceType, delegate: Au10tixSourceManager.Au10SourceToSession?, with configurations: [Swift.String : Any], previewView: UIKit.UIView) throws
-  func stopCameraSession()
-  func stopAllSessions()
-  func captureStillImage()
-  func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
-  func runFakeCameraSession()
-  func resumeCamera()
-  func pauseCamera()
-  func isSourceAvailable(sourceType: Au10tixSourceManager.SourceType) -> Swift.Bool
-  func isCameraActive() -> Swift.Bool
-  func imageResolution() -> CoreGraphics.CGSize
+public enum CameraError : Swift.Error {
+  case noPermission
+  case canNotAddInput
+  case canNotAddVideoOutput
+  case canNotAddPhotoOutput
+  case videoFrameError
+  case captureImageFailed
+  public static func == (a: Au10tixSourceManager.CameraError, b: Au10tixSourceManager.CameraError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct Au10MetadataFaceObject {
+  public let face: AVFoundation.AVMetadataFaceObject
+}
+extension Au10Image {
+  convenience public init?(captureSampleUpdate sample: Au10tixSourceManager.CaptureSampleUpdate)
+  convenience public init(captureFrameUpdate frameUpdate: Au10tixSourceManager.Au10CaptureFrameUpdate)
 }
 final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManagerProtocol {
   weak final public var delegate: Au10tixSourceManager.Au10SourceToSession?
   weak final public var motionDelegate: Au10tixSourceManager.Au10MotionSourceDelegate?
+  weak final public var metadataDelegate: Au10tixSourceManager.Au10MetadataOutputDelegate?
   public init(types: [Au10tixSourceManager.SourceType], preset: Au10tixSourceManager.CameraConfiguration.SessionPreset = .photo, responseQueue: Dispatch.DispatchQueue = DispatchQueue(label: "com.au10tix.sdk.defaultQueue",qos: .default))
   @objc deinit
   final public func isSourceAvailable(sourceType: Au10tixSourceManager.SourceType) -> Swift.Bool
@@ -109,33 +131,14 @@ final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManager
   final public func stopAllSessions()
   final public func captureStillImage()
   final public func provide(image data: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  final public func setFaceMetadataDetection(delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
   final public func runFakeCameraSession()
   final public func isCameraActive() -> Swift.Bool
-}
-extension Au10Image {
-  convenience public init?(captureSampleUpdate sample: Au10tixSourceManager.CaptureSampleUpdate)
-  convenience public init(captureFrameUpdate frameUpdate: Au10tixSourceManager.Au10CaptureFrameUpdate)
-}
-public enum CameraError : Swift.Error {
-  case noPermission
-  case canNotAddInput
-  case canNotAddVideoOutput
-  case canNotAddPhotoOutput
-  case videoFrameError
-  case captureImageFailed
-  public static func == (a: Au10tixSourceManager.CameraError, b: Au10tixSourceManager.CameraError) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.Equatable {}
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.Hashable {}
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.RawRepresentable {}
 extension Au10tixSourceManager.CameraConfiguration.SessionPreset : Swift.Equatable {}
 extension Au10tixSourceManager.CameraConfiguration.SessionPreset : Swift.Hashable {}
-extension Au10tixSourceManager.SourceType : Swift.Equatable {}
-extension Au10tixSourceManager.SourceType : Swift.Hashable {}
-extension Au10tixSourceManager.SourceType : Swift.RawRepresentable {}
 extension Au10tixSourceManager.CameraError : Swift.Equatable {}
 extension Au10tixSourceManager.CameraError : Swift.Hashable {}

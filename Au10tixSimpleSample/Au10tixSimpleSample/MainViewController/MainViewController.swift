@@ -413,6 +413,8 @@ extension MainViewController: PFLSessionDelegate {
             return "internalError"
         case .tooManyFaces:
             return "tooManyFaces"
+        @unknown default:
+            return ""
         }
     }
     
@@ -430,6 +432,14 @@ extension MainViewController: PFLSessionDelegate {
     func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
         self.pflResultString = getPflResultText(result)
     }
+    
+    /**
+    Gets Called when PFL validation started
+     */
+    func pflSession(_ pflSession: PFLSession, didStartValidating image: Data) {
+        
+    }
+
     
     /**
     Gets Called when PFL passed liveness probabillity

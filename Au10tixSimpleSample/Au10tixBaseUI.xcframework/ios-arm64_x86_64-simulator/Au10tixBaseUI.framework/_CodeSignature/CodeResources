@@ -6,81 +6,80 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gIIgbXDqlIP3iFoBRvtBUmvXDJQ=
+		aEUL0to99h3QA1H09HZ8zpVn0zQ=
+		</data>
+		<key>Au10tixLocalizable.strings</key>
+		<data>
+		0NNdrceZcSyy43afpiK9tX2oUgo=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		24O8eNfk6WpQNDll/WdgBEljXMI=
+		7VS5us7JhZtwy41XvgMKbuFUUXw=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
-		xkisRnDbrtwLyNpSaUHoaO89LFc=
+		lX0KcmUlJi4Jrs033XvNZB1NMEU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ag7hdqCrIfjscW6V+YtL8NXrtVM=
+		4KzjTwsA2tPEogAYFZaANl/eEos=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vUfDIyl8C4Un94/flC8h9G2JqIg=
+		tkIUTpfvmiKX9uTyhbBhK7IWjvo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		O25OEDd1rcfcMeYjG6dAf9+x2+U=
+		U8/OIl+bNthpZG+7r+BLupOyDtc=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Txr9QNzYh1Gw6S8nA8sKNAgixcw=
+		MdxZeAJ5hx5qQ/cS9PFi5gjUEts=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		vUfDIyl8C4Un94/flC8h9G2JqIg=
+		tkIUTpfvmiKX9uTyhbBhK7IWjvo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		O25OEDd1rcfcMeYjG6dAf9+x2+U=
+		U8/OIl+bNthpZG+7r+BLupOyDtc=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Txr9QNzYh1Gw6S8nA8sKNAgixcw=
+		MdxZeAJ5hx5qQ/cS9PFi5gjUEts=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		24Q4du54DgdgwMrHW/r+QAkyJDg=
+		wdhpHRrN6OJsIRct2iIbKmw2KuM=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nqdZTjG/w9BRAXIz07zLEdNDvCU=
+		KVFjB0M3RLVHsN2mRXRD2ohzblI=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RkKMCZmdDl1CpqE7FNv98JBwKCU=
+		6c1dtFrMHarYNClvT9QPO/jbRv0=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		24Q4du54DgdgwMrHW/r+QAkyJDg=
+		wdhpHRrN6OJsIRct2iIbKmw2KuM=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		nqdZTjG/w9BRAXIz07zLEdNDvCU=
+		KVFjB0M3RLVHsN2mRXRD2ohzblI=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		RkKMCZmdDl1CpqE7FNv98JBwKCU=
+		6c1dtFrMHarYNClvT9QPO/jbRv0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lGaqQ3FqjCnKSXdz9FRxFBvTeLA=
 		</data>
-		<key>en.lproj/Au10tixLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hVegP+iSRUD5Nfn3GFtHJj8Gk7g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>montserrat_regular.ttf</key>
+		<data>
+		0ls1JC3rHG/4iLgWLKKqzDVtOJk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -88,105 +87,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3D1VQAwXRfpHWTrp/yk4udPsGZ6Y9U+E3zW6Q9657rw=
+			ox2z0er1SaQe5Enu3UqCoe/YHcGqRrFil6EDLSGOvLg=
+			</data>
+		</dict>
+		<key>Au10tixLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OkDvT8KBo4oQPDSqW8Fvrja7TB6JGXfcbLM8oLOfxS0=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JA2je8w6TRSS4BHlZISJgeWVg1iSRPtdF08wxOLhv2s=
+			XM3FHazfJkv4EiESwSiG1kRHh6VRPxFUa42Z20ERwC0=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3OVS7zEhglVRlrQm+hgFPz2jnKUdMqhhYA2c6ipbIi8=
+			M3naSxVq74DkeT2IhDIujfAH/eGj3Kgvv/MKK8gK67A=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPi/wx/lWgaZy3+zAqeKFFMTbNXSJlISoG4ZMCE/2/c=
+			mpPZgvFFqvVwQN0Fo5t3s56GUdciXqgKabUIrSjzIgc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XOjHJuXygPWoySMRTDDEX+FlRZGX5fU7Vh4ilBQCdQc=
+			jCBTEUx9xOXG8TOADwg+a4XoJ3MiFuVMkaJpxDjcytE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gjv8eV7tzx4P/bZHxO4L5JfTBYPytX4XaXv7YNpr6ZQ=
+			DnA3QkzOsnY1070vKRkwgiOA5rHP+l3aM+2/Y2Y1TII=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPi/wx/lWgaZy3+zAqeKFFMTbNXSJlISoG4ZMCE/2/c=
+			mpPZgvFFqvVwQN0Fo5t3s56GUdciXqgKabUIrSjzIgc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XOjHJuXygPWoySMRTDDEX+FlRZGX5fU7Vh4ilBQCdQc=
+			jCBTEUx9xOXG8TOADwg+a4XoJ3MiFuVMkaJpxDjcytE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gjv8eV7tzx4P/bZHxO4L5JfTBYPytX4XaXv7YNpr6ZQ=
+			DnA3QkzOsnY1070vKRkwgiOA5rHP+l3aM+2/Y2Y1TII=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kx8tW8uWM/4lHlqOwYcdWPNCYQm6us2S7AIya/UAGFE=
+			Y6e9zixxZHqcGfzNTwmqXNG3bmaSo7puVfmmQmHpWUQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/f5YMBhsDjUle7xFVqXQDmj2cSMv7RbY+R+MnaAzSo8=
+			CfVfrz9riof6XvABDmM9YQuSBJSyHMiZzLyBDJfGMmM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHn552kGurmGwljBIqLVBMhT3iC1U4yjm0mOL25lfHk=
+			/IrOa3T9Mtd/DcR86Hb5D9EAFLbiOKojxx3mdXcqiLc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kx8tW8uWM/4lHlqOwYcdWPNCYQm6us2S7AIya/UAGFE=
+			Y6e9zixxZHqcGfzNTwmqXNG3bmaSo7puVfmmQmHpWUQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/f5YMBhsDjUle7xFVqXQDmj2cSMv7RbY+R+MnaAzSo8=
+			CfVfrz9riof6XvABDmM9YQuSBJSyHMiZzLyBDJfGMmM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHn552kGurmGwljBIqLVBMhT3iC1U4yjm0mOL25lfHk=
+			/IrOa3T9Mtd/DcR86Hb5D9EAFLbiOKojxx3mdXcqiLc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -196,14 +202,12 @@
 			Bso5M7HVZcNYlIlkLpoKB67FtCtsrdCW7/+cnzLmlKU=
 			</data>
 		</dict>
-		<key>en.lproj/Au10tixLocalizable.strings</key>
+		<key>montserrat_regular.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sw30FgSjdP4umEnA2dhNk/SLRcjjwNAA3QFljQ18dzg=
+			B3zasVFhIyqbpxJNLd16lCUUV1B4jpqWbBVsxmJ09SU=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

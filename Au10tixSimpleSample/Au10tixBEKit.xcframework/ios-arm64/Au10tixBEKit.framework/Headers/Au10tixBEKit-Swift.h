@@ -231,6 +231,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BOSInteracto
 /// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
 ///
 - (void)appendWithSessionInfo:(NSDictionary<NSString *, NSData *> * _Nonnull)sessionInfo type:(NSNumber * _Nonnull)type;
+/// Append a data map result to the cache
+/// This method designed for internal use using Obj-C Refelection
+/// \param sessionJson A <em>json</em> recevied from Au10tix specific session.
+///
+/// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
+///
+- (void)appendWithSessionJson:(NSDictionary<NSString *, NSString *> * _Nonnull)sessionJson type:(NSNumber * _Nonnull)type;
 @end
 
 #if __has_attribute(external_source_symbol)

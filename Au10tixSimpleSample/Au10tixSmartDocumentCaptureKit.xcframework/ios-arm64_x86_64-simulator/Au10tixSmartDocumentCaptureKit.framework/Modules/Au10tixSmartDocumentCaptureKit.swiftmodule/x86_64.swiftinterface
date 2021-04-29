@@ -45,34 +45,28 @@ public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
 }
-@_hasMissingDesignatedInitializers public class SDCSession : Au10tixCore.FrontSideSupporter {
-  final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
-  weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
-  public var isFrontSide: Swift.Bool
-  convenience public init()
-  public func set(responseQueue: Dispatch.DispatchQueue)
-  @objc deinit
-}
-extension SDCSession : Au10tixCore.Au10tixSession {
+@_hasMissingDesignatedInitializers public class SDCSession : Au10tixCore.FrontSideSupporter, Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
   public var isAvailable: Swift.Bool {
     get
   }
   public var isCameraActive: Swift.Bool {
     get
   }
+  final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  public var isFrontSide: Swift.Bool
+  weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
+  convenience public init()
+  public func set(responseQueue: Dispatch.DispatchQueue)
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
-}
-extension SDCSession : Au10tixCore.CameraSession {
   public func captureImage()
   public func pauseCamera()
   public func resumeCamera()
+  public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  @objc deinit
 }
 extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
   public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
-}
-extension SDCSession : Au10tixCore.ImageProvidableSession {
-  public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
 }
 @_hasMissingDesignatedInitializers public class SDCProcessingStatus : Au10tixCore.Au10Update {
   public enum Feedback {

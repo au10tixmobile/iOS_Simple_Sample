@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		SYUQAUZYYfysACHOf2t7U08suG8=
+		Z8kn0N/TocY+++WDduZMqN/obOo=
 		</data>
 		<key>Headers/Au10tixPassiveFaceLivenessUI-Swift.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/Au10tixPassiveFaceLivenessUI.h</key>
 		<data>
-		z5jsKlbYI0aLpgug6LFT8DTGY/k=
+		m8AlnSSqYqQNgV2/iBNIoRiOz2A=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yGiakWPMJ7euT4svWt4q499H5u0=
+		+m/tDRVPbWBqZLyus+kjdLr1ueY=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Dd8vFhGXYQTAnMe5u9UQMsFnyFM=
+		9kdCkahDxa6j3A0xhOXKLw54fRA=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HOei6SJSGR9MVsbRP5M0GjlEfgs=
+		0pSWrzZ/QTI2tjeUm7QkR4hq/XI=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Dd8vFhGXYQTAnMe5u9UQMsFnyFM=
+		9kdCkahDxa6j3A0xhOXKLw54fRA=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		HOei6SJSGR9MVsbRP5M0GjlEfgs=
+		0pSWrzZ/QTI2tjeUm7QkR4hq/XI=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RSzmMHfSilbLo62Idw/BqHs8abs=
+		TyQDGHb6QdlYaPj58mFN1dS1Lto=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OmEl809ADPRMk4AH2ldNAk0ZJU0=
+		BtNCA0D3TWD6Wy11j+tNNduBGL0=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		RSzmMHfSilbLo62Idw/BqHs8abs=
+		TyQDGHb6QdlYaPj58mFN1dS1Lto=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		OmEl809ADPRMk4AH2ldNAk0ZJU0=
+		BtNCA0D3TWD6Wy11j+tNNduBGL0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xx5RyiR7UtOkNdxHu7Gjda0SI+IDA/T5xjhWgMSbOrk=
+			qkJtcr7/0gXR87RWtJjkU2FRH51UUYDqrDaEKEEBoMY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixPassiveFaceLivenessUI-Swift.h</key>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jptpd76jlthX/ZVekhM6XLXjVlhRpfvrclwtH4SjBBU=
+			Q0e3YzWJimCUUkXaAxCBUnWvqJbOajL65Aa1gls/oRs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -107,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SA6mVf8wVFNtGKYBVBxXKO+JyI/qNxtz0pdu3LMnM/4=
+			XG/PR5kzmR9PXPLSEwCWzznEUrSxBFg5P4P7wjuqwOM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZBWDGC2fPlbPI9cQ+Z3Lb/r8k7CgqO76kiOVMx1nGQ=
+			GkFj5SMZikRf55k/PcjRt9xTcKNR+3WKQHWC6CCWwdk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftdoc</key>
@@ -128,14 +128,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SA6mVf8wVFNtGKYBVBxXKO+JyI/qNxtz0pdu3LMnM/4=
+			XG/PR5kzmR9PXPLSEwCWzznEUrSxBFg5P4P7wjuqwOM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZBWDGC2fPlbPI9cQ+Z3Lb/r8k7CgqO76kiOVMx1nGQ=
+			GkFj5SMZikRf55k/PcjRt9xTcKNR+3WKQHWC6CCWwdk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cAxfmf0EZEz+kx6LhpzSRsFRdnSaDmdYgqif4cOm1aA=
+			YRmaS3FLj/rMDp47yH2CHn+Lppma3BNMtKSE+wzroVQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			di4yiQAZXDCYlSUZ4wUtLM/x8laYkafQswkiurwG5ME=
+			ulSzj+lo7vmsZD99DAsiqdwBdvqdXt8z+vSVVgMJE9E=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64.swiftdoc</key>
@@ -170,14 +170,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cAxfmf0EZEz+kx6LhpzSRsFRdnSaDmdYgqif4cOm1aA=
+			YRmaS3FLj/rMDp47yH2CHn+Lppma3BNMtKSE+wzroVQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			di4yiQAZXDCYlSUZ4wUtLM/x8laYkafQswkiurwG5ME=
+			ulSzj+lo7vmsZD99DAsiqdwBdvqdXt8z+vSVVgMJE9E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

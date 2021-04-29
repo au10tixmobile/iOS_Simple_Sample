@@ -6,57 +6,56 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		vweqb5lfVpRKGPnrLSS7y9RA4DU=
+		gjccTEy82K4J+ect0shMOETkIQ0=
+		</data>
+		<key>Au10tixLocalizable.strings</key>
+		<data>
+		0NNdrceZcSyy43afpiK9tX2oUgo=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		Rjh1L02h7prMvizucQIU+k2xAOI=
+		mHy+sAmF68DesmEDFpGgQ6rZZUA=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
-		xkisRnDbrtwLyNpSaUHoaO89LFc=
+		lX0KcmUlJi4Jrs033XvNZB1NMEU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PB1JY0WpCmFiehuIi80/4aImio0=
+		HI1msVBW8nF5K7yp4LYiC8/Dn10=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		y5m5PcR+9EK3odJuUOrXqFPjlBU=
+		WiibLjFeJubSFnBRh1MPckun9tw=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Rm9FNd/FmzQw6+2UP/OArW6LVtI=
+		wWDYbcb67yUKACeA/KncPETJQjY=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		aWWpz0dxyr8lKynw+7bSsRGc7i0=
+		PEGZIVAoOd7y9iiAcY+xv77jI/I=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		y5m5PcR+9EK3odJuUOrXqFPjlBU=
+		WiibLjFeJubSFnBRh1MPckun9tw=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Rm9FNd/FmzQw6+2UP/OArW6LVtI=
+		wWDYbcb67yUKACeA/KncPETJQjY=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		aWWpz0dxyr8lKynw+7bSsRGc7i0=
+		PEGZIVAoOd7y9iiAcY+xv77jI/I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lGaqQ3FqjCnKSXdz9FRxFBvTeLA=
 		</data>
-		<key>en.lproj/Au10tixLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hVegP+iSRUD5Nfn3GFtHJj8Gk7g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<key>montserrat_regular.ttf</key>
+		<data>
+		0ls1JC3rHG/4iLgWLKKqzDVtOJk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -64,63 +63,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6qmVT6fdf/cbWzWeokua6rz8UeSHsOj0qQI/quAm8a0=
+			TrbeqPKderyRxghIAhgFFsnSFJ04j+Knx3TQRObtZC0=
+			</data>
+		</dict>
+		<key>Au10tixLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OkDvT8KBo4oQPDSqW8Fvrja7TB6JGXfcbLM8oLOfxS0=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g/XEgdEURd+4yPen15FIg8FAXVta4ZVTuWv4TnHzkd4=
+			Ovi2JVcJ1Kx1+ufdIgmhNezp0dfnpQRcVaxmfohj2pY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3OVS7zEhglVRlrQm+hgFPz2jnKUdMqhhYA2c6ipbIi8=
+			M3naSxVq74DkeT2IhDIujfAH/eGj3Kgvv/MKK8gK67A=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JciDlS2DJ/SRHL8gPqxtBAx3AtlxmF10CAKOSqeZdyk=
+			gbiJ/wabFmvu4ujtn3MAXR/moSoWxIzUzmiA7gMioyg=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4A4XnaBmy+GAuu2LbLJZ+VY/2rGVo5hyziBFa9DqSe8=
+			MjVBcMQuJ5KGdg7K2/he5U/SKZzesW1Td2g70XnS3+E=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wbaNMkRNpUAeQEZr7eXzySi1dLdGoTnIpqoPgT9BRBo=
+			CAM91gdI6QrsHjNuHlmqqKzJvLkb4y2pk/2LWBtZ1qk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JciDlS2DJ/SRHL8gPqxtBAx3AtlxmF10CAKOSqeZdyk=
+			gbiJ/wabFmvu4ujtn3MAXR/moSoWxIzUzmiA7gMioyg=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4A4XnaBmy+GAuu2LbLJZ+VY/2rGVo5hyziBFa9DqSe8=
+			MjVBcMQuJ5KGdg7K2/he5U/SKZzesW1Td2g70XnS3+E=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wbaNMkRNpUAeQEZr7eXzySi1dLdGoTnIpqoPgT9BRBo=
+			CAM91gdI6QrsHjNuHlmqqKzJvLkb4y2pk/2LWBtZ1qk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -130,14 +136,12 @@
 			Bso5M7HVZcNYlIlkLpoKB67FtCtsrdCW7/+cnzLmlKU=
 			</data>
 		</dict>
-		<key>en.lproj/Au10tixLocalizable.strings</key>
+		<key>montserrat_regular.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sw30FgSjdP4umEnA2dhNk/SLRcjjwNAA3QFljQ18dzg=
+			B3zasVFhIyqbpxJNLd16lCUUV1B4jpqWbBVsxmJ09SU=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

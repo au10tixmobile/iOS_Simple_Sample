@@ -131,6 +131,16 @@ private extension PFLUIViewController {
             return "holdSteady"
         case .noFault:
             return "noFault"
+        case .moveUp:
+            return "move up"
+        case .moveDown:
+            return "move down"
+        case .moveLeft:
+            return "move left"
+        case .moveRight:
+            return "move right"
+        @unknown default:
+            return ""
         }
     }
     
@@ -209,6 +219,8 @@ extension PFLUIViewController: PFLSessionDelegate {
             return "internalError"
         case .tooManyFaces:
             return "tooManyFaces"
+        @unknown default:
+            return ""
         }
     }
     
@@ -226,6 +238,14 @@ extension PFLUIViewController: PFLSessionDelegate {
     func pflSession(_ pflSession: PFLSession, didConcludeWith result: PFLResponse, for image: Data) {
         self.pflResultString = getPflResultText(result)
     }
+    
+    /**
+    Gets Called when PFL validation started
+     */
+    func pflSession(_ pflSession: PFLSession, didStartValidating image: Data) {
+        
+    }
+
     
     /**
     Gets Called when PFL passed liveness probabillity

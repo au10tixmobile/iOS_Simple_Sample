@@ -8,12 +8,35 @@ import Au10tixPassiveFaceLivenessKit
 import Foundation
 import Swift
 import UIKit
+public class PFLFeedbackPresenter {
+  public enum FaceIndication {
+    case none
+    case green
+    case red
+    case white
+    public var image: UIKit.UIImage? {
+      get
+    }
+    public static func == (a: Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication, b: Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public init(baseVC: Au10tixBaseUI.UIComponentBaseViewController, faceInidicationImageView: UIKit.UIImageView)
+  public func showRedFaceIndication()
+  public func handle(qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc(Au10xPFLViewController) @_objcRuntimeName(Au10xPFLViewController) final public class PFLViewController : Au10tixBaseUI.UIComponentBaseViewController {
   final public var showCaptureButton: Swift.Bool {
     get
     set
   }
   override final public var headline: Swift.String {
+    get
+  }
+  override final public var lowerToast: CoreGraphics.CGFloat {
     get
   }
   weak final public var pflDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
@@ -34,4 +57,7 @@ extension PFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate {
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didConcludeWith result: Au10tixPassiveFaceLivenessKit.PFLResponse, for image: Foundation.Data)
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
+  final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
 }
+extension Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Equatable {}
+extension Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Hashable {}

@@ -222,18 +222,6 @@ typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, open) {
   PassiveFaceLivenessUpdateTypePassedThreshold = 2,
 };
 
-typedef SWIFT_ENUM(NSInteger, QualityFault, open) {
-  QualityFaultUnstable = 0,
-  QualityFaultDeviceNotVerticle = 1,
-  QualityFaultFaceNotDetectedInImage = 2,
-  QualityFaultTooManyFaces = 3,
-  QualityFaultFaceTooFarFromCamera = 4,
-  QualityFaultFaceTooCloseToCamera = 5,
-  QualityFaultFaceNotFacingDirectlyAtCamera = 6,
-  QualityFaultHoldSteady = 7,
-  QualityFaultNoFault = 8,
-};
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

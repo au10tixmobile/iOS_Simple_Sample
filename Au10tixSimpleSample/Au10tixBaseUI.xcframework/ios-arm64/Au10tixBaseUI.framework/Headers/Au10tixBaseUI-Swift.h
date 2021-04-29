@@ -209,19 +209,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI22RecordingTimeStampView")
+@interface RecordingTimeStampView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
-@class NSCoder;
 @class NSBundle;
 
 /// An abstract base class for UI-Components ViewController
 /// Do not use this class directrly, use its subclasses instead
 SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 @interface UIComponentBaseViewController : UIViewController
-- (void)leftButtonAction;
-- (void)rightButtonAction;
-- (void)mainButtonAction;
 /// Initializes a new UIComponentBaseViewController with the provided configurations.
 /// \param configs The basic UI configurations (logo, colors)
 ///
@@ -239,13 +243,15 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
+- (void)leftButtonAction;
+- (void)rightButtonAction;
+- (void)mainButtonAction;
 /// Close the UIComponent View Controller using UIViewController’s dismiss method
 - (void)closeButtonAction;
+/// Subclass should impelement back button functionality
+- (void)backButtonAction;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
-
-
 
 
 
@@ -255,6 +261,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 @end
+
 
 @class UIImage;
 @class UIColor;
@@ -311,6 +318,8 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 #if __has_attribute(external_source_symbol)
