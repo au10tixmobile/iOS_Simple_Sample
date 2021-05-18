@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NbkqAn+t//RopAc7w/SllmFO4JY=
+		xBPIehmFNfFliXf8ZYkSqlOWjK4=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NbkqAn+t//RopAc7w/SllmFO4JY=
+		xBPIehmFNfFliXf8ZYkSqlOWjK4=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PTdnSiz79PA5K3byou7tRvfvF/o=
+		Q66DPi2AzZ7wotkvvZzSkomV1oA=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		PTdnSiz79PA5K3byou7tRvfvF/o=
+		Q66DPi2AzZ7wotkvvZzSkomV1oA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TAfy/ZNrjCsREcKt4XgAEoiEBMLAQ4bCznuYjJcIYM=
+			v2MNXMR7AeVnDqCD0uEAfD2SG5MI0QPzE79yt60LrL0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TAfy/ZNrjCsREcKt4XgAEoiEBMLAQ4bCznuYjJcIYM=
+			v2MNXMR7AeVnDqCD0uEAfD2SG5MI0QPzE79yt60LrL0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5FHPsimUQs9xTUKcOmj4iVTk7E6hjJ/9XDWiJQoUpg=
+			Ko1kLcQXIinKdo8WXMfPnuRExdhd3/bzyZOz1wqGQSI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5FHPsimUQs9xTUKcOmj4iVTk7E6hjJ/9XDWiJQoUpg=
+			Ko1kLcQXIinKdo8WXMfPnuRExdhd3/bzyZOz1wqGQSI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

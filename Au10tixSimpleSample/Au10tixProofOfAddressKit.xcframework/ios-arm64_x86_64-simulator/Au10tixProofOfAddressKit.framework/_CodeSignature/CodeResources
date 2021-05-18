@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xR/jxgnzrUgSoySFyd3GpXpmYL0=
+		QvHF/xVi1ChAHSB+FkEfd0K3p9k=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		xR/jxgnzrUgSoySFyd3GpXpmYL0=
+		QvHF/xVi1ChAHSB+FkEfd0K3p9k=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1b/BupVXhqGXxrLGxu5jCu6F04A=
+		PClgOXeDnvsoFua1c4n2kqNaYVo=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		1b/BupVXhqGXxrLGxu5jCu6F04A=
+		PClgOXeDnvsoFua1c4n2kqNaYVo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CBLanpNNoFmrBcbwBDc27usfXzPPoTPrR4gJhWqSWfE=
+			gYJQQcPGa8QTn7c7mQpm3vESRfDDZg908T8SlvmsUxk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CBLanpNNoFmrBcbwBDc27usfXzPPoTPrR4gJhWqSWfE=
+			gYJQQcPGa8QTn7c7mQpm3vESRfDDZg908T8SlvmsUxk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAooxhodgw8zbIUEl0tyEmmPxGzSY+E0vaL/07EHKSo=
+			H5NpMuGGDd0f+1UDadOmRN2j0nuM03ZCcvu6yJlQJl0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAooxhodgw8zbIUEl0tyEmmPxGzSY+E0vaL/07EHKSo=
+			H5NpMuGGDd0f+1UDadOmRN2j0nuM03ZCcvu6yJlQJl0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
