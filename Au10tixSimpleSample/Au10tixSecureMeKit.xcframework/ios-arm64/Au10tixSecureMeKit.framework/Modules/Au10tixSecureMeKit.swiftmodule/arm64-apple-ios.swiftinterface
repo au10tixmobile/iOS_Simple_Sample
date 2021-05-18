@@ -1,0 +1,78 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSecureMeKit
+import Au10tixBEKit
+import Au10tixBaseUI
+import Au10tixCore
+@_exported import Au10tixSecureMeKit
+import Foundation
+import Swift
+import UIKit
+public protocol SecureMeKitDelegate : AnyObject {
+  func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, hasUpdate update: Au10tixSecureMeKit.SecureMeKitUpdate)
+  func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, didCompleteWith result: Au10tixSecureMeKit.SecureMeKitResult)
+  func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, didFailWith error: Au10tixSecureMeKit.SecureMeKitError)
+  func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, didClose viewController: UIKit.UIViewController)
+}
+public enum SecureMeKitPrepareError : Swift.Error {
+  case prepareFailed(error: Au10tixCore.Au10tixCorePrepareError)
+  case configurationFetch(error: Swift.Error)
+}
+public typealias Flow = Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow
+public enum SecureMeKitError : Swift.Error {
+  case kitWasNotPrepared
+  case notOnMainThread
+  case network(error: Swift.Error)
+  case backendKit(error: Swift.Error)
+  case sdcUIModuleIsMissing
+  case pflUIModuleIsMissing
+  case poaUIModuleIsMissing
+}
+public struct SecureMeKitUIFlowManager {
+  public enum Flow : Swift.String {
+    case sdcFront
+    case sdcBack
+    case pfl
+    case poa
+    case complete
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum SecureMeKitUpdate {
+  case sdcFrontStarted
+  case sdcFrontFinished
+  case sdcBackStarted
+  case sdcBackFinished
+  case pflStarted
+  case pflFinished
+  case poaStarted
+  case poaFinished
+  case finalizing
+  public static func == (a: Au10tixSecureMeKit.SecureMeKitUpdate, b: Au10tixSecureMeKit.SecureMeKitUpdate) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public typealias SecureMeKitPrepareCallback = (Au10tixSecureMeKit.SecureMeKitPrepareError?) -> Swift.Void
+public class SecureMeKit {
+  public init(configs: Au10tixSecureMeKit.OCSConfigs? = nil, responseQueue: Dispatch.DispatchQueue = .main)
+  public func prepare(with bearer: Swift.String, completion: @escaping Au10tixSecureMeKit.SecureMeKitPrepareCallback)
+  public func createUI(delegate: Au10tixSecureMeKit.SecureMeKitDelegate) throws -> UIKit.UIViewController
+  @objc deinit
+}
+public struct SecureMeKitResult {
+  public let requestId: Swift.String
+}
+public struct OCSConfigs {
+  public static func configs(from flows: [Au10tixSecureMeKit.Flow]) -> Au10tixSecureMeKit.OCSConfigs
+}
+extension Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow : Swift.Equatable {}
+extension Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow : Swift.Hashable {}
+extension Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow : Swift.RawRepresentable {}
+extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Equatable {}
+extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Hashable {}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixCore-Swift.h</key>
 		<data>
-		p6F3HY4LwN00Sr779osqT5wwiHc=
+		E6IxKubvQQAij0W1Gcu8B1OV+qY=
 		</data>
 		<key>Headers/Au10tixCore.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		TB7okoaRxHawh8Nmt06J3rKQA8k=
+		LUs39ttF5zafdrgD1W2nXVjcs60=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+IiWXLhIhY+z3Nrf0lXEZ0BwBwI=
+		6g+f4gCdux50jiD/LKtD03ZyJLY=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		TB7okoaRxHawh8Nmt06J3rKQA8k=
+		LUs39ttF5zafdrgD1W2nXVjcs60=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		+IiWXLhIhY+z3Nrf0lXEZ0BwBwI=
+		6g+f4gCdux50jiD/LKtD03ZyJLY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+bMi0FsalhBJYCF29Ee177gDBdfCQ91yGb/lqfsAYc=
+			uY4I6kH4xVx11u9EljDEfR+tTZcu6N3l0FGWIVDzuAc=
 			</data>
 		</dict>
 		<key>Headers/Au10tixCore.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WwAtwQmaxsn4jceoAIH0P+dxNX8glqeCS82or7vAnPM=
+			ZjGCpNhiXIzOcbJyU+fXPdXo17EdHSVc2fQ9BRT8MQY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7QQV9kIMqPD8SZaRbfmwujRDK3LSNdpHwGqNB3jOWek=
+			u7FVk9ZtWGZ41LUvDOYGS3WOCUJFVSduPaOzRnNfTpw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WwAtwQmaxsn4jceoAIH0P+dxNX8glqeCS82or7vAnPM=
+			ZjGCpNhiXIzOcbJyU+fXPdXo17EdHSVc2fQ9BRT8MQY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7QQV9kIMqPD8SZaRbfmwujRDK3LSNdpHwGqNB3jOWek=
+			u7FVk9ZtWGZ41LUvDOYGS3WOCUJFVSduPaOzRnNfTpw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

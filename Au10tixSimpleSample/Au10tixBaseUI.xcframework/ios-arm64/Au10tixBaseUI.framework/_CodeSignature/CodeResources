@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gjccTEy82K4J+ect0shMOETkIQ0=
+		Ud17WrZS3srGGKPeUpbqNuQNAaU=
 		</data>
 		<key>Au10tixLocalizable.strings</key>
 		<data>
-		0NNdrceZcSyy43afpiK9tX2oUgo=
+		ipVoRr5k6GMLwHX/nmhLPqciIRk=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PEGZIVAoOd7y9iiAcY+xv77jI/I=
+		wdJ35pViMHh8mLZegC859mFKRcQ=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		PEGZIVAoOd7y9iiAcY+xv77jI/I=
+		wdJ35pViMHh8mLZegC859mFKRcQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TrbeqPKderyRxghIAhgFFsnSFJ04j+Knx3TQRObtZC0=
+			zQzsDJewSrEzbEUR1AsUnAfP9MT1l5TARHeGb3VUR5k=
 			</data>
 		</dict>
 		<key>Au10tixLocalizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OkDvT8KBo4oQPDSqW8Fvrja7TB6JGXfcbLM8oLOfxS0=
+			6ylrL/jBOXw8oTx2X+HKAhE8cFmGO/JDz7lsNGmqJDY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAM91gdI6QrsHjNuHlmqqKzJvLkb4y2pk/2LWBtZ1qk=
+			MO1tHqjF/b0NXs/a/x7RSwKpjXoRnQF/vdwq05EjZBw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
@@ -126,7 +126,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAM91gdI6QrsHjNuHlmqqKzJvLkb4y2pk/2LWBtZ1qk=
+			MO1tHqjF/b0NXs/a/x7RSwKpjXoRnQF/vdwq05EjZBw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

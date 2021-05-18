@@ -80,7 +80,9 @@ public struct MultipartDataBuilder {
   }
 }
 @objc @objcMembers public class Au10Image : ObjectiveC.NSObject {
-  @objc final public let ciImage: CoreImage.CIImage
+  @objc public var ciImage: CoreImage.CIImage {
+    get
+  }
   @objc final public let source: Au10tixCore.Au10ImageSource
   @objc public var cgImage: CoreGraphics.CGImage? {
     @objc get
@@ -102,6 +104,7 @@ public struct MultipartDataBuilder {
   }
   @objc public init(ciImage: CoreImage.CIImage, source: Au10tixCore.Au10ImageSource)
   @objc public func convertImageToData() -> Foundation.Data?
+  @objc public func convertToMaximum(size: CoreGraphics.CGSize)
   @objc deinit
   @objc override dynamic public init()
 }

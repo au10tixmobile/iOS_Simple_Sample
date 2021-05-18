@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		tryIXV6wKxXdAD2Vvp9RQwxbooQ=
+		ckHbDvL81gZ54zi6v5427PxZ/LY=
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wAGKP5YGyCZQ0sUDzMFW9LbHVcQ=
+		a0nlUploKakG8pjHjoIPSDTrsfg=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wAGKP5YGyCZQ0sUDzMFW9LbHVcQ=
+		a0nlUploKakG8pjHjoIPSDTrsfg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g3/LtAqxGmOdxFmLCUOpAaye1PiQXt8I4ZLGakG2mzU=
+			3j1K7FICTurY1/ZrI2oFGfFhm8LZi4y1tPZxnyy7yGE=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2LKbgWTWLkG3BJOYHJpF6jN6Jl/F2ush9XfaRqa3Sc8=
+			etkBHHKNkBlX16w5EZ9Yc256/y8W6tlnNTUXUHP5EZo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
@@ -119,7 +119,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2LKbgWTWLkG3BJOYHJpF6jN6Jl/F2ush9XfaRqa3Sc8=
+			etkBHHKNkBlX16w5EZ9Yc256/y8W6tlnNTUXUHP5EZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

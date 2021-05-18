@@ -229,6 +229,7 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 - (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
 /// Convert the CIImage to binary data in order to send it to the BOS server
 - (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
+- (void)convertToMaximumWithSize:(CGSize)size;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -542,6 +543,7 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 - (nonnull instancetype)initWithCiImage:(CIImage * _Nonnull)ciImage source:(enum Au10ImageSource)source OBJC_DESIGNATED_INITIALIZER;
 /// Convert the CIImage to binary data in order to send it to the BOS server
 - (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
+- (void)convertToMaximumWithSize:(CGSize)size;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

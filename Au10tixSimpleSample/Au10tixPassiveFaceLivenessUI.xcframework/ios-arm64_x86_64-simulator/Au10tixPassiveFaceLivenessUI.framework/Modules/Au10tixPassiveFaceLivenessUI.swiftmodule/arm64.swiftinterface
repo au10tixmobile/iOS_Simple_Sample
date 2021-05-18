@@ -43,6 +43,7 @@ public class PFLFeedbackPresenter {
   @objc override final public func viewDidLoad()
   @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   override final public func showFeatureFeed()
+  override final public func timeoutViewShouldRefresh()
   @objc override final public func mainButtonAction()
   @objc override final public func leftButtonAction()
   override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
