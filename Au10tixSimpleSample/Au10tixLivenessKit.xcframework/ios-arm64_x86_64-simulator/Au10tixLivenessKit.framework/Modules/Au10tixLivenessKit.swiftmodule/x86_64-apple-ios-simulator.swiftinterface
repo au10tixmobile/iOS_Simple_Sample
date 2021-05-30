@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessKit
 import AVFoundation
 import Au10tixCore
@@ -51,10 +51,10 @@ public enum LivenessSessionUpdate {
   case waitingForPflResult
   case userInterrupted
   public static func == (a: Au10tixLivenessKit.LivenessSessionUpdate, b: Au10tixLivenessKit.LivenessSessionUpdate) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum LivenessSessionWaitingForUserReason {
   case pendingStartAfl
@@ -62,10 +62,10 @@ public enum LivenessSessionWaitingForUserReason {
   case pendingStartPfl
   case pendingRetryPfl
   public static func == (a: Au10tixLivenessKit.LivenessSessionWaitingForUserReason, b: Au10tixLivenessKit.LivenessSessionWaitingForUserReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum AFLSessionUpdate {
   case onNextGesture(type: Au10tixLivenessKit.AFLGestureType)
@@ -137,10 +137,10 @@ public enum AFLGestureType {
   case faceLeft
   case faceCenter
   public static func == (a: Au10tixLivenessKit.AFLGestureType, b: Au10tixLivenessKit.AFLGestureType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @_hasMissingDesignatedInitializers public class AFLSession {
   public var authenticator: Au10tixCore.Au10tixSessionAuthenticator

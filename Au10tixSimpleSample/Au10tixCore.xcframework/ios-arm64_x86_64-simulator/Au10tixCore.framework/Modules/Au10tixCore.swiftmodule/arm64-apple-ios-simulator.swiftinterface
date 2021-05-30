@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixCore
 import AVFoundation
 @_exported import Au10tixCore
@@ -52,8 +52,8 @@ extension JWT {
   public func claim(name: Swift.String) -> Au10tixCore.Claim
 }
 public struct RequestData : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol NFCPassportReaderSession {
   func readNFC(with mrz: Swift.String)
@@ -73,8 +73,8 @@ public struct MultipartDataBuilder {
   case cameraVideoFrame
   case cameraCapture
   case external
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -105,8 +105,8 @@ public struct MultipartDataBuilder {
   @objc public init(ciImage: CoreImage.CIImage, source: Au10tixCore.Au10ImageSource)
   @objc public func convertImageToData() -> Foundation.Data?
   @objc public func convertToMaximum(size: CoreGraphics.CGSize)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class AnalyticsPacemaker {
   @objc deinit
@@ -131,8 +131,8 @@ public enum Au10tixCorePrepareError : Swift.Error {
     case demoApp
     case backend
     case livenessSession
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -142,16 +142,16 @@ public enum Au10tixCorePrepareError : Swift.Error {
       case development
       case production
       case test
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
       }
     }
     public enum Module : Swift.String, Swift.Codable {
       case mobileSDK
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
       }
@@ -168,8 +168,8 @@ public enum Au10tixCorePrepareError : Swift.Error {
       case passport
       case imageCapture
       case backend
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
       }
@@ -185,8 +185,8 @@ public enum Au10tixCorePrepareError : Swift.Error {
       case addItem
       case response
       case error
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
       }
@@ -195,8 +195,8 @@ public enum Au10tixCorePrepareError : Swift.Error {
       case info
       case error
       case debug
-      public typealias RawValue = Swift.String
       public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
       }
@@ -253,8 +253,8 @@ public struct IDTokenValidation {
 }
 public struct LoggerInfo : Swift.Codable {
   public init(file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line, time: Foundation.Date = Date())
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public class Au10NetworkRequest {
   public struct DefaultValue {
@@ -285,8 +285,8 @@ public enum HTTPMethod : Swift.String {
   case trace
   case connect
   case patch
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -305,8 +305,8 @@ extension HTTPHeader {
     case sessionID
     case sdkVersion
     case sdkType
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -340,8 +340,8 @@ public protocol BatchShipper : Au10tixCore.AnalyticsEngine {
 }
 public struct LoggableInfo : Swift.Codable {
   public init(level: Au10tixCore.Au10Constants.Event.Level = .info, category: Au10tixCore.Au10Constants.Event.Category? = nil, sessionId: Swift.String? = nil, action: Au10tixCore.Au10Constants.Event.Action? = nil, module: Au10tixCore.Au10Constants.ModuleType? = nil, errorCode: Swift.String? = nil)
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct Au10SessionCaptureFrameUpdate<Frame> {
 }
@@ -420,10 +420,10 @@ public struct Au10JWTParser {
     case expired
     case missingData
     public static func == (a: Au10tixCore.Au10JWTParser.JWTError, b: Au10tixCore.Au10JWTParser.JWTError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public struct JWTPayload {
     public let jwt: Swift.String
@@ -448,8 +448,8 @@ public class CompositeAnalyticsEngine : Au10tixCore.AnalyticsEngine, Au10tixCore
   public func makeSingleSideWithPOA() throws -> Foundation.Data
   public func makeDoubleSideRequest() throws -> Foundation.Data
   public func makeDoubleSideWithPOA() throws -> Foundation.Data
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum DecodeError : Foundation.LocalizedError {
   case invalidBase64Url(Swift.String)
@@ -484,8 +484,8 @@ open class TokenLifeCycleHandler {
   }
   @objc public init(image: Au10tixCore.Au10Image?)
   @objc public func croppedImage() -> Au10tixCore.Au10Image?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class Au10Quadrangle : ObjectiveC.NSObject {
   public var topLeft: CoreGraphics.CGPoint
@@ -495,8 +495,8 @@ open class TokenLifeCycleHandler {
   public init(topLeft: CoreGraphics.CGPoint, topRight: CoreGraphics.CGPoint, bottomLeft: CoreGraphics.CGPoint, bottomRight: CoreGraphics.CGPoint)
   convenience public init(x1: Swift.Int, x2: Swift.Int, y1: Swift.Int, y2: Swift.Int)
   public func implementRatio(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
@@ -517,10 +517,10 @@ final public class Reachability {
       get
     }
     public static func == (a: Au10tixCore.Reachability.Connection, b: Au10tixCore.Reachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   final public var whenReachable: Au10tixCore.Reachability.NetworkReachable?
   final public var whenUnreachable: Au10tixCore.Reachability.NetworkUnreachable?
@@ -625,8 +625,8 @@ public class RequestDataBuilder {
     @objc get
   }
   @objc public class func decode(jwt jwtValue: Swift.String) throws -> Au10tixCore._JWT
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
 extension Au10tixCore.Au10ImageSource : Swift.Hashable {}

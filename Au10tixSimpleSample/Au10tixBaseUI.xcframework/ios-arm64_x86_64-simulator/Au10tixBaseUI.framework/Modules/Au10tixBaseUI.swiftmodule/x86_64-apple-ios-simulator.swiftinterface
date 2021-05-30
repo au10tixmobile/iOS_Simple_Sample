@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
 @_exported import Au10tixBaseUI
 import Au10tixCore
@@ -17,8 +17,8 @@ extension Font where Self : Swift.RawRepresentable, Self.RawValue == Swift.Strin
 }
 public enum MontserratFont : Swift.String, Au10tixBaseUI.Font {
   case regular
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -34,10 +34,10 @@ extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, 
     case cancelled
     case failedToRetreiveAsset
     public static func == (a: Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError, b: Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public typealias LibraryImageCompletion = (Swift.Result<Au10tixBaseUI.UIComponentBaseViewController.LibraryImageResult, Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError>) -> Swift.Void
   public func selectImageFromLibrary(with completion: @escaping Au10tixBaseUI.UIComponentBaseViewController.LibraryImageCompletion)
@@ -66,10 +66,10 @@ extension String {
   final public let showCloseButton: Swift.Bool
   @objc convenience public init(appLogo: UIKit.UIImage)
   @objc public init(appLogo: UIKit.UIImage, actionButtonTint: UIKit.UIColor, titleTextColor: UIKit.UIColor, errorTextColor: UIKit.UIColor, canUploadImage: Swift.Bool, showCloseButton: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@objc public protocol UIComponentViewControllerNavigationDelegate : AnyObject {
+@objc public protocol UIComponentViewControllerNavigationDelegate {
   @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
   @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
 }
@@ -127,8 +127,8 @@ extension String {
   @objc public func closeButtonAction()
   @objc open func backButtonAction()
   public func operationFinished()
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponentProgressView : UIKit.UIView {
   @objc deinit
@@ -152,6 +152,7 @@ extension UIComponentBaseViewController {
     case capturing
     case takingManualImage
     case imageCaptured(image: UIKit.UIImage)
+    case badExternalImage(image: Au10tixCore.Au10Image, isFirstTime: Swift.Bool)
     public var isCapturing: Swift.Bool {
       get
     }
@@ -171,10 +172,10 @@ extension UICompsButtonsView {
     case left
     case main
     public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButton, b: Au10tixBaseUI.UICompsButtonsView.ActionButton) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public enum ActionButtonImage {
     case upload
@@ -183,10 +184,10 @@ extension UICompsButtonsView {
     case camera
     case checkmark
     public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public enum ActionButtonBehavior {
     case visible
@@ -194,10 +195,10 @@ extension UICompsButtonsView {
     case tempHidden
     case tempVisible
     public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
 }
 extension Au10tixBaseUI.MontserratFont : Swift.Equatable {}

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSourceManager
 import AVFoundation
 import Au10tixCore
@@ -63,8 +63,8 @@ public struct CameraConfiguration {
     case front
     case back
     case unspecified
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -73,10 +73,10 @@ public struct CameraConfiguration {
     case photo
     case none
     public static func == (a: Au10tixSourceManager.CameraConfiguration.SessionPreset, b: Au10tixSourceManager.CameraConfiguration.SessionPreset) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
 }
 final public class CaptureSampleUpdate {
@@ -100,10 +100,10 @@ public enum CameraError : Swift.Error {
   case videoFrameError
   case captureImageFailed
   public static func == (a: Au10tixSourceManager.CameraError, b: Au10tixSourceManager.CameraError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct Au10MetadataFaceObject {
   public let face: AVFoundation.AVMetadataFaceObject
