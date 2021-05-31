@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixPassiveFaceLivenessKit-Swift.h</key>
 		<data>
-		oS2u8FdxF8xptN4UUf0EriHW2KI=
+		a7/MRNI3tw+ZLmlntJzPQ4h0Vnk=
 		</data>
 		<key>Headers/Au10tixPassiveFaceLivenessKit.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nbai3yuysdPo3okgG1JWYWbvxZA=
+		o8Qx6PQELCO3Mx10t8YDiofZ+DA=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		JoIWggOvW+ywFcPPh8h2d35z15A=
+		Bqm8hQSxB0GH8kFF3vKLxZ8k57k=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ill/HfcQEmoDMhgEz+xngRD9tP4=
+		8P09tGV5fV8/9ql9va9tkkaQMaQ=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Of1yBLoVtwEqOEIfjd42QtW6lTE=
+		/xiilNtuC9Y9L0+nE7zSa315//I=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		JoIWggOvW+ywFcPPh8h2d35z15A=
+		Bqm8hQSxB0GH8kFF3vKLxZ8k57k=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		ill/HfcQEmoDMhgEz+xngRD9tP4=
+		8P09tGV5fV8/9ql9va9tkkaQMaQ=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Of1yBLoVtwEqOEIfjd42QtW6lTE=
+		/xiilNtuC9Y9L0+nE7zSa315//I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			my8Z0p+CahIMq/qhrZ976xOBq5aSBRyEIqaP5HXxmVM=
+			Q9EpIwUDpK4zyCuCyVe0loD6vccJD4lL3If75kjnvpc=
 			</data>
 		</dict>
 		<key>Headers/Au10tixPassiveFaceLivenessKit.h</key>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iTI4Ujk7pAu0zcFyTgP9GnF+7pTUomvlHgv+jV9cQoA=
+			Tqd7kSgfWyjAEP8w42gsg36HuByIbTMMYZbhz5v+93w=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VavlauMgE11tu7rLviQOtsggay6qp4J+GA0HjKlxxUY=
+			q/GVOF7Q0mJ28wPMkS0u1LcOcHS6guhIATAU6qr1BA8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7S+tp6oGZ7VgNsYSJ3iCG9klJ/24OQYioOBMzZrDTx0=
+			araXLH8304393A7sgUhnXiFHDf5bkq99LEMLGRE8fto=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iTI4Ujk7pAu0zcFyTgP9GnF+7pTUomvlHgv+jV9cQoA=
+			Tqd7kSgfWyjAEP8w42gsg36HuByIbTMMYZbhz5v+93w=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VavlauMgE11tu7rLviQOtsggay6qp4J+GA0HjKlxxUY=
+			q/GVOF7Q0mJ28wPMkS0u1LcOcHS6guhIATAU6qr1BA8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7S+tp6oGZ7VgNsYSJ3iCG9klJ/24OQYioOBMzZrDTx0=
+			araXLH8304393A7sgUhnXiFHDf5bkq99LEMLGRE8fto=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
