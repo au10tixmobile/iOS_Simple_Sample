@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureKit
 import Au10tixCore
 @_exported import Au10tixSmartDocumentCaptureKit
@@ -57,6 +57,7 @@ public protocol SDCSessionDelegate : AnyObject {
   weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
   convenience public init()
   public func set(responseQueue: Dispatch.DispatchQueue)
+  public func setRectOfInterest(startX: CoreGraphics.CGFloat, endX: CoreGraphics.CGFloat, startY: CoreGraphics.CGFloat, endY: CoreGraphics.CGFloat) throws
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
   public func captureImage()
@@ -75,11 +76,12 @@ extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
     case noIdFound
     case tooClose
     case tooFar
+    case outOfFrame
     public static func == (a: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback, b: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public var feedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
     get
@@ -90,5 +92,16 @@ extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
   @objc override public init(image: Au10tixCore.Au10Image?)
   @objc deinit
 }
+public enum RectOfInterestError : Swift.Error {
+  case rectExceededRange
+  case rectReversedValues
+  public static func == (a: Au10tixSmartDocumentCaptureKit.RectOfInterestError, b: Au10tixSmartDocumentCaptureKit.RectOfInterestError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Hashable {}

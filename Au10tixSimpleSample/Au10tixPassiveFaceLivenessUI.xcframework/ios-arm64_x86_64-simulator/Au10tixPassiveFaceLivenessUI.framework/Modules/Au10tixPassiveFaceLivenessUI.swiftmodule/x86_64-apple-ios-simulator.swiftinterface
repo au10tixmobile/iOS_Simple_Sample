@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixPassiveFaceLivenessUI
 import Au10tixBaseUI
 import Au10tixCore
@@ -18,10 +18,10 @@ public class PFLFeedbackPresenter {
       get
     }
     public static func == (a: Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication, b: Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public init(baseVC: Au10tixBaseUI.UIComponentBaseViewController, faceInidicationImageView: UIKit.UIImageView)
   public func showRedFaceIndication()
@@ -48,9 +48,9 @@ public class PFLFeedbackPresenter {
   @objc override final public func leftButtonAction()
   override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
   override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
-  @objc deinit
   @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension PFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate {
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, faceBoundingBox: CoreGraphics.CGRect?)
