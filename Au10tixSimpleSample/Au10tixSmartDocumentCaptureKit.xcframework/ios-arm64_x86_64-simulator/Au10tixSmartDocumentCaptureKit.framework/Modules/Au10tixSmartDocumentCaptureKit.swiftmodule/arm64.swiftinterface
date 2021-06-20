@@ -57,6 +57,7 @@ public protocol SDCSessionDelegate : AnyObject {
   weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
   convenience public init()
   public func set(responseQueue: Dispatch.DispatchQueue)
+  public func setRectOfInterest(startX: CoreGraphics.CGFloat, endX: CoreGraphics.CGFloat, startY: CoreGraphics.CGFloat, endY: CoreGraphics.CGFloat) throws
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
   public func captureImage()
@@ -91,5 +92,16 @@ extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
   @objc override public init(image: Au10tixCore.Au10Image?)
   @objc deinit
 }
+public enum RectOfInterestError : Swift.Error {
+  case rectExceededRange
+  case rectReversedValues
+  public static func == (a: Au10tixSmartDocumentCaptureKit.RectOfInterestError, b: Au10tixSmartDocumentCaptureKit.RectOfInterestError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Hashable {}

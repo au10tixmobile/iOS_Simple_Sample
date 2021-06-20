@@ -59,6 +59,13 @@ public protocol NFCPassportReaderSession {
   func readNFC(with mrz: Swift.String)
   func readNFC(with documentNumber: Swift.String, expiryDate: Foundation.Date, birthDate: Foundation.Date)
 }
+extension Au10tix {
+  public struct Configurations {
+    public var dict: [Swift.String : Any] {
+      get
+    }
+  }
+}
 public protocol ImageProvidableSession {
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
 }
@@ -117,12 +124,12 @@ public enum Au10tixCorePrepareError : Swift.Error {
   case noServerResponse
   case networkError(error: Swift.Error)
   case parsingResponseFailed
-  case invalidSessionParameters
   case failedToStartSession(error: Swift.Error)
 }
 @_hasMissingDesignatedInitializers final public class Au10Constants {
   public enum ModuleType : Swift.String, Swift.Codable {
     case null
+    case core
     case selfie
     case passport
     case passiveFaceLiveness
@@ -333,7 +340,7 @@ extension Au10NetworkRequest : Swift.CustomStringConvertible {
 }
 public protocol SessionDetailsAdvertizer : AnyObject {
   var sessionId: Swift.String? { get }
-  var configurationsRawData: Foundation.Data? { get }
+  var configurations: Au10tixCore.Au10tix.Configurations { get }
 }
 public protocol BatchShipper : Au10tixCore.AnalyticsEngine {
   func shipQueuedEvents()
@@ -352,7 +359,7 @@ public struct Au10SessionCaptureFrameUpdate<Frame> {
   final public var tokenExpirationDate: Foundation.Date? {
     get
   }
-  final public var configurationsRawData: Foundation.Data? {
+  final public var configurations: Au10tixCore.Au10tix.Configurations {
     get
   }
   final public var bearerToken: Swift.String? {
@@ -430,6 +437,7 @@ public struct Au10JWTParser {
     public let apiUrl: Swift.String
     public let bosUrl: Swift.String
     public let expirationDate: Foundation.Date
+    public let clientOrganizationId: Swift.String
   }
   public func readPayload(from jwtString: Swift.String) throws -> Au10tixCore.Au10JWTParser.JWTPayload
 }
@@ -549,13 +557,6 @@ extension Au10NetworkClientImpl {
   @discardableResult
   public func perform(_ request: Au10tixCore.Au10NetworkRequest, _ completion: @escaping Au10tixCore.NetworkServiceCompletion) -> Foundation.URLSessionDataTask?
 }
-public struct SessionParameters {
-  public let bearerToken: Swift.String
-  public let sessionID: Swift.String
-  public let baseURL: Swift.String
-  public let configuration: Au10tixCore.FeatureConfiguration?
-  public init(token: Swift.String, id: Swift.String, baseURL: Swift.String, configuration: Au10tixCore.FeatureConfiguration?)
-}
 public protocol CameraSession {
   func captureImage()
   func pauseCamera()
@@ -580,15 +581,13 @@ extension Au10tixSession {
   @objc deinit
 }
 public class LogzIoEngine : Au10tixCore.AnalyticsEngine, Au10tixCore.BatchShipper {
-  public init?(data: Foundation.Data)
+  public init?(urlString: Swift.String)
   public func record(event: Au10tixCore.AnalyticsEvent)
   public func shipQueuedEvents()
   @objc deinit
 }
 extension CGImagePropertyOrientation {
   public init(_ orientation: UIKit.UIImage.Orientation)
-}
-public protocol FeatureConfiguration : Swift.Decodable {
 }
 public class RequestDataBuilder {
   public init()

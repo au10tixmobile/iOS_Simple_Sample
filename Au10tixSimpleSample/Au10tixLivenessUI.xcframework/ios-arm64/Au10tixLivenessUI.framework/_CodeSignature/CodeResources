@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		y2JYpT8ruwgFqXtMB/B21KKEunU=
+		CEO/OX9nJxnuIJsWl2hQqNux0MU=
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JFLM/lJ7MDojCZ0fGfTaEbiJcKs=
+		NN7pJL8pt8j9RypNg8cpSeFbrX8=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		5lEAxhGr4W0vCuQ51r80aGF3d50=
+		3be9GmHlme7nC606C+LvC6SiLuU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eJuklvYanboLV+1yBWy8pLwa5xo=
+		ZfxiOOnYRVLlRg5Hz6B1dLd4QpE=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		5lEAxhGr4W0vCuQ51r80aGF3d50=
+		3be9GmHlme7nC606C+LvC6SiLuU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		eJuklvYanboLV+1yBWy8pLwa5xo=
+		ZfxiOOnYRVLlRg5Hz6B1dLd4QpE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			91kiceHz+9aYhS9JC0c4MARuAgKxhXMPVXwadyMTL34=
+			Tb7Af/vVwn1Cgex8CK+QFLSwG1/fypV+vzJa/i44Feo=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
@@ -91,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYUH6e0Uy4lwbhWgKl0oN27TH8YFIvJUKygj0sfw4Zc=
+			4hsUamcDrLPeVXLPbAM3DM1guW0/Kogub32JqzBaVlY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbWTGTY9iIoKAMPdDsQgR619ROdItpxr2D8BkIjPSuI=
+			OF0BPBbH+vNGNixUJoqjOe3L8ltpd4vxdKRe/KSZv/8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
@@ -112,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYUH6e0Uy4lwbhWgKl0oN27TH8YFIvJUKygj0sfw4Zc=
+			4hsUamcDrLPeVXLPbAM3DM1guW0/Kogub32JqzBaVlY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbWTGTY9iIoKAMPdDsQgR619ROdItpxr2D8BkIjPSuI=
+			OF0BPBbH+vNGNixUJoqjOe3L8ltpd4vxdKRe/KSZv/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

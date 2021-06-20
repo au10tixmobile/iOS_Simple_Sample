@@ -132,8 +132,6 @@ private extension MainViewController {
                                          showCloseButton: true)
         
         let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
-        livenessVC.livenessSessionConfigs = LivenessSession.Configs(maxPflRetries: 3, maxAflRetries: 3, isPflMandatory: true)
-        livenessVC.aflSessionConfigs = AFLSessionConfigs(maxRetries: 1, gesturesCount: 3, gestureTimeoutInterval: 7)
         livenessVC.livenessSessionDelegate = self
         self.present(livenessVC, animated: true, completion: nil)
     }

@@ -73,9 +73,6 @@ public enum AFLSessionUpdate {
   case gestureTimeout
   case wrongGestureDetected
 }
-public struct AFLSessionConfigs {
-  public init(maxRetries: Swift.Int, gesturesCount: Swift.Int, gestureTimeoutInterval: Foundation.TimeInterval)
-}
 extension AFLSessionResult {
   public var json: [Swift.String : Swift.String] {
     get
@@ -92,11 +89,10 @@ extension AFLSessionResult {
     get
     set
   }
-  public var configs: Au10tixLivenessKit.LivenessSession.Configs
+  public static var recordScreen: Swift.Bool
   public var pflSession: Au10tixPassiveFaceLivenessKit.PFLSession? {
     get
   }
-  public var aflSessionConfigs: Au10tixLivenessKit.AFLSessionConfigs?
   public var aflSession: Au10tixLivenessKit.AFLSession? {
     get
   }
@@ -127,11 +123,6 @@ public enum AFLSessionError : Swift.Error, Foundation.LocalizedError {
     get
   }
 }
-extension LivenessSession {
-  public struct Configs {
-    public init(maxPflRetries: Swift.Int, maxAflRetries: Swift.Int, isPflMandatory: Swift.Bool)
-  }
-}
 public enum AFLGestureType {
   case faceRight
   case faceLeft
@@ -144,7 +135,6 @@ public enum AFLGestureType {
 }
 @_hasMissingDesignatedInitializers public class AFLSession {
   public var authenticator: Au10tixCore.Au10tixSessionAuthenticator
-  public var configs: Au10tixLivenessKit.AFLSessionConfigs
   convenience public init()
   @objc deinit
 }

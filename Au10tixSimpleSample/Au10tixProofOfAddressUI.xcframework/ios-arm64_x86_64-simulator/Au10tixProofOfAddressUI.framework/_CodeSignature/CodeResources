@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0P4/XJrNg07uk9trdz75xynlhnM=
+		uu/qrBOjoV4w+UJIKKNeweFhfd8=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FhAlwEIbqaLdGoHfWR9CUecqdBw=
+		3pSMyDmSSRpVI7Te1IPB/nANjSY=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		FhAlwEIbqaLdGoHfWR9CUecqdBw=
+		3pSMyDmSSRpVI7Te1IPB/nANjSY=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NWPbhN/r+L+lPCdZUBJvUr3fAlo=
+		3wu/p5DzVTbup6YaA2gjJyL4ebE=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		NWPbhN/r+L+lPCdZUBJvUr3fAlo=
+		3wu/p5DzVTbup6YaA2gjJyL4ebE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UjqLE3oKVLngfij5hC5Bc1aWBD5Pz1NT02LdbOGXVy8=
+			UpMNb2OsEyAU9rKvHuwNE9a4vuTfrJ68VGlY1291bFk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UjqLE3oKVLngfij5hC5Bc1aWBD5Pz1NT02LdbOGXVy8=
+			UpMNb2OsEyAU9rKvHuwNE9a4vuTfrJ68VGlY1291bFk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnB0v7XxDe+hqnEZqjIE+GHd2NjLeQevWAi97vJvHd0=
+			1gpyCMgY7AxO5zQj3xtAFiqP+J4bACDhl8tM4CL1iAA=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnB0v7XxDe+hqnEZqjIE+GHd2NjLeQevWAi97vJvHd0=
+			1gpyCMgY7AxO5zQj3xtAFiqP+J4bACDhl8tM4CL1iAA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

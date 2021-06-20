@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DEVtUOrCWTIK0yXF3nqZRN6gFxQ=
+		r/5/XQO3FUJDIHYKfCVEc56SZns=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		L/UdqNLHyRkKyijQS7BMd/GsIGE=
+		M5G/ZiUlvM1FRmuRN3WssNdOOlU=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		L/UdqNLHyRkKyijQS7BMd/GsIGE=
+		M5G/ZiUlvM1FRmuRN3WssNdOOlU=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jFcWniWz3dp/QNj8Bc4BtyVB4AU=
+		qZ6XgMTORtZQDblTZ4pRbWcE++Q=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jFcWniWz3dp/QNj8Bc4BtyVB4AU=
+		qZ6XgMTORtZQDblTZ4pRbWcE++Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			exLzhKhujLXxf7x4EIYHbv6+4nt6UZx6i5GgOjljhHA=
+			U9rhoGcFrTlzyrX3RFPAnTcEFWi5c+6WWPIMCWPOlZw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			exLzhKhujLXxf7x4EIYHbv6+4nt6UZx6i5GgOjljhHA=
+			U9rhoGcFrTlzyrX3RFPAnTcEFWi5c+6WWPIMCWPOlZw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzHIlN0LgECPp5K9EkoOLYQvpc7rpC/4dW6ByA1rlsk=
+			QdbwMBu3JlTfBV2uNZ5sZCQHGP3e0zjBJFaDBCXaIZc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzHIlN0LgECPp5K9EkoOLYQvpc7rpC/4dW6ByA1rlsk=
+			QdbwMBu3JlTfBV2uNZ5sZCQHGP3e0zjBJFaDBCXaIZc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

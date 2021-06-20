@@ -20,8 +20,6 @@ import UIKit
     get
     set
   }
-  final public var aflSessionConfigs: Au10tixLivenessKit.AFLSessionConfigs?
-  final public var livenessSessionConfigs: Au10tixLivenessKit.LivenessSession.Configs?
   override final public var lowerToast: CoreGraphics.CGFloat {
     get
   }

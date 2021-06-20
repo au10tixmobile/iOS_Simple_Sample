@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y2wGq4uPoc/fz1kb59t+oqmW8Kg=
+		jbcDsOAZYl4AFH/oP90eO16UqLI=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		d+RKaRaGRUByZLnTvlxDfSBI6eM=
+		hNOX6sE+YKjXg1asctIPHB1lRgU=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		d+RKaRaGRUByZLnTvlxDfSBI6eM=
+		hNOX6sE+YKjXg1asctIPHB1lRgU=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		h+0oOXSMnU/CugFyNdfI8sYZXks=
+		BLF3DiVLxopSsqzjwSrAHkeDKag=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		h+0oOXSMnU/CugFyNdfI8sYZXks=
+		BLF3DiVLxopSsqzjwSrAHkeDKag=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yGWjGoV9kIuSKMWIXTvvnGSYlFt4f94HyCAnW4v2Xxk=
+			ogdDKsxwU0Ue+6j7ZlYYJPle60sd1V8ihCsLfgSKVaM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yGWjGoV9kIuSKMWIXTvvnGSYlFt4f94HyCAnW4v2Xxk=
+			ogdDKsxwU0Ue+6j7ZlYYJPle60sd1V8ihCsLfgSKVaM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wBe/j2fGAuG+uSWosXk9IKcl8l1+yM69qwbOxQkW4Pg=
+			V+QiLIfkFWtpbMbzG08Ru3T+E4bON7HUx43E8H1Yv5M=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wBe/j2fGAuG+uSWosXk9IKcl8l1+yM69qwbOxQkW4Pg=
+			V+QiLIfkFWtpbMbzG08Ru3T+E4bON7HUx43E8H1Yv5M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
