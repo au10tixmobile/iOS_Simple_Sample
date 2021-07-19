@@ -5,9 +5,12 @@ import AVFoundation
 @_exported import Au10tixCore
 import CoreGraphics
 import CoreImage
+import CoreLocation
 import Foundation
 import ImageIO
+import Photos
 import QuartzCore
+import ReplayKit
 import Swift
 import SystemConfiguration
 import UIKit
@@ -24,6 +27,43 @@ public protocol Authenticator {
   var baseURL: Swift.String? { get }
   var bosBaseURL: Swift.String? { get }
   func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+}
+public struct BIInfo : Swift.Codable, Swift.Equatable {
+  public static func == (a: Au10tixCore.BIInfo, b: Au10tixCore.BIInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum BIFeature : Swift.String, Swift.Codable {
+  case sdc
+  case pfl
+  case poa
+  case nfc
+  case afl
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BIDataSource : Swift.Int, Swift.Codable {
+  case manual
+  case auto
+  case external
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BIUserAction : Swift.Int, Swift.Codable {
+  case approved
+  case retried
+  case cancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum ValidationError : Swift.Error {
   case invalidClaim(Swift.String)
@@ -214,21 +254,26 @@ public enum Au10tixCorePrepareError : Swift.Error {
 public struct LoggingEngine : Au10tixCore.AnalyticsEngine {
   public func record(event: Au10tixCore.AnalyticsEvent)
 }
+public class BIEngine : Au10tixCore.AnalyticsEngine {
+  public init?()
+  public func record(event: Au10tixCore.AnalyticsEvent)
+  @objc deinit
+}
 public protocol AnalyticsEngine {
   func record(event: Au10tixCore.AnalyticsEvent)
 }
-public protocol Timeoutable : AnyObject {
+public protocol Timeoutable : Au10tixCore.AppLifeCycleEventResponder {
   var session: Au10tixCore.Au10tixSession? { get }
   var timeoutableSessionDelegate: Au10tixCore.TimeoutableSessionDelegate? { get }
   var timeoutTimer: Foundation.Timer? { get set }
   var timeoutInterval: Foundation.TimeInterval { get set }
-  var appLifeCycleTimeoutHandler: Au10tixCore.AppLifeCycleSessionTimeoutHandler? { get }
-  func startTimeoutCountdown()
-  func stopTimeoutCountdown()
+  var appLifeCycleSessionHandler: Au10tixCore.AppLifeCycleSessionHandler? { get }
   func notifyTimeout()
-  func applicationStateRequiresTimeoutTimerActivation()
+  func stopTimeoutCountdown()
 }
 extension Timeoutable {
+  public func handleBackground()
+  public func handleResignActive()
   public func startTimeoutCountdown()
   public func stopTimeoutCountdown()
 }
@@ -244,6 +289,7 @@ public protocol AnalyticsEvent {
   var metadata: Swift.Dictionary<Swift.String, Any> { get }
   var technicalDetails: Au10tixCore.LoggerInfo? { get }
   var loggingInformation: Au10tixCore.LoggableInfo? { get }
+  var businessIntelligenceInformation: Au10tixCore.BIInfo? { get }
   func record()
 }
 extension AnalyticsEvent {
@@ -345,6 +391,12 @@ public protocol SessionDetailsAdvertizer : AnyObject {
 public protocol BatchShipper : Au10tixCore.AnalyticsEngine {
   func shipQueuedEvents()
 }
+public enum ScreenRecorderError : Swift.Error {
+  case failedToRemoveOldItem(error: Swift.Error)
+  case failedToCreateAssetWriter(error: Swift.Error)
+  case captureFailed(error: Swift.Error)
+  case stopCaptureFailed(error: Swift.Error)
+}
 public struct LoggableInfo : Swift.Codable {
   public init(level: Au10tixCore.Au10Constants.Event.Level = .info, category: Au10tixCore.Au10Constants.Event.Category? = nil, sessionId: Swift.String? = nil, action: Au10tixCore.Au10Constants.Event.Action? = nil, module: Au10tixCore.Au10Constants.ModuleType? = nil, errorCode: Swift.String? = nil)
   public func encode(to encoder: Swift.Encoder) throws
@@ -415,8 +467,10 @@ public class SessionTimeoutHandler : Au10tixCore.Timeoutable {
   weak public var session: Au10tixCore.Au10tixSession?
   weak public var timeoutableSessionDelegate: Au10tixCore.TimeoutableSessionDelegate?
   public var timeoutInterval: Foundation.TimeInterval
-  public var appLifeCycleTimeoutHandler: Au10tixCore.AppLifeCycleSessionTimeoutHandler?
+  public var appLifeCycleSessionHandler: Au10tixCore.AppLifeCycleSessionHandler?
   required public init(session: Au10tixCore.Au10tixSession, sessionDelegate: Au10tixCore.TimeoutableSessionDelegate)
+  public func handleForeground()
+  public func handleBecomeActive()
   public func notifyTimeout()
   public func applicationStateRequiresTimeoutTimerActivation()
   @objc deinit
@@ -466,6 +520,13 @@ public enum DecodeError : Foundation.LocalizedError {
   public var localizedDescription: Swift.String {
     get
   }
+}
+public struct BIDataManager {
+  public init(feature: Au10tixCore.BIFeature, stage: Swift.Int? = nil, attempt: Swift.Int = 0)
+  public mutating func attemptStarted()
+  public func attemptEnded(withDataSource dataSource: Au10tixCore.BIDataSource? = nil, evaluationResult: Swift.Bool? = nil, payload: Swift.String? = nil)
+  public func userPerformed(action: Au10tixCore.BIUserAction)
+  public mutating func setStage(_ stage: Swift.Int)
 }
 open class TokenLifeCycleHandler {
   public init()
@@ -557,6 +618,16 @@ extension Au10NetworkClientImpl {
   @discardableResult
   public func perform(_ request: Au10tixCore.Au10NetworkRequest, _ completion: @escaping Au10tixCore.NetworkServiceCompletion) -> Foundation.URLSessionDataTask?
 }
+final public class ScreenRecorder {
+  final public var videoOutputURL: Foundation.URL {
+    get
+  }
+  public typealias Completion = (Au10tixCore.ScreenRecorderError?) -> Swift.Void
+  public init(filename: Swift.String)
+  @objc deinit
+  final public func startRecording(with completion: @escaping Au10tixCore.ScreenRecorder.Completion)
+  final public func stopRecording(with completion: Au10tixCore.ScreenRecorder.Completion? = nil)
+}
 public protocol CameraSession {
   func captureImage()
   func pauseCamera()
@@ -604,7 +675,14 @@ public class RequestDataBuilder {
   public func use(optionalData: [Swift.String : Swift.String]) -> Au10tixCore.RequestDataBuilder
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class AppLifeCycleSessionTimeoutHandler {
+public protocol AppLifeCycleEventResponder : AnyObject {
+  func handleBackground()
+  func handleForeground()
+  func handleBecomeActive()
+  func handleResignActive()
+}
+public class AppLifeCycleSessionHandler {
+  public init(responder: Au10tixCore.AppLifeCycleEventResponder)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(A0JWT) public class _JWT : ObjectiveC.NSObject {
@@ -627,6 +705,15 @@ public class RequestDataBuilder {
   @objc override dynamic public init()
   @objc deinit
 }
+extension Au10tixCore.BIFeature : Swift.Equatable {}
+extension Au10tixCore.BIFeature : Swift.Hashable {}
+extension Au10tixCore.BIFeature : Swift.RawRepresentable {}
+extension Au10tixCore.BIDataSource : Swift.Equatable {}
+extension Au10tixCore.BIDataSource : Swift.Hashable {}
+extension Au10tixCore.BIDataSource : Swift.RawRepresentable {}
+extension Au10tixCore.BIUserAction : Swift.Equatable {}
+extension Au10tixCore.BIUserAction : Swift.Hashable {}
+extension Au10tixCore.BIUserAction : Swift.RawRepresentable {}
 extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
 extension Au10tixCore.Au10ImageSource : Swift.Hashable {}
 extension Au10tixCore.Au10ImageSource : Swift.RawRepresentable {}

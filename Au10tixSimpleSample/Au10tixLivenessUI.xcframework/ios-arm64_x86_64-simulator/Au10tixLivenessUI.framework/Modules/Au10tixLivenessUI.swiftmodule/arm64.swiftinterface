@@ -12,7 +12,7 @@ import Au10tixPassiveFaceLivenessUI
 import Foundation
 import Swift
 import UIKit
-@_inheritsConvenienceInitializers final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController {
+@_inheritsConvenienceInitializers final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
   override final public var headline: Swift.String {
     get
   }

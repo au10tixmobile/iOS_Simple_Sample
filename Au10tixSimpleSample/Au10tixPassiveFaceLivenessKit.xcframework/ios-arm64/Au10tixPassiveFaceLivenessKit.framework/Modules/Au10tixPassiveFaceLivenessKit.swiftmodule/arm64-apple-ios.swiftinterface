@@ -24,8 +24,8 @@ import UIKit
     get
   }
 }
-public struct PFLResponse : Swift.Decodable {
-  public enum ErrorCode : Swift.String, Swift.Decodable {
+public struct PFLResponse : Swift.Codable {
+  public enum ErrorCode : Swift.String, Swift.Codable {
     case FACE_TOO_CLOSE
     case FACE_CLOSE_TO_BORDER
     case FACE_CROPPED
@@ -60,6 +60,7 @@ public struct PFLResponse : Swift.Decodable {
   public let message: Swift.String?
   public let error: Swift.String?
   public let error_code: Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode?
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 public typealias QualityFaultOptions = Swift.Set<Au10tixPassiveFaceLivenessKit.QualityFault>
@@ -89,6 +90,7 @@ public enum PFLSessionError : Swift.Error {
   case retriesEnded
   case livenessCheckFailed(error: Swift.Error)
   case networkError(_: Swift.Error)
+  case recordingFailed(_: Swift.Error)
 }
 public protocol PFLSessionDelegate : AnyObject {
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, faceBoundingBox: CoreGraphics.CGRect?)
@@ -98,7 +100,14 @@ public protocol PFLSessionDelegate : AnyObject {
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
 }
+public protocol PFLSessionRecordingDelegate : AnyObject {
+  func pflSessionRecorder(_ screenRecorder: Au10tixCore.ScreenRecorder, didFailToRecord error: Au10tixCore.ScreenRecorderError)
+  func pflSessionRecorderDidStart(_ screenRecorder: Au10tixCore.ScreenRecorder)
+}
 @_hasMissingDesignatedInitializers public class PFLSession : Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
+  public var videoOutputURL: Foundation.URL {
+    get
+  }
   public var isAvailable: Swift.Bool {
     get
   }
@@ -107,6 +116,8 @@ public protocol PFLSessionDelegate : AnyObject {
   }
   public var authenticator: Au10tixCore.Au10tixSessionAuthenticator
   weak public var delegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
+  weak public var recordingDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionRecordingDelegate?
+  public var isEmbeddedInAnotherSession: Swift.Bool
   convenience public init()
   public func set(responseQueue: Dispatch.DispatchQueue)
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)

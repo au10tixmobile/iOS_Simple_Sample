@@ -396,6 +396,12 @@ extension MainViewController: SDCSessionDelegate {
         openSDCResult(croppedImage ?? image)
     }
     
+    /**
+    Gets Called when a barcode was detected
+     */
+    func sdcSession(_ sdcSession: SDCSession, didDetect machineReadableCodes: [Au10MachineReadableCode]) {
+        
+    }
 }
 
 //MARK: - PFLSessionDelegate

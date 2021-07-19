@@ -46,6 +46,7 @@ public class PFLFeedbackPresenter {
   override final public func timeoutViewShouldRefresh()
   @objc override final public func mainButtonAction()
   @objc override final public func leftButtonAction()
+  @objc override final public func closeButtonAction()
   override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
   override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
   @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
@@ -59,6 +60,10 @@ extension PFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate {
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
   final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
+}
+extension PFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionRecordingDelegate, Au10tixBaseUI.RecordingTimeStampViewHost {
+  final public func pflSessionRecorder(_ screenRecorder: Au10tixCore.ScreenRecorder, didFailToRecord error: Au10tixCore.ScreenRecorderError)
+  final public func pflSessionRecorderDidStart(_ screenRecorder: Au10tixCore.ScreenRecorder)
 }
 extension Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Hashable {}

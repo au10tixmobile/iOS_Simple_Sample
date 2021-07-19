@@ -9,6 +9,29 @@ import Foundation
 import ImageIO
 import Swift
 import UIKit
+import Vision
+public enum MachineReadableCodeType : Swift.String {
+  case code39
+  case code39Mod43
+  case code93
+  case code128
+  case ean8
+  case ean13
+  case interleaved2of5
+  case itf14
+  case upce
+  case aztec
+  case dataMatrix
+  case pdf417
+  case qr
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SmartDocumentCaptureConfiguration {
+}
 @_hasMissingDesignatedInitializers public class SDCStatistics {
   weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCStatisticsDelegate?
   public static let shared: Au10tixSmartDocumentCaptureKit.SDCStatistics
@@ -44,6 +67,12 @@ public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+}
+public struct Au10MachineReadableCode {
+  public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?
+  public let corners: [CoreGraphics.CGPoint]
+  public let value: Swift.String?
 }
 @_hasMissingDesignatedInitializers public class SDCSession : Au10tixCore.FrontSideSupporter, Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
   public var isAvailable: Swift.Bool {
@@ -101,6 +130,9 @@ public enum RectOfInterestError : Swift.Error {
     get
   }
 }
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.RawRepresentable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Hashable {}
 extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Equatable {}

@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r/5/XQO3FUJDIHYKfCVEc56SZns=
+		45Re9YFdQqTXlfDrgnq9bD27x8U=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3mNO8lzJtN7tG/PLELwleT5Tvck=
+		RQMNxm9ny6iKBJnt9GTq4Cf4EvI=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M5G/ZiUlvM1FRmuRN3WssNdOOlU=
+		vQG618vgzvveI69glPrLTt3gjrA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		3mNO8lzJtN7tG/PLELwleT5Tvck=
+		RQMNxm9ny6iKBJnt9GTq4Cf4EvI=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		M5G/ZiUlvM1FRmuRN3WssNdOOlU=
+		vQG618vgzvveI69glPrLTt3gjrA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pSDMvAvZkzU/x8M2nlzr/TiVAiQ=
+		El3ZvW8wQJ961ALB3RKFPxht5Hc=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qZ6XgMTORtZQDblTZ4pRbWcE++Q=
+		2ilD02Ch00ryDK12U38tE2dWU1o=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		pSDMvAvZkzU/x8M2nlzr/TiVAiQ=
+		El3ZvW8wQJ961ALB3RKFPxht5Hc=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		qZ6XgMTORtZQDblTZ4pRbWcE++Q=
+		2ilD02Ch00ryDK12U38tE2dWU1o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AdJjagnel5yECUzydQiUoxygGxhByvM+Ek81i+AQY+U=
+			LH28VoTNzPmOgLBG21fJ/Arxli5wZuPqCwQSVojQyEY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9rhoGcFrTlzyrX3RFPAnTcEFWi5c+6WWPIMCWPOlZw=
+			3mBsSMUyeXZl7F1Gr6fKt7RHHYBMQpETmfVEuu3y9Gk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AdJjagnel5yECUzydQiUoxygGxhByvM+Ek81i+AQY+U=
+			LH28VoTNzPmOgLBG21fJ/Arxli5wZuPqCwQSVojQyEY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9rhoGcFrTlzyrX3RFPAnTcEFWi5c+6WWPIMCWPOlZw=
+			3mBsSMUyeXZl7F1Gr6fKt7RHHYBMQpETmfVEuu3y9Gk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WClk20+vqTBM/jNvysIUPOErUanNo4YMLTat1WE15PA=
+			o0aL7kUaPXQ5jvnAepykEdtUmywXhv0vxEjEqOsDcWQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QdbwMBu3JlTfBV2uNZ5sZCQHGP3e0zjBJFaDBCXaIZc=
+			FXf54rtSC5PVzbwITsYNdjLgY9SDVj12d3Pa9aFZNYU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WClk20+vqTBM/jNvysIUPOErUanNo4YMLTat1WE15PA=
+			o0aL7kUaPXQ5jvnAepykEdtUmywXhv0vxEjEqOsDcWQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QdbwMBu3JlTfBV2uNZ5sZCQHGP3e0zjBJFaDBCXaIZc=
+			FXf54rtSC5PVzbwITsYNdjLgY9SDVj12d3Pa9aFZNYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

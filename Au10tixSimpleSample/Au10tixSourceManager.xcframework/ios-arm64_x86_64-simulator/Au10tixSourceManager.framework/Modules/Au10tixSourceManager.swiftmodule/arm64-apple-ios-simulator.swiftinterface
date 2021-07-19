@@ -2,6 +2,8 @@
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSourceManager
 import AVFoundation
+import AVKit
+import AVFoundation.AVMetadataObject
 import Au10tixCore
 import CoreImage
 import CoreLocation
@@ -17,15 +19,21 @@ public protocol Au10tixSourceManagerProtocol {
   func startSession(for source: Au10tixSourceManager.SourceType, delegate: Au10tixSourceManager.Au10SourceToSession?, with configurations: [Swift.String : Any], previewView: UIKit.UIView) throws
   func stopCameraSession()
   func stopAllSessions()
+  func canCaptureStillImage() -> Swift.Bool
   func captureStillImage()
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
-  func runFakeCameraSession()
   func resumeCamera()
   func pauseCamera()
   func isSourceAvailable(sourceType: Au10tixSourceManager.SourceType) -> Swift.Bool
   func isCameraActive() -> Swift.Bool
   func imageResolution() -> CoreGraphics.CGSize
   func setFaceMetadataDetection(delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
+  func setMetadataDetection(of types: [Au10tixSourceManager.MetadataObjectType], delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
+}
+extension Au10tixSourceManagerProtocol {
+  public static func isMissingCameraPermission() -> Swift.Bool
+  public static func isCameraRestricted() -> Swift.Bool
+  public static func isCameraAuthorized() -> Swift.Bool
 }
 public struct Au10CaptureFrameUpdate {
   public var imageBuffer: CoreVideo.CVImageBuffer
@@ -38,6 +46,12 @@ public protocol Au10SourceToSession : AnyObject {
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didGetSourceUpdate sourceUpdate: Au10tixCore.Au10Update)
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didGetFrame captureFrameUpdate: Au10tixSourceManager.Au10CaptureFrameUpdate)
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didGetSample captureSampleUpdate: Au10tixSourceManager.CaptureSampleUpdate)
+  func sourceManagerCameraDidSuspend(_ manager: Au10tixSourceManager.Au10SourceManager)
+  func sourceManagerCameraDidResume(_ manager: Au10tixSourceManager.Au10SourceManager)
+}
+extension Au10SourceToSession {
+  public func sourceManagerCameraDidSuspend(_ manager: Au10tixSourceManager.Au10SourceManager)
+  public func sourceManagerCameraDidResume(_ manager: Au10tixSourceManager.Au10SourceManager)
 }
 public protocol Au10MotionSourceDelegate : AnyObject {
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetectStability isStable: Swift.Bool)
@@ -45,6 +59,13 @@ public protocol Au10MotionSourceDelegate : AnyObject {
 }
 public protocol Au10MetadataOutputDelegate : AnyObject {
   func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetect metadataFaceObject: Au10tixSourceManager.Au10MetadataFaceObject)
+  func sourceManager(_ manager: Au10tixSourceManager.Au10SourceManager, didDetect metadataObjects: [Au10tixSourceManager.Au10MetadataMachineReadableCodeObject])
+}
+public struct Au10MetadataMachineReadableCodeObject {
+  public let type: Au10tixSourceManager.MetadataObjectType?
+  public let corners: [CoreGraphics.CGPoint]
+  public let value: Swift.String?
+  public init(type: Au10tixSourceManager.MetadataObjectType?, corners: [CoreGraphics.CGPoint], value: Swift.String?)
 }
 public enum SourceType {
   case undefined
@@ -57,6 +78,30 @@ public enum SourceType {
 }
 extension SourceType : Swift.Equatable {
   public static func == (a: Au10tixSourceManager.SourceType, b: Au10tixSourceManager.SourceType) -> Swift.Bool
+}
+public enum MetadataObjectType : Swift.String {
+  case code39
+  case code39Mod43
+  case code93
+  case code128
+  case ean8
+  case ean13
+  case interleaved2of5
+  case itf14
+  case upce
+  case aztec
+  case dataMatrix
+  case pdf417
+  case qr
+  case face
+  public static func all1DBarcodes() -> [Au10tixSourceManager.MetadataObjectType]
+  public static func all2DBarcodes() -> [Au10tixSourceManager.MetadataObjectType]
+  public static func allBarcodes() -> [Au10tixSourceManager.MetadataObjectType]
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct CameraConfiguration {
   public enum Position : Swift.String, Swift.Codable {
@@ -94,6 +139,7 @@ final public class CaptureSampleUpdate {
 }
 public enum CameraError : Swift.Error {
   case noPermission
+  case cameraRestricted
   case canNotAddInput
   case canNotAddVideoOutput
   case canNotAddPhotoOutput
@@ -129,12 +175,16 @@ final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManager
   final public func resumeCamera()
   final public func pauseCamera()
   final public func stopAllSessions()
+  final public func canCaptureStillImage() -> Swift.Bool
   final public func captureStillImage()
   final public func provide(image data: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   final public func setFaceMetadataDetection(delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
-  final public func runFakeCameraSession()
+  final public func setMetadataDetection(of types: [Au10tixSourceManager.MetadataObjectType], delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
   final public func isCameraActive() -> Swift.Bool
 }
+extension Au10tixSourceManager.MetadataObjectType : Swift.Equatable {}
+extension Au10tixSourceManager.MetadataObjectType : Swift.Hashable {}
+extension Au10tixSourceManager.MetadataObjectType : Swift.RawRepresentable {}
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.Equatable {}
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.Hashable {}
 extension Au10tixSourceManager.CameraConfiguration.Position : Swift.RawRepresentable {}
