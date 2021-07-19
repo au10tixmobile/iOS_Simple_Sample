@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureUI
+import AVFoundation
 import Au10tixBaseUI
 import Au10tixCore
 import Au10tixSmartDocumentCaptureKit
@@ -33,12 +34,20 @@ import UIKit
   override final public func timeoutViewShouldRefresh()
   @objc override final public func mainButtonAction()
   @objc override final public func leftButtonAction()
+  @objc override final public func closeButtonAction()
   override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
   override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  override final public func didAddCameraIssuesUI()
+  override final public func didRemoveCameraIssuesUI()
   @objc deinit
 }
 extension SDCViewController : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+}
+extension SDCViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
+  final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  final public func uiCompsCameraUnavailableUploadFilePressed()
 }

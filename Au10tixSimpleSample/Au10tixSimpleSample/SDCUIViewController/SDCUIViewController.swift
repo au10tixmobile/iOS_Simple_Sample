@@ -101,6 +101,7 @@ private extension SDCUIViewController {
     @IBAction func takeStillImage() {
         sdcSession.captureImage()
     }
+    
 }
 
 // MARK: - HANDLE SESSION EVENTS
@@ -128,4 +129,10 @@ extension SDCUIViewController: SDCSessionDelegate {
         openSDCResults(croppedImage ?? image)
     }
     
+    /**
+    Gets Called when a barcode was detected
+     */
+    func sdcSession(_ sdcSession: SDCSession, didDetect machineReadableCodes: [Au10MachineReadableCode]) {
+        
+    }
 }

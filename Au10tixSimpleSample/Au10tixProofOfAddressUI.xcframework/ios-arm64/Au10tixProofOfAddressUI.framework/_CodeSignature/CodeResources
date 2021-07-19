@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u9Y1O3JkTN5ryV6giU/vtnapZhI=
+		4qYRzyGqlhpco3IMgpr4Vlq/+C4=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		glm9EviGpqOZ6ysL9gWtFPsW8lY=
+		7LWYggi7wifosX71ml2qWpLVg14=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GCS2aLJjJi1efSaTkc2K7BRLW98=
+		zzPZ/8hjRvZzX3RYw/MmZ19J6h0=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		glm9EviGpqOZ6ysL9gWtFPsW8lY=
+		7LWYggi7wifosX71ml2qWpLVg14=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		GCS2aLJjJi1efSaTkc2K7BRLW98=
+		zzPZ/8hjRvZzX3RYw/MmZ19J6h0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7aPBtlMOHfgKugomS1j7gisQjUhZhfcbmDU6sbImJb4=
+			Fejn7rvLuZV5Be2kdxOcOV584egakuhNkPv7j58GDVI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVi65tr5W+kVMsMYmcS+ReiD9ZjLF29gRUpurv7j3EM=
+			p3tILLpGWlEfxS54RN/ATL3JmyzF56FeYpWJ97zo/uY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7aPBtlMOHfgKugomS1j7gisQjUhZhfcbmDU6sbImJb4=
+			Fejn7rvLuZV5Be2kdxOcOV584egakuhNkPv7j58GDVI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVi65tr5W+kVMsMYmcS+ReiD9ZjLF29gRUpurv7j3EM=
+			p3tILLpGWlEfxS54RN/ATL3JmyzF56FeYpWJ97zo/uY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

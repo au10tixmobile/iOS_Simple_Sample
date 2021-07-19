@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EAE20B8263AD02F00F1C85D /* Au10tixBaseUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE209D263AC94200F1C85D /* Au10tixBaseUI.xcframework */; };
-		1EAE20B9263AD02F00F1C85D /* Au10tixBaseUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE209D263AC94200F1C85D /* Au10tixBaseUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1EAE20BA263AD03100F1C85D /* Au10tixBEKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE20A8263AC94200F1C85D /* Au10tixBEKit.xcframework */; };
 		1EAE20BB263AD03100F1C85D /* Au10tixBEKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE20A8263AC94200F1C85D /* Au10tixBEKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1EAE20BC263AD03200F1C85D /* Au10tixCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE20A6263AC94200F1C85D /* Au10tixCore.xcframework */; };
@@ -33,6 +31,8 @@
 		1EAE20CF263AD03B00F1C85D /* Au10tixSmartDocumentCaptureUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE209F263AC94200F1C85D /* Au10tixSmartDocumentCaptureUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1EAE20D0263AD03B00F1C85D /* Au10tixSourceManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE20A4263AC94200F1C85D /* Au10tixSourceManager.xcframework */; };
 		1EAE20D1263AD03B00F1C85D /* Au10tixSourceManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE20A4263AC94200F1C85D /* Au10tixSourceManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EC4BD6E269EC24A007DB9F6 /* Au10tixBaseUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE209D263AC94200F1C85D /* Au10tixBaseUI.xcframework */; };
+		1EC4BD6F269EC24A007DB9F6 /* Au10tixBaseUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE209D263AC94200F1C85D /* Au10tixBaseUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -58,11 +58,11 @@
 				1EAE20C5263AD03A00F1C85D /* Au10tixPassiveFaceLivenessKit.xcframework in Embed Frameworks */,
 				1EAE20C1263AD03500F1C85D /* Au10tixLivenessKit.xcframework in Embed Frameworks */,
 				1EAE20CF263AD03B00F1C85D /* Au10tixSmartDocumentCaptureUI.xcframework in Embed Frameworks */,
-				1EAE20B9263AD02F00F1C85D /* Au10tixBaseUI.xcframework in Embed Frameworks */,
 				1EAE20C7263AD03A00F1C85D /* Au10tixPassiveFaceLivenessUI.xcframework in Embed Frameworks */,
 				1EAE20C3263AD03A00F1C85D /* Au10tixLivenessUI.xcframework in Embed Frameworks */,
 				1EAE20C9263AD03A00F1C85D /* Au10tixProofOfAddressKit.xcframework in Embed Frameworks */,
 				1EAE20BF263AD03300F1C85D /* Au10tixDetectorManager.xcframework in Embed Frameworks */,
+				1EC4BD6F269EC24A007DB9F6 /* Au10tixBaseUI.xcframework in Embed Frameworks */,
 				1EAE20BD263AD03200F1C85D /* Au10tixCore.xcframework in Embed Frameworks */,
 				1EAE20CD263AD03A00F1C85D /* Au10tixSmartDocumentCaptureKit.xcframework in Embed Frameworks */,
 			);
@@ -113,9 +113,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EAE20D0263AD03B00F1C85D /* Au10tixSourceManager.xcframework in Frameworks */,
+				1EC4BD6E269EC24A007DB9F6 /* Au10tixBaseUI.xcframework in Frameworks */,
 				1EAE20C4263AD03A00F1C85D /* Au10tixPassiveFaceLivenessKit.xcframework in Frameworks */,
 				1EAE20CC263AD03A00F1C85D /* Au10tixSmartDocumentCaptureKit.xcframework in Frameworks */,
-				1EAE20B8263AD02F00F1C85D /* Au10tixBaseUI.xcframework in Frameworks */,
 				1EAE20C0263AD03400F1C85D /* Au10tixLivenessKit.xcframework in Frameworks */,
 				1EAE20CA263AD03A00F1C85D /* Au10tixProofOfAddressUI.xcframework in Frameworks */,
 				1EAE20BC263AD03200F1C85D /* Au10tixCore.xcframework in Frameworks */,

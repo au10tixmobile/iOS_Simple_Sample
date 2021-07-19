@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wy4IzUlDFJ5bfliABWqhcykL7jQ=
+		x57QqmbZUvB31jr+ATHUNDwEheU=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mOnHMCBUmhaQddPPUN1l993H3Xs=
+		yNaEDUn0wYnddA2B1UYem5cpZIk=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ohv8FHH9NQDlbc+NOPUUJpOn47w=
+		rXeVqcyhzfd32u9B8o4QV/+dmdA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		mOnHMCBUmhaQddPPUN1l993H3Xs=
+		yNaEDUn0wYnddA2B1UYem5cpZIk=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ohv8FHH9NQDlbc+NOPUUJpOn47w=
+		rXeVqcyhzfd32u9B8o4QV/+dmdA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GExpGV9xV3yf8lvubblZGAb1dOP7TxRa7XY182WaVss=
+			DFvjaYZayOrGFGWd1JSOWMinZmtnfrutQ2RjyFrRN7Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Rlm8/qoelnwNzOwxutCrI3h0N8s83O2PgK6k+4Ko9A=
+			aMMmY4XZRwxNzNCcZOk0gyi8UCkgTbLVtvN/0Th61dw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GExpGV9xV3yf8lvubblZGAb1dOP7TxRa7XY182WaVss=
+			DFvjaYZayOrGFGWd1JSOWMinZmtnfrutQ2RjyFrRN7Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Rlm8/qoelnwNzOwxutCrI3h0N8s83O2PgK6k+4Ko9A=
+			aMMmY4XZRwxNzNCcZOk0gyi8UCkgTbLVtvN/0Th61dw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

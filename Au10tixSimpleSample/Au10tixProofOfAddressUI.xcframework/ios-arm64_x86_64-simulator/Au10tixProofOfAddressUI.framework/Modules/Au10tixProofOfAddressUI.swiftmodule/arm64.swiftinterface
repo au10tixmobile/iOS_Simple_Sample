@@ -26,6 +26,7 @@ import UIKit
   @objc override final public func mainButtonAction()
   @objc override final public func leftButtonAction()
   @objc override final public func rightButtonAction()
+  @objc override final public func closeButtonAction()
   override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
   override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
   @objc deinit
@@ -33,4 +34,8 @@ import UIKit
 extension POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
   final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didCapture image: Au10tixCore.Au10Image, with frameData: Au10tixCore.Au10Update)
   final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didFailWith error: Au10tixProofOfAddressKit.POASessionError)
+}
+extension POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
+  final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  final public func uiCompsCameraUnavailableUploadFilePressed()
 }

@@ -1,8 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+import AVKit
 @_exported import Au10tixBaseUI
 import Au10tixCore
+import Au10tixSourceManager
 import Foundation
 import PhotosUI
 import Swift
@@ -43,10 +45,6 @@ extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, 
   public func selectImageFromLibrary(with completion: @escaping Au10tixBaseUI.UIComponentBaseViewController.LibraryImageCompletion)
   @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class RecordingTimeStampView : UIKit.UIView {
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc deinit
 }
 extension UIView {
   public func aspectFit(in containingView: UIKit.UIView, ratio: CoreGraphics.CGFloat)
@@ -111,7 +109,10 @@ extension String {
   @objc open func leftButtonAction()
   @objc open func rightButtonAction()
   @objc open func mainButtonAction()
+  @objc open func closeButtonAction()
   open func showFeatureFeed()
+  open func didAddCameraIssuesUI()
+  open func didRemoveCameraIssuesUI()
   open func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
   open func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
   open func timeoutViewShouldRefresh()
@@ -124,7 +125,6 @@ extension String {
   public func showToast(with text: Swift.String)
   public func hideToast()
   public func show(instruction: Swift.String?, hideBackground: Swift.Bool = false)
-  @objc public func closeButtonAction()
   @objc open func backButtonAction()
   public func operationFinished()
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -147,6 +147,13 @@ extension UIColor {
     get
   }
 }
+public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
+  var previewView: UIKit.UIView! { get }
+}
+extension RecordingTimeStampViewHost {
+  public func showRecordingIndication()
+  public func stopRecordingIndication()
+}
 extension UIComponentBaseViewController {
   public enum UIState : Swift.Equatable {
     case capturing
@@ -161,6 +168,17 @@ extension UIComponentBaseViewController {
     }
     public static func == (a: Au10tixBaseUI.UIComponentBaseViewController.UIState, b: Au10tixBaseUI.UIComponentBaseViewController.UIState) -> Swift.Bool
   }
+}
+public protocol UIComponentCameraUnavailableDelegate : AnyObject {
+  func uiCompsCameraUnavailableCameraPermissionGranted()
+  func uiCompsCameraUnavailableUploadFilePressed()
+}
+extension UIComponentBaseViewController {
+  public var hasCameraIssues: Swift.Bool {
+    get
+  }
+  public func showIfNeedsCameraUnavailableUI(with delegate: Au10tixBaseUI.UIComponentCameraUnavailableDelegate)
+  public func removeCameraUnavailableUI()
 }
 @objc @_hasMissingDesignatedInitializers public class UICompsButtonsView : UIKit.UIView {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
