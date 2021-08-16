@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Qx9pjFk9kjaSOzw2igKa6jtEUd0=
+		EUOs4tSoZvrJUpGUfnVZmCe+AuM=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		f9UO13z4laxuiz2JZV6DDLiMpIE=
+		J7gE71ObXZXgL6tUaL69QI2ZS0Y=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jknq19yMu1rd59BUwxFqjt493a4=
+		jgmlbSt+e5EPZPCh3Ary4thHSaY=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		f9UO13z4laxuiz2JZV6DDLiMpIE=
+		J7gE71ObXZXgL6tUaL69QI2ZS0Y=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		jknq19yMu1rd59BUwxFqjt493a4=
+		jgmlbSt+e5EPZPCh3Ary4thHSaY=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GwHIzbvyJa17H+OiVcDvv+zNtP0=
+		QqU9VYI7le4j0zbmgqvmM7mIWkc=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6tA1H0XpR8CEgj3fgKMqNqbtXsI=
+		lpkoRGbBLrOPuwpJTAhV2UutRUg=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		GwHIzbvyJa17H+OiVcDvv+zNtP0=
+		QqU9VYI7le4j0zbmgqvmM7mIWkc=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		6tA1H0XpR8CEgj3fgKMqNqbtXsI=
+		lpkoRGbBLrOPuwpJTAhV2UutRUg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mwb2q+lx/BCfWaO70f+SdrsQgCcoFTlmXFpI6Oa8K5Y=
+			GKTHxd+UPx6J+nmwIqKyh0HCpkD63TdcYHhBKJTO9l0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RA4uqRVVD+F8V91LneZvvZfgdyYArd3aBq4W3QDqGHo=
+			O2Ylch81MGT0GJQarecWHDzdr7KbEbi2mQdFd13OW/s=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftdoc</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mwb2q+lx/BCfWaO70f+SdrsQgCcoFTlmXFpI6Oa8K5Y=
+			GKTHxd+UPx6J+nmwIqKyh0HCpkD63TdcYHhBKJTO9l0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RA4uqRVVD+F8V91LneZvvZfgdyYArd3aBq4W3QDqGHo=
+			O2Ylch81MGT0GJQarecWHDzdr7KbEbi2mQdFd13OW/s=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4AHZ/ITsDX3iu6TaDzcqmzgTxesVSIV6splcsldW9X4=
+			JHC3PiPwSh5sMWtYeLWEKhhqr0gEGF/ReTuxHKkILhU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKyW0+MYwLtmF86v/QknCHHCoyL8gt5Rhy/L+4deDzY=
+			Oc076tZONXoV0Zv9TtyCKs8KOeeXP/OoL+82xEgJ3pU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4AHZ/ITsDX3iu6TaDzcqmzgTxesVSIV6splcsldW9X4=
+			JHC3PiPwSh5sMWtYeLWEKhhqr0gEGF/ReTuxHKkILhU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKyW0+MYwLtmF86v/QknCHHCoyL8gt5Rhy/L+4deDzY=
+			Oc076tZONXoV0Zv9TtyCKs8KOeeXP/OoL+82xEgJ3pU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

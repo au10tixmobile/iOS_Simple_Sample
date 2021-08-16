@@ -65,6 +65,24 @@ public enum BIUserAction : Swift.Int, Swift.Codable {
     get
   }
 }
+public enum BIAFLStage : Swift.Int, Swift.Codable {
+  case pfl
+  case afl
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BINFCPassportStage : Swift.Int, Swift.Codable {
+  case mrz
+  case nfc
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum ValidationError : Swift.Error {
   case invalidClaim(Swift.String)
   case expired
@@ -102,6 +120,9 @@ public protocol NFCPassportReaderSession {
 extension Au10tix {
   public struct Configurations {
     public var dict: [Swift.String : Any] {
+      get
+    }
+    public var manualCaptureDisableDuration: Foundation.TimeInterval {
       get
     }
   }
@@ -459,6 +480,16 @@ public struct Claim {
   public static func shipQueuedEvents()
   @objc deinit
 }
+public struct BarcodeReaderReportFromClient : Swift.Codable {
+  public init(barcodeDataCollection: [Au10tixCore.BarcodeDataCollection])
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BarcodeDataCollection : Swift.Codable {
+  public init(points: [CoreGraphics.CGPoint], value: Swift.String, type: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public protocol BearerTokenAdvertizer : AnyObject {
   var bearerToken: Swift.String? { get }
 }
@@ -610,7 +641,7 @@ extension Reachability {
     get
   }
 }
-public typealias NetworkServiceCompletion = (Swift.Result<Au10tixCore.Au10NetworkResponse<Foundation.Data?>, Swift.Error>) -> Swift.Void
+public typealias NetworkServiceCompletion = (Swift.Result<Au10tixCore.Au10NetworkResponse<Foundation.Data?>, Au10tixCore.NetworkError>) -> Swift.Void
 public struct Au10NetworkClientImpl {
   public init(configuration: Foundation.URLSessionConfiguration = .default)
 }
@@ -651,6 +682,16 @@ extension Au10tixSession {
   public static func scale(image: CoreImage.CIImage, withAspectRatioForWidth width: Swift.Int) -> Foundation.Data?
   @objc deinit
 }
+public enum NetworkError : Foundation.LocalizedError {
+  case error(Swift.Error)
+  case noData
+  case invalidURL
+  case requestFailed
+  case timeout
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public class LogzIoEngine : Au10tixCore.AnalyticsEngine, Au10tixCore.BatchShipper {
   public init?(urlString: Swift.String)
   public func record(event: Au10tixCore.AnalyticsEvent)
@@ -664,9 +705,9 @@ public class RequestDataBuilder {
   public init()
   public func build() -> Au10tixCore.RequestData
   @discardableResult
-  public func withFrontDocument() -> Au10tixCore.RequestDataBuilder
+  public func withFrontDocument(with meatadata: Foundation.Data? = nil) -> Au10tixCore.RequestDataBuilder
   @discardableResult
-  public func withBackDocument() -> Au10tixCore.RequestDataBuilder
+  public func withBackDocument(with meatadata: Foundation.Data? = nil) -> Au10tixCore.RequestDataBuilder
   @discardableResult
   public func withPOA() -> Au10tixCore.RequestDataBuilder
   @discardableResult
@@ -714,6 +755,12 @@ extension Au10tixCore.BIDataSource : Swift.RawRepresentable {}
 extension Au10tixCore.BIUserAction : Swift.Equatable {}
 extension Au10tixCore.BIUserAction : Swift.Hashable {}
 extension Au10tixCore.BIUserAction : Swift.RawRepresentable {}
+extension Au10tixCore.BIAFLStage : Swift.Equatable {}
+extension Au10tixCore.BIAFLStage : Swift.Hashable {}
+extension Au10tixCore.BIAFLStage : Swift.RawRepresentable {}
+extension Au10tixCore.BINFCPassportStage : Swift.Equatable {}
+extension Au10tixCore.BINFCPassportStage : Swift.Hashable {}
+extension Au10tixCore.BINFCPassportStage : Swift.RawRepresentable {}
 extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
 extension Au10tixCore.Au10ImageSource : Swift.Hashable {}
 extension Au10tixCore.Au10ImageSource : Swift.RawRepresentable {}

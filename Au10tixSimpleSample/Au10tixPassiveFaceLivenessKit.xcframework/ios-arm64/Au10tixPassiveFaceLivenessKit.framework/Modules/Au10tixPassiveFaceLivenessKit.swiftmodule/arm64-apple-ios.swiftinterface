@@ -88,6 +88,7 @@ public enum PFLSessionError : Swift.Error {
   case timedout
   case sessionTokenExpired
   case retriesEnded
+  case livenessCheckNetworkTimeout
   case livenessCheckFailed(error: Swift.Error)
   case networkError(_: Swift.Error)
   case recordingFailed(_: Swift.Error)

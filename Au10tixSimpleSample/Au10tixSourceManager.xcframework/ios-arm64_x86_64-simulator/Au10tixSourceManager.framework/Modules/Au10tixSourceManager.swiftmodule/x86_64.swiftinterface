@@ -168,8 +168,6 @@ final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManager
   final public func startSession(for source: Au10tixSourceManager.SourceType, delegate: Au10tixSourceManager.Au10SourceToSession?, with configurations: [Swift.String : Any], previewView: UIKit.UIView) throws
   final public func startMotionDetection(sources: [Au10tixSourceManager.SourceType] = [.stability, .facingAngle], delegate: Au10tixSourceManager.Au10MotionSourceDelegate?, configurations: [Swift.String : Any])
   final public func imageResolution() -> CoreGraphics.CGSize
-  final public func normalize(rect: CoreGraphics.CGRect) -> CoreGraphics.CGRect
-  final public func normalize(point: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
   final public func stopCameraSession()
   final public func stopMotionWorkers()
   final public func resumeCamera()

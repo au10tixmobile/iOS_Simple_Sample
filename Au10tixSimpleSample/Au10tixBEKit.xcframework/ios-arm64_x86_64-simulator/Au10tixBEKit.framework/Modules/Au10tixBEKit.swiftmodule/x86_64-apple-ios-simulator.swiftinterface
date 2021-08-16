@@ -62,9 +62,7 @@ public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BOSInteractorCache : ObjectiveC.NSObject {
   @objc public static let shared: Au10tixBEKit.BOSInteractorCache
-  @objc public func append(image: Au10tixCore.Au10Image, type: Foundation.NSNumber)
-  @objc public func append(sessionInfo: [Swift.String : Foundation.Data], type: Foundation.NSNumber)
-  @objc public func append(sessionJson: [Swift.String : Swift.String], type: Foundation.NSNumber)
+  @objc public func append(dict: Foundation.NSDictionary, type: Foundation.NSNumber)
   @objc deinit
 }
 extension Au10tixBEKit.DataType : Swift.Equatable {}

@@ -322,6 +322,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -647,6 +648,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 

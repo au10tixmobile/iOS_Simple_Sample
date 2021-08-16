@@ -43,6 +43,7 @@ import UIKit
 }
 extension SDCViewController : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])

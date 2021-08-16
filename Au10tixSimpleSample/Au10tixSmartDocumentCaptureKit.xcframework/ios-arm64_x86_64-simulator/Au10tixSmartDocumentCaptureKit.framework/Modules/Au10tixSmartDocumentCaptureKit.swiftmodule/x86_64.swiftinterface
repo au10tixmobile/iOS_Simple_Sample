@@ -62,12 +62,18 @@ public enum SDCSessionError : Swift.Error {
   case timedout
   case sessionTokenExpired
   case smartDocumentCheckFailed(error: Swift.Error)
+  case smartDocumentCheckTimeout
 }
 public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+}
+extension SDCSessionDelegate {
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCaptureImage image: Au10tixCore.Au10Image)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
 }
 public struct Au10MachineReadableCode {
   public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?
