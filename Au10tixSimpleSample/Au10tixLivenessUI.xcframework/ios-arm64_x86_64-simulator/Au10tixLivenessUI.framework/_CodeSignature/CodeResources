@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		vFqENcN0JMHEeG5RJAwOak4G9O8=
+		+FrapE1R7c5pIBUjbhLQtxMbKMU=
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Zj6c9O/ty3siRyP7aLjdAUJAW40=
+		Rwt8dFfTj3/XRCI9BbnU/VT9dSQ=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RvWhEAtEjJRVEVw48RQLOp5qDj4=
+		IlwUMGd/QwRXUWetICiR3x4riRU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XbU0rNNfN3GEhiHqwXbYRENGmnU=
+		aV15gH1JqaylLC5kzklzayp8Fts=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		RvWhEAtEjJRVEVw48RQLOp5qDj4=
+		IlwUMGd/QwRXUWetICiR3x4riRU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XbU0rNNfN3GEhiHqwXbYRENGmnU=
+		aV15gH1JqaylLC5kzklzayp8Fts=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5vo5cCmLU4A8SL4zyD6q73CYmGw=
+		ER5W54r8Qxsy2RJzdadFpz3t3Pk=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hXzdJBGzutylSPgm8P4onYj0tUw=
+		061fBOcfNo3BPZjDcTEKiMqLU0I=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		5vo5cCmLU4A8SL4zyD6q73CYmGw=
+		ER5W54r8Qxsy2RJzdadFpz3t3Pk=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		hXzdJBGzutylSPgm8P4onYj0tUw=
+		061fBOcfNo3BPZjDcTEKiMqLU0I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IaUAWVqlvvVpS+uCj+DeC+90Cet7ZJ2moIaohryjh8A=
+			rC/N3pOl0CaYXwa6J58RnbeaYQuWeKBSnpu7TBjKDnw=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LCFZokg0w722JhyULGFQyB6+BgzDuEB2EmxCwIrmRx4=
+			8sW+BJR/Mx764jG4nD6PVXeprqmX/mFOuKZBImscLIU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SaWk2MpSs+oaGyIIsSsodHTG76+2uZcJ5BDRdHgPU30=
+			1qAfZNvuaMZPfX0wJiX/XXn3UkirH9WOacKLJibeH4Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
@@ -136,14 +136,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LCFZokg0w722JhyULGFQyB6+BgzDuEB2EmxCwIrmRx4=
+			8sW+BJR/Mx764jG4nD6PVXeprqmX/mFOuKZBImscLIU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SaWk2MpSs+oaGyIIsSsodHTG76+2uZcJ5BDRdHgPU30=
+			1qAfZNvuaMZPfX0wJiX/XXn3UkirH9WOacKLJibeH4Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7p+ltf09lohMSp51dfWOdqebmC/2HxwhcoV+jENCh0=
+			Sx/bl/du6inquVmbJEaS/+/z22g3uTf73Zb9EvZafJQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sYCgX0agTKiIhgpWyI5has9HKTmJbPuYdWoTWziLOPE=
+			6DUyPlbEkoozovNIFprKnyhPfFn5eDKurdPBUYFPNuk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftdoc</key>
@@ -178,14 +178,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7p+ltf09lohMSp51dfWOdqebmC/2HxwhcoV+jENCh0=
+			Sx/bl/du6inquVmbJEaS/+/z22g3uTf73Zb9EvZafJQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sYCgX0agTKiIhgpWyI5has9HKTmJbPuYdWoTWziLOPE=
+			6DUyPlbEkoozovNIFprKnyhPfFn5eDKurdPBUYFPNuk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

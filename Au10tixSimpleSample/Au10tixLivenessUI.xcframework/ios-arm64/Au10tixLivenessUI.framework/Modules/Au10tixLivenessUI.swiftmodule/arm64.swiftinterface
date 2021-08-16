@@ -25,6 +25,7 @@ import UIKit
   }
   @objc override final public func viewDidLoad()
   @objc override final public func mainButtonAction()
+  @objc override final public func closeButtonAction()
   override final public func timeoutViewShouldRefresh()
   @objc override final public func backButtonAction()
   @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)

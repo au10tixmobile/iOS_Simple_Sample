@@ -135,4 +135,11 @@ extension SDCUIViewController: SDCSessionDelegate {
     func sdcSession(_ sdcSession: SDCSession, didDetect machineReadableCodes: [Au10MachineReadableCode]) {
         
     }
+    
+    /**
+    Gets Called when an image was taken
+     */
+    func sdcSession(_ sdcSession: SDCSession, didTake image: Au10Image) {
+        
+    }
 }

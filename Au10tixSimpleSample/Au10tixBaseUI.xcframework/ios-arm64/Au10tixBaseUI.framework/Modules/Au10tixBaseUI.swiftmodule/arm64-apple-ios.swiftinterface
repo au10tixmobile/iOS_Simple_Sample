@@ -119,6 +119,8 @@ extension String {
   public typealias ActionButtonImage = Au10tixBaseUI.UICompsButtonsView.ActionButtonImage
   public typealias ActionButton = Au10tixBaseUI.UICompsButtonsView.ActionButton
   public typealias ActionButtonBehavior = Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior
+  public func toggleEnable(_ isEnabled: Swift.Bool, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func temporaryDisable(button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton, for duration: Foundation.TimeInterval)
   public func update(image: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonImage, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
   public func update(behavior: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonBehavior, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
   public func showProgress(_ show: Swift.Bool)
@@ -127,6 +129,7 @@ extension String {
   public func show(instruction: Swift.String?, hideBackground: Swift.Bool = false)
   @objc open func backButtonAction()
   public func operationFinished()
+  public func showCaptured(image: UIKit.UIImage)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
 }
@@ -201,6 +204,7 @@ extension UICompsButtonsView {
     case retakeSmall
     case camera
     case checkmark
+    case disabled
     public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

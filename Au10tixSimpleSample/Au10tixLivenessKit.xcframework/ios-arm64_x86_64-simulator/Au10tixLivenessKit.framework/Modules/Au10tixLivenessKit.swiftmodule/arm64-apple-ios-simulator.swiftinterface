@@ -115,13 +115,13 @@ public enum AFLSessionError : Swift.Error, Foundation.LocalizedError {
     get
   }
 }
-public enum AFLGestureType {
+public enum AFLGestureType : Swift.Int, Swift.Codable {
   case faceRight
   case faceLeft
   case faceCenter
-  public static func == (a: Au10tixLivenessKit.AFLGestureType, b: Au10tixLivenessKit.AFLGestureType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -140,14 +140,18 @@ extension AFLSession : Au10tixCore.Au10tixSession {
   public func stop()
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
 }
-public struct AFLSessionResult {
-  public struct GesureResult {
+public struct AFLSessionResult : Swift.Codable {
+  public struct GesureResult : Swift.Codable {
     public let gestureType: Au10tixLivenessKit.AFLGestureType
     public let didPass: Swift.Bool
     public let duration: Foundation.TimeInterval
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public let gesureResults: [Au10tixLivenessKit.AFLSessionResult.GesureResult]
   public let faceMaintained: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension Au10tixLivenessKit.LivenessSessionUpdate : Swift.Equatable {}
 extension Au10tixLivenessKit.LivenessSessionUpdate : Swift.Hashable {}
@@ -155,3 +159,4 @@ extension Au10tixLivenessKit.LivenessSessionWaitingForUserReason : Swift.Equatab
 extension Au10tixLivenessKit.LivenessSessionWaitingForUserReason : Swift.Hashable {}
 extension Au10tixLivenessKit.AFLGestureType : Swift.Equatable {}
 extension Au10tixLivenessKit.AFLGestureType : Swift.Hashable {}
+extension Au10tixLivenessKit.AFLGestureType : Swift.RawRepresentable {}

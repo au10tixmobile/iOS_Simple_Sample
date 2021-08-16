@@ -188,7 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -207,10 +206,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class Au10Image;
+@class NSDictionary;
 @class NSNumber;
-@class NSString;
-@class NSData;
 
 /// A class to collect the sessions result
 SWIFT_CLASS("_TtC12Au10tixBEKit18BOSInteractorCache")
@@ -219,27 +216,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BOSInteracto
 + (BOSInteractorCache * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Append an image to the cache
+/// Append a dictionary with the session result to the cache
 /// This method designed for internal use using Obj-C Refelection
-/// \param image An <em>image</em> recevied from Au10tix specific session.
+/// \param dict a dictionary that contains the result objects
 ///
 /// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
 ///
-- (void)appendWithImage:(Au10Image * _Nonnull)image type:(NSNumber * _Nonnull)type;
-/// Append a data map result to the cache
-/// This method designed for internal use using Obj-C Refelection
-/// \param sessionInfo A <em>sessionInfo</em> recevied from Au10tix specific session.
-///
-/// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
-///
-- (void)appendWithSessionInfo:(NSDictionary<NSString *, NSData *> * _Nonnull)sessionInfo type:(NSNumber * _Nonnull)type;
-/// Append a data map result to the cache
-/// This method designed for internal use using Obj-C Refelection
-/// \param sessionJson A <em>json</em> recevied from Au10tix specific session.
-///
-/// \param type The <em>type</em> of the result, corresponding a <a href="x-source-tag://Au10tixBEKit.DataType">DataType</a> raw value.
-///
-- (void)appendWithSessionJson:(NSDictionary<NSString *, NSString *> * _Nonnull)sessionJson type:(NSNumber * _Nonnull)type;
+- (void)appendWithDict:(NSDictionary * _Nonnull)dict type:(NSNumber * _Nonnull)type;
 @end
 
 #if __has_attribute(external_source_symbol)
