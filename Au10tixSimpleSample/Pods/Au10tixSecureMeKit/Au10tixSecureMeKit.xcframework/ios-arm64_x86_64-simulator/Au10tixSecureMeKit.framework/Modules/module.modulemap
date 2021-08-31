@@ -1,0 +1,11 @@
+framework module Au10tixSecureMeKit {
+  umbrella header "Au10tixSecureMeKit.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixSecureMeKit.Swift {
+    header "Au10tixSecureMeKit-Swift.h"
+    requires objc
+}

@@ -1,0 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/Au10tixLivenessUI
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Au10tixBaseUI" "${PODS_ROOT}/Au10tixCore" "${PODS_ROOT}/Au10tixDetectorManager" "${PODS_ROOT}/Au10tixLivenessKit" "${PODS_ROOT}/Au10tixLivenessUI" "${PODS_ROOT}/Au10tixPassiveFaceLivenessKit" "${PODS_ROOT}/Au10tixSourceManager" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixBaseUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixDetectorManager" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSourceManager"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Au10tixBaseUI" -framework "Au10tixCore" -framework "Au10tixDetectorManager" -framework "Au10tixLivenessKit" -framework "Au10tixPassiveFaceLivenessKit" -framework "Au10tixSourceManager" -framework "Foundation" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/Au10tixLivenessUI
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
