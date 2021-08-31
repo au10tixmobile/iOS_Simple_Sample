@@ -1,3 +1,88 @@
-PODFILE CHECKSUM: 302da47c00ac9fed0481484e8476bf3648dffa60
+PODS:
+  - Au10tixBaseUI (3.2.0):
+    - Au10tixCore
+  - Au10tixBEKit (3.2.0):
+    - Au10tixCore
+  - Au10tixCore (3.2.0)
+  - Au10tixDetectorManager (3.2.0):
+    - Au10tixCore
+  - Au10tixLivenessKit (3.2.0):
+    - Au10tixCore
+    - Au10tixDetectorManager
+    - Au10tixPassiveFaceLivenessKit
+    - Au10tixSourceManager
+  - Au10tixLivenessUI (3.2.0):
+    - Au10tixBaseUI
+    - Au10tixLivenessKit
+  - Au10tixPassiveFaceLivenessKit (3.2.0):
+    - Au10tixCore
+    - Au10tixDetectorManager
+    - Au10tixSourceManager
+  - Au10tixPassiveFaceLivenessUI (3.2.0):
+    - Au10tixBaseUI
+    - Au10tixPassiveFaceLivenessKit
+  - Au10tixProofOfAddressKit (3.2.0):
+    - Au10tixCore
+    - Au10tixDetectorManager
+    - Au10tixSourceManager
+  - Au10tixProofOfAddressUI (3.2.0):
+    - Au10tixBaseUI
+    - Au10tixProofOfAddressKit
+  - Au10tixSecureMeKit (3.2.0):
+    - Au10tixBaseUI
+    - Au10tixBEKit
+    - Au10tixCore
+  - Au10tixSmartDocumentCaptureKit (3.2.0):
+    - Au10tixCore
+    - Au10tixDetectorManager
+    - Au10tixSourceManager
+  - Au10tixSmartDocumentCaptureUI (3.2.0):
+    - Au10tixBaseUI
+    - Au10tixSmartDocumentCaptureKit
+  - Au10tixSourceManager (3.2.0):
+    - Au10tixCore
 
-COCOAPODS: 1.10.0
+DEPENDENCIES:
+  - Au10tixBEKit
+  - Au10tixLivenessUI
+  - Au10tixPassiveFaceLivenessUI
+  - Au10tixProofOfAddressUI
+  - Au10tixSecureMeKit
+  - Au10tixSmartDocumentCaptureUI
+
+SPEC REPOS:
+  https://github.com/Au10tix/iOS_Artifacts_cocoapods_spec.git:
+    - Au10tixBaseUI
+    - Au10tixBEKit
+    - Au10tixCore
+    - Au10tixDetectorManager
+    - Au10tixLivenessKit
+    - Au10tixLivenessUI
+    - Au10tixPassiveFaceLivenessKit
+    - Au10tixPassiveFaceLivenessUI
+    - Au10tixProofOfAddressKit
+    - Au10tixProofOfAddressUI
+    - Au10tixSecureMeKit
+    - Au10tixSmartDocumentCaptureKit
+    - Au10tixSmartDocumentCaptureUI
+    - Au10tixSourceManager
+
+SPEC CHECKSUMS:
+  Au10tixBaseUI: 3a2eb42bacb9b60ad13d7082fda1901fcba64d6f
+  Au10tixBEKit: c47fe5838c5105e9147be9ab0eb7fb7e11bf160b
+  Au10tixCore: 1a43b194a7a8aa8737a63194cdc15844edce9ad2
+  Au10tixDetectorManager: 7821544b4c81590bc19e6f810d351f6e60259739
+  Au10tixLivenessKit: 7ebb9f582a1d7e89c90dee776f3b925a33edd21c
+  Au10tixLivenessUI: b63795d1176b9d5ac53af2484049e95e6b6e5f24
+  Au10tixPassiveFaceLivenessKit: 436f2a2c053d6cc44f132b22b514ad1092416250
+  Au10tixPassiveFaceLivenessUI: 3c6c370397365fc03a4ba751c2281b92d58dac7a
+  Au10tixProofOfAddressKit: 7523d03ec14292d4e82a6960a8379f5d0aa9ca35
+  Au10tixProofOfAddressUI: 28cb6688b2afca0a7b234b554f43ae1cf697011a
+  Au10tixSecureMeKit: ffda70d382aca830fddff68b31cd7c7bc7f4de5b
+  Au10tixSmartDocumentCaptureKit: 0f7dbd213bb6ac611c52db8fce89c33de6da3609
+  Au10tixSmartDocumentCaptureUI: 4a8f8d021babcf556960d05029396ceb6cb18c4f
+  Au10tixSourceManager: c107a65517de4d5945e07df2fef1c62f9136ce0b
+
+PODFILE CHECKSUM: cb0f8ed7204dcf29f6e31545d927d470c88759c5
+
+COCOAPODS: 1.10.1

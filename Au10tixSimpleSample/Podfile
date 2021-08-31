@@ -1,8 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Au10tix/iOS_Artifacts_cocoapods_spec.git'
+
 target 'Au10tixSimpleSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'Au10tixSecureMeKit'
+  pod 'Au10tixPassiveFaceLivenessUI'
+  pod 'Au10tixProofOfAddressUI'
+  pod 'Au10tixSmartDocumentCaptureUI'
+  pod 'Au10tixLivenessUI'
+  pod 'Au10tixBEKit'
+  
+  
 end
