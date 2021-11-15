@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
 import AVFoundation
 import AVKit
 import Au10tixBaseUI
@@ -12,7 +12,7 @@ import Au10tixPassiveFaceLivenessUI
 import Foundation
 import Swift
 import UIKit
-@_inheritsConvenienceInitializers final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
+@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
   override final public var headline: Swift.String {
     get
   }

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSecureMeKit
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSecureMeKit
 import Au10tixBEKit
 import Au10tixBaseUI
 import Au10tixCore
@@ -27,11 +27,28 @@ public enum SecureMeKitError : Swift.Error {
   case pflUIModuleIsMissing
   case poaUIModuleIsMissing
 }
+public struct SecureMeKitUIFlowManager {
+  public enum Flow {
+    case sdcFront
+    case sdcBack
+    case pfl
+    case afl
+    case poa
+    case complete
+    public static func == (a: Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow, b: Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 public enum SecureMeKitUpdate {
   case sdcFrontStarted
   case sdcFrontFinished
   case sdcBackStarted
   case sdcBackFinished
+  case aflStarted
+  case aflFinished
   case pflStarted
   case pflFinished
   case poaStarted
@@ -51,8 +68,13 @@ public typealias SecureMeKitPrepareCallback = (Au10tixSecureMeKit.SecureMeKitPre
   public func createUI(delegate: Au10tixSecureMeKit.SecureMeKitDelegate) throws -> UIKit.UIViewController
   @objc deinit
 }
+extension SecureMeKit {
+  public func forceFlows(_ flows: [Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow])
+}
 public struct SecureMeKitResult {
   public let requestId: Swift.String
 }
+extension Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow : Swift.Equatable {}
+extension Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow : Swift.Hashable {}
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Equatable {}
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Hashable {}

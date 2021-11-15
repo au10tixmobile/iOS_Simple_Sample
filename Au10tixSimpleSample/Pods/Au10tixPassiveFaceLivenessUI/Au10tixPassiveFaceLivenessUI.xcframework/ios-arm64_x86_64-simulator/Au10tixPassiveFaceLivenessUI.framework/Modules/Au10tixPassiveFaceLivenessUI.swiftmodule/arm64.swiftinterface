@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixPassiveFaceLivenessUI
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixPassiveFaceLivenessUI
 import Au10tixBaseUI
 import Au10tixCore
 import Au10tixPassiveFaceLivenessKit
@@ -28,7 +28,7 @@ public class PFLFeedbackPresenter {
   public func handle(qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(Au10xPFLViewController) @_objcRuntimeName(Au10xPFLViewController) final public class PFLViewController : Au10tixBaseUI.UIComponentBaseViewController {
+@_inheritsConvenienceInitializers @objc(Au10xPFLViewController) final public class PFLViewController : Au10tixBaseUI.UIComponentBaseViewController {
   final public var showCaptureButton: Swift.Bool {
     get
     set

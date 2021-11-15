@@ -1,14 +1,45 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
 import AVKit
 @_exported import Au10tixBaseUI
 import Au10tixCore
 import Au10tixSourceManager
+import Combine
 import Foundation
 import PhotosUI
 import Swift
+import SwiftUI
 import UIKit
+public struct Header : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($logoImage) public var logoImage: UIKit.UIImage {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $logoImage: SwiftUI.Binding<UIKit.UIImage> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($titleString) public var titleString: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $titleString: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init(logo: SwiftUI.Binding<UIKit.UIImage>, title: SwiftUI.Binding<Swift.String>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6HeaderV4bodyQrvp", 0) 🦸
+}
+public struct PoweredBy : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI9PoweredByV4bodyQrvp", 0) 🦸
+}
 public protocol Font {
   func of(size: CoreGraphics.CGFloat) -> UIKit.UIFont
   func of(style: UIKit.UIFont.TextStyle, defaultSize: CoreGraphics.CGFloat) -> UIKit.UIFont
@@ -17,11 +48,35 @@ extension Font where Self : Swift.RawRepresentable, Self.RawValue == Swift.Strin
   public func of(size: CoreGraphics.CGFloat) -> UIKit.UIFont
   public func of(style: UIKit.UIFont.TextStyle, defaultSize: CoreGraphics.CGFloat) -> UIKit.UIFont
 }
+public struct ButtonsView : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($buttonsConfiguration) public var buttonsConfiguration: Au10tixBaseUI.ButtonsConfiguration {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration> {
+    get
+  }
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init(buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11ButtonsViewV4bodyQrvp", 0) 🦸
+}
 public enum MontserratFont : Swift.String, Au10tixBaseUI.Font {
   case regular
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol UIComponent {
+  associatedtype ViewType : SwiftUI.View
+  var view: Self.ViewType { get }
+}
+extension UIComponent {
+  public var viewController: UIKit.UIViewController {
     get
   }
 }
@@ -46,9 +101,23 @@ extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, 
   @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
 }
+public struct CameraPreview : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13CameraPreviewV4bodyQrvp", 0) 🦸
+}
 extension UIView {
   public func aspectFit(in containingView: UIKit.UIView, ratio: CoreGraphics.CGFloat)
   public func embed(in superView: UIKit.UIView, insets: UIKit.UIEdgeInsets = .zero)
+}
+public struct Footer : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6FooterV4bodyQrvp", 0) 🦸
 }
 extension String {
   public var localized: Swift.String {
@@ -139,6 +208,34 @@ extension String {
   public func runEndlessly()
   public func stopEndlessly()
 }
+public struct ActivityProgress : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI16ActivityProgressV4bodyQrvp", 0) 🦸
+}
+public struct DismissButton : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13DismissButtonV4bodyQrvp", 0) 🦸
+}
+public struct ButtonsConfiguration {
+  public let leftButtonType: Au10tixBaseUI.ButtonTypes
+  public let centerButtonType: Au10tixBaseUI.ButtonTypes
+}
+public enum ButtonTypes {
+  case capture
+  case externalSelection
+  case approve
+  case largeRetry
+  case smallRetry
+  public static func == (a: Au10tixBaseUI.ButtonTypes, b: Au10tixBaseUI.ButtonTypes) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension UIColor {
   public static var uiCompsAu10tixBlack: UIKit.UIColor? {
     get
@@ -149,6 +246,12 @@ extension UIColor {
   public static var uiCompsAu10tixGreen: UIKit.UIColor? {
     get
   }
+  public static var uiCompsAu10tixYellow: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGray: UIKit.UIColor? {
+    get
+  }
 }
 public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
   var previewView: UIKit.UIView! { get }
@@ -156,6 +259,78 @@ public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
 extension RecordingTimeStampViewHost {
   public func showRecordingIndication()
   public func stopRecordingIndication()
+}
+public struct HostLogo : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI8HostLogoV4bodyQrvp", 0) 🦸
+}
+public class UIComponentConfiguration : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($title) public var title: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var $title: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($logo) public var logo: UIKit.UIImage {
+    get
+    set
+    _modify
+  }
+  public var $logo: Combine.Published<UIKit.UIImage>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($instruction) public var instruction: Swift.String {
+    get
+    set
+    _modify
+  }
+  public var $instruction: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($buttons) public var buttons: Au10tixBaseUI.ButtonsConfiguration {
+    get
+    set
+    _modify
+  }
+  public var $buttons: Combine.Published<Au10tixBaseUI.ButtonsConfiguration>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct Title : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI5TitleV4bodyQrvp", 0) 🦸
+}
+public struct Instruction : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($instructionString) public var instructionString: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $instructionString: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init(instructionString: SwiftUI.Binding<Swift.String>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11InstructionV4bodyQrvp", 0) 🦸
 }
 extension UIComponentBaseViewController {
   public enum UIState : Swift.Equatable {
@@ -186,6 +361,23 @@ extension UIComponentBaseViewController {
 @objc @_hasMissingDesignatedInitializers public class UICompsButtonsView : UIKit.UIView {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
+}
+extension Color {
+  public static var au10tixBlack: SwiftUI.Color? {
+    get
+  }
+  public static var au10tixRed: SwiftUI.Color? {
+    get
+  }
+  public static var au10tixGreen: SwiftUI.Color? {
+    get
+  }
+  public static var au10tixYellow: SwiftUI.Color? {
+    get
+  }
+  public static var au10tixGray: SwiftUI.Color? {
+    get
+  }
 }
 extension UICompsButtonsView {
   public enum ActionButton {
@@ -223,11 +415,20 @@ extension UICompsButtonsView {
     }
   }
 }
+public struct PreviewOverlay : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI14PreviewOverlayV4bodyQrvp", 0) 🦸
+}
 extension Au10tixBaseUI.MontserratFont : Swift.Equatable {}
 extension Au10tixBaseUI.MontserratFont : Swift.Hashable {}
 extension Au10tixBaseUI.MontserratFont : Swift.RawRepresentable {}
 extension Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError : Swift.Equatable {}
 extension Au10tixBaseUI.UIComponentBaseViewController.LibraryImageError : Swift.Hashable {}
+extension Au10tixBaseUI.ButtonTypes : Swift.Equatable {}
+extension Au10tixBaseUI.ButtonTypes : Swift.Hashable {}
 extension Au10tixBaseUI.UICompsButtonsView.ActionButton : Swift.Equatable {}
 extension Au10tixBaseUI.UICompsButtonsView.ActionButton : Swift.Hashable {}
 extension Au10tixBaseUI.UICompsButtonsView.ActionButtonImage : Swift.Equatable {}

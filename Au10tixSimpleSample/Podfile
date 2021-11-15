@@ -1,8 +1,18 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/Au10tix/iOS_Artifacts_cocoapods_spec.git'
+
+# ==============
+#
+# Attention
+#
+# Before installing Au10tix pods for the first time
+# execute the next command in your terminal
+# pod repo add AU10TIX_IOS_ARTIFACTS_GITHUB https://github.com/au10tixmobile/iOS_Artifacts_cocoapods_spec.git
+#
+# In order to obtain personal access token - contact support.
+#
+# ==============
+
+source 'https://github.com/au10tixmobile/iOS_Artifacts_cocoapods_spec.git'
 
 target 'Au10tixSimpleSample' do
   # Comment the next line if you don't want to use dynamic frameworks
