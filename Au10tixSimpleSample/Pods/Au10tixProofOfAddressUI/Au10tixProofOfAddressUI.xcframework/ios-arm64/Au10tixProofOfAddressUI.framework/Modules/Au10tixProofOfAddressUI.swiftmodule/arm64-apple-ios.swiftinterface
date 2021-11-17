@@ -1,14 +1,15 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressUI
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressUI
 import Au10tixBaseUI
 import Au10tixCore
 import Au10tixProofOfAddressKit
 @_exported import Au10tixProofOfAddressUI
 import Foundation
 import Swift
+import SwiftUI
 import UIKit
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) @_objcRuntimeName(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
   override final public var headline: Swift.String {
     get
   }
@@ -38,4 +39,18 @@ extension POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
 extension POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
   final public func uiCompsCameraUnavailableCameraPermissionGranted()
   final public func uiCompsCameraUnavailableUploadFilePressed()
+}
+public class POAUIComponent : Au10tixBaseUI.UIComponent {
+  public init()
+  public var view: Au10tixProofOfAddressUI.POAView {
+    get
+  }
+  public typealias ViewType = Au10tixProofOfAddressUI.POAView
+  @objc deinit
+}
+public struct POAView : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s23Au10tixProofOfAddressUI7POAViewV4bodyQrvp", 0) 🦸
 }

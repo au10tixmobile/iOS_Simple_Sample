@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Au10tixBaseUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -206,6 +207,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixLivenessUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+@class Au10xUIComponentConfigs;
+@protocol UIComponentViewControllerNavigationDelegate;
+@class NSCoder;
+
+SWIFT_RESILIENT_CLASS_NAMED("LivenessViewController")
+@interface Au10xLivenessViewController : UIComponentBaseViewController
+- (void)viewDidLoad;
+- (void)mainButtonAction;
+- (void)closeButtonAction;
+- (void)backButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -406,6 +424,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Au10tixBaseUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -422,6 +441,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixLivenessUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+@class Au10xUIComponentConfigs;
+@protocol UIComponentViewControllerNavigationDelegate;
+@class NSCoder;
+
+SWIFT_RESILIENT_CLASS_NAMED("LivenessViewController")
+@interface Au10xLivenessViewController : UIComponentBaseViewController
+- (void)viewDidLoad;
+- (void)mainButtonAction;
+- (void)closeButtonAction;
+- (void)backButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
