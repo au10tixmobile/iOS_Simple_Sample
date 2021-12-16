@@ -9,37 +9,6 @@ import Foundation
 import Swift
 import SwiftUI
 import UIKit
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
-  override final public var headline: Swift.String {
-    get
-  }
-  override final public var subHeadline: Swift.String? {
-    get
-  }
-  override final public var cameraSession: Au10tixCore.CameraSession? {
-    get
-  }
-  weak final public var poaDelegate: Au10tixProofOfAddressKit.POASessionDelegate?
-  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
-  @objc override final public func viewDidLoad()
-  override final public func timeoutViewShouldRefresh()
-  override final public func showFeatureFeed()
-  @objc override final public func mainButtonAction()
-  @objc override final public func leftButtonAction()
-  @objc override final public func rightButtonAction()
-  @objc override final public func closeButtonAction()
-  override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
-  override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
-  @objc deinit
-}
-extension POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
-  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didCapture image: Au10tixCore.Au10Image, with frameData: Au10tixCore.Au10Update)
-  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didFailWith error: Au10tixProofOfAddressKit.POASessionError)
-}
-extension POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
-  final public func uiCompsCameraUnavailableCameraPermissionGranted()
-  final public func uiCompsCameraUnavailableUploadFilePressed()
-}
 public class POAUIComponent : Au10tixBaseUI.UIComponent {
   public init()
   public var view: Au10tixProofOfAddressUI.POAView {
@@ -53,4 +22,41 @@ public struct POAView : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s23Au10tixProofOfAddressUI7POAViewV4bodyQrvp", 0) 🦸
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
+  override final public var headline: Swift.String {
+    get
+  }
+  override final public var subHeadline: Swift.String? {
+    get
+  }
+  override final public var cameraSession: Au10tixCore.CameraSession? {
+    get
+  }
+  weak final public var poaDelegate: Au10tixProofOfAddressKit.POASessionDelegate?
+  override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  override final public var shouldDimPreviewView: Swift.Bool {
+    get
+  }
+  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @objc override final public func viewDidLoad()
+  @objc override final public func mainButtonAction()
+  @objc override final public func leftButtonAction()
+  @objc override final public func rightButtonAction()
+  @objc override final public func closeButtonAction()
+  override final public func showFeatureFeed()
+  override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  override final public func timeoutViewShouldRefresh()
+  override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @objc deinit
+}
+extension POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
+  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didCapture image: Au10tixCore.Au10Image, with frameData: Au10tixCore.Au10Update)
+  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didFailWith error: Au10tixProofOfAddressKit.POASessionError)
+}
+extension POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
+  final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  final public func uiCompsCameraUnavailableUploadFilePressed()
 }

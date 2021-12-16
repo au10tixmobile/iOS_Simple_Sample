@@ -208,6 +208,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
 @class NSCoder;
@@ -457,6 +458,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixProofOfAddressUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
 
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
