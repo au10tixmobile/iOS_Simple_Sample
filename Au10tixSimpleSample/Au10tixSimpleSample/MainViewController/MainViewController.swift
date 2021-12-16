@@ -86,14 +86,7 @@ private extension MainViewController {
      */
     
     func openSDCUIComponent() {
-        
-        let configs = UIComponentConfigs(appLogo: UIImage(),
-                                         actionButtonTint: UIColor.green,
-                                         titleTextColor: UIColor.green,
-                                         errorTextColor: UIColor.green,
-                                         canUploadImage: true,
-                                         showCloseButton: true)
-        
+        let configs = UIComponentConfigs()
         let controller = SDCViewController(configs: configs, navigationDelegate: self)
         controller.sdcDelegate = self
         present(controller, animated: true, completion: nil)
@@ -105,14 +98,7 @@ private extension MainViewController {
      */
     
     func openPFLUIComponent() {
-        
-        let configs = UIComponentConfigs(appLogo: UIImage(),
-                                         actionButtonTint: UIColor.green,
-                                         titleTextColor: UIColor.green,
-                                         errorTextColor: UIColor.green,
-                                         canUploadImage: true,
-                                         showCloseButton: true)
-        
+        let configs = UIComponentConfigs()
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
         controller.pflDelegate = self
         present(controller, animated: true, completion: nil)
@@ -124,13 +110,7 @@ private extension MainViewController {
      */
     
     func openLivenessUIComponent() {
-        let configs = UIComponentConfigs(appLogo: UIImage(),
-                                         actionButtonTint: UIColor.green,
-                                         titleTextColor: UIColor.green,
-                                         errorTextColor: UIColor.green,
-                                         canUploadImage: true,
-                                         showCloseButton: true)
-        
+        let configs = UIComponentConfigs()
         let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
         livenessVC.livenessSessionDelegate = self
         self.present(livenessVC, animated: true, completion: nil)
@@ -142,13 +122,7 @@ private extension MainViewController {
      */
     
     func openPOAUIComponent() {
-        
-        let configs = UIComponentConfigs(appLogo: UIImage(),
-                                         actionButtonTint: UIColor.green,
-                                         titleTextColor: UIColor.green,
-                                         errorTextColor: UIColor.green,
-                                         canUploadImage: true,
-                                         showCloseButton: true)
+        let configs = UIComponentConfigs()
         let controller = POAViewController(configs: configs, navigationDelegate: self)
         controller.poaDelegate = self
         present(controller, animated: true, completion: nil)

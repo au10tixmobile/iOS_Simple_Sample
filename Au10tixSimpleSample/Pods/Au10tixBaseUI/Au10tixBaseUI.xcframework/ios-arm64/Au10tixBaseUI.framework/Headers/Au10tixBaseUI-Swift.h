@@ -235,7 +235,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 ///
 ///
 /// returns:
-/// A fattal error
+/// A fatal error
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
@@ -260,37 +260,24 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 @end
 
 
-@class UIImage;
-@class UIColor;
 @class NSNumber;
 
 /// A class to represent the UI configurations for UI-Components View Controller
 SWIFT_CLASS_NAMED("UIComponentConfigs")
 @interface Au10xUIComponentConfigs : NSObject
-/// Initializes a new UIComponentConfigs with default configurations and logo
-/// \param appLogo The Hosting app’s logo image
-///
-///
-/// returns:
-/// An instance of UIComponentConfigs
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nonnull)appLogo;
 /// Initializes a new UIComponentConfigs
-/// \param appLogo The Hosting app’s logo image
+/// \param showCloseButton Determine whether to display close button
 ///
-/// \param actionButtonTint The action button tint
-///
-/// \param titleTextColor The titles text colors
-///
-/// \param errorTextColor The error text color
+/// \param showPrimaryButton Determine whether to display primary button
 ///
 /// \param canUploadImage Determine whether uploading image from photo library is supported
 ///
-/// \param showCloseButton Determine whether to display close button
+/// \param prepText Displays a preparation view if a text is supplied
 ///
 ///
 /// returns:
 /// An instance of UIComponentConfigs
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nonnull)appLogo actionButtonTint:(UIColor * _Nonnull)actionButtonTint titleTextColor:(UIColor * _Nonnull)titleTextColor errorTextColor:(UIColor * _Nonnull)errorTextColor canUploadImage:(BOOL)canUploadImage showCloseButton:(BOOL)showCloseButton OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithShowCloseButton:(BOOL)showCloseButton showPrimaryButton:(BOOL)showPrimaryButton canUploadImage:(BOOL)canUploadImage prepText:(NSString * _Nullable)prepText OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

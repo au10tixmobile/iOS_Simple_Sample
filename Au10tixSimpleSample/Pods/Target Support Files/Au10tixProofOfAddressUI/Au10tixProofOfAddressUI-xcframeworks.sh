@@ -149,5 +149,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Au10tixProofOfAddressUI/Au10tixProofOfAddressUI.xcframework" "Au10tixProofOfAddressUI" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/Au10tixProofOfAddressUI/Au10tixProofOfAddressUI.xcframework" "Au10tixProofOfAddressUI" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

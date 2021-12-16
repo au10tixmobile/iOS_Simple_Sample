@@ -6,39 +6,23 @@ import AVKit
 import Au10tixCore
 import Au10tixSourceManager
 import Combine
+import CoreGraphics
 import Foundation
 import PhotosUI
 import Swift
 import SwiftUI
 import UIKit
-public struct Header : SwiftUI.View {
-  @SwiftUI.Binding @_projectedValueProperty($logoImage) public var logoImage: UIKit.UIImage {
-    get
-    nonmutating set
-    nonmutating _modify
-  }
-  public var $logoImage: SwiftUI.Binding<UIKit.UIImage> {
-    get
-  }
-  @SwiftUI.Binding @_projectedValueProperty($titleString) public var titleString: Swift.String {
-    get
-    nonmutating set
-    nonmutating _modify
-  }
-  public var $titleString: SwiftUI.Binding<Swift.String> {
-    get
-  }
+public struct Title : SwiftUI.View {
   public var body: some SwiftUI.View {
     get
   }
-  public init(logo: SwiftUI.Binding<UIKit.UIImage>, title: SwiftUI.Binding<Swift.String>)
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6HeaderV4bodyQrvp", 0) 🦸
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI5TitleV4bodyQrvp", 0) 🦸
 }
-public struct PoweredBy : SwiftUI.View {
+public struct HostLogo : SwiftUI.View {
   public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI9PoweredByV4bodyQrvp", 0) 🦸
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI8HostLogoV4bodyQrvp", 0) 🦸
 }
 public protocol Font {
   func of(size: CoreGraphics.CGFloat) -> UIKit.UIFont
@@ -48,35 +32,11 @@ extension Font where Self : Swift.RawRepresentable, Self.RawValue == Swift.Strin
   public func of(size: CoreGraphics.CGFloat) -> UIKit.UIFont
   public func of(style: UIKit.UIFont.TextStyle, defaultSize: CoreGraphics.CGFloat) -> UIKit.UIFont
 }
-public struct ButtonsView : SwiftUI.View {
-  @SwiftUI.Binding @_projectedValueProperty($buttonsConfiguration) public var buttonsConfiguration: Au10tixBaseUI.ButtonsConfiguration {
-    get
-    nonmutating set
-    nonmutating _modify
-  }
-  public var $buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration> {
-    get
-  }
-  public var body: some SwiftUI.View {
-    get
-  }
-  public init(buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration>)
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11ButtonsViewV4bodyQrvp", 0) 🦸
-}
 public enum MontserratFont : Swift.String, Au10tixBaseUI.Font {
   case regular
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
-    get
-  }
-}
-public protocol UIComponent {
-  associatedtype ViewType : SwiftUI.View
-  var view: Self.ViewType { get }
-}
-extension UIComponent {
-  public var viewController: UIKit.UIViewController {
     get
   }
 }
@@ -101,125 +61,6 @@ extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, 
   @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
 }
-public struct CameraPreview : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public init()
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13CameraPreviewV4bodyQrvp", 0) 🦸
-}
-extension UIView {
-  public func aspectFit(in containingView: UIKit.UIView, ratio: CoreGraphics.CGFloat)
-  public func embed(in superView: UIKit.UIView, insets: UIKit.UIEdgeInsets = .zero)
-}
-public struct Footer : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public init()
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6FooterV4bodyQrvp", 0) 🦸
-}
-extension String {
-  public var localized: Swift.String {
-    get
-  }
-}
-@objc(Au10xUIComponentConfigs) final public class UIComponentConfigs : ObjectiveC.NSObject {
-  final public let appLogo: UIKit.UIImage
-  final public let actionButtonTint: UIKit.UIColor
-  final public let titleTextColor: UIKit.UIColor
-  final public let errorTextColor: UIKit.UIColor
-  final public let canUploadImage: Swift.Bool
-  final public let showCloseButton: Swift.Bool
-  @objc convenience public init(appLogo: UIKit.UIImage)
-  @objc public init(appLogo: UIKit.UIImage, actionButtonTint: UIKit.UIColor, titleTextColor: UIKit.UIColor, errorTextColor: UIKit.UIColor, canUploadImage: Swift.Bool, showCloseButton: Swift.Bool)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public protocol UIComponentViewControllerNavigationDelegate {
-  @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
-  @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
-}
-@objc open class UIComponentBaseViewController : UIKit.UIViewController {
-  weak public var previewView: UIKit.UIView! {
-    get
-  }
-  weak public var salientAreaView: UIKit.UIView!
-  weak open var capturedImageView: UIKit.UIImageView?
-  weak open var backButton: UIKit.UIButton!
-  final public let configs: Au10tixBaseUI.UIComponentConfigs
-  open var cameraSession: Au10tixCore.CameraSession? {
-    get
-  }
-  weak public var navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate?
-  public var state: Au10tixBaseUI.UIComponentBaseViewController.UIState {
-    get
-    set
-  }
-  open var headline: Swift.String {
-    get
-  }
-  open var subHeadline: Swift.String? {
-    get
-  }
-  open var capturedImageRequiredTransform: CoreGraphics.CGAffineTransform {
-    get
-  }
-  open var timeoutMessage: Swift.String {
-    get
-  }
-  open var lowerToast: CoreGraphics.CGFloat {
-    get
-  }
-  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc override dynamic open func viewDidLoad()
-  @objc override dynamic open func viewDidLayoutSubviews()
-  @objc open func leftButtonAction()
-  @objc open func rightButtonAction()
-  @objc open func mainButtonAction()
-  @objc open func closeButtonAction()
-  open func showFeatureFeed()
-  open func didAddCameraIssuesUI()
-  open func didRemoveCameraIssuesUI()
-  open func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
-  open func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
-  open func timeoutViewShouldRefresh()
-  public typealias ActionButtonImage = Au10tixBaseUI.UICompsButtonsView.ActionButtonImage
-  public typealias ActionButton = Au10tixBaseUI.UICompsButtonsView.ActionButton
-  public typealias ActionButtonBehavior = Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior
-  public func toggleEnable(_ isEnabled: Swift.Bool, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
-  public func temporaryDisable(button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton, for duration: Foundation.TimeInterval)
-  public func update(image: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonImage, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
-  public func update(behavior: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonBehavior, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
-  public func showProgress(_ show: Swift.Bool)
-  public func showToast(with text: Swift.String)
-  public func hideToast()
-  public func show(instruction: Swift.String?, hideBackground: Swift.Bool = false)
-  @objc open func backButtonAction()
-  public func operationFinished()
-  public func showCaptured(image: UIKit.UIImage)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponentProgressView : UIKit.UIView {
-  @objc deinit
-  @objc override dynamic public func layoutSubviews()
-  public func runEndlessly()
-  public func stopEndlessly()
-}
-public struct ActivityProgress : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI16ActivityProgressV4bodyQrvp", 0) 🦸
-}
-public struct DismissButton : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13DismissButtonV4bodyQrvp", 0) 🦸
-}
 public struct ButtonsConfiguration {
   public let leftButtonType: Au10tixBaseUI.ButtonTypes
   public let centerButtonType: Au10tixBaseUI.ButtonTypes
@@ -236,35 +77,56 @@ public enum ButtonTypes {
     get
   }
 }
-extension UIColor {
-  public static var uiCompsAu10tixBlack: UIKit.UIColor? {
-    get
-  }
-  public static var uiCompsAu10tixRed: UIKit.UIColor? {
-    get
-  }
-  public static var uiCompsAu10tixGreen: UIKit.UIColor? {
-    get
-  }
-  public static var uiCompsAu10tixYellow: UIKit.UIColor? {
-    get
-  }
-  public static var uiCompsAu10tixGray: UIKit.UIColor? {
+extension UIView {
+  public func aspectFit(in containingView: UIKit.UIView, ratio: CoreGraphics.CGFloat)
+  public func embed(in superView: UIKit.UIView, insets: UIKit.UIEdgeInsets = .zero)
+}
+extension String {
+  public var localized: Swift.String {
     get
   }
 }
-public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
-  var previewView: UIKit.UIView! { get }
+public struct Au10tixColor {
 }
-extension RecordingTimeStampViewHost {
-  public func showRecordingIndication()
-  public func stopRecordingIndication()
+extension Au10tixColor {
+  public struct Selection {
+  }
+  public struct Approve {
+  }
+  public struct Retry {
+  }
 }
-public struct HostLogo : SwiftUI.View {
+@objc(Au10xUIComponentConfigs) final public class UIComponentConfigs : ObjectiveC.NSObject {
+  final public let showCloseButton: Swift.Bool
+  final public let showPrimaryButton: Swift.Bool
+  final public let canUploadImage: Swift.Bool
+  final public let prepText: Swift.String?
+  @objc public init(showCloseButton: Swift.Bool = true, showPrimaryButton: Swift.Bool = true, canUploadImage: Swift.Bool = true, prepText: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct Header : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($logoImage) public var logoImage: UIKit.UIImage {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $logoImage: SwiftUI.Binding<UIKit.UIImage> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($titleString) public var titleString: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $titleString: SwiftUI.Binding<Swift.String> {
+    get
+  }
   public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI8HostLogoV4bodyQrvp", 0) 🦸
+  public init(logo: SwiftUI.Binding<UIKit.UIImage>, title: SwiftUI.Binding<Swift.String>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6HeaderV4bodyQrvp", 0) 🦸
 }
 public class UIComponentConfiguration : Foundation.ObservableObject {
   @Combine.Published @_projectedValueProperty($title) public var title: Swift.String {
@@ -311,26 +173,146 @@ public class UIComponentConfiguration : Foundation.ObservableObject {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
-public struct Title : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI5TitleV4bodyQrvp", 0) 🦸
-}
-public struct Instruction : SwiftUI.View {
-  @SwiftUI.Binding @_projectedValueProperty($instructionString) public var instructionString: Swift.String {
+public struct ButtonsView : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($buttonsConfiguration) public var buttonsConfiguration: Au10tixBaseUI.ButtonsConfiguration {
     get
     nonmutating set
     nonmutating _modify
   }
-  public var $instructionString: SwiftUI.Binding<Swift.String> {
+  public var $buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration> {
     get
   }
   public var body: some SwiftUI.View {
     get
   }
-  public init(instructionString: SwiftUI.Binding<Swift.String>)
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11InstructionV4bodyQrvp", 0) 🦸
+  public init(buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11ButtonsViewV4bodyQrvp", 0) 🦸
+}
+@objc public protocol UIComponentViewControllerNavigationDelegate {
+  @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+  @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+}
+@objc open class UIComponentBaseViewController : UIKit.UIViewController {
+  weak public var previewView: UIKit.UIView! {
+    get
+  }
+  weak public var salientAreaView: UIKit.UIView!
+  weak open var capturedImageView: UIKit.UIImageView?
+  weak open var backButton: UIKit.UIButton!
+  final public let configs: Au10tixBaseUI.UIComponentConfigs
+  open var cameraSession: Au10tixCore.CameraSession? {
+    get
+  }
+  weak public var navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate?
+  public var state: Au10tixBaseUI.UIComponentBaseViewController.UIState {
+    get
+    set
+  }
+  open var headline: Swift.String {
+    get
+  }
+  open var subHeadline: Swift.String? {
+    get
+  }
+  open var capturedImageRequiredTransform: CoreGraphics.CGAffineTransform {
+    get
+  }
+  open var timeoutMessage: Swift.String {
+    get
+  }
+  open var lowerToast: CoreGraphics.CGFloat {
+    get
+  }
+  open var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  open var shouldDimPreviewView: Swift.Bool {
+    get
+  }
+  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func viewDidLayoutSubviews()
+  @objc open func leftButtonAction()
+  @objc open func rightButtonAction()
+  @objc open func mainButtonAction()
+  @objc open func closeButtonAction()
+  open func showFeatureFeed()
+  open func didAddCameraIssuesUI()
+  open func didRemoveCameraIssuesUI()
+  open func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  open func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  open func timeoutViewShouldRefresh()
+  public typealias ActionButtonImage = Au10tixBaseUI.UICompsButtonsView.ActionButtonImage
+  public typealias ActionButton = Au10tixBaseUI.UICompsButtonsView.ActionButton
+  public typealias ActionButtonBehavior = Au10tixBaseUI.UICompsButtonsView.ActionButtonBehavior
+  public func toggleEnable(_ isEnabled: Swift.Bool, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func temporaryDisable(button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton, for duration: Foundation.TimeInterval)
+  public func update(image: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonImage, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func update(behavior: Au10tixBaseUI.UIComponentBaseViewController.ActionButtonBehavior, for button: Au10tixBaseUI.UIComponentBaseViewController.ActionButton)
+  public func showProgress(_ show: Swift.Bool)
+  public func showToast(with text: Swift.String)
+  public func hideToast()
+  public func show(instruction: Swift.String?, hideBackground: Swift.Bool = true)
+  @objc open func backButtonAction()
+  public func operationFinished()
+  public func uiComponentDidLoad(with configurations: Au10tixCore.Au10tix.Configurations)
+  public func showCaptured(image: UIKit.UIImage)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponentProgressView : UIKit.UIView {
+  @objc deinit
+  @objc override dynamic public func layoutSubviews()
+  public func runEndlessly()
+  public func stopEndlessly()
+}
+public protocol UIComponent {
+  associatedtype ViewType : SwiftUI.View
+  var view: Self.ViewType { get }
+}
+extension UIComponent {
+  public var viewController: UIKit.UIViewController {
+    get
+  }
+}
+public struct Footer : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI6FooterV4bodyQrvp", 0) 🦸
+}
+extension UIColor {
+  public static var uiCompsAu10tixBlack: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixRed: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGreen: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixYellow: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGray: UIKit.UIColor? {
+    get
+  }
+}
+public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
+  var previewView: UIKit.UIView! { get }
+}
+extension RecordingTimeStampViewHost {
+  public func showRecordingIndication()
+  public func stopRecordingIndication()
+}
+public struct CameraPreview : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13CameraPreviewV4bodyQrvp", 0) 🦸
 }
 extension UIComponentBaseViewController {
   public enum UIState : Swift.Equatable {
@@ -347,20 +329,17 @@ extension UIComponentBaseViewController {
     public static func == (a: Au10tixBaseUI.UIComponentBaseViewController.UIState, b: Au10tixBaseUI.UIComponentBaseViewController.UIState) -> Swift.Bool
   }
 }
-public protocol UIComponentCameraUnavailableDelegate : AnyObject {
-  func uiCompsCameraUnavailableCameraPermissionGranted()
-  func uiCompsCameraUnavailableUploadFilePressed()
-}
-extension UIComponentBaseViewController {
-  public var hasCameraIssues: Swift.Bool {
+public struct ActivityProgress : SwiftUI.View {
+  public var body: some SwiftUI.View {
     get
   }
-  public func showIfNeedsCameraUnavailableUI(with delegate: Au10tixBaseUI.UIComponentCameraUnavailableDelegate)
-  public func removeCameraUnavailableUI()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI16ActivityProgressV4bodyQrvp", 0) 🦸
 }
-@objc @_hasMissingDesignatedInitializers public class UICompsButtonsView : UIKit.UIView {
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc deinit
+public struct DismissButton : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI13DismissButtonV4bodyQrvp", 0) 🦸
 }
 extension Color {
   public static var au10tixBlack: SwiftUI.Color? {
@@ -378,6 +357,49 @@ extension Color {
   public static var au10tixGray: SwiftUI.Color? {
     get
   }
+}
+public struct PoweredBy : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI9PoweredByV4bodyQrvp", 0) 🦸
+}
+public struct PreviewOverlay : SwiftUI.View {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init()
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI14PreviewOverlayV4bodyQrvp", 0) 🦸
+}
+public protocol UIComponentCameraUnavailableDelegate : AnyObject {
+  func uiCompsCameraUnavailableCameraPermissionGranted()
+  func uiCompsCameraUnavailableUploadFilePressed()
+}
+extension UIComponentBaseViewController {
+  public var hasCameraIssues: Swift.Bool {
+    get
+  }
+  public func showIfNeedsCameraUnavailableUI(with delegate: Au10tixBaseUI.UIComponentCameraUnavailableDelegate)
+  public func removeCameraUnavailableUI()
+}
+@objc @_hasMissingDesignatedInitializers public class UICompsButtonsView : UIKit.UIView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+public struct Instruction : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($instructionString) public var instructionString: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $instructionString: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  public var body: some SwiftUI.View {
+    get
+  }
+  public init(instructionString: SwiftUI.Binding<Swift.String>)
+  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11InstructionV4bodyQrvp", 0) 🦸
 }
 extension UICompsButtonsView {
   public enum ActionButton {
@@ -414,13 +436,6 @@ extension UICompsButtonsView {
       get
     }
   }
-}
-public struct PreviewOverlay : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
-  }
-  public init()
-  public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI14PreviewOverlayV4bodyQrvp", 0) 🦸
 }
 extension Au10tixBaseUI.MontserratFont : Swift.Equatable {}
 extension Au10tixBaseUI.MontserratFont : Swift.Hashable {}

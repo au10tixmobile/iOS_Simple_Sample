@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixCore
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixCore
 import AVFoundation
 @_exported import Au10tixCore
 import CoreGraphics
@@ -82,6 +82,11 @@ public enum BINFCPassportStage : Swift.Int, Swift.Codable {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class Au10tixConfigurationCache {
+  public static let shared: Au10tixCore.Au10tixConfigurationCache
+  public func uiCompsLogoImage(from url: Foundation.URL?, completion: @escaping (UIKit.UIImage?) -> ())
+  @objc deinit
 }
 public enum ValidationError : Swift.Error {
   case invalidClaim(Swift.String)
