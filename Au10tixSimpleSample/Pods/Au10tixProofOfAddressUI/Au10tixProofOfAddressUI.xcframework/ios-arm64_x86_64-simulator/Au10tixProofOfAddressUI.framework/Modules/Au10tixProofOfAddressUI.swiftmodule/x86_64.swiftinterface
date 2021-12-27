@@ -37,6 +37,9 @@ public struct POAView : SwiftUI.View {
   override final public var rectangleOfInterestImage: UIKit.UIImage? {
     get
   }
+  override final public var rectangleOfInterestMaskImage: UIKit.UIImage? {
+    get
+  }
   override final public var shouldDimPreviewView: Swift.Bool {
     get
   }
