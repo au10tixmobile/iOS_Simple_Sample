@@ -40,6 +40,12 @@ public class PFLFeedbackPresenter {
     get
   }
   weak final public var pflDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
+  override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  override final public var rectangleOfInterestMaskImage: UIKit.UIImage? {
+    get
+  }
   @objc override final public func viewDidLoad()
   @objc override final public func viewWillAppear(_ animated: Swift.Bool)
   override final public func showFeatureFeed()

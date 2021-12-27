@@ -226,6 +226,9 @@ public struct ButtonsView : SwiftUI.View {
   open var rectangleOfInterestImage: UIKit.UIImage? {
     get
   }
+  open var rectangleOfInterestMaskImage: UIKit.UIImage? {
+    get
+  }
   open var shouldDimPreviewView: Swift.Bool {
     get
   }
