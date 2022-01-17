@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258B0ED82795B74300A4EA4B /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 258B0EDA2795B74300A4EA4B /* Au10tixLocalizable.strings */; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		200C10C9ACBD71262EB1237E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		258B0ED92795B74300A4EA4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Au10tixLocalizable.strings; sourceTree = "<group>"; };
 		2B481C64135558934482EB33 /* Pods-Au10Tix_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		77699341D615D2174EC54482 /* Pods-Au10tixSimpleSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10tixSimpleSample.debug.xcconfig"; path = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7F1CBAD3F9536BF60DC464 /* Pods-Au10Tix_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				9CA6D962253749FE00E48DDD /* Assets.xcassets */,
 				9CA6D964253749FE00E48DDD /* LaunchScreen.storyboard */,
 				9CA6D967253749FE00E48DDD /* Info.plist */,
+				258B0EDA2795B74300A4EA4B /* Au10tixLocalizable.strings */,
 			);
 			path = Au10tixSimpleSample;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258B0ED82795B74300A4EA4B /* Au10tixLocalizable.strings in Resources */,
 				9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
 				9CA6D961253749FC00E48DDD /* Main.storyboard in Resources */,
@@ -292,6 +296,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		258B0EDA2795B74300A4EA4B /* Au10tixLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				258B0ED92795B74300A4EA4B /* en */,
+			);
+			name = Au10tixLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		9CA6D95F253749FC00E48DDD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
