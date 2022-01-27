@@ -24,7 +24,8 @@ extension NSNotification.Name {
 }
 public protocol Authenticator {
   var isActive: Swift.Bool { get }
-  var baseURL: Swift.String? { get }
+  var globalApiURL: Swift.String? { get }
+  var apiURL: Swift.String? { get }
   var bosBaseURL: Swift.String? { get }
   func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
 }
@@ -179,9 +180,6 @@ public struct MultipartDataBuilder {
   @objc public func convertImageToData() -> Foundation.Data?
   @objc public func convertToMaximum(size: CoreGraphics.CGSize)
   @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers final public class AnalyticsPacemaker {
   @objc deinit
 }
 public enum Au10tixCorePrepareError : Swift.Error {
@@ -418,6 +416,7 @@ public protocol BatchShipper : Au10tixCore.AnalyticsEngine {
   func shipQueuedEvents()
 }
 public enum ScreenRecorderError : Swift.Error {
+  case userDeclined
   case failedToRemoveOldItem(error: Swift.Error)
   case failedToCreateAssetWriter(error: Swift.Error)
   case captureFailed(error: Swift.Error)
@@ -430,7 +429,7 @@ public struct LoggableInfo : Swift.Codable {
 }
 public struct Au10SessionCaptureFrameUpdate<Frame> {
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Au10tix : ObjectiveC.NSObject, Au10tixCore.BearerTokenAdvertizer, Au10tixCore.Authenticator, Au10tixCore.SessionDetailsAdvertizer {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Au10tix : ObjectiveC.NSObject, Au10tixCore.BearerTokenAdvertizer, Au10tixCore.Authenticator, Au10tixCore.SessionDetailsAdvertizer, Au10tixCore.Au10tixSDK {
   final public var isActive: Swift.Bool {
     get
   }
@@ -443,7 +442,10 @@ public struct Au10SessionCaptureFrameUpdate<Frame> {
   final public var bearerToken: Swift.String? {
     get
   }
-  final public var baseURL: Swift.String? {
+  final public var globalApiURL: Swift.String? {
+    get
+  }
+  final public var apiURL: Swift.String? {
     get
   }
   final public var bosBaseURL: Swift.String? {
@@ -511,26 +513,6 @@ public class SessionTimeoutHandler : Au10tixCore.Timeoutable {
   public func applicationStateRequiresTimeoutTimerActivation()
   @objc deinit
 }
-public struct Au10JWTParser {
-  public enum JWTError : Swift.Error {
-    case invalidJWT
-    case expired
-    case missingData
-    public static func == (a: Au10tixCore.Au10JWTParser.JWTError, b: Au10tixCore.Au10JWTParser.JWTError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct JWTPayload {
-    public let jwt: Swift.String
-    public let apiUrl: Swift.String
-    public let bosUrl: Swift.String
-    public let expirationDate: Foundation.Date
-    public let clientOrganizationId: Swift.String
-  }
-  public func readPayload(from jwtString: Swift.String) throws -> Au10tixCore.Au10JWTParser.JWTPayload
-}
 public protocol TimeoutableSessionDelegate : AnyObject {
   func sessionTimedout(_ session: Au10tixCore.Timeoutable)
 }
@@ -591,6 +573,12 @@ open class TokenLifeCycleHandler {
   @objc public func croppedImage() -> Au10tixCore.Au10Image?
   @objc override dynamic public init()
   @objc deinit
+}
+public protocol Au10tixSDK : AnyObject {
+  static func getSDKVersion() -> Swift.String
+}
+extension Au10tixSDK {
+  public static func getSDKVersion() -> Swift.String
 }
 @objc public class Au10Quadrangle : ObjectiveC.NSObject {
   public var topLeft: CoreGraphics.CGPoint
@@ -670,7 +658,7 @@ public protocol CameraSession {
   func resumeCamera()
 }
 public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
-public protocol Au10tixSession : AnyObject {
+public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
   var isAvailable: Swift.Bool { get }
   var isCameraActive: Swift.Bool { get }
   var authenticator: Au10tixCore.Au10tixSessionAuthenticator { get }
@@ -707,6 +695,9 @@ extension CGImagePropertyOrientation {
   public init(_ orientation: UIKit.UIImage.Orientation)
 }
 public class RequestDataBuilder {
+  public static var bosTag: Swift.String {
+    get
+  }
   public init()
   public func build() -> Au10tixCore.RequestData
   @discardableResult
@@ -793,7 +784,5 @@ extension Au10tixCore.HTTPMethod : Swift.RawRepresentable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.Equatable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.Hashable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.RawRepresentable {}
-extension Au10tixCore.Au10JWTParser.JWTError : Swift.Equatable {}
-extension Au10tixCore.Au10JWTParser.JWTError : Swift.Hashable {}
 extension Au10tixCore.Reachability.Connection : Swift.Equatable {}
 extension Au10tixCore.Reachability.Connection : Swift.Hashable {}

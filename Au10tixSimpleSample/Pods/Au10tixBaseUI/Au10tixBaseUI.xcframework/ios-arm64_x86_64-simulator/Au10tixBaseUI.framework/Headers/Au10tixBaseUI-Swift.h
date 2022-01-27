@@ -212,13 +212,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@class NSCoder;
+@class NSNumber;
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI37ScreenRecordingDeclinedViewController")
+@interface ScreenRecordingDeclinedViewController : UIViewController
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
 
 
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
-@class NSCoder;
-@class NSString;
-@class NSBundle;
 
 /// An abstract base class for UI-Components ViewController
 /// Do not use this class directrly, use its subclasses instead
@@ -262,7 +273,6 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 @end
 
 
-@class NSNumber;
 
 /// A class to represent the UI configurations for UI-Components View Controller
 SWIFT_CLASS_NAMED("UIComponentConfigs")
@@ -285,14 +295,6 @@ SWIFT_CLASS_NAMED("UIComponentConfigs")
 @end
 
 
-SWIFT_CLASS("_TtC13Au10tixBaseUI23UIComponentProgressView")
-@interface UIComponentProgressView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)layoutSubviews;
-@end
-
-
 SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate_")
 @protocol UIComponentViewControllerNavigationDelegate
 - (void)uiComponentViewControllerDidFinish:(UIComponentBaseViewController * _Nonnull)controller;
@@ -305,6 +307,8 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 
@@ -528,13 +532,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@class NSCoder;
+@class NSNumber;
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI37ScreenRecordingDeclinedViewController")
+@interface ScreenRecordingDeclinedViewController : UIViewController
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
 
 
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
-@class NSCoder;
-@class NSString;
-@class NSBundle;
 
 /// An abstract base class for UI-Components ViewController
 /// Do not use this class directrly, use its subclasses instead
@@ -578,7 +593,6 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 @end
 
 
-@class NSNumber;
 
 /// A class to represent the UI configurations for UI-Components View Controller
 SWIFT_CLASS_NAMED("UIComponentConfigs")
@@ -601,14 +615,6 @@ SWIFT_CLASS_NAMED("UIComponentConfigs")
 @end
 
 
-SWIFT_CLASS("_TtC13Au10tixBaseUI23UIComponentProgressView")
-@interface UIComponentProgressView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)layoutSubviews;
-@end
-
-
 SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate_")
 @protocol UIComponentViewControllerNavigationDelegate
 - (void)uiComponentViewControllerDidFinish:(UIComponentBaseViewController * _Nonnull)controller;
@@ -621,6 +627,8 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 

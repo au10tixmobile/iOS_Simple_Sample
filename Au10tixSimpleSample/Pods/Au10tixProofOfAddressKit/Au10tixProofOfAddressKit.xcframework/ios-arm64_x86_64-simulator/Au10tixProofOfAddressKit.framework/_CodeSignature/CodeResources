@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jV705yVI52KjC8wDW1ZHJYUSUL8=
+		UHzAeq3NjPDwfMSBvdgGj8iDPJo=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vrwyGrV+bqX/sActo88Y8reDkgc=
+		IBuRnQfIyAd8YkOw5yC9m8B93aw=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		vrwyGrV+bqX/sActo88Y8reDkgc=
+		IBuRnQfIyAd8YkOw5yC9m8B93aw=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Cy+g+OHNO0IW96CPksLYjSgVUY8=
+		/GBa5MzLYjxgTDVfix1gro1/hkY=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Cy+g+OHNO0IW96CPksLYjSgVUY8=
+		/GBa5MzLYjxgTDVfix1gro1/hkY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EKomfIYK8LZkdnhfN3eCqXfRSKoH0aoIXHclQinIXqk=
+			hm33aayuPEkcUyg6lDQTBZbyowW627L51C+xmTnz89o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EKomfIYK8LZkdnhfN3eCqXfRSKoH0aoIXHclQinIXqk=
+			hm33aayuPEkcUyg6lDQTBZbyowW627L51C+xmTnz89o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m+QCuKT1h6297lKyu9wQGAghXQccI8UI1qLopJjs2rc=
+			VjQ5qEAQ6mcUH7xuaPDlueXD6vW6S/9Si0CFw1z7/xw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m+QCuKT1h6297lKyu9wQGAghXQccI8UI1qLopJjs2rc=
+			VjQ5qEAQ6mcUH7xuaPDlueXD6vW6S/9Si0CFw1z7/xw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

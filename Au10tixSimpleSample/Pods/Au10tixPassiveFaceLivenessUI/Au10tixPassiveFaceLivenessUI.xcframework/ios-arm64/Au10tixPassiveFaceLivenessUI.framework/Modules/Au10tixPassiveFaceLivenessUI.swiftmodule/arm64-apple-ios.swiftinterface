@@ -23,6 +23,7 @@ public class PFLFeedbackPresenter {
       get
     }
   }
+  weak public var faceInidicationImageView: UIKit.UIImageView?
   public init(baseVC: Au10tixBaseUI.UIComponentBaseViewController, faceInidicationImageView: UIKit.UIImageView)
   public func showRedFaceIndication()
   public func handle(qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
@@ -33,9 +34,6 @@ public class PFLFeedbackPresenter {
     get
     set
   }
-  override final public var headline: Swift.String {
-    get
-  }
   override final public var lowerToast: CoreGraphics.CGFloat {
     get
   }
@@ -43,7 +41,7 @@ public class PFLFeedbackPresenter {
   override final public var rectangleOfInterestImage: UIKit.UIImage? {
     get
   }
-  override final public var rectangleOfInterestMaskImage: UIKit.UIImage? {
+  override final public var maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams? {
     get
   }
   @objc override final public func viewDidLoad()

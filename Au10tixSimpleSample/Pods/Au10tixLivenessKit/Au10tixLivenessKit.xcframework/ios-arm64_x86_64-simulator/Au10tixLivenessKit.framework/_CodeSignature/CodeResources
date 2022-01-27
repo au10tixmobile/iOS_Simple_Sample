@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xmAHjUQ+Q/9c1nDNiScM7QAZlbc=
+		oxwJt0jDkp6HjsZx0MXeI8PtCZo=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iFZzLSzpH57Y/ykVpLl2CCn+zxc=
+		E/ALkD3qepLR6A3FbxBNH3TCEw0=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		iFZzLSzpH57Y/ykVpLl2CCn+zxc=
+		E/ALkD3qepLR6A3FbxBNH3TCEw0=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GkXqvK7xXo8y6X5rO3igdy3vJvU=
+		bOE8AFkEYEi46fc8GoP+Oi+JdoA=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		GkXqvK7xXo8y6X5rO3igdy3vJvU=
+		bOE8AFkEYEi46fc8GoP+Oi+JdoA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQ1QSUbzznayLiG3H0/tVftLu+ckIk2DXk9ftVvLKVo=
+			iIRska8vrOpfnWRGtjqGFzXWcp00jIQKNfyMlN1Nw4o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GQ1QSUbzznayLiG3H0/tVftLu+ckIk2DXk9ftVvLKVo=
+			iIRska8vrOpfnWRGtjqGFzXWcp00jIQKNfyMlN1Nw4o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBqbiY0tg6Gj0uCHBCI37OWCBLt12BxfHA50JxhGC48=
+			TJTBJ5gpzZu7cq/8/3rHP5sJE4gJITAvIE8RelFWoDo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBqbiY0tg6Gj0uCHBCI37OWCBLt12BxfHA50JxhGC48=
+			TJTBJ5gpzZu7cq/8/3rHP5sJE4gJITAvIE8RelFWoDo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

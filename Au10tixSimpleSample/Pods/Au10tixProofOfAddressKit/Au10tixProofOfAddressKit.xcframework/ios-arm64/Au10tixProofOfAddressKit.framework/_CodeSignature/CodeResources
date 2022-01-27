@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NF6ZFimgKbDxf+Vmt2mwxwtYyxw=
+		MYxWalm8C/qH5wbHa/7Mo1kQnfo=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bAkCQpg3LsZZ6HG0LWhSBL/EBm0=
+		iLUR1/ORbbrE3Hn5yHztt5BhjcY=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		bAkCQpg3LsZZ6HG0LWhSBL/EBm0=
+		iLUR1/ORbbrE3Hn5yHztt5BhjcY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bfht/ujq9Ahv0QsElIf+AzhqpcvjK5glPlr4oj32dgw=
+			Dv3iBql1EZCicEohpRbJJNB3rpJUsGLWKnNQWED/iiI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bfht/ujq9Ahv0QsElIf+AzhqpcvjK5glPlr4oj32dgw=
+			Dv3iBql1EZCicEohpRbJJNB3rpJUsGLWKnNQWED/iiI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

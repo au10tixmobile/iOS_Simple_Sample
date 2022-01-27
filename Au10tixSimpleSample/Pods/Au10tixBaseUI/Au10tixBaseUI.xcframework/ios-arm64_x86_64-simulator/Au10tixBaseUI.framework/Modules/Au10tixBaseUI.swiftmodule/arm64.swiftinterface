@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+import AVFoundation
 import AVKit
 @_exported import Au10tixBaseUI
 import Au10tixCore
@@ -61,6 +62,10 @@ extension UIComponentBaseViewController : UIKit.UINavigationControllerDelegate, 
   @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
 }
+extension UIComponentBaseViewController {
+  public func setupMask()
+  public func setupMask(with maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams)
+}
 public struct ButtonsConfiguration {
   public let leftButtonType: Au10tixBaseUI.ButtonTypes
   public let centerButtonType: Au10tixBaseUI.ButtonTypes
@@ -87,6 +92,21 @@ extension String {
   }
 }
 public struct Au10tixColor {
+  public static var black: UIKit.UIColor? {
+    get
+  }
+  public static var red: UIKit.UIColor? {
+    get
+  }
+  public static var green: UIKit.UIColor? {
+    get
+  }
+  public static var yellow: UIKit.UIColor? {
+    get
+  }
+  public static var gray: UIKit.UIColor? {
+    get
+  }
 }
 extension Au10tixColor {
   public struct Selection {
@@ -188,16 +208,29 @@ public struct ButtonsView : SwiftUI.View {
   public init(buttonsConfiguration: SwiftUI.Binding<Au10tixBaseUI.ButtonsConfiguration>)
   public typealias Body = @_opaqueReturnTypeOf("$s13Au10tixBaseUI11ButtonsViewV4bodyQrvp", 0) 🦸
 }
+@objc open class ScreenRecordingDeclinedViewController : UIKit.UIViewController {
+  open var backgroundTopMargin: CoreGraphics.CGFloat {
+    get
+  }
+  public var resumeSessionCallback: (() -> Swift.Void)?
+  @objc dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
 @objc public protocol UIComponentViewControllerNavigationDelegate {
   @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
   @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
 }
-@objc open class UIComponentBaseViewController : UIKit.UIViewController {
+@objc open class UIComponentBaseViewController : UIKit.UIViewController, Au10tixCore.Au10tixSDK {
   weak public var previewView: UIKit.UIView! {
     get
   }
   weak public var salientAreaView: UIKit.UIView!
   weak open var capturedImageView: UIKit.UIImageView?
+  weak public var instructionLabel: UIKit.UILabel!
+  weak public var rectangleOfInterestImageView: UIKit.UIImageView?
   weak open var backButton: UIKit.UIButton!
   final public let configs: Au10tixBaseUI.UIComponentConfigs
   open var cameraSession: Au10tixCore.CameraSession? {
@@ -208,8 +241,14 @@ public struct ButtonsView : SwiftUI.View {
     get
     set
   }
-  open var headline: Swift.String {
+  public var ocsConfigs: Au10tixBaseUI.UICompsOCSConfigurations
+  public var userPreparationHandler: Au10tixBaseUI.UICompsPreparationHandler {
     get
+    set
+  }
+  public var headline: Swift.String {
+    get
+    set
   }
   open var subHeadline: Swift.String? {
     get
@@ -226,7 +265,10 @@ public struct ButtonsView : SwiftUI.View {
   open var rectangleOfInterestImage: UIKit.UIImage? {
     get
   }
-  open var rectangleOfInterestMaskImage: UIKit.UIImage? {
+  public struct MaskParams {
+    public init(size: CoreGraphics.CGSize, cornerRadius: CoreGraphics.CGFloat, topMargin: CoreGraphics.CGFloat? = nil)
+  }
+  open var maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams? {
     get
   }
   open var shouldDimPreviewView: Swift.Bool {
@@ -240,6 +282,7 @@ public struct ButtonsView : SwiftUI.View {
   @objc open func rightButtonAction()
   @objc open func mainButtonAction()
   @objc open func closeButtonAction()
+  @objc open func backButtonAction()
   open func showFeatureFeed()
   open func didAddCameraIssuesUI()
   open func didRemoveCameraIssuesUI()
@@ -257,18 +300,11 @@ public struct ButtonsView : SwiftUI.View {
   public func showToast(with text: Swift.String)
   public func hideToast()
   public func show(instruction: Swift.String?, hideBackground: Swift.Bool = true)
-  @objc open func backButtonAction()
   public func operationFinished()
   public func uiComponentDidLoad(with configurations: Au10tixCore.Au10tix.Configurations)
   public func showCaptured(image: UIKit.UIImage)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UIComponentProgressView : UIKit.UIView {
-  @objc deinit
-  @objc override dynamic public func layoutSubviews()
-  public func runEndlessly()
-  public func stopEndlessly()
 }
 public protocol UIComponent {
   associatedtype ViewType : SwiftUI.View
@@ -303,6 +339,10 @@ extension UIColor {
     get
   }
 }
+extension UIColor {
+  convenience public init(rgb: Swift.UInt)
+  convenience public init(hex: Swift.String)
+}
 public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
   var previewView: UIKit.UIView! { get }
 }
@@ -323,6 +363,7 @@ extension UIComponentBaseViewController {
     case takingManualImage
     case imageCaptured(image: UIKit.UIImage)
     case badExternalImage(image: Au10tixCore.Au10Image, isFirstTime: Swift.Bool)
+    case timeout
     public var isCapturing: Swift.Bool {
       get
     }
@@ -360,6 +401,14 @@ extension Color {
   public static var au10tixGray: SwiftUI.Color? {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class UICompsPreparationHandler {
+  public func startUserPreparation()
+  @objc deinit
+}
+public struct UICompsOCSConfigurations {
+  public var successColor: UIKit.UIColor
+  public var errorColor: UIKit.UIColor
 }
 public struct PoweredBy : SwiftUI.View {
   public var body: some SwiftUI.View {

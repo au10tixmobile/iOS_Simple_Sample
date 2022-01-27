@@ -61,7 +61,7 @@ public enum SecureMeKitUpdate {
   }
 }
 public typealias SecureMeKitPrepareCallback = (Au10tixSecureMeKit.SecureMeKitPrepareError?) -> Swift.Void
-@_hasMissingDesignatedInitializers public class SecureMeKit {
+@_hasMissingDesignatedInitializers public class SecureMeKit : Au10tixCore.Au10tixSDK {
   final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
   convenience public init()
   public func prepare(with bearer: Swift.String, completion: @escaping Au10tixSecureMeKit.SecureMeKitPrepareCallback)
