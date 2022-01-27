@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		OF9JMdbf4PBaD7sMubb83i0kqJo=
+		</data>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<data>
 		K08BtKasmtvDhOY46GDRvftiqXs=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0iE+Dbl+GcfdIaWLQmuHP1VolFU=
+		YNEr7lkvbU9Yj9s5QPkDHv7Y59E=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Hv5pDdlNLoPgDCTNLNmJbJO1bC8=
+		3hqWE23dZnAKisoG2q7vRU/fDf0=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hsyMhhTIaFzkQhyOWCBqKli3Hcg=
+		giKQePVq3jeQIRahrS9Z88PoHhI=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +38,11 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Hv5pDdlNLoPgDCTNLNmJbJO1bC8=
+		3hqWE23dZnAKisoG2q7vRU/fDf0=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		hsyMhhTIaFzkQhyOWCBqKli3Hcg=
+		giKQePVq3jeQIRahrS9Z88PoHhI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,6 +51,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VtnAokMpvQjt7As2366cJ8/2kWdTTycgCkopP9DOFIA=
+			</data>
+		</dict>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -72,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SVaCBKQlYKpk/N/S0JjczOxKheDmlwK/TG2IlBS2Uys=
+			de1hPLsqNI82knjggsCPOnU8IxUFTyGQ+qnCZMvQvlc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			76iR9jxh2nNvprLKWkZrFzNdnbpZpsAXVXXazFC4jSM=
+			9omNeFjE/qXbxF92UGkgYne+bITj0a8ZE2YpEXhjxf0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
@@ -93,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SVaCBKQlYKpk/N/S0JjczOxKheDmlwK/TG2IlBS2Uys=
+			de1hPLsqNI82knjggsCPOnU8IxUFTyGQ+qnCZMvQvlc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			76iR9jxh2nNvprLKWkZrFzNdnbpZpsAXVXXazFC4jSM=
+			9omNeFjE/qXbxF92UGkgYne+bITj0a8ZE2YpEXhjxf0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

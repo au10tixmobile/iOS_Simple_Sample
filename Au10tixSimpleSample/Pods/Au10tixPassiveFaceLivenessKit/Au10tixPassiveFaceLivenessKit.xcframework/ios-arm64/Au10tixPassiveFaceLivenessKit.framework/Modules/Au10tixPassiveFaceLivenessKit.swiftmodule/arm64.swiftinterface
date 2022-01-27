@@ -85,13 +85,15 @@ public enum QualityFault : Swift.Int {
   }
 }
 public enum PFLSessionError : Swift.Error {
+  case missingCameraPermission
+  case cameraRestricted
   case timedout
   case sessionTokenExpired
   case retriesEnded
   case livenessCheckNetworkTimeout
   case livenessCheckFailed(error: Swift.Error)
   case networkError(_: Swift.Error)
-  case recordingFailed(_: Swift.Error)
+  case recordingFailed(_: Au10tixCore.ScreenRecorderError)
 }
 public protocol PFLSessionDelegate : AnyObject {
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, faceBoundingBox: CoreGraphics.CGRect?)

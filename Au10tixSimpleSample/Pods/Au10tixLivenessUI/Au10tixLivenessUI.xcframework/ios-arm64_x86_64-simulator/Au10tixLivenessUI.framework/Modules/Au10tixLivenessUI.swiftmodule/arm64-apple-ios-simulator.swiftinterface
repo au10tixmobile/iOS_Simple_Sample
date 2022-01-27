@@ -13,9 +13,6 @@ import Foundation
 import Swift
 import UIKit
 @_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
-  override final public var headline: Swift.String {
-    get
-  }
   weak final public var livenessSessionDelegate: Au10tixLivenessKit.LivenessSessionDelegate? {
     get
     set

@@ -24,9 +24,6 @@ public struct POAView : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s23Au10tixProofOfAddressUI7POAViewV4bodyQrvp", 0) 🦸
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
-  override final public var headline: Swift.String {
-    get
-  }
   override final public var subHeadline: Swift.String? {
     get
   }
@@ -35,9 +32,6 @@ public struct POAView : SwiftUI.View {
   }
   weak final public var poaDelegate: Au10tixProofOfAddressKit.POASessionDelegate?
   override final public var rectangleOfInterestImage: UIKit.UIImage? {
-    get
-  }
-  override final public var rectangleOfInterestMaskImage: UIKit.UIImage? {
     get
   }
   override final public var shouldDimPreviewView: Swift.Bool {

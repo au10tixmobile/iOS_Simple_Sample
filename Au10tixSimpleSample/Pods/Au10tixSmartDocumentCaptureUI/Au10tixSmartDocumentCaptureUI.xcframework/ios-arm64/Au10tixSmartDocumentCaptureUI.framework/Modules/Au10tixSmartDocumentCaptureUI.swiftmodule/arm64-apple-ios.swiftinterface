@@ -14,9 +14,6 @@ import UIKit
     get
     set
   }
-  override final public var headline: Swift.String {
-    get
-  }
   override final public var subHeadline: Swift.String? {
     get
   }
@@ -28,6 +25,12 @@ import UIKit
     set
   }
   weak final public var sdcDelegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
+  override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  override final public var maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams? {
+    get
+  }
   @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
   @objc override final public func viewDidLoad()
   override final public func showFeatureFeed()

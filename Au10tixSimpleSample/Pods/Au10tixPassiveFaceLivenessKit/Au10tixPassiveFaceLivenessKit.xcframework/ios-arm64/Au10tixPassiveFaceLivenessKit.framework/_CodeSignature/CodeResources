@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RYtwrRAY3NtswhixxQVqWx0sv7M=
+		Uq32DKR1+CtfzHlgxD52YwdIHE0=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PhJGF5QHqpQvEBUJk7+uwsZ0O1g=
+		ZBoHU9XtR6I30cSrhwIuLNvqGnk=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PwZURqRH3GTwy5ScM82bzfRU8qI=
+		8ZZJ8qcrBdjMeVHbJqBBhol9TdE=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		PhJGF5QHqpQvEBUJk7+uwsZ0O1g=
+		ZBoHU9XtR6I30cSrhwIuLNvqGnk=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		PwZURqRH3GTwy5ScM82bzfRU8qI=
+		8ZZJ8qcrBdjMeVHbJqBBhol9TdE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wh+JLgCvNAjARxbdrq7Kzs6oWF2h/JQ90Tez5MAhe/I=
+			bvrHVAKTfHyw6/cD5lfeRp1ztd7xmcWibtmG9JzSwdE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7D3v89xhv7KBpI/DgvfKKHNsV3p2uzy9DzIt1CJDPgE=
+			mnWtwX/WX635cU4sbZJftxKDHe5uvUStal7R+k1SoRU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wh+JLgCvNAjARxbdrq7Kzs6oWF2h/JQ90Tez5MAhe/I=
+			bvrHVAKTfHyw6/cD5lfeRp1ztd7xmcWibtmG9JzSwdE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7D3v89xhv7KBpI/DgvfKKHNsV3p2uzy9DzIt1CJDPgE=
+			mnWtwX/WX635cU4sbZJftxKDHe5uvUStal7R+k1SoRU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

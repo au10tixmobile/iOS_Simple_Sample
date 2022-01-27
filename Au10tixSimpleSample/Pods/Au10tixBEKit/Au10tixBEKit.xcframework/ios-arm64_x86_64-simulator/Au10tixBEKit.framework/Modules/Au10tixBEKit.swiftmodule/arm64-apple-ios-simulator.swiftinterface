@@ -45,7 +45,7 @@ public enum DataType : Swift.Int {
   }
 }
 public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> Swift.Void
-@_hasMissingDesignatedInitializers public class Au10tixBackendKit {
+@_hasMissingDesignatedInitializers public class Au10tixBackendKit : Au10tixCore.Au10tixSDK {
   public static let shared: Au10tixBEKit.Au10tixBackendKit
   public func send(factory: Au10tixBEKit.BOSInteractorFactory, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendIDVerificationFlow(dataTypes: [Au10tixBEKit.DataType] = [.idDocFront], beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
