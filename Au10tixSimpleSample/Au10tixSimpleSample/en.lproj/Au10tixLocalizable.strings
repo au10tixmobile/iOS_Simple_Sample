@@ -1,11 +1,3 @@
-/* 
-  Au10tixLocalizable.strings
-  Pods
-
-  Created by Benny Davidovitz on 15/07/2020.
-  
-*/
-
 "UIComps.Base.Headline" = "Headline";
 "UIComps.Base.Timeout" = "Timeout Session\nClick to try again";
 "UIComps.Base.CameraPermissionDenied" = "CAMERA PERMISSION DENIED";
