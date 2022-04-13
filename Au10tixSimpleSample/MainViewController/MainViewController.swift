@@ -68,8 +68,9 @@ private extension MainViewController {
     func prepare() {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
+        let jwtToken = ""
         
-        Au10tix.shared.prepare(with: "") { [weak self] result in
+        Au10tix.shared.prepare(with: jwtToken) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let sessionID):

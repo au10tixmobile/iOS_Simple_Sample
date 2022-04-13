@@ -25,7 +25,7 @@ final class PFLUIViewController: UIViewController {
     // MARK: - Private Properties
     
     private var capturedImageData: Data?
-    private var activityIndicator = UIActivityIndicatorView(style: .white)
+    private var activityIndicator = UIActivityIndicatorView(style: .medium)
     
     // MARK: - Life cycle
     
