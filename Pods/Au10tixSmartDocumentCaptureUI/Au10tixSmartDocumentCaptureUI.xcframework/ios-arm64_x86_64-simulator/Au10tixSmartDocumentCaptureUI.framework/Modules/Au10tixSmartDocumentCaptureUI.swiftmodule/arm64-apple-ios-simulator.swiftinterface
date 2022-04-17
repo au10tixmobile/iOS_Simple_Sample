@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureUI
 import AVFoundation
 import Au10tixBaseUI
@@ -9,49 +9,68 @@ import Au10tixSmartDocumentCaptureKit
 import Foundation
 import Swift
 import UIKit
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xSDCViewController) final public class SDCViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixCore.FrontSideSupporter {
-  final public var isFrontSide: Swift.Bool {
-    get
-    set
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class SDCIntroViewController : Au10tixBaseUI.UICompsIntroViewController {
+  @_Concurrency.MainActor(unsafe) override final public var introHeadline: Swift.String? {
+    @_Concurrency.MainActor(unsafe) get
   }
-  override final public var subHeadline: Swift.String? {
-    get
-  }
-  override final public var cameraSession: Au10tixCore.CameraSession? {
-    get
-  }
-  final public var showCaptureButton: Swift.Bool {
-    get
-    set
-  }
-  weak final public var sdcDelegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
-  override final public var rectangleOfInterestImage: UIKit.UIImage? {
-    get
-  }
-  override final public var maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams? {
-    get
-  }
-  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
-  @objc override final public func viewDidLoad()
-  override final public func showFeatureFeed()
-  override final public func timeoutViewShouldRefresh()
-  @objc override final public func mainButtonAction()
-  @objc override final public func leftButtonAction()
-  @objc override final public func closeButtonAction()
-  override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
-  override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
-  override final public func didAddCameraIssuesUI()
-  override final public func didRemoveCameraIssuesUI()
+  @_Concurrency.MainActor(unsafe) override final public func buildUI()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-extension SDCViewController : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
-  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
-  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
-  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
-  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
-  final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xSDCViewController) @_Concurrency.MainActor(unsafe) final public class SDCViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixCore.FrontSideSupporter {
+  @_Concurrency.MainActor(unsafe) final public var isFrontSide: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override final public var isCapturedImageViewShowing: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) get
+    @_Concurrency.MainActor(unsafe) set
+  }
+  @_Concurrency.MainActor(unsafe) override final public var subHeadline: Swift.String? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override final public var cameraSession: Au10tixCore.CameraSession? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var sdcDelegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
+  @_Concurrency.MainActor(unsafe) override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override final public var maskParams: Au10tixBaseUI.UIComponentBaseViewController.MaskParams? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override final public var introVC: Au10tixBaseUI.UICompsIntroViewController? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override final public func showFeatureFeed()
+  @_Concurrency.MainActor(unsafe) override final public func timeoutViewShouldRefresh()
+  @_Concurrency.MainActor(unsafe) @objc override final public func mainButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func leftButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func closeButtonAction()
+  @_Concurrency.MainActor(unsafe) override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  @_Concurrency.MainActor(unsafe) override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override final public func didAddCameraIssuesUI()
+  @_Concurrency.MainActor(unsafe) override final public func didRemoveCameraIssuesUI()
+  @_Concurrency.MainActor(unsafe) @objc override final public func handleCameraDidOpen(_ note: Foundation.Notification)
+  @objc deinit
 }
-extension SDCViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
-  final public func uiCompsCameraUnavailableCameraPermissionGranted()
-  final public func uiCompsCameraUnavailableUploadFilePressed()
+extension Au10tixSmartDocumentCaptureUI.SDCViewController : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
+  @_Concurrency.MainActor(unsafe) final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  @_Concurrency.MainActor(unsafe) final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
+  @_Concurrency.MainActor(unsafe) final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  @_Concurrency.MainActor(unsafe) final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  @_Concurrency.MainActor(unsafe) final public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+  @_Concurrency.MainActor(unsafe) final public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+}
+extension Au10tixSmartDocumentCaptureUI.SDCViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableUploadFilePressed()
 }

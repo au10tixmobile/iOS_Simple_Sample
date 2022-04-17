@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixDetectorManager
 import Au10tixCore
 import CoreGraphics
@@ -7,6 +7,7 @@ import Foundation
 import Swift
 import UIKit
 import Vision
+import _Concurrency
 public struct Face {
   public var boundingBox: CoreGraphics.CGRect?
   public var isSmiling: Swift.Bool?
