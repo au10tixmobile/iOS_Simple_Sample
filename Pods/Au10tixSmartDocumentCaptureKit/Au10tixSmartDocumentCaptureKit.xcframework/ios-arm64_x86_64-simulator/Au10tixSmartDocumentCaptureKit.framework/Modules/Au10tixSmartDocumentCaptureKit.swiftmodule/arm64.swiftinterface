@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureKit
 import Au10tixCore
 @_exported import Au10tixSmartDocumentCaptureKit
@@ -10,6 +10,7 @@ import ImageIO
 import Swift
 import UIKit
 import Vision
+import _Concurrency
 public enum MachineReadableCodeType : Swift.String {
   case code39
   case code39Mod43
@@ -66,14 +67,16 @@ public enum SDCSessionError : Swift.Error {
 }
 public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
 }
-extension SDCSessionDelegate {
+extension Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCaptureImage image: Au10tixCore.Au10Image)
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+  public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
 }
 public struct Au10MachineReadableCode {
   public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?
@@ -99,9 +102,10 @@ public struct Au10MachineReadableCode {
   public func pauseCamera()
   public func resumeCamera()
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  public func prefersAspectFillCameraPreview()
   @objc deinit
 }
-extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
+extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSessionDelegate {
   public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
 }
 @objc @_hasMissingDesignatedInitializers public class SDCProcessingStatus : Au10tixCore.Au10Update {
@@ -112,6 +116,7 @@ extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
     case tooClose
     case tooFar
     case outOfFrame
+    case verticallyAligned
     public static func == (a: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback, b: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -121,10 +126,12 @@ extension SDCSession : Au10tixCore.TimeoutableSessionDelegate {
   public var feedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
     get
   }
+  @objc public var jsonString: Swift.String? {
+    @objc get
+  }
   @objc public var isValid: Swift.Bool {
     @objc get
   }
-  @objc override public init(image: Au10tixCore.Au10Image?)
   @objc deinit
 }
 public enum RectOfInterestError : Swift.Error {

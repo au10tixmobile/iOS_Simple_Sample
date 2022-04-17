@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
 import AVFoundation
 import AVKit
@@ -12,20 +12,25 @@ import Au10tixPassiveFaceLivenessUI
 import Foundation
 import Swift
 import UIKit
-@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
-  weak final public var livenessSessionDelegate: Au10tixLivenessKit.LivenessSessionDelegate? {
+import _Concurrency
+@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) @_Concurrency.MainActor(unsafe) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
+  @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
     get
     set
   }
-  override final public var lowerToast: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) weak final public var livenessSessionDelegate: Au10tixLivenessKit.LivenessSessionDelegate? {
     get
+    set
   }
-  @objc override final public func viewDidLoad()
-  @objc override final public func mainButtonAction()
-  @objc override final public func closeButtonAction()
-  override final public func timeoutViewShouldRefresh()
-  @objc override final public func backButtonAction()
-  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override final public var lowerToast: CoreGraphics.CGFloat {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func mainButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func closeButtonAction()
+  @_Concurrency.MainActor(unsafe) override final public func timeoutViewShouldRefresh()
+  @_Concurrency.MainActor(unsafe) @objc override final public func backButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }

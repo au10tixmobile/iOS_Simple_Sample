@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressKit
 import Au10tixCore
 @_exported import Au10tixProofOfAddressKit
@@ -7,6 +7,7 @@ import Au10tixSourceManager
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 public enum POASessionError : Swift.Error {
   case timedout
   case sessionTokenExpired
@@ -39,7 +40,7 @@ public protocol POASessionDelegate : AnyObject {
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   @objc deinit
 }
-extension POASession : Au10tixCore.TimeoutableSessionDelegate {
+extension Au10tixProofOfAddressKit.POASession : Au10tixCore.TimeoutableSessionDelegate {
   public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
 }
 extension Au10tixProofOfAddressKit.POASessionError : Swift.Equatable {}
