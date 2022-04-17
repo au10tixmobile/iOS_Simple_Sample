@@ -178,25 +178,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0C31822ACC1710F81C587EF9D0A212C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		678B881154FF2582C46C0988D33EA040 /* Pods-Au10tixSimpleSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 919D28F3B4AD6DED2F230C90F79DBA25 /* Pods-Au10tixSimpleSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1DADD3801FE9A258986007F78239DA2 /* Pods-Au10tixSimpleSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD692B9D55C63169672B478F1A893E36 /* Pods-Au10tixSimpleSample-dummy.m */; };
+		04E0769C98F7E2296FB8AB85DDB15404 /* Pods-Au10tixSimpleSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 919D28F3B4AD6DED2F230C90F79DBA25 /* Pods-Au10tixSimpleSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FED27FBA9EAE588980C671F30376E2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D504B001991DC82D7FC87AC7A9EB41A3 /* Pods-Au10tixSimpleSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD692B9D55C63169672B478F1A893E36 /* Pods-Au10tixSimpleSample-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0318E1E557AC58C3E06BBD1F32402449 /* PBXContainerItemProxy */ = {
+		0DB349E6B428F37DDF9DEDBB0F13A63A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49D4C0101BBB87829FE80D42138C59ED;
-			remoteInfo = Au10tixProofOfAddressKit;
+			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
+			remoteInfo = Au10tixBaseUI;
 		};
-		0C4BA986456B32037EF509429CCC607F /* PBXContainerItemProxy */ = {
+		0DBD5BC03E0993FA1A96222361999B3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A8AC700739CBD9D671123AB747D9EC5D;
-			remoteInfo = Au10tixSmartDocumentCaptureUI;
+			remoteGlobalIDString = C38EB1101671B484E84DF603097D9F13;
+			remoteInfo = Au10tixCore;
 		};
 		11FD502E0334D88770C18B86B57C1814 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -212,26 +212,19 @@
 			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
 			remoteInfo = Au10tixBaseUI;
 		};
-		1A649F55BDB5823E625395766C2BBF3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 352F4A3BB799416D7ACA154497A7B02F;
-			remoteInfo = Au10tixPassiveFaceLivenessKit;
-		};
-		1B62E230CAF9B25A6390B48C3BC02435 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 37AE68E15207295FB9FD0FE0D879F8B7;
-			remoteInfo = Au10tixBEKit;
-		};
 		224E1DD929B5365B49DF6FBA571CC4CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C38EB1101671B484E84DF603097D9F13;
 			remoteInfo = Au10tixCore;
+		};
+		24CD5A2C811AAE713D0601CE90E8DA40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033624E328864A478D886D02E8B3AFE0;
+			remoteInfo = Au10tixLivenessKit;
 		};
 		287542F94E396F9A33CCD2C4BC954D0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -254,19 +247,19 @@
 			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
 			remoteInfo = Au10tixBaseUI;
 		};
-		2AC70A0D031191552C94148785F3822D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2001181AE69E047AAE12DEF531C831F1;
-			remoteInfo = Au10tixSourceManager;
-		};
-		2BC2B9942BB52D77072E562ED3330BDF /* PBXContainerItemProxy */ = {
+		29AA1E0D1593511003D586FA638932A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8BC32A3843C2674EE9BFF31AC4949317;
 			remoteInfo = Au10tixSmartDocumentCaptureKit;
+		};
+		2DA22B97B05EFD6C0199DD218C3FF01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D4C0101BBB87829FE80D42138C59ED;
+			remoteInfo = Au10tixProofOfAddressKit;
 		};
 		35ECA804EC9C3625FF1A8F998D86A2A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -303,6 +296,13 @@
 			remoteGlobalIDString = 352F4A3BB799416D7ACA154497A7B02F;
 			remoteInfo = Au10tixPassiveFaceLivenessKit;
 		};
+		5B39947A53291E9C421D561ED7F2A896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352F4A3BB799416D7ACA154497A7B02F;
+			remoteInfo = Au10tixPassiveFaceLivenessKit;
+		};
 		5D2681E524D334C27DFD21A790D35203 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -317,6 +317,13 @@
 			remoteGlobalIDString = 8BC32A3843C2674EE9BFF31AC4949317;
 			remoteInfo = Au10tixSmartDocumentCaptureKit;
 		};
+		6D9D85B3723E7ECC883886E25B0523E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4878C28058C90E797204036DE97DB3EF;
+			remoteInfo = Au10tixSecureMeKit;
+		};
 		7F4E0678669B655EAEB6CE5C1640E6A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -324,12 +331,12 @@
 			remoteGlobalIDString = C38EB1101671B484E84DF603097D9F13;
 			remoteInfo = Au10tixCore;
 		};
-		8364D1B0A952D5816F9393E04F59E390 /* PBXContainerItemProxy */ = {
+		8943C5021FB7EBE7EE821A4A3423A76A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 033624E328864A478D886D02E8B3AFE0;
-			remoteInfo = Au10tixLivenessKit;
+			remoteGlobalIDString = B2763D1434A3D169FD2A6F1050DEE73A;
+			remoteInfo = Au10tixPassiveFaceLivenessUI;
 		};
 		89C19BB18AAFCDF84554A4CCFC667958 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -338,19 +345,26 @@
 			remoteGlobalIDString = 5BDB5B943CA58140949E768E487F817F;
 			remoteInfo = Au10tixDetectorManager;
 		};
-		8B004B606119EDAEA1DAE137A461E721 /* PBXContainerItemProxy */ = {
+		8CB4EEE43634391A32D08E996C82CD65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 69E1F374E2D669413CA8213DC95727D6;
-			remoteInfo = Au10tixLivenessUI;
+			remoteGlobalIDString = 0F0C214BF8754FC3DEE1737BEC29B5EE;
+			remoteInfo = Au10tixProofOfAddressUI;
 		};
-		9007C97DA685298E014E6E8082B0237F /* PBXContainerItemProxy */ = {
+		8D09E83C638864A0AB971A90778A032D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5BDB5B943CA58140949E768E487F817F;
-			remoteInfo = Au10tixDetectorManager;
+			remoteGlobalIDString = 37AE68E15207295FB9FD0FE0D879F8B7;
+			remoteInfo = Au10tixBEKit;
+		};
+		90CE1A3E4F2367C7EA20B69B818A579F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8AC700739CBD9D671123AB747D9EC5D;
+			remoteInfo = Au10tixSmartDocumentCaptureUI;
 		};
 		93B974B45435C5ADCC91A709B60634B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -366,6 +380,13 @@
 			remoteGlobalIDString = 5BDB5B943CA58140949E768E487F817F;
 			remoteInfo = Au10tixDetectorManager;
 		};
+		A2EBD8F016C7C5ED9E390AE049768FA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2001181AE69E047AAE12DEF531C831F1;
+			remoteInfo = Au10tixSourceManager;
+		};
 		A3E0F27951788025373D5D9FFF73D17A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -379,6 +400,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2001181AE69E047AAE12DEF531C831F1;
 			remoteInfo = Au10tixSourceManager;
+		};
+		AC0147772EC604DD6D903D23355027FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDB5B943CA58140949E768E487F817F;
+			remoteInfo = Au10tixDetectorManager;
 		};
 		AC1F8F71A9485787F2CD5BDA6838848D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -401,33 +429,12 @@
 			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
 			remoteInfo = Au10tixBaseUI;
 		};
-		C5A1B9C63644851B6C51BDF246643EF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C38EB1101671B484E84DF603097D9F13;
-			remoteInfo = Au10tixCore;
-		};
-		C699F588527D88DD91FF2C1CBECE16AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4878C28058C90E797204036DE97DB3EF;
-			remoteInfo = Au10tixSecureMeKit;
-		};
 		C951515585502650A08D70BB2C5962BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5BDB5B943CA58140949E768E487F817F;
 			remoteInfo = Au10tixDetectorManager;
-		};
-		CA2754527C62E2C18C5A6A1E99F18723 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
-			remoteInfo = Au10tixBaseUI;
 		};
 		CC280E0FD42F0C8BCD7709AD544FFFF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -443,13 +450,6 @@
 			remoteGlobalIDString = A7E4EA13E27E9E448B6D1F66EFE3403B;
 			remoteInfo = Au10tixBaseUI;
 		};
-		CE3A85FF1BB0474C195E9B33E377D5F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B2763D1434A3D169FD2A6F1050DEE73A;
-			remoteInfo = Au10tixPassiveFaceLivenessUI;
-		};
 		D5001500C0B87CAE1AB20521F5A60C91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -457,12 +457,12 @@
 			remoteGlobalIDString = 2001181AE69E047AAE12DEF531C831F1;
 			remoteInfo = Au10tixSourceManager;
 		};
-		DEA1B2D9385E95B02ACAB975DAA21E31 /* PBXContainerItemProxy */ = {
+		E7C88A243B85BC2F851282CCF8855966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0F0C214BF8754FC3DEE1737BEC29B5EE;
-			remoteInfo = Au10tixProofOfAddressUI;
+			remoteGlobalIDString = 69E1F374E2D669413CA8213DC95727D6;
+			remoteInfo = Au10tixLivenessUI;
 		};
 		FA901AEC78542B4C556B572B4657B48D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -526,7 +526,7 @@
 		84C294E61ED846EF005D1368B768CE37 /* Pods-Au10tixSimpleSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Au10tixSimpleSample.release.xcconfig"; sourceTree = "<group>"; };
 		8E4475CAE35643634AB2DF3544A36544 /* Au10tixProofOfAddressUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Au10tixProofOfAddressUI.debug.xcconfig; sourceTree = "<group>"; };
 		919D28F3B4AD6DED2F230C90F79DBA25 /* Pods-Au10tixSimpleSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Au10tixSimpleSample-umbrella.h"; sourceTree = "<group>"; };
-		94056EE85F9C510E98FF904294232310 /* Pods_Au10tixSimpleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Au10tixSimpleSample.framework; path = "Pods-Au10tixSimpleSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94056EE85F9C510E98FF904294232310 /* Pods-Au10tixSimpleSample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Au10tixSimpleSample"; path = Pods_Au10tixSimpleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9879227E9F250F7FB8FB8E3766204CF5 /* Au10tixPassiveFaceLivenessKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Au10tixPassiveFaceLivenessKit.xcframework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AD8523130D172CE9EA4296CDEF941C6C /* Au10tixSecureMeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Au10tixSecureMeKit.debug.xcconfig; sourceTree = "<group>"; };
@@ -552,11 +552,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6280CA1405F73D8797AA376309DE7CB9 /* Frameworks */ = {
+		7624B48E41FFAB80DE8C0372A4FEEE70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C31822ACC1710F81C587EF9D0A212C4 /* Foundation.framework in Frameworks */,
+				3FED27FBA9EAE588980C671F30376E2C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +839,14 @@
 			path = Au10tixBaseUI;
 			sourceTree = "<group>";
 		};
+		904E8858CAA4CFC23E42CE25124B70B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94056EE85F9C510E98FF904294232310 /* Pods-Au10tixSimpleSample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		93CFB0D61D78F75B49A1895B6D3DF34A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,7 +928,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				D113C79A4C412E674FEB0271A4D93072 /* Pods */,
-				F05BA7B57EDB99E2EE96028345337E25 /* Products */,
+				904E8858CAA4CFC23E42CE25124B70B7 /* Products */,
 				72E72EF867B7ADA21434638D0717409D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -1042,22 +1050,14 @@
 			path = "../Target Support Files/Au10tixLivenessKit";
 			sourceTree = "<group>";
 		};
-		F05BA7B57EDB99E2EE96028345337E25 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				94056EE85F9C510E98FF904294232310 /* Pods_Au10tixSimpleSample.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0AFCB9C84A89D771F944E31B65350AC0 /* Headers */ = {
+		A5C8987E5B337E1CE976EBE09B55AAF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				678B881154FF2582C46C0988D33EA040 /* Pods-Au10tixSimpleSample-umbrella.h in Headers */,
+				04E0769C98F7E2296FB8AB85DDB15404 /* Pods-Au10tixSimpleSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,34 +1066,34 @@
 /* Begin PBXNativeTarget section */
 		80D3B4F798E614CFBECA03543259A733 /* Pods-Au10tixSimpleSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63618AB8E319648CDD22A042CE42EF68 /* Build configuration list for PBXNativeTarget "Pods-Au10tixSimpleSample" */;
+			buildConfigurationList = 7E10FDBA3E2B33F2DAE4F96C096B2DAC /* Build configuration list for PBXNativeTarget "Pods-Au10tixSimpleSample" */;
 			buildPhases = (
-				0AFCB9C84A89D771F944E31B65350AC0 /* Headers */,
-				92C080974D5BF0ED3AF0B8E64D84FE40 /* Sources */,
-				6280CA1405F73D8797AA376309DE7CB9 /* Frameworks */,
-				7DFF92C6C1BD7098712CB7D83A680107 /* Resources */,
+				A5C8987E5B337E1CE976EBE09B55AAF4 /* Headers */,
+				8E5AFB7858FAEE9451625880FC6DA7C1 /* Sources */,
+				7624B48E41FFAB80DE8C0372A4FEEE70 /* Frameworks */,
+				87C319C0FD37394D1ACE4F47C3CB094A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				15CBA32AA66F3BF8E5C6F180D78E7365 /* PBXTargetDependency */,
-				509516BF42074E779335906A6DA56E08 /* PBXTargetDependency */,
-				93E24D75B334A832B5471F120F72F42C /* PBXTargetDependency */,
-				136DFC46E0414498513B3E770FC82600 /* PBXTargetDependency */,
-				C4E1F34516B384C544136126E4C81B89 /* PBXTargetDependency */,
-				226CA0F373F6A991BEC601D6B335CA8B /* PBXTargetDependency */,
-				B8CF67C547B290ACEF8778AA8EAD0F08 /* PBXTargetDependency */,
-				93DC5853CDFA601A14CB6F03247E2CB4 /* PBXTargetDependency */,
-				C2F8A6CF3C72B1F03C87E8417F376549 /* PBXTargetDependency */,
-				D1C9D4B6A6E94733129061EE4686E67E /* PBXTargetDependency */,
-				941D2662885C7D4F7803DFCECF88C6D6 /* PBXTargetDependency */,
-				D830BAE6974DFF43DB5F739C2EDCC104 /* PBXTargetDependency */,
-				DB4A1637318CB3E574C959D4018176A6 /* PBXTargetDependency */,
-				C788188F1FE8C52928AF78A27DF8409B /* PBXTargetDependency */,
+				F27D504A2972E0F1F4BF568EC1262466 /* PBXTargetDependency */,
+				B782BC3991668EA7B5A80A29DB11C619 /* PBXTargetDependency */,
+				51756AE6C16B743DF65BCB800D55D901 /* PBXTargetDependency */,
+				50352B3AD462038B55088884D9E95222 /* PBXTargetDependency */,
+				A3C656C0C84E5D236A948FD78786B87B /* PBXTargetDependency */,
+				306ED04735F1BFEED3046AC294BFDB23 /* PBXTargetDependency */,
+				77DCA35371649247E956ADBF8A4A4B21 /* PBXTargetDependency */,
+				EAFBC6F7C3B1579D4F4FC11A9397A0F8 /* PBXTargetDependency */,
+				5918E1806CEE23A267290A050A9EFC09 /* PBXTargetDependency */,
+				DD0AF268D07FA3893666452A0D3B5601 /* PBXTargetDependency */,
+				A5334577330758E9C5FAF50CC1DC5DFB /* PBXTargetDependency */,
+				1D3626143FE980975AFAB1B195F94AE9 /* PBXTargetDependency */,
+				E8D07A13C8D781CD94BD733FA8D33040 /* PBXTargetDependency */,
+				CEBD65627C792136D160ED34B97EBB8A /* PBXTargetDependency */,
 			);
 			name = "Pods-Au10tixSimpleSample";
-			productName = "Pods-Au10tixSimpleSample";
-			productReference = 94056EE85F9C510E98FF904294232310 /* Pods_Au10tixSimpleSample.framework */;
+			productName = Pods_Au10tixSimpleSample;
+			productReference = 94056EE85F9C510E98FF904294232310 /* Pods-Au10tixSimpleSample */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1102,19 +1102,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F05BA7B57EDB99E2EE96028345337E25 /* Products */;
+			productRefGroup = 904E8858CAA4CFC23E42CE25124B70B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1138,7 +1138,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7DFF92C6C1BD7098712CB7D83A680107 /* Resources */ = {
+		87C319C0FD37394D1ACE4F47C3CB094A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1389,11 +1389,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92C080974D5BF0ED3AF0B8E64D84FE40 /* Sources */ = {
+		8E5AFB7858FAEE9451625880FC6DA7C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DADD3801FE9A258986007F78239DA2 /* Pods-Au10tixSimpleSample-dummy.m in Sources */,
+				D504B001991DC82D7FC87AC7A9EB41A3 /* Pods-Au10tixSimpleSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1406,23 +1406,11 @@
 			target = 49D4C0101BBB87829FE80D42138C59ED /* Au10tixProofOfAddressKit */;
 			targetProxy = CC280E0FD42F0C8BCD7709AD544FFFF3 /* PBXContainerItemProxy */;
 		};
-		136DFC46E0414498513B3E770FC82600 /* PBXTargetDependency */ = {
+		1D3626143FE980975AFAB1B195F94AE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Au10tixDetectorManager;
-			target = 5BDB5B943CA58140949E768E487F817F /* Au10tixDetectorManager */;
-			targetProxy = 9007C97DA685298E014E6E8082B0237F /* PBXContainerItemProxy */;
-		};
-		15CBA32AA66F3BF8E5C6F180D78E7365 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixBEKit;
-			target = 37AE68E15207295FB9FD0FE0D879F8B7 /* Au10tixBEKit */;
-			targetProxy = 1B62E230CAF9B25A6390B48C3BC02435 /* PBXContainerItemProxy */;
-		};
-		226CA0F373F6A991BEC601D6B335CA8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixLivenessUI;
-			target = 69E1F374E2D669413CA8213DC95727D6 /* Au10tixLivenessUI */;
-			targetProxy = 8B004B606119EDAEA1DAE137A461E721 /* PBXContainerItemProxy */;
+			name = Au10tixSmartDocumentCaptureKit;
+			target = 8BC32A3843C2674EE9BFF31AC4949317 /* Au10tixSmartDocumentCaptureKit */;
+			targetProxy = 29AA1E0D1593511003D586FA638932A8 /* PBXContainerItemProxy */;
 		};
 		2905901F9C4D5C03249C3EC1F09D29BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1442,6 +1430,12 @@
 			target = A7E4EA13E27E9E448B6D1F66EFE3403B /* Au10tixBaseUI */;
 			targetProxy = B252B670DC86BC7E2F5D34C16F2682F5 /* PBXContainerItemProxy */;
 		};
+		306ED04735F1BFEED3046AC294BFDB23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixLivenessUI;
+			target = 69E1F374E2D669413CA8213DC95727D6 /* Au10tixLivenessUI */;
+			targetProxy = E7C88A243B85BC2F851282CCF8855966 /* PBXContainerItemProxy */;
+		};
 		38CDE79C2CB3EE277E692B87F032347D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Au10tixPassiveFaceLivenessKit;
@@ -1454,11 +1448,23 @@
 			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
 			targetProxy = 46F42CF4A51BBA67875147BD307189BF /* PBXContainerItemProxy */;
 		};
-		509516BF42074E779335906A6DA56E08 /* PBXTargetDependency */ = {
+		50352B3AD462038B55088884D9E95222 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Au10tixBaseUI;
-			target = A7E4EA13E27E9E448B6D1F66EFE3403B /* Au10tixBaseUI */;
-			targetProxy = CA2754527C62E2C18C5A6A1E99F18723 /* PBXContainerItemProxy */;
+			name = Au10tixDetectorManager;
+			target = 5BDB5B943CA58140949E768E487F817F /* Au10tixDetectorManager */;
+			targetProxy = AC0147772EC604DD6D903D23355027FB /* PBXContainerItemProxy */;
+		};
+		51756AE6C16B743DF65BCB800D55D901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixCore;
+			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
+			targetProxy = 0DBD5BC03E0993FA1A96222361999B3F /* PBXContainerItemProxy */;
+		};
+		5918E1806CEE23A267290A050A9EFC09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixProofOfAddressKit;
+			target = 49D4C0101BBB87829FE80D42138C59ED /* Au10tixProofOfAddressKit */;
+			targetProxy = 2DA22B97B05EFD6C0199DD218C3FF01E /* PBXContainerItemProxy */;
 		};
 		5989A3C62091E30E1C4C71D45AE14DFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1508,6 +1514,12 @@
 			target = 5BDB5B943CA58140949E768E487F817F /* Au10tixDetectorManager */;
 			targetProxy = C951515585502650A08D70BB2C5962BB /* PBXContainerItemProxy */;
 		};
+		77DCA35371649247E956ADBF8A4A4B21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixPassiveFaceLivenessKit;
+			target = 352F4A3BB799416D7ACA154497A7B02F /* Au10tixPassiveFaceLivenessKit */;
+			targetProxy = 5B39947A53291E9C421D561ED7F2A896 /* PBXContainerItemProxy */;
+		};
 		85C6D2A407C05677C61F8C4576FD4066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Au10tixBaseUI;
@@ -1520,29 +1532,23 @@
 			target = A7E4EA13E27E9E448B6D1F66EFE3403B /* Au10tixBaseUI */;
 			targetProxy = AC1F8F71A9485787F2CD5BDA6838848D /* PBXContainerItemProxy */;
 		};
-		93DC5853CDFA601A14CB6F03247E2CB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixPassiveFaceLivenessUI;
-			target = B2763D1434A3D169FD2A6F1050DEE73A /* Au10tixPassiveFaceLivenessUI */;
-			targetProxy = CE3A85FF1BB0474C195E9B33E377D5F0 /* PBXContainerItemProxy */;
-		};
-		93E24D75B334A832B5471F120F72F42C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixCore;
-			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
-			targetProxy = C5A1B9C63644851B6C51BDF246643EF1 /* PBXContainerItemProxy */;
-		};
-		941D2662885C7D4F7803DFCECF88C6D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixSecureMeKit;
-			target = 4878C28058C90E797204036DE97DB3EF /* Au10tixSecureMeKit */;
-			targetProxy = C699F588527D88DD91FF2C1CBECE16AE /* PBXContainerItemProxy */;
-		};
 		96C15786EFF615C441E525391A3759E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Au10tixCore;
 			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
 			targetProxy = 224E1DD929B5365B49DF6FBA571CC4CA /* PBXContainerItemProxy */;
+		};
+		A3C656C0C84E5D236A948FD78786B87B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixLivenessKit;
+			target = 033624E328864A478D886D02E8B3AFE0 /* Au10tixLivenessKit */;
+			targetProxy = 24CD5A2C811AAE713D0601CE90E8DA40 /* PBXContainerItemProxy */;
+		};
+		A5334577330758E9C5FAF50CC1DC5DFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixSecureMeKit;
+			target = 4878C28058C90E797204036DE97DB3EF /* Au10tixSecureMeKit */;
+			targetProxy = 6D9D85B3723E7ECC883886E25B0523E7 /* PBXContainerItemProxy */;
 		};
 		A7042E5441F0F9AAE34BB09303753590 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1562,11 +1568,11 @@
 			target = A7E4EA13E27E9E448B6D1F66EFE3403B /* Au10tixBaseUI */;
 			targetProxy = CC2DD2D52AFB6179771EA98A0C10187D /* PBXContainerItemProxy */;
 		};
-		B8CF67C547B290ACEF8778AA8EAD0F08 /* PBXTargetDependency */ = {
+		B782BC3991668EA7B5A80A29DB11C619 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Au10tixPassiveFaceLivenessKit;
-			target = 352F4A3BB799416D7ACA154497A7B02F /* Au10tixPassiveFaceLivenessKit */;
-			targetProxy = 1A649F55BDB5823E625395766C2BBF3A /* PBXContainerItemProxy */;
+			name = Au10tixBaseUI;
+			target = A7E4EA13E27E9E448B6D1F66EFE3403B /* Au10tixBaseUI */;
+			targetProxy = 0DB349E6B428F37DDF9DEDBB0F13A63A /* PBXContainerItemProxy */;
 		};
 		B94D2F9D5B63EE3259C23B056932B14E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1586,29 +1592,11 @@
 			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
 			targetProxy = 11FD502E0334D88770C18B86B57C1814 /* PBXContainerItemProxy */;
 		};
-		C2F8A6CF3C72B1F03C87E8417F376549 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixProofOfAddressKit;
-			target = 49D4C0101BBB87829FE80D42138C59ED /* Au10tixProofOfAddressKit */;
-			targetProxy = 0318E1E557AC58C3E06BBD1F32402449 /* PBXContainerItemProxy */;
-		};
-		C4E1F34516B384C544136126E4C81B89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixLivenessKit;
-			target = 033624E328864A478D886D02E8B3AFE0 /* Au10tixLivenessKit */;
-			targetProxy = 8364D1B0A952D5816F9393E04F59E390 /* PBXContainerItemProxy */;
-		};
 		C614660D9D67A7B1EA12DC4975169679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Au10tixDetectorManager;
 			target = 5BDB5B943CA58140949E768E487F817F /* Au10tixDetectorManager */;
 			targetProxy = AC45F501AA42E3A372CBE796CBE18FAE /* PBXContainerItemProxy */;
-		};
-		C788188F1FE8C52928AF78A27DF8409B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Au10tixSourceManager;
-			target = 2001181AE69E047AAE12DEF531C831F1 /* Au10tixSourceManager */;
-			targetProxy = 2AC70A0D031191552C94148785F3822D /* PBXContainerItemProxy */;
 		};
 		CC792D7D9FBC0C50E9132033DC623D9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1616,11 +1604,11 @@
 			target = 37AE68E15207295FB9FD0FE0D879F8B7 /* Au10tixBEKit */;
 			targetProxy = A3E0F27951788025373D5D9FFF73D17A /* PBXContainerItemProxy */;
 		};
-		D1C9D4B6A6E94733129061EE4686E67E /* PBXTargetDependency */ = {
+		CEBD65627C792136D160ED34B97EBB8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Au10tixProofOfAddressUI;
-			target = 0F0C214BF8754FC3DEE1737BEC29B5EE /* Au10tixProofOfAddressUI */;
-			targetProxy = DEA1B2D9385E95B02ACAB975DAA21E31 /* PBXContainerItemProxy */;
+			name = Au10tixSourceManager;
+			target = 2001181AE69E047AAE12DEF531C831F1 /* Au10tixSourceManager */;
+			targetProxy = A2EBD8F016C7C5ED9E390AE049768FA2 /* PBXContainerItemProxy */;
 		};
 		D6F7ED0E9D9880413D8B474FA872C192 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1628,17 +1616,29 @@
 			target = C38EB1101671B484E84DF603097D9F13 /* Au10tixCore */;
 			targetProxy = 7F4E0678669B655EAEB6CE5C1640E6A9 /* PBXContainerItemProxy */;
 		};
-		D830BAE6974DFF43DB5F739C2EDCC104 /* PBXTargetDependency */ = {
+		DD0AF268D07FA3893666452A0D3B5601 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Au10tixSmartDocumentCaptureKit;
-			target = 8BC32A3843C2674EE9BFF31AC4949317 /* Au10tixSmartDocumentCaptureKit */;
-			targetProxy = 2BC2B9942BB52D77072E562ED3330BDF /* PBXContainerItemProxy */;
+			name = Au10tixProofOfAddressUI;
+			target = 0F0C214BF8754FC3DEE1737BEC29B5EE /* Au10tixProofOfAddressUI */;
+			targetProxy = 8CB4EEE43634391A32D08E996C82CD65 /* PBXContainerItemProxy */;
 		};
-		DB4A1637318CB3E574C959D4018176A6 /* PBXTargetDependency */ = {
+		E8D07A13C8D781CD94BD733FA8D33040 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Au10tixSmartDocumentCaptureUI;
 			target = A8AC700739CBD9D671123AB747D9EC5D /* Au10tixSmartDocumentCaptureUI */;
-			targetProxy = 0C4BA986456B32037EF509429CCC607F /* PBXContainerItemProxy */;
+			targetProxy = 90CE1A3E4F2367C7EA20B69B818A579F /* PBXContainerItemProxy */;
+		};
+		EAFBC6F7C3B1579D4F4FC11A9397A0F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixPassiveFaceLivenessUI;
+			target = B2763D1434A3D169FD2A6F1050DEE73A /* Au10tixPassiveFaceLivenessUI */;
+			targetProxy = 8943C5021FB7EBE7EE821A4A3423A76A /* PBXContainerItemProxy */;
+		};
+		F27D504A2972E0F1F4BF568EC1262466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Au10tixBEKit;
+			target = 37AE68E15207295FB9FD0FE0D879F8B7 /* Au10tixBEKit */;
+			targetProxy = 8D09E83C638864A0AB971A90778A032D /* PBXContainerItemProxy */;
 		};
 		F4D8A2AF897E64A34A78AB1C896EB3E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1672,6 +1672,43 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		06C4A09900A089E20CCBF7E357EE7F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC57D31688A9A938037BF2C82BFA8EF /* Pods-Au10tixSimpleSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		12FD48962C0F95F242139FCFE5520BFA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1796,44 +1833,6 @@
 			};
 			name = Debug;
 		};
-		48B24DF3AECA7AC9CB478F8BE9252F44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84C294E61ED846EF005D1368B768CE37 /* Pods-Au10tixSimpleSample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		4D2FEAC9BDED78B0917F68D81751A399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35F84C7C6CB27C4F3AB181F3083FD729 /* Au10tixBaseUI.debug.xcconfig */;
@@ -1903,6 +1902,44 @@
 			};
 			name = Debug;
 		};
+		68682510F4FBB96A574A3F5A5CF47273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C294E61ED846EF005D1368B768CE37 /* Pods-Au10tixSimpleSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		74A8A91D60B8245D3C6BDCE0E2C6B255 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B6C2210C9AF9D41B0D4DB186D69FD33 /* Au10tixSmartDocumentCaptureKit.release.xcconfig */;
@@ -1935,43 +1972,6 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7D162FDAD839C8A58D4E9F7AAB744B02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EC57D31688A9A938037BF2C82BFA8EF /* Pods-Au10tixSimpleSample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -2414,15 +2414,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63618AB8E319648CDD22A042CE42EF68 /* Build configuration list for PBXNativeTarget "Pods-Au10tixSimpleSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D162FDAD839C8A58D4E9F7AAB744B02 /* Debug */,
-				48B24DF3AECA7AC9CB478F8BE9252F44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		683CB9C689F38F1139031E8029332806 /* Build configuration list for PBXAggregateTarget "Au10tixSmartDocumentCaptureKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2437,6 +2428,15 @@
 			buildConfigurations = (
 				44EB07C1228EC9792D006C89A7C68656 /* Debug */,
 				9A43DE48D75FDBFEC93266C520A20B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E10FDBA3E2B33F2DAE4F96C096B2DAC /* Build configuration list for PBXNativeTarget "Pods-Au10tixSimpleSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C4A09900A089E20CCBF7E357EE7F25 /* Debug */,
+				68682510F4FBB96A574A3F5A5CF47273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

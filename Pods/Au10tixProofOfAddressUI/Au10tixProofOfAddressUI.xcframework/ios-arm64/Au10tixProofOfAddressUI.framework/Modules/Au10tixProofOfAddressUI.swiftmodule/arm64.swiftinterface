@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressUI
 import Au10tixBaseUI
 import Au10tixCore
@@ -7,53 +7,55 @@ import Au10tixProofOfAddressKit
 @_exported import Au10tixProofOfAddressUI
 import Foundation
 import Swift
-import SwiftUI
 import UIKit
-public class POAUIComponent : Au10tixBaseUI.UIComponent {
-  public init()
-  public var view: Au10tixProofOfAddressUI.POAView {
-    get
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class POAIntroViewController : Au10tixBaseUI.UICompsIntroViewController {
+  @_Concurrency.MainActor(unsafe) override final public var introHeadline: Swift.String? {
+    @_Concurrency.MainActor(unsafe) get
   }
-  public typealias ViewType = Au10tixProofOfAddressUI.POAView
+  @_Concurrency.MainActor(unsafe) override final public func buildUI()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public struct POAView : SwiftUI.View {
-  public var body: some SwiftUI.View {
-    get
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) @_Concurrency.MainActor(unsafe) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
+  @_Concurrency.MainActor(unsafe) override final public var subHeadline: Swift.String? {
+    @_Concurrency.MainActor(unsafe) get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s23Au10tixProofOfAddressUI7POAViewV4bodyQrvp", 0) 🦸
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
-  override final public var subHeadline: Swift.String? {
-    get
+  @_Concurrency.MainActor(unsafe) override final public var cameraSession: Au10tixCore.CameraSession? {
+    @_Concurrency.MainActor(unsafe) get
   }
-  override final public var cameraSession: Au10tixCore.CameraSession? {
+  @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
     get
+    set
   }
-  weak final public var poaDelegate: Au10tixProofOfAddressKit.POASessionDelegate?
-  override final public var rectangleOfInterestImage: UIKit.UIImage? {
-    get
+  @_Concurrency.MainActor(unsafe) weak final public var poaDelegate: Au10tixProofOfAddressKit.POASessionDelegate?
+  @_Concurrency.MainActor(unsafe) override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    @_Concurrency.MainActor(unsafe) get
   }
-  override final public var shouldDimPreviewView: Swift.Bool {
-    get
+  @_Concurrency.MainActor(unsafe) override final public var shouldDimPreviewView: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) get
   }
-  @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
-  @objc override final public func viewDidLoad()
-  @objc override final public func mainButtonAction()
-  @objc override final public func leftButtonAction()
-  @objc override final public func rightButtonAction()
-  @objc override final public func closeButtonAction()
-  override final public func showFeatureFeed()
-  override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
-  override final public func timeoutViewShouldRefresh()
-  override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override final public var introVC: Au10tixBaseUI.UICompsIntroViewController? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @objc @_Concurrency.MainActor(unsafe) required public init(configs: Au10tixBaseUI.UIComponentConfigs, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func mainButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func leftButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func rightButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func closeButtonAction()
+  @_Concurrency.MainActor(unsafe) override final public func showFeatureFeed()
+  @_Concurrency.MainActor(unsafe) override final public func handle(state: Au10tixBaseUI.UIComponentBaseViewController.UIState)
+  @_Concurrency.MainActor(unsafe) override final public func timeoutViewShouldRefresh()
+  @_Concurrency.MainActor(unsafe) override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
   @objc deinit
 }
-extension POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
-  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didCapture image: Au10tixCore.Au10Image, with frameData: Au10tixCore.Au10Update)
-  final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didFailWith error: Au10tixProofOfAddressKit.POASessionError)
+extension Au10tixProofOfAddressUI.POAViewController : Au10tixProofOfAddressKit.POASessionDelegate {
+  @_Concurrency.MainActor(unsafe) final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didCapture image: Au10tixCore.Au10Image, with frameData: Au10tixCore.Au10Update)
+  @_Concurrency.MainActor(unsafe) final public func poaSession(_ poaSession: Au10tixProofOfAddressKit.POASession, didFailWith error: Au10tixProofOfAddressKit.POASessionError)
 }
-extension POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
-  final public func uiCompsCameraUnavailableCameraPermissionGranted()
-  final public func uiCompsCameraUnavailableUploadFilePressed()
+extension Au10tixProofOfAddressUI.POAViewController : Au10tixBaseUI.UIComponentCameraUnavailableDelegate {
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableUploadFilePressed()
 }

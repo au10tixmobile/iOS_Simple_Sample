@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixProofOfAddressKit-Swift.h</key>
 		<data>
-		/fCyw8wH5KEiYoBHb+xRRSDmZR4=
+		jwrjxtlP0PN5HVfsY9GHYyKzHv0=
 		</data>
 		<key>Headers/Au10tixProofOfAddressKit.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MYxWalm8C/qH5wbHa/7Mo1kQnfo=
+		WMLufFa0oAOGlkpgGEqcjWG4lGo=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		8CHKFbBq1QSuWPE9ct9znAkFwls=
+		jlSQNUN9YaMYQXQB6GArw3qoWcA=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dFJKcdZn1EKLnPiybeR7RHejn3U=
+		6U+TfEK0cUPNsN0cRQDKS1+l53U=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iLUR1/ORbbrE3Hn5yHztt5BhjcY=
+		p/tcobAr3DMXMETKETQfY9k5L+o=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		8CHKFbBq1QSuWPE9ct9znAkFwls=
+		jlSQNUN9YaMYQXQB6GArw3qoWcA=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		dFJKcdZn1EKLnPiybeR7RHejn3U=
+		6U+TfEK0cUPNsN0cRQDKS1+l53U=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		iLUR1/ORbbrE3Hn5yHztt5BhjcY=
+		p/tcobAr3DMXMETKETQfY9k5L+o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1rnvqQTqWiFrnbvHpvHObSl43nw9Seqoi9HkMNK4xz8=
+			J/WPPsI0jKNY3G2hIGgDScEcvzEob2r0H00vsDkh4zU=
 			</data>
 		</dict>
 		<key>Headers/Au10tixProofOfAddressKit.h</key>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQ/NF/YCqLlWkwQg8gQn6zYm2oWDnnSwcd2a5Q7QYSY=
+			F41P019a/y8DniWNk8emGqBbtK77x2oIk4dLvjLJXEU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/hcIfqEIPuBWF/99UYY3mDmR7j/9RJ9TJOr9vcXcL0=
+			W9csIc742qsssWQ/CtE5zrec/6wOupLGw9OfOtgjMwc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dv3iBql1EZCicEohpRbJJNB3rpJUsGLWKnNQWED/iiI=
+			CVlPtEIU9fcGI3yOidy1u8r9zzYAbXpCIu3LsBZK0/g=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQ/NF/YCqLlWkwQg8gQn6zYm2oWDnnSwcd2a5Q7QYSY=
+			F41P019a/y8DniWNk8emGqBbtK77x2oIk4dLvjLJXEU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/hcIfqEIPuBWF/99UYY3mDmR7j/9RJ9TJOr9vcXcL0=
+			W9csIc742qsssWQ/CtE5zrec/6wOupLGw9OfOtgjMwc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dv3iBql1EZCicEohpRbJJNB3rpJUsGLWKnNQWED/iiI=
+			CVlPtEIU9fcGI3yOidy1u8r9zzYAbXpCIu3LsBZK0/g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

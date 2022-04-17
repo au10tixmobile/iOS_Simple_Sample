@@ -1,0 +1,99 @@
+/* 
+  Au10tixLocalizable.strings
+  Pods
+
+  Created by Benny Davidovitz on 15/07/2020.
+  
+*/
+
+"UIComps.Base.Headline" = "Headline";
+"UIComps.Base.Timeout" = "Timeout Session\nClick to try again";
+"UIComps.Base.CameraPermissionDenied" = "Camera Permission Denied";
+"UIComps.Base.YourCameraIsBlocked" = "YOUR CAMERA IS BLOCKED";
+"UIComps.Base.allowAccess" = "Please allow access to your camera";
+"UIComps.Base.allowAccessOrUpload" = "Please allow access to your camera or upload a file";
+"UIComps.Base.tryUploadFile" = "Please try to upload a file";
+"UIComps.Base.UploadFile" = "Upload File";
+"UIComps.Base.GoToSettings" = "Go To Settings";
+"UIComps.Base.Intro.Continue" = "Continue";
+
+"UIComps.PFL.Selfie" = "Take a selfie";
+"UIComps.PFL.MoveCloser" = "Move Closer";
+"UIComps.PFL.TooClose" = "Too Close";
+"UIComps.PFL.HoldSteady" = "Hold Steady";
+"UIComps.PFL.NoFaceDetected" = "Face not Detected";
+"UIComps.PFL.LicenseError" = "License Error";
+"UIComps.PFL.FaceIsOccluded" = "Face is Occluded";
+"UIComps.PFL.YourMobileDeviceIsUnstableHoldSteadyToDetectYourFace" = "Hold the device steady to detect your face";
+"UIComps.PFL.TryToFocusOrChangeYourLightingEnvironment" = "Low quality, Try to focus or change\nyour lighting environment";
+"UIComps.PFL.YourMobileDeviceIsHorizontalHoldItVerticallyToCaptureYourFace" = "Your mobile device is horizontal Hold it vertically to capture your face";
+"UIComps.PFL.MakeSureToHoldTheDeviceVertically" = "Hold the device vertically to detect your face";
+"UIComps.PFL.FaceDetected" = "Face Detected";
+"UIComps.PFL.Processing" = "PROCESSING";
+"UIComps.PFL.FaceWasNotDetectedTryAgain" = "Face was not Detected\nTry Again";
+"UIComps.PFL.MakeSureThereIsOnlyOneFaceInThePhoto" = "Make sure there's only one face in the photo";
+"UIComps.PFL.LivenessWasNotDetectedTryAgain" = "Liveness was not Detected\nTry Again";
+"UIComps.PFL.FaceIsTooSmallMakeSureYourFaceIsInsideTheFrame" = "Face is too small\nMake sure your face is inside the frame";
+"UIComps.PFL.FaceCloseToBorderMakeSureYourFaceIsInsideTheFrame" = "Face close to border, Make sure\nyour face is inside the frame";
+"UIComps.PFL.MoveUp" = "Move Up";
+"UIComps.PFL.MoveDown" = "Move Down";
+"UIComps.PFL.MoveLeft" = "Move Left";
+"UIComps.PFL.MoveRight" = "Move Right";
+"UIComps.PFL.Intro.Headline" = "Take a selfie";
+"UIComps.PFL.NarrativeText" = "Please raise your ID and say:\n\"My name is… and this is my ID\" (%.0f)";
+"UIComps.PFL.PermissionDenied.TitleLabel" = "Sorry, we can't continue because you did not confirm the video recording";
+"UIComps.PFL.PermissionDenied.SubTitleLabel" = "Press allow recording in order to continue the proccess.";
+"UIComps.PFL.PermissionDenied.AllowanceButton" = "Allow recording";
+
+"UIComps.SDC.Headline.Front" = "Front Side";
+"UIComps.SDC.Headline.Back" = "Back Side";
+"UIComps.SDC.TakeAPictureOfYourIdOrUploadAFileFormat" = "Take a picture of your ID %@\nor Upload a File";
+"UIComps.SDC.TakeAPictureOfYourIdFormat" = "Take a picture of your ID %@";
+"UIComps.SDC.MoveCloser" = "Move Closer";
+"UIComps.SDC.HoldSteady" = "Hold the device steady to detect the ID";
+"UIComps.SDC.PhotoLibraryImageFeedback" = "We can't detect ID in the frame.\nPlease make sure to use an image with an ID.";
+"UIComps.SDC.SubHeadline.Front" = "Front Side";
+"UIComps.SDC.SubHeadline.Back" = "Back Side";
+"UIComps.SDC.TooFar" = "Move Closer";
+"UIComps.SDC.TooClose" = "Too Close";
+"UIComps.SDC.OutOfFrame" = "Position your ID within the frame";
+"UIComps.SDC.NoIdFound" = "No ID Detected";
+"UIComps.SDC.NoIdFound.ExternalFirstTry" = "No ID Detected.\nPlease Try Again";
+"UIComps.SDC.BadQuality" = "Bad Image Quality";
+"UIComps.SDC.BadQuality.ExternalFirstTry" = "Bad Image Quality.\nPlease Try Again";
+"UIComps.SDC.VerticallyAligned" = "ID is vertically aligned";
+"UIComps.SDC.HappyWithTheResults" = "Happy with the results? If not, make some adjustments and try again.";
+"UIComps.SDC.Intro.Instruction" = "Please prepare your ID for capturing";
+"UIComps.SDC.Intro.Headline" = "Capture your ID";
+"UIComps.SDC.ImageReview.Headline" = "Image review";
+
+"UIComps.POA.UtilityBill" = "Utility Bill";
+"UIComps.POA.ProofOfAdddress" = "Proof of Address";
+"UIComps.POA.TakeAPictureOfYourDocumentOrUploadAFile" = "Take a picture of your Document or Upload a File";
+"UIComps.POA.TakeAPictureOfYourDocument" = "Take a picture of your Document";
+"UIComps.POA.MakeSureYourDocumentIsReadableClickHereToContinue" = "Make sure your Document is readable\nClick here to continue";
+"UIComps.POA.Intro.Instruction" = "All we need now is to confirm\nyour address";
+"UIComps.POA.Intro.Headline" = "Confirm Address";
+"UIComps.POA.ImageReview.Headline" = "Image review";
+
+"UIComps.AFL.OnBoarding.Title" = "Heads up!";
+"UIComps.AFL.OnBoarding.Subtitle" = "We are about to record a selfie video...";
+"UIComps.AFL.OnBoarding.AnimationOverlay" = "Just follow the prompts. It’s easy.";
+"UIComps.AFL.OnBoarding.Sound" = "Sound on? Volume up? You're ready.";
+"UIComps.AFL.OnBoarding.StartButton" = "Start Check";
+"UIComps.AFL.PermissionDenied.ExplenationLabel" = "We're sorry, we can't continue because you did not confirm the video recording";
+"UIComps.AFL.SuccessScreen.SuccessLabel" = "Done!\nTold you it was easy.";
+
+"UIComps.Liveness.Title" = "Selfie Check";
+
+"UIComps.Liveness.Gesture.Left" = "Now, slowly turn to the left";
+"UIComps.Liveness.Gesture.Left_Wrong" = "Turn left until you see the green indicator";
+"UIComps.Liveness.Gesture.Right" = "Now, slowly turn to the right";
+"UIComps.Liveness.Gesture.Right_Wrong" = "Turn right until you see the green indicator";
+"UIComps.Liveness.Gesture.Center" = "Now return to the center";
+"UIComps.Liveness.Gesture.Failed" = "Gesture Failed";
+"UIComps.Liveness.Gesture.Passed" = "Perfect!";
+"UIComps.Liveness.Gesture.Wrong" = "Let's try that again.";
+"UIComps.Liveness.SessionExpired" = "Session Expired";
+"UIComps.Liveness.PendingRetry" = "Something went wrong\nLet's try again";
+"UIComps.Liveness.WaitingForPfl" = "Just a few seconds...";

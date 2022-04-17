@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessKit
 import AVFoundation
 import Au10tixCore
@@ -9,6 +9,7 @@ import Au10tixSourceManager
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 public enum LivenessSessionError : Swift.Error {
   case startPflFailed(error: Swift.Error)
   case startAflFailed(error: Swift.Error)
@@ -65,7 +66,7 @@ public enum AFLSessionUpdate {
   case gestureTimeout
   case wrongGestureDetected
 }
-extension AFLSessionResult {
+extension Au10tixLivenessKit.AFLSessionResult {
   public var json: [Swift.String : Swift.String] {
     get
   }
@@ -73,6 +74,7 @@ extension AFLSessionResult {
 @_hasMissingDesignatedInitializers public class LivenessSession {
   weak public var delegate: Au10tixLivenessKit.LivenessSessionDelegate?
   final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  public var isMicrophoneEnabled: Swift.Bool
   public var pflSessionDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate? {
     get
     set
@@ -93,7 +95,7 @@ extension AFLSessionResult {
   public func proceedToNextStep()
   @objc deinit
 }
-extension LivenessSession : Au10tixCore.Au10tixSession {
+extension Au10tixLivenessKit.LivenessSession : Au10tixCore.Au10tixSession {
   public var isAvailable: Swift.Bool {
     get
   }
@@ -103,7 +105,7 @@ extension LivenessSession : Au10tixCore.Au10tixSession {
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
 }
-extension LivenessSession {
+extension Au10tixLivenessKit.LivenessSession {
   public func reportUserInterruption()
   public func canStart() -> Swift.Bool
 }
@@ -130,7 +132,7 @@ public enum AFLGestureType : Swift.Int, Swift.Codable {
   convenience public init()
   @objc deinit
 }
-extension AFLSession : Au10tixCore.Au10tixSession {
+extension Au10tixLivenessKit.AFLSession : Au10tixCore.Au10tixSession {
   public var isAvailable: Swift.Bool {
     get
   }

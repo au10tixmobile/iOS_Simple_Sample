@@ -10,35 +10,35 @@
 		</data>
 		<key>Headers/Au10tixSourceManager-Swift.h</key>
 		<data>
-		YEvyNll3LkdieDQ9tuLG03ylgGw=
+		dKySL+EfKAQ2lvTpN/K316SL6iY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lzMsFahS0ntJxUU2T70dCicqAkw=
+		lYdHL13enD+/vdDn9VdPzgDGYXE=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZebkFYVQ0EV+VE9n9PJdSLEDcdU=
+		u89mr9RK9PpUsjogqGtLi136MBE=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		JRMZPXVanct7eCUxc41JunY1D9o=
+		T9uWthuevIVtxOLF08e2UrTPyzc=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hDgkgUliQ6s1mDTJ2v037swvtA4=
+		PZsAG0jC7MoRGoVNztnz4bgUhWA=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ZebkFYVQ0EV+VE9n9PJdSLEDcdU=
+		u89mr9RK9PpUsjogqGtLi136MBE=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		JRMZPXVanct7eCUxc41JunY1D9o=
+		T9uWthuevIVtxOLF08e2UrTPyzc=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		hDgkgUliQ6s1mDTJ2v037swvtA4=
+		PZsAG0jC7MoRGoVNztnz4bgUhWA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,49 +58,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QbL3VNRofBb5wX5K+yTmLKE610logJRIDewMSWB5DzQ=
+			iDJlS4afRGG2CppESXAtPyUOX/BspFgGmYurag9ZywA=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlVCyaGEIarJWF28KkEwvnTOuHcgpk1hKS+xKukSujU=
+			8x7M+fG5Fmzg6h7lrtYw7OWwXa25VrFjWhzmOvENGLI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/RwloC8UiHKryTbZJ2Vf4PdNkhonRUXBNnlb+G1S7A=
+			jOLqbPBalqJ1eui6nu8apQwq3iSmxapOe2yTJVrMQL8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/Qk7B3YjNycZLIa4BuIz/2uegd/o0VIs0unER58Bow=
+			gHfi2M++k+FHB9zUEEyHJN/vZaegQC9/1hwJoQqNyNw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlVCyaGEIarJWF28KkEwvnTOuHcgpk1hKS+xKukSujU=
+			8x7M+fG5Fmzg6h7lrtYw7OWwXa25VrFjWhzmOvENGLI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/RwloC8UiHKryTbZJ2Vf4PdNkhonRUXBNnlb+G1S7A=
+			jOLqbPBalqJ1eui6nu8apQwq3iSmxapOe2yTJVrMQL8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/Qk7B3YjNycZLIa4BuIz/2uegd/o0VIs0unER58Bow=
+			gHfi2M++k+FHB9zUEEyHJN/vZaegQC9/1hwJoQqNyNw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

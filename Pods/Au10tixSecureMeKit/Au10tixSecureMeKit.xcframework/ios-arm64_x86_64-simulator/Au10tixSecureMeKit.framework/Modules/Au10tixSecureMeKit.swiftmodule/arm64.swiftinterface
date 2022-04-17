@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSecureMeKit
 import Au10tixBEKit
 import Au10tixBaseUI
@@ -8,6 +8,7 @@ import Au10tixCore
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 public protocol SecureMeKitDelegate : AnyObject {
   func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, hasUpdate update: Au10tixSecureMeKit.SecureMeKitUpdate)
   func secureMeKit(_ kit: Au10tixSecureMeKit.SecureMeKit, didCompleteWith result: Au10tixSecureMeKit.SecureMeKitResult)
@@ -63,13 +64,14 @@ public enum SecureMeKitUpdate {
 public typealias SecureMeKitPrepareCallback = (Au10tixSecureMeKit.SecureMeKitPrepareError?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class SecureMeKit : Au10tixCore.Au10tixSDK {
   final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
-  convenience public init()
+  convenience public init(animationImages: [UIKit.UIImage] = [])
   public func prepare(with bearer: Swift.String, completion: @escaping Au10tixSecureMeKit.SecureMeKitPrepareCallback)
   public func createUI(delegate: Au10tixSecureMeKit.SecureMeKitDelegate) throws -> UIKit.UIViewController
   @objc deinit
 }
-extension SecureMeKit {
+extension Au10tixSecureMeKit.SecureMeKit {
   public func forceFlows(_ flows: [Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow])
+  public func setPFLDelayTime(_ pflDelayTime: Foundation.TimeInterval)
 }
 public struct SecureMeKitResult {
   public let requestId: Swift.String
