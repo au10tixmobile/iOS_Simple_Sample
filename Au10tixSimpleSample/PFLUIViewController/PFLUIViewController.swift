@@ -187,7 +187,7 @@ extension PFLUIViewController: PFLSessionDelegate {
     /**
     Gets Called upon image sample is captured
      */
-    func pflSession(_ pflSession: PFLSession, didCapture image: Data, faceBoundingBox: CGRect?) {
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?) {
         showPreviewImage(image)
     }
     
@@ -219,6 +219,34 @@ extension PFLUIViewController: PFLSessionDelegate {
             return "internalError"
         case .tooManyFaces:
             return "tooManyFaces"
+        case .faceIsOccluded:
+            return "faceIsOccluded"
+        case .failedToReadImage:
+            return "failedToReadImage"
+        case .failedToWriteImage:
+            return "failedToWriteImage"
+        case .failedToReadModel:
+            return "failedToReadModel"
+        case .failedToAllocate:
+            return "failedToAllocate"
+        case .invalidConfig:
+            return "invalidConfig"
+        case .noSuchObject:
+            return "noSuchObject"
+        case .failedToPreprocessImageWhilePredict:
+            return "failedToPreprocessImageWhilePredict"
+        case .failedToPreprocessImageWhileDetect:
+            return "failedToPreprocessImageWhileDetect"
+        case .failedToPredictLandmarks:
+            return "failedToPredictLandmarks"
+        case .invalidFuseMode:
+            return "invalidFuseMode"
+        case .nullPtr:
+            return "nullPtr"
+        case .licenseError:
+            return "licenseError"
+        case .invalidMeta:
+            return "invalidMeta"
         @unknown default:
             return ""
         }
