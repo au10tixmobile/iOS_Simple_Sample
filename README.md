@@ -8,7 +8,7 @@
 - [Change log](#change-log)
 
 ## Overview
-Verified, compliant and fraud-free onboarding results in 8 seconds (or less). By the time you read this sentence, AU10TIX would have converted countless human smiles, identity documents and data points into authenticated, all-access passes to your products, services and experiences.
+Verified, compliant and fraud-free onboarding results in eight seconds (or less). By the time you read this sentence, AU10TIX will have converted countless human smiles, identity documents and data points into authenticated, all-access passes to your products, services and experiences.
 
 This example application presents an implementation suggestion for the Au10tix Mobile SDK.
 
@@ -17,15 +17,16 @@ The following integration examples are included:
 - Smart Document Capture
 - Proof of Address
 - UI components integration
-- Sending results to the backend
+- Sending results to the backend.
 
 ## Usage
 
-To use this sample you have to edit the sample files according to the following steps
+To use this sample you have to edit the sample files according to the following steps.
 
 ### JWT token
 The SDK is prepared using the JWT token produced by the client's server.
-Acquire the JWT token and modify MainViewController.swift 'prepare' method to correctly include the values attained from your server.
+Acquire the JWT token and modify MainViewController.swift 'prepare' method to correctly include the values obtained from your server.
+
 ```swift
 func prepare()
     let jwtToken = ""
