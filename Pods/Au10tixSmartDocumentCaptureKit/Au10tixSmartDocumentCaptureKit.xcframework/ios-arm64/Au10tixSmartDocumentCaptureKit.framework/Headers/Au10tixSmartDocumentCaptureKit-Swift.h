@@ -188,7 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixCore;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -205,18 +204,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixSmartDocumentCaptureKit",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
-
-@class NSString;
-@class NSNumber;
-@class Au10Image;
-
-SWIFT_RESILIENT_CLASS("_TtC30Au10tixSmartDocumentCaptureKit19SDCProcessingStatus")
-@interface SDCProcessingStatus : Au10Update
-@property (nonatomic, readonly, copy) NSString * _Nullable jsonString;
-@property (nonatomic, readonly) BOOL isValid;
-- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image SWIFT_UNAVAILABLE;
-@end
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

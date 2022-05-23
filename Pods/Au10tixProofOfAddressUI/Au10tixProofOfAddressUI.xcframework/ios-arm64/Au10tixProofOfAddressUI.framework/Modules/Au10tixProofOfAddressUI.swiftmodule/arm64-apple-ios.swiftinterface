@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressUI
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixProofOfAddressUI
 import Au10tixBaseUI
 import Au10tixCore
 import Au10tixProofOfAddressKit
@@ -9,7 +9,7 @@ import Foundation
 import Swift
 import UIKit
 import _Concurrency
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class POAIntroViewController : Au10tixBaseUI.UICompsIntroViewController {
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class POAIntroViewController : Au10tixBaseUI.UICompsIntroViewController {
   @_Concurrency.MainActor(unsafe) override final public var introHeadline: Swift.String? {
     @_Concurrency.MainActor(unsafe) get
   }
@@ -18,7 +18,7 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) @_Concurrency.MainActor(unsafe) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Au10xPOAViewController) @_Concurrency.MainActor(unsafe) @_objcRuntimeName(Au10xPOAViewController) final public class POAViewController : Au10tixBaseUI.UIComponentBaseViewController {
   @_Concurrency.MainActor(unsafe) override final public var subHeadline: Swift.String? {
     @_Concurrency.MainActor(unsafe) get
   }
