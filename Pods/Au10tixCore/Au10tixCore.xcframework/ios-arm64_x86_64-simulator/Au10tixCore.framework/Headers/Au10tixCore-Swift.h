@@ -272,7 +272,7 @@ SWIFT_CLASS("_TtC11Au10tixCore7Au10tix")
 /// the SDK shared instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _Nonnull shared;)
 + (Au10tix * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// Use this method to reset the session-id, Operation is depend on configuration (allowSessionIdReset), and existance of a sessionId
+/// Use this method to reset the session-id, Operation is depend on existance of a sessionId
 /// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
 ///
 - (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
@@ -589,7 +589,7 @@ SWIFT_CLASS("_TtC11Au10tixCore7Au10tix")
 /// the SDK shared instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _Nonnull shared;)
 + (Au10tix * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// Use this method to reset the session-id, Operation is depend on configuration (allowSessionIdReset), and existance of a sessionId
+/// Use this method to reset the session-id, Operation is depend on existance of a sessionId
 /// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
 ///
 - (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;

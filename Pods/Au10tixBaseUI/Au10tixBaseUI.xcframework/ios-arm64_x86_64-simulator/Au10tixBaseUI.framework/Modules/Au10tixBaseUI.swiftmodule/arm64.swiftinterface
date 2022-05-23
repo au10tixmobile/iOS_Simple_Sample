@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
 import AVFoundation
 import AVKit
 @_exported import Au10tixBaseUI
@@ -278,6 +278,7 @@ extension Au10tixBaseUI.UIComponentBaseViewController {
 public struct UICompsOCSConfigurations {
   public var successColor: UIKit.UIColor
   public var errorColor: UIKit.UIColor
+  public var infoColor: UIKit.UIColor
 }
 public protocol UICompsIntroDelegate : AnyObject {
   func introShouldContinue()
@@ -320,12 +321,12 @@ extension Au10tixBaseUI.UICompsButtonsView {
     }
   }
   public enum ActionButtonImage {
-    case upload
-    case retakeLarge
-    case retakeSmall
-    case camera
-    case checkmark
+    case capture
+    case refresh
+    case approve
     case disabled
+    case retakeSmall
+    case upload
     public static func == (a: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage, b: Au10tixBaseUI.UICompsButtonsView.ActionButtonImage) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
