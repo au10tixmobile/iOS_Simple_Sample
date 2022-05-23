@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
 import AVFoundation
 import AVKit
 import Au10tixBaseUI
@@ -13,7 +13,7 @@ import Foundation
 import Swift
 import UIKit
 import _Concurrency
-@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) @_Concurrency.MainActor(unsafe) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
+@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) @_Concurrency.MainActor(unsafe) @_objcRuntimeName(Au10xLivenessViewController) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController, Au10tixBaseUI.RecordingTimeStampViewHost {
   @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
     get
     set

@@ -1655,14 +1655,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0214CDF98E431B236EFBCA4E4C1213A5 /* Release */ = {
+		0007B04D88253889322AA9E588E3E9FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2408074BA9E68DDB960F503EBFE6B128 /* Au10tixCore.release.xcconfig */;
+			baseConfigurationReference = D52CBDCBB45C2F825613E424CFC55D6F /* Au10tixSmartDocumentCaptureUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1710,14 +1710,14 @@
 			};
 			name = Debug;
 		};
-		12FD48962C0F95F242139FCFE5520BFA /* Release */ = {
+		0E5DFF11431DDA38D1DF985FFCEEBA5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6C28F835277A8FDD6768A77ECA5C79 /* Au10tixBaseUI.release.xcconfig */;
+			baseConfigurationReference = FE7320F53AAFA399FC7DDB7352471691 /* Au10tixProofOfAddressKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1728,14 +1728,50 @@
 			};
 			name = Release;
 		};
-		1EC0EEB54CDE1588AC915BB1D9778954 /* Release */ = {
+		163C1961FF914046AF4229B72B83F545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2408074BA9E68DDB960F503EBFE6B128 /* Au10tixCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BCC3C10527DDD48377BFF84BFA58A35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C113880A9DCE8D47499D32BE0515AB9 /* Au10tixPassiveFaceLivenessKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8256AC304357569850FA9D6CE48B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B4E22F2FEC1FE33ABE5B89EB635C917 /* Au10tixDetectorManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1746,153 +1782,14 @@
 			};
 			name = Release;
 		};
-		23BC5A73A6D370A6522418EA888AE6BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C75F980683193308209ABF1A4CED75A7 /* Au10tixProofOfAddressUI.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3490619347144CFE87B7F73EF1439D97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B722E0C4702D1ADB137AF822054E430 /* Au10tixLivenessKit.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		38AFD159D5F6B8535DF08CB955D32256 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B95C5BC4C64B285FE9BAF63A70D33211 /* Au10tixDetectorManager.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3CE8EE3EB05610F5B8B680B557588900 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E4475CAE35643634AB2DF3544A36544 /* Au10tixProofOfAddressUI.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		44EB07C1228EC9792D006C89A7C68656 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC29608A2635A590442C2A6619DD0CF /* Au10tixProofOfAddressKit.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4D2FEAC9BDED78B0917F68D81751A399 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35F84C7C6CB27C4F3AB181F3083FD729 /* Au10tixBaseUI.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		52D14DCD43FE793E79DB91553422F613 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D52CBDCBB45C2F825613E424CFC55D6F /* Au10tixSmartDocumentCaptureUI.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		59DF709DF868459D0B90B04B1AAEFBEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E01B76F3E53B2503A7001C0DCDF7C62 /* Au10tixLivenessUI.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5A13A4EA2369E70ABCAEAC175F5EC6FD /* Debug */ = {
+		468B8E76357732550AA7D1E27144F0D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D927AB956406EBDA14F3943B67FC506 /* Au10tixPassiveFaceLivenessUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1901,6 +1798,94 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		54441B5D4EFA0081372D9D0E2166C2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95C5BC4C64B285FE9BAF63A70D33211 /* Au10tixDetectorManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		584F7FFA7896CEC7829B90B2DFEC74F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D37657C536B3D279AABC5A51AB70DF /* Au10tixPassiveFaceLivenessUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BC52A3E70A7A1F484AA26D16489C774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6C28F835277A8FDD6768A77ECA5C79 /* Au10tixBaseUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60536C27BD075F7C81873E1D7B7AD9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4CDDE65F14F0A9C55145A00547EC96 /* Au10tixSmartDocumentCaptureUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61E21CF15CBA9FFFD6F6ADB1F56A026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75F980683193308209ABF1A4CED75A7 /* Au10tixProofOfAddressUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		68682510F4FBB96A574A3F5A5CF47273 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1940,14 +1925,14 @@
 			};
 			name = Release;
 		};
-		74A8A91D60B8245D3C6BDCE0E2C6B255 /* Release */ = {
+		6C91AF2BFE3C4C80AE9774D0A619FAA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B6C2210C9AF9D41B0D4DB186D69FD33 /* Au10tixSmartDocumentCaptureKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1958,14 +1943,32 @@
 			};
 			name = Release;
 		};
-		75A4A58219715DE2BDB59A8BB00D6A5A /* Debug */ = {
+		7038EEBAD8D9137DC9B0BE43DD4979FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4CDDE65F14F0A9C55145A00547EC96 /* Au10tixSmartDocumentCaptureUI.debug.xcconfig */;
+			baseConfigurationReference = 4A7947AEAAFF2FAB75C9FE27E512B14B /* Au10tixLivenessUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741F780ED247C5352F2A835BCC188103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E01B76F3E53B2503A7001C0DCDF7C62 /* Au10tixLivenessUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1975,14 +1978,49 @@
 			};
 			name = Debug;
 		};
-		8C02391115B040FD6DB3A81C07402DD2 /* Debug */ = {
+		7C49A4AA90B96CC1AF320BFD050F4E53 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD8523130D172CE9EA4296CDEF941C6C /* Au10tixSecureMeKit.debug.xcconfig */;
+			baseConfigurationReference = 1B722E0C4702D1ADB137AF822054E430 /* Au10tixLivenessKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AFDFA0DCB178E72ECF147726127888E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4475CAE35643634AB2DF3544A36544 /* Au10tixProofOfAddressUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B2E5422412F417B36598A52F7E7C702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC29608A2635A590442C2A6619DD0CF /* Au10tixProofOfAddressKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2058,14 +2096,14 @@
 			};
 			name = Debug;
 		};
-		99EB6EBE2D2D390F6116697A3F965915 /* Debug */ = {
+		8E8749905665B08E4C6D05455088EAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CE51A41240D30D43EEBDF4C4942F8EF /* Au10tixBEKit.debug.xcconfig */;
+			baseConfigurationReference = 35F84C7C6CB27C4F3AB181F3083FD729 /* Au10tixBaseUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2075,14 +2113,14 @@
 			};
 			name = Debug;
 		};
-		9A43DE48D75FDBFEC93266C520A20B43 /* Release */ = {
+		8EEA244EA657EEA7A9DF573988BE762B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE7320F53AAFA399FC7DDB7352471691 /* Au10tixProofOfAddressKit.release.xcconfig */;
+			baseConfigurationReference = 6E7398D3E77A8F7B644247520CFC191D /* Au10tixSecureMeKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2092,6 +2130,23 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		913A0C0723E169A24813F4B08E3E7ED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD0F3B3887D054E7B004F04BAC602CA /* Au10tixCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2155,14 +2210,14 @@
 			};
 			name = Release;
 		};
-		A0274D58DA4904958FCD20665B6E07A0 /* Debug */ = {
+		A3365A50ADC2C67BCF63677F24C555B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82281AB37DF3525CEBCB4BE168044B4D /* Au10tixSourceManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2172,86 +2227,14 @@
 			};
 			name = Debug;
 		};
-		A02A90867A0262116659AB1611891ED5 /* Release */ = {
+		BCF46A27AEA586C07B5D54F338930F0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA5F2CAA311D2319A0FB44FD4F06C5CF /* Au10tixSourceManager.release.xcconfig */;
+			baseConfigurationReference = AD8523130D172CE9EA4296CDEF941C6C /* Au10tixSecureMeKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A7BDF13C6F4A9F9287C9929575CE892A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1D37657C536B3D279AABC5A51AB70DF /* Au10tixPassiveFaceLivenessUI.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C39BB79AFAC28059F837ABD6A382DAB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64768BEFCD94C553DAAC84363EA2BC58 /* Au10tixBEKit.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C9DF99B8A2B68016D405CE1089AE5EA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C113880A9DCE8D47499D32BE0515AB9 /* Au10tixPassiveFaceLivenessKit.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CA9B19C5161EFA15E0E5BBAD8C93FEC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BD0F3B3887D054E7B004F04BAC602CA /* Au10tixCore.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2261,66 +2244,14 @@
 			};
 			name = Debug;
 		};
-		D0320181585705A5A593072B8EE11FF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A7947AEAAFF2FAB75C9FE27E512B14B /* Au10tixLivenessUI.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DBECD051B3A2FA6DE121B055DA4AA9E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B04CE21C71717BE7820B9DDF0496D4 /* Au10tixPassiveFaceLivenessKit.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EA3F9EA433CD43678AB7EE17794544E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F87F49D339DB153134894E92EF486C4 /* Au10tixLivenessKit.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F3AABB3869D5F788725571562D691EEE /* Debug */ = {
+		C14A651C2CF08F56C8C46CD48DFE323F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51993B2B2CADB75026A5B5CF7DA0E8DE /* Au10tixSmartDocumentCaptureKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2330,14 +2261,31 @@
 			};
 			name = Debug;
 		};
-		F861D62A7DC686387D7239A20E2E170D /* Release */ = {
+		DBFC449AB618FB075045ECAB1EAF068B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E7398D3E77A8F7B644247520CFC191D /* Au10tixSecureMeKit.release.xcconfig */;
+			baseConfigurationReference = 1CE51A41240D30D43EEBDF4C4942F8EF /* Au10tixBEKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0D8D8769316B57E21B16457273507A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64768BEFCD94C553DAAC84363EA2BC58 /* Au10tixBEKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2347,6 +2295,58 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		EAFE4AC83FFD42DAAAE3BF79C3ED8DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F87F49D339DB153134894E92EF486C4 /* Au10tixLivenessKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47005C7D71EC85553B1C9F3CC3CE8A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5F2CAA311D2319A0FB44FD4F06C5CF /* Au10tixSourceManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8A5510BD9223B19FBA246005DD3307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B04CE21C71717BE7820B9DDF0496D4 /* Au10tixPassiveFaceLivenessKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2354,8 +2354,8 @@
 		22D77C0EF1645B022A0EF45E3324C563 /* Build configuration list for PBXAggregateTarget "Au10tixSourceManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0274D58DA4904958FCD20665B6E07A0 /* Debug */,
-				A02A90867A0262116659AB1611891ED5 /* Release */,
+				A3365A50ADC2C67BCF63677F24C555B0 /* Debug */,
+				F47005C7D71EC85553B1C9F3CC3CE8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2363,8 +2363,8 @@
 		357D327710B0346DCB716254B79BE408 /* Build configuration list for PBXAggregateTarget "Au10tixSecureMeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C02391115B040FD6DB3A81C07402DD2 /* Debug */,
-				F861D62A7DC686387D7239A20E2E170D /* Release */,
+				BCF46A27AEA586C07B5D54F338930F0B /* Debug */,
+				8EEA244EA657EEA7A9DF573988BE762B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2381,8 +2381,8 @@
 		4CFA9230DF0167B18BAE1F7322026C86 /* Build configuration list for PBXAggregateTarget "Au10tixBaseUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D2FEAC9BDED78B0917F68D81751A399 /* Debug */,
-				12FD48962C0F95F242139FCFE5520BFA /* Release */,
+				8E8749905665B08E4C6D05455088EAC3 /* Debug */,
+				5BC52A3E70A7A1F484AA26D16489C774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2390,8 +2390,8 @@
 		514329A475B622DD33DB7AD10C40DC93 /* Build configuration list for PBXAggregateTarget "Au10tixLivenessUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59DF709DF868459D0B90B04B1AAEFBEA /* Debug */,
-				D0320181585705A5A593072B8EE11FF4 /* Release */,
+				741F780ED247C5352F2A835BCC188103 /* Debug */,
+				7038EEBAD8D9137DC9B0BE43DD4979FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2399,8 +2399,8 @@
 		579A859F8B203E8358E28DD5EF1D9711 /* Build configuration list for PBXAggregateTarget "Au10tixPassiveFaceLivenessKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBECD051B3A2FA6DE121B055DA4AA9E8 /* Debug */,
-				C9DF99B8A2B68016D405CE1089AE5EA6 /* Release */,
+				FF8A5510BD9223B19FBA246005DD3307 /* Debug */,
+				1BCC3C10527DDD48377BFF84BFA58A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2408,8 +2408,8 @@
 		5AEA0728172774588CF3A01978FFDF9C /* Build configuration list for PBXAggregateTarget "Au10tixCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA9B19C5161EFA15E0E5BBAD8C93FEC0 /* Debug */,
-				0214CDF98E431B236EFBCA4E4C1213A5 /* Release */,
+				913A0C0723E169A24813F4B08E3E7ED1 /* Debug */,
+				163C1961FF914046AF4229B72B83F545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2417,8 +2417,8 @@
 		683CB9C689F38F1139031E8029332806 /* Build configuration list for PBXAggregateTarget "Au10tixSmartDocumentCaptureKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3AABB3869D5F788725571562D691EEE /* Debug */,
-				74A8A91D60B8245D3C6BDCE0E2C6B255 /* Release */,
+				C14A651C2CF08F56C8C46CD48DFE323F /* Debug */,
+				6C91AF2BFE3C4C80AE9774D0A619FAA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2426,8 +2426,8 @@
 		713AEE15F34FF71304D790B284C806F7 /* Build configuration list for PBXAggregateTarget "Au10tixProofOfAddressKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44EB07C1228EC9792D006C89A7C68656 /* Debug */,
-				9A43DE48D75FDBFEC93266C520A20B43 /* Release */,
+				8B2E5422412F417B36598A52F7E7C702 /* Debug */,
+				0E5DFF11431DDA38D1DF985FFCEEBA5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2444,8 +2444,8 @@
 		83D16EDAD91DA79D49405DF5D5D22B13 /* Build configuration list for PBXAggregateTarget "Au10tixDetectorManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38AFD159D5F6B8535DF08CB955D32256 /* Debug */,
-				1EC0EEB54CDE1588AC915BB1D9778954 /* Release */,
+				54441B5D4EFA0081372D9D0E2166C2FD /* Debug */,
+				3A8256AC304357569850FA9D6CE48B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2453,8 +2453,8 @@
 		855F2D3929F43DBB99CA8FDA575B1CAA /* Build configuration list for PBXAggregateTarget "Au10tixPassiveFaceLivenessUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A13A4EA2369E70ABCAEAC175F5EC6FD /* Debug */,
-				A7BDF13C6F4A9F9287C9929575CE892A /* Release */,
+				468B8E76357732550AA7D1E27144F0D9 /* Debug */,
+				584F7FFA7896CEC7829B90B2DFEC74F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2462,8 +2462,8 @@
 		C221DD981B3424E3FEFF225D08E67CD2 /* Build configuration list for PBXAggregateTarget "Au10tixProofOfAddressUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CE8EE3EB05610F5B8B680B557588900 /* Debug */,
-				23BC5A73A6D370A6522418EA888AE6BF /* Release */,
+				8AFDFA0DCB178E72ECF147726127888E /* Debug */,
+				61E21CF15CBA9FFFD6F6ADB1F56A026D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2471,8 +2471,8 @@
 		C26F1EEF23FB02FE462ACF22150D41D1 /* Build configuration list for PBXAggregateTarget "Au10tixLivenessKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA3F9EA433CD43678AB7EE17794544E7 /* Debug */,
-				3490619347144CFE87B7F73EF1439D97 /* Release */,
+				EAFE4AC83FFD42DAAAE3BF79C3ED8DF0 /* Debug */,
+				7C49A4AA90B96CC1AF320BFD050F4E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2480,8 +2480,8 @@
 		CF5974997FAD16F795C8C335E86A03DB /* Build configuration list for PBXAggregateTarget "Au10tixSmartDocumentCaptureUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75A4A58219715DE2BDB59A8BB00D6A5A /* Debug */,
-				52D14DCD43FE793E79DB91553422F613 /* Release */,
+				60536C27BD075F7C81873E1D7B7AD9DE /* Debug */,
+				0007B04D88253889322AA9E588E3E9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2489,8 +2489,8 @@
 		ED6BB2A2E0487EE5AFDC96ABE100EFBB /* Build configuration list for PBXAggregateTarget "Au10tixBEKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99EB6EBE2D2D390F6116697A3F965915 /* Debug */,
-				C39BB79AFAC28059F837ABD6A382DAB8 /* Release */,
+				DBFC449AB618FB075045ECAB1EAF068B /* Debug */,
+				E0D8D8769316B57E21B16457273507A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

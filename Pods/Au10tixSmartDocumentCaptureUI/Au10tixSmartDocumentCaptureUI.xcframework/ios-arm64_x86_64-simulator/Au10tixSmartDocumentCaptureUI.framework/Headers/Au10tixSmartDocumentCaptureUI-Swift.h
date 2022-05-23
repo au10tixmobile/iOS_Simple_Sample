@@ -190,7 +190,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixBaseUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -207,53 +206,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixSmartDocumentCaptureUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
-
-
-@class NSString;
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_RESILIENT_CLASS("_TtC29Au10tixSmartDocumentCaptureUI22SDCIntroViewController")
-@interface SDCIntroViewController : UICompsIntroViewController
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class Au10xUIComponentConfigs;
-@protocol UIComponentViewControllerNavigationDelegate;
-@class NSNotification;
-
-/// SDCViewController provide an UI/UX for using Au10Tix’s Smart-Document-Capture Feature
-SWIFT_RESILIENT_CLASS_NAMED("SDCViewController")
-@interface Au10xSDCViewController : UIComponentBaseViewController
-/// Initializes a new SDCViewController with the provided configurations and delegate.
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     configs: The basic UI configurations (logo, colors)
-///   </li>
-///   <li>
-///     delegate: An object to receive results of the process
-///   </li>
-/// </ul>
-///
-/// returns:
-/// A new SDCViewController instance
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)mainButtonAction;
-- (void)leftButtonAction;
-- (void)closeButtonAction;
-- (void)handleCameraDidOpen:(NSNotification * _Nonnull)note;
-@end
-
-
-
-
-
 
 
 
@@ -455,7 +407,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Au10tixBaseUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -472,53 +423,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixSmartDocumentCaptureUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
-
-
-@class NSString;
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_RESILIENT_CLASS("_TtC29Au10tixSmartDocumentCaptureUI22SDCIntroViewController")
-@interface SDCIntroViewController : UICompsIntroViewController
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class Au10xUIComponentConfigs;
-@protocol UIComponentViewControllerNavigationDelegate;
-@class NSNotification;
-
-/// SDCViewController provide an UI/UX for using Au10Tix’s Smart-Document-Capture Feature
-SWIFT_RESILIENT_CLASS_NAMED("SDCViewController")
-@interface Au10xSDCViewController : UIComponentBaseViewController
-/// Initializes a new SDCViewController with the provided configurations and delegate.
-/// <ul>
-///   <li>
-///     Parameters:
-///   </li>
-///   <li>
-///     configs: The basic UI configurations (logo, colors)
-///   </li>
-///   <li>
-///     delegate: An object to receive results of the process
-///   </li>
-/// </ul>
-///
-/// returns:
-/// A new SDCViewController instance
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)mainButtonAction;
-- (void)leftButtonAction;
-- (void)closeButtonAction;
-- (void)handleCameraDidOpen:(NSNotification * _Nonnull)note;
-@end
-
-
-
-
-
 
 
 
