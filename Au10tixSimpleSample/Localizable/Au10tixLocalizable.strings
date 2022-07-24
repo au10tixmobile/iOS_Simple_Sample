@@ -8,15 +8,16 @@
 
 "UIComps.Base.Headline" = "Headline";
 "UIComps.Base.Timeout" = "Timeout Session\nClick to try again";
-"UIComps.Base.CameraPermissionDenied" = "CAMERA PERMISSION DENIED";
+"UIComps.Base.CameraPermissionDenied" = "Camera Permission Denied";
 "UIComps.Base.YourCameraIsBlocked" = "YOUR CAMERA IS BLOCKED";
-"UIComps.Base.allowAccess" = "In order to continue\nplease allow access to your camera\n\nOR";
-"UIComps.Base.allowAccessInteractive" = "\nplease allow access to your camera\n";
-"UIComps.Base.allowAccessOr" = "OR";
+"UIComps.Base.allowAccess" = "Please allow access to your camera";
+"UIComps.Base.allowAccessOrUpload" = "Please allow access to your camera or upload a file";
 "UIComps.Base.tryUploadFile" = "Please try to upload a file";
 "UIComps.Base.UploadFile" = "Upload File";
+"UIComps.Base.GoToSettings" = "Go To Settings";
+"UIComps.Base.Intro.Continue" = "Continue";
 
-"UIComps.PFL.Selfie" = "Selfie Check";
+"UIComps.PFL.Selfie" = "Take a selfie";
 "UIComps.PFL.MoveCloser" = "Move Closer";
 "UIComps.PFL.TooClose" = "Too Close";
 "UIComps.PFL.HoldSteady" = "Hold Steady";
@@ -38,8 +39,14 @@
 "UIComps.PFL.MoveDown" = "Move Down";
 "UIComps.PFL.MoveLeft" = "Move Left";
 "UIComps.PFL.MoveRight" = "Move Right";
+"UIComps.PFL.Intro.Headline" = "Take a selfie";
+"UIComps.PFL.NarrativeText" = "Please raise your ID and say:\n\"My name is… and this is my ID\" (%.0f)";
+"UIComps.PFL.PermissionDenied.TitleLabel" = "Sorry, we can't continue because you did not confirm the video recording";
+"UIComps.PFL.PermissionDenied.SubTitleLabel" = "Press allow recording in order to continue the proccess.";
+"UIComps.PFL.PermissionDenied.AllowanceButton" = "Allow recording";
 
-"UIComps.SDC.IdScan" = "ID Scan";
+"UIComps.SDC.Headline.Front" = "Front Side";
+"UIComps.SDC.Headline.Back" = "Back Side";
 "UIComps.SDC.TakeAPictureOfYourIdOrUploadAFileFormat" = "Take a picture of your ID %@\nor Upload a File";
 "UIComps.SDC.TakeAPictureOfYourIdFormat" = "Take a picture of your ID %@";
 "UIComps.SDC.MoveCloser" = "Move Closer";
@@ -53,15 +60,21 @@
 "UIComps.SDC.NoIdFound" = "No ID Detected";
 "UIComps.SDC.NoIdFound.ExternalFirstTry" = "No ID Detected.\nPlease Try Again";
 "UIComps.SDC.BadQuality" = "Bad Image Quality";
-"UIComps.SDC.BadQuality.ExternalFirstTry" = "Bad Image Quality.\nPlease Try Again";
+"UIComps.SDC.BadQuality.ExternalFirstTry" = "%@.\nPlease Try Again";
 "UIComps.SDC.VerticallyAligned" = "ID is vertically aligned";
 "UIComps.SDC.HappyWithTheResults" = "Happy with the results? If not, make some adjustments and try again.";
+"UIComps.SDC.Intro.Instruction" = "Please prepare your ID for capturing";
+"UIComps.SDC.Intro.Headline" = "Capture your ID";
+"UIComps.SDC.ImageReview.Headline" = "Image review";
 
 "UIComps.POA.UtilityBill" = "Utility Bill";
 "UIComps.POA.ProofOfAdddress" = "Proof of Address";
 "UIComps.POA.TakeAPictureOfYourDocumentOrUploadAFile" = "Take a picture of your Document or Upload a File";
 "UIComps.POA.TakeAPictureOfYourDocument" = "Take a picture of your Document";
 "UIComps.POA.MakeSureYourDocumentIsReadableClickHereToContinue" = "Make sure your Document is readable\nClick here to continue";
+"UIComps.POA.Intro.Instruction" = "All we need now is to confirm\nyour address";
+"UIComps.POA.Intro.Headline" = "Confirm Address";
+"UIComps.POA.ImageReview.Headline" = "Image review";
 
 "UIComps.AFL.OnBoarding.Title" = "Heads up!";
 "UIComps.AFL.OnBoarding.Subtitle" = "We are about to record a selfie video...";
@@ -69,7 +82,6 @@
 "UIComps.AFL.OnBoarding.Sound" = "Sound on? Volume up? You're ready.";
 "UIComps.AFL.OnBoarding.StartButton" = "Start Check";
 "UIComps.AFL.PermissionDenied.ExplenationLabel" = "We're sorry, we can't continue because you did not confirm the video recording";
-"UIComps.AFL.PermissionDenied.AllowanceButton" = "Allow Video Recording";
 "UIComps.AFL.SuccessScreen.SuccessLabel" = "Done!\nTold you it was easy.";
 
 "UIComps.Liveness.Title" = "Selfie Check";

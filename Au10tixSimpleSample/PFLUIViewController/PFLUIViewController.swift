@@ -176,7 +176,7 @@ private extension PFLUIViewController {
     }
     
     @IBAction func takeStillImage() {
-        pflSession.captureImage()
+        pflSession.captureImage(.cameraCapture)
     }
 }
 
@@ -291,4 +291,11 @@ extension PFLUIViewController: PFLSessionDelegate {
         showAlert("PFLError \(error)")
     }
     
+    /**
+    Gets Called when Helmet detection result delivered
+     */
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, isHelmet: Bool, asHat: Double, asHelmet: Double, asNone: Double) {
+        
+    }
+
 }

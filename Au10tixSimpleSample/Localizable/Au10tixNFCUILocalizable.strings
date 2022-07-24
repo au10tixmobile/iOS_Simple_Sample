@@ -1,0 +1,67 @@
+/* 
+ NFCUILocalizable.strings
+  DebugApp
+
+  Created by Mohammad Kittany on 21/04/2022.
+  Copyright © 2022 Au10tix. All rights reserved.
+*/
+
+//MARK: - ActionSection
+
+"ActionSection.Button.Title.LetsGo" = "Let’s Go";
+"ActionSection.Button.Title.BackToHome" = "Back to home";
+"ActionSection.Button.Title.NeedHelp" = "I Need Help";
+"ActionSection.Button.Title.TryAgain" = "Try Again";
+"ActionSection.Button.Title.NextTip" = "Next Tip";
+"ActionSection.Button.Title.UploadFile" = "Upload File";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+
+//MARK: - NFCAndMrzReadingFlowIntroController
+
+"NFCAndMrzReadingFlowIntro.Title" = "Chip Verification";
+"NFCAndMrzReadingFlowIntro.PassportScan.Description" = "Passport Scan";
+"NFCAndMrzReadingFlowIntro.ChipReading.Description" = "Chip Reading";
+
+//MARK: - NFCAndMrzReadingIssueController
+
+"NFCAndMrzReadingIssueController.Title" = "Chip Reading";
+"NFCAndMrzReadingIssueController.Description" = "We are unable to continue, NFC option is not availabe in your device.";
+
+//MARK: - MRZPassportScaningViewController
+
+"MRZPassportScaningViewController.Title" = "Scan Your Passport";
+"MRZPassportScaningViewController.Alert.Timeout.Title" = "Session Timeout";
+"MRZPassportScaningViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
+
+//MARK: - NFCReadingIntroViewController
+
+"NFCReadingIntroViewController.Title" = "Chip Reading";
+"NFCReadingIntroViewController.Description" = "Place your ID behind your phone and click “Let’s Go”";
+
+//MARK: - NFCReadingViewController
+
+"NFCReadingViewController.Title" = "Chip Reading";
+"NFCReadingViewController.GuidingMessage.Searching" = "Searching NFC Chip";
+"NFCReadingViewController.GuidingMessage.AuthenticatingChip" = "Authenticating Chip";
+"NFCReadingViewController.GuidingMessage.Extracting" = "Extracting";
+"NFCReadingViewController.GuidingMessage.AuthenticatingPassport" = "Authenticating Passport";
+"NFCReadingViewController.Process.Started.Desciption" = "Keep your ID close to the device";
+"NFCReadingViewController.Process.Succeeded.Desciption" = "Success!";
+"NFCReadingViewController.Process.Failed.Desciption" = "Something Went Wrong";
+
+//MARK: - NFCReadingHelpViewController
+
+"NFCReadingHelpViewController.Title" = "Chip Reading";
+"NFCReadingHelpViewController.NFCReading.Description" = "Please keep your passport close to the device through the whole process";
+"NFCReadingHelpViewController.PhoneCover.Description" = "Phone covers or magnets can interrupt the NFC reading";
+"NFCReadingHelpViewController.NFCSettings.Description" = "Make sure you enabled the NFC option in your device settings";
+
+//MARK: - DataExtractionView
+
+"DataExtractionView.Process.Ready.Desciption" = "Reading Started";
+"DataExtractionView.Process.Started.Desciption" = "Extracting\nData...";
+
+//MARK: - CameraIssueViewController
+
+"CameraIssueViewController.PermissionDenied.Title" = "Camera Permission Denied";
+"CameraIssueViewController.PermissionDenied.Description" = "Please allow access to your camera";
