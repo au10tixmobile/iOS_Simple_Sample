@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<data>
-		flf4hVUP24wlHXqRm17Ecngfy98=
+		iyL4OMpWykrawzDDRB6SFWiR+oM=
 		</data>
 		<key>Headers/Au10tixSecureMeKit.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2LCYQhvv+J/GWEfHFdA8LTp7YmQ=
+		C5aJe5X8zjNvzimzVG90Yj2t8fo=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/gSGkoXS4ihL9EEREKM3Lhb9mOc=
+		dPac/ioAEVmadnP+M27cqiNZUFY=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,12 +38,21 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/gSGkoXS4ihL9EEREKM3Lhb9mOc=
+		dPac/ioAEVmadnP+M27cqiNZUFY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		DgG/AHjAyrVpr6Og0kgiukRGDFs=
 		</data>
+		<key>en.lproj/SecureMeLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+0WP2BvpOeQR4eqH1yUEKpanyXo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -51,7 +60,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2EWMvUnM6hNKJXbis39uo+s2G9zUm+lhrg4blxVVSH8=
+			NRm1jn2qe2DECUOp6LsC9pvc8VPoc70HJQlHo8dHSO8=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSecureMeKit.h</key>
@@ -79,7 +88,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kqheG87XdM0splCLgxfld3j79Qm467rr3Wek3Hn/F3s=
+			t14tKoqJnS00IwzPKgs1uhwOzieEms5p+BIioA7KPww=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
@@ -100,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kqheG87XdM0splCLgxfld3j79Qm467rr3Wek3Hn/F3s=
+			t14tKoqJnS00IwzPKgs1uhwOzieEms5p+BIioA7KPww=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -109,6 +118,15 @@
 			<data>
 			e4azmPP9T0+sTG3hNWIWCNdi4MCmFYLJSWIPkGJAS6A=
 			</data>
+		</dict>
+		<key>en.lproj/SecureMeLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yqdToQEniQtwryxKcHshtDBj1Z8ev0VMHGyZ4Qp6Bhw=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

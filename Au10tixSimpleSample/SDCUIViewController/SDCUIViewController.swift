@@ -99,7 +99,7 @@ private extension SDCUIViewController {
 private extension SDCUIViewController {
     
     @IBAction func takeStillImage() {
-        sdcSession.captureImage()
+        sdcSession.captureImage(.cameraCapture)
     }
     
 }

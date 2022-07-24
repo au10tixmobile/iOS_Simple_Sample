@@ -5,6 +5,7 @@ import Au10tixCore
 import Au10tixDetectorManager
 @_exported import Au10tixPassiveFaceLivenessKit
 import Au10tixSourceManager
+import CoreGraphics
 import CoreVideo
 import Foundation
 import Swift
@@ -87,6 +88,8 @@ public enum QualityFault : Swift.Int {
   case unstable
   case deviceNotVerticle
   case faceNotDetectedInImage
+  case helmetNotDetectedInImageAuto
+  case helmetNotDetectedInImageManual
   case tooManyFaces
   case faceTooFarFromCamera
   case faceTooCloseToCamera
@@ -111,11 +114,13 @@ public enum PFLSessionError : Swift.Error {
   case retriesEnded
   case livenessCheckNetworkTimeout
   case livenessCheckFailed(error: Swift.Error)
+  case helmetCheckNetworkTimeout
+  case helmetCheckFailed(error: Swift.Error)
   case networkError(_: Swift.Error)
   case recordingFailed(_: Au10tixCore.ScreenRecorderError)
 }
 public protocol PFLSessionDelegate : AnyObject {
-  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions, faceBoundingBox: CoreGraphics.CGRect?)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions, faceBoundingBox: CoreGraphics.CGRect?, isHelmet: Swift.Bool, asHat: Swift.Double, asHelmet: Swift.Double, asNone: Swift.Double)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didRecieve qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didConcludeWith result: Au10tixPassiveFaceLivenessKit.PFLResponse, for image: Foundation.Data)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
@@ -156,6 +161,8 @@ public enum ValidationFlow : Swift.Int {
   public var isEmbeddedInAnotherSession: Swift.Bool
   public var detectionDelay: Foundation.TimeInterval?
   public var isMicrophoneEnabled: Swift.Bool
+  public var detectHelmet: Swift.Bool
+  public var faceDetectionInManualCapture: Swift.Bool
   public var validationFlow: Au10tixPassiveFaceLivenessKit.ValidationFlow {
     get
   }
@@ -163,7 +170,7 @@ public enum ValidationFlow : Swift.Int {
   public func set(responseQueue: Dispatch.DispatchQueue)
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
-  public func captureImage()
+  public func captureImage(_ source: Au10tixCore.Au10ImageSource)
   public func pauseCamera()
   public func resumeCamera()
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)

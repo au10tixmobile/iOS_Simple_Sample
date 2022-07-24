@@ -21,7 +21,7 @@ public protocol Au10tixSourceManagerProtocol {
   func stopCameraSession()
   func stopAllSessions()
   func canCaptureStillImage() -> Swift.Bool
-  func captureStillImage()
+  func captureStillImage(_ source: Au10tixCore.Au10ImageSource)
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   func resumeCamera()
   func pauseCamera()
@@ -128,7 +128,7 @@ public struct CameraConfiguration {
 }
 final public class CaptureSampleUpdate {
   final public let sample: Foundation.Data
-  final public let source: Au10tixCore.Au10ImageSource
+  final public var source: Au10tixCore.Au10ImageSource
   final public let exifOrientation: ImageIO.CGImagePropertyOrientation
   public init(sample: Foundation.Data, source: Au10tixCore.Au10ImageSource, exifOrientation: ImageIO.CGImagePropertyOrientation)
   final public var isAlbum: Swift.Bool {
@@ -176,7 +176,7 @@ final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManager
   final public func pauseCamera()
   final public func stopAllSessions()
   final public func canCaptureStillImage() -> Swift.Bool
-  final public func captureStillImage()
+  final public func captureStillImage(_ source: Au10tixCore.Au10ImageSource)
   final public func provide(image data: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   final public func setFaceMetadataDetection(delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)
   final public func setMetadataDetection(of types: [Au10tixSourceManager.MetadataObjectType], delegate: Au10tixSourceManager.Au10MetadataOutputDelegate)

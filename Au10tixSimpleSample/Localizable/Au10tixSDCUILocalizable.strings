@@ -1,0 +1,51 @@
+/* 
+  SDCUILocalizable.strings
+  DebugApp
+
+  Created by Mohammad Kittany on 26/05/2022.
+  Copyright © 2022 Au10tix. All rights reserved.
+*/
+
+//MARK: - ActionSection
+
+"ActionSection.Button.Title.LetsGo" = "Let’s Go";
+"ActionSection.Button.Title.TryAgain" = "Try Again";
+"ActionSection.Button.Title.UploadFile" = "Upload File";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+"ActionSection.Button.Title.BackToHome" = "Back to home";
+
+//MARK: - SDCIntoViewController
+
+"SDCIntoViewController.Title" = "Capture Your Document";
+
+//MARK: - SDCScannerViewController
+
+"SDCScannerViewController.Title.Front" = "Capture ID Front";
+"SDCScannerViewController.Title.Back" = "Back Side";
+"SDCScannerViewController.Title.ImageReview" = "Image Review";
+"SDCScannerViewController.Alert.Timeout.Title" = "Session Timeout";
+"SDCScannerViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
+"SDCScannerViewController.Feedback.TakeAPictureOfYourIdFormat" = "Position your ID in the frame";
+"SDCScannerViewController.Feedback.BadQuality" = "Bad image quality";
+"SDCScannerViewController.Feedback.NoIdFound" = "Auto capture mode.\nSearching for ID…";
+"SDCScannerViewController.Feedback.BadQualityExternalFirstTry" = "Please try again";
+"SDCScannerViewController.Feedback.NoIdFoundExternalFirstTry" = "No ID detected, Please try again";
+"SDCScannerViewController.Feedback.HappyWithTheResults" = "Happy with the result?\nIf not, try again";
+"SDCScannerViewController.Feedback.HoldSteady" = "Hold steady";
+"SDCScannerViewController.Feedback.PhotoLibraryImageFeedback" = "We can't detect ID in the frame.\nPlease make sure to use an image with an ID.";
+"SDCScannerViewController.Feedback.TooFar" = "Get closer";
+"SDCScannerViewController.Feedback.TooClose" = "Too close";
+"SDCScannerViewController.Feedback.OutOfFrame" = "Position your ID in the frame";
+"SDCScannerViewController.Feedback.IDBackOutOfFrame" = "Position the back of your ID in the frame";
+"SDCScannerViewController.Feedback.VerticallyAligned" = "ID is vertically aligned";
+
+//MARK: - CameraIssueViewController
+
+"CameraIssueViewController.PermissionDenied.Title" = "Camera Permission Denied";
+"CameraIssueViewController.PermissionDenied.AllowUploadDescription" = "Please allow access to your camera or upload a file";
+"CameraIssueViewController.PermissionDenied.Description" = "Please allow access to your camera";
+"CameraIssueViewController.Unavailable.Title" = "Oops!";
+"CameraIssueViewController.Unavailable.AllowUploadDescription" = "We couldn’t find your camera, go back home or upload a file.";
+"CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera.";
+

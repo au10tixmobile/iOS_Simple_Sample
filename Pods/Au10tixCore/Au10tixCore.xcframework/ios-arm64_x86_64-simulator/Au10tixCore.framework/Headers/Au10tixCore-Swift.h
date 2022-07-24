@@ -254,7 +254,8 @@ SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
 @property (nonatomic, strong) Au10Quadrangle * _Nullable quad;
 @property (nonatomic, copy) NSData * _Nullable data;
 @property (nonatomic, strong) Au10Image * _Nullable image;
-- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) Au10Image * _Nullable originalImage;
+- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image originalImage:(Au10Image * _Nullable)originalImage OBJC_DESIGNATED_INITIALIZER;
 /// Returns the image cropped according to quad data
 - (Au10Image * _Nullable)croppedImage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -571,7 +572,8 @@ SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
 @property (nonatomic, strong) Au10Quadrangle * _Nullable quad;
 @property (nonatomic, copy) NSData * _Nullable data;
 @property (nonatomic, strong) Au10Image * _Nullable image;
-- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) Au10Image * _Nullable originalImage;
+- (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image originalImage:(Au10Image * _Nullable)originalImage OBJC_DESIGNATED_INITIALIZER;
 /// Returns the image cropped according to quad data
 - (Au10Image * _Nullable)croppedImage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
