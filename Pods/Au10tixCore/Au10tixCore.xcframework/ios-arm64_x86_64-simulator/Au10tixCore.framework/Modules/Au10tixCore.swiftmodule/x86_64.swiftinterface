@@ -144,7 +144,7 @@ public protocol ImageProvidableSession {
 }
 public struct MultipartDataBuilder {
   public struct Params {
-    public init(name: Swift.String, value: Swift.String?, data: Foundation.Data?)
+    public init(name: Swift.String, value: Swift.String?, data: Foundation.Data?, manipulate: Swift.Bool = true)
   }
   public init(boundary: Swift.String)
   public func insert(params: [Au10tixCore.MultipartDataBuilder.Params], to multipart: Foundation.Data) -> Foundation.Data
@@ -568,6 +568,7 @@ open class TokenLifeCycleHandler {
   public var boundingBox: CoreGraphics.CGRect?
   @objc public var data: Foundation.Data?
   @objc public var image: Au10tixCore.Au10Image?
+  @objc public var originalImage: Au10tixCore.Au10Image?
   public var topLeft: CoreGraphics.CGPoint? {
     get
   }
@@ -580,7 +581,7 @@ open class TokenLifeCycleHandler {
   public var bottomRight: CoreGraphics.CGPoint? {
     get
   }
-  @objc public init(image: Au10tixCore.Au10Image?)
+  @objc public init(image: Au10tixCore.Au10Image?, originalImage: Au10tixCore.Au10Image? = nil)
   @objc public func croppedImage() -> Au10tixCore.Au10Image?
   @objc deinit
 }
@@ -666,7 +667,7 @@ final public class ScreenRecorder {
   final public func stopRecording(with completion: Au10tixCore.ScreenRecorder.Completion? = nil)
 }
 public protocol CameraSession {
-  func captureImage()
+  func captureImage(_ source: Au10tixCore.Au10ImageSource)
   func pauseCamera()
   func resumeCamera()
   func prefersAspectFillCameraPreview()

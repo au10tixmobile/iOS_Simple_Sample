@@ -74,7 +74,6 @@ public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
 }
 extension Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
-  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCaptureImage image: Au10tixCore.Au10Image)
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
   public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
 }
@@ -98,7 +97,7 @@ public struct Au10MachineReadableCode {
   public func setRectOfInterest(startX: CoreGraphics.CGFloat, endX: CoreGraphics.CGFloat, startY: CoreGraphics.CGFloat, endY: CoreGraphics.CGFloat) throws
   public func start(with token: Swift.String, previewView: UIKit.UIView, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
-  public func captureImage()
+  public func captureImage(_ source: Au10tixCore.Au10ImageSource)
   public func pauseCamera()
   public func resumeCamera()
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)

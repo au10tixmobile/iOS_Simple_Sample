@@ -6,59 +6,59 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		1a6ZdUt75qNH2wXLm243RSwX5jg=
-		</data>
-		<key>Au10tixLocalizable.strings</key>
-		<data>
-		4JwZ204mlPqMlb6MzDzscf0M/+0=
+		D9KxATVOO8XdjuOpM6fO1AHeZNc=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		KIHLMkrN/KZlLOPnHHwf1OyMAAU=
+		w4EQQwMtB6edy3BgbYyn/9rZxF8=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
-		lX0KcmUlJi4Jrs033XvNZB1NMEU=
+		1Gbl/+bERNs9jZVWfsNaK71Q54Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GjoQCtuXHLSAGqMnKLTYyOmw9Zs=
+		H4ZtziRUvqPkaboSbraFbeF4Uj0=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		dq1mWd2TFluhiha/nyKoZ8B0Mp4=
+		7R808KcpX+KumsaBb29z1pfjCsY=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0vxNvy7kmigjRWfCJRe4/xA5sOY=
+		phVomPhQsGplEVMTrd5NUhtyZxo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NyOU3/DKJOmiJ9Xywrz54EP68oE=
+		SFDbAUneLPoqBBszEWWXuhYOFIs=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		dq1mWd2TFluhiha/nyKoZ8B0Mp4=
+		7R808KcpX+KumsaBb29z1pfjCsY=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		0vxNvy7kmigjRWfCJRe4/xA5sOY=
+		phVomPhQsGplEVMTrd5NUhtyZxo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NyOU3/DKJOmiJ9Xywrz54EP68oE=
+		SFDbAUneLPoqBBszEWWXuhYOFIs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lGaqQ3FqjCnKSXdz9FRxFBvTeLA=
 		</data>
-		<key>Montserrat-SemiBold.ttf</key>
+		<key>montserrat_medium.ttf</key>
 		<data>
-		IBzO5dyx6dOHFhaPOlZZimgI7VE=
+		b9cDALfhmqGRpesG3AN0xGypfcs=
 		</data>
 		<key>montserrat_regular.ttf</key>
 		<data>
 		0ls1JC3rHG/4iLgWLKKqzDVtOJk=
+		</data>
+		<key>montserrat_semiBold.ttf</key>
+		<data>
+		IBzO5dyx6dOHFhaPOlZZimgI7VE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,70 +67,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rBXcim3gjhminNu8A6shDYN36LXd8TN1mnyNUKGtoHc=
-			</data>
-		</dict>
-		<key>Au10tixLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3Zmyib9HT7FFMuDXsZXB0FbXg8TwzM11m2fMDqzFl40=
+			+aCRQAQIcq3hUxyH4U2VnrcMMHasbRhCSM2lhFOivQo=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2BWBqOXFx10ovxSHUkBUvMdbTeMXWvLKjFplbRR5oq0=
+			KuCKQN3yajHAHsNsptZwriybozjAjgGwLx22LNMMRfY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3naSxVq74DkeT2IhDIujfAH/eGj3Kgvv/MKK8gK67A=
+			1yBvlvWHQxbvMdRZ9EoKkLDKt2CdNjZsUCGZnyNA0DI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5zEgz1qp1AlO2R7ONYL8CK/Cs1UGRFTym0lKVsYf2Mg=
+			mZy7SVf8sMkS7ZdFYaF6moh5d97ZSbAoQrIy5RZclfU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNZ/sz50GpN26OJZtKtyUpNu7qNfKvEvVBtVyM+fKgg=
+			9ah1mcriXQPxJRMzgcI+I4zqoKNupIxQOom3Qg2dL+8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XYOGTzlzEfDPiW15viyANjJCdkzKLqBaniOQ2S3J38g=
+			sIAsSF0+HYtQqCgsdiVHTRJJIcpm/ugeKJ14JAv3zzo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5zEgz1qp1AlO2R7ONYL8CK/Cs1UGRFTym0lKVsYf2Mg=
+			mZy7SVf8sMkS7ZdFYaF6moh5d97ZSbAoQrIy5RZclfU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNZ/sz50GpN26OJZtKtyUpNu7qNfKvEvVBtVyM+fKgg=
+			9ah1mcriXQPxJRMzgcI+I4zqoKNupIxQOom3Qg2dL+8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XYOGTzlzEfDPiW15viyANjJCdkzKLqBaniOQ2S3J38g=
+			sIAsSF0+HYtQqCgsdiVHTRJJIcpm/ugeKJ14JAv3zzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,11 +133,11 @@
 			Bso5M7HVZcNYlIlkLpoKB67FtCtsrdCW7/+cnzLmlKU=
 			</data>
 		</dict>
-		<key>Montserrat-SemiBold.ttf</key>
+		<key>montserrat_medium.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yb2rCP1YR8LFfHiBfO7YmaLrWVd++tePBz4Nv5mWybU=
+			c4Ey1HsVhgQl8wQYIctkW1jdVsJNTPGUjXYw/TeDcfM=
 			</data>
 		</dict>
 		<key>montserrat_regular.ttf</key>
@@ -152,6 +145,13 @@
 			<key>hash2</key>
 			<data>
 			B3zasVFhIyqbpxJNLd16lCUUV1B4jpqWbBVsxmJ09SU=
+			</data>
+		</dict>
+		<key>montserrat_semiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yb2rCP1YR8LFfHiBfO7YmaLrWVd++tePBz4Nv5mWybU=
 			</data>
 		</dict>
 	</dict>

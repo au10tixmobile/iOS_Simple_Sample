@@ -78,7 +78,7 @@ private extension POAUIViewController {
 private extension POAUIViewController {
     
     @IBAction func takeStillImage() {
-        poaSession.captureImage()
+        poaSession.captureImage(.cameraCapture)
     }
 }
 

@@ -209,26 +209,82 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
-@class NSNumber;
-@class NSString;
-@class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC13Au10tixBaseUI37ScreenRecordingDeclinedViewController")
-@interface ScreenRecordingDeclinedViewController : UIViewController
+SWIFT_CLASS("_TtC13Au10tixBaseUI10BaseUIView")
+@interface BaseUIView : UIView
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI18BaseViewController")
+@interface BaseViewController : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI20BaseUIViewController")
+@interface BaseUIViewController : BaseViewController
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI25CameraIssueViewController")
+@interface CameraIssueViewController : BaseUIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI17CameraPreviewView")
+@interface CameraPreviewView : BaseUIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI22DescriptionPreviewView")
+@interface DescriptionPreviewView : BaseUIView
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
+@interface ImagePicker : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImagePickerController;
+
+@interface ImagePicker (SWIFT_EXTENSION(Au10tixBaseUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+
+
+
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
-@class NSNotification;
 
 /// An abstract base class for UI-Components ViewController
 /// Do not use this class directrly, use its subclasses instead
@@ -240,7 +296,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 ///
 /// returns:
 /// A beautiful, brand-new SDCViewController, custom-built just for you.
-- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigs:(Au10xUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentViewControllerNavigationDelegate> _Nullable)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
 /// A required Initializer for UIComponentBaseViewController with storyboard
 /// This init is not supported because you can not pass configs
 /// \param coder The object represent data driven from Storyboard
@@ -249,31 +305,10 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI29UIComponentBaseViewController")
 /// returns:
 /// A fatal error
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (void)leftButtonAction;
-- (void)rightButtonAction;
-- (void)mainButtonAction;
-/// Close the UIComponent View Controller using UIViewController’s dismiss method
-- (void)closeButtonAction;
-/// Subclass should impelement back button functionality
-- (void)backButtonAction;
-- (void)handleCameraDidOpen:(NSNotification * _Nonnull)note;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-
-
-
-
-@class UIImagePickerController;
-
-@interface UIComponentBaseViewController (SWIFT_EXTENSION(Au10tixBaseUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
-@end
-
-
+@class NSNumber;
 
 /// A class to represent the UI configurations for UI-Components View Controller
 SWIFT_CLASS_NAMED("UIComponentConfigs")
@@ -299,23 +334,6 @@ SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate
 - (void)uiComponentViewControllerDidFinish:(UIComponentBaseViewController * _Nonnull)controller;
 - (void)uiComponentViewControllerDidPressClose:(UIComponentBaseViewController * _Nonnull)controller;
 @end
-
-
-SWIFT_CLASS("_TtC13Au10tixBaseUI18UICompsButtonsView")
-@interface UICompsButtonsView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-
-
-SWIFT_CLASS("_TtC13Au10tixBaseUI26UICompsIntroViewController")
-@interface UICompsIntroViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 
 

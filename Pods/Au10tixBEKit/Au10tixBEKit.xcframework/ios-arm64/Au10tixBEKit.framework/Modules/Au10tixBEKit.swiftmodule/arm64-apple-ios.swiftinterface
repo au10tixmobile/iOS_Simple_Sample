@@ -37,12 +37,14 @@ public enum DataType : Swift.Int {
   case idDocBack
   case imageForCompare
   case poa
-  case nfcData
+  case nfcDG1
   case personalDetails
   case afl
   case secondImageForCompare
   case pflScreenRecording
   case aflScreenRecording
+  case nfcDG2
+  case nfcDG7
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

@@ -190,6 +190,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -206,6 +210,167 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixLivenessUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+
+
+@class Au10xOldUIComponentConfigs;
+@protocol UIComponentOldViewControllerNavigationDelegate;
+@class NSCoder;
+@class NSNotification;
+@class NSString;
+@class NSBundle;
+
+/// An abstract base class for UI-Components ViewController
+/// Do not use this class directrly, use its subclasses instead
+SWIFT_CLASS("_TtC17Au10tixLivenessUI32UIComponentOldBaseViewController")
+@interface UIComponentOldBaseViewController : UIViewController
+/// Initializes a new UIComponentBaseViewController with the provided configurations.
+/// \param configs The basic UI configurations (logo, colors)
+///
+///
+/// returns:
+/// A beautiful, brand-new SDCViewController, custom-built just for you.
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+/// A required Initializer for UIComponentBaseViewController with storyboard
+/// This init is not supported because you can not pass configs
+/// \param coder The object represent data driven from Storyboard
+///
+///
+/// returns:
+/// A fatal error
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (void)leftButtonAction;
+- (void)rightButtonAction;
+- (void)mainButtonAction;
+/// Close the UIComponent View Controller using UIViewController’s dismiss method
+- (void)closeButtonAction;
+/// Subclass should impelement back button functionality
+- (void)backButtonAction;
+- (void)handleCameraDidOpen:(NSNotification * _Nonnull)note;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI26LivenessFlowViewController")
+@interface LivenessFlowViewController : UIComponentOldBaseViewController
+- (void)viewDidLoad;
+- (void)mainButtonAction;
+- (void)closeButtonAction;
+- (void)backButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_PROTOCOL("_TtP17Au10tixLivenessUI46UIComponentOldViewControllerNavigationDelegate_")
+@protocol UIComponentOldViewControllerNavigationDelegate
+- (void)uiComponentViewControllerDidFinish:(UIComponentOldBaseViewController * _Nonnull)controller;
+- (void)uiComponentViewControllerDidPressClose:(UIComponentOldBaseViewController * _Nonnull)controller;
+@end
+
+
+@interface LivenessFlowViewController (SWIFT_EXTENSION(Au10tixLivenessUI)) <UIComponentOldViewControllerNavigationDelegate>
+- (void)uiComponentViewControllerDidFinish:(UIComponentOldBaseViewController * _Nonnull)controller;
+- (void)uiComponentViewControllerDidPressClose:(UIComponentOldBaseViewController * _Nonnull)controller;
+@end
+
+
+@class NSNumber;
+
+/// PFLViewController provide an UI/UX for using Au10Tix’s Passive-Face-Liveness Feature
+SWIFT_CLASS_NAMED("OLDPFLViewController")
+@interface Au10xOLDPFLViewController : UIComponentOldBaseViewController
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)mainButtonAction;
+- (void)leftButtonAction;
+- (void)closeButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI26UICompsIntroViewController")
+@interface UICompsIntroViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI22PFLIntroViewController")
+@interface PFLIntroViewController : UICompsIntroViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI37ScreenRecordingDeclinedViewController")
+@interface ScreenRecordingDeclinedViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+@class UIImagePickerController;
+
+@interface UIComponentOldBaseViewController (SWIFT_EXTENSION(Au10tixLivenessUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI18UICompsButtonsView")
+@interface UICompsButtonsView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+
+
+
+
+/// A class to represent the UI configurations for UI-Components View Controller
+SWIFT_CLASS_NAMED("UIOldComponentConfigs")
+@interface Au10xOldUIComponentConfigs : NSObject
+/// Initializes a new UIComponentConfigs
+/// \param showCloseButton Determine whether to display close button
+///
+/// \param showPrimaryButton Determine whether to display primary button
+///
+/// \param canUploadImage Determine whether uploading image from photo library is supported
+///
+///
+/// returns:
+/// An instance of UIComponentConfigs
+- (nonnull instancetype)initWithShowCloseButton:(BOOL)showCloseButton showPrimaryButton:(BOOL)showPrimaryButton canUploadImage:(BOOL)canUploadImage shouldDisplayIntro:(BOOL)shouldDisplayIntro flowConfig:(NSDictionary<NSString *, id> * _Nullable)flowConfig OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -406,6 +571,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -422,6 +591,167 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="Au10tixLivenessUI",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+
+
+@class Au10xOldUIComponentConfigs;
+@protocol UIComponentOldViewControllerNavigationDelegate;
+@class NSCoder;
+@class NSNotification;
+@class NSString;
+@class NSBundle;
+
+/// An abstract base class for UI-Components ViewController
+/// Do not use this class directrly, use its subclasses instead
+SWIFT_CLASS("_TtC17Au10tixLivenessUI32UIComponentOldBaseViewController")
+@interface UIComponentOldBaseViewController : UIViewController
+/// Initializes a new UIComponentBaseViewController with the provided configurations.
+/// \param configs The basic UI configurations (logo, colors)
+///
+///
+/// returns:
+/// A beautiful, brand-new SDCViewController, custom-built just for you.
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+/// A required Initializer for UIComponentBaseViewController with storyboard
+/// This init is not supported because you can not pass configs
+/// \param coder The object represent data driven from Storyboard
+///
+///
+/// returns:
+/// A fatal error
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (void)leftButtonAction;
+- (void)rightButtonAction;
+- (void)mainButtonAction;
+/// Close the UIComponent View Controller using UIViewController’s dismiss method
+- (void)closeButtonAction;
+/// Subclass should impelement back button functionality
+- (void)backButtonAction;
+- (void)handleCameraDidOpen:(NSNotification * _Nonnull)note;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI26LivenessFlowViewController")
+@interface LivenessFlowViewController : UIComponentOldBaseViewController
+- (void)viewDidLoad;
+- (void)mainButtonAction;
+- (void)closeButtonAction;
+- (void)backButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_PROTOCOL("_TtP17Au10tixLivenessUI46UIComponentOldViewControllerNavigationDelegate_")
+@protocol UIComponentOldViewControllerNavigationDelegate
+- (void)uiComponentViewControllerDidFinish:(UIComponentOldBaseViewController * _Nonnull)controller;
+- (void)uiComponentViewControllerDidPressClose:(UIComponentOldBaseViewController * _Nonnull)controller;
+@end
+
+
+@interface LivenessFlowViewController (SWIFT_EXTENSION(Au10tixLivenessUI)) <UIComponentOldViewControllerNavigationDelegate>
+- (void)uiComponentViewControllerDidFinish:(UIComponentOldBaseViewController * _Nonnull)controller;
+- (void)uiComponentViewControllerDidPressClose:(UIComponentOldBaseViewController * _Nonnull)controller;
+@end
+
+
+@class NSNumber;
+
+/// PFLViewController provide an UI/UX for using Au10Tix’s Passive-Face-Liveness Feature
+SWIFT_CLASS_NAMED("OLDPFLViewController")
+@interface Au10xOLDPFLViewController : UIComponentOldBaseViewController
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)mainButtonAction;
+- (void)leftButtonAction;
+- (void)closeButtonAction;
+- (nonnull instancetype)initWithConfigs:(Au10xOldUIComponentConfigs * _Nonnull)configs navigationDelegate:(id <UIComponentOldViewControllerNavigationDelegate> _Nonnull)navigationDelegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI26UICompsIntroViewController")
+@interface UICompsIntroViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI22PFLIntroViewController")
+@interface PFLIntroViewController : UICompsIntroViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI37ScreenRecordingDeclinedViewController")
+@interface ScreenRecordingDeclinedViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+@class UIImagePickerController;
+
+@interface UIComponentOldBaseViewController (SWIFT_EXTENSION(Au10tixLivenessUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC17Au10tixLivenessUI18UICompsButtonsView")
+@interface UICompsButtonsView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+
+
+
+
+/// A class to represent the UI configurations for UI-Components View Controller
+SWIFT_CLASS_NAMED("UIOldComponentConfigs")
+@interface Au10xOldUIComponentConfigs : NSObject
+/// Initializes a new UIComponentConfigs
+/// \param showCloseButton Determine whether to display close button
+///
+/// \param showPrimaryButton Determine whether to display primary button
+///
+/// \param canUploadImage Determine whether uploading image from photo library is supported
+///
+///
+/// returns:
+/// An instance of UIComponentConfigs
+- (nonnull instancetype)initWithShowCloseButton:(BOOL)showCloseButton showPrimaryButton:(BOOL)showPrimaryButton canUploadImage:(BOOL)canUploadImage shouldDisplayIntro:(BOOL)shouldDisplayIntro flowConfig:(NSDictionary<NSString *, id> * _Nullable)flowConfig OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 

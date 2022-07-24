@@ -6,11 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MrWlawDvFiT3YHSWgtewEPicq/g=
+		3v1uXdR8bV1wtdCbjLUj2qYVsao=
+		</data>
+		<key>Au10tixLocalizable.strings</key>
+		<data>
+		i2af3QJkMHQ4sjmbMvuNxLjOLOo=
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
-		+SlamXWDLdj1l08ILnl2PB0A8f4=
+		vB3PWNmLyaPd1ubEt0LXT8x9uXE=
 		</data>
 		<key>Headers/Au10tixLivenessUI.h</key>
 		<data>
@@ -18,35 +22,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cStViV+vAlDQAWgAgH7e/Th5Hm8=
+		QAS5RFHAnfb7/wPzEEpkrer+jbA=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3qGoQPB+EC1c3A5qwJ3ROf5tjj8=
+		7/AWH7g/PG/ZvTOe9JE21RUZLP0=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		2T7S4YvcQv30D4MuQXacDAZVkDI=
+		ZEU2hymQbSpsVLJKM2SAif0j7wU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Xdss06Yy8KBGGJjJMRGaS/lDP/A=
+		vuPS8+DLtyFIZUqzkmWQAyNz+es=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		3qGoQPB+EC1c3A5qwJ3ROf5tjj8=
+		7/AWH7g/PG/ZvTOe9JE21RUZLP0=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		2T7S4YvcQv30D4MuQXacDAZVkDI=
+		ZEU2hymQbSpsVLJKM2SAif0j7wU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Xdss06Yy8KBGGJjJMRGaS/lDP/A=
+		vuPS8+DLtyFIZUqzkmWQAyNz+es=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		VzmLSzDX4O6Cd6hfEZnQwIQ15R4=
+		</data>
+		<key>Montserrat-SemiBold.ttf</key>
+		<data>
+		IBzO5dyx6dOHFhaPOlZZimgI7VE=
 		</data>
 		<key>afl_error.mp3</key>
 		<data>
@@ -56,6 +64,10 @@
 		<data>
 		nto7d/quyKbb1yvFmQtye3n94A8=
 		</data>
+		<key>montserrat_regular.ttf</key>
+		<data>
+		0ls1JC3rHG/4iLgWLKKqzDVtOJk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -63,14 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4C9GfITtwltyTkXayhGvEtuCm0beeM9sb3BjIxjOEYw=
+			WEprHe6akZI305B36jpEMZHG9vPAx6i6CqkJEa+2dms=
+			</data>
+		</dict>
+		<key>Au10tixLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HlZEIQw8RlpF2iBUJsUs1oc1XTU3N6wOlu4JX/Bjk8Y=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E7UoJghaV7ZaIFbK4F1B6izJdFce7DETTa1Ii9MRlcU=
+			ZqCRig4SJ25YtJkjdEW010cJKWrPKiliaefIqcC+llA=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI.h</key>
@@ -84,42 +103,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7KOpQ99muPGVpeD9AX9Fszmr/cQfwG4tDAbWqgKAVKQ=
+			2xFPHibxAx7XwPWLFcJ/FhaKGj6vfD/vDs1i44ktb9U=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oauoazRuy5nbkJUFAXsIpdSZ8TgppeCRgbDhuD/eIbQ=
+			XGPFdyGL4Mcr1s1SIH96wO1ZbjX+rfLcBCverl1zKUs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hO6BBeU7nAm5EMB1SrxfNkk24qpAK2hwefXeXQuDsw=
+			O80lH22OwZfG7uS0od1XRDCsqCLy3Yn5KSi/amMFgEQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7KOpQ99muPGVpeD9AX9Fszmr/cQfwG4tDAbWqgKAVKQ=
+			2xFPHibxAx7XwPWLFcJ/FhaKGj6vfD/vDs1i44ktb9U=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oauoazRuy5nbkJUFAXsIpdSZ8TgppeCRgbDhuD/eIbQ=
+			XGPFdyGL4Mcr1s1SIH96wO1ZbjX+rfLcBCverl1zKUs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hO6BBeU7nAm5EMB1SrxfNkk24qpAK2hwefXeXQuDsw=
+			O80lH22OwZfG7uS0od1XRDCsqCLy3Yn5KSi/amMFgEQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -127,6 +146,13 @@
 			<key>hash2</key>
 			<data>
 			F5ZwIFU9SWw37CN5C8v9h1Et/6Y6niHgtVKV0tYI0z0=
+			</data>
+		</dict>
+		<key>Montserrat-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yb2rCP1YR8LFfHiBfO7YmaLrWVd++tePBz4Nv5mWybU=
 			</data>
 		</dict>
 		<key>afl_error.mp3</key>
@@ -141,6 +167,13 @@
 			<key>hash2</key>
 			<data>
 			XtA89MDeLNWqYh3Q5pcyP6D2Sq8Tg28ZeFeCrvKgsfA=
+			</data>
+		</dict>
+		<key>montserrat_regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B3zasVFhIyqbpxJNLd16lCUUV1B4jpqWbBVsxmJ09SU=
 			</data>
 		</dict>
 	</dict>

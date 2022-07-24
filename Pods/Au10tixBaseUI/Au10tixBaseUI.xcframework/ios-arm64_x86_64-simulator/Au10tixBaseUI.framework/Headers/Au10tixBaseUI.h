@@ -2,8 +2,8 @@
 //  Au10tixBaseUI.h
 //  Au10tixBaseUI
 //
-//  Created by Assaf Halfon on 22/04/2021.
-//  Copyright © 2021 Au10tix. All rights reserved.
+//  Created by Mohammad Kittany on 27/06/2022.
+//  Copyright © 2022 Au10tix. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
