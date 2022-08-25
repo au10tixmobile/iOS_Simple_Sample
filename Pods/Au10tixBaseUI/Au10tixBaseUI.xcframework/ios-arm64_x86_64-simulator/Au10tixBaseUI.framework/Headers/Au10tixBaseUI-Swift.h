@@ -285,6 +285,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
 
 
 
+
 @class Au10xUIComponentConfigs;
 @protocol UIComponentViewControllerNavigationDelegate;
 
@@ -630,6 +631,7 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
 @end
+
 
 
 

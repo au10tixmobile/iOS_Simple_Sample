@@ -90,6 +90,10 @@ public struct PreviewPage {
   public init(items: [Au10tixBaseUI.PreviewItem], sidePadding: CoreGraphics.CGFloat = 0)
 }
 extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isDarkMode: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func appearanceColor(_ themeColor: Au10tixBaseUI.UIThemeColor?) -> UIKit.UIColor?
   @_Concurrency.MainActor(unsafe) public func connect(to view: UIKit.UIView? = nil, with constraints: [Au10tixBaseUI.UIConnection])
 }
 extension UIKit.UIView {
@@ -104,11 +108,28 @@ extension UIKit.UIView {
 public struct UITheme {
   public static var shared: Au10tixBaseUI.UITheme
 }
-extension Au10tixBaseUI.UITheme {
-  public var successColor: UIKit.UIColor {
+extension UIKit.UIColor {
+  public static var successColor: UIKit.UIColor {
     get
   }
-  public var errorColor: UIKit.UIColor {
+  public static var errorColor: UIKit.UIColor {
+    get
+  }
+}
+extension Au10tixBaseUI.UIThemeColor {
+  public static var infoColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var backgroundColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var primaryColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var titleColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var buttonTextColor: Au10tixBaseUI.UIThemeColor {
     get
   }
 }
@@ -164,7 +185,7 @@ public struct ActionItem {
       get
     }
   }
-  public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreGraphics.CGFloat? = nil, width: CoreGraphics.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: UIKit.UIColor? = nil, strokeColor: UIKit.UIColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: UIKit.UIColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil)
+  public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreGraphics.CGFloat? = nil, width: CoreGraphics.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: Au10tixBaseUI.UIThemeColor? = nil, strokeColor: Au10tixBaseUI.UIThemeColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil)
 }
 @_hasMissingDesignatedInitializers public class FontGenerator {
   public static var shared: Au10tixBaseUI.FontGenerator
@@ -344,7 +365,7 @@ public struct AlertAction {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public func updateUI()
   @_Concurrency.MainActor(unsafe) public func presentNextPage()
-  @_Concurrency.MainActor(unsafe) public func startScannerAnimation(color: UIKit.UIColor?, boundariesFrame: CoreGraphics.CGRect, duration: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func startScannerAnimation(color: Au10tixBaseUI.UIThemeColor? = nil, boundariesFrame: CoreGraphics.CGRect, duration: Foundation.TimeInterval)
   @_Concurrency.MainActor(unsafe) open func closeSreenHandler()
   @_Concurrency.MainActor(unsafe) open func firstButtonHandler()
   @_Concurrency.MainActor(unsafe) open func secondButtonHandler()
@@ -354,7 +375,10 @@ public struct AlertAction {
   @objc deinit
 }
 public struct ProgressBarDatasource {
-  public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: UIKit.UIColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
+  public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: Au10tixBaseUI.UIThemeColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
+}
+public struct UIThemeColor {
+  public init(dark: UIKit.UIColor?, light: UIKit.UIColor?)
 }
 public enum PermissionStatus {
   case authorized
@@ -447,6 +471,18 @@ public struct ColorGenerator {
   public static var blue181244_grayF8F8FB: UIKit.UIColor {
     get
   }
+  public static var black1B1C1D: UIKit.UIColor {
+    get
+  }
+  public static var grayF8F8FB: UIKit.UIColor {
+    get
+  }
+  public static var redF95D5C: UIKit.UIColor {
+    get
+  }
+  public static var blue000120: UIKit.UIColor {
+    get
+  }
 }
 public struct VideoPermissionManager : Au10tixBaseUI.PermissionManager {
   public static var shared: Au10tixBaseUI.PermissionManager
@@ -530,7 +566,7 @@ public struct DescriptionPreviewItem : Au10tixBaseUI.PreviewItem {
   public var view: UIKit.UIView {
     get
   }
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], text: Swift.String? = nil, textColor: UIKit.UIColor? = nil)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], text: Swift.String? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil)
 }
 public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
   public var type: Au10tixBaseUI.PreviewItemType
@@ -538,8 +574,8 @@ public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
   public var view: UIKit.UIView {
     get
   }
-  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, showPlaceholderImage: Swift.Bool = true)
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, showPlaceholderImage: Swift.Bool = true, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
+  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, showPlaceholderImage: Swift.Bool = true)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, showPlaceholderImage: Swift.Bool = true, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
 }
 public enum ActionSectionType {
   case none
@@ -578,7 +614,7 @@ public enum CameraPreviewViewState : Swift.Equatable {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, camera: UIKit.UIView, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
+  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, camera: UIKit.UIView, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
   @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreGraphics.CGRect)
   @objc deinit
 }

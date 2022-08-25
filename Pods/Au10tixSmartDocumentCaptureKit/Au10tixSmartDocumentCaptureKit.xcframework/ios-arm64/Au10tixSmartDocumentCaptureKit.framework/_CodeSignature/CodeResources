@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5XMA+MyNt2p/uzWfFBBi+fo71Fo=
+		N9zoNB+hlI//F3hhnkGtu8hsS5g=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		vQ/srED0G4kXekwbW/86dfcOjxs=
+		xWJC6EoFlZQ2rTH7frcfeGk7RGA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/PmpfFY+UzAi/nXNXTCwTbFb64U=
+		7k/nP5SyfJ5k4NtNNmebidHsDwE=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zDgO0+562ZWk0Oly5/s9x5MpsB4=
+		O76zK17ZDJVt/V+l/xgbhAA+TxA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		vQ/srED0G4kXekwbW/86dfcOjxs=
+		xWJC6EoFlZQ2rTH7frcfeGk7RGA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		/PmpfFY+UzAi/nXNXTCwTbFb64U=
+		7k/nP5SyfJ5k4NtNNmebidHsDwE=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zDgO0+562ZWk0Oly5/s9x5MpsB4=
+		O76zK17ZDJVt/V+l/xgbhAA+TxA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3f/9JXEllu+MXhKLdLAMPyH9nNecBgvymBbz5UiMaPU=
+			pOSfPqjHdO0Hzz4oX8h12uPEUP1260DuFtxomGo4uvM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ngI8k4pTUg5Ba5b7gRPK2oAMzcXY5r58nHzIoTX5vI=
+			6m7FIouBZPjfUqemm4i5UVBtGIGD1fNX8w4I2IxjvaU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2c6E37dIY3oQC2oRJNixXWfA5XE/F1sQYR0U/EX47i0=
+			pd/K+DzuXRsqHftgdjTL5JYrYGo+WhHKaeidVOccxKA=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3f/9JXEllu+MXhKLdLAMPyH9nNecBgvymBbz5UiMaPU=
+			pOSfPqjHdO0Hzz4oX8h12uPEUP1260DuFtxomGo4uvM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ngI8k4pTUg5Ba5b7gRPK2oAMzcXY5r58nHzIoTX5vI=
+			6m7FIouBZPjfUqemm4i5UVBtGIGD1fNX8w4I2IxjvaU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2c6E37dIY3oQC2oRJNixXWfA5XE/F1sQYR0U/EX47i0=
+			pd/K+DzuXRsqHftgdjTL5JYrYGo+WhHKaeidVOccxKA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

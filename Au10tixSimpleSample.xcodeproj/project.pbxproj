@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25EF42FA288DB3100078EFFF /* Au10tixSDCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F3288DB3100078EFFF /* Au10tixSDCUILocalizable.strings */; };
-		25EF42FB288DB3100078EFFF /* Au10tixPFLUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F4288DB3100078EFFF /* Au10tixPFLUILocalizable.strings */; };
-		25EF42FC288DB3100078EFFF /* Au10tixHDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F5288DB3100078EFFF /* Au10tixHDUILocalizable.strings */; };
-		25EF42FD288DB3100078EFFF /* Au10tixPOAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F6288DB3100078EFFF /* Au10tixPOAUILocalizable.strings */; };
-		25EF42FE288DB3100078EFFF /* Au10tixSecureMeLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F7288DB3100078EFFF /* Au10tixSecureMeLocalizable.strings */; };
-		25EF42FF288DB3100078EFFF /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F8288DB3100078EFFF /* Au10tixLocalizable.strings */; };
-		25EF4300288DB3100078EFFF /* Au10tixNFCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25EF42F9288DB3100078EFFF /* Au10tixNFCUILocalizable.strings */; };
+		25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */; };
+		25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5928B7897900CC6F01 /* POAUILocalizable.strings */; };
+		25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */; };
+		25748C6228B7897900CC6F01 /* SDCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */; };
+		25748C6328B7897900CC6F01 /* NFCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */; };
+		25748C6428B7897900CC6F01 /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */; };
+		25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -41,13 +41,13 @@
 
 /* Begin PBXFileReference section */
 		200C10C9ACBD71262EB1237E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		25EF42F3288DB3100078EFFF /* Au10tixSDCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixSDCUILocalizable.strings; sourceTree = "<group>"; };
-		25EF42F4288DB3100078EFFF /* Au10tixPFLUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixPFLUILocalizable.strings; sourceTree = "<group>"; };
-		25EF42F5288DB3100078EFFF /* Au10tixHDUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixHDUILocalizable.strings; sourceTree = "<group>"; };
-		25EF42F6288DB3100078EFFF /* Au10tixPOAUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixPOAUILocalizable.strings; sourceTree = "<group>"; };
-		25EF42F7288DB3100078EFFF /* Au10tixSecureMeLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixSecureMeLocalizable.strings; sourceTree = "<group>"; };
-		25EF42F8288DB3100078EFFF /* Au10tixLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixLocalizable.strings; sourceTree = "<group>"; };
-		25EF42F9288DB3100078EFFF /* Au10tixNFCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixNFCUILocalizable.strings; sourceTree = "<group>"; };
+		25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SecureMeLocalizable.strings; sourceTree = "<group>"; };
+		25748C5928B7897900CC6F01 /* POAUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = POAUILocalizable.strings; sourceTree = "<group>"; };
+		25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PFLUILocalizable.strings; sourceTree = "<group>"; };
+		25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SDCUILocalizable.strings; sourceTree = "<group>"; };
+		25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = NFCUILocalizable.strings; sourceTree = "<group>"; };
+		25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixLocalizable.strings; sourceTree = "<group>"; };
+		25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HDUILocalizable.strings; sourceTree = "<group>"; };
 		2B481C64135558934482EB33 /* Pods-Au10Tix_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo/Pods-Au10Tix_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		77699341D615D2174EC54482 /* Pods-Au10tixSimpleSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10tixSimpleSample.debug.xcconfig"; path = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7F1CBAD3F9536BF60DC464 /* Pods-Au10Tix_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Au10Tix_DemoTests/Pods-Au10Tix_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,16 +96,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		25EF42F2288DB3100078EFFF /* Localizable */ = {
+		25748C5728B7897900CC6F01 /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
-				25EF42F3288DB3100078EFFF /* Au10tixSDCUILocalizable.strings */,
-				25EF42F4288DB3100078EFFF /* Au10tixPFLUILocalizable.strings */,
-				25EF42F5288DB3100078EFFF /* Au10tixHDUILocalizable.strings */,
-				25EF42F6288DB3100078EFFF /* Au10tixPOAUILocalizable.strings */,
-				25EF42F7288DB3100078EFFF /* Au10tixSecureMeLocalizable.strings */,
-				25EF42F8288DB3100078EFFF /* Au10tixLocalizable.strings */,
-				25EF42F9288DB3100078EFFF /* Au10tixNFCUILocalizable.strings */,
+				25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */,
+				25748C5928B7897900CC6F01 /* POAUILocalizable.strings */,
+				25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */,
+				25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */,
+				25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */,
+				25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */,
+				25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 				9C77473E25599DAB00D50830 /* MainViewController */,
 				9C9AD0092541842D004C8119 /* SDCUIViewController */,
 				9C9AD00A25418448004C8119 /* PFLUIViewController */,
+				25748C5728B7897900CC6F01 /* Localizable */,
 				9CA6D95F253749FC00E48DDD /* Main.storyboard */,
 				9CA6D959253749FC00E48DDD /* AppDelegate.swift */,
-				25EF42F2288DB3100078EFFF /* Localizable */,
 				9CA6D962253749FE00E48DDD /* Assets.xcassets */,
 				9CA6D964253749FE00E48DDD /* LaunchScreen.storyboard */,
 				9CA6D967253749FE00E48DDD /* Info.plist */,
@@ -254,16 +254,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */,
 				9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */,
-				25EF42FA288DB3100078EFFF /* Au10tixSDCUILocalizable.strings in Resources */,
+				25748C6228B7897900CC6F01 /* SDCUILocalizable.strings in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
-				25EF42FB288DB3100078EFFF /* Au10tixPFLUILocalizable.strings in Resources */,
-				25EF42FC288DB3100078EFFF /* Au10tixHDUILocalizable.strings in Resources */,
-				25EF42FF288DB3100078EFFF /* Au10tixLocalizable.strings in Resources */,
-				25EF4300288DB3100078EFFF /* Au10tixNFCUILocalizable.strings in Resources */,
-				25EF42FE288DB3100078EFFF /* Au10tixSecureMeLocalizable.strings in Resources */,
+				25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */,
+				25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */,
+				25748C6428B7897900CC6F01 /* Au10tixLocalizable.strings in Resources */,
+				25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */,
 				9CA6D961253749FC00E48DDD /* Main.storyboard in Resources */,
-				25EF42FD288DB3100078EFFF /* Au10tixPOAUILocalizable.strings in Resources */,
+				25748C6328B7897900CC6F01 /* NFCUILocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

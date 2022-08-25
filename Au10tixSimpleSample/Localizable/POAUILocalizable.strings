@@ -14,6 +14,17 @@
 "ActionSection.Button.Title.OpenSettings" = "Open Settings";
 "ActionSection.Button.Title.BackToHome" = "Back to home";
 
+//MARK: - Feedback
+"POAScannerViewController.Feedback.PositionDocument" = "Position your document in the frame";
+"POAScannerViewController.Feedback.BadQuality" = "Bad image quality";
+"POAScannerViewController.Feedback.NoPOAFound" = "Auto capture mode.\nSearching for document…";
+"POAScannerViewController.Feedback.BadQualityExternalFirstTry" = "Please try again";
+"POAScannerViewController.Feedback.NoPOAFoundExternalFirstTry" = "No document detected,\nPlease try again";
+"POAScannerViewController.Feedback.HappyWithTheResults" = "Happy with the result?\nIf not, try again";
+"POAScannerViewController.Feedback.HoldSteady" = "Hold steady";
+
+"POAScannerViewController.Feedback.PhotoLibraryImageFeedback" = "We can't detect document in the frame.\nPlease make sure to use a correct image.";
+
 //MARK: - POAIntroViewController
 
 "POAIntroViewController.Title" = "Confirm Address";
@@ -22,11 +33,8 @@
 //MARK: - POAScannerViewController
 
 "POAScannerViewController.Title" = "Confirm Address";
-"POACScannerViewController.Alert.Timeout.Title" = "Session Timeout";
+"POAScannerViewController.Alert.Timeout.Title" = "Session Timeout";
 "POAScannerViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
-"POAScannerViewController.Feedback.PositionDocument" = "Position your document in the frame";
-"POAScannerViewController.Feedback.ApproveDocument" = "Make sure your document
-is readable. If not, try again.";
 
 //MARK: - SDCCameraIssueViewController
 

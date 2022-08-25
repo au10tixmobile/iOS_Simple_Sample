@@ -16,27 +16,30 @@
 "ActionSection.Button.Title.UploadFile" = "Upload File";
 "ActionSection.Button.Title.OpenSettings" = "Open Settings";
 
-//MARK: - NFCAndMrzReadingFlowIntroController
 
-"NFCAndMrzReadingFlowIntro.Title" = "Chip Verification";
-"NFCAndMrzReadingFlowIntro.PassportScan.Description" = "Passport Scan";
-"NFCAndMrzReadingFlowIntro.ChipReading.Description" = "Chip Reading";
+//MARK: - NFCDocumentSelectionController
+"NFCDocumentSelectionController.Title" = "Chip Verification";
+"NFCDocumentSelectionController.Description" = "Select the type of the document";
+"NFCDocumentSelectionController.Button.Passport" = "Passport";
+"NFCDocumentSelectionController.Button.IDCard" = "ID Card";
 
-//MARK: - NFCAndMrzReadingIssueController
+//MARK: - NFCIntroController
+"NFCIntroController.Title" = "Chip Verification";
+"NFCIntroController.PassportScan.Description" = "Present your Passport";
+"NFCIntroController.IDCardScan.Description" = "Scaning the back of your ID card,\nWe are looking to see the 3-lines code.";
+"NFCIntroController.ChipReading.Description" = "Chip Reading";
 
-"NFCAndMrzReadingIssueController.Title" = "Chip Reading";
-"NFCAndMrzReadingIssueController.Description" = "We are unable to continue, NFC option is not availabe in your device.";
+//MARK: - NFCScanViewController
 
-//MARK: - MRZPassportScaningViewController
-
-"MRZPassportScaningViewController.Title" = "Scan Your Passport";
-"MRZPassportScaningViewController.Alert.Timeout.Title" = "Session Timeout";
-"MRZPassportScaningViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
+"NFCScanViewController.Passport.Title" = "Position Your Passport";
+"NFCScanViewController.IDCard.Title" = "Position The Back of Your ID";
+"NFCScanViewController.Alert.Timeout.Title" = "Session Timeout";
+"NFCScanViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
 
 //MARK: - NFCReadingIntroViewController
 
 "NFCReadingIntroViewController.Title" = "Chip Reading";
-"NFCReadingIntroViewController.Description" = "Place your ID behind your phone and click “Let’s Go”";
+"NFCReadingIntroViewController.Description" = "In the next step, place your ID behind your phone";
 
 //MARK: - NFCReadingViewController
 
@@ -52,14 +55,20 @@
 //MARK: - NFCReadingHelpViewController
 
 "NFCReadingHelpViewController.Title" = "Chip Reading";
-"NFCReadingHelpViewController.NFCReading.Description" = "Please keep your passport close to the device through the whole process";
-"NFCReadingHelpViewController.PhoneCover.Description" = "Phone covers or magnets can interrupt the NFC reading";
-"NFCReadingHelpViewController.NFCSettings.Description" = "Make sure you enabled the NFC option in your device settings";
+"NFCReadingHelpViewController.Intro.Description" = "Your ID/passport must have the following symbol on it.\nIt can be located anywhere and in many colors.";
+"NFCReadingHelpViewController.NFCReading.Pasport.Description" = "Please keep your passport close to the device through the whole process.";
+"NFCReadingHelpViewController.NFCReading.ID.Description" = "Please keep your ID Card close to the device through the whole process";
+"NFCReadingHelpViewController.PhoneCover.Description" = "Phone covers or magnets can interrupt the NFC reading.";
 
 //MARK: - DataExtractionView
 
 "DataExtractionView.Process.Ready.Desciption" = "Reading Started";
 "DataExtractionView.Process.Started.Desciption" = "Extracting\nData...";
+
+//MARK: - NFCIssueViewController
+
+"NFCIssueViewController.Title" = "Chip Reading";
+"NFCIssueViewController.Description" = "NFC option is unavailabe in your device";
 
 //MARK: - CameraIssueViewController
 
