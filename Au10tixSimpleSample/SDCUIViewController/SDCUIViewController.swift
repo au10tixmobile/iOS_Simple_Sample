@@ -76,7 +76,7 @@ private extension SDCUIViewController {
         
         var arr: [String] = []
         
-        if let feedback = processingStatus.feedback {
+        if let feedback = processingStatus.sdcFeedback {
             arr += ["feedback: \(feedback)"]
         }
         

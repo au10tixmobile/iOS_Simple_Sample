@@ -124,7 +124,6 @@ public struct RequestData : Swift.Codable {
 }
 public protocol NFCPassportReaderSession {
   func readNFC(with mrz: Swift.String)
-  func readNFC(with documentNumber: Swift.String, expiryDate: Foundation.Date, birthDate: Foundation.Date)
 }
 extension Au10tixCore.Au10tix {
   public struct Configurations {
@@ -341,6 +340,19 @@ public struct LoggerInfo : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public enum Scope : Swift.String {
+  case mobilesdk
+  case legacyMobileSdk
+  case pfl
+  case sdc
+  case media
+  case helmets
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public class Au10NetworkRequest {
   public struct DefaultValue {
     public static let path: Swift.String?
@@ -524,6 +536,19 @@ public class SessionTimeoutHandler : Au10tixCore.Timeoutable {
   public func applicationStateRequiresTimeoutTimerActivation()
   @objc deinit
 }
+public struct Au10JWTParser {
+  public init()
+  public struct JWTPayload {
+    public let jwt: Swift.String
+    public let globalApiUrl: Swift.String
+    public let apiUrl: Swift.String
+    public let bosUrl: Swift.String
+    public let expirationDate: Foundation.Date
+    public let clientOrganizationId: Swift.String
+    public let scopes: [Au10tixCore.Scope]
+  }
+  public func readPayload(from jwtString: Swift.String) throws -> Au10tixCore.Au10JWTParser.JWTPayload
+}
 public protocol TimeoutableSessionDelegate : AnyObject {
   func sessionTimedout(_ session: Au10tixCore.Timeoutable)
 }
@@ -535,10 +560,10 @@ public class CompositeAnalyticsEngine : Au10tixCore.AnalyticsEngine, Au10tixCore
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(AU10JSONRequestGenerator) public class JSONRequestGenerator : ObjectiveC.NSObject {
-  public func makeSingleSideRequest() throws -> Foundation.Data
-  public func makeSingleSideWithPOA() throws -> Foundation.Data
-  public func makeDoubleSideRequest() throws -> Foundation.Data
-  public func makeDoubleSideWithPOA() throws -> Foundation.Data
+  public func makeSingleSideRequest(with info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil) throws -> Foundation.Data
+  public func makeSingleSideWithPOA(with info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil) throws -> Foundation.Data
+  public func makeDoubleSideRequest(with info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil) throws -> Foundation.Data
+  public func makeDoubleSideWithPOA(with info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil) throws -> Foundation.Data
   @objc override dynamic public init()
   @objc deinit
 }
@@ -724,11 +749,10 @@ public struct MediaService {
   public func uploadMedia(of type: Swift.Int)
 }
 public class RequestDataBuilder {
-  public static var bosTag: Swift.String {
-    get
-  }
+  public typealias BosTagInfo = Swift.String?
+  public static func bosTag(info: Au10tixCore.RequestDataBuilder.BosTagInfo) -> Swift.String
   public init()
-  public func build() -> Au10tixCore.RequestData
+  public func build(with info: Au10tixCore.RequestDataBuilder.BosTagInfo) -> Au10tixCore.RequestData
   @discardableResult
   public func withFrontDocument(with meatadata: Foundation.Data? = nil) -> Au10tixCore.RequestDataBuilder
   @discardableResult
@@ -806,6 +830,9 @@ extension Au10tixCore.Au10Constants.Event.Action : Swift.RawRepresentable {}
 extension Au10tixCore.Au10Constants.Event.Level : Swift.Equatable {}
 extension Au10tixCore.Au10Constants.Event.Level : Swift.Hashable {}
 extension Au10tixCore.Au10Constants.Event.Level : Swift.RawRepresentable {}
+extension Au10tixCore.Scope : Swift.Equatable {}
+extension Au10tixCore.Scope : Swift.Hashable {}
+extension Au10tixCore.Scope : Swift.RawRepresentable {}
 extension Au10tixCore.HTTPMethod : Swift.Equatable {}
 extension Au10tixCore.HTTPMethod : Swift.Hashable {}
 extension Au10tixCore.HTTPMethod : Swift.RawRepresentable {}

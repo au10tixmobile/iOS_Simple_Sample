@@ -239,6 +239,7 @@ typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, open) {
 };
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -483,6 +484,7 @@ typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, open) {
   PassiveFaceLivenessUpdateTypeQualityFeedback = 1,
   PassiveFaceLivenessUpdateTypePassedThreshold = 2,
 };
+
 
 
 #if __has_attribute(external_source_symbol)
