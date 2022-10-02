@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O1bVA4pyR6qUtVTE1lrFXnoOWeI=
+		avg97wwNtqwDLEThBcgmiGcyRAQ=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dPac/ioAEVmadnP+M27cqiNZUFY=
+		NZAJLNgOiN84fSTHjsYYG0Gvowo=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		dPac/ioAEVmadnP+M27cqiNZUFY=
+		NZAJLNgOiN84fSTHjsYYG0Gvowo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,7 +88,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t14tKoqJnS00IwzPKgs1uhwOzieEms5p+BIioA7KPww=
+			G2nO1o9E3mU2jTsLTk3+bOSwBMB4qZOkb4lhGoGCxXo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t14tKoqJnS00IwzPKgs1uhwOzieEms5p+BIioA7KPww=
+			G2nO1o9E3mU2jTsLTk3+bOSwBMB4qZOkb4lhGoGCxXo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

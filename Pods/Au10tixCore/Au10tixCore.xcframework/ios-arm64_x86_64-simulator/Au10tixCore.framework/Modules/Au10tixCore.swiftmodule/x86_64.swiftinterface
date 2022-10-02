@@ -8,6 +8,7 @@ import CoreImage
 import CoreLocation
 import Foundation
 import ImageIO
+import MapKit
 import Photos
 import QuartzCore
 import ReplayKit
@@ -15,6 +16,43 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
+public enum NetworkingError : Au10tixCore.Au10tixError {
+  case request(factory: Au10tixCore.NetworkingError.Factory)
+  case parsingIssue(factory: Au10tixCore.NetworkingError.Factory)
+  case serverError(factory: Au10tixCore.NetworkingError.Factory)
+}
+extension Au10tixCore.NetworkingError {
+  public struct Factory {
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, code: Swift.Int? = nil, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, response: Foundation.HTTPURLResponse, discussion: Swift.String? = nil)
+  }
+}
+extension Au10tixCore.NetworkingError {
+  public var category: Au10tixCore.Au10ErrorCategory {
+    get
+  }
+  public var severity: Au10tixCore.Au10ErrorSeverity {
+    get
+  }
+  public var domain: Au10tixCore.Au10ErrorDomain {
+    get
+  }
+  public var code: Swift.Int? {
+    get
+  }
+  public var description: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  public var discussion: Swift.String? {
+    get
+  }
+}
 extension Foundation.NSNotification.Name {
   public static var au10tixCoreTokenExpiration: Foundation.Notification.Name {
     get
@@ -22,6 +60,17 @@ extension Foundation.NSNotification.Name {
   public static var au10tixCoreTokenRenewal: Foundation.Notification.Name {
     get
   }
+}
+public struct Au10Error : Au10tixCore.Au10tixError, Swift.Encodable {
+  public let category: Au10tixCore.Au10ErrorCategory
+  public let domain: Au10tixCore.Au10ErrorDomain
+  public let severity: Au10tixCore.Au10ErrorSeverity
+  public let code: Swift.Int?
+  public let failureReason: Swift.String?
+  public let recoverySuggestion: Swift.String?
+  public let discussion: Swift.String?
+  public let description: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public protocol Authenticator {
   var isActive: Swift.Bool { get }
@@ -97,6 +146,18 @@ public enum ValidationError : Swift.Error {
   case expired
   case nonce
 }
+@_hasMissingDesignatedInitializers public class CoreLogManager {
+  public static var shared: Au10tixCore.CoreLogManager
+  public enum Category : Swift.String {
+    case idv
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc deinit
+}
 public struct Au10NetworkResponse<Body> {
   public let statusCode: Swift.Int
   public let body: Body
@@ -137,6 +198,65 @@ extension Au10tixCore.Au10tix {
       get
     }
   }
+}
+public class Log : Swift.Encodable {
+  public enum LogType : Swift.String, Swift.Encodable {
+    case session
+    case sdk
+    case backEnd
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(sessionId: Swift.String? = nil, timeStamp: Foundation.Date = Date(), type: Au10tixCore.Log.LogType)
+  public func encode(to encoder: Swift.Encoder) throws
+  public enum Action : Swift.String {
+    case pageLoaded
+    case clickStart
+    case clickCancel
+    case sessionStart
+    case autoCapture
+    case manualCapture
+    case mrzCapture
+    case userCancel
+    case uploadFromGallery
+    case sentToDocReplay
+    case cameraTimeout
+    case sessionRefresh
+    case retake
+    case approve
+    case validate
+    case livenessPass
+    case livenessFail
+    case clickHelp
+    case chipReadingStarted
+    case chipExtractionStarted
+    case chipReadingSuccess
+    case tryAgain
+    case chipReadingFail
+    case uploadSDCFrontRequest
+    case mediaServiceCreateRequest
+    case mediaServiceCreateResponse
+    case uploadSDCBackRequest
+    case uploadSDCFrontResponse
+    case uploadSDCBackResponse
+    case uploadPFL
+    case uploadPFLResponse
+    case uploadPFLVideo
+    case uploadPFLVideoResponse
+    case uploadPOA
+    case uploadPOAResponse
+    case completeProcessRequest
+    case completeProcessResponse
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc deinit
 }
 public protocol ImageProvidableSession {
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
@@ -181,6 +301,17 @@ public struct MultipartDataBuilder {
   @objc public init(ciImage: CoreImage.CIImage, source: Au10tixCore.Au10ImageSource)
   @objc public func convertImageToData() -> Foundation.Data?
   @objc public func convertToMaximum(size: CoreGraphics.CGSize)
+  @objc deinit
+}
+public class SDKLogEvent : Au10tixCore.LogEvent {
+  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, subsessionId: Swift.String?, attempt: Swift.Int? = nil, isUi: Swift.Bool = false)
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public class LogReport : Au10tixCore.Log {
+  public init(sessionId: Swift.String?)
+  public init(city: Swift.String?, state: Swift.String?, country: Swift.String?, customerId: Swift.String?, releaseSprint: Swift.String, version: Swift.String, platform: Swift.String, deviceModel: Swift.String, os: Swift.String)
+  override public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 public enum Au10tixCorePrepareError : Swift.Error {
@@ -312,6 +443,43 @@ public struct SessionTimeoutInterval {
   public static let short: Swift.Double
   public static let regular: Swift.Double
 }
+public enum FlowError : Au10tixCore.Au10tixError {
+  case input(factory: Au10tixCore.FlowError.Factory)
+  case session(factory: Au10tixCore.FlowError.Factory)
+  case timeout(factory: Au10tixCore.FlowError.Factory)
+  case general(factory: Au10tixCore.FlowError.Factory)
+}
+extension Au10tixCore.FlowError {
+  public struct Factory {
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil)
+  }
+}
+extension Au10tixCore.FlowError {
+  public var category: Au10tixCore.Au10ErrorCategory {
+    get
+  }
+  public var code: Swift.Int? {
+    get
+  }
+  public var severity: Au10tixCore.Au10ErrorSeverity {
+    get
+  }
+  public var domain: Au10tixCore.Au10ErrorDomain {
+    get
+  }
+  public var description: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  public var discussion: Swift.String? {
+    get
+  }
+}
 public protocol FrontSideSupporter {
   var isFrontSide: Swift.Bool { get set }
 }
@@ -428,6 +596,14 @@ extension Au10tixCore.Au10NetworkRequest : Swift.CustomStringConvertible {
     get
   }
 }
+extension Swift.Encodable {
+  public var jsonData: Foundation.Data? {
+    get
+  }
+  public var jsonString: Swift.String? {
+    get
+  }
+}
 public protocol SessionDetailsAdvertizer : AnyObject {
   var sessionId: Swift.String? { get }
   var configurations: Au10tixCore.Au10tix.Configurations { get }
@@ -450,6 +626,10 @@ public struct LoggableInfo : Swift.Codable {
 public struct Au10SessionCaptureFrameUpdate<Frame> {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Au10tix : ObjectiveC.NSObject, Au10tixCore.BearerTokenAdvertizer, Au10tixCore.Authenticator, Au10tixCore.SessionDetailsAdvertizer, Au10tixCore.Au10tixSDK {
+  public static var au10ErrorNotificationCenterKey: Swift.String {
+    get
+  }
+  public static func describable(_ object: Any) -> Swift.String
   final public var isActive: Swift.Bool {
     get
   }
@@ -503,6 +683,11 @@ public struct Claim {
     get
   }
 }
+public class LogEvent : Au10tixCore.Log {
+  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, logType: Au10tixCore.Log.LogType, attempt: Swift.Int? = nil, sessionId: Swift.String? = nil)
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class Analytics {
   public static func addEngine(_ engine: Au10tixCore.AnalyticsEngine?)
   public static func getAllEngines<T>(of type: T) -> [T] where T : Au10tixCore.AnalyticsEngine
@@ -522,6 +707,71 @@ public struct BarcodeDataCollection : Swift.Codable {
 }
 public protocol BearerTokenAdvertizer : AnyObject {
   var bearerToken: Swift.String? { get }
+}
+public class BELogEvent : Au10tixCore.LogEvent {
+  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, isMediaService: Swift.Bool = false, attempt: Swift.Int? = nil, response: Swift.Int? = nil, sessionId: Swift.String? = nil)
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public enum DeviceError : Au10tixCore.Au10tixError {
+  public enum Permission : Swift.Int {
+    case nfcScan
+    case camera
+    case photoLibrary
+    case location
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Capability : Swift.Int {
+    case backCamera
+    case frontCamera
+    case nfc
+    case motion
+    case gyro
+    case location
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  case permission(factory: Au10tixCore.DeviceError.Factory)
+  case memmory(factory: Au10tixCore.DeviceError.Factory)
+  case osVersion(factory: Au10tixCore.DeviceError.Factory)
+  case capability(factory: Au10tixCore.DeviceError.Factory)
+}
+extension Au10tixCore.DeviceError {
+  public struct Factory {
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, permission: Au10tixCore.DeviceError.Permission)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, capability: Au10tixCore.DeviceError.Capability)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, reason: Swift.String, recovery: Swift.String? = nil)
+  }
+}
+extension Au10tixCore.DeviceError {
+  public var category: Au10tixCore.Au10ErrorCategory {
+    get
+  }
+  public var severity: Au10tixCore.Au10ErrorSeverity {
+    get
+  }
+  public var domain: Au10tixCore.Au10ErrorDomain {
+    get
+  }
+  public var code: Swift.Int? {
+    get
+  }
+  public var description: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
 }
 public class SessionTimeoutHandler : Au10tixCore.Timeoutable {
   public var timeoutTimer: Foundation.Timer?
@@ -581,6 +831,75 @@ public struct BIDataManager {
   public func attemptEnded(withDataSource dataSource: Au10tixCore.BIDataSource? = nil, evaluationResult: Swift.Bool? = nil, payload: Swift.String? = nil)
   public func userPerformed(action: Au10tixCore.BIUserAction)
   public mutating func setStage(_ stage: Swift.Int)
+}
+public protocol Au10tixError : Swift.Error {
+  var category: Au10tixCore.Au10ErrorCategory { get }
+  var domain: Au10tixCore.Au10ErrorDomain { get }
+  var severity: Au10tixCore.Au10ErrorSeverity { get }
+  var code: Swift.Int? { get }
+  var description: Swift.String? { get }
+  var failureReason: Swift.String? { get }
+  var recoverySuggestion: Swift.String? { get }
+  var discussion: Swift.String? { get }
+}
+extension Au10tixCore.Au10tixError {
+  public var code: Swift.Int? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  public var discussion: Swift.String? {
+    get
+  }
+}
+extension Au10tixCore.Au10tixError {
+  public func report()
+}
+public enum Au10ErrorCategory : Swift.String, Swift.Encodable {
+  case native
+  case network
+  case device
+  case flow
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Au10ErrorDomain : Swift.String, Swift.Encodable {
+  case core
+  case be
+  case sm
+  case dm
+  case sdcKit
+  case sdcUi
+  case pflKit
+  case pflUi
+  case poaKit
+  case poaUi
+  case nfcKit
+  case nfcUi
+  case hdUi
+  case baseUi
+  case secureMeKit
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Au10ErrorSeverity : Swift.String, Swift.Encodable {
+  case error
+  case warnig
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 open class TokenLifeCycleHandler {
   public init()
@@ -702,6 +1021,7 @@ extension Au10tixCore.CameraSession {
 }
 public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
 public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
+  var uiLicenseKey: Swift.String { get }
   var isAvailable: Swift.Bool { get }
   var isCameraActive: Swift.Bool { get }
   var authenticator: Au10tixCore.Au10tixSessionAuthenticator { get }
@@ -710,6 +1030,9 @@ public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
   func stop()
 }
 extension Au10tixCore.Au10tixSession {
+  public var uiLicenseKey: Swift.String {
+    get
+  }
   public func prepare(with token: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class ImageDownsampler {
@@ -719,11 +1042,12 @@ extension Au10tixCore.Au10tixSession {
   @objc deinit
 }
 public enum NetworkError : Foundation.LocalizedError {
-  case error(Swift.Error)
-  case noData
-  case invalidURL
-  case requestFailed
-  case timeout
+  case error(Swift.Error, Swift.Int?)
+  case noData(Swift.Int?)
+  case invalidURL(Swift.Int?)
+  case requestFailed(Swift.Int?)
+  case connection
+  case timeout(Swift.Int?)
   public var errorDescription: Swift.String? {
     get
   }
@@ -734,8 +1058,44 @@ public class LogzIoEngine : Au10tixCore.AnalyticsEngine, Au10tixCore.BatchShippe
   public func shipQueuedEvents()
   @objc deinit
 }
+public enum NativeError : Au10tixCore.Au10tixError {
+  case error(_: Au10tixCore.NativeError.Factory)
+  case scError(_: Au10tixCore.NativeError.Factory)
+}
+extension Au10tixCore.NativeError {
+  public struct Factory {
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, error: Swift.Error)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, scError: Swift.Int32, description: Swift.String?)
+  }
+}
+extension Au10tixCore.NativeError {
+  public var category: Au10tixCore.Au10ErrorCategory {
+    get
+  }
+  public var severity: Au10tixCore.Au10ErrorSeverity {
+    get
+  }
+  public var domain: Au10tixCore.Au10ErrorDomain {
+    get
+  }
+  public var code: Swift.Int? {
+    get
+  }
+  public var description: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+}
 extension ImageIO.CGImagePropertyOrientation {
   public init(_ orientation: UIKit.UIImage.Orientation)
+}
+public struct Logger {
+  public static func report(_ log: Au10tixCore.Log)
 }
 public struct MediaService {
   public var shouldUseMediaService: Swift.Bool {
@@ -764,6 +1124,9 @@ public class RequestDataBuilder {
   @discardableResult
   public func use(optionalData: [Swift.String : Swift.String]) -> Au10tixCore.RequestDataBuilder
   @objc deinit
+}
+public struct Au10tixUIValidator {
+  public static func isAu10tixUI(licenseKey: Swift.String) -> Swift.Bool
 }
 public protocol AppLifeCycleEventResponder : AnyObject {
   func handleBackground()
@@ -809,6 +1172,15 @@ extension Au10tixCore.BIAFLStage : Swift.RawRepresentable {}
 extension Au10tixCore.BINFCPassportStage : Swift.Equatable {}
 extension Au10tixCore.BINFCPassportStage : Swift.Hashable {}
 extension Au10tixCore.BINFCPassportStage : Swift.RawRepresentable {}
+extension Au10tixCore.CoreLogManager.Category : Swift.Equatable {}
+extension Au10tixCore.CoreLogManager.Category : Swift.Hashable {}
+extension Au10tixCore.CoreLogManager.Category : Swift.RawRepresentable {}
+extension Au10tixCore.Log.LogType : Swift.Equatable {}
+extension Au10tixCore.Log.LogType : Swift.Hashable {}
+extension Au10tixCore.Log.LogType : Swift.RawRepresentable {}
+extension Au10tixCore.Log.Action : Swift.Equatable {}
+extension Au10tixCore.Log.Action : Swift.Hashable {}
+extension Au10tixCore.Log.Action : Swift.RawRepresentable {}
 extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
 extension Au10tixCore.Au10ImageSource : Swift.Hashable {}
 extension Au10tixCore.Au10ImageSource : Swift.RawRepresentable {}
@@ -839,5 +1211,20 @@ extension Au10tixCore.HTTPMethod : Swift.RawRepresentable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.Equatable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.Hashable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.RawRepresentable {}
+extension Au10tixCore.DeviceError.Permission : Swift.Equatable {}
+extension Au10tixCore.DeviceError.Permission : Swift.Hashable {}
+extension Au10tixCore.DeviceError.Permission : Swift.RawRepresentable {}
+extension Au10tixCore.DeviceError.Capability : Swift.Equatable {}
+extension Au10tixCore.DeviceError.Capability : Swift.Hashable {}
+extension Au10tixCore.DeviceError.Capability : Swift.RawRepresentable {}
+extension Au10tixCore.Au10ErrorCategory : Swift.Equatable {}
+extension Au10tixCore.Au10ErrorCategory : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorCategory : Swift.RawRepresentable {}
+extension Au10tixCore.Au10ErrorDomain : Swift.Equatable {}
+extension Au10tixCore.Au10ErrorDomain : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorDomain : Swift.RawRepresentable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.Equatable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.RawRepresentable {}
 extension Au10tixCore.Reachability.Connection : Swift.Equatable {}
 extension Au10tixCore.Reachability.Connection : Swift.Hashable {}

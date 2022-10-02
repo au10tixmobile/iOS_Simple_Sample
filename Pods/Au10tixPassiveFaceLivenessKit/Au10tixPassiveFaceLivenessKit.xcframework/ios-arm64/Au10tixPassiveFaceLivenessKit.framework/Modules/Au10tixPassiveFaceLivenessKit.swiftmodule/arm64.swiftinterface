@@ -83,6 +83,22 @@ public struct PFLResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public struct HDResponse : Swift.Codable {
+  public let noneScore: Swift.String
+  public let hatScore: Swift.String
+  public let helmetScore: Swift.String
+  public let isHelmet: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Au10tixPassiveFaceLivenessKit.HDResponse : Swift.Equatable {
+  public static func == (a: Au10tixPassiveFaceLivenessKit.HDResponse, b: Au10tixPassiveFaceLivenessKit.HDResponse) -> Swift.Bool
+}
+extension Au10tixPassiveFaceLivenessKit.HDResponse : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public typealias QualityFaultOptions = Swift.Set<Au10tixPassiveFaceLivenessKit.QualityFault>
 public enum QualityFault : Swift.Int {
   case unstable
@@ -132,6 +148,23 @@ public protocol PFLSessionRecordingDelegate : AnyObject {
   func pflSessionRecorderDidStart(_ screenRecorder: Au10tixCore.ScreenRecorder)
   func pflSessionRecorderDidStop(_ screenRecorder: Au10tixCore.ScreenRecorder)
 }
+public struct PFLLogManager {
+  public static var shared: Au10tixPassiveFaceLivenessKit.PFLLogManager
+  public enum Category : Swift.String {
+    case error
+    case introPage
+    case scanner
+    case imageReview
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Au10tixCore.SDKLogEvent {
+  convenience public init(category: Au10tixPassiveFaceLivenessKit.PFLLogManager.Category, action: Au10tixCore.Log.Action, isUi: Swift.Bool = false)
+}
 public enum ValidationFlow : Swift.Int {
   case identityVerification
   case faceComparision
@@ -163,6 +196,10 @@ public enum ValidationFlow : Swift.Int {
   public var isMicrophoneEnabled: Swift.Bool
   public var detectHelmet: Swift.Bool
   public var faceDetectionInManualCapture: Swift.Bool
+  public var uiLicenseKey: Swift.String {
+    get
+    set
+  }
   public var validationFlow: Au10tixPassiveFaceLivenessKit.ValidationFlow {
     get
   }
@@ -176,6 +213,7 @@ public enum ValidationFlow : Swift.Int {
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   public func recapture()
   public func validateImage(_ image: Foundation.Data)
+  public func validateHDImage(_ image: Foundation.Data, source: Au10tixCore.Au10ImageSource, token: Swift.String, completion: ((_ feedback: Au10tixPassiveFaceLivenessKit.QualityFault?, _ faceBoundingBox: CoreGraphics.CGRect?, _ hdResponse: Au10tixPassiveFaceLivenessKit.HDResponse?) -> ())?)
   public func validateLiveness(for probability: Swift.Double) -> Swift.Bool
   public func resultShouldBeDesignatedTo(flow: Au10tixPassiveFaceLivenessKit.ValidationFlow)
   @objc deinit
@@ -202,6 +240,9 @@ extension Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode : Swift.RawReprese
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.RawRepresentable {}
+extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.Equatable {}
+extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.Hashable {}
+extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.RawRepresentable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.RawRepresentable {}

@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nIhLT/I3bKD1OgbuAGMgFGe+Z2s=
+		Tc3IjEZ/VfjyWkUNBWbRV/K9yls=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ceMsVRbQ7oHkUES5a6MkAIJa7Ts=
+		nRb+ZqMgYIFwnzEvrE1yXzrX0hI=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ceMsVRbQ7oHkUES5a6MkAIJa7Ts=
+		nRb+ZqMgYIFwnzEvrE1yXzrX0hI=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RdFg/upmMX496WvUn0M1tH0KUr4=
+		HTH/670jfvaoUciHLn8Z6Ubh180=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		RdFg/upmMX496WvUn0M1tH0KUr4=
+		HTH/670jfvaoUciHLn8Z6Ubh180=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DueXRB4cBLOj7tXnwAuvAxb8g8AiSLRadrq9wPOnw7Q=
+			UWGcwoAPPbsookySgpvNfN21WHBFlBXDJHF/YITDR2s=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64.swiftdoc</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DueXRB4cBLOj7tXnwAuvAxb8g8AiSLRadrq9wPOnw7Q=
+			UWGcwoAPPbsookySgpvNfN21WHBFlBXDJHF/YITDR2s=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -154,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXqE/4FUKYIaqSvykPl4kyGEBsCrGlPIXu3K4P6fZ40=
+			E+n/ZnacRC03IVW1GYsuTBGcdAHTN0X5jb1tPGaU91Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64.swiftdoc</key>
@@ -175,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXqE/4FUKYIaqSvykPl4kyGEBsCrGlPIXu3K4P6fZ40=
+			E+n/ZnacRC03IVW1GYsuTBGcdAHTN0X5jb1tPGaU91Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

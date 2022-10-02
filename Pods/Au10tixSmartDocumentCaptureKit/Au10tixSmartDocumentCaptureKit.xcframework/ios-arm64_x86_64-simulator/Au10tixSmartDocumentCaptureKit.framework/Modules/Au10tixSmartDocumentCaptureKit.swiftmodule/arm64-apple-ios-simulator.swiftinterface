@@ -31,6 +31,23 @@ public enum MachineReadableCodeType : Swift.String {
     get
   }
 }
+public struct SDCLogManager {
+  public static var shared: Au10tixSmartDocumentCaptureKit.SDCLogManager
+  public enum Category : Swift.String {
+    case error
+    case introPage
+    case scanner
+    case imageReview
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+extension Au10tixCore.SDKLogEvent {
+  convenience public init(category: Au10tixSmartDocumentCaptureKit.SDCLogManager.Category, action: Au10tixCore.Log.Action, isUi: Swift.Bool = false)
+}
 public struct SmartDocumentCaptureConfiguration {
 }
 public enum SDCSessionFlowType : Swift.Int {
@@ -99,8 +116,18 @@ public struct Au10MachineReadableCode {
     get
   }
   final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
-  public var isFrontSide: Swift.Bool
-  public var flowType: Au10tixSmartDocumentCaptureKit.SDCSessionFlowType
+  public var isFrontSide: Swift.Bool {
+    get
+    set
+  }
+  public var flowType: Au10tixSmartDocumentCaptureKit.SDCSessionFlowType {
+    get
+    set
+  }
+  public var uiLicenseKey: Swift.String {
+    get
+    set
+  }
   weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
   convenience public init()
   public func set(responseQueue: Dispatch.DispatchQueue)
@@ -158,6 +185,9 @@ public enum RectOfInterestError : Swift.Error {
 extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Hashable {}
 extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.RawRepresentable {}
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Hashable {}
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.RawRepresentable {}
