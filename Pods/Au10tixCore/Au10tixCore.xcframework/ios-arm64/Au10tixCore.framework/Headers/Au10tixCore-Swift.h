@@ -281,6 +281,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _N
 
 
 
+
+
 SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @interface AU10JSONRequestGenerator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

@@ -139,6 +139,10 @@ private extension PFLUIViewController {
             return "move left"
         case .moveRight:
             return "move right"
+        case .helmetNotDetectedInImageAuto:
+            return "helmetNotDetectedInImageAuto"
+        case .helmetNotDetectedInImageManual:
+            return "helmetNotDetectedInImageManual"
         @unknown default:
             return ""
         }

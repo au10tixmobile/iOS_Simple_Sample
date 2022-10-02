@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cOd0jSMoCTILOX/YHegFRPsW/+k=
+		VAj/pt25iGQ8Puc2ri7lGT4LNQY=
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JoZHUGW8Qq9nz9dU0KkdXIO3PUw=
+		jFkAqU9CLlXYh34sclRJ911OUEQ=
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		JoZHUGW8Qq9nz9dU0KkdXIO3PUw=
+		jFkAqU9CLlXYh34sclRJ911OUEQ=
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sj22eOwvqaeT4EjCiVc+SXmuRYs=
+		76kwd3ByYCZ1J/QXrBrBd4qbByw=
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Sj22eOwvqaeT4EjCiVc+SXmuRYs=
+		76kwd3ByYCZ1J/QXrBrBd4qbByw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LEbZfEvrjVYWrXICcZb2HNvIoxrwzdgyqt84URvJbFc=
+			uBHc9IRldlNkOYHg1Rr7cMohlchJV/wKG89daFqJ1Rg=
 			</data>
 		</dict>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LEbZfEvrjVYWrXICcZb2HNvIoxrwzdgyqt84URvJbFc=
+			uBHc9IRldlNkOYHg1Rr7cMohlchJV/wKG89daFqJ1Rg=
 			</data>
 		</dict>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SM/2XIVePVnrY8VX5U4LzyKrXEEunzC3oq1wsmi8Dmc=
+			hZ1G2Je54nXMvDW4gh17ep+BkBVf84PgRsvrJEMfVvw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixDetectorManager.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SM/2XIVePVnrY8VX5U4LzyKrXEEunzC3oq1wsmi8Dmc=
+			hZ1G2Je54nXMvDW4gh17ep+BkBVf84PgRsvrJEMfVvw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
