@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Y2Mkfg0FyVilNcb0whg+jNaDnmM=
+		lOYZNyBXWVSkO4hijizpz/KvGpQ=
 		</data>
 		<key>Au10tixLocalizable.strings</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
-		IaB8o+8yCLw3dQTK5rmdoVLn1mw=
+		/ZxqD3Ij4P8TGZyLHRqpXvp+NmE=
 		</data>
 		<key>Headers/Au10tixLivenessUI.h</key>
 		<data>
@@ -22,59 +22,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kya216+hSJC3FDYLftZVHkcNOeE=
+		SgvlqhVzCEUFxJGtqROdQs2J8g8=
+		</data>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		+yuSMjViZdW/JMyu0Pz0iZZLXx8=
+		</data>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		46ZLjSfNNoTHQZ9iDFZP8uBMzqU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rYKvgDDhGqu+PiDjszUOAS2wwd4=
+		E+EAmfowz3W9jsI+O2Mtci7odeA=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bEbs2LXC33gSGV5yTybbxiV0nrg=
+		46ZLjSfNNoTHQZ9iDFZP8uBMzqU=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		irRL3F4CFhNtGEbVCiLETBC7ErY=
+		n8/H5Z3k0eEBX97BHksfmCwaKmc=
 		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rYKvgDDhGqu+PiDjszUOAS2wwd4=
+		+yuSMjViZdW/JMyu0Pz0iZZLXx8=
 		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bEbs2LXC33gSGV5yTybbxiV0nrg=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		irRL3F4CFhNtGEbVCiLETBC7ErY=
+		p3/qKIsb5QqZ0Dau7Gbm5vOyWWI=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sgXBAvs74wx5AOMdDZu8hzIOa24=
+		TltayLMWa9uBBOYJw6rk76zcUFE=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OLWlY85inIyi65d/R8yF2vGyywE=
+		p3/qKIsb5QqZ0Dau7Gbm5vOyWWI=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		juHwlo2+omGvDMRoAY4kpd/m1Tc=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		sgXBAvs74wx5AOMdDZu8hzIOa24=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		OLWlY85inIyi65d/R8yF2vGyywE=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		juHwlo2+omGvDMRoAY4kpd/m1Tc=
+		NGnX3M6R/DnFviZ/5Ncok0BKSSc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		VzmLSzDX4O6Cd6hfEZnQwIQ15R4=
+		foAWPbLl0AYi+/zX1fZnTTKskcs=
 		</data>
 		<key>Montserrat-SemiBold.ttf</key>
 		<data>
@@ -99,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CZmhqqHmxuFHIq3uVgo4NFrktIgbjPuzOfQKcNgeIMw=
+			ZdqffB/y+OMv0YYClJf5DAb412qQROexlz65Gq8b3EQ=
 			</data>
 		</dict>
 		<key>Au10tixLocalizable.strings</key>
@@ -113,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/TPfD6hIlWBIG79CVg2wxEfqnIDsGGuoZqQ5xUhACQw=
+			q5Dse7c4/kKjqu7vLj7KVKdShkZY1fo9Rcc/7HQ5DgQ=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI.h</key>
@@ -123,95 +115,81 @@
 			i9Nu1OVsXwJH3EClV4Ft834rpUEFzJItVADUG+2NkeE=
 			</data>
 		</dict>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zxf5XsnZX3W1Nzmhw56Pzxawh7m5FQW4wJv91iQmALE=
+			</data>
+		</dict>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jYcpvp8jIilK0MQof+BRaGeIzrYi/ELUb0SFsUkrsOQ=
+			</data>
+		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/6PmvHvAEz+7A8WU5Rd6DGQC1VZrMplnYUAiz71tnc=
+			9vk5d6gxJ29yVCkbTqXz/do5VVXggglUInDdayrKI18=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lkfurk49tx7UB1LMLTnsixmOJgISsu89d/lpR+6wl3s=
+			jYcpvp8jIilK0MQof+BRaGeIzrYi/ELUb0SFsUkrsOQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9KeWTPZtih6j7YEddk2C+EWkH+3kY4H63R0jGdx97w=
+			but7kDMZvGpATa5IsV0J5rv0MOizfd8+J6m3+iRj4Bs=
 			</data>
 		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/6PmvHvAEz+7A8WU5Rd6DGQC1VZrMplnYUAiz71tnc=
+			zxf5XsnZX3W1Nzmhw56Pzxawh7m5FQW4wJv91iQmALE=
 			</data>
 		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lkfurk49tx7UB1LMLTnsixmOJgISsu89d/lpR+6wl3s=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			F9KeWTPZtih6j7YEddk2C+EWkH+3kY4H63R0jGdx97w=
+			q6fS9xRNPbEZhGE1+HUjuszBR0WSZxD1BzLBo1g2EPc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uxAhCSitGCCb8o/Fj5BHX56EQ6ZEwOaRYeCIOLOA51s=
+			4fJbZW4CzEeUb+C3JzK7dWEgQe7Ea57h9GK1SwQblQY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ED89FTuFBZprMOVCfDikl5IUH+7ZdRvQ50o52yGIfw=
+			q6fS9xRNPbEZhGE1+HUjuszBR0WSZxD1BzLBo1g2EPc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAizo+CftIvvG7cXGWkGbC//Fi9thntsWw0gGjaRY6w=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uxAhCSitGCCb8o/Fj5BHX56EQ6ZEwOaRYeCIOLOA51s=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+ED89FTuFBZprMOVCfDikl5IUH+7ZdRvQ50o52yGIfw=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CAizo+CftIvvG7cXGWkGbC//Fi9thntsWw0gGjaRY6w=
+			v09Qxp1ILoAD5NdTf6CxIjZHnXJyVf5xLAnqSCdXyzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F5ZwIFU9SWw37CN5C8v9h1Et/6Y6niHgtVKV0tYI0z0=
+			OwunNu1Pu5C2RkMIcEnfljw99UBMZKBgXZ5u3B9UHeQ=
 			</data>
 		</dict>
 		<key>Montserrat-SemiBold.ttf</key>

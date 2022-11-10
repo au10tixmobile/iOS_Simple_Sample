@@ -1,0 +1,3910 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Au10tixBackendProcessingFlow",
+        "printedName": "Au10tixBackendProcessingFlow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idv",
+            "printedName": "idv",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBackendProcessingFlow.Type) -> Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBackendProcessingFlow",
+                        "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                        "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO3idvyA2CmF",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO3idvyA2CmF",
+            "moduleName": "Au10tixBEKit"
+          },
+          {
+            "kind": "Var",
+            "name": "f2f",
+            "printedName": "f2f",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBackendProcessingFlow.Type) -> Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBackendProcessingFlow",
+                        "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                        "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO3f2fyA2CmF",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO3f2fyA2CmF",
+            "moduleName": "Au10tixBEKit"
+          },
+          {
+            "kind": "Var",
+            "name": "poa",
+            "printedName": "poa",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBackendProcessingFlow.Type) -> Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBackendProcessingFlow",
+                        "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                        "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO3poayA2CmF",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO3poayA2CmF",
+            "moduleName": "Au10tixBEKit"
+          },
+          {
+            "kind": "Var",
+            "name": "nfc",
+            "printedName": "nfc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBackendProcessingFlow.Type) -> Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBackendProcessingFlow",
+                        "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                        "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO3nfcyA2CmF",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO3nfcyA2CmF",
+            "moduleName": "Au10tixBEKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10tixBackendProcessingFlow",
+                "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10tixBackendProcessingFlow",
+                "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO2eeoiySbAC_ACtFZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO9hashValueSivp",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO9hashValueSivp",
+            "moduleName": "Au10tixBEKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO9hashValueSivg",
+                "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO9hashValueSivg",
+                "moduleName": "Au10tixBEKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO4hash4intoys6HasherVz_tF",
+            "moduleName": "Au10tixBEKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO",
+        "mangledName": "$s12Au10tixBEKit0A21BackendProcessingFlowO",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IDVFactory",
+        "printedName": "IDVFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dataTypes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IDVFactory",
+                "printedName": "Au10tixBEKit.IDVFactory",
+                "usr": "s:12Au10tixBEKit10IDVFactoryC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixBEKit.DataType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC9dataTypesACSayAA8DataTypeOG_tcfc",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC9dataTypesACSayAA8DataTypeOG_tcfc",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "provideSdcFront",
+            "printedName": "provideSdcFront(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC15provideSdcFront5imagey0A4Core9Au10ImageC_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC15provideSdcFront5imagey0A4Core9Au10ImageC_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideSdcBack",
+            "printedName": "provideSdcBack(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC14provideSdcBack5imagey0A4Core9Au10ImageC_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC14provideSdcBack5imagey0A4Core9Au10ImageC_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "providePfl",
+            "printedName": "providePfl(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC10providePfl5imagey0A4Core9Au10ImageC_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC10providePfl5imagey0A4Core9Au10ImageC_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "providePoa",
+            "printedName": "providePoa(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC10providePoa5imagey0A4Core9Au10ImageC_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC10providePoa5imagey0A4Core9Au10ImageC_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideAfl",
+            "printedName": "provideAfl(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC10provideAfl10dictionaryySDyS2SG_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC10provideAfl10dictionaryySDyS2SG_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12Au10tixBEKit10IDVFactoryC",
+        "mangledName": "$s12Au10tixBEKit10IDVFactoryC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:12Au10tixBEKit20BOSInteractorFactoryC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Au10tixBEKit.BOSInteractorFactory"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "F2FFactory",
+        "printedName": "F2FFactory",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "F2FFactory",
+                "printedName": "Au10tixBEKit.F2FFactory",
+                "usr": "s:12Au10tixBEKit10F2FFactoryC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12Au10tixBEKit10F2FFactoryCACycfc",
+            "mangledName": "$s12Au10tixBEKit10F2FFactoryCACycfc",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "providePfl",
+            "printedName": "providePfl(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10F2FFactoryC10providePfl5imagey0A4Core9Au10ImageC_tF",
+            "mangledName": "$s12Au10tixBEKit10F2FFactoryC10providePfl5imagey0A4Core9Au10ImageC_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideComparison",
+            "printedName": "provideComparison(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10F2FFactoryC17provideComparison5imagey10Foundation4DataV_tF",
+            "mangledName": "$s12Au10tixBEKit10F2FFactoryC17provideComparison5imagey10Foundation4DataV_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12Au10tixBEKit10F2FFactoryC",
+        "mangledName": "$s12Au10tixBEKit10F2FFactoryC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:12Au10tixBEKit20BOSInteractorFactoryC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Au10tixBEKit.BOSInteractorFactory"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Au10tixBEKitError",
+        "printedName": "Au10tixBEKitError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "missingData",
+            "printedName": "missingData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBEKitError",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                    "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO11missingDatayA2CmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO11missingDatayA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coreIsInactive",
+            "printedName": "coreIsInactive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBEKitError",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                    "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO14coreIsInactiveyA2CmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO14coreIsInactiveyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> (Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO07networkC0yACs0C0_p_tcACmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO07networkC0yACs0C0_p_tcACmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serializationError",
+            "printedName": "serializationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> (Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO013serializationC0yACs0C0_p_tcACmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO013serializationC0yACs0C0_p_tcACmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parseError",
+            "printedName": "parseError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> (Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Au10tixBEKit.Au10tixBEKitError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO05parseC0yACs0C0_p_tcACmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO05parseC0yACs0C0_p_tcACmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.Au10tixBEKitError.Type) -> Au10tixBEKit.Au10tixBEKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBEKitError",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                    "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.Au10tixBEKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12Au10tixBEKit0aB5ErrorO9cancelledyA2CmF",
+            "mangledName": "$s12Au10tixBEKit0aB5ErrorO9cancelledyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12Au10tixBEKit0aB5ErrorO",
+        "mangledName": "$s12Au10tixBEKit0aB5ErrorO",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DataType",
+        "printedName": "DataType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pfl",
+            "printedName": "pfl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypePfl",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO3pflyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "idDocFront",
+            "printedName": "idDocFront",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeIdDocFront",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO10idDocFrontyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "idDocBack",
+            "printedName": "idDocBack",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeIdDocBack",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO9idDocBackyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "imageForCompare",
+            "printedName": "imageForCompare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeImageForCompare",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO15imageForCompareyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "poa",
+            "printedName": "poa",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypePoa",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO3poayA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "nfcDG1",
+            "printedName": "nfcDG1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeNfcDG1",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO6nfcDG1yA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "personalDetails",
+            "printedName": "personalDetails",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypePersonalDetails",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO15personalDetailsyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "afl",
+            "printedName": "afl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeAfl",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO3aflyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "secondImageForCompare",
+            "printedName": "secondImageForCompare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeSecondImageForCompare",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO21secondImageForCompareyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "pflScreenRecording",
+            "printedName": "pflScreenRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypePflScreenRecording",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO18pflScreenRecordingyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "aflScreenRecording",
+            "printedName": "aflScreenRecording",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeAflScreenRecording",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO18aflScreenRecordingyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "nfcDG2",
+            "printedName": "nfcDG2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeNfcDG2",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO6nfcDG2yA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "nfcDG7",
+            "printedName": "nfcDG7",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeNfcDG7",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO6nfcDG7yA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBEKit.DataType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12Au10tixBEKit8DataTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "Au10tixBEKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12Au10tixBEKit8DataTypeO8rawValueSivp",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO8rawValueSivp",
+            "moduleName": "Au10tixBEKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12Au10tixBEKit8DataTypeO8rawValueSivg",
+                "mangledName": "$s12Au10tixBEKit8DataTypeO8rawValueSivg",
+                "moduleName": "Au10tixBEKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixBEKit.DataType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12Au10tixBEKit8DataTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO8allCasesSayACGvpZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixBEKit.DataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12Au10tixBEKit8DataTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s12Au10tixBEKit8DataTypeO8allCasesSayACGvgZ",
+                "moduleName": "Au10tixBEKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Au10tixBEKit@E@DataType",
+        "mangledName": "$s12Au10tixBEKit8DataTypeO",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixBEKit.DataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Au10tixBackendKit",
+        "printedName": "Au10tixBackendKit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldAutoUpload",
+            "printedName": "shouldAutoUpload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit(py)shouldAutoUpload",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC16shouldAutoUploadSbvp",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit(im)shouldAutoUpload",
+                "mangledName": "$s12Au10tixBEKit0A10BackendKitC16shouldAutoUploadSbvg",
+                "moduleName": "Au10tixBEKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poaUploadOnly",
+            "printedName": "poaUploadOnly",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC13poaUploadOnlySbvp",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC13poaUploadOnlySbvp",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12Au10tixBEKit0A10BackendKitC13poaUploadOnlySbvg",
+                "mangledName": "$s12Au10tixBEKit0A10BackendKitC13poaUploadOnlySbvg",
+                "moduleName": "Au10tixBEKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Au10tixBackendKit",
+                "printedName": "Au10tixBEKit.Au10tixBackendKit",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit(cpy)shared",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC6sharedACvpZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendKit",
+                    "printedName": "Au10tixBEKit.Au10tixBackendKit",
+                    "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit(cm)shared",
+                "mangledName": "$s12Au10tixBEKit0A10BackendKitC6sharedACvgZ",
+                "moduleName": "Au10tixBEKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "shouldUploadMediaAutomatically",
+            "printedName": "shouldUploadMediaAutomatically(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC30shouldUploadMediaAutomaticallyyySbF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC30shouldUploadMediaAutomaticallyyySbF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldOnlyUploadPOA",
+            "printedName": "shouldOnlyUploadPOA(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC19shouldOnlyUploadPOAyySbF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC19shouldOnlyUploadPOAyySbF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(factory:info:beKitCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BOSInteractorFactory",
+                "printedName": "Au10tixBEKit.BOSInteractorFactory",
+                "usr": "s:12Au10tixBEKit20BOSInteractorFactoryC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC4send7factory4info02beD8CallbackyAA20BOSInteractorFactoryC_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC4send7factory4info02beD8CallbackyAA20BOSInteractorFactoryC_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadMediaOf",
+            "printedName": "uploadMediaOf(type:flow:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DataType",
+                "printedName": "Au10tixBEKit.DataType",
+                "usr": "c:@M@Au10tixBEKit@E@DataType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Au10tixBEKit.Au10tixBEKitError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBEKit.Au10tixBEKitError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Au10tixBEKitError",
+                            "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                            "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC13uploadMediaOf4type4flow10completionyAA8DataTypeO_AA0aC14ProcessingFlowOSgyAA0aB5ErrorOSgcSgtF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC13uploadMediaOf4type4flow10completionyAA8DataTypeO_AA0aC14ProcessingFlowOSgyAA0aB5ErrorOSgcSgtF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadAllMedias",
+            "printedName": "uploadAllMedias(flow:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10tixBackendProcessingFlow",
+                    "printedName": "Au10tixBEKit.Au10tixBackendProcessingFlow",
+                    "usr": "s:12Au10tixBEKit0A21BackendProcessingFlowO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Au10tixBEKit.Au10tixBEKitError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBEKit.Au10tixBEKitError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Au10tixBEKitError",
+                            "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                            "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC15uploadAllMedias4flow10completionyAA0aC14ProcessingFlowOSg_yAA0aB5ErrorOSgcSgtF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC15uploadAllMedias4flow10completionyAA0aC14ProcessingFlowOSg_yAA0aB5ErrorOSgcSgtF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendIDVerificationFlow",
+            "printedName": "sendIDVerificationFlow(dataTypes:info:beKitCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixBEKit.DataType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info02beD8CallbackySayAA8DataTypeOG_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info02beD8CallbackySayAA8DataTypeOG_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendFaceToFace",
+            "printedName": "sendFaceToFace(photoForComparison:info:beKitCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC010sendFaceToF018photoForComparison4info02beD8Callbacky10Foundation4DataV_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC010sendFaceToF018photoForComparison4info02beD8Callbacky10Foundation4DataV_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendProofOfAddress",
+            "printedName": "sendProofOfAddress(firstName:lastName:address:info:beKitCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC18sendProofOfAddress9firstName04lastJ07address4info02beD8CallbackySS_S3SSgys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC18sendProofOfAddress9firstName04lastJ07address4info02beD8CallbackySS_S3SSgys6ResultOySSAA0aB5ErrorOGctF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendPassportNfc",
+            "printedName": "sendPassportNfc(info:beKitCallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixBEKitError",
+                        "printedName": "Au10tixBEKit.Au10tixBEKitError",
+                        "usr": "s:12Au10tixBEKit0aB5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC15sendPassportNfc4info02beD8CallbackySSSg_ys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC15sendPassportNfc4info02beD8CallbackySSSg_ys6ResultOySSAA0aB5ErrorOGctF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelRequest",
+            "printedName": "cancelRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC13cancelRequestyyF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC13cancelRequestyyF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanCache",
+            "printedName": "cleanCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC10cleanCacheyyF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC10cleanCacheyyF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC7destroyyyF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC7destroyyyF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Au10tixBackendKit",
+                "printedName": "Au10tixBEKit.Au10tixBackendKit",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit(im)init",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitCACycfc",
+            "moduleName": "Au10tixBEKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBEKit@objc(cs)Au10tixBackendKit",
+        "mangledName": "$s12Au10tixBEKit0A10BackendKitC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Au10tixSDK",
+            "printedName": "Au10tixSDK",
+            "usr": "s:11Au10tixCore0A3SDKP",
+            "mangledName": "$s11Au10tixCore0A3SDKP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BOSInteractorFactory",
+        "printedName": "BOSInteractorFactory",
+        "declKind": "Class",
+        "usr": "s:12Au10tixBEKit20BOSInteractorFactoryC",
+        "mangledName": "$s12Au10tixBEKit20BOSInteractorFactoryC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BOSInteractorCache",
+        "printedName": "BOSInteractorCache",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BOSInteractorCache",
+                "printedName": "Au10tixBEKit.BOSInteractorCache",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache(cpy)shared",
+            "mangledName": "$s12Au10tixBEKit18BOSInteractorCacheC6sharedACvpZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BOSInteractorCache",
+                    "printedName": "Au10tixBEKit.BOSInteractorCache",
+                    "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache(cm)shared",
+                "mangledName": "$s12Au10tixBEKit18BOSInteractorCacheC6sharedACvgZ",
+                "moduleName": "Au10tixBEKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "append",
+            "printedName": "append(dict:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache(im)appendWithDict:type:",
+            "mangledName": "$s12Au10tixBEKit18BOSInteractorCacheC6append4dict4typeySo12NSDictionaryC_So8NSNumberCtF",
+            "moduleName": "Au10tixBEKit",
+            "objc_name": "appendWithDict:type:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "retrieveMediaForType",
+            "printedName": "retrieveMediaForType(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSDictionary?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache(im)retrieveMediaForType:",
+            "mangledName": "$s12Au10tixBEKit18BOSInteractorCacheC20retrieveMediaForTypeySo12NSDictionaryCSgSo8NSNumberCF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBEKit@objc(cs)BOSInteractorCache",
+        "mangledName": "$s12Au10tixBEKit18BOSInteractorCacheC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BECoreHelper",
+        "printedName": "BECoreHelper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldAutoUpload",
+            "printedName": "shouldAutoUpload",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper(cpy)shouldAutoUpload",
+            "mangledName": "$s12Au10tixBEKit12BECoreHelperC16shouldAutoUploadSo8NSNumberCvpZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper(cm)shouldAutoUpload",
+                "mangledName": "$s12Au10tixBEKit12BECoreHelperC16shouldAutoUploadSo8NSNumberCvgZ",
+                "moduleName": "Au10tixBEKit",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "uploadMedia",
+            "printedName": "uploadMedia(type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper(cm)uploadMediaWithType:",
+            "mangledName": "$s12Au10tixBEKit12BECoreHelperC11uploadMedia4typeySo8NSNumberC_tFZ",
+            "moduleName": "Au10tixBEKit",
+            "static": true,
+            "objc_name": "uploadMediaWithType:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BECoreHelper",
+                "printedName": "Au10tixBEKit.BECoreHelper",
+                "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper(im)init",
+            "mangledName": "$s12Au10tixBEKit12BECoreHelperCACycfc",
+            "moduleName": "Au10tixBEKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBEKit@objc(cs)BECoreHelper",
+        "mangledName": "$s12Au10tixBEKit12BECoreHelperC",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Analytics\/BackendKitEvent.swift",
+      "kind": "Dictionary",
+      "offset": 621,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/Factories\/IDVFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 173,
+      "length": 10,
+      "value": "\"Au10tixBEKit.IDVFactory\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/MediaServiceInteractor.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 22,
+      "value": "\"Au10tixBEKit.MediaServiceInteractor\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/Factories\/F2FFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 158,
+      "length": 10,
+      "value": "\"Au10tixBEKit.F2FFactory\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/BeginProcessingResponseParser.swift",
+      "kind": "StringLiteral",
+      "offset": 672,
+      "length": 11,
+      "value": "\"RequestId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/BeginProcessingResponseParser.swift",
+      "kind": "StringLiteral",
+      "offset": 720,
+      "length": 18,
+      "value": "\"RequestStateCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/BeginProcessingResponseParser.swift",
+      "kind": "StringLiteral",
+      "offset": 672,
+      "length": 11,
+      "value": "\"RequestId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/BeginProcessingResponseParser.swift",
+      "kind": "StringLiteral",
+      "offset": 720,
+      "length": 18,
+      "value": "\"RequestStateCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/BOSInteractor.swift",
+      "kind": "StringLiteral",
+      "offset": 88,
+      "length": 13,
+      "value": "\"Au10tixBEKit.BOSInteractor\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 655,
+      "length": 3,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 748,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 3,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 21,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1057,
+      "length": 18,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1131,
+      "length": 18,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1211,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1279,
+      "length": 6,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 15,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 655,
+      "length": 3,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 748,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 821,
+      "length": 15,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 3,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 21,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1057,
+      "length": 18,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1131,
+      "length": 18,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1211,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1279,
+      "length": 6,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 34,
+      "value": "\"Au10tixBEKit.reachabilityChanged\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4012,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5069,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5180,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 299,
+      "length": 4,
+      "value": "\"BE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 9,
+      "value": "\"IDVFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 9,
+      "value": "\"F2fFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 435,
+      "length": 9,
+      "value": "\"POAFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 468,
+      "length": 9,
+      "value": "\"NFCFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 5,
+      "value": "\"SDC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 5,
+      "value": "\"PFL\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 5,
+      "value": "\"POA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 5,
+      "value": "\"NFC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 9,
+      "value": "\"IDVFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 9,
+      "value": "\"F2fFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 435,
+      "length": 9,
+      "value": "\"POAFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 468,
+      "length": 9,
+      "value": "\"NFCFlow\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 5,
+      "value": "\"SDC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 5,
+      "value": "\"PFL\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 5,
+      "value": "\"POA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 5,
+      "value": "\"NFC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6001,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/Au10tixBackendKit.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 17,
+      "value": "\"Au10tixBEKit.Au10tixBackendKit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/BOSInteractorCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2859,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/Factories\/PassportNfcFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 18,
+      "value": "\"Au10tixBEKit.PassportNfcFactory\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/Begin Processing\/BeginProcessingPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4579,
+      "length": 10,
+      "value": "\"Platform\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/Begin Processing\/BeginProcessingPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4579,
+      "length": 10,
+      "value": "\"Platform\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Main\/Factories\/POAFactory.swift",
+      "kind": "StringLiteral",
+      "offset": 151,
+      "length": 10,
+      "value": "\"Au10tixBEKit.POAFactory\""
+    }
+  ]
+}

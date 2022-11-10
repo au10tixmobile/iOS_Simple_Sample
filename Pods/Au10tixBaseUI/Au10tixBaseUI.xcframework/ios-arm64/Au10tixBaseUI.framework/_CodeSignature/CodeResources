@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hyjm/heKfGfFJQmT5fls+LQBBYg=
+		74Rdb4MXhV4BgFltI9pmPyq0WVg=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		5QgYv2SUdbbo2OnP5We4C5QXrGc=
+		JiZZtnDBImYo9XvAhxlqDq7r8TY=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
@@ -18,35 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U8jmJWoHjDr4WDJnlVI9Rwdj3zs=
+		81dKPjpSDmCU7HdEVB9LQBdblio=
+		</data>
+		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		aCp5IMe26MTZOtQJgDBEw6yrNXA=
+		</data>
+		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		Xbkx3vaviSjD2H/soprb9ErAAmk=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7R808KcpX+KumsaBb29z1pfjCsY=
+		ZCqKCiDFvCX2GAYGn3zN4UX33ZI=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dIpDipUJ+9bsPetLBzb+Imdu/rg=
+		Xbkx3vaviSjD2H/soprb9ErAAmk=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		y2GD/a3l0O7LJcffvR6aWh9HtdU=
-		</data>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		7R808KcpX+KumsaBb29z1pfjCsY=
-		</data>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		dIpDipUJ+9bsPetLBzb+Imdu/rg=
-		</data>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		y2GD/a3l0O7LJcffvR6aWh9HtdU=
+		eMjvLzdl2N64cAaLsj6GgXEDiSI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		lGaqQ3FqjCnKSXdz9FRxFBvTeLA=
+		DGjRe1/X0ow8UpVhjQOMXCibDHI=
 		</data>
 		<key>montserrat_medium.ttf</key>
 		<data>
@@ -67,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			koB9bUPAkDczoCo6XjdYsGZErjCillfsE5MO8V+VtrY=
+			d2aIw7yP1tfQam6oKPSB7ll/w8jrkyB26sr5IPReByM=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Guj9bkO1nm0XlmLMiZoYs0BhGuZ7snPhZBBRPX6SNL0=
+			qYVcubS5wGo3IohT3woGzwbXxZAZxIBPElWIpSgNQYY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
@@ -84,53 +80,46 @@
 			1yBvlvWHQxbvMdRZ9EoKkLDKt2CdNjZsUCGZnyNA0DI=
 			</data>
 		</dict>
+		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cGg1y4LOjQqUJeKETGt6Umu7oY4/AlWqbaCQbm61ghk=
+			</data>
+		</dict>
+		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ny6Em1yF91YD95/7i4isqO0wzv36W7bAUc19MSh4JHQ=
+			</data>
+		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZy7SVf8sMkS7ZdFYaF6moh5d97ZSbAoQrIy5RZclfU=
+			0a8pL0mnkodtg7req6jvjCCmWgkqbqhZPITt6v/k/T8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NFyQAGlWnBg3QjYpfKCEZR1elgylJGKlQASmA8DeTRo=
+			ny6Em1yF91YD95/7i4isqO0wzv36W7bAUc19MSh4JHQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			38AG+OGmOU5G5NrXPknYuK/UX2n01yTMxT/UMi0M+is=
-			</data>
-		</dict>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mZy7SVf8sMkS7ZdFYaF6moh5d97ZSbAoQrIy5RZclfU=
-			</data>
-		</dict>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NFyQAGlWnBg3QjYpfKCEZR1elgylJGKlQASmA8DeTRo=
-			</data>
-		</dict>
-		<key>Modules/Au10tixBaseUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			38AG+OGmOU5G5NrXPknYuK/UX2n01yTMxT/UMi0M+is=
+			Cwodh4lW3ExTphJATuEB71JbuaZwhpDsaQFnYS6At4I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bso5M7HVZcNYlIlkLpoKB67FtCtsrdCW7/+cnzLmlKU=
+			5VnqICPsS1YUdabrkdyjgnPHbsraAipwOtl6h19MYfs=
 			</data>
 		</dict>
 		<key>montserrat_medium.ttf</key>

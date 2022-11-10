@@ -1,0 +1,1591 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PFLViewController",
+        "printedName": "PFLViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "validationFlow",
+            "printedName": "validationFlow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ValidationFlow",
+                "printedName": "Au10tixPassiveFaceLivenessKit.ValidationFlow",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit14ValidationFlowO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValidationFlow",
+                    "printedName": "Au10tixPassiveFaceLivenessKit.ValidationFlow",
+                    "usr": "s:29Au10tixPassiveFaceLivenessKit14ValidationFlowO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ValidationFlow",
+                    "printedName": "Au10tixPassiveFaceLivenessKit.ValidationFlow",
+                    "usr": "s:29Au10tixPassiveFaceLivenessKit14ValidationFlowO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0Ovs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0OvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14validationFlow0abcD3Kit010ValidationI0OvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectionDelay",
+            "printedName": "detectionDelay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC14detectionDelaySdSgvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMicrophoneEnabled",
+            "printedName": "isMicrophoneEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC19isMicrophoneEnabledSbvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceDetectionInManualCapture",
+            "printedName": "faceDetectionInManualCapture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC28faceDetectionInManualCaptureSbvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkLiveness",
+            "printedName": "checkLiveness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0Sbvs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0SbvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC05checkD0SbvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pflDelegate",
+            "printedName": "pflDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvp",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvp",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PFLSessionDelegate",
+                        "printedName": "Au10tixPassiveFaceLivenessKit.PFLSessionDelegate",
+                        "usr": "s:29Au10tixPassiveFaceLivenessKit18PFLSessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvg",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvg",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PFLSessionDelegate",
+                        "printedName": "Au10tixPassiveFaceLivenessKit.PFLSessionDelegate",
+                        "usr": "s:29Au10tixPassiveFaceLivenessKit18PFLSessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvs",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvs",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvM",
+                "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11pflDelegate0abcD3Kit010PFLSessionI0_pSgvM",
+                "moduleName": "Au10tixPassiveFaceLivenessUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11viewDidLoadyyF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC11viewDidLoadyyF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC5closeyyF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC5closeyyF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configs:navigationDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PFLViewController",
+                "printedName": "Au10tixPassiveFaceLivenessUI.PFLViewController",
+                "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIComponentConfigs",
+                "printedName": "Au10tixBaseUI.UIComponentConfigs",
+                "hasDefaultArg": true,
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)Au10xUIComponentConfigs"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBaseUI.UIComponentViewControllerNavigationDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIComponentViewControllerNavigationDelegate",
+                    "printedName": "Au10tixBaseUI.UIComponentViewControllerNavigationDelegate",
+                    "usr": "c:@M@Au10tixBaseUI@objc(pl)UIComponentViewControllerNavigationDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC7configs18navigationDelegateAC0a4BaseE018UIComponentConfigsC_AF0l4Viewg10NavigationJ0_pSgtcfc",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC7configs18navigationDelegateAC0a4BaseE018UIComponentConfigsC_AF0l4Viewg10NavigationJ0_pSgtcfc",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithConfigs:navigationDelegate:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixPassiveFaceLivenessUI.PFLViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PFLViewController",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.PFLViewController",
+                    "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Au10tixPassiveFaceLivenessUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:28Au10tixPassiveFaceLivenessUI17PFLViewControllerC",
+        "mangledName": "$s28Au10tixPassiveFaceLivenessUI17PFLViewControllerC",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "objc_name": "Au10xPFLViewController",
+        "declAttributes": [
+          "ObjCRuntimeName",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Au10tixBaseUI@objc(cs)UIComponentBaseViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Au10tixBaseUI.UIComponentBaseViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Au10tixSDK",
+            "printedName": "Au10tixSDK",
+            "usr": "s:11Au10tixCore0A3SDKP",
+            "mangledName": "$s11Au10tixCore0A3SDKP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixSourceManager",
+        "printedName": "Au10tixSourceManager",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Route",
+        "printedName": "Route",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixPassiveFaceLivenessUI.Route.Type) -> Au10tixPassiveFaceLivenessUI.Route",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Route",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                    "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO4noneyA2CmF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI5RouteO4noneyA2CmF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI"
+          },
+          {
+            "kind": "Var",
+            "name": "pflFlowIntro",
+            "printedName": "pflFlowIntro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixPassiveFaceLivenessUI.Route.Type) -> Au10tixPassiveFaceLivenessUI.Route",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Route",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                    "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO12pflFlowIntroyA2CmF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI5RouteO12pflFlowIntroyA2CmF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI"
+          },
+          {
+            "kind": "Var",
+            "name": "pflDetector",
+            "printedName": "pflDetector",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixPassiveFaceLivenessUI.Route.Type) -> Au10tixPassiveFaceLivenessUI.Route",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Route",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                    "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO11pflDetectoryA2CmF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI5RouteO11pflDetectoryA2CmF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI"
+          },
+          {
+            "kind": "Var",
+            "name": "cameraIssue",
+            "printedName": "cameraIssue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixPassiveFaceLivenessUI.Route.Type) -> (Au10tixBaseUI.CameraIssueViewControllerDelegate?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ImageType, Swift.String?, Swift.String?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ActionType) -> Au10tixPassiveFaceLivenessUI.Route",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.CameraIssueViewControllerDelegate?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ImageType, Swift.String?, Swift.String?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ActionType) -> Au10tixPassiveFaceLivenessUI.Route",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(delegate: Au10tixBaseUI.CameraIssueViewControllerDelegate?, title: Swift.String?, imageType: Au10tixBaseUI.CameraIssueViewController.ImageType, description: Swift.String?, firstButtonTitle: Swift.String?, secondButtonTitle: Swift.String?, firstActionType: Au10tixBaseUI.CameraIssueViewController.ActionType)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Au10tixBaseUI.CameraIssueViewControllerDelegate?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CameraIssueViewControllerDelegate",
+                                "printedName": "Au10tixBaseUI.CameraIssueViewControllerDelegate",
+                                "usr": "s:13Au10tixBaseUI33CameraIssueViewControllerDelegateP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageType",
+                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
+                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActionType",
+                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ActionType",
+                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC10ActionTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixPassiveFaceLivenessUI.Route.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Route",
+                        "printedName": "Au10tixPassiveFaceLivenessUI.Route",
+                        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO11cameraIssueyAC0a4BaseE006CameraH22ViewControllerDelegate_pSg_SSSgAE0jhkL0C9ImageTypeOA3hJ06ActionO0OtcACmF",
+            "mangledName": "$s28Au10tixPassiveFaceLivenessUI5RouteO11cameraIssueyAC0a4BaseE006CameraH22ViewControllerDelegate_pSg_SSSgAE0jhkL0C9ImageTypeOA3hJ06ActionO0OtcACmF",
+            "moduleName": "Au10tixPassiveFaceLivenessUI"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:28Au10tixPassiveFaceLivenessUI5RouteO",
+        "mangledName": "$s28Au10tixPassiveFaceLivenessUI5RouteO",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixPassiveFaceLivenessKit",
+        "printedName": "Au10tixPassiveFaceLivenessKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Base\/PFLBaseUIViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 543,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Base\/PFLBaseUIViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 579,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Base\/PFLBaseUIViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Face Detector\/View Model\/PFLFaceDetectorViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Face Detector\/PFLFaceDetectorViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 765,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Extensions\/UIExtensions\/PFLRoutingViewControllerExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 458,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 518,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 576,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 619,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2427,
+      "length": 17,
+      "value": "\"Au10tixPassiveFaceLivenessUI.PFLFlowController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2427,
+      "length": 17,
+      "value": "\"Au10tixPassiveFaceLivenessUI.PFLFlowController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 760,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 900,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2072,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

@@ -6,6 +6,6 @@ framework module Au10tixBaseUI {
 }
 
 module Au10tixBaseUI.Swift {
-    header "Au10tixBaseUI-Swift.h"
-    requires objc
+  header "Au10tixBaseUI-Swift.h"
+  requires objc
 }

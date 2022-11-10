@@ -6,6 +6,6 @@ framework module Au10tixLivenessUI {
 }
 
 module Au10tixLivenessUI.Swift {
-    header "Au10tixLivenessUI-Swift.h"
-    requires objc
+  header "Au10tixLivenessUI-Swift.h"
+  requires objc
 }

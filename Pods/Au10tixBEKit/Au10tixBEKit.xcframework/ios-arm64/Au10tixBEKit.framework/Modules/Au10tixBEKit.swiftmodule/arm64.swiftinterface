@@ -51,27 +51,6 @@ public enum DataType : Swift.Int {
     get
   }
 }
-public struct BELogManager {
-  public static var shared: Au10tixBEKit.BELogManager
-  public enum Category : Swift.String {
-    case idvFlow
-    case f2fFlow
-    case poaFlow
-    case nfcFlow
-    case sdc
-    case pfl
-    case poa
-    case nfc
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-}
-extension Au10tixCore.BELogEvent {
-  convenience public init(category: Au10tixBEKit.BELogManager.Category, action: Au10tixCore.Log.Action, isMediaService: Swift.Bool = true, attempt: Swift.Int? = nil, response: Swift.Int? = nil)
-}
 public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit.Au10tixBEKitError>) -> Swift.Void
 @_hasMissingDesignatedInitializers @objc public class Au10tixBackendKit : ObjectiveC.NSObject, Au10tixCore.Au10tixSDK {
   @objc public var shouldAutoUpload: Swift.Bool {
@@ -84,8 +63,8 @@ public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit
   public func shouldUploadMediaAutomatically(_ auto: Swift.Bool)
   public func shouldOnlyUploadPOA(_ uploadOnly: Swift.Bool)
   public func send(factory: Au10tixBEKit.BOSInteractorFactory, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
-  public func uploadMediaOf(type: Au10tixBEKit.DataType, _ category: Au10tixBEKit.BELogManager.Category? = nil, completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
-  public func uploadAllMedias(_ category: Au10tixBEKit.BELogManager.Category? = nil, completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
+  public func uploadMediaOf(type: Au10tixBEKit.DataType, completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
+  public func uploadAllMedias(completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
   public func sendIDVerificationFlow(dataTypes: [Au10tixBEKit.DataType] = [.idDocFront], info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendFaceToFace(photoForComparison: Foundation.Data, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendProofOfAddress(firstName: Swift.String, lastName: Swift.String, address: Swift.String, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
@@ -114,6 +93,3 @@ public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit
 extension Au10tixBEKit.DataType : Swift.Equatable {}
 extension Au10tixBEKit.DataType : Swift.Hashable {}
 extension Au10tixBEKit.DataType : Swift.RawRepresentable {}
-extension Au10tixBEKit.BELogManager.Category : Swift.Equatable {}
-extension Au10tixBEKit.BELogManager.Category : Swift.Hashable {}
-extension Au10tixBEKit.BELogManager.Category : Swift.RawRepresentable {}

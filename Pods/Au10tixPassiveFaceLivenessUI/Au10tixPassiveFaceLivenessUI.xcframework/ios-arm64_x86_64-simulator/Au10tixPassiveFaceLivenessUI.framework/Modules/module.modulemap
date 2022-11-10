@@ -6,6 +6,6 @@ framework module Au10tixPassiveFaceLivenessUI {
 }
 
 module Au10tixPassiveFaceLivenessUI.Swift {
-    header "Au10tixPassiveFaceLivenessUI-Swift.h"
-    requires objc
+  header "Au10tixPassiveFaceLivenessUI-Swift.h"
+  requires objc
 }

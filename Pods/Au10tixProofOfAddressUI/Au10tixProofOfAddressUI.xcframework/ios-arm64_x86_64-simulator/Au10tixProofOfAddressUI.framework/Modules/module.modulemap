@@ -6,6 +6,6 @@ framework module Au10tixProofOfAddressUI {
 }
 
 module Au10tixProofOfAddressUI.Swift {
-    header "Au10tixProofOfAddressUI-Swift.h"
-    requires objc
+  header "Au10tixProofOfAddressUI-Swift.h"
+  requires objc
 }
