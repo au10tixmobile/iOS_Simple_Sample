@@ -6,6 +6,6 @@ framework module Au10tixBEKit {
 }
 
 module Au10tixBEKit.Swift {
-    header "Au10tixBEKit-Swift.h"
-    requires objc
+  header "Au10tixBEKit-Swift.h"
+  requires objc
 }

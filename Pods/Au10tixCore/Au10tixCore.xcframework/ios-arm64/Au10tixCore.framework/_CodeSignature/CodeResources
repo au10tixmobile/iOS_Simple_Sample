@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixCore-Swift.h</key>
 		<data>
-		1LuESp1iuEFIgV6yfPDx1DzAuSo=
+		JqG21lkyLjbE4s6Bu6aUQzL8rdA=
 		</data>
 		<key>Headers/Au10tixCore.h</key>
 		<data>
@@ -14,35 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6bYLkyhg0aTaNhn3XQKpGQhmaP0=
+		h45580Y8ehHoNwuTNz4DfxdBNog=
+		</data>
+		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		PLQm/eQezK2t/y+RaqGcVmCBOwA=
+		</data>
+		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		KTpf9eUSw2d+sGyop6UMcNLYg5E=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		GRzw/y7gISraYWsXfvg+b89RieA=
+		TRgrq2AaZC2AhL4wPTORKZ5W5ow=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		w/kgptpxjralEwA0/bn1FUzBeHk=
+		KTpf9eUSw2d+sGyop6UMcNLYg5E=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sKhhn2fMah7L5F2f2ANKfYITf/E=
-		</data>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		GRzw/y7gISraYWsXfvg+b89RieA=
-		</data>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		w/kgptpxjralEwA0/bn1FUzBeHk=
-		</data>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		sKhhn2fMah7L5F2f2ANKfYITf/E=
+		5449NNzMyeEBXdgDgNivL5/iqYI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		UPOEzIV7/4EgkWWqj/EbAuwNqwo=
+		9oGHqgxTaejGO08Vh9S2zU/dHW0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			APVSQxPB6+toDO1XBeAVcjzhWrRN9LZVHBckqgESuJk=
+			noHdLb+KNoj5L/oC34ZHl+5j9vnHvVI7cW5Hkzr/gk4=
 			</data>
 		</dict>
 		<key>Headers/Au10tixCore.h</key>
@@ -61,53 +57,46 @@
 			oxL9SS0VT47mk80GVWpER+PV+9hbFY7IRHo1IoBYEgs=
 			</data>
 		</dict>
+		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/TRQ5R1/4mlK1qomUTj+KZT5v1IlQPVDqRWsIyqpnBs=
+			</data>
+		</dict>
+		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uyc1dQwpMrnjCVca2fdQH271ei4ZhbmjpPmSJ+xrqyY=
+			</data>
+		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5E85t5M5SP3o1BaPqyD/giuNjNl1nVOJYxc8BBmEs2s=
+			i0/qfuCl35wMjZi5hr3o9+fP+H7/zRHZ/gZenIS0BaQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikL3WKc3rBOJFx+wX8/FnUob71+m78PQYPN6Y8/QUjA=
+			uyc1dQwpMrnjCVca2fdQH271ei4ZhbmjpPmSJ+xrqyY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JVx3ub9pICi+CQC5srk7GoaCLq0sLPzDmWxJYa/ZeUM=
-			</data>
-		</dict>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5E85t5M5SP3o1BaPqyD/giuNjNl1nVOJYxc8BBmEs2s=
-			</data>
-		</dict>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ikL3WKc3rBOJFx+wX8/FnUob71+m78PQYPN6Y8/QUjA=
-			</data>
-		</dict>
-		<key>Modules/Au10tixCore.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JVx3ub9pICi+CQC5srk7GoaCLq0sLPzDmWxJYa/ZeUM=
+			yeiF7P1CDjM1aOVpgY/hODv8Szh4l/wGNCROZ9d6Zos=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iavpWrfCkmk6GMYdMBJed76z86Hn/UBI7ug+Ah929Ds=
+			XQYDu3sqL/Nw9gba3zl58y637Qm0RGX2n1855RySFDg=
 			</data>
 		</dict>
 	</dict>

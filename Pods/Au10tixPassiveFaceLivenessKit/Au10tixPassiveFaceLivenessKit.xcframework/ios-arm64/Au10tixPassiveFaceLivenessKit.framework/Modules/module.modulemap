@@ -6,6 +6,6 @@ framework module Au10tixPassiveFaceLivenessKit {
 }
 
 module Au10tixPassiveFaceLivenessKit.Swift {
-    header "Au10tixPassiveFaceLivenessKit-Swift.h"
-    requires objc
+  header "Au10tixPassiveFaceLivenessKit-Swift.h"
+  requires objc
 }

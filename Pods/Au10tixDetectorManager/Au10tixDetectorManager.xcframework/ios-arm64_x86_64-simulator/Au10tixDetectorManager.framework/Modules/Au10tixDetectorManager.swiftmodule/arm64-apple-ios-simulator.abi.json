@@ -1,0 +1,1534 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Face",
+        "printedName": "Face",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "boundingBox",
+            "printedName": "boundingBox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGRect?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGRect?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGRect?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGRect",
+                        "printedName": "CoreFoundation.CGRect",
+                        "usr": "c:@S@CGRect"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV11boundingBoxSo6CGRectVSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSmiling",
+            "printedName": "isSmiling",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV9isSmilingSbSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV9isSmilingSbSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV9isSmilingSbSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV9isSmilingSbSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV9isSmilingSbSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV9isSmilingSbSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV9isSmilingSbSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV9isSmilingSbSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smilingConfidence",
+            "printedName": "smilingConfidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV17smilingConfidenceSiSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLeftEyeClosed",
+            "printedName": "isLeftEyeClosed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV15isLeftEyeClosedSbvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRightEyeClosed",
+            "printedName": "isRightEyeClosed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV16isRightEyeClosedSbvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pitch",
+            "printedName": "pitch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV5pitchSfSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV5pitchSfSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV5pitchSfSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV5pitchSfSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV5pitchSfSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV5pitchSfSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV5pitchSfSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV5pitchSfSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yaw",
+            "printedName": "yaw",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV3yawSfSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV3yawSfSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV3yawSfSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV3yawSfSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV3yawSfSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV3yawSfSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV3yawSfSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV3yawSfSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roll",
+            "printedName": "roll",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager4FaceV4rollSfSgvp",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV4rollSfSgvp",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV4rollSfSgvg",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV4rollSfSgvg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV4rollSfSgvs",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV4rollSfSgvs",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager4FaceV4rollSfSgvM",
+                "mangledName": "$s22Au10tixDetectorManager4FaceV4rollSfSgvM",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(boundingBox:isSmiling:smilingConfidence:isLeftEyeClosed:isRightEyeClosed:pitch:yaw:roll:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Face",
+                "printedName": "Au10tixDetectorManager.Face",
+                "usr": "s:22Au10tixDetectorManager4FaceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGRect?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22Au10tixDetectorManager4FaceV11boundingBox9isSmiling17smilingConfidence0G13LeftEyeClosed0g5RightlM05pitch3yaw4rollACSo6CGRectVSg_SbSgSiSgS2bSfSgA2Qtcfc",
+            "mangledName": "$s22Au10tixDetectorManager4FaceV11boundingBox9isSmiling17smilingConfidence0G13LeftEyeClosed0g5RightlM05pitch3yaw4rollACSo6CGRectVSg_SbSgSiSgS2bSfSgA2Qtcfc",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22Au10tixDetectorManager4FaceV",
+        "mangledName": "$s22Au10tixDetectorManager4FaceV",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceDetector",
+        "printedName": "FaceDetector",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceDetector",
+                "printedName": "Au10tixDetectorManager.FaceDetector",
+                "usr": "s:22Au10tixDetectorManager04FaceB0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22Au10tixDetectorManager04FaceB0CACycfc",
+            "mangledName": "$s22Au10tixDetectorManager04FaceB0CACycfc",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isAvailable",
+            "printedName": "isAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22Au10tixDetectorManager04FaceB0C11isAvailableSbyFZ",
+            "mangledName": "$s22Au10tixDetectorManager04FaceB0C11isAvailableSbyFZ",
+            "moduleName": "Au10tixDetectorManager",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(view:in:completionBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Au10tixDetectorManager.Face], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Au10tixDetectorManager.Face], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Au10tixDetectorManager.Face]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Face",
+                            "printedName": "Au10tixDetectorManager.Face",
+                            "usr": "s:22Au10tixDetectorManager4FaceV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22Au10tixDetectorManager04FaceB0C06detectD04view2in15completionBlockySo6UIViewC_So11CVBufferRefays6ResultOySayAA0D0VGs5Error_pGctF",
+            "mangledName": "$s22Au10tixDetectorManager04FaceB0C06detectD04view2in15completionBlockySo6UIViewC_So11CVBufferRefays6ResultOySayAA0D0VGs5Error_pGctF",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detectFace",
+            "printedName": "detectFace(in:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Au10tixDetectorManager.Face], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Au10tixDetectorManager.Face], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Au10tixDetectorManager.Face]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Face",
+                            "printedName": "Au10tixDetectorManager.Face",
+                            "usr": "s:22Au10tixDetectorManager4FaceV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22Au10tixDetectorManager04FaceB0C06detectD02in10completiony10Foundation4DataV_ys6ResultOySayAA0D0VGs5Error_pGctF",
+            "mangledName": "$s22Au10tixDetectorManager04FaceB0C06detectD02in10completiony10Foundation4DataV_ys6ResultOySayAA0D0VGs5Error_pGctF",
+            "moduleName": "Au10tixDetectorManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22Au10tixDetectorManager04FaceB0C",
+        "mangledName": "$s22Au10tixDetectorManager04FaceB0C",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "AccessControl",
+          "Final"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DetectorType",
+        "printedName": "DetectorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "face",
+            "printedName": "face",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixDetectorManager.DetectorType.Type) -> Au10tixDetectorManager.DetectorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DetectorType",
+                    "printedName": "Au10tixDetectorManager.DetectorType",
+                    "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixDetectorManager.DetectorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DetectorType",
+                        "printedName": "Au10tixDetectorManager.DetectorType",
+                        "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO4faceyA2CmF",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO4faceyA2CmF",
+            "moduleName": "Au10tixDetectorManager"
+          },
+          {
+            "kind": "Var",
+            "name": "document",
+            "printedName": "document",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixDetectorManager.DetectorType.Type) -> Au10tixDetectorManager.DetectorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DetectorType",
+                    "printedName": "Au10tixDetectorManager.DetectorType",
+                    "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixDetectorManager.DetectorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DetectorType",
+                        "printedName": "Au10tixDetectorManager.DetectorType",
+                        "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO8documentyA2CmF",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO8documentyA2CmF",
+            "moduleName": "Au10tixDetectorManager"
+          },
+          {
+            "kind": "Var",
+            "name": "nfc",
+            "printedName": "nfc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixDetectorManager.DetectorType.Type) -> Au10tixDetectorManager.DetectorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DetectorType",
+                    "printedName": "Au10tixDetectorManager.DetectorType",
+                    "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixDetectorManager.DetectorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DetectorType",
+                        "printedName": "Au10tixDetectorManager.DetectorType",
+                        "usr": "s:22Au10tixDetectorManager0B4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO3nfcyA2CmF",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO3nfcyA2CmF",
+            "moduleName": "Au10tixDetectorManager"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DetectorType",
+                "printedName": "Au10tixDetectorManager.DetectorType",
+                "usr": "s:22Au10tixDetectorManager0B4TypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DetectorType",
+                "printedName": "Au10tixDetectorManager.DetectorType",
+                "usr": "s:22Au10tixDetectorManager0B4TypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "Au10tixDetectorManager",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO9hashValueSivp",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO9hashValueSivp",
+            "moduleName": "Au10tixDetectorManager",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22Au10tixDetectorManager0B4TypeO9hashValueSivg",
+                "mangledName": "$s22Au10tixDetectorManager0B4TypeO9hashValueSivg",
+                "moduleName": "Au10tixDetectorManager",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22Au10tixDetectorManager0B4TypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s22Au10tixDetectorManager0B4TypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "Au10tixDetectorManager",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22Au10tixDetectorManager0B4TypeO",
+        "mangledName": "$s22Au10tixDetectorManager0B4TypeO",
+        "moduleName": "Au10tixDetectorManager",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/detector-manager\/Face Detector\/Face.swift",
+      "kind": "BooleanLiteral",
+      "offset": 604,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/detector-manager\/Face Detector\/Face.swift",
+      "kind": "BooleanLiteral",
+      "offset": 714,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/detector-manager\/Face Detector\/Face.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1141,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/detector-manager\/Face Detector\/Face.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1190,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/detector-manager\/Face Detector\/FaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 30,
+      "value": "\"com.au10tix.sdk.faceDetector\""
+    }
+  ]
+}

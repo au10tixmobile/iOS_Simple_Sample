@@ -335,9 +335,6 @@ public struct AlertAction {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseUIViewController : Au10tixBaseUI.BaseViewController {
-  @_Concurrency.MainActor(unsafe) open var uiLicenseKey: Swift.String {
-    get
-  }
   @_Concurrency.MainActor(unsafe) open var topLogoImage: UIKit.UIImage? {
     get
   }
