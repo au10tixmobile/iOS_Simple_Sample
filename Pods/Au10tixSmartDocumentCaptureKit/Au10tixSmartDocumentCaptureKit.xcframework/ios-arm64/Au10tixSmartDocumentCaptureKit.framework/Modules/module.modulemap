@@ -6,6 +6,6 @@ framework module Au10tixSmartDocumentCaptureKit {
 }
 
 module Au10tixSmartDocumentCaptureKit.Swift {
-    header "Au10tixSmartDocumentCaptureKit-Swift.h"
-    requires objc
+  header "Au10tixSmartDocumentCaptureKit-Swift.h"
+  requires objc
 }

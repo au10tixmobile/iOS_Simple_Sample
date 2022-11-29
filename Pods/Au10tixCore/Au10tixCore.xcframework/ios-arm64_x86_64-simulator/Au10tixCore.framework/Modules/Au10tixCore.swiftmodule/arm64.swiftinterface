@@ -8,7 +8,6 @@ import CoreImage
 import CoreLocation
 import Foundation
 import ImageIO
-import MapKit
 import Photos
 import QuartzCore
 import ReplayKit
@@ -146,18 +145,6 @@ public enum ValidationError : Swift.Error {
   case expired
   case nonce
 }
-@_hasMissingDesignatedInitializers public class CoreLogManager {
-  public static var shared: Au10tixCore.CoreLogManager
-  public enum Category : Swift.String {
-    case idv
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  @objc deinit
-}
 public struct Au10NetworkResponse<Body> {
   public let statusCode: Swift.Int
   public let body: Body
@@ -198,65 +185,6 @@ extension Au10tixCore.Au10tix {
       get
     }
   }
-}
-public class Log : Swift.Encodable {
-  public enum LogType : Swift.String, Swift.Encodable {
-    case session
-    case sdk
-    case backEnd
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(sessionId: Swift.String? = nil, timeStamp: Foundation.Date = Date(), type: Au10tixCore.Log.LogType)
-  public func encode(to encoder: Swift.Encoder) throws
-  public enum Action : Swift.String {
-    case pageLoaded
-    case clickStart
-    case clickCancel
-    case sessionStart
-    case autoCapture
-    case manualCapture
-    case mrzCapture
-    case userCancel
-    case uploadFromGallery
-    case sentToDocReplay
-    case cameraTimeout
-    case sessionRefresh
-    case retake
-    case approve
-    case validate
-    case livenessPass
-    case livenessFail
-    case clickHelp
-    case chipReadingStarted
-    case chipExtractionStarted
-    case chipReadingSuccess
-    case tryAgain
-    case chipReadingFail
-    case uploadSDCFrontRequest
-    case mediaServiceCreateRequest
-    case mediaServiceCreateResponse
-    case uploadSDCBackRequest
-    case uploadSDCFrontResponse
-    case uploadSDCBackResponse
-    case uploadPFL
-    case uploadPFLResponse
-    case uploadPFLVideo
-    case uploadPFLVideoResponse
-    case uploadPOA
-    case uploadPOAResponse
-    case completeProcessRequest
-    case completeProcessResponse
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  @objc deinit
 }
 public protocol ImageProvidableSession {
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
@@ -301,17 +229,6 @@ public struct MultipartDataBuilder {
   @objc public init(ciImage: CoreImage.CIImage, source: Au10tixCore.Au10ImageSource)
   @objc public func convertImageToData() -> Foundation.Data?
   @objc public func convertToMaximum(size: CoreGraphics.CGSize)
-  @objc deinit
-}
-public class SDKLogEvent : Au10tixCore.LogEvent {
-  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, subsessionId: Swift.String?, attempt: Swift.Int? = nil, isUi: Swift.Bool = false)
-  override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
-}
-public class LogReport : Au10tixCore.Log {
-  public init(sessionId: Swift.String?)
-  public init(city: Swift.String?, state: Swift.String?, country: Swift.String?, customerId: Swift.String?, releaseSprint: Swift.String, version: Swift.String, platform: Swift.String, deviceModel: Swift.String, os: Swift.String)
-  override public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 public enum Au10tixCorePrepareError : Swift.Error {
@@ -683,11 +600,6 @@ public struct Claim {
     get
   }
 }
-public class LogEvent : Au10tixCore.Log {
-  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, logType: Au10tixCore.Log.LogType, attempt: Swift.Int? = nil, sessionId: Swift.String? = nil)
-  override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers final public class Analytics {
   public static func addEngine(_ engine: Au10tixCore.AnalyticsEngine?)
   public static func getAllEngines<T>(of type: T) -> [T] where T : Au10tixCore.AnalyticsEngine
@@ -707,11 +619,6 @@ public struct BarcodeDataCollection : Swift.Codable {
 }
 public protocol BearerTokenAdvertizer : AnyObject {
   var bearerToken: Swift.String? { get }
-}
-public class BELogEvent : Au10tixCore.LogEvent {
-  public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, isMediaService: Swift.Bool = false, attempt: Swift.Int? = nil, response: Swift.Int? = nil, sessionId: Swift.String? = nil)
-  override public func encode(to encoder: Swift.Encoder) throws
-  @objc deinit
 }
 public enum DeviceError : Au10tixCore.Au10tixError {
   public enum Permission : Swift.Int {
@@ -1021,7 +928,6 @@ extension Au10tixCore.CameraSession {
 }
 public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
 public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
-  var uiLicenseKey: Swift.String { get }
   var isAvailable: Swift.Bool { get }
   var isCameraActive: Swift.Bool { get }
   var authenticator: Au10tixCore.Au10tixSessionAuthenticator { get }
@@ -1030,9 +936,6 @@ public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
   func stop()
 }
 extension Au10tixCore.Au10tixSession {
-  public var uiLicenseKey: Swift.String {
-    get
-  }
   public func prepare(with token: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class ImageDownsampler {
@@ -1042,12 +945,12 @@ extension Au10tixCore.Au10tixSession {
   @objc deinit
 }
 public enum NetworkError : Foundation.LocalizedError {
-  case error(Swift.Error, Swift.Int?)
-  case noData(Swift.Int?)
-  case invalidURL(Swift.Int?)
-  case requestFailed(Swift.Int?)
+  case error(Swift.Error)
+  case noData
+  case invalidURL
+  case requestFailed
   case connection
-  case timeout(Swift.Int?)
+  case timeout
   public var errorDescription: Swift.String? {
     get
   }
@@ -1094,9 +997,6 @@ extension Au10tixCore.NativeError {
 extension ImageIO.CGImagePropertyOrientation {
   public init(_ orientation: UIKit.UIImage.Orientation)
 }
-public struct Logger {
-  public static func report(_ log: Au10tixCore.Log)
-}
 public struct MediaService {
   public var shouldUseMediaService: Swift.Bool {
     get
@@ -1124,9 +1024,6 @@ public class RequestDataBuilder {
   @discardableResult
   public func use(optionalData: [Swift.String : Swift.String]) -> Au10tixCore.RequestDataBuilder
   @objc deinit
-}
-public struct Au10tixUIValidator {
-  public static func isAu10tixUI(licenseKey: Swift.String) -> Swift.Bool
 }
 public protocol AppLifeCycleEventResponder : AnyObject {
   func handleBackground()
@@ -1172,15 +1069,6 @@ extension Au10tixCore.BIAFLStage : Swift.RawRepresentable {}
 extension Au10tixCore.BINFCPassportStage : Swift.Equatable {}
 extension Au10tixCore.BINFCPassportStage : Swift.Hashable {}
 extension Au10tixCore.BINFCPassportStage : Swift.RawRepresentable {}
-extension Au10tixCore.CoreLogManager.Category : Swift.Equatable {}
-extension Au10tixCore.CoreLogManager.Category : Swift.Hashable {}
-extension Au10tixCore.CoreLogManager.Category : Swift.RawRepresentable {}
-extension Au10tixCore.Log.LogType : Swift.Equatable {}
-extension Au10tixCore.Log.LogType : Swift.Hashable {}
-extension Au10tixCore.Log.LogType : Swift.RawRepresentable {}
-extension Au10tixCore.Log.Action : Swift.Equatable {}
-extension Au10tixCore.Log.Action : Swift.Hashable {}
-extension Au10tixCore.Log.Action : Swift.RawRepresentable {}
 extension Au10tixCore.Au10ImageSource : Swift.Equatable {}
 extension Au10tixCore.Au10ImageSource : Swift.Hashable {}
 extension Au10tixCore.Au10ImageSource : Swift.RawRepresentable {}

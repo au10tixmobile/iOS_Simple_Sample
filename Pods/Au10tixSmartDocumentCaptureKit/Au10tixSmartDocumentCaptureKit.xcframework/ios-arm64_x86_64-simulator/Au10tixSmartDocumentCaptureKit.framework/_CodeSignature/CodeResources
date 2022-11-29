@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixSmartDocumentCaptureKit-Swift.h</key>
 		<data>
-		6GcNMnuSkWLSg2Tka95Psi8KFGY=
+		lnwEHHebzCTVZeHZTlQ7Et60LeI=
 		</data>
 		<key>Headers/Au10tixSmartDocumentCaptureKit.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9I8K7BGVnGXMYA82TUUjeCyEWpU=
+		OSWSLxnTEJ90MFpFCTamb5sQJCQ=
+		</data>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		vSOtU/OPjYtgGWnSDbsFpPRjUFs=
+		</data>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		kklQF/xRI2HWyXP8avjzoZiHr6k=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		La74C9PIO9ydSffWar3k+U+GR2s=
+		NfqATUV+WM15UOad1hZapfS1Wrw=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bhz/No3KvGGbVyyi+4ltZyRQXh8=
+		kklQF/xRI2HWyXP8avjzoZiHr6k=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wawjYFXPIG/oU5Tuk8nY5IspAeQ=
+		bm/e9mbxujn01iXWMBvyJTP+xsw=
 		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		La74C9PIO9ydSffWar3k+U+GR2s=
+		vSOtU/OPjYtgGWnSDbsFpPRjUFs=
 		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bhz/No3KvGGbVyyi+4ltZyRQXh8=
-		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		wawjYFXPIG/oU5Tuk8nY5IspAeQ=
+		c03Cqxk+tTRIPOkEviGrSxPxqBA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ak8kXLUIN/IDs92DAEREUaLUpug=
+		IVf47JvaMGI1ZUpfp7E60csoNyc=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iG1IAJKYJK0X7esYAAEUm/6kvfY=
+		c03Cqxk+tTRIPOkEviGrSxPxqBA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+T3vCP7CIDR2TtvcS8XB4kO2xPk=
-		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		Ak8kXLUIN/IDs92DAEREUaLUpug=
-		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		iG1IAJKYJK0X7esYAAEUm/6kvfY=
-		</data>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		+T3vCP7CIDR2TtvcS8XB4kO2xPk=
+		7sZWXkxS74SGNS5Wcfyim18uMRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		GyJJ+iZhxT2iPBxkZf/PPi38CUk=
+		1nKYPFlk/mRnpHRKCnbD+XnYrWk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tAluw41hKDtygE5bcJjMQX62zt+LdtqpCjHQ79rHJFk=
+			1NQ7gFY0YTjVGbVINFrkuivz/FRSC8U8T1v+jqrvzpw=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSmartDocumentCaptureKit.h</key>
@@ -85,95 +77,81 @@
 			JKtLKTexEP8iu1xapb9aXM7jCIhMmWhaDik2/56v2zw=
 			</data>
 		</dict>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P2nS8AUGfg9UDVWmBc7sZGG9dpCVuBgx69C9j11Fk4w=
+			</data>
+		</dict>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2VXcTLbdQs45D53IFrZKWP42juVxpsB5SN8RzdFsioc=
+			</data>
+		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/8eKmyxqDc2ExrHtSRn4s1x/lD24esIGjT0O5pMGk2g=
+			sfXXslRN8NHKbhhQtm35yPQZRbNUJOHyKY5hrYqVX7I=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c6m2GGBtfQ5QFTXjh5qSYw8vC+WMw1MAkkGE0AuNOyg=
+			2VXcTLbdQs45D53IFrZKWP42juVxpsB5SN8RzdFsioc=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+4C/QOFlnVLO5EYijVdThM2Ux/FZdePkTDWZCzBbmYQ=
+			c8uKBDqWiQOD8YQ1ViPir7mHBUE+JCF93lKV3NPw4wc=
 			</data>
 		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/8eKmyxqDc2ExrHtSRn4s1x/lD24esIGjT0O5pMGk2g=
+			P2nS8AUGfg9UDVWmBc7sZGG9dpCVuBgx69C9j11Fk4w=
 			</data>
 		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c6m2GGBtfQ5QFTXjh5qSYw8vC+WMw1MAkkGE0AuNOyg=
-			</data>
-		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+4C/QOFlnVLO5EYijVdThM2Ux/FZdePkTDWZCzBbmYQ=
+			OOlA1RtieokE9oKIaJAGQrYaPbGyRnDbuYaqGS90gVw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5+6S13oFkTarA4wQhcZL6s9KePmzWxcFiZEDlBmLRVo=
+			cVx6UNYjYtgYxGd0/l7lr6YkbW9Ux40ANdhBUm4buLI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7IRHgHY6qV84PzmzKilD2yE7GiviovthtgfpY9ClMAY=
+			OOlA1RtieokE9oKIaJAGQrYaPbGyRnDbuYaqGS90gVw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4+wovTwY38SO42VciaTg7Atv85Po/qWZ1tqDSABoxVU=
-			</data>
-		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5+6S13oFkTarA4wQhcZL6s9KePmzWxcFiZEDlBmLRVo=
-			</data>
-		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7IRHgHY6qV84PzmzKilD2yE7GiviovthtgfpY9ClMAY=
-			</data>
-		</dict>
-		<key>Modules/Au10tixSmartDocumentCaptureKit.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4+wovTwY38SO42VciaTg7Atv85Po/qWZ1tqDSABoxVU=
+			UqF9KH/UBjERZ45QUkiB3EVoL+u8erMyzhXbZ8PzUEk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TwyIv05E62gfjypve+NL1a6vNodO1bGnsf95Q7agaDY=
+			SKQzxU3K9l+/qo3kWlxg2YuPz4YTHvIEDMtsPgKqbvU=
 			</data>
 		</dict>
 	</dict>

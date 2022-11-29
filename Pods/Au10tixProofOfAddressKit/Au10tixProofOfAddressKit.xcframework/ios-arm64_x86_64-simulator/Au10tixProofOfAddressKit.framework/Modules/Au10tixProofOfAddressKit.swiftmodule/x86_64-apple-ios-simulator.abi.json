@@ -1,0 +1,1140 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixSourceManager",
+        "printedName": "Au10tixSourceManager",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "POASessionError",
+        "printedName": "POASessionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timedout",
+            "printedName": "timedout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixProofOfAddressKit.POASessionError.Type) -> Au10tixProofOfAddressKit.POASessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "POASessionError",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                    "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "POASessionError",
+                        "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                        "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO8timedoutyA2CmF",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO8timedoutyA2CmF",
+            "moduleName": "Au10tixProofOfAddressKit"
+          },
+          {
+            "kind": "Var",
+            "name": "sessionTokenExpired",
+            "printedName": "sessionTokenExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixProofOfAddressKit.POASessionError.Type) -> Au10tixProofOfAddressKit.POASessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "POASessionError",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                    "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "POASessionError",
+                        "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                        "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO19sessionTokenExpiredyA2CmF",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO19sessionTokenExpiredyA2CmF",
+            "moduleName": "Au10tixProofOfAddressKit"
+          },
+          {
+            "kind": "Var",
+            "name": "offline",
+            "printedName": "offline",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixProofOfAddressKit.POASessionError.Type) -> Au10tixProofOfAddressKit.POASessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "POASessionError",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                    "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "POASessionError",
+                        "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                        "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO7offlineyA2CmF",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO7offlineyA2CmF",
+            "moduleName": "Au10tixProofOfAddressKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "POASessionError",
+                "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "POASessionError",
+                "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO9hashValueSivp",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO9hashValueSivp",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO9hashValueSivg",
+                "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO9hashValueSivg",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO",
+        "mangledName": "$s24Au10tixProofOfAddressKit15POASessionErrorO",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "POASessionDelegate",
+        "printedName": "POASessionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "poaSession",
+            "printedName": "poaSession(_:didFailWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "POASession",
+                "printedName": "Au10tixProofOfAddressKit.POASession",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "POASessionError",
+                "printedName": "Au10tixProofOfAddressKit.POASessionError",
+                "usr": "s:24Au10tixProofOfAddressKit15POASessionErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit18POASessionDelegateP10poaSession_11didFailWithyAA0F0C_AA0F5ErrorOtF",
+            "mangledName": "$s24Au10tixProofOfAddressKit18POASessionDelegateP10poaSession_11didFailWithyAA0F0C_AA0F5ErrorOtF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixProofOfAddressKit.POASessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixProofOfAddressKit.POASessionDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "poaSession",
+            "printedName": "poaSession(_:didCapture:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "POASession",
+                "printedName": "Au10tixProofOfAddressKit.POASession",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Update",
+                "printedName": "Au10tixCore.Au10Update",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Update"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit18POASessionDelegateP10poaSession_10didCapture4withyAA0F0C_0A4Core9Au10ImageCAI0N6UpdateCtF",
+            "mangledName": "$s24Au10tixProofOfAddressKit18POASessionDelegateP10poaSession_10didCapture4withyAA0F0C_0A4Core9Au10ImageCAI0N6UpdateCtF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixProofOfAddressKit.POASessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixProofOfAddressKit.POASessionDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:24Au10tixProofOfAddressKit18POASessionDelegateP",
+        "mangledName": "$s24Au10tixProofOfAddressKit18POASessionDelegateP",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixSourceManager",
+        "printedName": "Au10tixSourceManager",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "POASession",
+        "printedName": "POASession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isAvailable",
+            "printedName": "isAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC11isAvailableSbvp",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC11isAvailableSbvp",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC11isAvailableSbvg",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC11isAvailableSbvg",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCameraActive",
+            "printedName": "isCameraActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC14isCameraActiveSbvp",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC14isCameraActiveSbvp",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC14isCameraActiveSbvg",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC14isCameraActiveSbvg",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticator",
+            "printedName": "authenticator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvp",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvp",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvg",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvg",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvs",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvs",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvM",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC13authenticator0A4Core13Authenticator_AE21BearerTokenAdvertizerAE014SessionDetailsL0pvM",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Au10tixProofOfAddressKit.POASessionDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvp",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvp",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "POASessionDelegate",
+                        "printedName": "Au10tixProofOfAddressKit.POASessionDelegate",
+                        "usr": "s:24Au10tixProofOfAddressKit18POASessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvg",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvg",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixProofOfAddressKit.POASessionDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "POASessionDelegate",
+                        "printedName": "Au10tixProofOfAddressKit.POASessionDelegate",
+                        "usr": "s:24Au10tixProofOfAddressKit18POASessionDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvs",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvs",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvM",
+                "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC8delegateAA0F8Delegate_pSgvM",
+                "moduleName": "Au10tixProofOfAddressKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "POASession",
+                "printedName": "Au10tixProofOfAddressKit.POASession",
+                "usr": "s:24Au10tixProofOfAddressKit10POASessionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionCACycfc",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionCACycfc",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(responseQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC3set13responseQueueySo17OS_dispatch_queueC_tF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC3set13responseQueueySo17OS_dispatch_queueC_tF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(with:previewView:refresh:didStartHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10tixCorePrepareError",
+                        "printedName": "Au10tixCore.Au10tixCorePrepareError",
+                        "usr": "s:11Au10tixCore0aB12PrepareErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC5start4with11previewView7refresh15didStartHandlerySS_So6UIViewCSbys6ResultOySS0A4Core0aQ12PrepareErrorOGctF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC5start4with11previewView7refresh15didStartHandlerySS_So6UIViewCSbys6ResultOySS0A4Core0aQ12PrepareErrorOGctF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC4stopyyF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC4stopyyF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureImage",
+            "printedName": "captureImage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10ImageSource",
+                "printedName": "Au10tixCore.Au10ImageSource",
+                "usr": "c:@M@Au10tixCore@E@Au10ImageSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC12captureImageyy0A4Core04Au10H6SourceOF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC12captureImageyy0A4Core04Au10H6SourceOF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseCamera",
+            "printedName": "pauseCamera()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC11pauseCamerayyF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC11pauseCamerayyF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeCamera",
+            "printedName": "resumeCamera(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC12resumeCamerayySbF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC12resumeCamerayySbF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provide",
+            "printedName": "provide(image:exif:orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImagePropertyOrientation",
+                "printedName": "ImageIO.CGImagePropertyOrientation",
+                "usr": "c:@E@CGImagePropertyOrientation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC7provide5image4exif11orientationy10Foundation4DataV_SDySSypGSo26CGImagePropertyOrientationVtF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC7provide5image4exif11orientationy10Foundation4DataV_SDySSypGSo26CGImagePropertyOrientationVtF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sessionTimedout",
+            "printedName": "sessionTimedout(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Timeoutable",
+                "printedName": "Au10tixCore.Timeoutable",
+                "usr": "s:11Au10tixCore11TimeoutableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24Au10tixProofOfAddressKit10POASessionC15sessionTimedoutyy0A4Core11Timeoutable_pF",
+            "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC15sessionTimedoutyy0A4Core11Timeoutable_pF",
+            "moduleName": "Au10tixProofOfAddressKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24Au10tixProofOfAddressKit10POASessionC",
+        "mangledName": "$s24Au10tixProofOfAddressKit10POASessionC",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Au10tixSession",
+            "printedName": "Au10tixSession",
+            "usr": "s:11Au10tixCore0A7SessionP",
+            "mangledName": "$s11Au10tixCore0A7SessionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CameraSession",
+            "printedName": "CameraSession",
+            "usr": "s:11Au10tixCore13CameraSessionP",
+            "mangledName": "$s11Au10tixCore13CameraSessionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ImageProvidableSession",
+            "printedName": "ImageProvidableSession",
+            "usr": "s:11Au10tixCore22ImageProvidableSessionP",
+            "mangledName": "$s11Au10tixCore22ImageProvidableSessionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Au10tixSDK",
+            "printedName": "Au10tixSDK",
+            "usr": "s:11Au10tixCore0A3SDKP",
+            "mangledName": "$s11Au10tixCore0A3SDKP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TimeoutableSessionDelegate",
+            "printedName": "TimeoutableSessionDelegate",
+            "usr": "s:11Au10tixCore26TimeoutableSessionDelegateP",
+            "mangledName": "$s11Au10tixCore26TimeoutableSessionDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixProofOfAddressKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Configurations\/POAConfiguration.swift",
+      "kind": "Dictionary",
+      "offset": 118,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Analytics\/AnalyticsEvent.swift",
+      "kind": "Dictionary",
+      "offset": 418,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Session\/POASession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6798,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Session\/POASession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9652,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Session\/POASession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12158,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressKit\/Session\/POATokenLifeCycleHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 161,
+      "length": 24,
+      "value": "\"Au10tixProofOfAddressKit.POATokenLifeCycleHandler\""
+    }
+  ]
+}
