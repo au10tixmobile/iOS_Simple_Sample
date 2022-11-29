@@ -6,6 +6,6 @@ framework module Au10tixSecureMeKit {
 }
 
 module Au10tixSecureMeKit.Swift {
-    header "Au10tixSecureMeKit-Swift.h"
-    requires objc
+  header "Au10tixSecureMeKit-Swift.h"
+  requires objc
 }

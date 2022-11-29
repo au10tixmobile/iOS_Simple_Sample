@@ -148,23 +148,6 @@ public protocol PFLSessionRecordingDelegate : AnyObject {
   func pflSessionRecorderDidStart(_ screenRecorder: Au10tixCore.ScreenRecorder)
   func pflSessionRecorderDidStop(_ screenRecorder: Au10tixCore.ScreenRecorder)
 }
-public struct PFLLogManager {
-  public static var shared: Au10tixPassiveFaceLivenessKit.PFLLogManager
-  public enum Category : Swift.String {
-    case error
-    case introPage
-    case scanner
-    case imageReview
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-}
-extension Au10tixCore.SDKLogEvent {
-  convenience public init(category: Au10tixPassiveFaceLivenessKit.PFLLogManager.Category, action: Au10tixCore.Log.Action, isUi: Swift.Bool = false)
-}
 public enum ValidationFlow : Swift.Int {
   case identityVerification
   case faceComparision
@@ -196,10 +179,6 @@ public enum ValidationFlow : Swift.Int {
   public var isMicrophoneEnabled: Swift.Bool
   public var detectHelmet: Swift.Bool
   public var faceDetectionInManualCapture: Swift.Bool
-  public var uiLicenseKey: Swift.String {
-    get
-    set
-  }
   public var validationFlow: Au10tixPassiveFaceLivenessKit.ValidationFlow {
     get
   }
@@ -240,9 +219,6 @@ extension Au10tixPassiveFaceLivenessKit.PFLResponse.ErrorCode : Swift.RawReprese
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.QualityFault : Swift.RawRepresentable {}
-extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.Equatable {}
-extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.Hashable {}
-extension Au10tixPassiveFaceLivenessKit.PFLLogManager.Category : Swift.RawRepresentable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.Equatable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.Hashable {}
 extension Au10tixPassiveFaceLivenessKit.ValidationFlow : Swift.RawRepresentable {}

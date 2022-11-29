@@ -6,6 +6,6 @@ framework module Au10tixLivenessKit {
 }
 
 module Au10tixLivenessKit.Swift {
-    header "Au10tixLivenessKit-Swift.h"
-    requires objc
+  header "Au10tixLivenessKit-Swift.h"
+  requires objc
 }

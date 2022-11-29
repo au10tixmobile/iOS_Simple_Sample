@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		R3750pLRWY004pQi6S8+w99aDSU=
+		TGFBvtArb94neO0yzBBQs2r2fvE=
 		</data>
 		<key>Au10tixLocalizable.strings</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/Au10tixLivenessUI-Swift.h</key>
 		<data>
-		vB3PWNmLyaPd1ubEt0LXT8x9uXE=
+		cJUZ0447rKrWKKEzAUzu/rdgLmg=
 		</data>
 		<key>Headers/Au10tixLivenessUI.h</key>
 		<data>
@@ -22,35 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jmRjYkgielLm2FbzaFr1fHF9nig=
+		BjtKLN3evHF5e5GFrQ6yyi9iAcI=
+		</data>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		+yuSMjViZdW/JMyu0Pz0iZZLXx8=
+		</data>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		cexMADTLhoTOAHfj0EBYvv9k3wo=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7/AWH7g/PG/ZvTOe9JE21RUZLP0=
+		DZBfH9smoouV3LohAsSXebcUcV8=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZEU2hymQbSpsVLJKM2SAif0j7wU=
+		cexMADTLhoTOAHfj0EBYvv9k3wo=
 		</data>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vuPS8+DLtyFIZUqzkmWQAyNz+es=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		7/AWH7g/PG/ZvTOe9JE21RUZLP0=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		ZEU2hymQbSpsVLJKM2SAif0j7wU=
-		</data>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		vuPS8+DLtyFIZUqzkmWQAyNz+es=
+		NJb0ndH3/6jnsgUj2TlS6G0yl8E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		VzmLSzDX4O6Cd6hfEZnQwIQ15R4=
+		foAWPbLl0AYi+/zX1fZnTTKskcs=
 		</data>
 		<key>Montserrat-SemiBold.ttf</key>
 		<data>
@@ -75,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xNdVMTamIRfTCTeUAWJs5eLF+y+NhuZTEz869cmC+DI=
+			owQVE8ELoK+fAmO9CeLhqvHBR50y5+YJm8iGdmCs1X8=
 			</data>
 		</dict>
 		<key>Au10tixLocalizable.strings</key>
@@ -89,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZqCRig4SJ25YtJkjdEW010cJKWrPKiliaefIqcC+llA=
+			YyBGGJn7gUhxB+Q24vLlkMTsnjbThdXeCEgX5sMxXl0=
 			</data>
 		</dict>
 		<key>Headers/Au10tixLivenessUI.h</key>
@@ -99,53 +95,46 @@
 			i9Nu1OVsXwJH3EClV4Ft834rpUEFzJItVADUG+2NkeE=
 			</data>
 		</dict>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zxf5XsnZX3W1Nzmhw56Pzxawh7m5FQW4wJv91iQmALE=
+			</data>
+		</dict>
+		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7prc2j2bIzGhwi3rgNceNxR4dfPTrJ4ghsmeEWx0Rv4=
+			</data>
+		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2xFPHibxAx7XwPWLFcJ/FhaKGj6vfD/vDs1i44ktb9U=
+			eVahkjXmZzeeVWRvSKVp1fn223mhQ6KMZgHWXccS3fg=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XGPFdyGL4Mcr1s1SIH96wO1ZbjX+rfLcBCverl1zKUs=
+			7prc2j2bIzGhwi3rgNceNxR4dfPTrJ4ghsmeEWx0Rv4=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O80lH22OwZfG7uS0od1XRDCsqCLy3Yn5KSi/amMFgEQ=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2xFPHibxAx7XwPWLFcJ/FhaKGj6vfD/vDs1i44ktb9U=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XGPFdyGL4Mcr1s1SIH96wO1ZbjX+rfLcBCverl1zKUs=
-			</data>
-		</dict>
-		<key>Modules/Au10tixLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O80lH22OwZfG7uS0od1XRDCsqCLy3Yn5KSi/amMFgEQ=
+			SScSP/9wlsKBieNBwH9Taf/FQqQetWJR9pWlDaafmko=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F5ZwIFU9SWw37CN5C8v9h1Et/6Y6niHgtVKV0tYI0z0=
+			OwunNu1Pu5C2RkMIcEnfljw99UBMZKBgXZ5u3B9UHeQ=
 			</data>
 		</dict>
 		<key>Montserrat-SemiBold.ttf</key>

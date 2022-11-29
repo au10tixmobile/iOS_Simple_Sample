@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		IbQ05/3yv/3KDrneTLmerB2ey7o=
+		xb0hWuxctcyWgHdcQV6JuM7EOoo=
 		</data>
 		<key>Headers/Au10tixPassiveFaceLivenessUI-Swift.h</key>
 		<data>
-		hL9/WXfT/UPodHx3dmLKGv9MO4o=
+		rY6uvLUbFq02jp0c1j3FrkjDmHg=
 		</data>
 		<key>Headers/Au10tixPassiveFaceLivenessUI.h</key>
 		<data>
@@ -18,35 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MxeDTqYBN6lp7Us6dXyHNxRAlHY=
+		tRn/YSj5R4uzgSJD9k/l+r910co=
+		</data>
+		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		uJO8/0/fTVsa7sIjPSF5Wp7V1sQ=
+		</data>
+		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		VZ10uN4w+KH5TrN3SD9U3Kk/TOU=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		BUkTQeySmEdIuPkHETf0V7oC3Po=
+		XxJ4ioD/++ZzCNUDaseyxRyN3vM=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		xBtbsdQVVigk6lKEGSlYSMpteyM=
+		VZ10uN4w+KH5TrN3SD9U3Kk/TOU=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8feA04Db2VtjvdRFn+eWpFqW14o=
-		</data>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		BUkTQeySmEdIuPkHETf0V7oC3Po=
-		</data>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		xBtbsdQVVigk6lKEGSlYSMpteyM=
-		</data>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		8feA04Db2VtjvdRFn+eWpFqW14o=
+		kf2PsLbuU2Itpf2jUx/S35BkI0w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		QVOo+gK0P+sbdIrwtk7kWCzL7Mg=
+		LKsVUcfPuEqzrYWVVMFq5nC/l64=
 		</data>
 		<key>PFLUILocalizable.strings</key>
 		<data>
@@ -59,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gN9YY5GrS0hbRyEjvB5aEeLbLKMBaycBk08MC/TcItM=
+			fuoVKz0O8xsq5ofHhr2iIvlkjpeo6d3LX1aPwCrQguE=
 			</data>
 		</dict>
 		<key>Headers/Au10tixPassiveFaceLivenessUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tVPqzZb2JdcfqePU4/JHDH92xZW7l25smM06GiQXlBE=
+			pm4Nnqwq8GSXs4i2fU7aDvemkh110txWXWjbR5Z00g8=
 			</data>
 		</dict>
 		<key>Headers/Au10tixPassiveFaceLivenessUI.h</key>
@@ -76,53 +72,46 @@
 			Q0e3YzWJimCUUkXaAxCBUnWvqJbOajL65Aa1gls/oRs=
 			</data>
 		</dict>
+		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YRYMNpBsLKFsL+BTkDgo9AzfzX8MurtE2y6g56BMuKE=
+			</data>
+		</dict>
+		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qW2VMKVmwQyGL5HvljjqDrZU4ZGQPdK/BNiQzfIWlSA=
+			</data>
+		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QHODLGpOqwcsUxBFqeWmIccQxCM9VczQE/RKus2fcjg=
+			agSU+tyDJS/Itr16sp2a+mrItHIb6tNiIDKxgnPhjUU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CcHuWntSK6nPMXlLCpeuV5H5ocvaxYOiB/dsZy7Dp/U=
+			qW2VMKVmwQyGL5HvljjqDrZU4ZGQPdK/BNiQzfIWlSA=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jjh/51pcOw8YcoTqrJAR1HmxAXQB3gUe06B/g5vJqe0=
-			</data>
-		</dict>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QHODLGpOqwcsUxBFqeWmIccQxCM9VczQE/RKus2fcjg=
-			</data>
-		</dict>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CcHuWntSK6nPMXlLCpeuV5H5ocvaxYOiB/dsZy7Dp/U=
-			</data>
-		</dict>
-		<key>Modules/Au10tixPassiveFaceLivenessUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Jjh/51pcOw8YcoTqrJAR1HmxAXQB3gUe06B/g5vJqe0=
+			f4+TKWw/w8sOWRS89XB5GqkgirjOXXR7L2185oa8uII=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			du5TzRhTX7ePtlcaKwnPaFkG5wPPb4RuC5py/XL6abs=
+			6WP2F12s0jmDrwxJf4lmZ+RGDQg9ZvPZ2uK6G5Cl7bc=
 			</data>
 		</dict>
 		<key>PFLUILocalizable.strings</key>
