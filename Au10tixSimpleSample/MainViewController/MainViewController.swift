@@ -18,6 +18,8 @@ import Au10tixPassiveFaceLivenessUI
 import Au10tixBEKit
 import Au10tixLivenessKit
 import Au10tixLivenessUI
+import Au10tixPayCardKit
+import Au10tixPayCardUI
 
 final class MainViewController: UIViewController {
     

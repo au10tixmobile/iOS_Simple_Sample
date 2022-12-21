@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oG16jgKGuugOT0oODGF8zNLbNII=
+		ReFdto1c9rbhP5YCYRqmRvSRJdU=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		v+N32w+ZFe9Gc5+XsIhyoyTxj2c=
+		MzyXY6KuWhDm/D0EOTZF/CAMWMQ=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		57nh3+n2BMJHnXwRcBVPD9dvZfI=
+		JyWe0tC/IVMyAHaexi2SPm/IcFM=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		v+N32w+ZFe9Gc5+XsIhyoyTxj2c=
+		MzyXY6KuWhDm/D0EOTZF/CAMWMQ=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7lmhmfE2Kvg04ACl+AEt0bniP8g=
+		+ux4ODh1Ha+kI6Ery2MeumLnw/g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KSxiNwOyXqCbjV/mSJu6PiyrvntbrJ6ZNl2l2VMEAfI=
+			e5+Bu0FlrlQh43EY9gl0acHjWuNbCwDr0OsZl2R7Sko=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+5Q6zgzeTwvn4MN2KZ8GM7x+PPRMA+zmwByIGGiKqY=
+			tUKyK3jHnVSwoZMBCCpe09LGfgdgWgHL4xK80mcgHiM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KSxiNwOyXqCbjV/mSJu6PiyrvntbrJ6ZNl2l2VMEAfI=
+			e5+Bu0FlrlQh43EY9gl0acHjWuNbCwDr0OsZl2R7Sko=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8jrbiII0J3KnRU19TXaYQHw2zggNXGq91HOdD3jWGFM=
+			AFZVHuAZDIVgZUgPxQrnzllQuzAdNIUZ3RRa5gUBPec=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

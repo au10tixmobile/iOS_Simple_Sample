@@ -158,11 +158,11 @@ public struct PFLLogManager {
     case introPage
     case scanner
     case imageReview
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
   }
 }
 extension Au10tixCore.SDKLogEvent {
@@ -197,7 +197,10 @@ public enum ValidationFlow : Swift.Int {
   public var isEmbeddedInAnotherSession: Swift.Bool
   public var detectionDelay: Foundation.TimeInterval?
   public var isMicrophoneEnabled: Swift.Bool
-  public var detectHelmet: Swift.Bool
+  public var detectHelmet: Swift.Bool {
+    get
+    set
+  }
   public var faceDetectionInManualCapture: Swift.Bool
   public var uiLicenseKey: Swift.String {
     get

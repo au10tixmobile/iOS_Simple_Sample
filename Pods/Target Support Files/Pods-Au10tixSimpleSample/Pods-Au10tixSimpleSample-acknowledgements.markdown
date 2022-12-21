@@ -49,6 +49,18 @@ Copyright 2018
 Permission is granted to...
 
 
+## Au10tixPayCardKit
+
+Copyright 2018
+Permission is granted to...
+
+
+## Au10tixPayCardUI
+
+Copyright 2018
+Permission is granted to...
+
+
 ## Au10tixProofOfAddressKit
 
 Copyright 2018

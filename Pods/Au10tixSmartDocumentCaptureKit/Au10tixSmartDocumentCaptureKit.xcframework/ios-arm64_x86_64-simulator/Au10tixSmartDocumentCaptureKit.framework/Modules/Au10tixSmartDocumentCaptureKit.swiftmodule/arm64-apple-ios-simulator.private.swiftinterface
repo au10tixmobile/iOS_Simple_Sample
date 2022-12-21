@@ -39,6 +39,7 @@ public struct SDCLogManager {
     case error
     case introPage
     case scanner
+    case docReplay
     case imageReview
     public var rawValue: Swift.String {
       get
@@ -142,6 +143,7 @@ public struct Au10MachineReadableCode {
   public func resumeCamera(_ refresh: Swift.Bool = true)
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   public func prefersAspectFillCameraPreview()
+  public func getClassification(image: Foundation.Data, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
   @objc deinit
 }
 extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSessionDelegate {
@@ -163,7 +165,8 @@ extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSes
     }
   }
   public enum Warning {
-    case notAlive
+    case fromScreen
+    case paperCopy
     public static func == (a: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning, b: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

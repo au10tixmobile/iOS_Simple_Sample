@@ -334,6 +334,7 @@ SWIFT_CLASS_NAMED("JSONRequestGenerator")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSDate;
 
 /// Decodes a JWT

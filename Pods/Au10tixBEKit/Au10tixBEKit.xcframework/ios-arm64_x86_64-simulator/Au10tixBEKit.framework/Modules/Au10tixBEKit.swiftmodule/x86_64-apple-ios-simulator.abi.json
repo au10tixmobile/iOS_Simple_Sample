@@ -1813,6 +1813,48 @@
             "fixedbinaryorder": 12
           },
           {
+            "kind": "Var",
+            "name": "pc",
+            "printedName": "pc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypePc",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO2pcyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -3482,7 +3524,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Analytics\/BackendKitEvent.swift",
       "kind": "Dictionary",
-      "offset": 621,
+      "offset": 670,
       "length": 3,
       "value": "[]"
     },
@@ -3629,6 +3671,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
       "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
       "offset": 409,
       "length": 10,
       "value": "1"
@@ -3709,6 +3758,13 @@
       "offset": 1279,
       "length": 6,
       "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 2,
+      "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
@@ -3804,6 +3860,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "StringLiteral",
+      "offset": 596,
+      "length": 4,
+      "value": "\"PC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
       "offset": 369,
       "length": 9,
       "value": "\"IDVFlow\""
@@ -3859,8 +3922,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 4,
+      "value": "\"PC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6001,
+      "offset": 6501,
       "length": 4,
       "value": "true"
     },

@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zF1OQMvHMyiDnvPGgk1Wtwf79Vw=
+		iYFc5968ViVfI0H/9x87QneK+L0=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		aUAQFrSR1IMyJ8QuSQ2OMhsEfbM=
+		W8gMn0h4AimHrmSJCPcYrJfc93g=
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		oCb2eorotqgeKnu6lbsjpJ5vQI0=
+		hRAs6DwopwF0YLW2N7Cr2nMlrHE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sABTjx8var3QuHiZVC4e0ztFqUtQ9OoNf9ASoutaa+8=
+			nO0GUDEP+48fdQkRUFr2YuDvmHrTdKmDkyP2RFJrdTE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixLivenessKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CNhqfKMxn7qpAXHFDW/kVe5KoiUbJ4aQ5DcPtQRUwyE=
+			9GQrXCHpXuXS2o5DcA6WMLMkbJY4z4JeWvo0hx1Nu28=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

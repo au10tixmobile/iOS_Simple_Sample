@@ -7,6 +7,7 @@ import AVKit
 @_exported import Au10tixBaseUI
 import Au10tixCore
 import Foundation
+import Photos
 import PhotosUI
 import Swift
 import UIKit
@@ -54,15 +55,7 @@ extension Au10tixBaseUI.ImagePicker : UIKit.UIImagePickerControllerDelegate, UIK
   @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
 }
 public struct Font {
-  public enum Suffix : Swift.String {
-    case ttf
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(style: Au10tixBaseUI.FontFile.Style = .montserrat, size: CoreFoundation.CGFloat = 20, weight: Au10tixBaseUI.FontFile.Weight = .regular)
+  public init(fontFile: Au10tixBaseUI.FontFile = FontFile(), size: CoreFoundation.CGFloat = 20)
 }
 public class Alert {
   public init(style: Au10tixBaseUI.Alert.Style, actions: [Au10tixBaseUI.AlertAction])
@@ -72,8 +65,7 @@ extension Au10tixBaseUI.Alert {
   public enum Icon {
     case timeout
     case issue
-    case noID
-    case lowQuality
+    case bullet
     case custom(image: UIKit.UIImage?)
   }
   public enum Style {
@@ -116,8 +108,8 @@ extension UIKit.UIView {
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func roundCorners(radius: CoreFoundation.CGFloat, corners: UIKit.UIRectCorner = .allCorners)
   @_Concurrency.MainActor(unsafe) public func putStroke(width: CoreFoundation.CGFloat, color: UIKit.UIColor = .clear)
-  @_Concurrency.MainActor(unsafe) public func dropShadow(radius: CoreFoundation.CGFloat, shadowColor: CoreGraphics.CGColor = UIColor.black.cgColor)
   @_Concurrency.MainActor(unsafe) public func addGradient(_ gradient: Au10tixBaseUI.Gradient, mask: QuartzCore.CAShapeLayer? = nil)
+  @_Concurrency.MainActor(unsafe) public func removeGradientLayer()
   @_Concurrency.MainActor(unsafe) public func addShape(color: UIKit.UIColor, mask: QuartzCore.CAShapeLayer)
   @_Concurrency.MainActor(unsafe) public func addSubviewIfNedded(_ subview: UIKit.UIView?)
   @_Concurrency.MainActor(unsafe) public func removeSubviewsExcept(views: [UIKit.UIView])
@@ -203,13 +195,11 @@ public struct ActionItem {
       get
     }
   }
-  public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: Au10tixBaseUI.UIThemeColor? = nil, strokeColor: Au10tixBaseUI.UIThemeColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil)
+  public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: Au10tixBaseUI.UIThemeColor? = nil, strokeColor: Au10tixBaseUI.UIThemeColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil, isEnabled: Swift.Bool = true)
 }
 @_hasMissingDesignatedInitializers public class FontGenerator {
   public static var shared: Au10tixBaseUI.FontGenerator
-  public var fonts: [Au10tixBaseUI.FontFile] {
-    get
-  }
+  public var fonts: [Au10tixBaseUI.FontFile]
   public func registerFonts()
   @objc deinit
 }
@@ -360,6 +350,9 @@ public struct AlertAction {
   @_Concurrency.MainActor(unsafe) open var topLogoImage: UIKit.UIImage? {
     get
   }
+  @_Concurrency.MainActor(unsafe) open var leftTopLogoImage: UIKit.UIImage? {
+    get
+  }
   @_Concurrency.MainActor(unsafe) open var screenTitle: Swift.String {
     get
   }
@@ -385,6 +378,7 @@ public struct AlertAction {
     get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   @_Concurrency.MainActor(unsafe) public func updateUI()
   @_Concurrency.MainActor(unsafe) public func presentNextPage()
   @_Concurrency.MainActor(unsafe) public func startScannerAnimation(color: Au10tixBaseUI.UIThemeColor? = nil, boundariesFrame: CoreFoundation.CGRect, duration: Foundation.TimeInterval)
@@ -392,6 +386,7 @@ public struct AlertAction {
   @_Concurrency.MainActor(unsafe) open func firstButtonHandler()
   @_Concurrency.MainActor(unsafe) open func secondButtonHandler()
   @_Concurrency.MainActor(unsafe) open func thirdButtonHandler()
+  @_Concurrency.MainActor(unsafe) open func leftTopButtonHandler()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -400,6 +395,8 @@ public struct ProgressBarDatasource {
   public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: Au10tixBaseUI.UIThemeColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
 }
 public struct UIThemeColor {
+  public let dark: UIKit.UIColor?
+  public let light: UIKit.UIColor?
   public init(dark: UIKit.UIColor?, light: UIKit.UIColor?)
 }
 public enum PermissionStatus {
@@ -511,6 +508,15 @@ public struct ColorGenerator {
   public static var redF95D5C_whiteFFFFFF: UIKit.UIColor {
     get
   }
+  public static var black1B1C1D_grayD4DAE4: UIKit.UIColor {
+    get
+  }
+  public static var grayACB5BD_blue181244: UIKit.UIColor {
+    get
+  }
+  public static var grayEFF0F2_blue4F4A74: UIKit.UIColor {
+    get
+  }
 }
 public struct BulletItem {
   public init(icon: Au10tixBaseUI.Alert.Icon?, title: Swift.String?)
@@ -528,33 +534,21 @@ public struct AlertManager {
   public func dismiss()
 }
 public struct FontFile {
-  public enum Style : Swift.String {
+  public enum Style {
     case montserrat
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
+    case custom(_: Swift.String)
   }
-  public enum Weight : Swift.String {
+  public enum Weight {
     case regular
     case medium
     case semiBold
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
+    case custom(_: Swift.String, _: CoreFoundation.CGFloat)
   }
-  public enum Suffix : Swift.String {
+  public enum Suffix {
     case ttf
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
+    case custom(_: Swift.String)
   }
-  public init(style: Au10tixBaseUI.FontFile.Style, weight: Au10tixBaseUI.FontFile.Weight = .regular, suffix: Au10tixBaseUI.FontFile.Suffix = .ttf, bundle: Foundation.Bundle? = nil)
+  public init(style: Au10tixBaseUI.FontFile.Style = .montserrat, weight: Au10tixBaseUI.FontFile.Weight = .regular, suffix: Au10tixBaseUI.FontFile.Suffix = .ttf, bundle: Foundation.Bundle? = nil)
 }
 public enum PreviewItemType {
   case imageNumberText
@@ -592,7 +586,7 @@ public struct AnimativeImagePreviewItem : Au10tixBaseUI.PreviewItem {
   public var view: UIKit.UIView {
     get
   }
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], images: [UIKit.UIImage]? = nil, frameDuration: Foundation.TimeInterval? = nil)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], images: [UIKit.UIImage]? = nil, frameDuration: Foundation.TimeInterval? = nil, tintColor: UIKit.UIColor? = nil, animationRepeatCount: Swift.Int? = nil)
 }
 public struct DescriptionPreviewItem : Au10tixBaseUI.PreviewItem {
   public var type: Au10tixBaseUI.PreviewItemType
@@ -664,9 +658,6 @@ public enum CameraPreviewPlaceholderAppearance {
 }
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Equatable {}
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Hashable {}
-extension Au10tixBaseUI.Font.Suffix : Swift.Equatable {}
-extension Au10tixBaseUI.Font.Suffix : Swift.Hashable {}
-extension Au10tixBaseUI.Font.Suffix : Swift.RawRepresentable {}
 extension Au10tixBaseUI.Alert.Style : Swift.Equatable {}
 extension Au10tixBaseUI.Alert.Style : Swift.Hashable {}
 extension Au10tixBaseUI.ActionItem.ButtonType : Swift.Equatable {}
@@ -685,15 +676,6 @@ extension Au10tixBaseUI.AlertAction.Style : Swift.Equatable {}
 extension Au10tixBaseUI.AlertAction.Style : Swift.Hashable {}
 extension Au10tixBaseUI.PermissionStatus : Swift.Equatable {}
 extension Au10tixBaseUI.PermissionStatus : Swift.Hashable {}
-extension Au10tixBaseUI.FontFile.Style : Swift.Equatable {}
-extension Au10tixBaseUI.FontFile.Style : Swift.Hashable {}
-extension Au10tixBaseUI.FontFile.Style : Swift.RawRepresentable {}
-extension Au10tixBaseUI.FontFile.Weight : Swift.Equatable {}
-extension Au10tixBaseUI.FontFile.Weight : Swift.Hashable {}
-extension Au10tixBaseUI.FontFile.Weight : Swift.RawRepresentable {}
-extension Au10tixBaseUI.FontFile.Suffix : Swift.Equatable {}
-extension Au10tixBaseUI.FontFile.Suffix : Swift.Hashable {}
-extension Au10tixBaseUI.FontFile.Suffix : Swift.RawRepresentable {}
 extension Au10tixBaseUI.PreviewItemType : Swift.Equatable {}
 extension Au10tixBaseUI.PreviewItemType : Swift.Hashable {}
 extension Au10tixBaseUI.ActionSectionType : Swift.Equatable {}

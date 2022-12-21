@@ -5037,6 +5037,46 @@
                 "moduleName": "Au10tixPassiveFaceLivenessKit"
               },
               {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvp",
+                "mangledName": "$s29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvp",
+                "moduleName": "Au10tixPassiveFaceLivenessKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvg",
+                    "mangledName": "$s29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvg",
+                    "moduleName": "Au10tixPassiveFaceLivenessKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -5068,45 +5108,6 @@
                 "moduleName": "Au10tixPassiveFaceLivenessKit",
                 "implicit": true,
                 "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvp",
-                "mangledName": "$s29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvp",
-                "moduleName": "Au10tixPassiveFaceLivenessKit",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvg",
-                    "mangledName": "$s29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO8rawValueSSvg",
-                    "moduleName": "Au10tixPassiveFaceLivenessKit",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
               }
             ],
             "declKind": "Enum",
@@ -8221,7 +8222,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Analytics\/PassiveFaceLivenessEvent.swift",
       "kind": "Dictionary",
-      "offset": 772,
+      "offset": 819,
       "length": 3,
       "value": "[]"
     },
@@ -8256,70 +8257,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 507,
       "length": 5,
       "value": "\"PFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 505,
-      "length": 7,
-      "value": "\"Error\""
+      "offset": 535,
+      "length": 8,
+      "value": "\"Helmet\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 538,
-      "length": 11,
-      "value": "\"IntroPage\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 507,
       "length": 5,
       "value": "\"PFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 606,
-      "length": 16,
-      "value": "\"PFLImageReview\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 505,
-      "length": 7,
-      "value": "\"Error\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 538,
-      "length": 11,
-      "value": "\"IntroPage\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 573,
-      "length": 5,
-      "value": "\"PFL\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
-      "kind": "StringLiteral",
-      "offset": 606,
-      "length": 16,
-      "value": "\"PFLImageReview\""
+      "offset": 535,
+      "length": 8,
+      "value": "\"Helmet\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2072,
+      "offset": 2605,
       "length": 5,
       "value": "false"
     },
@@ -8361,6 +8327,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
+      "offset": 4728,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
+      "kind": "BooleanLiteral",
       "offset": 4644,
       "length": 5,
       "value": "false"
@@ -8368,42 +8341,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 4792,
+      "offset": 4908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 6064,
+      "offset": 6180,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 7769,
+      "offset": 7885,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 7823,
+      "offset": 7939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 11262,
+      "offset": 11378,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 16677,
+      "offset": 16793,
       "length": 4,
       "value": "true"
     },

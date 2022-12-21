@@ -94,6 +94,7 @@ public enum BIFeature : Swift.String, Swift.Codable {
   case poa
   case nfc
   case afl
+  case pc
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -224,7 +225,10 @@ public class Log : Swift.Encodable {
     case mrzCapture
     case userCancel
     case uploadFromGallery
-    case sentToDocReplay
+    case docReplayPassed
+    case docReplayFailed
+    case docReplayFailedPaper
+    case docReplayFailedScreen
     case cameraTimeout
     case sessionRefresh
     case retake
@@ -237,6 +241,7 @@ public class Log : Swift.Encodable {
     case chipExtractionStarted
     case chipReadingSuccess
     case tryAgain
+    case mrzReadingFail
     case chipReadingFail
     case uploadSDCFrontRequest
     case mediaServiceCreateRequest
@@ -254,12 +259,16 @@ public class Log : Swift.Encodable {
     case uploadPFLVideoResponse
     case uploadPOA
     case uploadPOAResponse
+    case uploadPC
+    case uploadPCResponse
     case uploadDG1
     case uploadDG1Response
     case uploadDG2
     case uploadDG2Response
     case completeProcessRequest
     case completeProcessResponse
+    case nfcClickPassport
+    case nfcClickID
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -347,6 +356,7 @@ public enum Au10tixCorePrepareError : Swift.Error {
     case demoApp
     case backend
     case livenessSession
+    case payCard
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -500,6 +510,7 @@ public protocol AnalyticsEvent {
   var metadata: Swift.Dictionary<Swift.String, Any> { get }
   var technicalDetails: Au10tixCore.LoggerInfo? { get }
   var loggingInformation: Au10tixCore.LoggableInfo? { get }
+  var errorInformation: Au10tixCore.LoggableInfo? { get }
   var businessIntelligenceInformation: Au10tixCore.BIInfo? { get }
   func record()
 }
@@ -528,6 +539,7 @@ public enum Scope : Swift.String {
   case media
   case helmets
   case docreplay
+  case paymentCard
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -593,6 +605,7 @@ extension Au10tixCore.HTTPHeader {
     case json
     case bearer(value: Swift.String)
     case mobileSDK
+    case octetStream
   }
 }
 extension Au10tixCore.HTTPHeader {
@@ -606,14 +619,6 @@ extension Au10tixCore.HTTPHeader : Swift.CustomStringConvertible {
 }
 extension Au10tixCore.Au10NetworkRequest : Swift.CustomStringConvertible {
   public var description: Swift.String {
-    get
-  }
-}
-extension Swift.Encodable {
-  public var jsonData: Foundation.Data? {
-    get
-  }
-  public var jsonString: Swift.String? {
     get
   }
 }
@@ -632,11 +637,15 @@ public enum ScreenRecorderError : Swift.Error {
   case stopCaptureFailed(error: Swift.Error)
 }
 public struct LoggableInfo : Swift.Codable {
-  public init(level: Au10tixCore.Au10Constants.Event.Level = .info, category: Au10tixCore.Au10Constants.Event.Category? = nil, sessionId: Swift.String? = nil, action: Au10tixCore.Au10Constants.Event.Action? = nil, module: Au10tixCore.Au10Constants.ModuleType? = nil, errorCode: Swift.String? = nil)
+  public init(level: Au10tixCore.Au10Constants.Event.Level = .info, category: Au10tixCore.Au10Constants.Event.Category? = nil, sessionId: Swift.String? = nil, action: Au10tixCore.Au10Constants.Event.Action? = nil, module: Au10tixCore.Au10Constants.ModuleType? = nil)
+  public init(error: Au10tixCore.Au10Error, sessionId: Swift.String?)
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 public struct Au10SessionCaptureFrameUpdate<Frame> {
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Au10tix : ObjectiveC.NSObject, Au10tixCore.BearerTokenAdvertizer, Au10tixCore.Authenticator, Au10tixCore.SessionDetailsAdvertizer, Au10tixCore.Au10tixSDK {
   public static var au10ErrorNotificationCenterKey: Swift.String {
@@ -905,6 +914,8 @@ public enum Au10ErrorDomain : Swift.String, Swift.Encodable {
   case hdUi
   case baseUi
   case secureMeKit
+  case pcKit
+  case pcUi
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

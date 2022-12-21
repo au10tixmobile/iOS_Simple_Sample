@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		pyON6d1+fZrLBE/ojXKJCZqyYKY=
+		w1BWINyDnDCEkV/KaQ4+rkDjaCc=
 		</data>
 		<key>Headers/Au10tixSmartDocumentCaptureUI-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cLViJWl2grBG5KqPHtr4tyzc1So=
+		I5rEix+HQbfoOHNgK8Ckz/7Get4=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qBRTY6MTyxD4ktf4ElQv1zRnBiU=
+		w0GkeDbZRT6q5coJutX1RnxYMGY=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vFXzu5nzLOp/RspvvwlLb9m4AtQ=
+		ySTiFplLCUiK2bPnk7q5kJURxYY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>SDCUILocalizable.strings</key>
 		<data>
-		+9Ks1NjST0eiBpTah+kJLsbSO7Y=
+		drH/oIBZm0l1kCA4sI5UYneOO9k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKMqQUHXk1c302s1Mon8rVV1JOKc30fe2yOINjr8SW0=
+			pgERnuYi3n5qsyTF/akxDlCezEysC/gF1lH54r5ceOc=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSmartDocumentCaptureUI-Swift.h</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N4i38E8zmR9lrNjnhHc3pIE9HR2uQCZgr5T5nOm1GfE=
+			IzyqqgtOiwUByhRxVzHKnnzFlqJ3p7RcsZyYLHdxCJ8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hm9nDXBXTei3WT7p63QEDGJ6kQt9jbhz3u1FYX4LupM=
+			Cx4h4Osl8K7g1AWkUJHUgV15CSmQzazBEubKKEEIcS8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPHda6dM0nr9i6R060O7dOeqMKWyq8YYA+top7w3jcE=
+			OGMEX34XGDdUC8ph07W6vupGVG0BnNiLH7+fEFzQ9xM=
 			</data>
 		</dict>
 	</dict>

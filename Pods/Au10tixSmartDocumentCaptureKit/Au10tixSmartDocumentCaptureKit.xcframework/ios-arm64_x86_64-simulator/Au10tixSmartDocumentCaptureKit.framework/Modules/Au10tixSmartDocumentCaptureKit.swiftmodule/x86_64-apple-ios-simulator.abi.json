@@ -65,6 +65,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Au10tixSmartDocumentCaptureKit"
       },
       {
@@ -967,6 +977,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO7scanneryA2EmF",
                 "mangledName": "$s30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO7scanneryA2EmF",
+                "moduleName": "Au10tixSmartDocumentCaptureKit"
+              },
+              {
+                "kind": "Var",
+                "name": "docReplay",
+                "printedName": "docReplay",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSmartDocumentCaptureKit.SDCLogManager.Category.Type) -> Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                        "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                            "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO9docReplayyA2EmF",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO9docReplayyA2EmF",
                 "moduleName": "Au10tixSmartDocumentCaptureKit"
               },
               {
@@ -4297,7 +4344,67 @@
             "mangledName": "$s30Au10tixSmartDocumentCaptureKit10SDCSessionC30prefersAspectFillCameraPreviewyyF",
             "moduleName": "Au10tixSmartDocumentCaptureKit",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClassification",
+            "printedName": "getClassification(image:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit10SDCSessionC17getClassification5image10completiony10Foundation4DataV_ys6ResultOyAIs5Error_pGctF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit10SDCSessionC17getClassification5image10completiony10Foundation4DataV_ys6ResultOyAIs5Error_pGctF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4801,8 +4908,8 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "notAlive",
-                "printedName": "notAlive",
+                "name": "fromScreen",
+                "printedName": "fromScreen",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -4832,8 +4939,45 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO8notAliveyA2EmF",
-                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO8notAliveyA2EmF",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO10fromScreenyA2EmF",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO10fromScreenyA2EmF",
+                "moduleName": "Au10tixSmartDocumentCaptureKit"
+              },
+              {
+                "kind": "Var",
+                "name": "paperCopy",
+                "printedName": "paperCopy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning.Type) -> Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Warning",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning",
+                        "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Warning",
+                            "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning",
+                            "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO9paperCopyyA2EmF",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC7WarningO9paperCopyyA2EmF",
                 "moduleName": "Au10tixSmartDocumentCaptureKit"
               },
               {
@@ -6152,21 +6296,49 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Helpers\/SDCLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3018,
+      "offset": 3813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Configurations\/SmartDocumentCaptureConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 744,
+      "offset": 1126,
       "length": 3,
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/BeginProcessingResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 11,
+      "value": "\"RequestId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/BeginProcessingResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 18,
+      "value": "\"RequestStateCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/BeginProcessingResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 11,
+      "value": "\"RequestId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/BeginProcessingResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 18,
+      "value": "\"RequestStateCode\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Analytics\/AnalyticsEvent.swift",
       "kind": "Dictionary",
-      "offset": 585,
+      "offset": 632,
       "length": 3,
       "value": "[]"
     },
@@ -6242,15 +6414,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6000,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 10492,
+      "offset": 10568,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 14414,
+      "offset": 14490,
       "length": 4,
       "value": "true"
     },
