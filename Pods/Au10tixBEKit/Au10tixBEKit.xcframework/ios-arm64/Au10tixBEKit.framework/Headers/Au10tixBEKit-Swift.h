@@ -324,6 +324,8 @@ typedef SWIFT_ENUM(NSInteger, DataType, open) {
   DataTypeNfcDG2 = 11,
 ///
   DataTypeNfcDG7 = 12,
+/// Payment Card result
+  DataTypePc = 13,
 };
 
 #endif

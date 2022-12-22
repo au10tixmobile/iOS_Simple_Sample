@@ -1,0 +1,11 @@
+framework module Au10tixPayCardUI {
+  umbrella header "Au10tixPayCardUI.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixPayCardUI.Swift {
+  header "Au10tixPayCardUI-Swift.h"
+  requires objc
+}

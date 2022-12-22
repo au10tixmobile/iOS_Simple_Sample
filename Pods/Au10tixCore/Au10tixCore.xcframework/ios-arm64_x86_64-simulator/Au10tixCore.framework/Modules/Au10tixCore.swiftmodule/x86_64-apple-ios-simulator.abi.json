@@ -1960,6 +1960,43 @@
             "moduleName": "Au10tixCore"
           },
           {
+            "kind": "Var",
+            "name": "pc",
+            "printedName": "pc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.BIFeature.Type) -> Au10tixCore.BIFeature",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIFeature",
+                    "printedName": "Au10tixCore.BIFeature",
+                    "usr": "s:11Au10tixCore9BIFeatureO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.BIFeature.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BIFeature",
+                        "printedName": "Au10tixCore.BIFeature",
+                        "usr": "s:11Au10tixCore9BIFeatureO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore9BIFeatureO2pcyA2CmF",
+            "mangledName": "$s11Au10tixCore9BIFeatureO2pcyA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -5346,8 +5383,8 @@
               },
               {
                 "kind": "Var",
-                "name": "sentToDocReplay",
-                "printedName": "sentToDocReplay",
+                "name": "docReplayPassed",
+                "printedName": "docReplayPassed",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -5377,8 +5414,119 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:11Au10tixCore3LogC6ActionO15sentToDocReplayyA2EmF",
-                "mangledName": "$s11Au10tixCore3LogC6ActionO15sentToDocReplayyA2EmF",
+                "usr": "s:11Au10tixCore3LogC6ActionO15docReplayPassedyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO15docReplayPassedyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "docReplayFailed",
+                "printedName": "docReplayFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO15docReplayFailedyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO15docReplayFailedyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "docReplayFailedPaper",
+                "printedName": "docReplayFailedPaper",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO20docReplayFailedPaperyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO20docReplayFailedPaperyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "docReplayFailedScreen",
+                "printedName": "docReplayFailedScreen",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO21docReplayFailedScreenyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO21docReplayFailedScreenyA2EmF",
                 "moduleName": "Au10tixCore"
               },
               {
@@ -5823,6 +5971,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:11Au10tixCore3LogC6ActionO8tryAgainyA2EmF",
                 "mangledName": "$s11Au10tixCore3LogC6ActionO8tryAgainyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "mrzReadingFail",
+                "printedName": "mrzReadingFail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO14mrzReadingFailyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO14mrzReadingFailyA2EmF",
                 "moduleName": "Au10tixCore"
               },
               {
@@ -6456,6 +6641,80 @@
               },
               {
                 "kind": "Var",
+                "name": "uploadPC",
+                "printedName": "uploadPC",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO8uploadPCyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO8uploadPCyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "uploadPCResponse",
+                "printedName": "uploadPCResponse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO16uploadPCResponseyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO16uploadPCResponseyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
                 "name": "uploadDG1",
                 "printedName": "uploadDG1",
                 "children": [
@@ -6674,6 +6933,80 @@
                 "declKind": "EnumElement",
                 "usr": "s:11Au10tixCore3LogC6ActionO23completeProcessResponseyA2EmF",
                 "mangledName": "$s11Au10tixCore3LogC6ActionO23completeProcessResponseyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "nfcClickPassport",
+                "printedName": "nfcClickPassport",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO16nfcClickPassportyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO16nfcClickPassportyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "nfcClickID",
+                "printedName": "nfcClickID",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO10nfcClickIDyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO10nfcClickIDyA2EmF",
                 "moduleName": "Au10tixCore"
               },
               {
@@ -8231,6 +8564,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "LogReport",
         "printedName": "LogReport",
@@ -9116,6 +9459,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:11Au10tixCore13Au10ConstantsC10ModuleTypeO15livenessSessionyA2EmF",
                 "mangledName": "$s11Au10tixCore13Au10ConstantsC10ModuleTypeO15livenessSessionyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "payCard",
+                "printedName": "payCard",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Au10Constants.ModuleType.Type) -> Au10tixCore.Au10Constants.ModuleType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModuleType",
+                        "printedName": "Au10tixCore.Au10Constants.ModuleType",
+                        "usr": "s:11Au10tixCore13Au10ConstantsC10ModuleTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Au10Constants.ModuleType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ModuleType",
+                            "printedName": "Au10tixCore.Au10Constants.ModuleType",
+                            "usr": "s:11Au10tixCore13Au10ConstantsC10ModuleTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore13Au10ConstantsC10ModuleTypeO7payCardyA2EmF",
+                "mangledName": "$s11Au10tixCore13Au10ConstantsC10ModuleTypeO7payCardyA2EmF",
                 "moduleName": "Au10tixCore"
               },
               {
@@ -13280,6 +13660,64 @@
           },
           {
             "kind": "Var",
+            "name": "errorInformation",
+            "printedName": "errorInformation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.LoggableInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggableInfo",
+                    "printedName": "Au10tixCore.LoggableInfo",
+                    "usr": "s:11Au10tixCore12LoggableInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore14AnalyticsEventP16errorInformationAA12LoggableInfoVSgvp",
+            "mangledName": "$s11Au10tixCore14AnalyticsEventP16errorInformationAA12LoggableInfoVSgvp",
+            "moduleName": "Au10tixCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixCore.LoggableInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggableInfo",
+                        "printedName": "Au10tixCore.LoggableInfo",
+                        "usr": "s:11Au10tixCore12LoggableInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore14AnalyticsEventP16errorInformationAA12LoggableInfoVSgvg",
+                "mangledName": "$s11Au10tixCore14AnalyticsEventP16errorInformationAA12LoggableInfoVSgvg",
+                "moduleName": "Au10tixCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.AnalyticsEvent>",
+                "sugared_genericSig": "<Self where Self : Au10tixCore.AnalyticsEvent>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "businessIntelligenceInformation",
             "printedName": "businessIntelligenceInformation",
             "children": [
@@ -14069,6 +14507,43 @@
             "declKind": "EnumElement",
             "usr": "s:11Au10tixCore5ScopeO9docreplayyA2CmF",
             "mangledName": "$s11Au10tixCore5ScopeO9docreplayyA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
+            "kind": "Var",
+            "name": "paymentCard",
+            "printedName": "paymentCard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Scope.Type) -> Au10tixCore.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "Au10tixCore.Scope",
+                    "usr": "s:11Au10tixCore5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore5ScopeO11paymentCardyA2CmF",
+            "mangledName": "$s11Au10tixCore5ScopeO11paymentCardyA2CmF",
             "moduleName": "Au10tixCore"
           },
           {
@@ -16339,6 +16814,43 @@
                 "usr": "s:11Au10tixCore10HTTPHeaderV6ValuesO9mobileSDKyA2EmF",
                 "mangledName": "$s11Au10tixCore10HTTPHeaderV6ValuesO9mobileSDKyA2EmF",
                 "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "octetStream",
+                "printedName": "octetStream",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.HTTPHeader.Values.Type) -> Au10tixCore.HTTPHeader.Values",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Values",
+                        "printedName": "Au10tixCore.HTTPHeader.Values",
+                        "usr": "s:11Au10tixCore10HTTPHeaderV6ValuesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.HTTPHeader.Values.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Values",
+                            "printedName": "Au10tixCore.HTTPHeader.Values",
+                            "usr": "s:11Au10tixCore10HTTPHeaderV6ValuesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore10HTTPHeaderV6ValuesO11octetStreamyA2EmF",
+                "mangledName": "$s11Au10tixCore10HTTPHeaderV6ValuesO11octetStreamyA2EmF",
+                "moduleName": "Au10tixCore"
               }
             ],
             "declKind": "Enum",
@@ -17021,7 +17533,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(level:category:sessionId:action:module:errorCode:)",
+            "printedName": "init(level:category:sessionId:action:module:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -17095,6 +17607,33 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore12LoggableInfoV5level8category9sessionId6action6moduleAcA13Au10ConstantsC5EventO5LevelO_AL8CategoryOSgSSSgAL6ActionOSgAJ10ModuleTypeOSgtcfc",
+            "mangledName": "$s11Au10tixCore12LoggableInfoV5level8category9sessionId6action6moduleAcA13Au10ConstantsC5EventO5LevelO_AL8CategoryOSgSSSgAL6ActionOSgAJ10ModuleTypeOSgtcfc",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(error:sessionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoggableInfo",
+                "printedName": "Au10tixCore.LoggableInfo",
+                "usr": "s:11Au10tixCore12LoggableInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Error",
+                "printedName": "Au10tixCore.Au10Error",
+                "usr": "s:11Au10tixCore9Au10ErrorV"
               },
               {
                 "kind": "TypeNominal",
@@ -17108,13 +17647,12 @@
                     "usr": "s:SS"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11Au10tixCore12LoggableInfoV5level8category9sessionId6action6module9errorCodeAcA13Au10ConstantsC5EventO5LevelO_AM8CategoryOSgSSSgAM6ActionOSgAK10ModuleTypeOSgAStcfc",
-            "mangledName": "$s11Au10tixCore12LoggableInfoV5level8category9sessionId6action6module9errorCodeAcA13Au10ConstantsC5EventO5LevelO_AM8CategoryOSgSSSgAM6ActionOSgAK10ModuleTypeOSgAStcfc",
+            "usr": "s:11Au10tixCore12LoggableInfoV5error9sessionIdAcA9Au10ErrorV_SSSgtcfc",
+            "mangledName": "$s11Au10tixCore12LoggableInfoV5error9sessionIdAcA9Au10ErrorV_SSSgtcfc",
             "moduleName": "Au10tixCore",
             "declAttributes": [
               "AccessControl"
@@ -17241,6 +17779,13 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixCore"
       },
       {
         "kind": "Import",
@@ -24776,6 +25321,80 @@
             "moduleName": "Au10tixCore"
           },
           {
+            "kind": "Var",
+            "name": "pcKit",
+            "printedName": "pcKit",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Au10ErrorDomain.Type) -> Au10tixCore.Au10ErrorDomain",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10ErrorDomain",
+                    "printedName": "Au10tixCore.Au10ErrorDomain",
+                    "usr": "s:11Au10tixCore15Au10ErrorDomainO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Au10ErrorDomain.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10ErrorDomain",
+                        "printedName": "Au10tixCore.Au10ErrorDomain",
+                        "usr": "s:11Au10tixCore15Au10ErrorDomainO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore15Au10ErrorDomainO5pcKityA2CmF",
+            "mangledName": "$s11Au10tixCore15Au10ErrorDomainO5pcKityA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
+            "kind": "Var",
+            "name": "pcUi",
+            "printedName": "pcUi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Au10ErrorDomain.Type) -> Au10tixCore.Au10ErrorDomain",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10ErrorDomain",
+                    "printedName": "Au10tixCore.Au10ErrorDomain",
+                    "usr": "s:11Au10tixCore15Au10ErrorDomainO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Au10ErrorDomain.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Au10ErrorDomain",
+                        "printedName": "Au10tixCore.Au10ErrorDomain",
+                        "usr": "s:11Au10tixCore15Au10ErrorDomainO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore15Au10ErrorDomainO4pcUiyA2CmF",
+            "mangledName": "$s11Au10tixCore15Au10ErrorDomainO4pcUiyA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -32196,75 +32815,40 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Encodable",
-        "printedName": "Encodable",
+        "name": "UIDevice",
+        "printedName": "UIDevice",
         "children": [
           {
             "kind": "Var",
-            "name": "jsonData",
-            "printedName": "jsonData",
+            "name": "modelName",
+            "printedName": "modelName",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:SE11Au10tixCoreE8jsonData10Foundation0D0VSgvp",
-            "mangledName": "$sSE11Au10tixCoreE8jsonData10Foundation0D0VSgvp",
+            "usr": "s:So8UIDeviceC11Au10tixCoreE9modelNameSSvpZ",
+            "mangledName": "$sSo8UIDeviceC11Au10tixCoreE9modelNameSSvpZ",
             "moduleName": "Au10tixCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom"
+            ],
             "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
                 "name": "Get",
                 "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:SE11Au10tixCoreE8jsonData10Foundation0D0VSgvg",
-                "mangledName": "$sSE11Au10tixCoreE8jsonData10Foundation0D0VSgvg",
-                "moduleName": "Au10tixCore",
-                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
-                "sugared_genericSig": "<Self where Self : Swift.Encodable>",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "jsonString",
-            "printedName": "jsonString",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -32273,52 +32857,91 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:SE11Au10tixCoreE10jsonStringSSSgvp",
-            "mangledName": "$sSE11Au10tixCoreE10jsonStringSSSgvp",
-            "moduleName": "Au10tixCore",
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
                 "declKind": "Accessor",
-                "usr": "s:SE11Au10tixCoreE10jsonStringSSSgvg",
-                "mangledName": "$sSE11Au10tixCoreE10jsonStringSSSgvg",
+                "usr": "s:So8UIDeviceC11Au10tixCoreE9modelNameSSvgZ",
+                "mangledName": "$sSo8UIDeviceC11Au10tixCoreE9modelNameSSvgZ",
                 "moduleName": "Au10tixCore",
-                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
-                "sugared_genericSig": "<Self where Self : Swift.Encodable>",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
           }
         ],
-        "declKind": "Protocol",
-        "usr": "s:SE",
-        "mangledName": "$sSE",
-        "moduleName": "Swift",
-        "isExternal": true
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIDevice",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIDevice",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -32478,6 +33101,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "StringLiteral",
+      "offset": 2377,
+      "length": 4,
+      "value": "\"PC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
+      "kind": "StringLiteral",
       "offset": 2268,
       "length": 5,
       "value": "\"SDC\""
@@ -32512,211 +33142,218 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2377,
+      "length": 4,
+      "value": "\"PC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2425,
+      "offset": 2444,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2443,
+      "offset": 2462,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2465,
+      "offset": 2484,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2425,
+      "offset": 2444,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2443,
+      "offset": 2462,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2465,
+      "offset": 2484,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2425,
+      "offset": 2444,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2443,
+      "offset": 2462,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2465,
+      "offset": 2484,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2531,
+      "offset": 2550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2552,
+      "offset": 2571,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2575,
+      "offset": 2594,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2531,
+      "offset": 2550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2552,
+      "offset": 2571,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2575,
+      "offset": 2594,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2531,
+      "offset": 2550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2552,
+      "offset": 2571,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2575,
+      "offset": 2594,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 2653,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2651,
+      "offset": 2670,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 2653,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2651,
+      "offset": 2670,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 2653,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2651,
+      "offset": 2670,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2718,
+      "offset": 2737,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2735,
+      "offset": 2754,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2718,
+      "offset": 2737,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2735,
+      "offset": 2754,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2718,
+      "offset": 2737,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Additional Information\/BIInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2735,
+      "offset": 2754,
       "length": 1,
       "value": "2"
     },
@@ -32815,253 +33452,309 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
       "offset": 1587,
-      "length": 11,
-      "value": "\"DocReplay\""
+      "length": 8,
+      "value": "\"Passed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1628,
+      "offset": 1627,
+      "length": 15,
+      "value": "\"ServerFailure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1679,
+      "length": 13,
+      "value": "\"FailedPaper\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1730,
+      "length": 14,
+      "value": "\"FailedScreen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
       "length": 6,
       "value": "\"6001\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1665,
+      "offset": 1811,
       "length": 9,
       "value": "\"Refresh\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 1843,
       "length": 7,
       "value": "\"Retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 1874,
       "length": 9,
       "value": "\"Approve\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1762,
+      "offset": 1908,
       "length": 10,
       "value": "\"Validate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1947,
       "length": 14,
       "value": "\"LivenessPass\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1990,
       "length": 14,
       "value": "\"LivenessFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 2030,
       "length": 11,
       "value": "\"ClickHelp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2076,
       "length": 16,
       "value": "\"ReadingStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 2130,
       "length": 19,
       "value": "\"ExtractionStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2184,
       "length": 20,
       "value": "\"ChipReadingSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2083,
+      "offset": 2229,
       "length": 10,
       "value": "\"TryAgain\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2270,
+      "length": 16,
+      "value": "\"MRZReadingFail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 2318,
       "length": 17,
       "value": "\"ChipReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2373,
       "length": 16,
       "value": "\"UploadSDCFront\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2431,
       "length": 8,
       "value": "\"Create\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2289,
+      "offset": 2482,
       "length": 16,
       "value": "\"CreateResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2535,
       "length": 15,
       "value": "\"UploadSDCBack\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2396,
+      "offset": 2589,
       "length": 24,
       "value": "\"UploadSDCFrontResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 2651,
       "length": 23,
       "value": "\"UploadSDCBackResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2507,
+      "offset": 2700,
       "length": 11,
       "value": "\"UploadPFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2552,
+      "offset": 2745,
       "length": 19,
       "value": "\"UploadPFLResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2597,
+      "offset": 2790,
       "length": 11,
       "value": "\"UploadFF1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2642,
+      "offset": 2835,
       "length": 19,
       "value": "\"UploadFF1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2687,
+      "offset": 2880,
       "length": 11,
       "value": "\"UploadFF2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 2925,
       "length": 19,
       "value": "\"UploadFF2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2975,
       "length": 16,
       "value": "\"UploadPFLVideo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2837,
+      "offset": 3030,
       "length": 24,
       "value": "\"UploadPFLVideoResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 3080,
       "length": 11,
       "value": "\"UploadPOA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2932,
+      "offset": 3125,
       "length": 19,
       "value": "\"UploadPOAResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2977,
+      "offset": 3169,
+      "length": 10,
+      "value": "\"UploadPC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3212,
+      "length": 18,
+      "value": "\"UploadPCResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3256,
       "length": 11,
       "value": "\"UploadDG1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3022,
+      "offset": 3301,
       "length": 19,
       "value": "\"UploadDG1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3346,
       "length": 11,
       "value": "\"UploadDG2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3112,
+      "offset": 3391,
       "length": 19,
       "value": "\"UploadDG2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3170,
+      "offset": 3449,
       "length": 9,
       "value": "\"Process\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3498,
       "length": 10,
       "value": "\"Response\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3541,
+      "length": 15,
+      "value": "\"ClickPassport\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3583,
+      "length": 13,
+      "value": "\"ClickIDCard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
@@ -33130,253 +33823,309 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
       "offset": 1587,
-      "length": 11,
-      "value": "\"DocReplay\""
+      "length": 8,
+      "value": "\"Passed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1628,
+      "offset": 1627,
+      "length": 15,
+      "value": "\"ServerFailure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1679,
+      "length": 13,
+      "value": "\"FailedPaper\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1730,
+      "length": 14,
+      "value": "\"FailedScreen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1774,
       "length": 6,
       "value": "\"6001\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1665,
+      "offset": 1811,
       "length": 9,
       "value": "\"Refresh\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 1843,
       "length": 7,
       "value": "\"Retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 1874,
       "length": 9,
       "value": "\"Approve\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1762,
+      "offset": 1908,
       "length": 10,
       "value": "\"Validate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1801,
+      "offset": 1947,
       "length": 14,
       "value": "\"LivenessPass\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1844,
+      "offset": 1990,
       "length": 14,
       "value": "\"LivenessFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 2030,
       "length": 11,
       "value": "\"ClickHelp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2076,
       "length": 16,
       "value": "\"ReadingStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 2130,
       "length": 19,
       "value": "\"ExtractionStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2184,
       "length": 20,
       "value": "\"ChipReadingSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2083,
+      "offset": 2229,
       "length": 10,
       "value": "\"TryAgain\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2125,
+      "offset": 2270,
+      "length": 16,
+      "value": "\"MRZReadingFail\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 2318,
       "length": 17,
       "value": "\"ChipReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2373,
       "length": 16,
       "value": "\"UploadSDCFront\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2431,
       "length": 8,
       "value": "\"Create\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2289,
+      "offset": 2482,
       "length": 16,
       "value": "\"CreateResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2535,
       "length": 15,
       "value": "\"UploadSDCBack\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2396,
+      "offset": 2589,
       "length": 24,
       "value": "\"UploadSDCFrontResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 2651,
       "length": 23,
       "value": "\"UploadSDCBackResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2507,
+      "offset": 2700,
       "length": 11,
       "value": "\"UploadPFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2552,
+      "offset": 2745,
       "length": 19,
       "value": "\"UploadPFLResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2597,
+      "offset": 2790,
       "length": 11,
       "value": "\"UploadFF1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2642,
+      "offset": 2835,
       "length": 19,
       "value": "\"UploadFF1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2687,
+      "offset": 2880,
       "length": 11,
       "value": "\"UploadFF2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2732,
+      "offset": 2925,
       "length": 19,
       "value": "\"UploadFF2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2975,
       "length": 16,
       "value": "\"UploadPFLVideo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2837,
+      "offset": 3030,
       "length": 24,
       "value": "\"UploadPFLVideoResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2887,
+      "offset": 3080,
       "length": 11,
       "value": "\"UploadPOA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2932,
+      "offset": 3125,
       "length": 19,
       "value": "\"UploadPOAResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2977,
+      "offset": 3169,
+      "length": 10,
+      "value": "\"UploadPC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3212,
+      "length": 18,
+      "value": "\"UploadPCResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3256,
       "length": 11,
       "value": "\"UploadDG1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3022,
+      "offset": 3301,
       "length": 19,
       "value": "\"UploadDG1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3346,
       "length": 11,
       "value": "\"UploadDG2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3112,
+      "offset": 3391,
       "length": 19,
       "value": "\"UploadDG2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3170,
+      "offset": 3449,
       "length": 9,
       "value": "\"Process\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3498,
       "length": 10,
       "value": "\"Response\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3541,
+      "length": 15,
+      "value": "\"ClickPassport\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3583,
+      "length": 13,
+      "value": "\"ClickIDCard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Network Manager\/MultipartDataBuilder.swift",
@@ -33451,210 +34200,210 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1018,
       "length": 11,
       "value": "\"MobileSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1018,
       "length": 11,
       "value": "\"MobileSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1095,
+      "offset": 1116,
       "length": 9,
       "value": "\"Session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1152,
       "length": 6,
       "value": "\"Init\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1189,
       "length": 13,
       "value": "\"Persmission\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1233,
       "length": 12,
       "value": "\"Networking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1275,
       "length": 11,
       "value": "\"Licensing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1323,
       "length": 19,
       "value": "\"Request Generator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1379,
       "length": 19,
       "value": "\"Custom Parameters\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1413,
+      "offset": 1434,
       "length": 18,
       "value": "\"Image Processing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1481,
       "length": 18,
       "value": "\"passport reading\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1532,
       "length": 15,
       "value": "\"Image Capture\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1575,
       "length": 9,
       "value": "\"backend\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1095,
+      "offset": 1116,
       "length": 9,
       "value": "\"Session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1152,
       "length": 6,
       "value": "\"Init\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1189,
       "length": 13,
       "value": "\"Persmission\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1212,
+      "offset": 1233,
       "length": 12,
       "value": "\"Networking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1275,
       "length": 11,
       "value": "\"Licensing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1323,
       "length": 19,
       "value": "\"Request Generator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1379,
       "length": 19,
       "value": "\"Custom Parameters\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1413,
+      "offset": 1434,
       "length": 18,
       "value": "\"Image Processing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1481,
       "length": 18,
       "value": "\"passport reading\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1532,
       "length": 15,
       "value": "\"Image Capture\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1575,
       "length": 9,
       "value": "\"backend\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1845,
       "length": 10,
       "value": "\"add item\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1884,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 1920,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1845,
       "length": 10,
       "value": "\"add item\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1884,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Constants+Extension\/Au10Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 1920,
       "length": 7,
       "value": "\"error\""
     },
@@ -33696,6 +34445,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
+      "offset": 368,
+      "length": 17,
+      "value": "\"paymentCardData\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
       "offset": 207,
       "length": 21,
       "value": "\"ocs\/scope:mobilesdk\""
@@ -33706,6 +34462,13 @@
       "offset": 256,
       "length": 11,
       "value": "\"mobilesdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
+      "offset": 368,
+      "length": 17,
+      "value": "\"paymentCardData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Network Manager\/Au10NetworkRequest.swift",
@@ -33941,30 +34704,1549 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Concrete Events\/LogzIoEngine+Events.swift",
       "kind": "StringLiteral",
-      "offset": 941,
+      "offset": 1104,
       "length": 11,
       "value": "\"MobileSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Concrete Events\/LogzIoEngine+Events.swift",
       "kind": "StringLiteral",
-      "offset": 1216,
+      "offset": 1381,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Concrete Events\/LogzIoEngine+Events.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1458,
       "length": 5,
       "value": "\"iOS\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/Concrete Events\/LogzIoEngine+Events.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Analytics\/Analytics Events\/CoreAnalyticsEvent.swift",
       "kind": "Dictionary",
-      "offset": 561,
+      "offset": 601,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 816,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 872,
+      "length": 29,
+      "value": "\"iPod touch (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 29,
+      "value": "\"iPod touch (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1022,
+      "length": 9,
+      "value": "\"iPod9,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1078,
+      "length": 29,
+      "value": "\"iPod touch (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1125,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1151,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1181,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1209,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1265,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1294,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1307,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1350,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1378,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1391,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1434,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1463,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1476,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1548,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1632,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1688,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1721,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1806,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1862,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1896,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1909,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1952,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1980,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1993,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2069,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2083,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2125,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2153,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2167,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2209,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2242,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2256,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2298,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2326,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2382,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2411,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2425,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2467,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2500,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2556,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2585,
+      "length": 12,
+      "value": "\"iPhone12,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2641,
+      "length": 11,
+      "value": "\"iPhone 11\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2670,
+      "length": 12,
+      "value": "\"iPhone12,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2726,
+      "length": 15,
+      "value": "\"iPhone 11 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2759,
+      "length": 12,
+      "value": "\"iPhone12,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2815,
+      "length": 19,
+      "value": "\"iPhone 11 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2852,
+      "length": 12,
+      "value": "\"iPhone13,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2908,
+      "length": 16,
+      "value": "\"iPhone 12 mini\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2942,
+      "length": 12,
+      "value": "\"iPhone13,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2998,
+      "length": 11,
+      "value": "\"iPhone 12\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3027,
+      "length": 12,
+      "value": "\"iPhone13,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3083,
+      "length": 15,
+      "value": "\"iPhone 12 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3116,
+      "length": 12,
+      "value": "\"iPhone13,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3172,
+      "length": 19,
+      "value": "\"iPhone 12 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3209,
+      "length": 12,
+      "value": "\"iPhone14,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3265,
+      "length": 16,
+      "value": "\"iPhone 13 mini\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3299,
+      "length": 12,
+      "value": "\"iPhone14,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3355,
+      "length": 11,
+      "value": "\"iPhone 13\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3384,
+      "length": 12,
+      "value": "\"iPhone14,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3440,
+      "length": 15,
+      "value": "\"iPhone 13 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3473,
+      "length": 12,
+      "value": "\"iPhone14,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3529,
+      "length": 19,
+      "value": "\"iPhone 13 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3566,
+      "length": 12,
+      "value": "\"iPhone14,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3622,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3651,
+      "length": 12,
+      "value": "\"iPhone14,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3707,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3741,
+      "length": 12,
+      "value": "\"iPhone15,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3797,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3830,
+      "length": 12,
+      "value": "\"iPhone15,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3886,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3923,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3979,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4008,
+      "length": 12,
+      "value": "\"iPhone12,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4064,
+      "length": 28,
+      "value": "\"iPhone SE (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4110,
+      "length": 12,
+      "value": "\"iPhone14,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4166,
+      "length": 28,
+      "value": "\"iPhone SE (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4212,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4223,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4234,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4245,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4268,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4294,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4305,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4316,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4350,
+      "length": 23,
+      "value": "\"iPad (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4391,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4402,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4413,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4447,
+      "length": 23,
+      "value": "\"iPad (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4488,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4500,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4544,
+      "length": 23,
+      "value": "\"iPad (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4585,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4596,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4641,
+      "length": 23,
+      "value": "\"iPad (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 10,
+      "value": "\"iPad7,11\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4694,
+      "length": 10,
+      "value": "\"iPad7,12\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4738,
+      "length": 23,
+      "value": "\"iPad (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4779,
+      "length": 10,
+      "value": "\"iPad11,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4791,
+      "length": 10,
+      "value": "\"iPad11,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4835,
+      "length": 23,
+      "value": "\"iPad (8th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4876,
+      "length": 10,
+      "value": "\"iPad12,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4888,
+      "length": 10,
+      "value": "\"iPad12,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4932,
+      "length": 23,
+      "value": "\"iPad (9th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4973,
+      "length": 11,
+      "value": "\"iPad13,18\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4986,
+      "length": 11,
+      "value": "\"iPad13,19\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5029,
+      "length": 24,
+      "value": "\"iPad (10th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5071,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5082,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5093,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5127,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5155,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5166,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5211,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5241,
+      "length": 10,
+      "value": "\"iPad11,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5253,
+      "length": 10,
+      "value": "\"iPad11,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5297,
+      "length": 27,
+      "value": "\"iPad Air (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5342,
+      "length": 10,
+      "value": "\"iPad13,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5354,
+      "length": 10,
+      "value": "\"iPad13,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5398,
+      "length": 27,
+      "value": "\"iPad Air (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5443,
+      "length": 11,
+      "value": "\"iPad13,16\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5456,
+      "length": 11,
+      "value": "\"iPad13,17\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5499,
+      "length": 27,
+      "value": "\"iPad Air (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5544,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5555,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5566,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5600,
+      "length": 11,
+      "value": "\"iPad mini\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5629,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5640,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5651,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5685,
+      "length": 13,
+      "value": "\"iPad mini 2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5716,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5727,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5738,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5772,
+      "length": 13,
+      "value": "\"iPad mini 3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5803,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5814,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5859,
+      "length": 13,
+      "value": "\"iPad mini 4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5890,
+      "length": 10,
+      "value": "\"iPad11,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5902,
+      "length": 10,
+      "value": "\"iPad11,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5946,
+      "length": 28,
+      "value": "\"iPad mini (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5992,
+      "length": 10,
+      "value": "\"iPad14,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6004,
+      "length": 10,
+      "value": "\"iPad14,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6048,
+      "length": 28,
+      "value": "\"iPad mini (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6094,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6105,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6150,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6189,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6200,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6245,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6285,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6296,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6307,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6318,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6341,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6396,
+      "length": 9,
+      "value": "\"iPad8,9\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6407,
+      "length": 10,
+      "value": "\"iPad8,10\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6452,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6507,
+      "length": 10,
+      "value": "\"iPad13,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6519,
+      "length": 10,
+      "value": "\"iPad13,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6531,
+      "length": 10,
+      "value": "\"iPad13,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6543,
+      "length": 10,
+      "value": "\"iPad13,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6563,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6618,
+      "length": 10,
+      "value": "\"iPad14,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6630,
+      "length": 10,
+      "value": "\"iPad14,4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6674,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6729,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6740,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6785,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6842,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6853,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6898,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6955,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6966,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6977,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 6988,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7011,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7068,
+      "length": 10,
+      "value": "\"iPad8,11\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7080,
+      "length": 10,
+      "value": "\"iPad8,12\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7124,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7181,
+      "length": 10,
+      "value": "\"iPad13,8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7193,
+      "length": 10,
+      "value": "\"iPad13,9\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7205,
+      "length": 11,
+      "value": "\"iPad13,10\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7218,
+      "length": 11,
+      "value": "\"iPad13,11\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7237,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7294,
+      "length": 10,
+      "value": "\"iPad14,5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7306,
+      "length": 10,
+      "value": "\"iPad14,6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7350,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7407,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7463,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7491,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7547,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7578,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7634,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7661,
+      "length": 19,
+      "value": "\"AudioAccessory5,1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7717,
+      "length": 14,
+      "value": "\"HomePod mini\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7749,
+      "length": 6,
+      "value": "\"i386\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7757,
+      "length": 8,
+      "value": "\"x86_64\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7767,
+      "length": 7,
+      "value": "\"arm64\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7805,
+      "length": 104,
+      "value": "\"Simulator \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7868,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7901,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Error Halndler\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 7908,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",

@@ -772,6 +772,46 @@
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "pcUIModuleIsMissing",
+            "printedName": "pcUIModuleIsMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitError.Type) -> Au10tixSecureMeKit.SecureMeKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitError",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                    "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitError",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                        "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO19pcUIModuleIsMissingyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD5ErrorO19pcUIModuleIsMissingyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",

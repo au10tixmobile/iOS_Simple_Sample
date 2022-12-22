@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Au10tixCore-Swift.h</key>
 		<data>
-		l8Dvu/pkkBTvnLuiUIXfi7FMWgs=
+		KAJc657jxKQ7O4AeImap3rPEYfo=
 		</data>
 		<key>Headers/Au10tixCore.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cct6PNcEtUKEAJTwK0xKEutJZro=
+		uiQ1fpGadnKWKTCslnTDJtlVjpQ=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		96km4DL8Xjpg8PXAwjwWPHhCr88=
+		+Vbp4ITAg+fL8WiuRNHlGA93YA4=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gRjuFgauxS28kSoP9r2s0SNCZl0=
+		uQqHt0p7ljmQacbvNYLS3cdZX6w=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gRjuFgauxS28kSoP9r2s0SNCZl0=
+		uQqHt0p7ljmQacbvNYLS3cdZX6w=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QIJUtKDab47egISNQSvOgbXUiYo=
+		0FYnr9bA8u+y7pQN6TFMVP3P3ZM=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		96km4DL8Xjpg8PXAwjwWPHhCr88=
+		+Vbp4ITAg+fL8WiuRNHlGA93YA4=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nHMLVrrIHgZm4pWzZCWpXk80gBo=
+		JnQXV2lqTpXfFfpbnM0NtGYOifU=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nHMLVrrIHgZm4pWzZCWpXk80gBo=
+		JnQXV2lqTpXfFfpbnM0NtGYOifU=
 		</data>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		45acfSYbUBoM41iLHmi0FEP7HbU=
+		OB/4l+0RO4j8DLN46KE84gA9nK4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gch4/faLQ2RxEPwJhfA1jNJnD8tY1DmO1YaDvSdvlgE=
+			g1EtG9NOXYESno/z6lbmJZJwFsFj1a/dWxFgpy8+JhQ=
 			</data>
 		</dict>
 		<key>Headers/Au10tixCore.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNceguDKLdzYQZr0nZ8CgwvFKbs++zwodsGqW5h59uA=
+			0JwMEALS1abfrvqdl/kxuVXPnVArYziE9CyyQPLX6VU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dapa437jsXdZl9TN4GbZSv8ecxBgTcU0oqa0fuf9x8U=
+			tm3L9khnBcjRkrkmOHDLJz6TVGdcKzsZViGv5HKcDbk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dapa437jsXdZl9TN4GbZSv8ecxBgTcU0oqa0fuf9x8U=
+			tm3L9khnBcjRkrkmOHDLJz6TVGdcKzsZViGv5HKcDbk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WC9tb/zJjO68eqiqZA8uR4j3bm8i2B/Lk6Z4fyjmDIU=
+			rDE5LqOR+3ddwplaCVeI+RYWN1N4cr1CobOXLKVbGU4=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MNceguDKLdzYQZr0nZ8CgwvFKbs++zwodsGqW5h59uA=
+			0JwMEALS1abfrvqdl/kxuVXPnVArYziE9CyyQPLX6VU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VQLCLRWjpQTcFFcUg6gypLRV2EYuQC4xx6UOiY1v6eI=
+			lQGcKhiBgvWELLS/Z9tYv8qISA4uZTyYfdiBIcCNP0A=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VQLCLRWjpQTcFFcUg6gypLRV2EYuQC4xx6UOiY1v6eI=
+			lQGcKhiBgvWELLS/Z9tYv8qISA4uZTyYfdiBIcCNP0A=
 			</data>
 		</dict>
 		<key>Modules/Au10tixCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sr7QzeTQopY9RoAU1O9rz7RwpPPPusNHM6MU+zohEZc=
+			YtdDwQ0JJbBOzCvsN7V0oti8X+Q+HYnA0i5DkMoUCdM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

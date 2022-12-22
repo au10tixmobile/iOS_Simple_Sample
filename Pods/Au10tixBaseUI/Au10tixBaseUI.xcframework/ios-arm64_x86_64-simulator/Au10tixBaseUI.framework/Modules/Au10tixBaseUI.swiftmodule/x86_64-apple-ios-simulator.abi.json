@@ -1228,171 +1228,9 @@
         "printedName": "Font",
         "children": [
           {
-            "kind": "TypeDecl",
-            "name": "Suffix",
-            "printedName": "Suffix",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "ttf",
-                "printedName": "ttf",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixBaseUI.Font.Suffix.Type) -> Au10tixBaseUI.Font.Suffix",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Suffix",
-                        "printedName": "Au10tixBaseUI.Font.Suffix",
-                        "usr": "s:13Au10tixBaseUI4FontV6SuffixO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixBaseUI.Font.Suffix.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Suffix",
-                            "printedName": "Au10tixBaseUI.Font.Suffix",
-                            "usr": "s:13Au10tixBaseUI4FontV6SuffixO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13Au10tixBaseUI4FontV6SuffixO3ttfyA2EmF",
-                "mangledName": "$s13Au10tixBaseUI4FontV6SuffixO3ttfyA2EmF",
-                "moduleName": "Au10tixBaseUI"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Au10tixBaseUI.Font.Suffix?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Suffix",
-                        "printedName": "Au10tixBaseUI.Font.Suffix",
-                        "usr": "s:13Au10tixBaseUI4FontV6SuffixO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13Au10tixBaseUI4FontV6SuffixO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13Au10tixBaseUI4FontV6SuffixO8rawValueAESgSS_tcfc",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13Au10tixBaseUI4FontV6SuffixO8rawValueSSvp",
-                "mangledName": "$s13Au10tixBaseUI4FontV6SuffixO8rawValueSSvp",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13Au10tixBaseUI4FontV6SuffixO8rawValueSSvg",
-                    "mangledName": "$s13Au10tixBaseUI4FontV6SuffixO8rawValueSSvg",
-                    "moduleName": "Au10tixBaseUI",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:13Au10tixBaseUI4FontV6SuffixO",
-            "mangledName": "$s13Au10tixBaseUI4FontV6SuffixO",
-            "moduleName": "Au10tixBaseUI",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(style:size:weight:)",
+            "printedName": "init(fontFile:size:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1402,10 +1240,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Style",
-                "printedName": "Au10tixBaseUI.FontFile.Style",
+                "name": "FontFile",
+                "printedName": "Au10tixBaseUI.FontFile",
                 "hasDefaultArg": true,
-                "usr": "s:13Au10tixBaseUI8FontFileV5StyleO"
+                "usr": "s:13Au10tixBaseUI8FontFileV"
               },
               {
                 "kind": "TypeNominal",
@@ -1413,18 +1251,11 @@
                 "printedName": "CoreGraphics.CGFloat",
                 "hasDefaultArg": true,
                 "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Weight",
-                "printedName": "Au10tixBaseUI.FontFile.Weight",
-                "hasDefaultArg": true,
-                "usr": "s:13Au10tixBaseUI8FontFileV6WeightO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI4FontV5style4size6weightAcA0D4FileV5StyleO_14CoreFoundation7CGFloatVAH6WeightOtcfc",
-            "mangledName": "$s13Au10tixBaseUI4FontV5style4size6weightAcA0D4FileV5StyleO_12CoreGraphics7CGFloatVAH6WeightOtcfc",
+            "usr": "s:13Au10tixBaseUI4FontV8fontFile4sizeAcA0dF0V_14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$s13Au10tixBaseUI4FontV8fontFile4sizeAcA0dF0V_12CoreGraphics7CGFloatVtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -1484,13 +1315,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI"
       },
       {
         "kind": "TypeDecl",
@@ -1619,8 +1457,8 @@
               },
               {
                 "kind": "Var",
-                "name": "noID",
-                "printedName": "noID",
+                "name": "bullet",
+                "printedName": "bullet",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -1650,45 +1488,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13Au10tixBaseUI5AlertC4IconO4noIDyA2EmF",
-                "mangledName": "$s13Au10tixBaseUI5AlertC4IconO4noIDyA2EmF",
-                "moduleName": "Au10tixBaseUI"
-              },
-              {
-                "kind": "Var",
-                "name": "lowQuality",
-                "printedName": "lowQuality",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixBaseUI.Alert.Icon.Type) -> Au10tixBaseUI.Alert.Icon",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Icon",
-                        "printedName": "Au10tixBaseUI.Alert.Icon",
-                        "usr": "s:13Au10tixBaseUI5AlertC4IconO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixBaseUI.Alert.Icon.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Icon",
-                            "printedName": "Au10tixBaseUI.Alert.Icon",
-                            "usr": "s:13Au10tixBaseUI5AlertC4IconO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13Au10tixBaseUI5AlertC4IconO10lowQualityyA2EmF",
-                "mangledName": "$s13Au10tixBaseUI5AlertC4IconO10lowQualityyA2EmF",
+                "usr": "s:13Au10tixBaseUI5AlertC4IconO6bulletyA2EmF",
+                "mangledName": "$s13Au10tixBaseUI5AlertC4IconO6bulletyA2EmF",
                 "moduleName": "Au10tixBaseUI"
               },
               {
@@ -2053,8 +1854,8 @@
       },
       {
         "kind": "Import",
-        "name": "PhotosUI",
-        "printedName": "PhotosUI",
+        "name": "Photos",
+        "printedName": "Photos",
         "declKind": "Import",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
@@ -4443,7 +4244,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(type:height:width:centered:title:cornerRadius:backgroundColor:strokeColor:strokeWidth:shadowColor:textColor:action:)",
+            "printedName": "init(type:height:width:centered:title:cornerRadius:backgroundColor:strokeColor:strokeWidth:shadowColor:textColor:action:isEnabled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4613,11 +4414,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI10ActionItemV4type6height5width8centered5title12cornerRadius15backgroundColor06strokeN00O5Width06shadowN004textN06actionA2C10ButtonTypeO_14CoreFoundation7CGFloatVSgAUSbSgSSSgSiAA07UIThemeN0VSgAzUSo7UIColorCSgAzC0D0OSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI10ActionItemV4type6height5width8centered5title12cornerRadius15backgroundColor06strokeN00O5Width06shadowN004textN06actionA2C10ButtonTypeO_12CoreGraphics7CGFloatVSgAUSbSgSSSgSiAA07UIThemeN0VSgAzUSo7UIColorCSgAzC0D0OSgtcfc",
+            "usr": "s:13Au10tixBaseUI10ActionItemV4type6height5width8centered5title12cornerRadius15backgroundColor06strokeN00O5Width06shadowN004textN06action9isEnabledA2C10ButtonTypeO_14CoreFoundation7CGFloatVSgAVSbSgSSSgSiAA07UIThemeN0VSgA_AVSo7UIColorCSgA_AC0D0OSgSbtcfc",
+            "mangledName": "$s13Au10tixBaseUI10ActionItemV4type6height5width8centered5title12cornerRadius15backgroundColor06strokeN00O5Width06shadowN004textN06action9isEnabledA2C10ButtonTypeO_12CoreGraphics7CGFloatVSgAVSbSgSSSgSiAA07UIThemeN0VSgA_AVSo7UIColorCSgA_AC0D0OSgSbtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -4783,8 +4591,11 @@
             "mangledName": "$s13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvp",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4810,7 +4621,58 @@
                 "usr": "s:13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvg",
                 "mangledName": "$s13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvg",
                 "moduleName": "Au10tixBaseUI",
+                "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixBaseUI.FontFile]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FontFile",
+                        "printedName": "Au10tixBaseUI.FontFile",
+                        "usr": "s:13Au10tixBaseUI8FontFileV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvs",
+                "mangledName": "$s13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvs",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvM",
+                "mangledName": "$s13Au10tixBaseUI13FontGeneratorC5fontsSayAA0D4FileVGvM",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7925,13 +7787,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI"
       },
       {
         "kind": "TypeDecl",
@@ -9067,6 +8936,65 @@
           },
           {
             "kind": "Var",
+            "name": "leftTopLogoImage",
+            "printedName": "leftTopLogoImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI0B16UIViewControllerC16leftTopLogoImageSo7UIImageCSgvp",
+            "mangledName": "$s13Au10tixBaseUI0B16UIViewControllerC16leftTopLogoImageSo7UIImageCSgvp",
+            "moduleName": "Au10tixBaseUI",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI0B16UIViewControllerC16leftTopLogoImageSo7UIImageCSgvg",
+                "mangledName": "$s13Au10tixBaseUI0B16UIViewControllerC16leftTopLogoImageSo7UIImageCSgvg",
+                "moduleName": "Au10tixBaseUI",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "screenTitle",
             "printedName": "screenTitle",
             "children": [
@@ -9518,6 +9446,47 @@
           },
           {
             "kind": "Function",
+            "name": "traitCollectionDidChange",
+            "printedName": "traitCollectionDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITraitCollection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Au10tixBaseUI@objc(cs)BaseUIViewController(im)traitCollectionDidChange:",
+            "mangledName": "$s13Au10tixBaseUI0B16UIViewControllerC24traitCollectionDidChangeyySo07UITraitG0CSgF",
+            "moduleName": "Au10tixBaseUI",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "traitCollectionDidChange:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateUI",
             "printedName": "updateUI()",
             "children": [
@@ -9686,6 +9655,28 @@
             "declKind": "Func",
             "usr": "s:13Au10tixBaseUI0B16UIViewControllerC18thirdButtonHandleryyF",
             "mangledName": "$s13Au10tixBaseUI0B16UIViewControllerC18thirdButtonHandleryyF",
+            "moduleName": "Au10tixBaseUI",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "leftTopButtonHandler",
+            "printedName": "leftTopButtonHandler()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI0B16UIViewControllerC20leftTopButtonHandleryyF",
+            "mangledName": "$s13Au10tixBaseUI0B16UIViewControllerC20leftTopButtonHandleryyF",
             "moduleName": "Au10tixBaseUI",
             "isOpen": true,
             "declAttributes": [
@@ -10009,6 +10000,126 @@
         "name": "UIThemeColor",
         "printedName": "UIThemeColor",
         "children": [
+          {
+            "kind": "Var",
+            "name": "dark",
+            "printedName": "dark",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI12UIThemeColorV4darkSo7UIColorCSgvp",
+            "mangledName": "$s13Au10tixBaseUI12UIThemeColorV4darkSo7UIColorCSgvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI12UIThemeColorV4darkSo7UIColorCSgvg",
+                "mangledName": "$s13Au10tixBaseUI12UIThemeColorV4darkSo7UIColorCSgvg",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "light",
+            "printedName": "light",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI12UIThemeColorV5lightSo7UIColorCSgvp",
+            "mangledName": "$s13Au10tixBaseUI12UIThemeColorV5lightSo7UIColorCSgvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI12UIThemeColorV5lightSo7UIColorCSgvg",
+                "mangledName": "$s13Au10tixBaseUI12UIThemeColorV5lightSo7UIColorCSgvg",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -12016,6 +12127,132 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "black1B1C1D_grayD4DAE4",
+            "printedName": "black1B1C1D_grayD4DAE4",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI14ColorGeneratorV22black1B1C1D_grayD4DAE4So7UIColorCvpZ",
+            "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV22black1B1C1D_grayD4DAE4So7UIColorCvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI14ColorGeneratorV22black1B1C1D_grayD4DAE4So7UIColorCvgZ",
+                "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV22black1B1C1D_grayD4DAE4So7UIColorCvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "grayACB5BD_blue181244",
+            "printedName": "grayACB5BD_blue181244",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI14ColorGeneratorV21grayACB5BD_blue181244So7UIColorCvpZ",
+            "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV21grayACB5BD_blue181244So7UIColorCvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI14ColorGeneratorV21grayACB5BD_blue181244So7UIColorCvgZ",
+                "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV21grayACB5BD_blue181244So7UIColorCvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "grayEFF0F2_blue4F4A74",
+            "printedName": "grayEFF0F2_blue4F4A74",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI14ColorGeneratorV21grayEFF0F2_blue4F4A74So7UIColorCvpZ",
+            "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV21grayEFF0F2_blue4F4A74So7UIColorCvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI14ColorGeneratorV21grayEFF0F2_blue4F4A74So7UIColorCvgZ",
+                "mangledName": "$s13Au10tixBaseUI14ColorGeneratorV21grayEFF0F2_blue4F4A74So7UIColorCvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -12674,76 +12911,54 @@
                 "moduleName": "Au10tixBaseUI"
               },
               {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Au10tixBaseUI.FontFile.Style?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Style",
-                        "printedName": "Au10tixBaseUI.FontFile.Style",
-                        "usr": "s:13Au10tixBaseUI8FontFileV5StyleO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13Au10tixBaseUI8FontFileV5StyleO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV5StyleO8rawValueAESgSS_tcfc",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
                 "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
+                "name": "custom",
+                "printedName": "custom",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13Au10tixBaseUI8FontFileV5StyleO8rawValueSSvp",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV5StyleO8rawValueSSvp",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.FontFile.Style.Type) -> (Swift.String) -> Au10tixBaseUI.FontFile.Style",
                     "children": [
                       {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Au10tixBaseUI.FontFile.Style",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Style",
+                            "printedName": "Au10tixBaseUI.FontFile.Style",
+                            "usr": "s:13Au10tixBaseUI8FontFileV5StyleO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.FontFile.Style.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Style",
+                            "printedName": "Au10tixBaseUI.FontFile.Style",
+                            "usr": "s:13Au10tixBaseUI8FontFileV5StyleO"
+                          }
+                        ]
                       }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13Au10tixBaseUI8FontFileV5StyleO8rawValueSSvg",
-                    "mangledName": "$s13Au10tixBaseUI8FontFileV5StyleO8rawValueSSvg",
-                    "moduleName": "Au10tixBaseUI",
-                    "implicit": true,
-                    "accessorKind": "get"
+                    ]
                   }
-                ]
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI8FontFileV5StyleO6customyAESScAEmF",
+                "mangledName": "$s13Au10tixBaseUI8FontFileV5StyleO6customyAESScAEmF",
+                "moduleName": "Au10tixBaseUI"
               }
             ],
             "declKind": "Enum",
@@ -12752,45 +12967,6 @@
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
             ]
           },
           {
@@ -12910,76 +13086,67 @@
                 "moduleName": "Au10tixBaseUI"
               },
               {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Au10tixBaseUI.FontFile.Weight?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Weight",
-                        "printedName": "Au10tixBaseUI.FontFile.Weight",
-                        "usr": "s:13Au10tixBaseUI8FontFileV6WeightO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13Au10tixBaseUI8FontFileV6WeightO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV6WeightO8rawValueAESgSS_tcfc",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
                 "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
+                "name": "custom",
+                "printedName": "custom",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13Au10tixBaseUI8FontFileV6WeightO8rawValueSSvp",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV6WeightO8rawValueSSvp",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.FontFile.Weight.Type) -> (Swift.String, CoreGraphics.CGFloat) -> Au10tixBaseUI.FontFile.Weight",
                     "children": [
                       {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, CoreGraphics.CGFloat) -> Au10tixBaseUI.FontFile.Weight",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Weight",
+                            "printedName": "Au10tixBaseUI.FontFile.Weight",
+                            "usr": "s:13Au10tixBaseUI8FontFileV6WeightO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, CoreGraphics.CGFloat)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGFloat",
+                                "printedName": "CoreGraphics.CGFloat",
+                                "usr": "s:14CoreFoundation7CGFloatV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.FontFile.Weight.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Weight",
+                            "printedName": "Au10tixBaseUI.FontFile.Weight",
+                            "usr": "s:13Au10tixBaseUI8FontFileV6WeightO"
+                          }
+                        ]
                       }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13Au10tixBaseUI8FontFileV6WeightO8rawValueSSvg",
-                    "mangledName": "$s13Au10tixBaseUI8FontFileV6WeightO8rawValueSSvg",
-                    "moduleName": "Au10tixBaseUI",
-                    "implicit": true,
-                    "accessorKind": "get"
+                    ]
                   }
-                ]
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI8FontFileV6WeightO6customyAESS_14CoreFoundation7CGFloatVtcAEmF",
+                "mangledName": "$s13Au10tixBaseUI8FontFileV6WeightO6customyAESS_12CoreGraphics7CGFloatVtcAEmF",
+                "moduleName": "Au10tixBaseUI"
               }
             ],
             "declKind": "Enum",
@@ -12988,45 +13155,6 @@
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
             ]
           },
           {
@@ -13072,76 +13200,54 @@
                 "moduleName": "Au10tixBaseUI"
               },
               {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Au10tixBaseUI.FontFile.Suffix?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Suffix",
-                        "printedName": "Au10tixBaseUI.FontFile.Suffix",
-                        "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV6SuffixO8rawValueAESgSS_tcfc",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
                 "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
+                "name": "custom",
+                "printedName": "custom",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO8rawValueSSvp",
-                "mangledName": "$s13Au10tixBaseUI8FontFileV6SuffixO8rawValueSSvp",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.FontFile.Suffix.Type) -> (Swift.String) -> Au10tixBaseUI.FontFile.Suffix",
                     "children": [
                       {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Au10tixBaseUI.FontFile.Suffix",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Suffix",
+                            "printedName": "Au10tixBaseUI.FontFile.Suffix",
+                            "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.FontFile.Suffix.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Suffix",
+                            "printedName": "Au10tixBaseUI.FontFile.Suffix",
+                            "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO"
+                          }
+                        ]
                       }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO8rawValueSSvg",
-                    "mangledName": "$s13Au10tixBaseUI8FontFileV6SuffixO8rawValueSSvg",
-                    "moduleName": "Au10tixBaseUI",
-                    "implicit": true,
-                    "accessorKind": "get"
+                    ]
                   }
-                ]
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI8FontFileV6SuffixO6customyAESScAEmF",
+                "mangledName": "$s13Au10tixBaseUI8FontFileV6SuffixO6customyAESScAEmF",
+                "moduleName": "Au10tixBaseUI"
               }
             ],
             "declKind": "Enum",
@@ -13150,45 +13256,6 @@
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
             ]
           },
           {
@@ -13206,6 +13273,7 @@
                 "kind": "TypeNominal",
                 "name": "Style",
                 "printedName": "Au10tixBaseUI.FontFile.Style",
+                "hasDefaultArg": true,
                 "usr": "s:13Au10tixBaseUI8FontFileV5StyleO"
               },
               {
@@ -14583,7 +14651,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(margins:images:frameDuration:)",
+            "printedName": "init(margins:images:frameDuration:tintColor:animationRepeatCount:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14643,11 +14711,41 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI25AnimativeImagePreviewItemV7margins6images13frameDurationACSayAA0fG6MarginOG_SaySo7UIImageCGSgSdSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI25AnimativeImagePreviewItemV7margins6images13frameDurationACSayAA0fG6MarginOG_SaySo7UIImageCGSgSdSgtcfc",
+            "usr": "s:13Au10tixBaseUI25AnimativeImagePreviewItemV7margins6images13frameDuration9tintColor20animationRepeatCountACSayAA0fG6MarginOG_SaySo7UIImageCGSgSdSgSo7UIColorCSgSiSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI25AnimativeImagePreviewItemV7margins6images13frameDuration9tintColor20animationRepeatCountACSayAA0fG6MarginOG_SaySo7UIImageCGSgSdSgSo7UIColorCSgSiSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -17657,41 +17755,6 @@
           },
           {
             "kind": "Function",
-            "name": "dropShadow",
-            "printedName": "dropShadow(radius:shadowColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGColor",
-                "printedName": "CoreGraphics.CGColor",
-                "hasDefaultArg": true,
-                "usr": "c:@T@CGColorRef"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So6UIViewC13Au10tixBaseUIE10dropShadow6radius11shadowColory14CoreFoundation7CGFloatV_So10CGColorRefatF",
-            "mangledName": "$sSo6UIViewC13Au10tixBaseUIE10dropShadow6radius11shadowColory12CoreGraphics7CGFloatV_So10CGColorRefatF",
-            "moduleName": "Au10tixBaseUI",
-            "declAttributes": [
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "addGradient",
             "printedName": "addGradient(_:mask:)",
             "children": [
@@ -17725,6 +17788,28 @@
             "declKind": "Func",
             "usr": "s:So6UIViewC13Au10tixBaseUIE11addGradient_4maskyAC0F0V_So12CAShapeLayerCSgtF",
             "mangledName": "$sSo6UIViewC13Au10tixBaseUIE11addGradient_4maskyAC0F0V_So12CAShapeLayerCSgtF",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeGradientLayer",
+            "printedName": "removeGradientLayer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIViewC13Au10tixBaseUIE19removeGradientLayeryyF",
+            "mangledName": "$sSo6UIViewC13Au10tixBaseUIE19removeGradientLayeryyF",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "Custom"
@@ -19827,22 +19912,8 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/Font.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 5,
-      "value": "\"ttf\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/Font.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 5,
-      "value": "\"ttf\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/Font.swift",
       "kind": "IntegerLiteral",
-      "offset": 411,
+      "offset": 320,
       "length": 2,
       "value": "20"
     },
@@ -19884,7 +19955,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Extensions\/UIExtensions\/UIViewExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 3594,
+      "offset": 3864,
       "length": 5,
       "value": "false"
     },
@@ -19933,7 +20004,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/DescriptionPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 952,
+      "offset": 967,
       "length": 2,
       "value": "20"
     },
@@ -19989,79 +20060,100 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 1161,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1089,
+      "offset": 1356,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1134,
+      "offset": 1401,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1182,
+      "offset": 1449,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1231,
+      "offset": 1498,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1285,
+      "offset": 1548,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1602,
       "length": 4,
       "value": "8.39"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1811,
+      "offset": 1656,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2286,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 2436,
       "length": 24,
       "value": "\"au10tix_x_button_empty\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "StringLiteral",
-      "offset": 2554,
+      "offset": 3628,
       "length": 20,
       "value": "\"au10tix_x_button_x\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 481,
       "length": 23,
       "value": "\"Au10tixBaseUI.ScreenTopNavigationView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
       "kind": "IntegerLiteral",
-      "offset": 3055,
+      "offset": 3075,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3393,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
@@ -20129,7 +20221,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/View Model\/BaseUIViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2218,
+      "offset": 2589,
       "length": 1,
       "value": "0"
     },
@@ -20142,8 +20234,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/AnimativeImagePreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 453,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/AnimativeImagePreviewView.swift",
       "kind": "Array",
-      "offset": 516,
+      "offset": 598,
       "length": 2,
       "value": "[]"
     },
@@ -20212,29 +20311,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/IssuesView.swift",
-      "kind": "StringLiteral",
-      "offset": 605,
-      "length": 16,
-      "value": "\"au10tix_issues\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/IssuesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 1053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/IssuesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 964,
+      "offset": 1222,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/IssuesView.swift",
       "kind": "StringLiteral",
-      "offset": 1148,
+      "offset": 1389,
       "length": 17,
       "value": "\"au10tix_seeMore\""
     },
@@ -20409,42 +20501,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2046,
+      "offset": 2101,
       "length": 5,
       "value": "120.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2096,
+      "offset": 2151,
       "length": 4,
       "value": "18.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2151,
+      "offset": 2206,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2199,
+      "offset": 2254,
       "length": 5,
       "value": "133.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "Array",
-      "offset": 2473,
+      "offset": 2600,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/BaseUIViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8346,
+      "offset": 8887,
       "length": 1,
       "value": "0"
     },
@@ -20500,7 +20592,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/ScreenRecordingIndicationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 768,
+      "offset": 782,
       "length": 2,
       "value": "11"
     },
@@ -20548,15 +20640,8 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/Bullet View\/BulletView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1131,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/Bullet View\/BulletView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1438,
+      "offset": 1991,
       "length": 1,
       "value": "0"
     },
@@ -20626,21 +20711,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2195,
+      "offset": 2209,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2758,
+      "offset": 2755,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2914,
+      "offset": 2926,
       "length": 2,
       "value": "17"
     },
@@ -20738,79 +20823,9 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/Custom Button\/Circled Button\/CircledButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1716,
+      "offset": 1730,
       "length": 2,
       "value": "14"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 360,
-      "length": 12,
-      "value": "\"montserrat\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 360,
-      "length": 12,
-      "value": "\"montserrat\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 466,
-      "length": 9,
-      "value": "\"regular\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 498,
-      "length": 8,
-      "value": "\"medium\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 10,
-      "value": "\"semiBold\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 466,
-      "length": 9,
-      "value": "\"regular\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 498,
-      "length": 8,
-      "value": "\"medium\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 10,
-      "value": "\"semiBold\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 897,
-      "length": 5,
-      "value": "\"ttf\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/FontFile.swift",
-      "kind": "StringLiteral",
-      "offset": 897,
-      "length": 5,
-      "value": "\"ttf\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
@@ -20822,42 +20837,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 1695,
+      "offset": 1887,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 2332,
+      "offset": 2709,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 4742,
+      "offset": 5119,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 4831,
+      "offset": 5208,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 6650,
+      "offset": 7027,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 6858,
+      "offset": 7235,
       "length": 5,
       "value": "false"
     },
@@ -20899,7 +20914,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/ImageNumberTextPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1740,
+      "offset": 1756,
       "length": 2,
       "value": "13"
     },
@@ -20927,70 +20942,70 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1410,
+      "offset": 1344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3334,
+      "offset": 3268,
       "length": 3,
       "value": "222"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3388,
+      "offset": 3322,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 3435,
+      "offset": 3369,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3624,
+      "offset": 3558,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3676,
+      "offset": 3610,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3720,
+      "offset": 3654,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3769,
+      "offset": 3703,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3931,
+      "offset": 3865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 5437,
+      "offset": 5371,
       "length": 4,
       "value": "0.33"
     },

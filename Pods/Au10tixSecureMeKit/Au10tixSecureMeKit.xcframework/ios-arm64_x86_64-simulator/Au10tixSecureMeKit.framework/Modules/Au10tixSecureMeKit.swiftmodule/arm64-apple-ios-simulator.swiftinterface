@@ -29,6 +29,7 @@ public enum SecureMeKitError : Swift.Error {
   case sdcUIModuleIsMissing
   case pflUIModuleIsMissing
   case poaUIModuleIsMissing
+  case pcUIModuleIsMissing
 }
 public struct SecureMeKitUIFlowManager {
   public enum Flow {
