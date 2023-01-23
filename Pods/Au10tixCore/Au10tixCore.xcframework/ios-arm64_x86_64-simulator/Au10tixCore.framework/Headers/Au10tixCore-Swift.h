@@ -320,7 +320,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _N
 /// Use this method to reset the session-id, Operation is depend on existance of a sessionId
 /// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
 ///
-- (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
+- (void)resetSessionIdWithLocaly:(BOOL)localy with:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
 
@@ -688,7 +688,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _N
 /// Use this method to reset the session-id, Operation is depend on existance of a sessionId
 /// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
 ///
-- (void)resetSessionIdWith:(void (^ _Nonnull)(NSString * _Nullable))completion;
+- (void)resetSessionIdWithLocaly:(BOOL)localy with:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
 
