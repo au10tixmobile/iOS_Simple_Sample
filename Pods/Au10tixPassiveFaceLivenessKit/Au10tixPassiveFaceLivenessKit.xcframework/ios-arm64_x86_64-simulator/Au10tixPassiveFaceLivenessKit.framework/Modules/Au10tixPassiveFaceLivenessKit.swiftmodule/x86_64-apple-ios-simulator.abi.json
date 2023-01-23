@@ -6843,6 +6843,27 @@
           },
           {
             "kind": "Function",
+            "name": "prefersAspectFillCameraPreview",
+            "printedName": "prefersAspectFillCameraPreview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC30prefersAspectFillCameraPreviewyyF",
+            "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC30prefersAspectFillCameraPreviewyyF",
+            "moduleName": "Au10tixPassiveFaceLivenessKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "recapture",
             "printedName": "recapture()",
             "children": [
@@ -7458,6 +7479,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Au10tixPassiveFaceLivenessKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixPassiveFaceLivenessKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -8369,14 +8400,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 11378,
+      "offset": 11441,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 16793,
+      "offset": 16856,
       "length": 4,
       "value": "true"
     },
@@ -8463,6 +8494,13 @@
       "offset": 204,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLCameraRatioHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 343,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

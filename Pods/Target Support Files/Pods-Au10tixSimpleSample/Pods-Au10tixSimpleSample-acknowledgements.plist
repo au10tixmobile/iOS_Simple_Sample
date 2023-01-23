@@ -116,30 +116,6 @@ Permission is granted to...
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
-			<string>Au10tixPayCardKit</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright 2018
-Permission is granted to...
-</string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>Au10tixPayCardUI</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright 2018
-Permission is granted to...
-</string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
 			<string>Au10tixProofOfAddressKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

@@ -688,7 +688,7 @@ extension UIKit.UIDevice {
   @objc public static let shared: Au10tixCore.Au10tix
   final public func prepare(with jwt: Swift.String, keepSessionID: Swift.Bool = false, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   final public func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
-  @objc final public func resetSessionId(with completion: @escaping (Swift.String?) -> Swift.Void)
+  @objc final public func resetSessionId(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
   @objc deinit
 }
 public struct Claim {

@@ -98,6 +98,7 @@ public enum SDCSessionError : Swift.Error {
 public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
   func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, isProcessing image: Au10tixCore.Au10Image)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
@@ -106,6 +107,7 @@ public protocol SDCSessionDelegate : AnyObject {
 extension Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
   public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, isProcessing image: Au10tixCore.Au10Image)
 }
 public struct Au10MachineReadableCode {
   public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?

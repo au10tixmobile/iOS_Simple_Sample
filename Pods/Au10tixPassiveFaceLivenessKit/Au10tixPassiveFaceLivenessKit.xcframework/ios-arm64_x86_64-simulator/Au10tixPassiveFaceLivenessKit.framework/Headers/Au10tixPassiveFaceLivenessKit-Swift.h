@@ -283,6 +283,7 @@ typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, open) {
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -573,6 +574,7 @@ typedef SWIFT_ENUM(NSInteger, PassiveFaceLivenessUpdateType, open) {
   PassiveFaceLivenessUpdateTypeQualityFeedback = 1,
   PassiveFaceLivenessUpdateTypePassedThreshold = 2,
 };
+
 
 
 

@@ -2976,6 +2976,42 @@
           {
             "kind": "Function",
             "name": "sdcSession",
+            "printedName": "sdcSession(_:isProcessing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCSession",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCSession",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit10SDCSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegateP10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegateP10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdcSession",
             "printedName": "sdcSession(_:didTake:)",
             "children": [
               {
@@ -3205,6 +3241,38 @@
             "declKind": "Func",
             "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE23sdcSessionWillTakeImageyyAA0F0CF",
             "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE23sdcSessionWillTakeImageyyAA0F0CF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdcSession",
+            "printedName": "sdcSession(_:isProcessing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCSession",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCSession",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit10SDCSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
             "moduleName": "Au10tixSmartDocumentCaptureKit",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
             "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",

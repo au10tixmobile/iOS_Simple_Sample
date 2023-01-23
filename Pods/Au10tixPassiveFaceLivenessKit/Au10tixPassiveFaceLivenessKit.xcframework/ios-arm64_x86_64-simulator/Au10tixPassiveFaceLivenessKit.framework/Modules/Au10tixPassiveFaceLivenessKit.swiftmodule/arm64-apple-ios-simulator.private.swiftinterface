@@ -217,6 +217,7 @@ public enum ValidationFlow : Swift.Int {
   public func pauseCamera()
   public func resumeCamera(_ refresh: Swift.Bool = true)
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  public func prefersAspectFillCameraPreview()
   public func recapture()
   public func validateImage(_ image: Foundation.Data)
   public func validateHDImage(_ image: Foundation.Data, source: Au10tixCore.Au10ImageSource, token: Swift.String, completion: ((_ feedback: Au10tixPassiveFaceLivenessKit.QualityFault?, _ faceBoundingBox: CoreFoundation.CGRect?, _ hdResponse: Au10tixPassiveFaceLivenessKit.HDResponse?) -> ())?)

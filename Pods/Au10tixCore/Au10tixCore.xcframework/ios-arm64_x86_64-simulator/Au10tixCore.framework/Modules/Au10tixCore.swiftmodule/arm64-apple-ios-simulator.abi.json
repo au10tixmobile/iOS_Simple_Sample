@@ -18680,12 +18680,19 @@
           {
             "kind": "Function",
             "name": "resetSessionId",
-            "printedName": "resetSessionId(with:)",
+            "printedName": "resetSessionId(localy:with:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -18715,10 +18722,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Au10tixCore@objc(cs)Au10tix(im)resetSessionIdWith:",
-            "mangledName": "$s11Au10tixCore0A0C14resetSessionId4withyySSSgc_tF",
+            "usr": "c:@M@Au10tixCore@objc(cs)Au10tix(im)resetSessionIdWithLocaly:with:",
+            "mangledName": "$s11Au10tixCore0A0C14resetSessionId6localy4withySb_ySSSgctF",
             "moduleName": "Au10tixCore",
-            "objc_name": "resetSessionIdWith:",
+            "objc_name": "resetSessionIdWithLocaly:with:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -34170,6 +34177,13 @@
       "value": "\"Au10tixCore.Au10Image\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/SessionID\/SessionIDGenerator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 326,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Events\/Features Events\/SDKLogEvent.swift",
       "kind": "BooleanLiteral",
       "offset": 584,
@@ -36259,6 +36273,13 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
       "kind": "BooleanLiteral",
       "offset": 2623,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6653,
       "length": 5,
       "value": "false"
     },

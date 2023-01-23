@@ -1,58 +1,51 @@
 PODS:
-  - Au10tixBaseUI (3.13.0):
+  - Au10tixBaseUI (3.14.0):
     - Au10tixCore
-  - Au10tixBEKit (3.13.0):
+  - Au10tixBEKit (3.14.0):
     - Au10tixCore
-  - Au10tixCore (3.13.0)
-  - Au10tixDetectorManager (3.13.0):
+  - Au10tixCore (3.14.0)
+  - Au10tixDetectorManager (3.14.0):
     - Au10tixCore
-  - Au10tixLivenessKit (3.13.0):
+  - Au10tixLivenessKit (3.14.0):
     - Au10tixCore
     - Au10tixDetectorManager
     - Au10tixPassiveFaceLivenessKit
     - Au10tixSourceManager
-  - Au10tixLivenessUI (3.13.0):
+  - Au10tixLivenessUI (3.14.0):
     - Au10tixBaseUI
     - Au10tixLivenessKit
-  - Au10tixPassiveFaceLivenessKit (3.13.0):
+  - Au10tixPassiveFaceLivenessKit (3.14.0):
     - Au10tixCore
     - Au10tixDetectorManager
     - Au10tixSourceManager
-  - Au10tixPassiveFaceLivenessUI (3.13.0):
+  - Au10tixPassiveFaceLivenessUI (3.14.0):
     - Au10tixBaseUI
     - Au10tixPassiveFaceLivenessKit
-  - Au10tixPayCardKit (3.13.0):
-    - Au10tixCore
-    - Au10tixSourceManager
-  - Au10tixPayCardUI (3.13.0):
-    - Au10tixBaseUI
-    - Au10tixPayCardKit
-  - Au10tixProofOfAddressKit (3.13.0):
+  - Au10tixProofOfAddressKit (3.14.0):
     - Au10tixCore
     - Au10tixDetectorManager
     - Au10tixSourceManager
-  - Au10tixProofOfAddressUI (3.13.0):
+  - Au10tixProofOfAddressUI (3.14.0):
     - Au10tixBaseUI
     - Au10tixProofOfAddressKit
-  - Au10tixSecureMeKit (3.13.0):
+  - Au10tixSecureMeKit (3.14.0):
     - Au10tixBaseUI
     - Au10tixBEKit
     - Au10tixCore
-  - Au10tixSmartDocumentCaptureKit (3.13.0):
+  - Au10tixSmartDocumentCaptureKit (3.14.0):
     - Au10tixCore
     - Au10tixDetectorManager
     - Au10tixSourceManager
-  - Au10tixSmartDocumentCaptureUI (3.13.0):
+  - Au10tixSmartDocumentCaptureUI (3.14.0):
     - Au10tixBaseUI
     - Au10tixSmartDocumentCaptureKit
-  - Au10tixSourceManager (3.13.0):
+  - Au10tixSourceManager (3.14.0):
     - Au10tixCore
 
 DEPENDENCIES:
   - Au10tixBEKit
   - Au10tixLivenessUI
   - Au10tixPassiveFaceLivenessUI
-  - Au10tixPayCardUI
   - Au10tixProofOfAddressUI
   - Au10tixSecureMeKit
   - Au10tixSmartDocumentCaptureUI
@@ -67,8 +60,6 @@ SPEC REPOS:
     - Au10tixLivenessUI
     - Au10tixPassiveFaceLivenessKit
     - Au10tixPassiveFaceLivenessUI
-    - Au10tixPayCardKit
-    - Au10tixPayCardUI
     - Au10tixProofOfAddressKit
     - Au10tixProofOfAddressUI
     - Au10tixSecureMeKit
@@ -77,23 +68,21 @@ SPEC REPOS:
     - Au10tixSourceManager
 
 SPEC CHECKSUMS:
-  Au10tixBaseUI: 5b9dccda15bde3f903bd84d62e4457a867eb4f67
-  Au10tixBEKit: a05a4be8135dfdafab7443aca438ee6b1ad3a6f7
-  Au10tixCore: 4bebeabd54e10b2ef7606c1ccc05a537c06001aa
-  Au10tixDetectorManager: b2f1959f887b063d1a3e868390727749148eec6c
-  Au10tixLivenessKit: c74afcd1d6170d75f53b964d4944c9e6243636db
-  Au10tixLivenessUI: c9b20e3837ea926cb1c005e01ae99b3d3988c9e4
-  Au10tixPassiveFaceLivenessKit: f4ac27b3fa49ff7a8655608dddcb620f05af3a1a
-  Au10tixPassiveFaceLivenessUI: c8c10a4aa0443e102a7b51f55a116cde661cfa7b
-  Au10tixPayCardKit: 47f32db56e439e43e3b9a6ded12cae645d6b0478
-  Au10tixPayCardUI: 034c6c4387499d813c9242632493633f2f363369
-  Au10tixProofOfAddressKit: ef5ec06e337e9588ebcc15e31c9cc44f66fcf4d2
-  Au10tixProofOfAddressUI: fa8c2d6b2650b3c3864c3b7d58c0acb079faa277
-  Au10tixSecureMeKit: c54a8e5956232c3305d405f58388a01c0fda5424
-  Au10tixSmartDocumentCaptureKit: 8180cf7aa327ec4048e8beadc8ce171e9da573a1
-  Au10tixSmartDocumentCaptureUI: 172a2d3a848c97db26680172035b5dfe80060d5b
-  Au10tixSourceManager: 32b39d5ecae63ebdb0391aed7c76d7973ad0680e
+  Au10tixBaseUI: d292510f4a9bb62cf5eab10e5526327045fd7847
+  Au10tixBEKit: fac2b9c5473dea94dbbdacab1539ff90e67fd2a4
+  Au10tixCore: f971a24ead336911a0fd165fe19eda24b751e2a0
+  Au10tixDetectorManager: 0829cbe7cccc54d0d7467e266cd47a5c5e0b0477
+  Au10tixLivenessKit: 3887003484d77af27516f1cd26cc9612c7757cbf
+  Au10tixLivenessUI: 16755acb6bb39a8aba2bbc6290a733ae3c2b3372
+  Au10tixPassiveFaceLivenessKit: 835bd9481250fa00b5f26742a95dda612a14fc4c
+  Au10tixPassiveFaceLivenessUI: 6a5c756f6080a3864743aa1abb22579c4bdc7db8
+  Au10tixProofOfAddressKit: 09a3ff724ce23466d9dc129a69e1f4ad9cccbc3e
+  Au10tixProofOfAddressUI: 43d8bdcd42c90944d277a94badb6b1a51e1ce522
+  Au10tixSecureMeKit: 5bd31f9872a00f23d9d2e2abf8b5411d92945076
+  Au10tixSmartDocumentCaptureKit: e673826f50ce878a52bedef2f9006329ee7493cf
+  Au10tixSmartDocumentCaptureUI: 42f5abcdc32ed458a70a91ec3daf25294b08ebf3
+  Au10tixSourceManager: 8fad4f9c01e152735ddcd663c34d39c025c11721
 
-PODFILE CHECKSUM: 8c1844c26afa49d4cb0116b01bb8227e85d3a608
+PODFILE CHECKSUM: 04f938b7f5c4297c46aea7ec276bb1a137300e6c
 
 COCOAPODS: 1.11.2
