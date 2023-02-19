@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -200,6 +200,9 @@ extension Au10tixCore.Au10tix {
     public var isEmpty: Swift.Bool {
       get
     }
+    public var isSecureMeConfigurationAvailable: Swift.Bool {
+      get
+    }
   }
 }
 public class Log : Swift.Encodable {
@@ -269,6 +272,8 @@ public class Log : Swift.Encodable {
     case completeProcessResponse
     case nfcClickPassport
     case nfcClickID
+    case uploadVC
+    case uploadVCResponse
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -279,6 +284,32 @@ public class Log : Swift.Encodable {
 }
 public protocol ImageProvidableSession {
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+}
+public struct BeginProcessingIdentityDataForDataVerification : Swift.Codable {
+  public var countryIso3: Swift.String?
+  public var dateOfBirth: Swift.String?
+  public var dateOfExpiry: Swift.String?
+  public var dateOfIssue: Swift.String?
+  public var documentNumber: Swift.String?
+  public var email: Swift.String?
+  public var firstName: Swift.String?
+  public var firstName2: Swift.String?
+  public var fullName: Swift.String?
+  public var fullName2: Swift.String?
+  public var gender: Swift.String?
+  public var ipAddress: Swift.String?
+  public var lastName: Swift.String?
+  public var lastName2: Swift.String?
+  public var middleNames: Swift.String?
+  public var nationalityIso3: Swift.String?
+  public var personalNumber: Swift.String?
+  public var phoneNumber: Swift.String?
+  public var profile: Swift.String?
+  public var residentialAddress: Swift.String?
+  public var userName: Swift.String?
+  public init(countryIso3: Swift.String? = nil, dateOfBirth: Swift.String? = nil, dateOfExpiry: Swift.String? = nil, dateOfIssue: Swift.String? = nil, documentNumber: Swift.String? = nil, email: Swift.String? = nil, firstName: Swift.String? = nil, firstName2: Swift.String? = nil, fullName: Swift.String? = nil, fullName2: Swift.String? = nil, gender: Swift.String? = nil, ipAddress: Swift.String? = nil, lastName: Swift.String? = nil, lastName2: Swift.String? = nil, middleNames: Swift.String? = nil, nationalityIso3: Swift.String? = nil, personalNumber: Swift.String? = nil, phoneNumber: Swift.String? = nil, profile: Swift.String? = nil, residentialAddress: Swift.String? = nil, userName: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct MultipartDataBuilder {
   public struct Params {
@@ -531,17 +562,23 @@ public struct LoggerInfo : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public enum Scope : Swift.String {
+public enum Scope : Swift.String, Swift.CaseIterable {
+  case media
   case mobilesdk
   case legacyMobileSdk
   case pfl
   case sdc
-  case media
   case helmets
   case docreplay
+  case frontendClassification
   case paymentCard
+  case secureMe
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [Au10tixCore.Scope]
   public typealias RawValue = Swift.String
+  public static var allCases: [Au10tixCore.Scope] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -655,6 +692,7 @@ extension UIKit.UIDevice {
     get
   }
   public static func describable(_ object: Any) -> Swift.String
+  final public var cameraSettings: Au10tixCore.Au10tix.CameraSettings
   final public var isActive: Swift.Bool {
     get
   }
@@ -689,7 +727,20 @@ extension UIKit.UIDevice {
   final public func prepare(with jwt: Swift.String, keepSessionID: Swift.Bool = false, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   final public func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   @objc final public func resetSessionId(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
+  @objc final public func setConfiguration(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
   @objc deinit
+}
+extension Au10tixCore.Au10tix {
+  public struct CameraSettings {
+    public enum CameraCaptureSound {
+      case `default`
+      case silent
+      case custom(soundFilePath: Swift.String)
+    }
+    public var cameraCaptureSound: Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound
+    public var cameraFlashMode: AVFoundation.AVCaptureDevice.FlashMode
+    public var cameraTorchMode: AVFoundation.AVCaptureDevice.TorchMode
+  }
 }
 public struct Claim {
   public var rawValue: Any? {
@@ -853,6 +904,34 @@ public enum DecodeError : Foundation.LocalizedError {
     get
   }
 }
+public struct BeginProcessingPersonalDataForDataVerification : Swift.Codable {
+  public let address: Au10tixCore.BeginProcessingAddressWrapper
+  public let firstName: Au10tixCore.BeginProcessingFirstName
+  public let lastName: Au10tixCore.BeginProcessingLastName
+  public init(_ firstName: Swift.String, _ lastName: Swift.String, _ address: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BeginProcessingAddressWrapper : Swift.Codable {
+  public let address: Au10tixCore.BeginProcessingAddress
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BeginProcessingAddress : Swift.Codable {
+  public let value: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BeginProcessingFirstName : Swift.Codable {
+  public let value: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BeginProcessingLastName : Swift.Codable {
+  public let value: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct BIDataManager {
   public init(feature: Au10tixCore.BIFeature, stage: Swift.Int? = nil, attempt: Swift.Int = 0)
   public mutating func attemptStarted()
@@ -964,6 +1043,7 @@ public protocol Au10tixSDK : AnyObject {
 }
 extension Au10tixCore.Au10tixSDK {
   public static func getSDKVersion() -> Swift.String
+  public static func getIteration() -> Swift.String
 }
 @objc public class Au10Quadrangle : ObjectiveC.NSObject {
   public var topLeft: CoreFoundation.CGPoint
@@ -1045,9 +1125,14 @@ public protocol CameraSession {
   func pauseCamera()
   func resumeCamera(_ refresh: Swift.Bool)
   func prefersAspectFillCameraPreview()
+  func startVideoRecording(videoUrl url: Foundation.URL)
+  func stopVideoRecording()
 }
 extension Au10tixCore.CameraSession {
+  public func captureImage(_ source: Au10tixCore.Au10ImageSource)
   public func prefersAspectFillCameraPreview()
+  public func startVideoRecording(videoUrl url: Foundation.URL)
+  public func stopVideoRecording()
 }
 public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
 public protocol Au10tixSession : Au10tixCore.Au10tixSDK {
@@ -1150,6 +1235,10 @@ public class RequestDataBuilder {
   public func withBackDocument(with meatadata: Foundation.Data? = nil) -> Au10tixCore.RequestDataBuilder
   @discardableResult
   public func withPOA() -> Au10tixCore.RequestDataBuilder
+  @discardableResult
+  public func withPData(pData: Au10tixCore.BeginProcessingPersonalDataForDataVerification) -> Au10tixCore.RequestDataBuilder
+  @discardableResult
+  public func withIdData(idData: Au10tixCore.BeginProcessingIdentityDataForDataVerification) -> Au10tixCore.RequestDataBuilder
   @discardableResult
   public func useTag() -> Au10tixCore.RequestDataBuilder
   @discardableResult

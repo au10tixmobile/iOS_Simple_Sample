@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -169,6 +169,11 @@ extension Foundation.Data {
     get
   }
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class VideoPreviewView : Au10tixBaseUI.BaseUIView {
+  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) final public func clear()
+  @objc deinit
+}
 public struct ActionItem {
   public enum Action : Swift.Equatable {
     case none
@@ -182,6 +187,7 @@ public struct ActionItem {
     case openGallery
     case time
     case custom(_: UIKit.UIImage?)
+    case animation(_: Au10tixBaseUI.ActionItem.Animation?)
     public static func == (a: Au10tixBaseUI.ActionItem.Action, b: Au10tixBaseUI.ActionItem.Action) -> Swift.Bool
   }
   public enum ButtonType {
@@ -196,6 +202,11 @@ public struct ActionItem {
     }
   }
   public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreFoundation.CGFloat? = nil, width: CoreFoundation.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: Au10tixBaseUI.UIThemeColor? = nil, strokeColor: Au10tixBaseUI.UIThemeColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil, isEnabled: Swift.Bool = true)
+  public enum Animation : Swift.Equatable {
+    public static func == (lhs: Au10tixBaseUI.ActionItem.Animation, rhs: Au10tixBaseUI.ActionItem.Animation) -> Swift.Bool
+    case imageSequence(images: [UIKit.UIImage], timeInterval: Foundation.TimeInterval, completion: (() -> ())?)
+    case textSequence(strings: [Foundation.NSAttributedString], timeInterval: Foundation.TimeInterval, completion: (() -> ())?)
+  }
 }
 @_hasMissingDesignatedInitializers public class FontGenerator {
   public static var shared: Au10tixBaseUI.FontGenerator
@@ -252,11 +263,7 @@ extension Au10tixBaseUI.CameraIssueViewController {
   public enum ImageType {
     case cameraPermissionDenied
     case cameraUnavailable
-    public static func == (a: Au10tixBaseUI.CameraIssueViewController.ImageType, b: Au10tixBaseUI.CameraIssueViewController.ImageType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
+    case custom(_: UIKit.UIImage?)
   }
 }
 public struct UIConnection {
@@ -394,10 +401,11 @@ public struct AlertAction {
 public struct ProgressBarDatasource {
   public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: Au10tixBaseUI.UIThemeColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
 }
-public struct UIThemeColor {
+public struct UIThemeColor : Swift.Equatable {
   public let dark: UIKit.UIColor?
   public let light: UIKit.UIColor?
   public init(dark: UIKit.UIColor?, light: UIKit.UIColor?)
+  public static func == (lhs: Au10tixBaseUI.UIThemeColor, rhs: Au10tixBaseUI.UIThemeColor) -> Swift.Bool
 }
 public enum PermissionStatus {
   case authorized
@@ -556,6 +564,7 @@ public enum PreviewItemType {
   case description
   case cameraView
   case space
+  case video
   public static func == (a: Au10tixBaseUI.PreviewItemType, b: Au10tixBaseUI.PreviewItemType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -596,14 +605,23 @@ public struct DescriptionPreviewItem : Au10tixBaseUI.PreviewItem {
   }
   public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], text: Swift.String? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil)
 }
+public struct VideoPreviewItem : Au10tixBaseUI.PreviewItem {
+  public typealias CapturedVideo = (Foundation.URL, Swift.Bool, (() -> ()))
+  public var type: Au10tixBaseUI.PreviewItemType
+  public var margins: [Au10tixBaseUI.PreviewItemMargin]
+  public var view: UIKit.UIView {
+    get
+  }
+  public init(videoPreviewView: Au10tixBaseUI.VideoPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, videoUrl: Foundation.URL, isPlay: Swift.Bool, onPlayingComlete: (() -> ())?)
+}
 public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
   public var type: Au10tixBaseUI.PreviewItemType
   public var margins: [Au10tixBaseUI.PreviewItemMargin]
   public var view: UIKit.UIView {
     get
   }
-  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, issuesBarClicked: (() -> ())? = nil)
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, issuesBarText: Swift.String? = nil, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, issuesBarClicked: (() -> ())? = nil)
+  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, issuesBarClicked: (() -> ())? = nil)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, issuesBarText: Swift.String? = nil, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, issuesBarClicked: (() -> ())? = nil)
 }
 public enum ActionSectionType {
   case none
@@ -617,7 +635,7 @@ public enum ActionSectionType {
   }
 }
 public struct ActionSection {
-  public init(actionViewAlignment: UIKit.NSLayoutConstraint.Axis, spacing: CoreFoundation.CGFloat? = nil, actionViewFirstItem: Au10tixBaseUI.ActionItem? = nil, actionViewSecondItem: Au10tixBaseUI.ActionItem? = nil, actionViewThirdItem: Au10tixBaseUI.ActionItem? = nil)
+  public init(actionViewAlignment: UIKit.NSLayoutConstraint.Axis, spacing: CoreFoundation.CGFloat? = nil, actionViewFirstItem: Au10tixBaseUI.ActionItem? = nil, actionViewSecondItem: Au10tixBaseUI.ActionItem? = nil, actionViewThirdItem: Au10tixBaseUI.ActionItem? = nil, backgroundImage: UIKit.UIImage? = nil)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -656,6 +674,10 @@ public enum CameraPreviewPlaceholderAppearance {
   @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreFoundation.CGRect)
   @objc deinit
 }
+public struct AudioPermissionManager : Au10tixBaseUI.PermissionManager {
+  public static var shared: Au10tixBaseUI.PermissionManager
+  public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+}
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Equatable {}
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Hashable {}
 extension Au10tixBaseUI.Alert.Style : Swift.Equatable {}
@@ -664,8 +686,6 @@ extension Au10tixBaseUI.ActionItem.ButtonType : Swift.Equatable {}
 extension Au10tixBaseUI.ActionItem.ButtonType : Swift.Hashable {}
 extension Au10tixBaseUI.CameraIssueViewController.ActionType : Swift.Equatable {}
 extension Au10tixBaseUI.CameraIssueViewController.ActionType : Swift.Hashable {}
-extension Au10tixBaseUI.CameraIssueViewController.ImageType : Swift.Equatable {}
-extension Au10tixBaseUI.CameraIssueViewController.ImageType : Swift.Hashable {}
 extension Au10tixBaseUI.UIConnection.Iteration : Swift.Equatable {}
 extension Au10tixBaseUI.UIConnection.Iteration : Swift.Hashable {}
 extension Au10tixBaseUI.UIConnection.Iteration : Swift.RawRepresentable {}

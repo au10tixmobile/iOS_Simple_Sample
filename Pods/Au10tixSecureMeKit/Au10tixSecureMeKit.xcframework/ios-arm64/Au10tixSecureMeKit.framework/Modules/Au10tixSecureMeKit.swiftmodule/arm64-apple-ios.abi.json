@@ -40,7 +40,7 @@
                 "kind": "TypeNominal",
                 "name": "SecureMeKit",
                 "printedName": "Au10tixSecureMeKit.SecureMeKit",
-                "usr": "s:18Au10tixSecureMeKit0bcD0C"
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               },
               {
                 "kind": "TypeNominal",
@@ -76,7 +76,7 @@
                 "kind": "TypeNominal",
                 "name": "SecureMeKit",
                 "printedName": "Au10tixSecureMeKit.SecureMeKit",
-                "usr": "s:18Au10tixSecureMeKit0bcD0C"
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               },
               {
                 "kind": "TypeNominal",
@@ -112,7 +112,7 @@
                 "kind": "TypeNominal",
                 "name": "SecureMeKit",
                 "printedName": "Au10tixSecureMeKit.SecureMeKit",
-                "usr": "s:18Au10tixSecureMeKit0bcD0C"
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               },
               {
                 "kind": "TypeNominal",
@@ -148,7 +148,7 @@
                 "kind": "TypeNominal",
                 "name": "SecureMeKit",
                 "printedName": "Au10tixSecureMeKit.SecureMeKit",
-                "usr": "s:18Au10tixSecureMeKit0bcD0C"
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               },
               {
                 "kind": "TypeNominal",
@@ -186,16 +186,6 @@
         "kind": "Import",
         "name": "Au10tixBEKit",
         "printedName": "Au10tixBEKit",
-        "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Au10tixCore",
-        "printedName": "Au10tixCore",
         "declKind": "Import",
         "moduleName": "Au10tixSecureMeKit",
         "declAttributes": [
@@ -348,6 +338,306 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureMeFlow",
+        "printedName": "SecureMeFlow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdcFront",
+            "printedName": "sdcFront",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO8sdcFrontyAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO8sdcFrontyAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdcBack",
+            "printedName": "sdcBack",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO7sdcBackyAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO7sdcBackyAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pfl",
+            "printedName": "pfl",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO3pflyAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO3pflyAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vc",
+            "printedName": "vc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO2vcyAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO2vcyAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poa",
+            "printedName": "poa",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO3poayAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO3poayAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18Au10tixSecureMeKit0bC4FlowO",
+        "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -735,6 +1025,46 @@
           },
           {
             "kind": "Var",
+            "name": "vcUIModuleIsMissing",
+            "printedName": "vcUIModuleIsMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitError.Type) -> Au10tixSecureMeKit.SecureMeKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitError",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                    "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitError",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                        "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO19vcUIModuleIsMissingyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD5ErrorO19vcUIModuleIsMissingyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "poaUIModuleIsMissing",
             "printedName": "poaUIModuleIsMissing",
             "children": [
@@ -812,6 +1142,46 @@
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "noScope",
+            "printedName": "noScope",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitError.Type) -> Au10tixSecureMeKit.SecureMeKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitError",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                    "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitError",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitError",
+                        "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD5ErrorO7noScopeyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD5ErrorO7noScopeyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",
@@ -841,372 +1211,89 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SecureMeKitUIFlowManager",
-        "printedName": "SecureMeKitUIFlowManager",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "Flow",
-            "printedName": "Flow",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "sdcFront",
-                "printedName": "sdcFront",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO8sdcFrontyA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO8sdcFrontyA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Var",
-                "name": "sdcBack",
-                "printedName": "sdcBack",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO7sdcBackyA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO7sdcBackyA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Var",
-                "name": "pfl",
-                "printedName": "pfl",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3pflyA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3pflyA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Var",
-                "name": "afl",
-                "printedName": "afl",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3aflyA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3aflyA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Var",
-                "name": "poa",
-                "printedName": "poa",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3poayA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO3poayA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Var",
-                "name": "complete",
-                "printedName": "complete",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type) -> Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Flow",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Flow",
-                            "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO8completeyA2EmF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO8completeyA2EmF",
-                "moduleName": "Au10tixSecureMeKit"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Flow",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Flow",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO2eeoiySbAE_AEtFZ",
-                "moduleName": "Au10tixSecureMeKit",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO9hashValueSivp",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO9hashValueSivp",
-                "moduleName": "Au10tixSecureMeKit",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO9hashValueSivg",
-                    "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO9hashValueSivg",
-                    "moduleName": "Au10tixSecureMeKit",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO4hash4intoys6HasherVz_tF",
-                "moduleName": "Au10tixSecureMeKit",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO",
-            "moduleName": "Au10tixSecureMeKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV",
-        "mangledName": "$s18Au10tixSecureMeKit0bcD13UIFlowManagerV",
-        "moduleName": "Au10tixSecureMeKit",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "SecureMeKitUpdate",
         "printedName": "SecureMeKitUpdate",
         "children": [
+          {
+            "kind": "Var",
+            "name": "vcStarted",
+            "printedName": "vcStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitUpdate",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitUpdate",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO9vcStartedyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO9vcStartedyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vcFinished",
+            "printedName": "vcFinished",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitUpdate",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitUpdate",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO10vcFinishedyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO10vcFinishedyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
           {
             "kind": "Var",
             "name": "sdcFrontStarted",
@@ -1362,86 +1449,6 @@
             "declKind": "EnumElement",
             "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO15sdcBackFinishedyA2CmF",
             "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO15sdcBackFinishedyA2CmF",
-            "moduleName": "Au10tixSecureMeKit",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "aflStarted",
-            "printedName": "aflStarted",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecureMeKitUpdate",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
-                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SecureMeKitUpdate",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
-                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO10aflStartedyA2CmF",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO10aflStartedyA2CmF",
-            "moduleName": "Au10tixSecureMeKit",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "aflFinished",
-            "printedName": "aflFinished",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SecureMeKitUpdate",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
-                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SecureMeKitUpdate",
-                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
-                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO11aflFinishedyA2CmF",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO11aflFinishedyA2CmF",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "RawDocComment"
@@ -1771,8 +1778,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Au10tixSecureMeKit",
         "declAttributes": [
@@ -1780,18 +1787,129 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Au10tixCore",
-        "printedName": "Au10tixCore",
-        "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit"
+        "kind": "TypeDecl",
+        "name": "SecureMeFlowConfig",
+        "printedName": "SecureMeFlowConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(showIntro:enableFileUpload:sendFeatureResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecureMeFlowConfig",
+                "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResultACSb_S2btcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResultACSb_S2btcfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV",
+        "mangledName": "$s18Au10tixSecureMeKit0bC10FlowConfigV",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
-        "name": "Au10tixBaseUI",
-        "printedName": "Au10tixBaseUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit"
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureMeConfig",
+        "printedName": "SecureMeConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(flows:smConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecureMeConfig",
+                "printedName": "Au10tixSecureMeKit.SecureMeConfig",
+                "usr": "s:18Au10tixSecureMeKit0bC6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixSecureMeKit.SecureMeFlow]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeFlow",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                    "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecureMeFeaturesConfig",
+                "printedName": "Au10tixSecureMeKit.SecureMeFeaturesConfig",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18Au10tixSecureMeKit0bC6ConfigV5flows02smE0ACSayAA0bC4FlowOG_AA0bc8FeaturesE0Vtcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC6ConfigV5flows02smE0ACSayAA0bC4FlowOG_AA0bc8FeaturesE0Vtcfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18Au10tixSecureMeKit0bC6ConfigV",
+        "mangledName": "$s18Au10tixSecureMeKit0bC6ConfigV",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1888,7 +2006,7 @@
                 "kind": "TypeNominal",
                 "name": "SecureMeKit",
                 "printedName": "Au10tixSecureMeKit.SecureMeKit",
-                "usr": "s:18Au10tixSecureMeKit0bcD0C"
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               },
               {
                 "kind": "TypeNominal",
@@ -1973,7 +2091,7 @@
           {
             "kind": "Function",
             "name": "createUI",
-            "printedName": "createUI(delegate:)",
+            "printedName": "createUI(config:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1983,14 +2101,29 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixSecureMeKit.SecureMeConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeConfig",
+                    "printedName": "Au10tixSecureMeKit.SecureMeConfig",
+                    "usr": "s:18Au10tixSecureMeKit0bC6ConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "SecureMeKitDelegate",
                 "printedName": "Au10tixSecureMeKit.SecureMeKitDelegate",
                 "usr": "s:18Au10tixSecureMeKit0bcD8DelegateP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18Au10tixSecureMeKit0bcD0C8createUI8delegateSo16UIViewControllerCAA0bcD8Delegate_p_tKF",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD0C8createUI8delegateSo16UIViewControllerCAA0bcD8Delegate_p_tKF",
+            "usr": "s:18Au10tixSecureMeKit0bcD0C8createUI6config8delegateSo16UIViewControllerCAA0bC6ConfigVSg_AA0bcD8Delegate_ptKF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD0C8createUI6config8delegateSo16UIViewControllerCAA0bC6ConfigVSg_AA0bcD8Delegate_ptKF",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "AccessControl",
@@ -2000,77 +2133,46 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "forceFlows",
-            "printedName": "forceFlows(_:)",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Flow",
-                    "printedName": "Au10tixSecureMeKit.SecureMeKitUIFlowManager.Flow",
-                    "usr": "s:18Au10tixSecureMeKit0bcD13UIFlowManagerV4FlowO"
-                  }
-                ],
-                "usr": "s:Sa"
+                "name": "SecureMeKit",
+                "printedName": "Au10tixSecureMeKit.SecureMeKit",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:18Au10tixSecureMeKit0bcD0C10forceFlowsyySayAA0bcD13UIFlowManagerV4FlowOGF",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD0C10forceFlowsyySayAA0bcD13UIFlowManagerV4FlowOGF",
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit(im)init",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD0CACycfc",
             "moduleName": "Au10tixSecureMeKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "ObjC",
+              "Override"
             ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPFLDelayTime",
-            "printedName": "setPFLDelayTime(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18Au10tixSecureMeKit0bcD0C15setPFLDelayTimeyySdF",
-            "mangledName": "$s18Au10tixSecureMeKit0bcD0C15setPFLDelayTimeyySdF",
-            "moduleName": "Au10tixSecureMeKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:18Au10tixSecureMeKit0bcD0C",
+        "usr": "c:@M@Au10tixSecureMeKit@objc(cs)SecureMeKit",
         "mangledName": "$s18Au10tixSecureMeKit0bcD0C",
         "moduleName": "Au10tixSecureMeKit",
         "declAttributes": [
           "AccessControl",
-          "RawDocComment"
+          "RawDocComment",
+          "ObjC"
         ],
+        "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
         "conformances": [
           {
             "kind": "Conformance",
@@ -2078,6 +2180,55 @@
             "printedName": "Au10tixSDK",
             "usr": "s:11Au10tixCore0A3SDKP",
             "mangledName": "$s11Au10tixCore0A3SDKP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -2150,6 +2301,384 @@
           "AccessControl",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureMeFeaturesConfig",
+        "printedName": "SecureMeFeaturesConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pflDetectionDelayEnabled",
+            "printedName": "pflDetectionDelayEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabledSbvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabledSbvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabledSbvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabledSbvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pflDelay",
+            "printedName": "pflDelay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sendResults",
+            "printedName": "sendResults",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV11sendResultsSbvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV11sendResultsSbvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV11sendResultsSbvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV11sendResultsSbvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voiceConsentText",
+            "printedName": "voiceConsentText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV16voiceConsentTextSSSgvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV16voiceConsentTextSSSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV16voiceConsentTextSSSgvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV16voiceConsentTextSSSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voiceConsentSessionTime",
+            "printedName": "voiceConsentSessionTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(pflDetectionDelayEnabled:pflDelay:sendResults:voiceConsentText:voiceConsentSessionTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecureMeFeaturesConfig",
+                "printedName": "Au10tixSecureMeKit.SecureMeFeaturesConfig",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSgSbSSSgSiSgtcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSgSbSSSgSiSgtcfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV",
+        "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
@@ -2157,24 +2686,38 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1043,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 738,
+      "offset": 706,
       "length": 25,
       "value": "\"Au10tixSecureMeKit.SecureMeKitViewController\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/SecureMeKitConfigurations.swift",
-      "kind": "Dictionary",
-      "offset": 1224,
-      "length": 3,
-      "value": "[]"
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1079,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/SecureMeKitUIFlowManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 364,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1126,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1174,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitCompleteViewController.swift",
@@ -2186,9 +2729,30 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
       "kind": "Array",
-      "offset": 1337,
+      "offset": 1321,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 11,
+      "value": "\"Au10tixSecureMeKit.SecureMeKit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1662,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1752,
+      "length": 4,
+      "value": "true"
     }
   ]
 }

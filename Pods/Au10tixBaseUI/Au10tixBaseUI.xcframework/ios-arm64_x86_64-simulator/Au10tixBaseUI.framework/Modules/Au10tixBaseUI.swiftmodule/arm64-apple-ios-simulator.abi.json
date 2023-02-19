@@ -3480,6 +3480,203 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoPreviewView",
+        "printedName": "VideoPreviewView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(estimatedWidth:estimatedHeight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPreviewView",
+                "printedName": "Au10tixBaseUI.VideoPreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)VideoPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewViewC14estimatedWidth0G6HeightAC14CoreFoundation7CGFloatV_AHtcfc",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewViewC14estimatedWidth0G6HeightAC12CoreGraphics7CGFloatV_AHtcfc",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewViewC5clearyyF",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewViewC5clearyyF",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPreviewView",
+                "printedName": "Au10tixBaseUI.VideoPreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)VideoPreviewView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixBaseUI@objc(cs)VideoPreviewView(im)init",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewViewCACycfc",
+            "moduleName": "Au10tixBaseUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBaseUI@objc(cs)VideoPreviewView",
+        "mangledName": "$s13Au10tixBaseUI16VideoPreviewViewC",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Au10tixBaseUI@objc(cs)BaseUIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Au10tixBaseUI.BaseUIView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ActionItem",
         "printedName": "ActionItem",
@@ -3915,6 +4112,64 @@
                 "declKind": "EnumElement",
                 "usr": "s:13Au10tixBaseUI10ActionItemV0D0O6customyAESo7UIImageCSgcAEmF",
                 "mangledName": "$s13Au10tixBaseUI10ActionItemV0D0O6customyAESo7UIImageCSgcAEmF",
+                "moduleName": "Au10tixBaseUI"
+              },
+              {
+                "kind": "Var",
+                "name": "animation",
+                "printedName": "animation",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.ActionItem.Action.Type) -> (Au10tixBaseUI.ActionItem.Animation?) -> Au10tixBaseUI.ActionItem.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Au10tixBaseUI.ActionItem.Animation?) -> Au10tixBaseUI.ActionItem.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixBaseUI.ActionItem.Action",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV0D0O"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Au10tixBaseUI.ActionItem.Animation?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Animation",
+                                "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                                "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.ActionItem.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixBaseUI.ActionItem.Action",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV0D0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI10ActionItemV0D0O9animationyAeC9AnimationOSgcAEmF",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV0D0O9animationyAeC9AnimationOSgcAEmF",
                 "moduleName": "Au10tixBaseUI"
               },
               {
@@ -4431,6 +4686,255 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Animation",
+            "printedName": "Animation",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Animation",
+                    "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                    "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Animation",
+                    "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                    "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV9AnimationO2eeoiySbAE_AEtFZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "imageSequence",
+                "printedName": "imageSequence",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.ActionItem.Animation.Type) -> ([UIKit.UIImage], Swift.Double, (() -> ())?) -> Au10tixBaseUI.ActionItem.Animation",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([UIKit.UIImage], Swift.Double, (() -> ())?) -> Au10tixBaseUI.ActionItem.Animation",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Animation",
+                            "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(images: [UIKit.UIImage], timeInterval: Swift.Double, completion: (() -> ())?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[UIKit.UIImage]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "UIImage",
+                                    "printedName": "UIKit.UIImage",
+                                    "usr": "c:objc(cs)UIImage"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(() -> ())?",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "() -> ()",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Void",
+                                        "printedName": "()"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Void",
+                                        "printedName": "()"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.ActionItem.Animation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Animation",
+                            "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO13imageSequenceyAESaySo7UIImageCG_SdyycSgtcAEmF",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV9AnimationO13imageSequenceyAESaySo7UIImageCG_SdyycSgtcAEmF",
+                "moduleName": "Au10tixBaseUI"
+              },
+              {
+                "kind": "Var",
+                "name": "textSequence",
+                "printedName": "textSequence",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.ActionItem.Animation.Type) -> ([Foundation.NSAttributedString], Swift.Double, (() -> ())?) -> Au10tixBaseUI.ActionItem.Animation",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Foundation.NSAttributedString], Swift.Double, (() -> ())?) -> Au10tixBaseUI.ActionItem.Animation",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Animation",
+                            "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(strings: [Foundation.NSAttributedString], timeInterval: Swift.Double, completion: (() -> ())?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Foundation.NSAttributedString]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "NSAttributedString",
+                                    "printedName": "Foundation.NSAttributedString",
+                                    "usr": "c:objc(cs)NSAttributedString"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "(() -> ())?",
+                                "children": [
+                                  {
+                                    "kind": "TypeFunc",
+                                    "name": "Function",
+                                    "printedName": "() -> ()",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Void",
+                                        "printedName": "()"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Void",
+                                        "printedName": "()"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.ActionItem.Animation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Animation",
+                            "printedName": "Au10tixBaseUI.ActionItem.Animation",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO12textSequenceyAESaySo18NSAttributedStringCG_SdyycSgtcAEmF",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV9AnimationO12textSequenceyAESaySo18NSAttributedStringCG_SdyycSgtcAEmF",
+                "moduleName": "Au10tixBaseUI"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:13Au10tixBaseUI10ActionItemV9AnimationO",
+            "mangledName": "$s13Au10tixBaseUI10ActionItemV9AnimationO",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -6327,100 +6831,62 @@
                 "moduleName": "Au10tixBaseUI"
               },
               {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageType",
-                    "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
-                    "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageType",
-                    "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
-                    "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO2eeoiySbAE_AEtFZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
                 "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
+                "name": "custom",
+                "printedName": "custom",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO9hashValueSivp",
-                "mangledName": "$s13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO9hashValueSivp",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.CameraIssueViewController.ImageType.Type) -> (UIKit.UIImage?) -> Au10tixBaseUI.CameraIssueViewController.ImageType",
                     "children": [
                       {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIImage?) -> Au10tixBaseUI.CameraIssueViewController.ImageType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageType",
+                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
+                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "UIKit.UIImage?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UIImage",
+                                "printedName": "UIKit.UIImage",
+                                "usr": "c:objc(cs)UIImage"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageType",
+                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
+                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
+                          }
+                        ]
                       }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO9hashValueSivg",
-                    "mangledName": "$s13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO9hashValueSivg",
-                    "moduleName": "Au10tixBaseUI",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
+                    ]
                   }
                 ],
-                "declKind": "Func",
-                "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO4hash4intoys6HasherVz_tF",
-                "moduleName": "Au10tixBaseUI",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO6customyAESo7UIImageCSgcAEmF",
+                "mangledName": "$s13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO6customyAESo7UIImageCSgcAEmF",
+                "moduleName": "Au10tixBaseUI"
               }
             ],
             "declKind": "Enum",
@@ -6430,23 +6896,7 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              }
-            ]
+            "isFromExtension": true
           }
         ],
         "declKind": "Class",
@@ -10170,6 +10620,40 @@
             "init_kind": "Designated"
           },
           {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIThemeColor",
+                "printedName": "Au10tixBaseUI.UIThemeColor",
+                "usr": "s:13Au10tixBaseUI12UIThemeColorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIThemeColor",
+                "printedName": "Au10tixBaseUI.UIThemeColor",
+                "usr": "s:13Au10tixBaseUI12UIThemeColorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI12UIThemeColorV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13Au10tixBaseUI12UIThemeColorV2eeoiySbAC_ACtFZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "infoColor",
             "printedName": "infoColor",
@@ -10396,6 +10880,15 @@
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -13525,6 +14018,43 @@
             "moduleName": "Au10tixBaseUI"
           },
           {
+            "kind": "Var",
+            "name": "video",
+            "printedName": "video",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBaseUI.PreviewItemType.Type) -> Au10tixBaseUI.PreviewItemType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreviewItemType",
+                    "printedName": "Au10tixBaseUI.PreviewItemType",
+                    "usr": "s:13Au10tixBaseUI15PreviewItemTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBaseUI.PreviewItemType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreviewItemType",
+                        "printedName": "Au10tixBaseUI.PreviewItemType",
+                        "usr": "s:13Au10tixBaseUI15PreviewItemTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13Au10tixBaseUI15PreviewItemTypeO5videoyA2CmF",
+            "mangledName": "$s13Au10tixBaseUI15PreviewItemTypeO5videoyA2CmF",
+            "moduleName": "Au10tixBaseUI"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -15096,6 +15626,373 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "VideoPreviewItem",
+        "printedName": "VideoPreviewItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PreviewItemType",
+                "printedName": "Au10tixBaseUI.PreviewItemType",
+                "usr": "s:13Au10tixBaseUI15PreviewItemTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvp",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreviewItemType",
+                    "printedName": "Au10tixBaseUI.PreviewItemType",
+                    "usr": "s:13Au10tixBaseUI15PreviewItemTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvg",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvg",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreviewItemType",
+                    "printedName": "Au10tixBaseUI.PreviewItemType",
+                    "usr": "s:13Au10tixBaseUI15PreviewItemTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvs",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvs",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvM",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4typeAA0eF4TypeOvM",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "margins",
+            "printedName": "margins",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixBaseUI.PreviewItemMargin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreviewItemMargin",
+                    "printedName": "Au10tixBaseUI.PreviewItemMargin",
+                    "usr": "s:13Au10tixBaseUI17PreviewItemMarginO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvp",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixBaseUI.PreviewItemMargin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreviewItemMargin",
+                        "printedName": "Au10tixBaseUI.PreviewItemMargin",
+                        "usr": "s:13Au10tixBaseUI17PreviewItemMarginO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvg",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvg",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixBaseUI.PreviewItemMargin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PreviewItemMargin",
+                        "printedName": "Au10tixBaseUI.PreviewItemMargin",
+                        "usr": "s:13Au10tixBaseUI17PreviewItemMarginO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvs",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvs",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvM",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV7marginsSayAA0eF6MarginOGvM",
+                "moduleName": "Au10tixBaseUI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4viewSo6UIViewCvp",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4viewSo6UIViewCvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV4viewSo6UIViewCvg",
+                "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV4viewSo6UIViewCvg",
+                "moduleName": "Au10tixBaseUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(videoPreviewView:margins:middleToastDatasource:bottomToastDatasource:videoUrl:isPlay:onPlayingComlete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPreviewItem",
+                "printedName": "Au10tixBaseUI.VideoPreviewItem",
+                "usr": "s:13Au10tixBaseUI16VideoPreviewItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPreviewView",
+                "printedName": "Au10tixBaseUI.VideoPreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)VideoPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixBaseUI.PreviewItemMargin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PreviewItemMargin",
+                    "printedName": "Au10tixBaseUI.PreviewItemMargin",
+                    "usr": "s:13Au10tixBaseUI17PreviewItemMarginO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBaseUI.ToastViewDatasource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ToastViewDatasource",
+                    "printedName": "Au10tixBaseUI.ToastViewDatasource",
+                    "usr": "s:13Au10tixBaseUI19ToastViewDatasourceV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixBaseUI.ToastViewDatasource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ToastViewDatasource",
+                    "printedName": "Au10tixBaseUI.ToastViewDatasource",
+                    "usr": "s:13Au10tixBaseUI19ToastViewDatasourceV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI16VideoPreviewItemV05videoE4View7margins21middleToastDatasource06bottomkL00G3Url6isPlay16onPlayingComleteAcA0deH0C_SayAA0eF6MarginOGAA0khL0VSgAR10Foundation3URLVSbyycSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV05videoE4View7margins21middleToastDatasource06bottomkL00G3Url6isPlay16onPlayingComleteAcA0deH0C_SayAA0eF6MarginOGAA0khL0VSgAR10Foundation3URLVSbyycSgtcfc",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13Au10tixBaseUI16VideoPreviewItemV",
+        "mangledName": "$s13Au10tixBaseUI16VideoPreviewItemV",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PreviewItem",
+            "printedName": "PreviewItem",
+            "usr": "s:13Au10tixBaseUI11PreviewItemP",
+            "mangledName": "$s13Au10tixBaseUI11PreviewItemP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CameraPreviewItem",
         "printedName": "CameraPreviewItem",
         "children": [
@@ -15337,7 +16234,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cameraPreviewView:margins:state:showIssuesBar:captureViewTintColor:progressBarInfo:middleToastDatasource:bottomToastDatasource:recordingTime:capturedImage:successImage:placeholderImageAppearance:issuesBarClicked:)",
+            "printedName": "init(cameraPreviewView:margins:state:showIssuesBar:captureViewTintColor:progressBarInfo:middleToastDatasource:bottomToastDatasource:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderImageAppearance:issuesBarClicked:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15456,6 +16353,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "UIKit.UIImage?",
                 "children": [
@@ -15519,8 +16423,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime13capturedImage07successZ0011placeholderZ10Appearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA4_10Foundation4DateVSgSo7UIImageCSgA11_AA0dE21PlaceholderAppearanceOyycSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime13capturedImage07successZ0011placeholderZ10Appearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA4_10Foundation4DateVSgSo7UIImageCSgA11_AA0dE21PlaceholderAppearanceOyycSgtcfc",
+            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA5_10Foundation4DateVSgSbSo7UIImageCSgA12_AA0dE21PlaceholderAppearanceOyycSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA5_10Foundation4DateVSgSbSo7UIImageCSgA12_AA0dE21PlaceholderAppearanceOyycSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -15530,7 +16434,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(margins:estimatedWidth:estimatedHeight:cameraView:state:showIssuesBar:issuesBarText:captureViewTintColor:boundariesImage:placeHolderImage:cornerRadius:progressBarInfo:middleToastDatasource:bottomToastDatasource:placeholderImageAppearance:recordingTime:capturedImage:successImage:placeholderInsetsRatio:boundariesInsetsRatio:issuesBarClicked:)",
+            "printedName": "init(margins:estimatedWidth:estimatedHeight:cameraView:state:showIssuesBar:issuesBarText:captureViewTintColor:boundariesImage:placeHolderImage:cornerRadius:progressBarInfo:middleToastDatasource:bottomToastDatasource:placeholderImageAppearance:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderInsetsRatio:boundariesInsetsRatio:issuesBarClicked:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15728,6 +16632,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "UIKit.UIImage?",
                 "children": [
@@ -15814,8 +16725,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_14CoreFoundation7CGFloatVA2_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA13_A2_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA20_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgA13_A13_So12UIEdgeInsetsVSgA29_yycSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_12CoreGraphics7CGFloatVA2_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA13_A2_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA20_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgA13_A13_So12UIEdgeInsetsVSgA29_yycSgtcfc",
+            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_14CoreFoundation7CGFloatVA3_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA14_A3_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA21_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA14_A14_So12UIEdgeInsetsVSgA30_yycSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_12CoreGraphics7CGFloatVA3_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA14_A3_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA21_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA14_A14_So12UIEdgeInsetsVSgA30_yycSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -16142,7 +17053,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(actionViewAlignment:spacing:actionViewFirstItem:actionViewSecondItem:actionViewThirdItem:)",
+            "printedName": "init(actionViewAlignment:spacing:actionViewFirstItem:actionViewSecondItem:actionViewThirdItem:backgroundImage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16215,11 +17126,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI13ActionSectionV19actionViewAlignment7spacing0fG9FirstItem0fg6SecondK00fg5ThirdK0ACSo22UILayoutConstraintAxisV_14CoreFoundation7CGFloatVSgAA0dK0VSgA2Qtcfc",
-            "mangledName": "$s13Au10tixBaseUI13ActionSectionV19actionViewAlignment7spacing0fG9FirstItem0fg6SecondK00fg5ThirdK0ACSo22UILayoutConstraintAxisV_12CoreGraphics7CGFloatVSgAA0dK0VSgA2Qtcfc",
+            "usr": "s:13Au10tixBaseUI13ActionSectionV19actionViewAlignment7spacing0fG9FirstItem0fg6SecondK00fg5ThirdK015backgroundImageACSo22UILayoutConstraintAxisV_14CoreFoundation7CGFloatVSgAA0dK0VSgA2RSo7UIImageCSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI13ActionSectionV19actionViewAlignment7spacing0fG9FirstItem0fg6SecondK00fg5ThirdK015backgroundImageACSo22UILayoutConstraintAxisV_12CoreGraphics7CGFloatVSgAA0dK0VSgA2RSo7UIImageCSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -17514,6 +18440,167 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioPermissionManager",
+        "printedName": "AudioPermissionManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PermissionManager",
+                "printedName": "Au10tixBaseUI.PermissionManager",
+                "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvpZ",
+            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionManager",
+                    "printedName": "Au10tixBaseUI.PermissionManager",
+                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvgZ",
+                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionManager",
+                    "printedName": "Au10tixBaseUI.PermissionManager",
+                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvsZ",
+                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvsZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvMZ",
+                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvMZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestPermission",
+            "printedName": "requestPermission(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBaseUI.PermissionStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PermissionStatus",
+                    "printedName": "Au10tixBaseUI.PermissionStatus",
+                    "usr": "s:13Au10tixBaseUI16PermissionStatusO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV07requestE0yyyAA0E6StatusOcF",
+            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV07requestE0yyyAA0E6StatusOcF",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV",
+        "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PermissionManager",
+            "printedName": "PermissionManager",
+            "usr": "s:13Au10tixBaseUI17PermissionManagerP",
+            "mangledName": "$s13Au10tixBaseUI17PermissionManagerP"
           }
         ]
       },
@@ -20067,72 +21154,79 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1356,
+      "offset": 1367,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1413,
       "length": 2,
       "value": "41"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1401,
+      "offset": 1458,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1449,
+      "offset": 1506,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1498,
+      "offset": 1555,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1548,
+      "offset": 1605,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "FloatLiteral",
-      "offset": 1602,
+      "offset": 1659,
       "length": 4,
       "value": "8.39"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1656,
+      "offset": 1713,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2286,
+      "offset": 2305,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2375,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
       "kind": "StringLiteral",
-      "offset": 2436,
-      "length": 24,
-      "value": "\"au10tix_x_button_empty\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
-      "kind": "StringLiteral",
-      "offset": 3628,
-      "length": 20,
-      "value": "\"au10tix_x_button_x\""
+      "offset": 2525,
+      "length": 22,
+      "value": "\"au10tix_button_close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Top View\/ScreenTopNavigationView.swift",
@@ -20142,16 +21236,79 @@
       "value": "\"Au10tixBaseUI.ScreenTopNavigationView\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1410,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1459,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1619,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1703,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1726,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1947,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2189,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 16,
+      "value": "\"Au10tixBaseUI.VideoPreviewView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/VideoPreviewView.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 16,
+      "value": "\"Au10tixBaseUI.VideoPreviewView\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
       "kind": "IntegerLiteral",
-      "offset": 3075,
+      "offset": 3374,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 3393,
+      "offset": 3692,
       "length": 4,
       "value": "true"
     },
@@ -20613,14 +21770,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/ScreenActionView.swift",
       "kind": "FloatLiteral",
-      "offset": 2128,
+      "offset": 2407,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/ScreenActionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4013,
+      "offset": 4466,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/ScreenActionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5117,
       "length": 5,
       "value": "false"
     },
@@ -20698,34 +21862,34 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "StringLiteral",
       "offset": 1437,
-      "length": 18,
-      "value": "\"au10tix_x_button\""
+      "length": 29,
+      "value": "\"au10tix_button_close_filled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2040,
+      "offset": 2051,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2209,
+      "offset": 2220,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2755,
+      "offset": 2766,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2926,
+      "offset": 2937,
       "length": 2,
       "value": "17"
     },
@@ -20816,63 +21980,84 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/Custom Button\/Circled Button\/CircledButton.swift",
       "kind": "StringLiteral",
-      "offset": 516,
+      "offset": 568,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/Custom Button\/Circled Button\/CircledButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1730,
+      "offset": 2182,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 1016,
+      "offset": 1026,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 1887,
+      "offset": 1897,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 2709,
+      "offset": 2719,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 5119,
+      "offset": 3960,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
+      "kind": "Array",
+      "offset": 6969,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 5208,
+      "offset": 7058,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7410,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 7027,
+      "offset": 9001,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 7235,
+      "offset": 9209,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9843,
       "length": 5,
       "value": "false"
     },
@@ -20948,64 +22133,71 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2359,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3268,
+      "offset": 3480,
       "length": 3,
       "value": "222"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3322,
+      "offset": 3534,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 3369,
+      "offset": 3581,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3558,
+      "offset": 3770,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 3822,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3654,
+      "offset": 3866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3703,
+      "offset": 3915,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3865,
+      "offset": 4077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 5371,
+      "offset": 5613,
       "length": 4,
       "value": "0.33"
     },

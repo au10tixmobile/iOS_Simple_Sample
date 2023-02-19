@@ -27,6 +27,13 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixSourceManager"
+      },
+      {
+        "kind": "Import",
         "name": "CoreMotion",
         "printedName": "CoreMotion",
         "declKind": "Import",
@@ -497,6 +504,76 @@
           },
           {
             "kind": "Function",
+            "name": "canRecordVideo",
+            "printedName": "canRecordVideo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolP14canRecordVideoSbyF",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolP14canRecordVideoSbyF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideoRecording",
+            "printedName": "startVideoRecording(videoUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolP19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolP19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoRecording",
+            "printedName": "stopVideoRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolP18stopVideoRecordingyyF",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolP18stopVideoRecordingyyF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "isMissingCameraPermission",
             "printedName": "isMissingCameraPermission()",
             "children": [
@@ -510,6 +587,28 @@
             "declKind": "Func",
             "usr": "s:20Au10tixSourceManager0abC8ProtocolPAAE25isMissingCameraPermissionSbyFZ",
             "mangledName": "$s20Au10tixSourceManager0abC8ProtocolPAAE25isMissingCameraPermissionSbyFZ",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isMissingMicPermission",
+            "printedName": "isMissingMicPermission()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolPAAE22isMissingMicPermissionSbyFZ",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolPAAE22isMissingMicPermissionSbyFZ",
             "moduleName": "Au10tixSourceManager",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
@@ -554,6 +653,28 @@
             "declKind": "Func",
             "usr": "s:20Au10tixSourceManager0abC8ProtocolPAAE18isCameraAuthorizedSbyFZ",
             "mangledName": "$s20Au10tixSourceManager0abC8ProtocolPAAE18isCameraAuthorizedSbyFZ",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isMicAuthorized",
+            "printedName": "isMicAuthorized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolPAAE15isMicAuthorizedSbyFZ",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolPAAE15isMicAuthorizedSbyFZ",
             "moduleName": "Au10tixSourceManager",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
@@ -874,39 +995,6 @@
           {
             "kind": "Function",
             "name": "sourceManager",
-            "printedName": "sourceManager(_:didGetSourceError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Au10SourceManager",
-                "printedName": "Au10tixSourceManager.Au10SourceManager",
-                "usr": "s:20Au10tixSourceManager04Au10bC0C"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
-            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
-            "moduleName": "Au10tixSourceManager",
-            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
-            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sourceManager",
             "printedName": "sourceManager(_:didGetSourceUpdate:)",
             "children": [
               {
@@ -1014,6 +1102,78 @@
           },
           {
             "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetVideo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_11didGetVideoyAA0dbC0C_10Foundation3URLVtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_11didGetVideoyAA0dbC0C_10Foundation3URLVtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetSourceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionP06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sourceManagerCameraDidSuspend",
             "printedName": "sourceManagerCameraDidSuspend(_:)",
             "children": [
@@ -1074,6 +1234,166 @@
           },
           {
             "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetSourceUpdate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Update",
+                "printedName": "Au10tixCore.Au10Update",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Update"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_06didGetB6UpdateyAA0dbC0C_0A4Core0dJ0CtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_06didGetB6UpdateyAA0dbC0C_0A4Core0dJ0CtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetFrame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10CaptureFrameUpdate",
+                "printedName": "Au10tixSourceManager.Au10CaptureFrameUpdate",
+                "usr": "s:20Au10tixSourceManager22Au10CaptureFrameUpdateV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_11didGetFrameyAA0dbC0C_AA0d7CaptureJ6UpdateVtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_11didGetFrameyAA0dbC0C_AA0d7CaptureJ6UpdateVtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetSample:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureSampleUpdate",
+                "printedName": "Au10tixSourceManager.CaptureSampleUpdate",
+                "usr": "s:20Au10tixSourceManager19CaptureSampleUpdateC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_12didGetSampleyAA0dbC0C_AA07CaptureJ6UpdateCtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_12didGetSampleyAA0dbC0C_AA07CaptureJ6UpdateCtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetVideo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_11didGetVideoyAA0dbC0C_10Foundation3URLVtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_11didGetVideoyAA0dbC0C_10Foundation3URLVtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didGetSourceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
+            "mangledName": "$s20Au10tixSourceManager04Au10B9ToSessionPAAE06sourceC0_06didGetB5ErroryAA0dbC0C_s0J0_ptF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sourceManagerCameraDidSuspend",
             "printedName": "sourceManagerCameraDidSuspend(_:)",
             "children": [
@@ -1095,9 +1415,6 @@
             "moduleName": "Au10tixSourceManager",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
-            "declAttributes": [
-              "AccessControl"
-            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1124,9 +1441,6 @@
             "moduleName": "Au10tixSourceManager",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10SourceToSession>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10SourceToSession>",
-            "declAttributes": [
-              "AccessControl"
-            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
@@ -1138,7 +1452,8 @@
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -1176,6 +1491,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MotionSourceDelegate>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MotionSourceDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1213,6 +1531,70 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didDetectStability:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager010Au10MotionB8DelegatePAAE06sourceC0_18didDetectStabilityyAA0dbC0C_SbtF",
+            "mangledName": "$s20Au10tixSourceManager010Au10MotionB8DelegatePAAE06sourceC0_18didDetectStabilityyAA0dbC0C_SbtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MotionSourceDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MotionSourceDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didDetectFacingAngle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager010Au10MotionB8DelegatePAAE06sourceC0_20didDetectFacingAngleyAA0dbC0C_SbtF",
+            "mangledName": "$s20Au10tixSourceManager010Au10MotionB8DelegatePAAE06sourceC0_20didDetectFacingAngleyAA0dbC0C_SbtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MotionSourceDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MotionSourceDelegate>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -1261,6 +1643,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MetadataOutputDelegate>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MetadataOutputDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1306,6 +1691,78 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didDetect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10MetadataFaceObject",
+                "printedName": "Au10tixSourceManager.Au10MetadataFaceObject",
+                "usr": "s:20Au10tixSourceManager22Au10MetadataFaceObjectV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager26Au10MetadataOutputDelegatePAAE06sourceC0_9didDetectyAA0dbC0C_AA0dE10FaceObjectVtF",
+            "mangledName": "$s20Au10tixSourceManager26Au10MetadataOutputDelegatePAAE06sourceC0_9didDetectyAA0dbC0C_AA0dE10FaceObjectVtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MetadataOutputDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MetadataOutputDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sourceManager",
+            "printedName": "sourceManager(_:didDetect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10SourceManager",
+                "printedName": "Au10tixSourceManager.Au10SourceManager",
+                "usr": "s:20Au10tixSourceManager04Au10bC0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixSourceManager.Au10MetadataMachineReadableCodeObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10MetadataMachineReadableCodeObject",
+                    "printedName": "Au10tixSourceManager.Au10MetadataMachineReadableCodeObject",
+                    "usr": "s:20Au10tixSourceManager37Au10MetadataMachineReadableCodeObjectV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager26Au10MetadataOutputDelegatePAAE06sourceC0_9didDetectyAA0dbC0C_SayAA0dE25MachineReadableCodeObjectVGtF",
+            "mangledName": "$s20Au10tixSourceManager26Au10MetadataOutputDelegatePAAE06sourceC0_9didDetectyAA0dbC0C_SayAA0dE25MachineReadableCodeObjectVGtF",
+            "moduleName": "Au10tixSourceManager",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10MetadataOutputDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10MetadataOutputDelegate>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -1705,7 +2162,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(record: Swift.Bool)",
+                        "printedName": "(videoRecordingEnabled: Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1762,7 +2219,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(record: Swift.Bool)",
+                        "printedName": "(videoRecordingEnabled: Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -3970,100 +4427,104 @@
             "moduleName": "Au10tixSourceManager"
           },
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "kind": "Var",
+            "name": "cameraModeError",
+            "printedName": "cameraModeError",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CameraError",
-                "printedName": "Au10tixSourceManager.CameraError",
-                "usr": "s:20Au10tixSourceManager11CameraErrorO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CameraError",
-                "printedName": "Au10tixSourceManager.CameraError",
-                "usr": "s:20Au10tixSourceManager11CameraErrorO"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSourceManager.CameraError.Type) -> (Swift.Error) -> Au10tixSourceManager.CameraError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Au10tixSourceManager.CameraError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraError",
+                        "printedName": "Au10tixSourceManager.CameraError",
+                        "usr": "s:20Au10tixSourceManager11CameraErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSourceManager.CameraError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraError",
+                        "printedName": "Au10tixSourceManager.CameraError",
+                        "usr": "s:20Au10tixSourceManager11CameraErrorO"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20Au10tixSourceManager11CameraErrorO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s20Au10tixSourceManager11CameraErrorO2eeoiySbAC_ACtFZ",
-            "moduleName": "Au10tixSourceManager",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:20Au10tixSourceManager11CameraErrorO010cameraModeE0yACs0E0_pcACmF",
+            "mangledName": "$s20Au10tixSourceManager11CameraErrorO010cameraModeE0yACs0E0_pcACmF",
+            "moduleName": "Au10tixSourceManager"
           },
           {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "recordVideoFailed",
+            "printedName": "recordVideoFailed",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20Au10tixSourceManager11CameraErrorO9hashValueSivp",
-            "mangledName": "$s20Au10tixSourceManager11CameraErrorO9hashValueSivp",
-            "moduleName": "Au10tixSourceManager",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSourceManager.CameraError.Type) -> (Swift.Error) -> Au10tixSourceManager.CameraError",
                 "children": [
                   {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Au10tixSourceManager.CameraError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraError",
+                        "printedName": "Au10tixSourceManager.CameraError",
+                        "usr": "s:20Au10tixSourceManager11CameraErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Metatype",
+                    "printedName": "Au10tixSourceManager.CameraError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraError",
+                        "printedName": "Au10tixSourceManager.CameraError",
+                        "usr": "s:20Au10tixSourceManager11CameraErrorO"
+                      }
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20Au10tixSourceManager11CameraErrorO9hashValueSivg",
-                "mangledName": "$s20Au10tixSourceManager11CameraErrorO9hashValueSivg",
-                "moduleName": "Au10tixSourceManager",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
+                ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20Au10tixSourceManager11CameraErrorO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s20Au10tixSourceManager11CameraErrorO4hash4intoys6HasherVz_tF",
-            "moduleName": "Au10tixSourceManager",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:20Au10tixSourceManager11CameraErrorO17recordVideoFailedyACs0E0_pcACmF",
+            "mangledName": "$s20Au10tixSourceManager11CameraErrorO17recordVideoFailedyACs0E0_pcACmF",
+            "moduleName": "Au10tixSourceManager"
           }
         ],
         "declKind": "Enum",
@@ -4074,20 +4535,6 @@
           "AccessControl"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -4714,6 +5161,44 @@
           },
           {
             "kind": "Function",
+            "name": "provideThumbnailImage",
+            "printedName": "provideThumbnailImage(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10bC0C21provideThumbnailImage3forSo7UIImageCSg10Foundation3URLV_tFZ",
+            "mangledName": "$s20Au10tixSourceManager04Au10bC0C21provideThumbnailImage3forSo7UIImageCSg10Foundation3URLV_tFZ",
+            "moduleName": "Au10tixSourceManager",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "isSourceAvailable",
             "printedName": "isSourceAvailable(sourceType:)",
             "children": [
@@ -5033,6 +5518,29 @@
           },
           {
             "kind": "Function",
+            "name": "canRecordVideo",
+            "printedName": "canRecordVideo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10bC0C14canRecordVideoSbyF",
+            "mangledName": "$s20Au10tixSourceManager04Au10bC0C14canRecordVideoSbyF",
+            "moduleName": "Au10tixSourceManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "captureStillImage",
             "printedName": "captureStillImage(_:)",
             "children": [
@@ -5056,6 +5564,54 @@
               "Final",
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideoRecording",
+            "printedName": "startVideoRecording(videoUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10bC0C19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "mangledName": "$s20Au10tixSourceManager04Au10bC0C19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "moduleName": "Au10tixSourceManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoRecording",
+            "printedName": "stopVideoRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20Au10tixSourceManager04Au10bC0C18stopVideoRecordingyyF",
+            "mangledName": "$s20Au10tixSourceManager04Au10bC0C18stopVideoRecordingyyF",
+            "moduleName": "Au10tixSourceManager",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5409,7 +5965,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10SourceManager\/Camera Source\/Revised Camera\/PhotoCaptureProcessor.swift",
       "kind": "StringLiteral",
-      "offset": 41,
+      "offset": 61,
       "length": 21,
       "value": "\"Au10tixSourceManager.PhotoCaptureProcessor\""
     },
@@ -5423,14 +5979,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10SourceManager\/Abstract Source\/SourceType.swift",
       "kind": "BooleanLiteral",
-      "offset": 158,
+      "offset": 173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10SourceManager\/Abstract Source\/SourceType.swift",
       "kind": "BooleanLiteral",
-      "offset": 200,
+      "offset": 230,
       "length": 5,
       "value": "false"
     },
@@ -5622,6 +6178,13 @@
       "offset": 754,
       "length": 16,
       "value": "\"org.iso.QRCode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10SourceManager\/Camera Source\/CameraConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 970,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10SourceManager\/Source Manager\/motion\/MotionHelper.swift",

@@ -7010,6 +7010,80 @@
                 "moduleName": "Au10tixCore"
               },
               {
+                "kind": "Var",
+                "name": "uploadVC",
+                "printedName": "uploadVC",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO8uploadVCyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO8uploadVCyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "uploadVCResponse",
+                "printedName": "uploadVCResponse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO16uploadVCResponseyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO16uploadVCResponseyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -7238,6 +7312,2743 @@
         "moduleName": "Au10tixCore",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeginProcessingIdentityDataForDataVerification",
+        "printedName": "BeginProcessingIdentityDataForDataVerification",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "countryIso3",
+            "printedName": "countryIso3",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso3SSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateOfBirth",
+            "printedName": "dateOfBirth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfBirthSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateOfExpiry",
+            "printedName": "dateOfExpiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV12dateOfExpirySSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateOfIssue",
+            "printedName": "dateOfIssue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11dateOfIssueSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "documentNumber",
+            "printedName": "documentNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14documentNumberSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV5emailSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstName",
+            "printedName": "firstName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9firstNameSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstName2",
+            "printedName": "firstName2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV10firstName2SSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fullName",
+            "printedName": "fullName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8fullNameSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fullName2",
+            "printedName": "fullName2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9fullName2SSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gender",
+            "printedName": "gender",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6genderSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ipAddress",
+            "printedName": "ipAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9ipAddressSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastName",
+            "printedName": "lastName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8lastNameSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastName2",
+            "printedName": "lastName2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV9lastName2SSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "middleNames",
+            "printedName": "middleNames",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11middleNamesSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nationalityIso3",
+            "printedName": "nationalityIso3",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV15nationalityIso3SSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "personalNumber",
+            "printedName": "personalNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV14personalNumberSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phoneNumber",
+            "printedName": "phoneNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11phoneNumberSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "profile",
+            "printedName": "profile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV7profileSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "residentialAddress",
+            "printedName": "residentialAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV18residentialAddressSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userName",
+            "printedName": "userName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvs",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvM",
+                "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV8userNameSSSgvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(countryIso3:dateOfBirth:dateOfExpiry:dateOfIssue:documentNumber:email:firstName:firstName2:fullName:fullName2:gender:ipAddress:lastName:lastName2:middleNames:nationalityIso3:personalNumber:phoneNumber:profile:residentialAddress:userName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingIdentityDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso311dateOfBirth0kL6Expiry0kL5Issue14documentNumber5email9firstName0S5Name204fullT00vU06gender9ipAddress04lastT00zU011middleNames011nationalityJ008personalQ005phoneQ07profile011residentialY004userT0ACSSSg_A20Ytcfc",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV11countryIso311dateOfBirth0kL6Expiry0kL5Issue14documentNumber5email9firstName0S5Name204fullT00vU06gender9ipAddress04lastT00zU011middleNames011nationalityJ008personalQ005phoneQ07profile011residentialY004userT0ACSSSg_A20Ytcfc",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingIdentityDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV",
+        "mangledName": "$s11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -14252,6 +17063,43 @@
         "children": [
           {
             "kind": "Var",
+            "name": "media",
+            "printedName": "media",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Scope.Type) -> Au10tixCore.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "Au10tixCore.Scope",
+                    "usr": "s:11Au10tixCore5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore5ScopeO5mediayA2CmF",
+            "mangledName": "$s11Au10tixCore5ScopeO5mediayA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
+            "kind": "Var",
             "name": "mobilesdk",
             "printedName": "mobilesdk",
             "children": [
@@ -14400,43 +17248,6 @@
           },
           {
             "kind": "Var",
-            "name": "media",
-            "printedName": "media",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixCore.Scope.Type) -> Au10tixCore.Scope",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Scope",
-                    "printedName": "Au10tixCore.Scope",
-                    "usr": "s:11Au10tixCore5ScopeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixCore.Scope.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Scope",
-                        "printedName": "Au10tixCore.Scope",
-                        "usr": "s:11Au10tixCore5ScopeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11Au10tixCore5ScopeO5mediayA2CmF",
-            "mangledName": "$s11Au10tixCore5ScopeO5mediayA2CmF",
-            "moduleName": "Au10tixCore"
-          },
-          {
-            "kind": "Var",
             "name": "helmets",
             "printedName": "helmets",
             "children": [
@@ -14511,6 +17322,43 @@
           },
           {
             "kind": "Var",
+            "name": "frontendClassification",
+            "printedName": "frontendClassification",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Scope.Type) -> Au10tixCore.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "Au10tixCore.Scope",
+                    "usr": "s:11Au10tixCore5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore5ScopeO22frontendClassificationyA2CmF",
+            "mangledName": "$s11Au10tixCore5ScopeO22frontendClassificationyA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
+            "kind": "Var",
             "name": "paymentCard",
             "printedName": "paymentCard",
             "children": [
@@ -14544,6 +17392,43 @@
             "declKind": "EnumElement",
             "usr": "s:11Au10tixCore5ScopeO11paymentCardyA2CmF",
             "mangledName": "$s11Au10tixCore5ScopeO11paymentCardyA2CmF",
+            "moduleName": "Au10tixCore"
+          },
+          {
+            "kind": "Var",
+            "name": "secureMe",
+            "printedName": "secureMe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixCore.Scope.Type) -> Au10tixCore.Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "Au10tixCore.Scope",
+                    "usr": "s:11Au10tixCore5ScopeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixCore.Scope.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11Au10tixCore5ScopeO8secureMeyA2CmF",
+            "mangledName": "$s11Au10tixCore5ScopeO8secureMeyA2CmF",
             "moduleName": "Au10tixCore"
           },
           {
@@ -14617,6 +17502,63 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Au10tixCore.Scope]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Scope",
+                    "printedName": "Au10tixCore.Scope",
+                    "usr": "s:11Au10tixCore5ScopeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore5ScopeO8allCasesSayACGvpZ",
+            "mangledName": "$s11Au10tixCore5ScopeO8allCasesSayACGvpZ",
+            "moduleName": "Au10tixCore",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixCore.Scope]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore5ScopeO8allCasesSayACGvgZ",
+                "mangledName": "$s11Au10tixCore5ScopeO8allCasesSayACGvgZ",
+                "moduleName": "Au10tixCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -14663,6 +17605,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Au10tixCore.Scope]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Scope",
+                        "printedName": "Au10tixCore.Scope",
+                        "usr": "s:11Au10tixCore5ScopeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -17805,6 +20777,13 @@
         "moduleName": "Au10tixCore"
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixCore"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Au10tix",
         "printedName": "Au10tix",
@@ -17931,6 +20910,102 @@
           },
           {
             "kind": "Var",
+            "name": "cameraSettings",
+            "printedName": "cameraSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CameraSettings",
+                "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvp",
+            "mangledName": "$s11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSettings",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvg",
+                "mangledName": "$s11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSettings",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvs",
+                "mangledName": "$s11Au10tixCore0A0C14cameraSettingsAC06CameraD0Vvs",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore0A0C14cameraSettingsAC06CameraD0VvM",
+                "mangledName": "$s11Au10tixCore0A0C14cameraSettingsAC06CameraD0VvM",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isActive",
             "printedName": "isActive",
             "children": [
@@ -17947,8 +21022,7 @@
             "moduleName": "Au10tixCore",
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -18735,6 +21809,62 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setConfiguration",
+            "printedName": "setConfiguration(localy:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Au10tixCore@objc(cs)Au10tix(im)setConfigurationWithLocaly:with:",
+            "mangledName": "$s11Au10tixCore0A0C16setConfiguration6localy4withySb_ySSSgctF",
+            "moduleName": "Au10tixCore",
+            "objc_name": "setConfigurationWithLocaly:with:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "TypeDecl",
             "name": "Configurations",
             "printedName": "Configurations",
@@ -18904,11 +22034,469 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "isSecureMeConfigurationAvailable",
+                "printedName": "isSecureMeConfigurationAvailable",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14ConfigurationsV32isSecureMeConfigurationAvailableSbvp",
+                "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV32isSecureMeConfigurationAvailableSbvp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14ConfigurationsV32isSecureMeConfigurationAvailableSbvg",
+                    "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV32isSecureMeConfigurationAvailableSbvg",
+                    "moduleName": "Au10tixCore",
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
             "usr": "s:11Au10tixCore0A0C14ConfigurationsV",
             "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CameraSettings",
+            "printedName": "CameraSettings",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "CameraCaptureSound",
+                "printedName": "CameraCaptureSound",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "default",
+                    "printedName": "default",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type) -> Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CameraCaptureSound",
+                            "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                            "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CameraCaptureSound",
+                                "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                                "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO7defaultyA2GmF",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO7defaultyA2GmF",
+                    "moduleName": "Au10tixCore"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "silent",
+                    "printedName": "silent",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type) -> Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CameraCaptureSound",
+                            "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                            "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CameraCaptureSound",
+                                "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                                "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO6silentyA2GmF",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO6silentyA2GmF",
+                    "moduleName": "Au10tixCore"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "custom",
+                    "printedName": "custom",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type) -> (Swift.String) -> Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Swift.String) -> Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CameraCaptureSound",
+                                "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                                "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Tuple",
+                                "printedName": "(soundFilePath: Swift.String)",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CameraCaptureSound",
+                                "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                                "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO6customyAGSS_tcAGmF",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO6customyAGSS_tcAGmF",
+                    "moduleName": "Au10tixCore"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO",
+                "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cameraCaptureSound",
+                "printedName": "cameraCaptureSound",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureSound",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovp",
+                "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureSound",
+                        "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                        "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovg",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovg",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureSound",
+                        "printedName": "Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound",
+                        "usr": "s:11Au10tixCore0A0C14CameraSettingsV0C12CaptureSoundO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovs",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0Ovs",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0OvM",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV18cameraCaptureSoundAE0cfG0OvM",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cameraFlashMode",
+                "printedName": "cameraFlashMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FlashMode",
+                    "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                    "usr": "c:@E@AVCaptureFlashMode"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvp",
+                "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlashMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                        "usr": "c:@E@AVCaptureFlashMode"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvg",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvg",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FlashMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.FlashMode",
+                        "usr": "c:@E@AVCaptureFlashMode"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvs",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0Vvs",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0VvM",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraFlashModeSo09AVCapturefG0VvM",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cameraTorchMode",
+                "printedName": "cameraTorchMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TorchMode",
+                    "printedName": "AVFoundation.AVCaptureDevice.TorchMode",
+                    "usr": "c:@E@AVCaptureTorchMode"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvp",
+                "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TorchMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.TorchMode",
+                        "usr": "c:@E@AVCaptureTorchMode"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvg",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvg",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TorchMode",
+                        "printedName": "AVFoundation.AVCaptureDevice.TorchMode",
+                        "usr": "c:@E@AVCaptureTorchMode"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvs",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0Vvs",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0VvM",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV15cameraTorchModeSo09AVCapturefG0VvM",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11Au10tixCore0A0C14CameraSettingsV",
+            "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV",
             "moduleName": "Au10tixCore",
             "declAttributes": [
               "AccessControl"
@@ -23555,6 +27143,768 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BeginProcessingPersonalDataForDataVerification",
+        "printedName": "BeginProcessingPersonalDataForDataVerification",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingAddressWrapper",
+                "printedName": "Au10tixCore.BeginProcessingAddressWrapper",
+                "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV7addressAA0cD14AddressWrapperVvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV7addressAA0cD14AddressWrapperVvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingAddressWrapper",
+                    "printedName": "Au10tixCore.BeginProcessingAddressWrapper",
+                    "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV7addressAA0cD14AddressWrapperVvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV7addressAA0cD14AddressWrapperVvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firstName",
+            "printedName": "firstName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingFirstName",
+                "printedName": "Au10tixCore.BeginProcessingFirstName",
+                "usr": "s:11Au10tixCore24BeginProcessingFirstNameV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV9firstNameAA0cd5FirstJ0Vvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV9firstNameAA0cd5FirstJ0Vvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingFirstName",
+                    "printedName": "Au10tixCore.BeginProcessingFirstName",
+                    "usr": "s:11Au10tixCore24BeginProcessingFirstNameV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV9firstNameAA0cd5FirstJ0Vvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV9firstNameAA0cd5FirstJ0Vvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastName",
+            "printedName": "lastName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingLastName",
+                "printedName": "Au10tixCore.BeginProcessingLastName",
+                "usr": "s:11Au10tixCore23BeginProcessingLastNameV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV8lastNameAA0cd4LastJ0Vvp",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV8lastNameAA0cd4LastJ0Vvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingLastName",
+                    "printedName": "Au10tixCore.BeginProcessingLastName",
+                    "usr": "s:11Au10tixCore23BeginProcessingLastNameV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV8lastNameAA0cd4LastJ0Vvg",
+                "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV8lastNameAA0cd4LastJ0Vvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingPersonalDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingPersonalDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationVyACSS_S2Stcfc",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationVyACSS_S2Stcfc",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingPersonalDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingPersonalDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV",
+        "mangledName": "$s11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeginProcessingAddressWrapper",
+        "printedName": "BeginProcessingAddressWrapper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingAddress",
+                "printedName": "Au10tixCore.BeginProcessingAddress",
+                "usr": "s:11Au10tixCore22BeginProcessingAddressV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV7addressAA0cdE0Vvp",
+            "mangledName": "$s11Au10tixCore29BeginProcessingAddressWrapperV7addressAA0cdE0Vvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingAddress",
+                    "printedName": "Au10tixCore.BeginProcessingAddress",
+                    "usr": "s:11Au10tixCore22BeginProcessingAddressV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV7addressAA0cdE0Vvg",
+                "mangledName": "$s11Au10tixCore29BeginProcessingAddressWrapperV7addressAA0cdE0Vvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingAddressWrapper",
+                "printedName": "Au10tixCore.BeginProcessingAddressWrapper",
+                "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore29BeginProcessingAddressWrapperV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore29BeginProcessingAddressWrapperV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore29BeginProcessingAddressWrapperV",
+        "mangledName": "$s11Au10tixCore29BeginProcessingAddressWrapperV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeginProcessingAddress",
+        "printedName": "BeginProcessingAddress",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore22BeginProcessingAddressV5valueSSvp",
+            "mangledName": "$s11Au10tixCore22BeginProcessingAddressV5valueSSvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore22BeginProcessingAddressV5valueSSvg",
+                "mangledName": "$s11Au10tixCore22BeginProcessingAddressV5valueSSvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingAddress",
+                "printedName": "Au10tixCore.BeginProcessingAddress",
+                "usr": "s:11Au10tixCore22BeginProcessingAddressV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore22BeginProcessingAddressV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore22BeginProcessingAddressV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore22BeginProcessingAddressV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore22BeginProcessingAddressV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore22BeginProcessingAddressV",
+        "mangledName": "$s11Au10tixCore22BeginProcessingAddressV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeginProcessingFirstName",
+        "printedName": "BeginProcessingFirstName",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore24BeginProcessingFirstNameV5valueSSvp",
+            "mangledName": "$s11Au10tixCore24BeginProcessingFirstNameV5valueSSvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore24BeginProcessingFirstNameV5valueSSvg",
+                "mangledName": "$s11Au10tixCore24BeginProcessingFirstNameV5valueSSvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingFirstName",
+                "printedName": "Au10tixCore.BeginProcessingFirstName",
+                "usr": "s:11Au10tixCore24BeginProcessingFirstNameV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore24BeginProcessingFirstNameV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore24BeginProcessingFirstNameV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore24BeginProcessingFirstNameV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore24BeginProcessingFirstNameV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore24BeginProcessingFirstNameV",
+        "mangledName": "$s11Au10tixCore24BeginProcessingFirstNameV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeginProcessingLastName",
+        "printedName": "BeginProcessingLastName",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Au10tixCore23BeginProcessingLastNameV5valueSSvp",
+            "mangledName": "$s11Au10tixCore23BeginProcessingLastNameV5valueSSvp",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Au10tixCore23BeginProcessingLastNameV5valueSSvg",
+                "mangledName": "$s11Au10tixCore23BeginProcessingLastNameV5valueSSvg",
+                "moduleName": "Au10tixCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingLastName",
+                "printedName": "Au10tixCore.BeginProcessingLastName",
+                "usr": "s:11Au10tixCore23BeginProcessingLastNameV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Au10tixCore23BeginProcessingLastNameV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11Au10tixCore23BeginProcessingLastNameV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore23BeginProcessingLastNameV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11Au10tixCore23BeginProcessingLastNameV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Au10tixCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Au10tixCore23BeginProcessingLastNameV",
+        "mangledName": "$s11Au10tixCore23BeginProcessingLastNameV",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BIDataManager",
         "printedName": "BIDataManager",
         "children": [
@@ -26888,6 +31238,28 @@
             "static": true,
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIteration",
+            "printedName": "getIteration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore0A3SDKPAAE12getIterationSSyFZ",
+            "mangledName": "$s11Au10tixCore0A3SDKPAAE12getIterationSSyFZ",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.Au10tixSDK>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.Au10tixSDK>",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -29540,6 +33912,83 @@
           },
           {
             "kind": "Function",
+            "name": "startVideoRecording",
+            "printedName": "startVideoRecording(videoUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionP19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "mangledName": "$s11Au10tixCore13CameraSessionP19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoRecording",
+            "printedName": "stopVideoRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionP18stopVideoRecordingyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionP18stopVideoRecordingyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureImage",
+            "printedName": "captureImage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10ImageSource",
+                "printedName": "Au10tixCore.Au10ImageSource",
+                "usr": "c:@M@Au10tixCore@E@Au10ImageSource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionPAAE12captureImageyyAA04Au10F6SourceOF",
+            "mangledName": "$s11Au10tixCore13CameraSessionPAAE12captureImageyyAA04Au10F6SourceOF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "prefersAspectFillCameraPreview",
             "printedName": "prefersAspectFillCameraPreview()",
             "children": [
@@ -29552,6 +34001,58 @@
             "declKind": "Func",
             "usr": "s:11Au10tixCore13CameraSessionPAAE017prefersAspectFillC7PreviewyyF",
             "mangledName": "$s11Au10tixCore13CameraSessionPAAE017prefersAspectFillC7PreviewyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideoRecording",
+            "printedName": "startVideoRecording(videoUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionPAAE19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "mangledName": "$s11Au10tixCore13CameraSessionPAAE19startVideoRecording8videoUrly10Foundation3URLV_tF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopVideoRecording",
+            "printedName": "stopVideoRecording()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionPAAE18stopVideoRecordingyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionPAAE18stopVideoRecordingyyF",
             "moduleName": "Au10tixCore",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
             "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
@@ -31848,6 +36349,62 @@
           },
           {
             "kind": "Function",
+            "name": "withPData",
+            "printedName": "withPData(pData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RequestDataBuilder",
+                "printedName": "Au10tixCore.RequestDataBuilder",
+                "usr": "s:11Au10tixCore18RequestDataBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingPersonalDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingPersonalDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore18RequestDataBuilderC9withPData01pD0AcA023BeginProcessingPersonald3ForD12VerificationV_tF",
+            "mangledName": "$s11Au10tixCore18RequestDataBuilderC9withPData01pD0AcA023BeginProcessingPersonald3ForD12VerificationV_tF",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withIdData",
+            "printedName": "withIdData(idData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RequestDataBuilder",
+                "printedName": "Au10tixCore.RequestDataBuilder",
+                "usr": "s:11Au10tixCore18RequestDataBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingIdentityDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore18RequestDataBuilderC06withIdD002idD0AcA023BeginProcessingIdentityd3ForD12VerificationV_tF",
+            "mangledName": "$s11Au10tixCore18RequestDataBuilderC06withIdD002idD0AcA023BeginProcessingIdentityd3ForD12VerificationV_tF",
+            "moduleName": "Au10tixCore",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "useTag",
             "printedName": "useTag()",
             "children": [
@@ -33052,7 +37609,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Begin Processing Request\/Models\/IdentityDocumentProcessingRequest.swift",
       "kind": "StringLiteral",
-      "offset": 655,
+      "offset": 387,
       "length": 18,
       "value": "\"Au10tixMobileSdk\""
     },
@@ -33766,6 +38323,20 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
+      "offset": 3621,
+      "length": 10,
+      "value": "\"UploadVC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3664,
+      "length": 18,
+      "value": "\"UploadVCResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
       "offset": 1213,
       "length": 12,
       "value": "\"PageLoaded\""
@@ -34135,6 +38706,20 @@
       "value": "\"ClickIDCard\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3621,
+      "length": 10,
+      "value": "\"UploadVC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3664,
+      "length": 18,
+      "value": "\"UploadVCResponse\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Network Manager\/MultipartDataBuilder.swift",
       "kind": "BooleanLiteral",
       "offset": 279,
@@ -34445,44 +39030,72 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 207,
+      "offset": 236,
       "length": 21,
       "value": "\"ocs\/scope:mobilesdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 256,
+      "offset": 285,
       "length": 11,
       "value": "\"mobilesdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 393,
+      "length": 5,
+      "value": "\"fec\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
       "length": 17,
       "value": "\"paymentCardData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 207,
+      "offset": 460,
+      "length": 20,
+      "value": "\"ocs\/scope:secureme\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
       "length": 21,
       "value": "\"ocs\/scope:mobilesdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 256,
+      "offset": 285,
       "length": 11,
       "value": "\"mobilesdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 393,
+      "length": 5,
+      "value": "\"fec\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
       "length": 17,
       "value": "\"paymentCardData\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Types\/Scope.swift",
+      "kind": "StringLiteral",
+      "offset": 460,
+      "length": 20,
+      "value": "\"ocs\/scope:secureme\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Network Manager\/Au10NetworkRequest.swift",
@@ -36265,21 +40878,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
       "kind": "BooleanLiteral",
-      "offset": 1360,
+      "offset": 1660,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
       "kind": "BooleanLiteral",
-      "offset": 2623,
+      "offset": 3078,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
       "kind": "BooleanLiteral",
-      "offset": 6653,
+      "offset": 6906,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/API\/Au10tix.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7736,
       "length": 5,
       "value": "false"
     },
