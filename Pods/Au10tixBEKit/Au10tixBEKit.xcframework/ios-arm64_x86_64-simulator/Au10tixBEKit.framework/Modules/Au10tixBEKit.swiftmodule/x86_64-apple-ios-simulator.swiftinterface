@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBEKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import Au10tixBEKit
@@ -28,6 +28,8 @@ public enum Au10tixBackendProcessingFlow {
   public func providePfl(image: Au10tixCore.Au10Image)
   public func providePoa(image: Au10tixCore.Au10Image)
   public func provideAfl(dictionary: [Swift.String : Swift.String])
+  public func providePersonalDetails(firstName: Swift.String, lastName: Swift.String, address: Swift.String)
+  public func provideIdData(idData: Au10tixCore.BeginProcessingIdentityDataForDataVerification)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class F2FFactory : Au10tixBEKit.BOSInteractorFactory {
@@ -59,6 +61,8 @@ public enum Au10tixBEKitError : Swift.Error {
   case nfcDG2
   case nfcDG7
   case pc
+  case vc
+  case idData
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [Au10tixBEKit.DataType]
   public typealias RawValue = Swift.Int
@@ -83,7 +87,7 @@ public typealias Au10tixBEKitCallback = (Swift.Result<Swift.String, Au10tixBEKit
   public func send(factory: Au10tixBEKit.BOSInteractorFactory, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func uploadMediaOf(type: Au10tixBEKit.DataType, flow: Au10tixBEKit.Au10tixBackendProcessingFlow? = nil, completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
   public func uploadAllMedias(flow: Au10tixBEKit.Au10tixBackendProcessingFlow? = nil, completion: ((Au10tixBEKit.Au10tixBEKitError?) -> Swift.Void)? = nil)
-  public func sendIDVerificationFlow(dataTypes: [Au10tixBEKit.DataType] = [.idDocFront], info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
+  public func sendIDVerificationFlow(dataTypes: [Au10tixBEKit.DataType]? = nil, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, personalData: Au10tixCore.BeginProcessingPersonalDataForDataVerification? = nil, identityData: Au10tixCore.BeginProcessingIdentityDataForDataVerification? = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendFaceToFace(photoForComparison: Foundation.Data, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendProofOfAddress(firstName: Swift.String, lastName: Swift.String, address: Swift.String, info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)
   public func sendPassportNfc(info: Au10tixCore.RequestDataBuilder.BosTagInfo = nil, beKitCallback: @escaping Au10tixBEKit.Au10tixBEKitCallback)

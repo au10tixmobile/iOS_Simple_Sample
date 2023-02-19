@@ -4423,14 +4423,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 469,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4885,
+      "offset": 4861,
       "length": 4,
       "value": "true"
     },

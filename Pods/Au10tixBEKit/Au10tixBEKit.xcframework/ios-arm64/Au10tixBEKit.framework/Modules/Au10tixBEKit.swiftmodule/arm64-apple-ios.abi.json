@@ -558,6 +558,72 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "providePersonalDetails",
+            "printedName": "providePersonalDetails(firstName:lastName:address:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC22providePersonalDetails9firstName04lastH07addressySS_S2StF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC22providePersonalDetails9firstName04lastH07addressySS_S2StF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provideIdData",
+            "printedName": "provideIdData(idData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeginProcessingIdentityDataForDataVerification",
+                "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification",
+                "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12Au10tixBEKit10IDVFactoryC13provideIdData02idF0y0A4Core023BeginProcessingIdentityf3ForF12VerificationV_tF",
+            "mangledName": "$s12Au10tixBEKit10IDVFactoryC13provideIdData02idF0y0A4Core023BeginProcessingIdentityf3ForF12VerificationV_tF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1855,6 +1921,90 @@
             "fixedbinaryorder": 13
           },
           {
+            "kind": "Var",
+            "name": "vc",
+            "printedName": "vc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeVc",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO2vcyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "idData",
+            "printedName": "idData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeIdData",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO02idC0yA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -2557,7 +2707,7 @@
           {
             "kind": "Function",
             "name": "sendIDVerificationFlow",
-            "printedName": "sendIDVerificationFlow(dataTypes:info:beKitCallback:)",
+            "printedName": "sendIDVerificationFlow(dataTypes:info:personalData:identityData:beKitCallback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2566,18 +2716,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Au10tixBEKit.DataType]",
+                "name": "Optional",
+                "printedName": "[Au10tixBEKit.DataType]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DataType",
-                    "printedName": "Au10tixBEKit.DataType",
-                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                    "name": "Array",
+                    "printedName": "[Au10tixBEKit.DataType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "hasDefaultArg": true,
-                "usr": "s:Sa"
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2589,6 +2747,36 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.BeginProcessingPersonalDataForDataVerification?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingPersonalDataForDataVerification",
+                    "printedName": "Au10tixCore.BeginProcessingPersonalDataForDataVerification",
+                    "usr": "s:11Au10tixCore030BeginProcessingPersonalDataForF12VerificationV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeginProcessingIdentityDataForDataVerification",
+                    "printedName": "Au10tixCore.BeginProcessingIdentityDataForDataVerification",
+                    "usr": "s:11Au10tixCore030BeginProcessingIdentityDataForF12VerificationV"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -2628,8 +2816,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info02beD8CallbackySayAA8DataTypeOG_SSSgys6ResultOySSAA0aB5ErrorOGctF",
-            "mangledName": "$s12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info02beD8CallbackySayAA8DataTypeOG_SSSgys6ResultOySSAA0aB5ErrorOGctF",
+            "usr": "s:12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info12personalData08identityL002beD8CallbackySayAA0L4TypeOGSg_SSSg0A4Core023BeginProcessingPersonall3ForL12VerificationVSgAO0rs8IdentitylulV0VSgys6ResultOySSAA0aB5ErrorOGctF",
+            "mangledName": "$s12Au10tixBEKit0A10BackendKitC22sendIDVerificationFlow9dataTypes4info12personalData08identityL002beD8CallbackySayAA0L4TypeOGSg_SSSg0A4Core023BeginProcessingPersonall3ForL12VerificationVSgAO0rs8IdentitylulV0VSgys6ResultOySSAA0aB5ErrorOGctF",
             "moduleName": "Au10tixBEKit",
             "declAttributes": [
               "AccessControl",
@@ -3307,6 +3495,13 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixBEKit"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3678,6 +3873,20 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
       "kind": "IntegerLiteral",
+      "offset": 1363,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1420,
+      "length": 6,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
       "offset": 409,
       "length": 10,
       "value": "1"
@@ -3765,6 +3974,20 @@
       "offset": 1323,
       "length": 2,
       "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1363,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1420,
+      "length": 6,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
@@ -3867,6 +4090,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "StringLiteral",
+      "offset": 619,
+      "length": 4,
+      "value": "\"VC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
       "offset": 369,
       "length": 9,
       "value": "\"IDVFlow\""
@@ -3929,8 +4159,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 4,
+      "value": "\"VC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6501,
+      "offset": 7042,
       "length": 4,
       "value": "true"
     },
@@ -3958,14 +4195,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/Begin Processing\/BeginProcessingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4579,
+      "offset": 5018,
       "length": 10,
       "value": "\"Platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Media Service\/Begin Processing\/BeginProcessingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4579,
+      "offset": 5018,
       "length": 10,
       "value": "\"Platform\""
     },

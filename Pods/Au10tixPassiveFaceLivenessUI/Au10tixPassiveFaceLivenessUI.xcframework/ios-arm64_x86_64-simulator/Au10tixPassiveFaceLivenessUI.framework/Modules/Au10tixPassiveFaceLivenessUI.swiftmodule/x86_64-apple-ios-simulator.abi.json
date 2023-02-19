@@ -1507,8 +1507,8 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Base\/PFLBaseUIViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 629,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Face Detector\/View Model\/PFLFaceDetectorViewModel.swift",
@@ -1527,7 +1527,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/Face Detector\/PFLFaceDetectorViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4564,
+      "offset": 4636,
       "length": 4,
       "value": "true"
     },
@@ -1549,27 +1549,27 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 576,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 619,
+      "offset": 618,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2427,
+      "offset": 2481,
       "length": 17,
       "value": "\"Au10tixPassiveFaceLivenessUI.PFLFlowController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Source\/PFLViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2427,
+      "offset": 2481,
       "length": 17,
       "value": "\"Au10tixPassiveFaceLivenessUI.PFLFlowController\""
     },
@@ -1584,20 +1584,20 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 900,
-      "length": 5,
-      "value": "false"
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2110,
+      "offset": 2218,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2147,
+      "offset": 2255,
       "length": 4,
       "value": "true"
     }
