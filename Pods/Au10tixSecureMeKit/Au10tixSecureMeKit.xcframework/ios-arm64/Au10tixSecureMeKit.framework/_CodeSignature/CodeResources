@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		qVuTM0Z4/qKrznhPGRPAO64J9xc=
+		</data>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<data>
-		yxtPnP/eL7iSeW+sRKAdYmcWDeI=
+		NnImZ6TCMYt35LCvFRdOA74Jcaw=
 		</data>
 		<key>Headers/Au10tixSecureMeKit.h</key>
 		<data>
@@ -14,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		G4GwGW9E2LbAddfsbwVL+HIWpfY=
+		d2rlHfhhboMuYKiLxQ5Yyt5oC+Q=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Uy1QkC8iNphmTTt1qIXhvN1Lnpg=
+		syHHrddrsx2SU7UmEnF7qlpcwos=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		vdHKBh37rnhasBlnIdIBxgBNqJI=
+		+dxZHnah1QcV1YhliDqt6wS9/lM=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		V6WX+SZd2mT/75kTrYDJNiQv78k=
+		g9Havjc+VKsFYV6St9kyqUEXqEk=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vdHKBh37rnhasBlnIdIBxgBNqJI=
+		+dxZHnah1QcV1YhliDqt6wS9/lM=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6yBqlMgeFjrg33l53VnkWiuzEBI=
+		LGyJg5r3lCqg2fGMgf3ie/FIwjc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -44,19 +48,46 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+0WP2BvpOeQR4eqH1yUEKpanyXo=
+			DXJ7o3qqqaEtYQNUpKElnOfuOsM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>main.css</key>
+		<data>
+		Iey+Ig102y0truMvlHPx5/TKiwo=
+		</data>
+		<key>main.js</key>
+		<data>
+		+Ss4byePW+Y7oIOhY/AwNMQPuVM=
+		</data>
+		<key>main.js.LICENSE.txt</key>
+		<data>
+		Bvu6mDypbIwgw2fd426UMgHaTCw=
+		</data>
+		<key>non_styled.html</key>
+		<data>
+		8OyRhf9nFHD3Lg9pVxaF8Dg5Vhs=
+		</data>
+		<key>styled.html</key>
+		<data>
+		mxXjhWgEii4LnsVe/kbPSIrhx3s=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rtSALTE1qXgfI4RfZcRiPRJSNHBqUy9CV+efdoq1xLM=
+			</data>
+		</dict>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JyHoyQJiKYbMQU2ZTmEE2eZRShYwjWXpn2UQTew/0zY=
+			urTB/Fkdh+14WgFPFm5Ur0SCmHo9gI/0S9T1IeRT2+g=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSecureMeKit.h</key>
@@ -70,35 +101,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApwWT0A2vaJ/cmg2Akw0+1XKd7GXqLel1246M1DSVpg=
+			kapvSONiXyCcMnYb5DXRKPEZtSyZoRNUvOy1kfMa3Xs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W7qvFL1JpuAXWkpo24loWNGVxxypMJ91YZKZ92kC7nk=
+			bXQVf1DtOGKmJwvWqOw/3uuJ6ptaR9ZNN6P10zbXlOk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ym82BN65PMDtMq4tvYwyb0Oq+lWLQHAXoR2l9rWE9P8=
+			9kfpOzovw1lEQhtOOO+dq4aWYF5BTnTJfQZw01hGU7w=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W7qvFL1JpuAXWkpo24loWNGVxxypMJ91YZKZ92kC7nk=
+			bXQVf1DtOGKmJwvWqOw/3uuJ6ptaR9ZNN6P10zbXlOk=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			55QgXESzJWkN0pmxskaq6jG1L+sFjLse4+G75VuZtio=
+			8gUUORlnqwg6/8Pubd8c4R9dxmJqbk/yoHmt2DkNraI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -112,10 +143,45 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yqdToQEniQtwryxKcHshtDBj1Z8ev0VMHGyZ4Qp6Bhw=
+			mN6H/xjcAz/59azzGlnuBmN1zE63uf+Ou5pP6+l576M=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>main.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MnprXLTc07lK1vQzpsz43wZrTlHZp5Wyvl7vth97QFg=
+			</data>
+		</dict>
+		<key>main.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n09rrEhE1aoc7d/H/3lsqBBVJbf7ZiQHB7owQwdxaVM=
+			</data>
+		</dict>
+		<key>main.js.LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TMtlEsYKT5YN9saWpeQ8Ek1wsogVVkvn3kQWEU+6Dzg=
+			</data>
+		</dict>
+		<key>non_styled.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HoW6uPQBG1XEfg6g2Yd1eJBYzxHVXUXZUtV/WsmSzHM=
+			</data>
+		</dict>
+		<key>styled.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u3wOQSDIiFRMXGDDEzasYgenAo7FGN4JgBZCGmpFa78=
+			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

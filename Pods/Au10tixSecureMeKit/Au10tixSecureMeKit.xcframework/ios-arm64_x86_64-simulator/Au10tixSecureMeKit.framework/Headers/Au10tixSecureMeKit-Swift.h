@@ -230,7 +230,11 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -252,6 +256,41 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
+@class NSURLRequest;
+@class NSCoder;
+
+/// Markdown View for iOS.
+/// note:
+/// <a href="https://stackoverflow.com/questions/1145850/how-to-get-height-of-entire-document-with-javascript">How to get height of entire document with javascript</a>
+SWIFT_CLASS("_TtC18Au10tixSecureMeKit12MarkdownView")
+@interface MarkdownView : UIView
+@property (nonatomic) BOOL isScrollEnabled;
+@property (nonatomic, copy) BOOL (^ _Nullable onTouchLink)(NSURLRequest * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onRendered)(CGFloat);
+- (nonnull instancetype)init;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKWebView;
+@class WKNavigationAction;
+
+@interface MarkdownView (SWIFT_EXTENSION(Au10tixSecureMeKit)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+@end
+
+
+@class NSString;
+@class NSURL;
+
+@interface MarkdownView (SWIFT_EXTENSION(Au10tixSecureMeKit))
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+/// Load markdown with a newly configured webView.
+/// If you want to preserve already applied css or plugins, use <code>show</code> instead.
+- (void)loadWithMarkdown:(NSString * _Nullable)markdown enableImage:(BOOL)enableImage css:(NSString * _Nullable)css plugins:(NSArray<NSString *> * _Nullable)plugins stylesheets:(NSArray<NSURL *> * _Nullable)stylesheets styled:(BOOL)styled;
+@end
+
+
 
 /// A class for managing SecureMeKit operation
 SWIFT_CLASS("_TtC18Au10tixSecureMeKit11SecureMeKit")
@@ -259,6 +298,7 @@ SWIFT_CLASS("_TtC18Au10tixSecureMeKit11SecureMeKit")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -502,7 +542,11 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -524,6 +568,41 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
+@class NSURLRequest;
+@class NSCoder;
+
+/// Markdown View for iOS.
+/// note:
+/// <a href="https://stackoverflow.com/questions/1145850/how-to-get-height-of-entire-document-with-javascript">How to get height of entire document with javascript</a>
+SWIFT_CLASS("_TtC18Au10tixSecureMeKit12MarkdownView")
+@interface MarkdownView : UIView
+@property (nonatomic) BOOL isScrollEnabled;
+@property (nonatomic, copy) BOOL (^ _Nullable onTouchLink)(NSURLRequest * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onRendered)(CGFloat);
+- (nonnull instancetype)init;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class WKWebView;
+@class WKNavigationAction;
+
+@interface MarkdownView (SWIFT_EXTENSION(Au10tixSecureMeKit)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+@end
+
+
+@class NSString;
+@class NSURL;
+
+@interface MarkdownView (SWIFT_EXTENSION(Au10tixSecureMeKit))
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+/// Load markdown with a newly configured webView.
+/// If you want to preserve already applied css or plugins, use <code>show</code> instead.
+- (void)loadWithMarkdown:(NSString * _Nullable)markdown enableImage:(BOOL)enableImage css:(NSString * _Nullable)css plugins:(NSArray<NSString *> * _Nullable)plugins stylesheets:(NSArray<NSURL *> * _Nullable)stylesheets styled:(BOOL)styled;
+@end
+
+
 
 /// A class for managing SecureMeKit operation
 SWIFT_CLASS("_TtC18Au10tixSecureMeKit11SecureMeKit")
@@ -531,6 +610,7 @@ SWIFT_CLASS("_TtC18Au10tixSecureMeKit11SecureMeKit")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

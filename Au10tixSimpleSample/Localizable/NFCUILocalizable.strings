@@ -32,7 +32,8 @@
 //MARK: - NFCScanViewController
 
 "NFCScanViewController.Passport.Title" = "Position Your Passport";
-"NFCScanViewController.IDCard.Title" = "Position The Back of Your ID";
+"NFCScanViewController.IDCard.Title.Front" = "Position The Front of Your ID";
+"NFCScanViewController.IDCard.Title.Back" = "Position The Back of Your ID";
 "NFCScanViewController.Alert.Timeout.Title" = "Session Timeout";
 "NFCScanViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
 
@@ -69,6 +70,12 @@
 
 "NFCIssueViewController.Title" = "Chip Reading";
 "NFCIssueViewController.Description" = "NFC option is unavailabe in your device";
+
+//MARK: - NFCMRZIssueViewController
+
+"NFCMRZIssueViewController.Title" = "MRZ Scanning";
+"NFCMRZIssueViewController.Description" = "MRZ is not detected. Please try again";
+"NFCMRZIssueViewController.Retry" = "Try Again";
 
 //MARK: - CameraIssueViewController
 
