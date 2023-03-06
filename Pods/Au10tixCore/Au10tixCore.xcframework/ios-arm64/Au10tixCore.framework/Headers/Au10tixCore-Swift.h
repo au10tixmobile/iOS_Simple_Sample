@@ -306,7 +306,6 @@ SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 /// The entry point to Au10tix Services.
 /// Make sure to call <code>prepare(for:withDelegate:completionHandler:)</code> method to configure this object
@@ -317,11 +316,6 @@ SWIFT_CLASS("_TtC11Au10tixCore7Au10tix")
 /// the SDK shared instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Au10tix * _Nonnull shared;)
 + (Au10tix * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// Use this method to reset the session-id, Operation is depend on existance of a sessionId
-/// \param completion call when the reset finishes, returns the session id on success null when configuatino is not supporting the reset.
-///
-- (void)resetSessionIdWithLocaly:(BOOL)localy with:(void (^ _Nonnull)(NSString * _Nullable))completion;
-- (void)setConfigurationWithLocaly:(BOOL)localy with:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
 
@@ -337,6 +331,7 @@ SWIFT_CLASS_NAMED("JSONRequestGenerator")
 @end
 
 
+@class NSString;
 @class NSDate;
 
 /// Decodes a JWT

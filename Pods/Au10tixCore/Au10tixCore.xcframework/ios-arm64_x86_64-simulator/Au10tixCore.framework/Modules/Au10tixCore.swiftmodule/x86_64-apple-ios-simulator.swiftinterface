@@ -194,6 +194,9 @@ extension Au10tixCore.Au10tix {
     public var dict: [Swift.String : Any] {
       get
     }
+    public var secureMeDict: [Swift.String : Any]? {
+      get
+    }
     public var manualCaptureDisableDuration: Foundation.TimeInterval? {
       get
     }
@@ -232,6 +235,7 @@ public class Log : Swift.Encodable {
     case docReplayFailed
     case docReplayFailedPaper
     case docReplayFailedScreen
+    case fecFailed
     case cameraTimeout
     case sessionRefresh
     case retake
@@ -322,6 +326,9 @@ public struct MultipartDataBuilder {
   case cameraVideoFrame
   case cameraCapture
   case external
+  public var isReadyToProceed: Swift.Bool {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -726,8 +733,7 @@ extension UIKit.UIDevice {
   @objc public static let shared: Au10tixCore.Au10tix
   final public func prepare(with jwt: Swift.String, keepSessionID: Swift.Bool = false, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   final public func prepare(with jwt: Swift.String, completion: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
-  @objc final public func resetSessionId(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
-  @objc final public func setConfiguration(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
+  final public func resetSessionId(localy: Swift.Bool = false, with completion: @escaping (Swift.String?) -> Swift.Void)
   @objc deinit
 }
 extension Au10tixCore.Au10tix {

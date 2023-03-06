@@ -1055,6 +1055,43 @@
               },
               {
                 "kind": "Var",
+                "name": "fec",
+                "printedName": "fec",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSmartDocumentCaptureKit.SDCLogManager.Category.Type) -> Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                        "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "Au10tixSmartDocumentCaptureKit.SDCLogManager.Category",
+                            "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO3fecyA2EmF",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit13SDCLogManagerV8CategoryO3fecyA2EmF",
+                "moduleName": "Au10tixSmartDocumentCaptureKit"
+              },
+              {
+                "kind": "Var",
                 "name": "rawValue",
                 "printedName": "rawValue",
                 "children": [
@@ -2588,6 +2625,16 @@
         "printedName": "Au10tixCore",
         "declKind": "Import",
         "moduleName": "Au10tixSmartDocumentCaptureKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5170,6 +5217,180 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "FECFeedback",
+            "printedName": "FECFeedback",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "countryCode",
+                "printedName": "countryCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV11countryCodeSSSgvp",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV11countryCodeSSSgvp",
+                "moduleName": "Au10tixSmartDocumentCaptureKit",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV11countryCodeSSSgvg",
+                    "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV11countryCodeSSSgvg",
+                    "moduleName": "Au10tixSmartDocumentCaptureKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "documentType",
+                "printedName": "documentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV12documentTypeSSSgvp",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV12documentTypeSSSgvp",
+                "moduleName": "Au10tixSmartDocumentCaptureKit",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV12documentTypeSSSgvg",
+                    "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV12documentTypeSSSgvg",
+                    "moduleName": "Au10tixSmartDocumentCaptureKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isValid",
+                "printedName": "isValid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV7isValidSbvp",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV7isValidSbvp",
+                "moduleName": "Au10tixSmartDocumentCaptureKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV7isValidSbvg",
+                    "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV7isValidSbvg",
+                    "moduleName": "Au10tixSmartDocumentCaptureKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
             "kind": "Var",
             "name": "warnings",
             "printedName": "warnings",
@@ -5276,6 +5497,62 @@
                 "declKind": "Accessor",
                 "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11sdcFeedbackAC0I0OSgvg",
                 "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11sdcFeedbackAC0I0OSgvg",
+                "moduleName": "Au10tixSmartDocumentCaptureKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fecFeedback",
+            "printedName": "fecFeedback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FECFeedback",
+                    "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback",
+                    "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11fecFeedbackAC11FECFeedbackVSgvp",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11fecFeedbackAC11FECFeedbackVSgvp",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FECFeedback",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback",
+                        "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11FECFeedbackV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11fecFeedbackAC11FECFeedbackVSgvg",
+                "mangledName": "$s30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC11fecFeedbackAC11FECFeedbackVSgvg",
                 "moduleName": "Au10tixSmartDocumentCaptureKit",
                 "accessorKind": "get"
               }
@@ -6364,14 +6641,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Helpers\/SDCLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3813,
+      "offset": 4209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Configurations\/SmartDocumentCaptureConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 1126,
+      "offset": 1415,
       "length": 3,
       "value": "[]"
     },
@@ -6446,6 +6723,104 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 18,
+      "value": "\"ProcessingResult\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 18,
+      "value": "\"ProcessingResult\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 24,
+      "value": "\"DocumentTypeDescriptor\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 663,
+      "length": 21,
+      "value": "\"SdrCompletionStatus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 24,
+      "value": "\"DocumentTypeDescriptor\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 663,
+      "length": 21,
+      "value": "\"SdrCompletionStatus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 13,
+      "value": "\"CountryIso3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 14,
+      "value": "\"DocumentType\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 13,
+      "value": "\"CountryIso3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 14,
+      "value": "\"DocumentType\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 4,
+      "value": "\"Ok\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 14,
+      "value": "\"Unclassified\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 4,
+      "value": "\"Ok\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Networking\/FECResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 14,
+      "value": "\"Unclassified\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Success Logic\/SDCLogic+Implementation.swift",
       "kind": "Array",
       "offset": 535,
@@ -6469,35 +6844,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4954,
       "length": 29,
       "value": "\"com.au10tix.sdk.sdc-session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 5843,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6000,
+      "offset": 5838,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 10568,
+      "offset": 10496,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 14490,
+      "offset": 14418,
       "length": 4,
       "value": "true"
     },
@@ -6507,6 +6875,13 @@
       "offset": 87,
       "length": 19,
       "value": "\"Au10tixSmartDocumentCaptureKit.SDCProcessingStatus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/Helpers\/SDCRequestExecutor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2836,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/Helpers\/SDCTokenLifeCycleHandler.swift",

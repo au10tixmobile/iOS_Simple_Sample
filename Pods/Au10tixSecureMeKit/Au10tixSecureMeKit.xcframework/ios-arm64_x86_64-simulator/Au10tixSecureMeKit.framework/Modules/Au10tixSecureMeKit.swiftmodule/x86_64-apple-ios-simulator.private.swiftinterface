@@ -9,6 +9,7 @@ import Au10tixCore
 import Foundation
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 public protocol SecureMeKitDelegate : AnyObject {
@@ -27,6 +28,28 @@ public enum SecureMeFlow {
   case pfl(_: Au10tixSecureMeKit.SecureMeFlowConfig)
   case vc(_: Au10tixSecureMeKit.SecureMeFlowConfig)
   case poa(_: Au10tixSecureMeKit.SecureMeFlowConfig)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class MarkdownView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var isScrollEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var onTouchLink: ((Foundation.URLRequest) -> Swift.Bool)?
+  @objc @_Concurrency.MainActor(unsafe) public var onRendered: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc convenience dynamic public init()
+  @_Concurrency.MainActor(unsafe) convenience public init(css: Swift.String?, plugins: [Swift.String]?, stylesheets: [Foundation.URL]? = nil, styled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Au10tixSecureMeKit.MarkdownView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func load(markdown: Swift.String?, enableImage: Swift.Bool = true, css: Swift.String? = nil, plugins: [Swift.String]? = nil, stylesheets: [Foundation.URL]? = nil, styled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func show(markdown: Swift.String)
+}
+extension Au10tixSecureMeKit.MarkdownView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 public enum SecureMeKitError : Swift.Error {
   case kitWasNotPrepared
@@ -77,11 +100,11 @@ public struct SecureMeKitResult {
 }
 public struct SecureMeFeaturesConfig {
   public let pflDetectionDelayEnabled: Swift.Bool
-  public let pflDelay: Foundation.TimeInterval?
+  public let pflDelay: Foundation.TimeInterval
   public let sendResults: Swift.Bool
   public let voiceConsentText: Swift.String?
-  public let voiceConsentSessionTime: Swift.Int?
-  public init(pflDetectionDelayEnabled: Swift.Bool = false, pflDelay: Foundation.TimeInterval? = nil, sendResults: Swift.Bool = true, voiceConsentText: Swift.String? = nil, voiceConsentSessionTime: Swift.Int?)
+  public let voiceConsentSessionTime: Swift.Int
+  public init(pflDetectionDelayEnabled: Swift.Bool = false, pflDelay: Foundation.TimeInterval = 0, sendResults: Swift.Bool = true, voiceConsentText: Swift.String? = nil, voiceConsentSessionTime: Swift.Int = 20)
 }
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Equatable {}
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Hashable {}

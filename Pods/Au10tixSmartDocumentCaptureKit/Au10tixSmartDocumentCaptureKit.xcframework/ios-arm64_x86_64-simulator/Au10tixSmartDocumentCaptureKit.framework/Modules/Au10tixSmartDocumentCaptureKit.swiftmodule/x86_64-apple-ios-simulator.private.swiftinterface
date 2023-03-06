@@ -41,6 +41,7 @@ public struct SDCLogManager {
     case scanner
     case docReplay
     case imageReview
+    case fec
     public var rawValue: Swift.String {
       get
     }
@@ -175,10 +176,20 @@ extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSes
       get
     }
   }
+  public struct FECFeedback {
+    public let countryCode: Swift.String?
+    public let documentType: Swift.String?
+    public var isValid: Swift.Bool {
+      get
+    }
+  }
   public var warnings: [Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning] {
     get
   }
   public var sdcFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
+    get
+  }
+  public var fecFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback? {
     get
   }
   public var poaFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {

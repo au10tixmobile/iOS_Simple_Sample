@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		qVuTM0Z4/qKrznhPGRPAO64J9xc=
+		</data>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<data>
-		kjKhWBTaMaUuGoyrfQqNatYvuAI=
+		JIdCX48jKSK1kRRUAy9m/UCYYI0=
 		</data>
 		<key>Headers/Au10tixSecureMeKit.h</key>
 		<data>
@@ -14,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wiStKaNFKXroFd/AuCim5XJZOgY=
+		7lIDwSeUdBhqh4u6iE3FGrb+qks=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Uy1QkC8iNphmTTt1qIXhvN1Lnpg=
+		syHHrddrsx2SU7UmEnF7qlpcwos=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bod+BINUC+wOW7n+6HCZUZZmhWM=
+		oeMvK3Kz5PBdTqb6jjJnLz/1fL4=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		N+DE9Sz1lC4B18EvQTk0lIAxZ4U=
+		GghLguF7ISZJuKFCCXW3rxLTjLU=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bod+BINUC+wOW7n+6HCZUZZmhWM=
+		oeMvK3Kz5PBdTqb6jjJnLz/1fL4=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CXlpM9G7MQZGAyCr7BRqYZ1B2qs=
+		86qRn/oM88gAFWfLo73YisHc/8k=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Uy1QkC8iNphmTTt1qIXhvN1Lnpg=
+		syHHrddrsx2SU7UmEnF7qlpcwos=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dyidfC3rSU3h21ENhSqNNZP0nCM=
+		PkMHK+tcX+dGMY0/3cy2wAfmFmo=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fCbxuqstrQhSWm3h+dEn7xi5TQ0=
+		fxtsE7NBG13a+C15CJ9qSPXWOdg=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dyidfC3rSU3h21ENhSqNNZP0nCM=
+		PkMHK+tcX+dGMY0/3cy2wAfmFmo=
 		</data>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ov1TvgBixwKJtn7RQuZ46HbgX8Q=
+		0jIxunPhEa8EWpHIQw+G58WzIqA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -64,19 +68,46 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+0WP2BvpOeQR4eqH1yUEKpanyXo=
+			DXJ7o3qqqaEtYQNUpKElnOfuOsM=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>main.css</key>
+		<data>
+		Iey+Ig102y0truMvlHPx5/TKiwo=
+		</data>
+		<key>main.js</key>
+		<data>
+		+Ss4byePW+Y7oIOhY/AwNMQPuVM=
+		</data>
+		<key>main.js.LICENSE.txt</key>
+		<data>
+		Bvu6mDypbIwgw2fd426UMgHaTCw=
+		</data>
+		<key>non_styled.html</key>
+		<data>
+		8OyRhf9nFHD3Lg9pVxaF8Dg5Vhs=
+		</data>
+		<key>styled.html</key>
+		<data>
+		mxXjhWgEii4LnsVe/kbPSIrhx3s=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rtSALTE1qXgfI4RfZcRiPRJSNHBqUy9CV+efdoq1xLM=
+			</data>
+		</dict>
 		<key>Headers/Au10tixSecureMeKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApNh49CSabDEuQtgaKIUL4vueEWPtK7YZeNFzhQdokU=
+			+tFnMBp9sOeqdmgmTkh/vPnScAfNWKyCzpcDK2X11ys=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSecureMeKit.h</key>
@@ -90,70 +121,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApwWT0A2vaJ/cmg2Akw0+1XKd7GXqLel1246M1DSVpg=
+			kapvSONiXyCcMnYb5DXRKPEZtSyZoRNUvOy1kfMa3Xs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAC9baGqwyMRZ7Qml/NdRELjOPY+KaTc+S81cuhTMeQ=
+			bNHf63wgfXwkYLvlDNoc7kY+nsgsQ2mcsfM/Nb0S10I=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nCdK2t23AXcJV74F/4aHav3jPdaqnd3rq4OEPNyCMrE=
+			ta0OgZcm68+Ay0mbvR9u20INVvtgSAwEFQt1WN5ClDw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAC9baGqwyMRZ7Qml/NdRELjOPY+KaTc+S81cuhTMeQ=
+			bNHf63wgfXwkYLvlDNoc7kY+nsgsQ2mcsfM/Nb0S10I=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvls6MNsbayj0U8u/O6T81pPm8CtUlFcTQicJN1hghQ=
+			94ZoBZQXu46ilJmdanmUj2XgodQ357M3OrzMD+uZofE=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApwWT0A2vaJ/cmg2Akw0+1XKd7GXqLel1246M1DSVpg=
+			kapvSONiXyCcMnYb5DXRKPEZtSyZoRNUvOy1kfMa3Xs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n083ARUE1c3rOn6g7bHjQ1mm8NTFoZRzwA1M6n04i+U=
+			G+Ic2QDhGnqnegHRGLBEhczGCgTztif4tTjkOX3Rt+Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vfsk4K8eOprzCgujAMsdQgHBSzle923U6YCsND9/NGg=
+			XbErS2+6MBrd+FeDqC893ObhQYdV0hoF5nLMcOs3PdQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n083ARUE1c3rOn6g7bHjQ1mm8NTFoZRzwA1M6n04i+U=
+			G+Ic2QDhGnqnegHRGLBEhczGCgTztif4tTjkOX3Rt+Q=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSecureMeKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rJKEdyxcrWOO7Vw4PIzBT3s/aO2UorAFkcG8A4S0hTA=
+			Kn7UU9jEt11XCg8t6eobdTpMmFFCsWVXoPWn3cuO3Cc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -167,10 +198,45 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yqdToQEniQtwryxKcHshtDBj1Z8ev0VMHGyZ4Qp6Bhw=
+			mN6H/xjcAz/59azzGlnuBmN1zE63uf+Ou5pP6+l576M=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>main.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MnprXLTc07lK1vQzpsz43wZrTlHZp5Wyvl7vth97QFg=
+			</data>
+		</dict>
+		<key>main.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n09rrEhE1aoc7d/H/3lsqBBVJbf7ZiQHB7owQwdxaVM=
+			</data>
+		</dict>
+		<key>main.js.LICENSE.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TMtlEsYKT5YN9saWpeQ8Ek1wsogVVkvn3kQWEU+6Dzg=
+			</data>
+		</dict>
+		<key>non_styled.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HoW6uPQBG1XEfg6g2Yd1eJBYzxHVXUXZUtV/WsmSzHM=
+			</data>
+		</dict>
+		<key>styled.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u3wOQSDIiFRMXGDDEzasYgenAo7FGN4JgBZCGmpFa78=
+			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

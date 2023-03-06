@@ -16,6 +16,23 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Au10tixCore",
         "printedName": "Au10tixCore",
         "declKind": "Import",
@@ -181,6 +198,23 @@
           "AccessControl",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "Import",
@@ -642,13 +676,979 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Au10tixSecureMeKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MarkdownView",
+        "printedName": "MarkdownView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isScrollEnabled",
+            "printedName": "isScrollEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(py)isScrollEnabled",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC15isScrollEnabledSbvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)isScrollEnabled",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC15isScrollEnabledSbvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)setIsScrollEnabled:",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC15isScrollEnabledSbvs",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit12MarkdownViewC15isScrollEnabledSbvM",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC15isScrollEnabledSbvM",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onTouchLink",
+            "printedName": "onTouchLink",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.URLRequest) -> Swift.Bool)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(py)onTouchLink",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC11onTouchLinkSb10Foundation10URLRequestVcSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.URLRequest) -> Swift.Bool)?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLRequest",
+                            "printedName": "Foundation.URLRequest",
+                            "usr": "s:10Foundation10URLRequestV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)onTouchLink",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC11onTouchLinkSb10Foundation10URLRequestVcSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Foundation.URLRequest) -> Swift.Bool)?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.URLRequest) -> Swift.Bool",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLRequest",
+                            "printedName": "Foundation.URLRequest",
+                            "usr": "s:10Foundation10URLRequestV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)setOnTouchLink:",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC11onTouchLinkSb10Foundation10URLRequestVcSgvs",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit12MarkdownViewC11onTouchLinkSb10Foundation10URLRequestVcSgvM",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC11onTouchLinkSb10Foundation10URLRequestVcSgvM",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onRendered",
+            "printedName": "onRendered",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(py)onRendered",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC10onRenderedy12CoreGraphics7CGFloatVcSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CoreGraphics.CGFloat) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)onRendered",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC10onRenderedy12CoreGraphics7CGFloatVcSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CoreGraphics.CGFloat) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)setOnRendered:",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC10onRenderedy12CoreGraphics7CGFloatVcSgvs",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit12MarkdownViewC10onRenderedy14CoreFoundation7CGFloatVcSgvM",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC10onRenderedy12CoreGraphics7CGFloatVcSgvM",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MarkdownView",
+                "printedName": "Au10tixSecureMeKit.MarkdownView",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)init",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewCACycfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(css:plugins:stylesheets:styled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MarkdownView",
+                "printedName": "Au10tixSecureMeKit.MarkdownView",
+                "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URL]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18Au10tixSecureMeKit12MarkdownViewC3css7plugins11stylesheets6styledACSSSg_SaySSGSgSay10Foundation3URLVGSgSbtcfc",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC3css7plugins11stylesheets6styledACSSSg_SaySSGSgSay10Foundation3URLVGSgSbtcfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "Custom",
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixSecureMeKit.MarkdownView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MarkdownView",
+                    "printedName": "Au10tixSecureMeKit.MarkdownView",
+                    "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView(im)initWithCoder:",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Au10tixSecureMeKit",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "intrinsicContentSize",
+            "printedName": "intrinsicContentSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Au10tixSecureMeKit@objc(cs)MarkdownView(py)intrinsicContentSize",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC20intrinsicContentSizeSo6CGSizeVvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "intrinsicContentSize",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Au10tixSecureMeKit@objc(cs)MarkdownView(im)intrinsicContentSize",
+                "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC20intrinsicContentSizeSo6CGSizeVvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "intrinsicContentSize",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(markdown:enableImage:css:plugins:stylesheets:styled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URL]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URL]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Au10tixSecureMeKit@objc(cs)MarkdownView(im)loadWithMarkdown:enableImage:css:plugins:stylesheets:styled:",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC4load8markdown11enableImage3css7plugins11stylesheets6styledySSSg_SbAKSaySSGSgSay10Foundation3URLVGSgSbtF",
+            "moduleName": "Au10tixSecureMeKit",
+            "objc_name": "loadWithMarkdown:enableImage:css:plugins:stylesheets:styled:",
+            "declAttributes": [
+              "Dynamic",
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(markdown:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18Au10tixSecureMeKit12MarkdownViewC4show8markdownySS_tF",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC4show8markdownySS_tF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Au10tixSecureMeKit@objc(cs)MarkdownView(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC03webF0_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0noI0VctF",
+            "moduleName": "Au10tixSecureMeKit",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixSecureMeKit@objc(cs)MarkdownView",
+        "mangledName": "$s18Au10tixSecureMeKit12MarkdownViewC",
+        "moduleName": "Au10tixSecureMeKit",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "Import",
@@ -664,6 +1664,33 @@
         "kind": "Import",
         "name": "Au10tixCore",
         "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
         "declKind": "Import",
         "moduleName": "Au10tixSecureMeKit"
       },
@@ -703,13 +1730,10 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
         "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "Import",
@@ -720,6 +1744,67 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "Import",
@@ -1208,6 +2293,23 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "TypeDecl",
@@ -1787,6 +2889,33 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "SecureMeFlowConfig",
         "printedName": "SecureMeFlowConfig",
@@ -1910,23 +3039,6 @@
           "AccessControl",
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Au10tixBaseUI",
-        "printedName": "Au10tixBaseUI",
-        "declKind": "Import",
-        "moduleName": "Au10tixSecureMeKit"
       },
       {
         "kind": "Import",
@@ -2234,6 +3346,33 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Au10tixCore",
         "printedName": "Au10tixCore",
         "declKind": "Import",
@@ -2369,22 +3508,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvp",
-            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvp",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdvp",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "HasStorage",
@@ -2401,22 +3532,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Double?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvg",
-                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdSgvg",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV8pflDelaySdvg",
                 "moduleName": "Au10tixSecureMeKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2536,22 +3659,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvp",
-            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvp",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSivp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSivp",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "HasStorage",
@@ -2568,22 +3683,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvg",
-                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSiSgvg",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSivg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV23voiceConsentSessionTimeSivg",
                 "moduleName": "Au10tixSecureMeKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2610,18 +3717,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
+                "name": "Double",
+                "printedName": "Swift.Double",
                 "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:Sd"
               },
               {
                 "kind": "TypeNominal",
@@ -2647,22 +3746,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSgSbSSSgSiSgtcfc",
-            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSgSbSSSgSiSgtcfc",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSbSSSgSitcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSbSSSgSitcfc",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "AccessControl",
@@ -2679,15 +3771,378 @@
           "AccessControl",
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSecureMeKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 763,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 807,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 854,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 907,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 952,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1065,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1248,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1430,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1613,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2404,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2414,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2423,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2433,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2540,
+      "length": 4,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2554,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2595,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsAndSigatureView.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 20,
+      "value": "\"Au10tixSecureMeKit.TermsAndSigatureView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 756,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1141,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1337,
+      "length": 22,
+      "value": "\"SecureMe.Terms.Title\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1421,
+      "length": 25,
+      "value": "\"SecureMe.Terms.SubTitle\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Extensions\/StringExtension.swift",
+      "kind": "Array",
+      "offset": 800,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/SecureMeDeclarationIntroViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 546,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/SecureMeDeclarationIntroViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2539,
+      "length": 46,
+      "value": "\"SecureMe.Declaration.Intro.Retry.Description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/View Model\/SecureMeConsentViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 299,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 512,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1068,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2476,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2570,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 4103,
+      "length": 19,
+      "value": "\"Au10tixSecureMeKit.UpdateHeightHandler\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5548,
+      "length": 8,
+      "value": "\"styled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5595,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5642,
+      "length": 8,
+      "value": "\"styled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5689,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5733,
+      "length": 21,
+      "value": "\"MarkdownView.bundle\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 5962,
+      "length": 12,
+      "value": "\"non_styled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 6013,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 6060,
+      "length": 12,
+      "value": "\"non_styled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 6111,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
+      "kind": "StringLiteral",
+      "offset": 6155,
+      "length": 21,
+      "value": "\"MarkdownView.bundle\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 505,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 689,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 799,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1006,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "StringLiteral",
+      "offset": 1137,
+      "length": 23,
+      "value": "\"au10tix_forwardButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1234,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1057,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1043,
+      "offset": 1146,
       "length": 2,
       "value": "1"
     },
@@ -2697,6 +4152,230 @@
       "offset": 706,
       "length": 25,
       "value": "\"Au10tixSecureMeKit.SecureMeKitViewController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 375,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 564,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 617,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 654,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 776,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1529,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 9,
+      "value": "\"Au10tixSecureMeKit.TermsView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 588,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 963,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1342,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 383,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 678,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 876,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 987,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1240,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "StringLiteral",
+      "offset": 1272,
+      "length": 16,
+      "value": "\"au10tix_search\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1518,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1602,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1805,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5153,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5153,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5153,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 479,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 589,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 625,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 574,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/SecureMeDeclarationSelectionViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
+      "length": 42,
+      "value": "\"Au10tixSecureMeKit.SecureMeDeclarationSelectionViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
@@ -2720,16 +4399,16 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitCompleteViewController.swift",
-      "kind": "Array",
-      "offset": 200,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 950,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
       "kind": "Array",
-      "offset": 1321,
+      "offset": 1424,
       "length": 2,
       "value": "[]"
     },
@@ -2741,18 +4420,39 @@
       "value": "\"Au10tixSecureMeKit.SecureMeKit\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/SecureMeKitCompleteViewController.swift",
+      "kind": "Array",
+      "offset": 200,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1662,
+      "offset": 1660,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1708,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1752,
+      "offset": 1747,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1849,
+      "length": 2,
+      "value": "20"
     }
   ]
 }
