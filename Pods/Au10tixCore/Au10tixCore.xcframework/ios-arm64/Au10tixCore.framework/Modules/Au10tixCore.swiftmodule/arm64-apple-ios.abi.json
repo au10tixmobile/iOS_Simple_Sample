@@ -5272,6 +5272,80 @@
               },
               {
                 "kind": "Var",
+                "name": "detected",
+                "printedName": "detected",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO8detectedyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO8detectedyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "notDetected",
+                "printedName": "notDetected",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO11notDetectedyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO11notDetectedyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
                 "name": "mrzCapture",
                 "printedName": "mrzCapture",
                 "children": [
@@ -22599,6 +22673,49 @@
                     "accessorKind": "_modify"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "offSettings",
+                "printedName": "offSettings",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSettings",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14CameraSettingsV03offD0AEvpZ",
+                "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV03offD0AEvpZ",
+                "moduleName": "Au10tixCore",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraSettings",
+                        "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                        "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV03offD0AEvgZ",
+                    "mangledName": "$s11Au10tixCore0A0C14CameraSettingsV03offD0AEvgZ",
+                    "moduleName": "Au10tixCore",
+                    "static": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -38101,350 +38218,364 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1459,
+      "length": 10,
+      "value": "\"Detected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1497,
+      "length": 13,
+      "value": "\"NotDetected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
       "length": 13,
       "value": "\"MRZCaptured\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 1577,
       "length": 12,
       "value": "\"UserCancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1547,
+      "offset": 1623,
       "length": 8,
       "value": "\"Upload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1587,
+      "offset": 1663,
       "length": 8,
       "value": "\"Passed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1627,
+      "offset": 1703,
       "length": 15,
       "value": "\"ServerFailure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1679,
+      "offset": 1755,
       "length": 13,
       "value": "\"FailedPaper\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1806,
       "length": 14,
       "value": "\"FailedScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 1846,
       "length": 37,
       "value": "\"FrontendClassificationServerFailure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1913,
       "length": 6,
       "value": "\"6001\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1950,
       "length": 9,
       "value": "\"Refresh\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1982,
       "length": 7,
       "value": "\"Retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1937,
+      "offset": 2013,
       "length": 9,
       "value": "\"Approve\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 2047,
       "length": 10,
       "value": "\"Validate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2086,
       "length": 14,
       "value": "\"LivenessPass\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2129,
       "length": 14,
       "value": "\"LivenessFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 2169,
       "length": 11,
       "value": "\"ClickHelp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2215,
       "length": 16,
       "value": "\"ReadingStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2269,
       "length": 19,
       "value": "\"ExtractionStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2247,
+      "offset": 2323,
       "length": 20,
       "value": "\"ChipReadingSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2368,
       "length": 10,
       "value": "\"TryAgain\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2333,
+      "offset": 2409,
       "length": 16,
       "value": "\"MRZReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2381,
+      "offset": 2457,
       "length": 17,
       "value": "\"ChipReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2436,
+      "offset": 2512,
       "length": 16,
       "value": "\"UploadSDCFront\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 2570,
       "length": 8,
       "value": "\"Create\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2621,
       "length": 16,
       "value": "\"CreateResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2598,
+      "offset": 2674,
       "length": 15,
       "value": "\"UploadSDCBack\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2728,
       "length": 24,
       "value": "\"UploadSDCFrontResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2790,
       "length": 23,
       "value": "\"UploadSDCBackResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2763,
+      "offset": 2839,
       "length": 11,
       "value": "\"UploadPFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2808,
+      "offset": 2884,
       "length": 19,
       "value": "\"UploadPFLResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2853,
+      "offset": 2929,
       "length": 11,
       "value": "\"UploadFF1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2898,
+      "offset": 2974,
       "length": 19,
       "value": "\"UploadFF1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2943,
+      "offset": 3019,
       "length": 11,
       "value": "\"UploadFF2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2988,
+      "offset": 3064,
       "length": 19,
       "value": "\"UploadFF2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3038,
+      "offset": 3114,
       "length": 16,
       "value": "\"UploadPFLVideo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3093,
+      "offset": 3169,
       "length": 24,
       "value": "\"UploadPFLVideoResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3143,
+      "offset": 3219,
       "length": 11,
       "value": "\"UploadPOA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3188,
+      "offset": 3264,
       "length": 19,
       "value": "\"UploadPOAResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3308,
       "length": 10,
       "value": "\"UploadPC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3275,
+      "offset": 3351,
       "length": 18,
       "value": "\"UploadPCResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3319,
+      "offset": 3395,
       "length": 11,
       "value": "\"UploadDG1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3364,
+      "offset": 3440,
       "length": 19,
       "value": "\"UploadDG1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 3485,
       "length": 11,
       "value": "\"UploadDG2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3454,
+      "offset": 3530,
       "length": 19,
       "value": "\"UploadDG2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3512,
+      "offset": 3588,
       "length": 9,
       "value": "\"Process\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3561,
+      "offset": 3637,
       "length": 10,
       "value": "\"Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3604,
+      "offset": 3680,
       "length": 15,
       "value": "\"ClickPassport\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3646,
+      "offset": 3722,
       "length": 13,
       "value": "\"ClickIDCard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3684,
+      "offset": 3760,
       "length": 10,
       "value": "\"UploadVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3803,
       "length": 18,
       "value": "\"UploadVCResponse\""
     },
@@ -38493,350 +38624,364 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1459,
+      "length": 10,
+      "value": "\"Detected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1497,
+      "length": 13,
+      "value": "\"NotDetected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
       "length": 13,
       "value": "\"MRZCaptured\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 1577,
       "length": 12,
       "value": "\"UserCancel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1547,
+      "offset": 1623,
       "length": 8,
       "value": "\"Upload\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1587,
+      "offset": 1663,
       "length": 8,
       "value": "\"Passed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1627,
+      "offset": 1703,
       "length": 15,
       "value": "\"ServerFailure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1679,
+      "offset": 1755,
       "length": 13,
       "value": "\"FailedPaper\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1806,
       "length": 14,
       "value": "\"FailedScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 1846,
       "length": 37,
       "value": "\"FrontendClassificationServerFailure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1913,
       "length": 6,
       "value": "\"6001\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1950,
       "length": 9,
       "value": "\"Refresh\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1982,
       "length": 7,
       "value": "\"Retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1937,
+      "offset": 2013,
       "length": 9,
       "value": "\"Approve\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 2047,
       "length": 10,
       "value": "\"Validate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2086,
       "length": 14,
       "value": "\"LivenessPass\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2129,
       "length": 14,
       "value": "\"LivenessFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 2169,
       "length": 11,
       "value": "\"ClickHelp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2215,
       "length": 16,
       "value": "\"ReadingStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2269,
       "length": 19,
       "value": "\"ExtractionStarted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2247,
+      "offset": 2323,
       "length": 20,
       "value": "\"ChipReadingSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2368,
       "length": 10,
       "value": "\"TryAgain\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2333,
+      "offset": 2409,
       "length": 16,
       "value": "\"MRZReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2381,
+      "offset": 2457,
       "length": 17,
       "value": "\"ChipReadingFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2436,
+      "offset": 2512,
       "length": 16,
       "value": "\"UploadSDCFront\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 2570,
       "length": 8,
       "value": "\"Create\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2621,
       "length": 16,
       "value": "\"CreateResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2598,
+      "offset": 2674,
       "length": 15,
       "value": "\"UploadSDCBack\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2728,
       "length": 24,
       "value": "\"UploadSDCFrontResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2790,
       "length": 23,
       "value": "\"UploadSDCBackResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2763,
+      "offset": 2839,
       "length": 11,
       "value": "\"UploadPFL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2808,
+      "offset": 2884,
       "length": 19,
       "value": "\"UploadPFLResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2853,
+      "offset": 2929,
       "length": 11,
       "value": "\"UploadFF1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2898,
+      "offset": 2974,
       "length": 19,
       "value": "\"UploadFF1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2943,
+      "offset": 3019,
       "length": 11,
       "value": "\"UploadFF2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 2988,
+      "offset": 3064,
       "length": 19,
       "value": "\"UploadFF2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3038,
+      "offset": 3114,
       "length": 16,
       "value": "\"UploadPFLVideo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3093,
+      "offset": 3169,
       "length": 24,
       "value": "\"UploadPFLVideoResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3143,
+      "offset": 3219,
       "length": 11,
       "value": "\"UploadPOA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3188,
+      "offset": 3264,
       "length": 19,
       "value": "\"UploadPOAResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3308,
       "length": 10,
       "value": "\"UploadPC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3275,
+      "offset": 3351,
       "length": 18,
       "value": "\"UploadPCResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3319,
+      "offset": 3395,
       "length": 11,
       "value": "\"UploadDG1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3364,
+      "offset": 3440,
       "length": 19,
       "value": "\"UploadDG1Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 3485,
       "length": 11,
       "value": "\"UploadDG2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3454,
+      "offset": 3530,
       "length": 19,
       "value": "\"UploadDG2Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3512,
+      "offset": 3588,
       "length": 9,
       "value": "\"Process\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3561,
+      "offset": 3637,
       "length": 10,
       "value": "\"Response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3604,
+      "offset": 3680,
       "length": 15,
       "value": "\"ClickPassport\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3646,
+      "offset": 3722,
       "length": 13,
       "value": "\"ClickIDCard\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3684,
+      "offset": 3760,
       "length": 10,
       "value": "\"UploadVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 3727,
+      "offset": 3803,
       "length": 18,
       "value": "\"UploadVCResponse\""
     },

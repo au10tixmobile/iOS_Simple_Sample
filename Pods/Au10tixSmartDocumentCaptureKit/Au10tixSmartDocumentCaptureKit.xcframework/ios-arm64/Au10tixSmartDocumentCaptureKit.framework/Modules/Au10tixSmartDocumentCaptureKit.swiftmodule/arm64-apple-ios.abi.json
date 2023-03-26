@@ -6648,7 +6648,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Configurations\/SmartDocumentCaptureConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 1415,
+      "offset": 1508,
       "length": 3,
       "value": "[]"
     },
@@ -6857,15 +6857,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5973,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 10496,
+      "offset": 10545,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 14418,
+      "offset": 14544,
       "length": 4,
       "value": "true"
     },

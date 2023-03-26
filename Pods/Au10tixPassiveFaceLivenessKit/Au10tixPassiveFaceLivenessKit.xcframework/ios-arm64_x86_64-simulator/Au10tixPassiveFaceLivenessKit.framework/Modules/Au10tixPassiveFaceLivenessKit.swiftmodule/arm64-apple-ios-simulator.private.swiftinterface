@@ -145,6 +145,10 @@ public protocol PFLSessionDelegate : AnyObject {
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
   func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
+  func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didSnapImage image: Foundation.Data)
+}
+extension Au10tixPassiveFaceLivenessKit.PFLSessionDelegate {
+  public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didSnapImage image: Foundation.Data)
 }
 public protocol PFLSessionRecordingDelegate : AnyObject {
   func pflSessionRecorder(_ screenRecorder: Au10tixCore.ScreenRecorder, didFailToRecord error: Au10tixCore.ScreenRecorderError)
@@ -206,6 +210,7 @@ public enum ValidationFlow : Swift.Int {
     get
     set
   }
+  public var preventAutoCapture: Swift.Bool
   public var validationFlow: Au10tixPassiveFaceLivenessKit.ValidationFlow {
     get
   }
@@ -214,6 +219,7 @@ public enum ValidationFlow : Swift.Int {
   public func start(with token: Swift.String, previewView: UIKit.UIView, refresh: Swift.Bool = true, didStartHandler: @escaping (Swift.Result<Swift.String, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
   public func stop()
   public func captureImage(_ source: Au10tixCore.Au10ImageSource)
+  public func snapImage()
   public func pauseCamera()
   public func resumeCamera(_ refresh: Swift.Bool = true)
   public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)

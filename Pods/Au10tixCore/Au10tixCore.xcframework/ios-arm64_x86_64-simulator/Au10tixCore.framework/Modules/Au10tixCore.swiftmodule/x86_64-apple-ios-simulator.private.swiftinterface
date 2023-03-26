@@ -228,6 +228,8 @@ public class Log : Swift.Encodable {
     case sessionStart
     case autoCapture
     case manualCapture
+    case detected
+    case notDetected
     case mrzCapture
     case userCancel
     case uploadFromGallery
@@ -746,6 +748,9 @@ extension Au10tixCore.Au10tix {
     public var cameraCaptureSound: Au10tixCore.Au10tix.CameraSettings.CameraCaptureSound
     public var cameraFlashMode: AVFoundation.AVCaptureDevice.FlashMode
     public var cameraTorchMode: AVFoundation.AVCaptureDevice.TorchMode
+    public static var offSettings: Au10tixCore.Au10tix.CameraSettings {
+      get
+    }
   }
 }
 public struct Claim {
