@@ -1137,37 +1137,44 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 531,
+      "offset": 687,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 471,
+      "offset": 627,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2278,
+      "offset": 2434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2327,
+      "offset": 2483,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2371,
+      "offset": 2527,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2583,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/SDCScannerViewController.swift",

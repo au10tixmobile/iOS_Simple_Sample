@@ -23,7 +23,7 @@ public protocol Au10tixSourceManagerProtocol {
   func stopCameraSession()
   func stopAllSessions()
   func canCaptureStillImage() -> Swift.Bool
-  func captureStillImage(_ source: Au10tixCore.Au10ImageSource)
+  func captureStillImage(_ source: Au10tixCore.Au10ImageSource, _ cameraSettings: Au10tixCore.Au10tix.CameraSettings?)
   func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
   func resumeCamera()
   func pauseCamera()
@@ -196,7 +196,7 @@ final public class Au10SourceManager : Au10tixSourceManager.Au10tixSourceManager
   final public func stopAllSessions()
   final public func canCaptureStillImage() -> Swift.Bool
   final public func canRecordVideo() -> Swift.Bool
-  final public func captureStillImage(_ source: Au10tixCore.Au10ImageSource)
+  final public func captureStillImage(_ source: Au10tixCore.Au10ImageSource, _ cameraSettings: Au10tixCore.Au10tix.CameraSettings? = nil)
   final public func startVideoRecording(videoUrl: Foundation.URL)
   final public func stopVideoRecording()
   final public func provide(image data: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)

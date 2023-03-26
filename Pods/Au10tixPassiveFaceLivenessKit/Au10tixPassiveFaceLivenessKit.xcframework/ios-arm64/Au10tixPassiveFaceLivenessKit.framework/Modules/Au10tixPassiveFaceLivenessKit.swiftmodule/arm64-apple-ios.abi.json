@@ -4611,6 +4611,74 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pflSession",
+            "printedName": "pflSession(_:didSnapImage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PFLSession",
+                "printedName": "Au10tixPassiveFaceLivenessKit.PFLSession",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29Au10tixPassiveFaceLivenessKit18PFLSessionDelegateP10pflSession_12didSnapImageyAA0F0C_10Foundation4DataVtF",
+            "mangledName": "$s29Au10tixPassiveFaceLivenessKit18PFLSessionDelegateP10pflSession_12didSnapImageyAA0F0C_10Foundation4DataVtF",
+            "moduleName": "Au10tixPassiveFaceLivenessKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pflSession",
+            "printedName": "pflSession(_:didSnapImage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PFLSession",
+                "printedName": "Au10tixPassiveFaceLivenessKit.PFLSession",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29Au10tixPassiveFaceLivenessKit18PFLSessionDelegatePAAE10pflSession_12didSnapImageyAA0F0C_10Foundation4DataVtF",
+            "mangledName": "$s29Au10tixPassiveFaceLivenessKit18PFLSessionDelegatePAAE10pflSession_12didSnapImageyAA0F0C_10Foundation4DataVtF",
+            "moduleName": "Au10tixPassiveFaceLivenessKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -6528,6 +6596,93 @@
           },
           {
             "kind": "Var",
+            "name": "preventAutoCapture",
+            "printedName": "preventAutoCapture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvp",
+            "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvp",
+            "moduleName": "Au10tixPassiveFaceLivenessKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvg",
+                "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvg",
+                "moduleName": "Au10tixPassiveFaceLivenessKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvs",
+                "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvs",
+                "moduleName": "Au10tixPassiveFaceLivenessKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvM",
+                "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC18preventAutoCaptureSbvM",
+                "moduleName": "Au10tixPassiveFaceLivenessKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "validationFlow",
             "printedName": "validationFlow",
             "children": [
@@ -6733,6 +6888,27 @@
             "declKind": "Func",
             "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC12captureImageyy0A4Core04Au10H6SourceOF",
             "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC12captureImageyy0A4Core04Au10H6SourceOF",
+            "moduleName": "Au10tixPassiveFaceLivenessKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "snapImage",
+            "printedName": "snapImage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29Au10tixPassiveFaceLivenessKit10PFLSessionC9snapImageyyF",
+            "mangledName": "$s29Au10tixPassiveFaceLivenessKit10PFLSessionC9snapImageyyF",
             "moduleName": "Au10tixPassiveFaceLivenessKit",
             "declAttributes": [
               "AccessControl",
@@ -8316,7 +8492,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2605,
+      "offset": 2883,
       "length": 5,
       "value": "false"
     },
@@ -8379,35 +8555,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 6179,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7884,
+      "offset": 5333,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 7938,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11440,
+      "offset": 6359,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 17030,
+      "offset": 8064,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8118,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11620,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17722,
       "length": 4,
       "value": "true"
     },
@@ -8442,7 +8625,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Quality Checks\/PFLQualityCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13797,
+      "offset": 1056,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Quality Checks\/PFLQualityCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3334,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Quality Checks\/PFLQualityCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13973,
       "length": 5,
       "value": "false"
     },

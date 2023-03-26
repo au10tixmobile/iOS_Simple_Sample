@@ -223,7 +223,7 @@
           {
             "kind": "Function",
             "name": "captureStillImage",
-            "printedName": "captureStillImage(_:)",
+            "printedName": "captureStillImage(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -235,11 +235,25 @@
                 "name": "Au10ImageSource",
                 "printedName": "Au10tixCore.Au10ImageSource",
                 "usr": "c:@M@Au10tixCore@E@Au10ImageSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.Au10tix.CameraSettings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSettings",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20Au10tixSourceManager0abC8ProtocolP17captureStillImageyy0A4Core04Au10gB0OF",
-            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolP17captureStillImageyy0A4Core04Au10gB0OF",
+            "usr": "s:20Au10tixSourceManager0abC8ProtocolP17captureStillImageyy0A4Core04Au10gB0O_AE0A0C14CameraSettingsVSgtF",
+            "mangledName": "$s20Au10tixSourceManager0abC8ProtocolP17captureStillImageyy0A4Core04Au10gB0O_AE0A0C14CameraSettingsVSgtF",
             "moduleName": "Au10tixSourceManager",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
             "sugared_genericSig": "<Self where Self : Au10tixSourceManager.Au10tixSourceManagerProtocol>",
@@ -5542,7 +5556,7 @@
           {
             "kind": "Function",
             "name": "captureStillImage",
-            "printedName": "captureStillImage(_:)",
+            "printedName": "captureStillImage(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5554,11 +5568,26 @@
                 "name": "Au10ImageSource",
                 "printedName": "Au10tixCore.Au10ImageSource",
                 "usr": "c:@M@Au10tixCore@E@Au10ImageSource"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.Au10tix.CameraSettings?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraSettings",
+                    "printedName": "Au10tixCore.Au10tix.CameraSettings",
+                    "usr": "s:11Au10tixCore0A0C14CameraSettingsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20Au10tixSourceManager04Au10bC0C17captureStillImageyy0A4Core0dgB0OF",
-            "mangledName": "$s20Au10tixSourceManager04Au10bC0C17captureStillImageyy0A4Core0dgB0OF",
+            "usr": "s:20Au10tixSourceManager04Au10bC0C17captureStillImageyy0A4Core0dgB0O_AE0A0C14CameraSettingsVSgtF",
+            "mangledName": "$s20Au10tixSourceManager04Au10bC0C17captureStillImageyy0A4Core0dgB0O_AE0A0C14CameraSettingsVSgtF",
             "moduleName": "Au10tixSourceManager",
             "declAttributes": [
               "Final",

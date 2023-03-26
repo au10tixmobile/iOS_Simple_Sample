@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uIgmVdMdv4cmIbDYX3E7pBXgIB0=
+		8o+rhcHfN1FdFMj6iL3sSHdlHJo=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MzyXY6KuWhDm/D0EOTZF/CAMWMQ=
+		3AWkZ3RvjJaNUhhe/pf5zAhjFSE=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MzyXY6KuWhDm/D0EOTZF/CAMWMQ=
+		3AWkZ3RvjJaNUhhe/pf5zAhjFSE=
 		</data>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5+Bu0FlrlQh43EY9gl0acHjWuNbCwDr0OsZl2R7Sko=
+			v+yw8KuORk/swp99QYbTI96Vl7In6afN8seRIrxSZ8o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5+Bu0FlrlQh43EY9gl0acHjWuNbCwDr0OsZl2R7Sko=
+			v+yw8KuORk/swp99QYbTI96Vl7In6afN8seRIrxSZ8o=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
