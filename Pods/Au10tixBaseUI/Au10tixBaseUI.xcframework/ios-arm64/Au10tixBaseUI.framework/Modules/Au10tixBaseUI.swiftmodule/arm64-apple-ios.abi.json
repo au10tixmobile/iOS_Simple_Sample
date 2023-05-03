@@ -3799,8 +3799,8 @@
               },
               {
                 "kind": "Var",
-                "name": "captuteEnabled",
-                "printedName": "captuteEnabled",
+                "name": "captureEnabled",
+                "printedName": "captureEnabled",
                 "children": [
                   {
                     "kind": "TypeFunc",
@@ -3830,8 +3830,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13Au10tixBaseUI10ActionItemV0D0O14captuteEnabledyA2EmF",
-                "mangledName": "$s13Au10tixBaseUI10ActionItemV0D0O14captuteEnabledyA2EmF",
+                "usr": "s:13Au10tixBaseUI10ActionItemV0D0O14captureEnabledyA2EmF",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV0D0O14captureEnabledyA2EmF",
                 "moduleName": "Au10tixBaseUI"
               },
               {
@@ -10893,8 +10893,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
@@ -11129,6 +11129,46 @@
             "moduleName": "Au10tixBaseUI"
           },
           {
+            "kind": "Var",
+            "name": "isAuthorized",
+            "printedName": "isAuthorized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13Au10tixBaseUI16PermissionStatusO12isAuthorizedSbvp",
+            "mangledName": "$s13Au10tixBaseUI16PermissionStatusO12isAuthorizedSbvp",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13Au10tixBaseUI16PermissionStatusO12isAuthorizedSbvg",
+                "mangledName": "$s13Au10tixBaseUI16PermissionStatusO12isAuthorizedSbvg",
+                "moduleName": "Au10tixBaseUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -11335,6 +11375,47 @@
             "sugared_genericSig": "<Self where Self : Au10tixBaseUI.PermissionManager>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openSettings",
+            "printedName": "openSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI17PermissionManagerP12openSettingsyyF",
+            "mangledName": "$s13Au10tixBaseUI17PermissionManagerP12openSettingsyyF",
+            "moduleName": "Au10tixBaseUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixBaseUI.PermissionManager>",
+            "sugared_genericSig": "<Self where Self : Au10tixBaseUI.PermissionManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openSettings",
+            "printedName": "openSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13Au10tixBaseUI17PermissionManagerPAAE12openSettingsyyF",
+            "mangledName": "$s13Au10tixBaseUI17PermissionManagerPAAE12openSettingsyyF",
+            "moduleName": "Au10tixBaseUI",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixBaseUI.PermissionManager>",
+            "sugared_genericSig": "<Self where Self : Au10tixBaseUI.PermissionManager>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],

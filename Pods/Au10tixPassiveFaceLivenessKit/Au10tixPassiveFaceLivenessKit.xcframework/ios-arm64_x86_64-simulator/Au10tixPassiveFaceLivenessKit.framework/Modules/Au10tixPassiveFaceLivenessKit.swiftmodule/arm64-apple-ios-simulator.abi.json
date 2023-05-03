@@ -5106,6 +5106,43 @@
               },
               {
                 "kind": "Var",
+                "name": "helmetDetection",
+                "printedName": "helmetDetection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixPassiveFaceLivenessKit.PFLLogManager.Category.Type) -> Au10tixPassiveFaceLivenessKit.PFLLogManager.Category",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "Au10tixPassiveFaceLivenessKit.PFLLogManager.Category",
+                        "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixPassiveFaceLivenessKit.PFLLogManager.Category.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "Au10tixPassiveFaceLivenessKit.PFLLogManager.Category",
+                            "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO15helmetDetectionyA2EmF",
+                "mangledName": "$s29Au10tixPassiveFaceLivenessKit13PFLLogManagerV8CategoryO15helmetDetectionyA2EmF",
+                "moduleName": "Au10tixPassiveFaceLivenessKit"
+              },
+              {
+                "kind": "Var",
                 "name": "rawValue",
                 "printedName": "rawValue",
                 "children": [
@@ -7750,7 +7787,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Configuration\/PassiveFaceLivenessConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 817,
+      "offset": 882,
       "length": 3,
       "value": "[]"
     },
@@ -8492,7 +8529,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Helpers\/PFLLogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2883,
+      "offset": 2884,
       "length": 5,
       "value": "false"
     },
@@ -8569,28 +8606,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 8064,
+      "offset": 8006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 8118,
+      "offset": 8060,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 11620,
+      "offset": 11562,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessKit\/Session\/PFLSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 17722,
+      "offset": 17740,
       "length": 4,
       "value": "true"
     },

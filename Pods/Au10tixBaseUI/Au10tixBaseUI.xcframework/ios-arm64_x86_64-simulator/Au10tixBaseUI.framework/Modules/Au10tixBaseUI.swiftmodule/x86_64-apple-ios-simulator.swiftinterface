@@ -179,7 +179,7 @@ public struct ActionItem {
     case none
     case empty
     case captureDisabled
-    case captuteEnabled
+    case captureEnabled
     case approval
     case smallApproval
     case refresh
@@ -414,6 +414,9 @@ public enum PermissionStatus {
   case limited
   case notDetermined
   case other
+  public var isAuthorized: Swift.Bool {
+    get
+  }
   public static func == (a: Au10tixBaseUI.PermissionStatus, b: Au10tixBaseUI.PermissionStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -424,6 +427,10 @@ public protocol PermissionManager {
   typealias Handler = ((Au10tixBaseUI.PermissionStatus) -> ())
   static var shared: Au10tixBaseUI.PermissionManager { get }
   func requestPermission(_ completion: @escaping Self.Handler)
+  func openSettings()
+}
+extension Au10tixBaseUI.PermissionManager {
+  public func openSettings()
 }
 public struct ColorGenerator {
   public static var blue181244: UIKit.UIColor {

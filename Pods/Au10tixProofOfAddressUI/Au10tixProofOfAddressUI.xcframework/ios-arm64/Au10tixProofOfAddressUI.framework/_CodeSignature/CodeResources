@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ibJ+2L1X8d0fjuTyPDV/uOkyA6I=
+		LNxqhG0onh7duu/2c9DMhe4prsU=
 		</data>
 		<key>Headers/Au10tixProofOfAddressUI-Swift.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8MwDb0GVCxtPS7wrUgUsXVhl3zc=
+		ItxBCAcGdC1L47rmy2OIG35+SUU=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		h3Lp/l2d0Gb9uFdp++6eKLuzqLU=
+		TRZASjudjAkI7NF1yyuel3+BW4E=
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CRQ5/D8T0fasOvsdJzRrCIrjerY=
+		vDgn8//448f5kL88Q9X0k12cEWM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>POAUILocalizable.strings</key>
 		<data>
-		kC96FI9vysc3s4gMl+xTAAFqYz0=
+		k2V275AObrbTZAjffytG+7uIavs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			775+13rsFk7AipxsVDlVJTPSmadpu7s3MBgqEEHkNRs=
+			qbyC4wq7L6xwEzKvHlh5MRr+L/5m0mdut/bzGb0ka1A=
 			</data>
 		</dict>
 		<key>Headers/Au10tixProofOfAddressUI-Swift.h</key>
@@ -76,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DuIvarhJ9uRIfw2TPWdu+lErM7hRR55P0HonROw2Wqw=
+			EFW5lBSGBjDkNdwe9og6omiu+fqUbJMfd7t/Us6DaCY=
 			</data>
 		</dict>
 		<key>Modules/Au10tixProofOfAddressUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+0nerIv7k2CJ7TCGUvhL4dA9c3USSpS8iFaytrfoFX0=
+			Fre0qKpYqXxiiusKaplO8kKZKbDKSSfANaKQbiBaJw0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FbMJK2DQfoiOZiMOV7bIBXMSw5sx1AHquTg1fzjsdyo=
+			r7LvDxMtDMqCtySWwgzybuDi+71I//hfrAZguTBNdIs=
 			</data>
 		</dict>
 	</dict>

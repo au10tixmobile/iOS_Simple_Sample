@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		z4XOPwJhmHh21IVYFj6qiF65NuE=
+		pezZ4yDzn2/aU1/Xn5R9p00V1Bg=
 		</data>
 		<key>Headers/Au10tixSmartDocumentCaptureUI-Swift.h</key>
 		<data>
-		dgWRgb2S5KRpw4CCLqSCAFMecJw=
+		V7q9SGY1Wvk52EBq47syq3a1sGI=
 		</data>
 		<key>Headers/Au10tixSmartDocumentCaptureUI.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9qQATVuXtzodqOHLQgFp4zbITVA=
+		mYwoN/zLb1BE0MdKR6biElrVcis=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1RIv67cc/EH+vp/O+GWEGmHeh/c=
+		mY8cvrktYabsiTob6zmn7qPf8Qs=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Knlw8DBEqGUPGHXL1w/QPdZ28bU=
+		gS4oG1hMgA/p/lYBe9AxK+eZxE8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>SDCUILocalizable.strings</key>
 		<data>
-		KP8B+WEXF4uyfekKgRFqvwc4epU=
+		bmNYU7CSDcCQ3V0Os+rEgWaWXwA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bRkCIWeSk3vKhSl6nyEuOz9sa59UFEzO7iqyZAqwl4Q=
+			05h6Wfx/tB+ruGsYEgHTpTABjQsr4MgIQNQOiyHsK10=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSmartDocumentCaptureUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ir/25tvZ1YfKzh55DczVruAwwFvd1Ckia/dA4RoNm30=
+			uPKYmlyvbeFDA16Ijfx33KX3vnJHv3hWMadpeXOtPxU=
 			</data>
 		</dict>
 		<key>Headers/Au10tixSmartDocumentCaptureUI.h</key>
@@ -76,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3uaMP74RGEY4BueYJxnfy/0v/YOtLDqVlvqnEv+ux08=
+			TaYvM+KDZJCnu2MFOWLFGrc6u4JL0zcQlol6DrxMMS8=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yhBWjDx96A/i9cLetQAh/6XcHQDyl5YAqr7OYLEwZUE=
+			rzzaBy1G3va9oBzqx4XyRA5OKD9pKKaUUXwVeTLuxVY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TNvSXrQBDd2bv+ZX7TI8QRChYRZX/ORX97I4On/B1To=
+			Ozj6AotDoVqqKg/AgYPNnQML5+5JcnZ4hhyrJPAlFhg=
 			</data>
 		</dict>
 	</dict>
