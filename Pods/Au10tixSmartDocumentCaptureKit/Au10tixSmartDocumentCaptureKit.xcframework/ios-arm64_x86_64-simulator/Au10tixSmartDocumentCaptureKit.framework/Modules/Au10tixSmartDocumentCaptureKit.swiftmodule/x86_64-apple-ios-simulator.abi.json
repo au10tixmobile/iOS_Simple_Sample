@@ -2922,6 +2922,46 @@
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSmartDocumentCaptureKit.SDCSessionError.Type) -> Au10tixSmartDocumentCaptureKit.SDCSessionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDCSessionError",
+                    "printedName": "Au10tixSmartDocumentCaptureKit.SDCSessionError",
+                    "usr": "s:30Au10tixSmartDocumentCaptureKit15SDCSessionErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSmartDocumentCaptureKit.SDCSessionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDCSessionError",
+                        "printedName": "Au10tixSmartDocumentCaptureKit.SDCSessionError",
+                        "usr": "s:30Au10tixSmartDocumentCaptureKit15SDCSessionErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit15SDCSessionErrorO11unavailableyA2CmF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit15SDCSessionErrorO11unavailableyA2CmF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           }
         ],
         "declKind": "Enum",
@@ -3187,6 +3227,62 @@
           {
             "kind": "Function",
             "name": "sdcSession",
+            "printedName": "sdcSession(_:didFinish:croppedImage:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCSession",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCSession",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit10SDCSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.Au10Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10Image",
+                    "printedName": "Au10tixCore.Au10Image",
+                    "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCProcessingStatus",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegateP10sdcSession_9didFinish12croppedImage4withyAA0F0C_0A4Core04Au10M0CALSgAA19SDCProcessingStatusCtF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegateP10sdcSession_9didFinish12croppedImage4withyAA0F0C_0A4Core04Au10M0CALSgAA19SDCProcessingStatusCtF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdcSession",
             "printedName": "sdcSession(_:didDetect:)",
             "children": [
               {
@@ -3320,6 +3416,58 @@
             "declKind": "Func",
             "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
             "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_12isProcessingyAA0F0C_0A4Core9Au10ImageCtF",
+            "moduleName": "Au10tixSmartDocumentCaptureKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdcSession",
+            "printedName": "sdcSession(_:didFinish:croppedImage:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCSession",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCSession",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit10SDCSessionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Au10Image",
+                "printedName": "Au10tixCore.Au10Image",
+                "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Au10tixCore.Au10Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Au10Image",
+                    "printedName": "Au10tixCore.Au10Image",
+                    "usr": "c:@M@Au10tixCore@objc(cs)Au10Image"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDCProcessingStatus",
+                "printedName": "Au10tixSmartDocumentCaptureKit.SDCProcessingStatus",
+                "usr": "s:30Au10tixSmartDocumentCaptureKit19SDCProcessingStatusC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_9didFinish12croppedImage4withyAA0F0C_0A4Core04Au10M0CALSgAA19SDCProcessingStatusCtF",
+            "mangledName": "$s30Au10tixSmartDocumentCaptureKit18SDCSessionDelegatePAAE10sdcSession_9didFinish12croppedImage4withyAA0F0C_0A4Core04Au10M0CALSgAA19SDCProcessingStatusCtF",
             "moduleName": "Au10tixSmartDocumentCaptureKit",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
             "sugared_genericSig": "<Self where Self : Au10tixSmartDocumentCaptureKit.SDCSessionDelegate>",
@@ -6247,6 +6395,13 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureKit"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6823,56 +6978,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Success Logic\/SDCLogic+Implementation.swift",
       "kind": "Array",
-      "offset": 535,
+      "offset": 705,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Success Logic\/SDCLogic+Implementation.swift",
       "kind": "StringLiteral",
-      "offset": 587,
+      "offset": 757,
       "length": 35,
       "value": "\"com.au10tix.sdk.sdc-session.logic\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Success Logic\/SDCLogic+Implementation.swift",
       "kind": "Dictionary",
-      "offset": 668,
+      "offset": 838,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "StringLiteral",
-      "offset": 4954,
+      "offset": 4874,
       "length": 29,
       "value": "\"com.au10tix.sdk.sdc-session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 5838,
+      "offset": 5758,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 5973,
+      "offset": 5893,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 10545,
+      "offset": 10500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 14544,
+      "offset": 14459,
       "length": 4,
       "value": "true"
     },
@@ -6886,7 +7041,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/Helpers\/SDCRequestExecutor.swift",
       "kind": "IntegerLiteral",
-      "offset": 2836,
+      "offset": 3138,
       "length": 1,
       "value": "0"
     },

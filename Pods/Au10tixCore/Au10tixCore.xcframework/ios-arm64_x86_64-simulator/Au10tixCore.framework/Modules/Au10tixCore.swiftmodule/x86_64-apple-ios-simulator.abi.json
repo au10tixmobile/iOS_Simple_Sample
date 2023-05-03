@@ -22178,6 +22178,62 @@
               },
               {
                 "kind": "Var",
+                "name": "cameraTimeoutDuration",
+                "printedName": "cameraTimeoutDuration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14ConfigurationsV21cameraTimeoutDurationSdSgvp",
+                "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV21cameraTimeoutDurationSdSgvp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14ConfigurationsV21cameraTimeoutDurationSdSgvg",
+                    "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV21cameraTimeoutDurationSdSgvg",
+                    "moduleName": "Au10tixCore",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "isEmpty",
                 "printedName": "isEmpty",
                 "children": [
@@ -38147,29 +38203,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Helpers\/CoreLogManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 308,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Helpers\/CoreLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 337,
+      "offset": 298,
       "length": 4,
       "value": "\"BE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Helpers\/CoreLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 396,
       "length": 6,
       "value": "\"INIT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Helpers\/CoreLogManager.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 396,
       "length": 6,
       "value": "\"INIT\""
     },

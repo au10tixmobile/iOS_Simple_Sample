@@ -962,23 +962,44 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1231,
+      "offset": 1311,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1418,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1337,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1376,
+      "offset": 1502,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1598,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Helpers\/SessionManager.swift",
@@ -1025,14 +1046,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/POAScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3695,
+      "offset": 3879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/POAScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3718,
+      "offset": 3902,
       "length": 4,
       "value": "true"
     },

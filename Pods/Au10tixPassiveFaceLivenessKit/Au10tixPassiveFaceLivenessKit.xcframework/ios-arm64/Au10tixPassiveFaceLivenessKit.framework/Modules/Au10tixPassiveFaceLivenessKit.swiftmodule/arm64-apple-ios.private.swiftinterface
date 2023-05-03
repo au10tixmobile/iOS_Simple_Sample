@@ -162,6 +162,7 @@ public struct PFLLogManager {
     case introPage
     case scanner
     case imageReview
+    case helmetDetection
     public var rawValue: Swift.String {
       get
     }

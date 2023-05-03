@@ -200,6 +200,9 @@ extension Au10tixCore.Au10tix {
     public var manualCaptureDisableDuration: Foundation.TimeInterval? {
       get
     }
+    public var cameraTimeoutDuration: Foundation.TimeInterval? {
+      get
+    }
     public var isEmpty: Swift.Bool {
       get
     }

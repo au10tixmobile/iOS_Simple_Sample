@@ -95,6 +95,7 @@ public enum SDCSessionError : Swift.Error {
   case smartDocumentCheckFailed(error: Swift.Error)
   case smartDocumentCheckTimeout
   case offline
+  case unavailable
 }
 public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
@@ -103,12 +104,14 @@ public protocol SDCSessionDelegate : AnyObject {
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
   func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
 }
 extension Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
   public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
   public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, isProcessing image: Au10tixCore.Au10Image)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
 }
 public struct Au10MachineReadableCode {
   public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?
