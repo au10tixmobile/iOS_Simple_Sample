@@ -37,6 +37,18 @@ Copyright 2018
 Permission is granted to...
 
 
+## Au10tixNFCPassportKit
+
+Copyright 2018
+Permission is granted to...
+
+
+## Au10tixNFCPassportUI
+
+Copyright 2018
+Permission is granted to...
+
+
 ## Au10tixPassiveFaceLivenessKit
 
 Copyright 2018
@@ -80,6 +92,12 @@ Permission is granted to...
 
 
 ## Au10tixSourceManager
+
+Copyright 2018
+Permission is granted to...
+
+
+## Au10tixVoiceConsentUI
 
 Copyright 2018
 Permission is granted to...

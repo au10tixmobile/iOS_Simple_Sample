@@ -328,8 +328,10 @@ typedef SWIFT_ENUM(NSInteger, DataType, open) {
   DataTypePc = 13,
 /// Voice Consent Video
   DataTypeVc = 14,
+/// Video Session Video
+  DataTypeVs = 15,
 /// ID Data to compare with extracted id
-  DataTypeIdData = 15,
+  DataTypeIdData = 16,
 };
 
 #endif
@@ -670,8 +672,10 @@ typedef SWIFT_ENUM(NSInteger, DataType, open) {
   DataTypePc = 13,
 /// Voice Consent Video
   DataTypeVc = 14,
+/// Video Session Video
+  DataTypeVs = 15,
 /// ID Data to compare with extracted id
-  DataTypeIdData = 15,
+  DataTypeIdData = 16,
 };
 
 #endif

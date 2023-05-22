@@ -1964,6 +1964,48 @@
           },
           {
             "kind": "Var",
+            "name": "vs",
+            "printedName": "vs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBEKit.DataType.Type) -> Au10tixBEKit.DataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataType",
+                    "printedName": "Au10tixBEKit.DataType",
+                    "usr": "c:@M@Au10tixBEKit@E@DataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBEKit.DataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataType",
+                        "printedName": "Au10tixBEKit.DataType",
+                        "usr": "c:@M@Au10tixBEKit@E@DataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Au10tixBEKit@E@DataType@DataTypeVs",
+            "mangledName": "$s12Au10tixBEKit8DataTypeO2vsyA2CmF",
+            "moduleName": "Au10tixBEKit",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
             "name": "idData",
             "printedName": "idData",
             "children": [
@@ -2002,7 +2044,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Constructor",
@@ -3880,9 +3922,16 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1420,
-      "length": 6,
+      "offset": 1403,
+      "length": 2,
       "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1460,
+      "length": 6,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
@@ -3985,9 +4034,16 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
       "kind": "IntegerLiteral",
-      "offset": 1420,
-      "length": 6,
+      "offset": 1403,
+      "length": 2,
       "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Types\/DataType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1460,
+      "length": 6,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Network\/Reachability.swift",
@@ -4097,6 +4153,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "StringLiteral",
+      "offset": 642,
+      "length": 4,
+      "value": "\"VS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
       "offset": 369,
       "length": 9,
       "value": "\"IDVFlow\""
@@ -4166,8 +4229,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 4,
+      "value": "\"VS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBEKit\/Helpers\/Log Manager\/BELogManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7042,
+      "offset": 7542,
       "length": 4,
       "value": "true"
     },

@@ -197,6 +197,9 @@ extension Au10tixCore.Au10tix {
     public var secureMeDict: [Swift.String : Any]? {
       get
     }
+    public var supportedDocumentsData: Foundation.Data? {
+      get
+    }
     public var manualCaptureDisableDuration: Foundation.TimeInterval? {
       get
     }
@@ -283,6 +286,8 @@ public class Log : Swift.Encodable {
     case nfcClickID
     case uploadVC
     case uploadVCResponse
+    case uploadVS
+    case uploadVSResponse
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -1141,12 +1146,16 @@ public protocol CameraSession {
   func prefersAspectFillCameraPreview()
   func startVideoRecording(videoUrl url: Foundation.URL)
   func stopVideoRecording()
+  func cameraDidSuspend()
+  func cameraDidResume()
 }
 extension Au10tixCore.CameraSession {
   public func captureImage(_ source: Au10tixCore.Au10ImageSource)
   public func prefersAspectFillCameraPreview()
   public func startVideoRecording(videoUrl url: Foundation.URL)
   public func stopVideoRecording()
+  public func cameraDidSuspend()
+  public func cameraDidResume()
 }
 public typealias Au10tixSessionAuthenticator = Au10tixCore.Authenticator & Au10tixCore.BearerTokenAdvertizer & Au10tixCore.SessionDetailsAdvertizer
 public protocol Au10tixSession : Au10tixCore.Au10tixSDK {

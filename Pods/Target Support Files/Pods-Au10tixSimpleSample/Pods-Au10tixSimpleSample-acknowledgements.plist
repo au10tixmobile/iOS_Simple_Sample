@@ -92,6 +92,30 @@ Permission is granted to...
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
+			<string>Au10tixNFCPassportKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2018
+Permission is granted to...
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>Au10tixNFCPassportUI</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2018
+Permission is granted to...
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
 			<string>Au10tixPassiveFaceLivenessKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
@@ -177,6 +201,18 @@ Permission is granted to...
 			<string>Copyright</string>
 			<key>Title</key>
 			<string>Au10tixSourceManager</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2018
+Permission is granted to...
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>Au10tixVoiceConsentUI</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

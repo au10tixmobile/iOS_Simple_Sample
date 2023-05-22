@@ -1607,14 +1607,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2218,
+      "offset": 2253,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixPassiveFaceLivenessUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2255,
+      "offset": 2290,
       "length": 4,
       "value": "true"
     }

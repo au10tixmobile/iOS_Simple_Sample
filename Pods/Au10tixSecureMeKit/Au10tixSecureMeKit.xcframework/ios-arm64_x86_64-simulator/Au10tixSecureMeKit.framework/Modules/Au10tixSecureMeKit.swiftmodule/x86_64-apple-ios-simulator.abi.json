@@ -613,6 +613,59 @@
           },
           {
             "kind": "Var",
+            "name": "vs",
+            "printedName": "vs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeFlow.Type) -> (Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixSecureMeKit.SecureMeFlowConfig) -> Au10tixSecureMeKit.SecureMeFlow",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlowConfig",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlowConfig",
+                        "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeFlow",
+                        "printedName": "Au10tixSecureMeKit.SecureMeFlow",
+                        "usr": "s:18Au10tixSecureMeKit0bC4FlowO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bC4FlowO2vsyAcA0bcE6ConfigVcACmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bC4FlowO2vsyAcA0bcE6ConfigVcACmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "poa",
             "printedName": "poa",
             "children": [
@@ -2398,6 +2451,86 @@
           },
           {
             "kind": "Var",
+            "name": "vsStarted",
+            "printedName": "vsStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitUpdate",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitUpdate",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO9vsStartedyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO9vsStartedyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vsFinished",
+            "printedName": "vsFinished",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixSecureMeKit.SecureMeKitUpdate.Type) -> Au10tixSecureMeKit.SecureMeKitUpdate",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureMeKitUpdate",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                    "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecureMeKitUpdate",
+                        "printedName": "Au10tixSecureMeKit.SecureMeKitUpdate",
+                        "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18Au10tixSecureMeKit0bcD6UpdateO10vsFinishedyA2CmF",
+            "mangledName": "$s18Au10tixSecureMeKit0bcD6UpdateO10vsFinishedyA2CmF",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sdcFrontStarted",
             "printedName": "sdcFrontStarted",
             "children": [
@@ -3698,9 +3831,160 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "videoSessionText",
+            "printedName": "videoSessionText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV16videoSessionTextSSSgvp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV16videoSessionTextSSSgvp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV16videoSessionTextSSSgvg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV16videoSessionTextSSSgvg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoSessionIdSessionDuration",
+            "printedName": "videoSessionIdSessionDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV014videoSessionIdH8DurationSivp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV014videoSessionIdH8DurationSivp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV014videoSessionIdH8DurationSivg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV014videoSessionIdH8DurationSivg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoSessionVoiceSessionDuration",
+            "printedName": "videoSessionVoiceSessionDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV017videoSessionVoiceH8DurationSivp",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV017videoSessionVoiceH8DurationSivp",
+            "moduleName": "Au10tixSecureMeKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV017videoSessionVoiceH8DurationSivg",
+                "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV017videoSessionVoiceH8DurationSivg",
+                "moduleName": "Au10tixSecureMeKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(pflDetectionDelayEnabled:pflDelay:sendResults:voiceConsentText:voiceConsentSessionTime:)",
+            "printedName": "init(pflDetectionDelayEnabled:pflDelay:sendResults:voiceConsentText:voiceConsentSessionTime:videoSessionText:videoSessionIdSessionDuration:videoSessionVoiceSessionDuration:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3750,11 +4034,40 @@
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSbSSSgSitcfc",
-            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTimeACSb_SdSbSSSgSitcfc",
+            "usr": "s:18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTime05videopO00rp2IdP8Duration0rp5VoicepT0ACSb_SdSbSSSgSiALS2itcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC14FeaturesConfigV24pflDetectionDelayEnabled0gI011sendResults16voiceConsentText0mN11SessionTime05videopO00rp2IdP8Duration0rp5VoicepT0ACSb_SdSbSSSgSiALS2itcfc",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "AccessControl",
@@ -3925,30 +4238,37 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 756,
+      "offset": 726,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1141,
+      "offset": 1152,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1337,
+      "offset": 1348,
       "length": 22,
       "value": "\"SecureMe.Terms.Title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1432,
       "length": 25,
       "value": "\"SecureMe.Terms.SubTitle\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 29,
+      "value": "\"Au10tixSecureMeKit.SecureMeConsentViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Extensions\/StringExtension.swift",
@@ -3967,9 +4287,16 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/SecureMeDeclarationIntroViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2539,
+      "offset": 2364,
       "length": 46,
       "value": "\"SecureMe.Declaration.Intro.Retry.Description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/View Model\/SecureMeConsentViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 269,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/View Model\/SecureMeConsentViewModel.swift",
@@ -3977,6 +4304,13 @@
       "offset": 299,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/View Model\/SecureMeConsentViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/Frameworks\/MarkdownView\/MarkdownView.swift",
@@ -4093,42 +4427,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 505,
+      "offset": 521,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 689,
+      "offset": 705,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 799,
+      "offset": 830,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1006,
+      "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "StringLiteral",
-      "offset": 1137,
+      "offset": 1184,
       "length": 23,
       "value": "\"au10tix_forwardButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Intro\/CustomViews\/SingleSelectionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1234,
+      "offset": 1376,
       "length": 5,
       "value": "false"
     },
@@ -4169,36 +4503,43 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
       "kind": "FloatLiteral",
-      "offset": 564,
+      "offset": 676,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
       "kind": "FloatLiteral",
-      "offset": 617,
+      "offset": 729,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 654,
+      "offset": 766,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 776,
+      "offset": 888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/TermsAndSignature\/Custom Views\/TermsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1529,
+      "offset": 1641,
       "length": 5,
       "value": "false"
     },
@@ -4275,56 +4616,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1240,
+      "offset": 1255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "StringLiteral",
-      "offset": 1272,
+      "offset": 1287,
       "length": 16,
       "value": "\"au10tix_search\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1518,
+      "offset": 1628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1602,
+      "offset": 1723,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1805,
+      "offset": 1926,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5153,
+      "offset": 5274,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5153,
+      "offset": 5274,
       "length": 3,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionListView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5153,
+      "offset": 5274,
       "length": 3,
       "value": "1"
     },
@@ -4338,14 +4679,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 589,
+      "offset": 604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 625,
+      "offset": 640,
       "length": 1,
       "value": "2"
     },
@@ -4359,14 +4700,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 538,
+      "offset": 529,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/Declaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 574,
+      "offset": 565,
       "length": 1,
       "value": "2"
     },
@@ -4429,30 +4770,44 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1660,
+      "offset": 2042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1708,
+      "offset": 2090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1747,
+      "offset": 2129,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1849,
+      "offset": 2231,
       "length": 2,
       "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2337,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFeaturesConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2396,
+      "length": 1,
+      "value": "5"
     }
   ]
 }

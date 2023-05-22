@@ -1,0 +1,11 @@
+framework module Au10tixNFCPassportKit {
+  umbrella header "Au10tixNFCPassportKit.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixNFCPassportKit.Swift {
+  header "Au10tixNFCPassportKit-Swift.h"
+  requires objc
+}

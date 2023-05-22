@@ -1,0 +1,11 @@
+framework module Au10tixVoiceConsentUI {
+  umbrella header "Au10tixVoiceConsentUI.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixVoiceConsentUI.Swift {
+  header "Au10tixVoiceConsentUI-Swift.h"
+  requires objc
+}

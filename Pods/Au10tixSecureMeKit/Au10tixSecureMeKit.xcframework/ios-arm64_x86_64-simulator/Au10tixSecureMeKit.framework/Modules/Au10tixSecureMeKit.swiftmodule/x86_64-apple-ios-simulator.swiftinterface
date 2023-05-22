@@ -27,6 +27,7 @@ public enum SecureMeFlow {
   case sdcBack(_: Au10tixSecureMeKit.SecureMeFlowConfig)
   case pfl(_: Au10tixSecureMeKit.SecureMeFlowConfig)
   case vc(_: Au10tixSecureMeKit.SecureMeFlowConfig)
+  case vs(_: Au10tixSecureMeKit.SecureMeFlowConfig)
   case poa(_: Au10tixSecureMeKit.SecureMeFlowConfig)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class MarkdownView : UIKit.UIView {
@@ -66,6 +67,8 @@ public enum SecureMeKitError : Swift.Error {
 public enum SecureMeKitUpdate {
   case vcStarted
   case vcFinished
+  case vsStarted
+  case vsFinished
   case sdcFrontStarted
   case sdcFrontFinished
   case sdcBackStarted
@@ -104,7 +107,10 @@ public struct SecureMeFeaturesConfig {
   public let sendResults: Swift.Bool
   public let voiceConsentText: Swift.String?
   public let voiceConsentSessionTime: Swift.Int
-  public init(pflDetectionDelayEnabled: Swift.Bool = false, pflDelay: Foundation.TimeInterval = 0, sendResults: Swift.Bool = true, voiceConsentText: Swift.String? = nil, voiceConsentSessionTime: Swift.Int = 20)
+  public let videoSessionText: Swift.String?
+  public let videoSessionIdSessionDuration: Swift.Int
+  public let videoSessionVoiceSessionDuration: Swift.Int
+  public init(pflDetectionDelayEnabled: Swift.Bool = false, pflDelay: Foundation.TimeInterval = 0, sendResults: Swift.Bool = true, voiceConsentText: Swift.String? = nil, voiceConsentSessionTime: Swift.Int = 20, videoSessionText: Swift.String? = nil, videoSessionIdSessionDuration: Swift.Int = 5, videoSessionVoiceSessionDuration: Swift.Int = 5)
 }
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Equatable {}
 extension Au10tixSecureMeKit.SecureMeKitUpdate : Swift.Hashable {}
