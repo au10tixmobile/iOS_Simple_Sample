@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		pyLJu93s8+jAm0x3mtv3zOHGv8M=
+		MXWPxu6TbSIQzbxFLY9/d1r28Qs=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xKKtl/R/P9GitHyGfZdM77+CP6I=
+		F2FLqLMqANiQ+SQ9n3AyrdCZKkM=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qbpyUhIaope4F19c2bG6vrd3hg8=
+		SR0EGfa9C03om4nSEB/TBCz9FSc=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		14zeDac+hjo79kPP2s0yT+H46J8=
+		uWUTR4V+yRS4UUKEOPpcVhWEUNo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		14zeDac+hjo79kPP2s0yT+H46J8=
+		uWUTR4V+yRS4UUKEOPpcVhWEUNo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HAbkAmLh7r/G+rRFM5Z2rKnVkh0=
+		8ITQ8S6OkoCayrnj0N/oLJiddmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fP8vKgApCVjF7YAjoU7FjHV9fNKvpF3oKd/2Vn7uduQ=
+			RmaDb4xCv7BWvRHYsFFMWG4NOEOSznTnbAjUaBeYgtc=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
@@ -84,14 +84,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CF4qldTB2k71MU/R07oPHwpeAlxnADqgxXog3+rFDzA=
+			t0hrVSSS9sF/3DuoCkGPODPadnEqHK8qeeVMyfGp4Mo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dc9VISJegsSMXPeEvk1ax6ipmLoQCglLbcQAUTOND1A=
+			oLWFMQs875pxr+rP8IV8OttAQrzewKOTUbfPLmLiwyU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -105,14 +105,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dc9VISJegsSMXPeEvk1ax6ipmLoQCglLbcQAUTOND1A=
+			oLWFMQs875pxr+rP8IV8OttAQrzewKOTUbfPLmLiwyU=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HhnfX9L1DRn3Jm5tWZ3xCNi3viRhyYDZ07qTg3xYBU=
+			WBx320kEsHZOb1DlUPq1gv5B1aOHKsqJ6nQStdqm3Ws=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2511F53B2A1BCFE5004BEE6D /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */; };
 		25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5928B7897900CC6F01 /* POAUILocalizable.strings */; };
 		25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		200C10C9ACBD71262EB1237E /* Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Au10Tix_Demo-Au10Tix_DemoUITests/Pods-Au10Tix_Demo-Au10Tix_DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenSSL.xcframework; sourceTree = "<group>"; };
 		25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SecureMeLocalizable.strings; sourceTree = "<group>"; };
 		25748C5928B7897900CC6F01 /* POAUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = POAUILocalizable.strings; sourceTree = "<group>"; };
 		25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PFLUILocalizable.strings; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2511F53B2A1BCFE5004BEE6D /* OpenSSL.xcframework in Frameworks */,
 				A9C4AF1223F8DBDB3D8F4900 /* Pods_Au10tixSimpleSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +174,7 @@
 		9CA6D958253749FC00E48DDD /* Au10tixSimpleSample */ = {
 			isa = PBXGroup;
 			children = (
+				2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */,
 				9CC2B69225712107006522D1 /* POAViewController */,
 				9CA1E3792562A334007DEBBC /* ResultViewController */,
 				9C77473E25599DAB00D50830 /* MainViewController */,

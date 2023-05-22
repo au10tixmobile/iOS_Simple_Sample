@@ -62,6 +62,7 @@ public enum Au10tixBEKitError : Swift.Error {
   case nfcDG7
   case pc
   case vc
+  case vs
   case idData
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [Au10tixBEKit.DataType]

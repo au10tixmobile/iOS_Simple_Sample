@@ -7195,6 +7195,80 @@
                 "moduleName": "Au10tixCore"
               },
               {
+                "kind": "Var",
+                "name": "uploadVS",
+                "printedName": "uploadVS",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO8uploadVSyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO8uploadVSyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
+                "kind": "Var",
+                "name": "uploadVSResponse",
+                "printedName": "uploadVSResponse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixCore.Log.Action.Type) -> Au10tixCore.Log.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "Au10tixCore.Log.Action",
+                        "usr": "s:11Au10tixCore3LogC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixCore.Log.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "Au10tixCore.Log.Action",
+                            "usr": "s:11Au10tixCore3LogC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:11Au10tixCore3LogC6ActionO16uploadVSResponseyA2EmF",
+                "mangledName": "$s11Au10tixCore3LogC6ActionO16uploadVSResponseyA2EmF",
+                "moduleName": "Au10tixCore"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -22122,6 +22196,67 @@
               },
               {
                 "kind": "Var",
+                "name": "supportedDocumentsData",
+                "printedName": "supportedDocumentsData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11Au10tixCore0A0C14ConfigurationsV22supportedDocumentsData10Foundation0F0VSgvp",
+                "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV22supportedDocumentsData10Foundation0F0VSgvp",
+                "moduleName": "Au10tixCore",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "SetterAccess",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11Au10tixCore0A0C14ConfigurationsV22supportedDocumentsData10Foundation0F0VSgvg",
+                    "mangledName": "$s11Au10tixCore0A0C14ConfigurationsV22supportedDocumentsData10Foundation0F0VSgvg",
+                    "moduleName": "Au10tixCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "manualCaptureDisableDuration",
                 "printedName": "manualCaptureDisableDuration",
                 "children": [
@@ -34240,6 +34375,48 @@
           },
           {
             "kind": "Function",
+            "name": "cameraDidSuspend",
+            "printedName": "cameraDidSuspend()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionP16cameraDidSuspendyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionP16cameraDidSuspendyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cameraDidResume",
+            "printedName": "cameraDidResume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionP15cameraDidResumeyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionP15cameraDidResumeyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "captureImage",
             "printedName": "captureImage(_:)",
             "children": [
@@ -34333,6 +34510,52 @@
             "declKind": "Func",
             "usr": "s:11Au10tixCore13CameraSessionPAAE18stopVideoRecordingyyF",
             "mangledName": "$s11Au10tixCore13CameraSessionPAAE18stopVideoRecordingyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cameraDidSuspend",
+            "printedName": "cameraDidSuspend()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionPAAE16cameraDidSuspendyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionPAAE16cameraDidSuspendyyF",
+            "moduleName": "Au10tixCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
+            "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cameraDidResume",
+            "printedName": "cameraDidResume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Au10tixCore13CameraSessionPAAE15cameraDidResumeyyF",
+            "mangledName": "$s11Au10tixCore13CameraSessionPAAE15cameraDidResumeyyF",
             "moduleName": "Au10tixCore",
             "genericSig": "<τ_0_0 where τ_0_0 : Au10tixCore.CameraSession>",
             "sugared_genericSig": "<Self where Self : Au10tixCore.CameraSession>",
@@ -38631,6 +38854,20 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
       "kind": "StringLiteral",
+      "offset": 3846,
+      "length": 10,
+      "value": "\"UploadVS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
+      "length": 18,
+      "value": "\"UploadVSResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
       "offset": 1213,
       "length": 12,
       "value": "\"PageLoaded\""
@@ -39033,6 +39270,20 @@
       "offset": 3803,
       "length": 18,
       "value": "\"UploadVCResponse\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3846,
+      "length": 10,
+      "value": "\"UploadVS\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Logger\/Models\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
+      "length": 18,
+      "value": "\"UploadVSResponse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixCore\/Network Manager\/MultipartDataBuilder.swift",

@@ -182,6 +182,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixDetectorManager/Au10tixDetectorManager.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessKit/Au10tixLivenessKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessUI/Au10tixLivenessUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixNFCPassportKit/Au10tixNFCPassportKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixNFCPassportUI/Au10tixNFCPassportUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessKit/Au10tixPassiveFaceLivenessKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessUI/Au10tixPassiveFaceLivenessUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixProofOfAddressKit/Au10tixProofOfAddressKit.framework"
@@ -190,6 +192,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSmartDocumentCaptureKit/Au10tixSmartDocumentCaptureKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSmartDocumentCaptureUI/Au10tixSmartDocumentCaptureUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSourceManager/Au10tixSourceManager.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixVoiceConsentUI/Au10tixVoiceConsentUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixBEKit/Au10tixBEKit.framework"
@@ -198,6 +201,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixDetectorManager/Au10tixDetectorManager.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessKit/Au10tixLivenessKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessUI/Au10tixLivenessUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixNFCPassportKit/Au10tixNFCPassportKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixNFCPassportUI/Au10tixNFCPassportUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessKit/Au10tixPassiveFaceLivenessKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessUI/Au10tixPassiveFaceLivenessUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixProofOfAddressKit/Au10tixProofOfAddressKit.framework"
@@ -206,6 +211,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSmartDocumentCaptureKit/Au10tixSmartDocumentCaptureKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSmartDocumentCaptureUI/Au10tixSmartDocumentCaptureUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSourceManager/Au10tixSourceManager.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixVoiceConsentUI/Au10tixVoiceConsentUI.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

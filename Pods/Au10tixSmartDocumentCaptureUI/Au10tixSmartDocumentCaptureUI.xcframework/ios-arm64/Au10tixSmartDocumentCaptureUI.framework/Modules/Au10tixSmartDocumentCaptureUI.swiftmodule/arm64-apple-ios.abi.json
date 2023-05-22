@@ -1124,6 +1124,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Models\/Feedback.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4453,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Models\/Feedback.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5606,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Extensions\/UIExtensions\/SDCRoutingViewControllerExtension.swift",
       "kind": "BooleanLiteral",
       "offset": 450,
