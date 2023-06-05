@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		+EpGwAyr2ajN4aE0eHExr1q1EIY=
+		eWrDWiNWwUz76Xyaa0jzoSpNo/Q=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		F2FLqLMqANiQ+SQ9n3AyrdCZKkM=
+		pB1kOqjRj/kXq5aiO5qNVhkRRls=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		SR0EGfa9C03om4nSEB/TBCz9FSc=
+		Hr1x4YOjR04CVoIgWUjZFCOVgCg=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		uWUTR4V+yRS4UUKEOPpcVhWEUNo=
+		sExgoeWGQs4XW980t/ljNBXkm4c=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		uWUTR4V+yRS4UUKEOPpcVhWEUNo=
+		sExgoeWGQs4XW980t/ljNBXkm4c=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8ITQ8S6OkoCayrnj0N/oLJiddmM=
+		YT96TnrYD6ksgxOzqyMqJhrHoTA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mVdxDoFPyizEO8Xxvgp7jwcwwyVkwO3vlnlhZT3Q23A=
+			RRv67Wz7ahjSbQw201pXT1MXNp7yWSdS7sa4CZbXWjA=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
@@ -84,14 +84,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t0hrVSSS9sF/3DuoCkGPODPadnEqHK8qeeVMyfGp4Mo=
+			NqOoy/j6Q2zLWf1Jt7AOaR6ipnrW4gceZuImC2zEY34=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oLWFMQs875pxr+rP8IV8OttAQrzewKOTUbfPLmLiwyU=
+			VoSkwwLzrrcE4fq80nOrDqXEAGp30Zqx+j6BIMj3kHQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -105,14 +105,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oLWFMQs875pxr+rP8IV8OttAQrzewKOTUbfPLmLiwyU=
+			VoSkwwLzrrcE4fq80nOrDqXEAGp30Zqx+j6BIMj3kHQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WBx320kEsHZOb1DlUPq1gv5B1aOHKsqJ6nQStdqm3Ws=
+			b5LAqNu7hOULpTE+56Bs07oQfj74fBAZmjjSljFJ9/M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -329,6 +329,15 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
 
 
 
+SWIFT_CLASS("_TtC13Au10tixBaseUI16SpacePreviewView")
+@interface SpacePreviewView : BaseUIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 
 
 @class Au10xUIComponentConfigs;

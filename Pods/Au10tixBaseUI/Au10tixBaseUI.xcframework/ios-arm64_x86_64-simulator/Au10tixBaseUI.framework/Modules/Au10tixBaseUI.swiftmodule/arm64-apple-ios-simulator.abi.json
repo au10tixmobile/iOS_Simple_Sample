@@ -299,6 +299,143 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SpacePreviewView",
+        "printedName": "SpacePreviewView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpacePreviewView",
+                "printedName": "Au10tixBaseUI.SpacePreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI16SpacePreviewViewC6heightAC14CoreFoundation7CGFloatV_tcfc",
+            "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewC6heightAC12CoreGraphics7CGFloatV_tcfc",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpacePreviewView",
+                "printedName": "Au10tixBaseUI.SpacePreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView(im)init",
+            "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewCACycfc",
+            "moduleName": "Au10tixBaseUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView",
+        "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewC",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Au10tixBaseUI@objc(cs)BaseUIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Au10tixBaseUI.BaseUIView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -19412,6 +19549,241 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "infoColor",
+            "printedName": "infoColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE9infoColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE9infoColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE9infoColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE9infoColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE15backgroundColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15backgroundColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE15backgroundColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15backgroundColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "primaryColor",
+            "printedName": "primaryColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE12primaryColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE12primaryColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE12primaryColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE12primaryColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleColor",
+            "printedName": "titleColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE10titleColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE10titleColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE10titleColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE10titleColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonTextColor",
+            "printedName": "buttonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE15buttonTextColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15buttonTextColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE15buttonTextColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15buttonTextColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -21176,14 +21548,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/SpacePreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 181,
+      "offset": 188,
       "length": 16,
       "value": "\"Au10tixBaseUI.SpacePreviewView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/SpacePreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 181,
+      "offset": 188,
       "length": 16,
       "value": "\"Au10tixBaseUI.SpacePreviewView\""
     },

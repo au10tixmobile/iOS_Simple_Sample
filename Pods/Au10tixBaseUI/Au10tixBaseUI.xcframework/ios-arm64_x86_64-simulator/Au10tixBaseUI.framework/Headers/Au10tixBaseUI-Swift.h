@@ -329,6 +329,15 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
 
 
 
+SWIFT_CLASS("_TtC13Au10tixBaseUI16SpacePreviewView")
+@interface SpacePreviewView : BaseUIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 
 
 @class Au10xUIComponentConfigs;
@@ -731,6 +740,15 @@ SWIFT_CLASS("_TtC13Au10tixBaseUI11ImagePicker")
 @interface ImagePicker (SWIFT_EXTENSION(Au10tixBaseUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+
+
+SWIFT_CLASS("_TtC13Au10tixBaseUI16SpacePreviewView")
+@interface SpacePreviewView : BaseUIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

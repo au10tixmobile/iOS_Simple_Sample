@@ -26,6 +26,10 @@ public class BulletsAlert : Au10tixBaseUI.Alert {
   public init(body: Au10tixBaseUI.BulletBody? = nil, actions: [Au10tixBaseUI.AlertAction] = [])
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SpacePreviewView : Au10tixBaseUI.BaseUIView {
+  @_Concurrency.MainActor(unsafe) public init(height: CoreFoundation.CGFloat)
+  @objc deinit
+}
 public struct ToastViewDatasource {
   public init(text: Swift.String, font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, cornersRadius: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = .black)
 }
@@ -139,6 +143,23 @@ extension Au10tixBaseUI.UIThemeColor {
     get
   }
   public static var buttonTextColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+}
+extension UIKit.UIColor {
+  public static var infoColor: UIKit.UIColor {
+    get
+  }
+  public static var backgroundColor: UIKit.UIColor {
+    get
+  }
+  public static var primaryColor: UIKit.UIColor {
+    get
+  }
+  public static var titleColor: UIKit.UIColor {
+    get
+  }
+  public static var buttonTextColor: UIKit.UIColor {
     get
   }
 }
