@@ -22,262 +22,55 @@
         "moduleName": "Au10tixSmartDocumentCaptureUI"
       },
       {
-        "kind": "TypeDecl",
-        "name": "Route",
-        "printedName": "Route",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "none",
-            "printedName": "none",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSmartDocumentCaptureUI.Route.Type) -> Au10tixSmartDocumentCaptureUI.Route",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Route",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                    "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Route",
-                        "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO4noneyA2CmF",
-            "mangledName": "$s29Au10tixSmartDocumentCaptureUI5RouteO4noneyA2CmF",
-            "moduleName": "Au10tixSmartDocumentCaptureUI"
-          },
-          {
-            "kind": "Var",
-            "name": "sdcFlowIntro",
-            "printedName": "sdcFlowIntro",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSmartDocumentCaptureUI.Route.Type) -> Au10tixSmartDocumentCaptureUI.Route",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Route",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                    "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Route",
-                        "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO12sdcFlowIntroyA2CmF",
-            "mangledName": "$s29Au10tixSmartDocumentCaptureUI5RouteO12sdcFlowIntroyA2CmF",
-            "moduleName": "Au10tixSmartDocumentCaptureUI"
-          },
-          {
-            "kind": "Var",
-            "name": "sdcScanner",
-            "printedName": "sdcScanner",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSmartDocumentCaptureUI.Route.Type) -> Au10tixSmartDocumentCaptureUI.Route",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Route",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                    "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Route",
-                        "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO10sdcScanneryA2CmF",
-            "mangledName": "$s29Au10tixSmartDocumentCaptureUI5RouteO10sdcScanneryA2CmF",
-            "moduleName": "Au10tixSmartDocumentCaptureUI"
-          },
-          {
-            "kind": "Var",
-            "name": "cameraIssue",
-            "printedName": "cameraIssue",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Au10tixSmartDocumentCaptureUI.Route.Type) -> (Au10tixBaseUI.CameraIssueViewControllerDelegate?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ImageType, Swift.String?, Swift.String?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ActionType) -> Au10tixSmartDocumentCaptureUI.Route",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Au10tixBaseUI.CameraIssueViewControllerDelegate?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ImageType, Swift.String?, Swift.String?, Swift.String?, Au10tixBaseUI.CameraIssueViewController.ActionType) -> Au10tixSmartDocumentCaptureUI.Route",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Route",
-                        "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(delegate: Au10tixBaseUI.CameraIssueViewControllerDelegate?, title: Swift.String?, imageType: Au10tixBaseUI.CameraIssueViewController.ImageType, description: Swift.String?, firstButtonTitle: Swift.String?, secondButtonTitle: Swift.String?, firstActionType: Au10tixBaseUI.CameraIssueViewController.ActionType)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Au10tixBaseUI.CameraIssueViewControllerDelegate?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "CameraIssueViewControllerDelegate",
-                                "printedName": "Au10tixBaseUI.CameraIssueViewControllerDelegate",
-                                "usr": "s:13Au10tixBaseUI33CameraIssueViewControllerDelegateP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ImageType",
-                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ImageType",
-                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC9ImageTypeO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ActionType",
-                            "printedName": "Au10tixBaseUI.CameraIssueViewController.ActionType",
-                            "usr": "s:13Au10tixBaseUI25CameraIssueViewControllerC10ActionTypeO"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Au10tixSmartDocumentCaptureUI.Route.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Route",
-                        "printedName": "Au10tixSmartDocumentCaptureUI.Route",
-                        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO11cameraIssueyAC0a4BaseE006CameraH22ViewControllerDelegate_pSg_SSSgAE0jhkL0C9ImageTypeOA3hJ06ActionO0OtcACmF",
-            "mangledName": "$s29Au10tixSmartDocumentCaptureUI5RouteO11cameraIssueyAC0a4BaseE006CameraH22ViewControllerDelegate_pSg_SSSgAE0jhkL0C9ImageTypeOA3hJ06ActionO0OtcACmF",
-            "moduleName": "Au10tixSmartDocumentCaptureUI"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:29Au10tixSmartDocumentCaptureUI5RouteO",
-        "mangledName": "$s29Au10tixSmartDocumentCaptureUI5RouteO",
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "Au10tixSmartDocumentCaptureUI",
         "declAttributes": [
-          "AccessControl"
+          "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
       },
       {
         "kind": "Import",
@@ -839,11 +632,35 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -888,6 +705,40 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -898,6 +749,13 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixCore",
+        "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
         "name": "Au10tixBaseUI",
         "printedName": "Au10tixBaseUI",
         "declKind": "Import",
@@ -946,6 +804,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
         "name": "Au10tixCore",
         "printedName": "Au10tixCore",
         "declKind": "Import",
@@ -955,6 +830,67 @@
         "kind": "Import",
         "name": "Au10tixSmartDocumentCaptureKit",
         "printedName": "Au10tixSmartDocumentCaptureKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
         "declKind": "Import",
         "moduleName": "Au10tixSmartDocumentCaptureUI"
       },
@@ -1032,8 +968,76 @@
       },
       {
         "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Au10tixCore",
         "printedName": "Au10tixCore",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
         "declKind": "Import",
         "moduleName": "Au10tixSmartDocumentCaptureUI"
       },
@@ -1118,11 +1122,77 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Au10tixBaseUI",
+        "printedName": "Au10tixBaseUI",
+        "declKind": "Import",
+        "moduleName": "Au10tixSmartDocumentCaptureUI"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 598,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 634,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/FECSelectionViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 724,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/ViewModel\/FECSelectionViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Models\/Feedback.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4433,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Models\/Feedback.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5409,
+      "length": 5,
+      "value": "false"
+    },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Extensions\/UIExtensions\/SDCRoutingViewControllerExtension.swift",
       "kind": "BooleanLiteral",
@@ -1147,63 +1217,259 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Extensions\/StringExtension.swift",
       "kind": "Dictionary",
-      "offset": 975,
+      "offset": 1173,
       "length": 4273,
       "value": "[(\"AFG\", \"AF\"), (\"ALA\", \"AX\"), (\"ALB\", \"AL\"), (\"DZA\", \"DZ\"), (\"ASM\", \"AS\"), (\"AND\", \"AD\"), (\"AGO\", \"AO\"), (\"AIA\", \"AI\"), (\"ATA\", \"AQ\"), (\"ATG\", \"AG\"), (\"ARG\", \"AR\"), (\"ARM\", \"AM\"), (\"ABW\", \"AW\"), (\"AUS\", \"AU\"), (\"AUT\", \"AT\"), (\"AZE\", \"AZ\"), (\"BHS\", \"BS\"), (\"BHR\", \"BH\"), (\"BGD\", \"BD\"), (\"BRB\", \"BB\"), (\"BLR\", \"BY\"), (\"BEL\", \"BE\"), (\"BLZ\", \"BZ\"), (\"BEN\", \"BJ\"), (\"BMU\", \"BM\"), (\"BTN\", \"BT\"), (\"BOL\", \"BO\"), (\"BES\", \"BQ\"), (\"BIH\", \"BA\"), (\"BWA\", \"BW\"), (\"BVT\", \"BV\"), (\"BRA\", \"BR\"), (\"VGB\", \"VG\"), (\"IOT\", \"IO\"), (\"BRN\", \"BN\"), (\"BGR\", \"BG\"), (\"BFA\", \"BF\"), (\"BDI\", \"BI\"), (\"KHM\", \"KH\"), (\"CMR\", \"CM\"), (\"CAN\", \"CA\"), (\"CPV\", \"CV\"), (\"CYM\", \"KY\"), (\"CAF\", \"CF\"), (\"TCD\", \"TD\"), (\"CHL\", \"CL\"), (\"CHN\", \"CN\"), (\"HKG\", \"HK\"), (\"MAC\", \"MO\"), (\"CXR\", \"CX\"), (\"CCK\", \"CC\"), (\"COL\", \"CO\"), (\"COM\", \"KM\"), (\"COG\", \"CG\"), (\"COD\", \"CD\"), (\"COK\", \"CK\"), (\"CRI\", \"CR\"), (\"CIV\", \"CI\"), (\"HRV\", \"HR\"), (\"CUB\", \"CU\"), (\"CUW\", \"CW\"), (\"CYP\", \"CY\"), (\"CZE\", \"CZ\"), (\"DNK\", \"DK\"), (\"DJI\", \"DJ\"), (\"DMA\", \"DM\"), (\"DOM\", \"DO\"), (\"ECU\", \"EC\"), (\"EGY\", \"EG\"), (\"SLV\", \"SV\"), (\"GNQ\", \"GQ\"), (\"ERI\", \"ER\"), (\"EST\", \"EE\"), (\"ETH\", \"ET\"), (\"FLK\", \"FK\"), (\"FRO\", \"FO\"), (\"FJI\", \"FJ\"), (\"FIN\", \"FI\"), (\"FRA\", \"FR\"), (\"GUF\", \"GF\"), (\"PYF\", \"PF\"), (\"ATF\", \"TF\"), (\"GAB\", \"GA\"), (\"GMB\", \"GM\"), (\"GEO\", \"GE\"), (\"DEU\", \"DE\"), (\"GHA\", \"GH\"), (\"GIB\", \"GI\"), (\"GRC\", \"GR\"), (\"GRL\", \"GL\"), (\"GRD\", \"GD\"), (\"GLP\", \"GP\"), (\"GUM\", \"GU\"), (\"GTM\", \"GT\"), (\"GGY\", \"GG\"), (\"GIN\", \"GN\"), (\"GNB\", \"GW\"), (\"GUY\", \"GY\"), (\"HTI\", \"HT\"), (\"HMD\", \"HM\"), (\"VAT\", \"VA\"), (\"HND\", \"HN\"), (\"HUN\", \"HU\"), (\"ISL\", \"IS\"), (\"IND\", \"IN\"), (\"IDN\", \"ID\"), (\"IRN\", \"IR\"), (\"IRQ\", \"IQ\"), (\"IRL\", \"IE\"), (\"IMN\", \"IM\"), (\"ISR\", \"IL\"), (\"ITA\", \"IT\"), (\"JAM\", \"JM\"), (\"JPN\", \"JP\"), (\"JEY\", \"JE\"), (\"JOR\", \"JO\"), (\"KAZ\", \"KZ\"), (\"KEN\", \"KE\"), (\"KIR\", \"KI\"), (\"PRK\", \"KP\"), (\"KOR\", \"KR\"), (\"KWT\", \"KW\"), (\"KGZ\", \"KG\"), (\"LAO\", \"LA\"), (\"LVA\", \"LV\"), (\"LBN\", \"LB\"), (\"LSO\", \"LS\"), (\"LBR\", \"LR\"), (\"LBY\", \"LY\"), (\"LIE\", \"LI\"), (\"LTU\", \"LT\"), (\"LUX\", \"LU\"), (\"MKD\", \"MK\"), (\"MDG\", \"MG\"), (\"MWI\", \"MW\"), (\"MYS\", \"MY\"), (\"MDV\", \"MV\"), (\"MLI\", \"ML\"), (\"MLT\", \"MT\"), (\"MHL\", \"MH\"), (\"MTQ\", \"MQ\"), (\"MRT\", \"MR\"), (\"MUS\", \"MU\"), (\"MYT\", \"YT\"), (\"MEX\", \"MX\"), (\"FSM\", \"FM\"), (\"MDA\", \"MD\"), (\"MCO\", \"MC\"), (\"MNG\", \"MN\"), (\"MNE\", \"ME\"), (\"MSR\", \"MS\"), (\"MAR\", \"MA\"), (\"MOZ\", \"MZ\"), (\"MMR\", \"MM\"), (\"NAM\", \"NA\"), (\"NRU\", \"NR\"), (\"NPL\", \"NP\"), (\"NLD\", \"NL\"), (\"ANT\", \"AN\"), (\"NCL\", \"NC\"), (\"NZL\", \"NZ\"), (\"NIC\", \"NI\"), (\"NER\", \"NE\"), (\"NGA\", \"NG\"), (\"NIU\", \"NU\"), (\"NFK\", \"NF\"), (\"MNP\", \"MP\"), (\"NOR\", \"NO\"), (\"OMN\", \"OM\"), (\"PAK\", \"PK\"), (\"PLW\", \"PW\"), (\"PSE\", \"PS\"), (\"PAN\", \"PA\"), (\"PNG\", \"PG\"), (\"PRY\", \"PY\"), (\"PER\", \"PE\"), (\"PHL\", \"PH\"), (\"PCN\", \"PN\"), (\"POL\", \"PL\"), (\"PRT\", \"PT\"), (\"PRI\", \"PR\"), (\"QAT\", \"QA\"), (\"REU\", \"RE\"), (\"ROU\", \"RO\"), (\"RUS\", \"RU\"), (\"RWA\", \"RW\"), (\"BLM\", \"BL\"), (\"SHN\", \"SH\"), (\"KNA\", \"KN\"), (\"LCA\", \"LC\"), (\"MAF\", \"MF\"), (\"SPM\", \"PM\"), (\"VCT\", \"VC\"), (\"WSM\", \"WS\"), (\"SMR\", \"SM\"), (\"STP\", \"ST\"), (\"SAU\", \"SA\"), (\"SEN\", \"SN\"), (\"SRB\", \"RS\"), (\"SYC\", \"SC\"), (\"SLE\", \"SL\"), (\"SGP\", \"SG\"), (\"SXM\", \"SX\"), (\"SVK\", \"SK\"), (\"SVN\", \"SI\"), (\"SLB\", \"SB\"), (\"SOM\", \"SO\"), (\"ZAF\", \"ZA\"), (\"SGS\", \"GS\"), (\"SSD\", \"SS\"), (\"ESP\", \"ES\"), (\"LKA\", \"LK\"), (\"SDN\", \"SD\"), (\"SUR\", \"SR\"), (\"SJM\", \"SJ\"), (\"SWZ\", \"SZ\"), (\"SWE\", \"SE\"), (\"CHE\", \"CH\"), (\"SYR\", \"SY\"), (\"TWN\", \"TW\"), (\"TJK\", \"TJ\"), (\"TZA\", \"TZ\"), (\"THA\", \"TH\"), (\"TLS\", \"TL\"), (\"TGO\", \"TG\"), (\"TKL\", \"TK\"), (\"TON\", \"TO\"), (\"TTO\", \"TT\"), (\"TUN\", \"TN\"), (\"TUR\", \"TR\"), (\"TKM\", \"TM\"), (\"TCA\", \"TC\"), (\"TUV\", \"TV\"), (\"UGA\", \"UG\"), (\"UKR\", \"UA\"), (\"ARE\", \"AE\"), (\"GBR\", \"GB\"), (\"USA\", \"US\"), (\"UMI\", \"UM\"), (\"URY\", \"UY\"), (\"UZB\", \"UZ\"), (\"VUT\", \"VU\"), (\"VEN\", \"VE\"), (\"VNM\", \"VN\"), (\"VIR\", \"VI\"), (\"WLF\", \"WF\"), (\"ESH\", \"EH\"), (\"YEM\", \"YE\"), (\"ZMB\", \"ZM\"), (\"ZWE\", \"ZW\"), (\"XKX\", \"XK\")]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 398,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 38,
+      "value": "\"FEC.Acceptable.SupportedDocumentType\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 542,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 23,
+      "value": "\"au10tix_doc_checkmark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 818,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 786,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1095,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1346,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "StringLiteral",
+      "offset": 1378,
+      "length": 16,
+      "value": "\"au10tix_search\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1700,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1778,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1981,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5883,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5883,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionListView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5883,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 414,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 523,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Selection\/CustomViews\/SelectionItemTableHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 559,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/ViewModel\/FECDeclarationIntroViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1114,
+      "length": 35,
+      "value": "\"FEC.Declaration.Intro.Description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 406,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 515,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 699,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 807,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1013,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "StringLiteral",
+      "offset": 1144,
+      "length": 23,
+      "value": "\"au10tix_forwardButton\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SingleSelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1317,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 687,
+      "offset": 804,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 627,
+      "offset": 744,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2519,
+      "offset": 2607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2568,
+      "offset": 2656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2651,
+      "offset": 2739,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2707,
+      "offset": 2795,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2839,
+      "offset": 2927,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/View Model\/SDCScannerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2885,
+      "offset": 2973,
       "length": 1,
       "value": "0"
     },
@@ -1224,37 +1490,191 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/SDCScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4824,
+      "offset": 4685,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/ID Scanner\/SDCScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4847,
+      "offset": 4708,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/FECDeclarationIntroViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1184,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 472,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 545,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 625,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableViewCell.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 19,
+      "value": "\"au10tix_checkmark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 848,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 938,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1007,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "StringLiteral",
+      "offset": 1041,
+      "length": 28,
+      "value": "\"FEC.Acceptable.Description\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1652,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1854,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2167,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2176,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2187,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/CustomViews\/AcceptableView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2197,
+      "length": 2,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Acceptable\/FECAccepatbleViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Helpers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1736,
+      "offset": 1903,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1773,
+      "offset": 1940,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2308,
+      "offset": 2475,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 597,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 772,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 972,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureUI\/Source\/FECDeclaration\/Intro\/CustomViews\/SelectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1351,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

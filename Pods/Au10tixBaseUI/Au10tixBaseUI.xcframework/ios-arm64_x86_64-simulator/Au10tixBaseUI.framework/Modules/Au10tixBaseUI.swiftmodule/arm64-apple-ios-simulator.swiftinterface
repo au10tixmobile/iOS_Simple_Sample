@@ -26,6 +26,10 @@ public class BulletsAlert : Au10tixBaseUI.Alert {
   public init(body: Au10tixBaseUI.BulletBody? = nil, actions: [Au10tixBaseUI.AlertAction] = [])
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SpacePreviewView : Au10tixBaseUI.BaseUIView {
+  @_Concurrency.MainActor(unsafe) public init(height: CoreFoundation.CGFloat)
+  @objc deinit
+}
 public struct ToastViewDatasource {
   public init(text: Swift.String, font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, cornersRadius: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = .black)
 }
@@ -142,6 +146,23 @@ extension Au10tixBaseUI.UIThemeColor {
     get
   }
 }
+extension UIKit.UIColor {
+  public static var infoColor: UIKit.UIColor {
+    get
+  }
+  public static var backgroundColor: UIKit.UIColor {
+    get
+  }
+  public static var primaryColor: UIKit.UIColor {
+    get
+  }
+  public static var titleColor: UIKit.UIColor {
+    get
+  }
+  public static var buttonTextColor: UIKit.UIColor {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DescriptionPreviewView : Au10tixBaseUI.BaseUIView {
   @_Concurrency.MainActor(unsafe) final public var text: Swift.String? {
     get
@@ -195,6 +216,7 @@ public struct ActionItem {
     case underlined
     case circled
     case placeholder
+    case checkbox
     public static func == (a: Au10tixBaseUI.ActionItem.ButtonType, b: Au10tixBaseUI.ActionItem.ButtonType) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -627,14 +649,15 @@ public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
   public var view: UIKit.UIView {
     get
   }
-  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, issuesBarClicked: (() -> ())? = nil)
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, issuesBarText: Swift.String? = nil, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, issuesBarClicked: (() -> ())? = nil)
+  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, tutorialText: Swift.String? = nil, tutorialImage: UIKit.UIImage? = nil, issuesBarClicked: (() -> ())? = nil)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, issuesBarText: Swift.String? = nil, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, tutorialText: Swift.String? = nil, tutorialImage: UIKit.UIImage? = nil, issuesBarClicked: (() -> ())? = nil)
 }
 public enum ActionSectionType {
   case none
   case rounded
   case roundedAndUnderlined
   case circled
+  case checkboxAndRounded
   public static func == (a: Au10tixBaseUI.ActionSectionType, b: Au10tixBaseUI.ActionSectionType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {

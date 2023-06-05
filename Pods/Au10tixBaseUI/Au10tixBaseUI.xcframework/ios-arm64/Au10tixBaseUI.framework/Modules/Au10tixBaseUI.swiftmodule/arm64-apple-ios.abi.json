@@ -299,6 +299,143 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SpacePreviewView",
+        "printedName": "SpacePreviewView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpacePreviewView",
+                "printedName": "Au10tixBaseUI.SpacePreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI16SpacePreviewViewC6heightAC14CoreFoundation7CGFloatV_tcfc",
+            "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewC6heightAC12CoreGraphics7CGFloatV_tcfc",
+            "moduleName": "Au10tixBaseUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SpacePreviewView",
+                "printedName": "Au10tixBaseUI.SpacePreviewView",
+                "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView(im)init",
+            "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewCACycfc",
+            "moduleName": "Au10tixBaseUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Au10tixBaseUI@objc(cs)SpacePreviewView",
+        "mangledName": "$s13Au10tixBaseUI16SpacePreviewViewC",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Au10tixBaseUI@objc(cs)BaseUIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Au10tixBaseUI.BaseUIView",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -4376,6 +4513,43 @@
                 "moduleName": "Au10tixBaseUI"
               },
               {
+                "kind": "Var",
+                "name": "checkbox",
+                "printedName": "checkbox",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Au10tixBaseUI.ActionItem.ButtonType.Type) -> Au10tixBaseUI.ActionItem.ButtonType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ButtonType",
+                        "printedName": "Au10tixBaseUI.ActionItem.ButtonType",
+                        "usr": "s:13Au10tixBaseUI10ActionItemV10ButtonTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Au10tixBaseUI.ActionItem.ButtonType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ButtonType",
+                            "printedName": "Au10tixBaseUI.ActionItem.ButtonType",
+                            "usr": "s:13Au10tixBaseUI10ActionItemV10ButtonTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13Au10tixBaseUI10ActionItemV10ButtonTypeO8checkboxyA2EmF",
+                "mangledName": "$s13Au10tixBaseUI10ActionItemV10ButtonTypeO8checkboxyA2EmF",
+                "moduleName": "Au10tixBaseUI"
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -8033,6 +8207,16 @@
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Au10tixBaseUI",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -16315,7 +16499,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cameraPreviewView:margins:state:showIssuesBar:captureViewTintColor:progressBarInfo:middleToastDatasource:bottomToastDatasource:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderImageAppearance:issuesBarClicked:)",
+            "printedName": "init(cameraPreviewView:margins:state:showIssuesBar:captureViewTintColor:progressBarInfo:middleToastDatasource:bottomToastDatasource:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderImageAppearance:tutorialText:tutorialImage:issuesBarClicked:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16479,6 +16663,36 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "(() -> ())?",
                 "children": [
                   {
@@ -16504,8 +16718,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA5_10Foundation4DateVSgSbSo7UIImageCSgA12_AA0dE21PlaceholderAppearanceOyycSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA5_10Foundation4DateVSgSbSo7UIImageCSgA12_AA0dE21PlaceholderAppearanceOyycSgtcfc",
+            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance12tutorialText13tutorialImage06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA7_10Foundation4DateVSgSbSo7UIImageCSgA14_AA0dE21PlaceholderAppearanceOSSSgA14_yycSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV06cameraE4View7margins5state13showIssuesBar07captureH9TintColor08progressM4Info21middleToastDatasource06bottomtU013recordingTime0W16IndicatorEnabled13capturedImage12successImage26placeholderImageAppearance12tutorialText13tutorialImage06issuesM7ClickedAcA0deH0C_SayAA0eF6MarginOGAA0deH5StateOSbSo7UIColorCSgAA08ProgressmU0VSgAA0thU0VSgA7_10Foundation4DateVSgSbSo7UIImageCSgA14_AA0dE21PlaceholderAppearanceOSSSgA14_yycSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -16515,7 +16729,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(margins:estimatedWidth:estimatedHeight:cameraView:state:showIssuesBar:issuesBarText:captureViewTintColor:boundariesImage:placeHolderImage:cornerRadius:progressBarInfo:middleToastDatasource:bottomToastDatasource:placeholderImageAppearance:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderInsetsRatio:boundariesInsetsRatio:issuesBarClicked:)",
+            "printedName": "init(margins:estimatedWidth:estimatedHeight:cameraView:state:showIssuesBar:issuesBarText:captureViewTintColor:boundariesImage:placeHolderImage:cornerRadius:progressBarInfo:middleToastDatasource:bottomToastDatasource:placeholderImageAppearance:recordingTime:recordingIndicatorEnabled:capturedImage:successImage:placeholderInsetsRatio:boundariesInsetsRatio:tutorialText:tutorialImage:issuesBarClicked:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16781,6 +16995,36 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "(() -> ())?",
                 "children": [
                   {
@@ -16806,8 +17050,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_14CoreFoundation7CGFloatVA3_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA14_A3_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA21_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA14_A14_So12UIEdgeInsetsVSgA30_yycSgtcfc",
-            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio0qP7ClickedACSayAA0eF6MarginOG_12CoreGraphics7CGFloatVA3_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA14_A3_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA21_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA14_A14_So12UIEdgeInsetsVSgA30_yycSgtcfc",
+            "usr": "s:13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio08tutorialR008tutorialW00qP7ClickedACSayAA0eF6MarginOG_14CoreFoundation7CGFloatVA5_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA16_A5_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA23_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA16_A16_So12UIEdgeInsetsVSgA32_A10_A16_yycSgtcfc",
+            "mangledName": "$s13Au10tixBaseUI17CameraPreviewItemV7margins14estimatedWidth0H6Height10cameraView5state13showIssuesBar06issuesP4Text07captureL9TintColor15boundariesImage011placeHolderW012cornerRadius08progressP4Info21middleToastDatasource21bottomToastDatasource011placeholderW10Appearance13recordingTime25recordingIndicatorEnabled08capturedW007successW022placeholderInsetsRatio0V11InsetsRatio08tutorialR008tutorialW00qP7ClickedACSayAA0eF6MarginOG_12CoreGraphics7CGFloatVA5_So6UIViewCAA0deL5StateOSbSSSgSo7UIColorCSgSo7UIImageCSgA16_A5_SgAA08ProgressP10DatasourceVSgAA05ToastL10DatasourceVSgA23_AA0dE21PlaceholderAppearanceO10Foundation4DateVSgSbA16_A16_So12UIEdgeInsetsVSgA32_A10_A16_yycSgtcfc",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -17003,6 +17247,43 @@
             "declKind": "EnumElement",
             "usr": "s:13Au10tixBaseUI17ActionSectionTypeO7circledyA2CmF",
             "mangledName": "$s13Au10tixBaseUI17ActionSectionTypeO7circledyA2CmF",
+            "moduleName": "Au10tixBaseUI"
+          },
+          {
+            "kind": "Var",
+            "name": "checkboxAndRounded",
+            "printedName": "checkboxAndRounded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Au10tixBaseUI.ActionSectionType.Type) -> Au10tixBaseUI.ActionSectionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActionSectionType",
+                    "printedName": "Au10tixBaseUI.ActionSectionType",
+                    "usr": "s:13Au10tixBaseUI17ActionSectionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Au10tixBaseUI.ActionSectionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActionSectionType",
+                        "printedName": "Au10tixBaseUI.ActionSectionType",
+                        "usr": "s:13Au10tixBaseUI17ActionSectionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13Au10tixBaseUI17ActionSectionTypeO18checkboxAndRoundedyA2CmF",
+            "mangledName": "$s13Au10tixBaseUI17ActionSectionTypeO18checkboxAndRoundedyA2CmF",
             "moduleName": "Au10tixBaseUI"
           },
           {
@@ -19268,6 +19549,241 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "infoColor",
+            "printedName": "infoColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE9infoColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE9infoColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE9infoColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE9infoColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE15backgroundColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15backgroundColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE15backgroundColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15backgroundColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "primaryColor",
+            "printedName": "primaryColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE12primaryColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE12primaryColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE12primaryColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE12primaryColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleColor",
+            "printedName": "titleColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE10titleColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE10titleColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE10titleColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE10titleColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttonTextColor",
+            "printedName": "buttonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So7UIColorC13Au10tixBaseUIE15buttonTextColorABvpZ",
+            "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15buttonTextColorABvpZ",
+            "moduleName": "Au10tixBaseUI",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So7UIColorC13Au10tixBaseUIE15buttonTextColorABvgZ",
+                "mangledName": "$sSo7UIColorC13Au10tixBaseUIE15buttonTextColorABvgZ",
+                "moduleName": "Au10tixBaseUI",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -21032,14 +21548,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/SpacePreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 181,
+      "offset": 188,
       "length": 16,
       "value": "\"Au10tixBaseUI.SpacePreviewView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/SpacePreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 181,
+      "offset": 188,
       "length": 16,
       "value": "\"Au10tixBaseUI.SpacePreviewView\""
     },
@@ -21382,14 +21898,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
       "kind": "IntegerLiteral",
-      "offset": 3374,
+      "offset": 3396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/ActionItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 3692,
+      "offset": 3714,
       "length": 4,
       "value": "true"
     },
@@ -21403,35 +21919,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
       "kind": "FloatLiteral",
-      "offset": 347,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
-      "kind": "FloatLiteral",
-      "offset": 381,
+      "offset": 336,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
       "kind": "FloatLiteral",
-      "offset": 416,
+      "offset": 371,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1762,
+      "offset": 1698,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/BulletsView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1819,
+      "offset": 1755,
       "length": 1,
       "value": "1"
     },
@@ -21518,6 +22027,13 @@
       "offset": 1044,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/Custom Button\/Checkbox\/CheckboxButton.swift",
+      "kind": "StringLiteral",
+      "offset": 470,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/Custom Views\/IssuesView.swift",
@@ -21858,14 +22374,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/ScreenActionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4466,
+      "offset": 4535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/ScreenActionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5117,
+      "offset": 5186,
       "length": 5,
       "value": "false"
     },
@@ -21886,7 +22402,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Bullets View\/Bullet View\/BulletView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1991,
+      "offset": 1948,
       "length": 1,
       "value": "0"
     },
@@ -21914,63 +22430,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "FloatLiteral",
-      "offset": 412,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
-      "kind": "FloatLiteral",
-      "offset": 446,
+      "offset": 401,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "FloatLiteral",
-      "offset": 481,
+      "offset": 436,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "FloatLiteral",
-      "offset": 532,
+      "offset": 487,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "StringLiteral",
-      "offset": 1437,
-      "length": 29,
-      "value": "\"au10tix_button_close_filled\""
+      "offset": 1373,
+      "length": 22,
+      "value": "\"au10tix_button_close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2051,
+      "offset": 1980,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2220,
+      "offset": 2141,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2766,
+      "offset": 2687,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Alert Window\/Custom Alert View\/Subviews\/Annunciation View\/AnnunciationAlertView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2937,
+      "offset": 2848,
       "length": 2,
       "value": "17"
     },
@@ -22068,7 +22577,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Action View\/Custom Button\/Circled Button\/CircledButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 2182,
+      "offset": 2403,
       "length": 2,
       "value": "14"
     },
@@ -22103,42 +22612,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 6969,
+      "offset": 7119,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 7058,
+      "offset": 7208,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 7410,
+      "offset": 7560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "Array",
-      "offset": 9001,
+      "offset": 9327,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 9209,
+      "offset": 9535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Models\/PreviewItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 9843,
+      "offset": 10169,
       "length": 5,
       "value": "false"
     },
@@ -22222,65 +22731,107 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3480,
+      "offset": 3829,
       "length": 3,
       "value": "222"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3534,
+      "offset": 3883,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 3581,
+      "offset": 3930,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3770,
+      "offset": 4119,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3822,
+      "offset": 4171,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3866,
+      "offset": 4215,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3915,
+      "offset": 4264,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4320,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4373,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4429,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4077,
+      "offset": 4583,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 5613,
+      "offset": 6119,
       "length": 4,
       "value": "0.33"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6930,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7038,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7263,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",

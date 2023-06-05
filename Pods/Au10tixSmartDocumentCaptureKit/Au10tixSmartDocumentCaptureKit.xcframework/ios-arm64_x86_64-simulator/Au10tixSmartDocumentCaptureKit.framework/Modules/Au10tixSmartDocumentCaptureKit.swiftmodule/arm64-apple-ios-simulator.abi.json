@@ -7032,6 +7032,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23304,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Smart Document Result\/SDCProcessingStatus.swift",
       "kind": "StringLiteral",
       "offset": 87,

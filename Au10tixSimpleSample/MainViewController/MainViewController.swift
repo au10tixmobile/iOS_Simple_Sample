@@ -18,6 +18,9 @@ import Au10tixPassiveFaceLivenessUI
 import Au10tixBEKit
 import Au10tixLivenessKit
 import Au10tixLivenessUI
+import Au10tixNFCPassportUI
+import Au10tixNFCPassportKit
+import Au10tixVoiceConsentUI
 
 final class MainViewController: UIViewController {
     
@@ -128,7 +131,32 @@ private extension MainViewController {
         controller.poaDelegate = self
         present(controller, animated: true, completion: nil)
     }
+
+    // MARK: - Open NFC UI component.
+    /**
+     Use this method to initialize the NFC UI component.
+     */
     
+    func openNFCUIComponent() {
+        let configs = UIComponentConfigs()
+        let controller = NFCViewController(configs: configs, navigationDelegate: self)
+        controller.nfcDelegate = self
+        present(controller, animated: true, completion: nil)
+    }
+
+    
+    // MARK: - Open Voice Consent UI component.
+    /**
+     Use this method to initialize the VC UI component.
+     */
+    
+    func openVCUIComponent() {
+        let configs = UIComponentConfigs()
+        let controller = VCViewController(configs: configs, navigationDelegate: self)
+        controller.vcDelegate = self
+        present(controller, animated: true, completion: nil)
+    }
+
     // MARK: - Open PFLViewController
     
     func openPFLViewController() {
@@ -267,7 +295,15 @@ private extension MainViewController {
     @IBAction func btnLivenessWithUIAction() {
         openLivenessUIComponent()
     }
-    
+
+    @IBAction func btnNFCWithUIAction() {
+        openNFCUIComponent()
+    }
+
+    @IBAction func btnVCWithUIAction() {
+        openVCUIComponent()
+    }
+
     @IBAction func sendIdvRequest(sender: UIButton) {
         let originalTitle = sender.title(for: .normal)
         sender.setTitle("Sending...", for: .normal)
@@ -564,3 +600,37 @@ extension MainViewController: UIComponentViewControllerNavigationDelegate {
     
 }
 
+extension MainViewController: VCSessionDelegate {
+    func vcSession(_ vcSession: Au10tixVoiceConsentUI.VCSession, didFailWith error: Au10tixVoiceConsentUI.VCSessionError) {
+        
+    }
+    
+    func vcSession(_ vcSession: Au10tixVoiceConsentUI.VCSession, didCapture videoUrl: URL) {
+        
+    }
+    
+    
+}
+
+extension MainViewController: NFCPassportSessionDelegate {
+    func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didScan passportMRZ: String, in frame: CIImage) {
+        
+    }
+    
+    func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didIndicate extractionProgress: String, of extractionPhase: String?) {
+        
+    }
+    
+    func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didExtract nfcInfo: Au10tixNFCPassportKit.PassportInformation) {
+        
+    }
+    
+    func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didFailWith error: Au10tixNFCPassportKit.NFCPassportSessionError) {
+        
+    }
+    
+    func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didIndicate dataGroupsFound: [String]) {
+        
+    }
+    
+}
