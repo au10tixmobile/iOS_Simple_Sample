@@ -397,6 +397,7 @@ SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate
 
 
 
+
 SWIFT_CLASS("_TtC13Au10tixBaseUI16VideoPreviewView")
 @interface VideoPreviewView : BaseUIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -805,6 +806,7 @@ SWIFT_PROTOCOL("_TtP13Au10tixBaseUI43UIComponentViewControllerNavigationDelegate
 - (void)uiComponentViewControllerDidFinish:(UIComponentBaseViewController * _Nonnull)controller;
 - (void)uiComponentViewControllerDidPressClose:(UIComponentBaseViewController * _Nonnull)controller;
 @end
+
 
 
 
