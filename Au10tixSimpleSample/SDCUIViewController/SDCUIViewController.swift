@@ -42,6 +42,13 @@ private extension SDCUIViewController {
     func prepare() {
         guard let token = Au10tix.shared.bearerToken else { return }
         sdcSession.delegate = self
+
+        /**
+         Sets a custom Rect of Interest. [0.0, 0.0, 1.0, 1.0] means a whole image, [0.0, 0.5, 1.0, 1.0] means a bottom half.
+         */
+
+        try? sdcSession.setRectOfInterest(startX: 0.0, endX: 1.0, startY: 0.0, endY: 1.0)
+        
         sdcSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
             switch result {

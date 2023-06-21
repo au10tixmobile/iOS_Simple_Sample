@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2511F53B2A1BCFE5004BEE6D /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */; };
 		25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5928B7897900CC6F01 /* POAUILocalizable.strings */; };
 		25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */; };
@@ -15,6 +14,8 @@
 		25748C6328B7897900CC6F01 /* NFCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */; };
 		25748C6428B7897900CC6F01 /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */; };
 		25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */; };
+		257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
+		257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -34,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2511F53B2A1BCFE5004BEE6D /* OpenSSL.xcframework in Frameworks */,
+				257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */,
 				A9C4AF1223F8DBDB3D8F4900 /* Pods_Au10tixSimpleSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
