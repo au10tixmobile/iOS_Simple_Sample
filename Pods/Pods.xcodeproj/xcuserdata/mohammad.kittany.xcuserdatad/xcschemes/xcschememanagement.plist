@@ -34,6 +34,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Au10tixNFCPassportKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Au10tixNFCPassportUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Au10tixPassiveFaceLivenessKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -70,6 +80,11 @@
 			<false/>
 		</dict>
 		<key>Au10tixSourceManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Au10tixVoiceConsentUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

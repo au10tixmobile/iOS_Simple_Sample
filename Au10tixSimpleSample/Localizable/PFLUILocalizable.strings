@@ -25,7 +25,7 @@
 "PFLFaceDetectorViewController.Alert.Timeout.Title" = "Session Timeout";
 "PFLFaceDetectorViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
 "PFLFaceDetectorViewController.Alert.AllowRecording.Title" = "Access Permission";
-"PFLFaceDetectorViewController.Alert.AllowRecording.Message" = "In order to continue, we need a premission to record video and voice.";
+"PFLFaceDetectorViewController.Alert.AllowRecording.Message" = "We need permission to record video and voice.";
 "PFLFaceDetectorViewController.Feedback.MoveUp" = "Move Up";
 "PFLFaceDetectorViewController.Feedback.MoveLeft" = "Move Left";
 "PFLFaceDetectorViewController.Feedback.MoveRight" = "Move Right";

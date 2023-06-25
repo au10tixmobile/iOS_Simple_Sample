@@ -36,7 +36,7 @@
 "POAScannerViewController.Alert.Timeout.Title" = "Session Timeout";
 "POAScannerViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
 
-//MARK: - SDCCameraIssueViewController
+//MARK: - POACameraIssueViewController
 
 "CameraIssueViewController.PermissionDenied.Title" = "Camera Permission Denied";
 "CameraIssueViewController.PermissionDenied.AllowUploadDescription" = "Please allow access to your camera or upload a file";
@@ -44,3 +44,7 @@
 "CameraIssueViewController.Unavailable.Title" = "Oops!";
 "CameraIssueViewController.Unavailable.AllowUploadDescription" = "We couldn’t find your camera, go back home or upload a file.";
 "CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera.";
+
+"POAScannerViewController.Alert.AllowPhotoGalleryAccess.Title" = "Access Permission";
+"POAScannerViewController.Alert.AllowPhotoGalleryAccess.Message" = "We need permission to access your photo gallery.";
+"POAScannerViewController.Alert.AllowPhotoGalleryAccess.Allow" = "Allow";

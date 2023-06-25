@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7u1VTtvrKZ36K4ey3H9yxKz+T9o=
+		UqiHi8d9rCZvsglX1fHAQJQYkrM=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		wjGfZ1TAaA7ruaE8X5ADn1Opf+U=
+		hF5LMRq0ser/ifLN2mQgeol9vs0=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		MU6R1nXYLDntN8d66kiFLcFnHfw=
+		CRp6MxRs0gAsvnLLTSijGudqV1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOBALZwfNPEeuwDkMD8UR2Odp5DORY7XZo5L0jn7jOU=
+			D4ktkcAynhaFm4swH+z0KUdbB+nugMmirlw5Xnu3Ubs=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogvuijV7DY2QUgZGoitfnS5KFWOGx96BLM8SEMOCVh8=
+			//a/2tftrYGFNO6X2elBqRMHRy8v4m1JQlM9TN9EJIk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
