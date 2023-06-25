@@ -18,11 +18,11 @@
 
 //MARK: - SDCIntoViewController
 
-"SDCIntoViewController.Title" = "Capture Your Document";
+"SDCIntroViewController.Title" = "Capture Your Document";
 
 //MARK: - SDCScannerViewController
 
-"SDCScannerViewController.Title.Front" = "Capture ID Front";
+"SDCScannerViewController.Title.Front" = "Capture The front of your ID";
 "SDCScannerViewController.Title.Back" = "Back Side";
 "SDCScannerViewController.Title.ImageReview" = "Image Review";
 "SDCScannerViewController.Title.ImageReview.HappyWithResults" = "Happy with the result?";
@@ -64,9 +64,36 @@
 "CameraIssueViewController.Unavailable.AllowUploadDescription" = "We couldn’t find your camera, go back home or upload a file.";
 "CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera.";
 
-"SDCScannerViewController.Alert.Classification.UnsupporedDocument.Title" = "Classification Issue";
-"SDCScannerViewController.Alert.Classification.UnsupporedDocument.Message" = "This document is unsupported. Please try another document.";
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Title" = "Access Permission";
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Message" = "We need permission to access your photo gallery.";
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Allow" = "Allow";
 
-"SDCScannerViewController.Alert.Classification.UnrecognizedDocument.Title" = "Classification Issue";
-"SDCScannerViewController.Alert.Classification.UnrecognizedDocument.Message" = "Unrecognized document. Please try another document.";
-"SDCScannerViewController.Alert.Classification.Action" = "Let’s try again";
+//MARK: - FECDeclarationViewController
+
+"FEC.Declaration.Intro.Title" = "About your ID...";
+"FEC.Declaration.Intro.Continue" = "Continue";
+
+"FEC.Declaration.Intro.Retry.Title" = "Oops we couldn’t recognize your ID type";
+"FEC.Declaration.Intro.Description" = "Please fill the type of ID you are using and the country it was issued";
+
+"FEC.Declaration.Selection.Country.Title" = "Select issuing country";
+"FEC.Declaration.Selection.DocumentType.Title" = "Select document type";
+
+"FEC.Declaration.Country" = "Country";
+"FEC.Declaration.IDType" = "ID Type";
+
+"FEC.Declaration.SuggestedCountry" = "Suggested Country";
+"FEC.Declaration.AllCountries" = "All Countries";
+"FEC.Declaration.SuggestedDocumentType" = "Suggested Document Type";
+"FEC.Declaration.AllDocumentType" = "All Document Type";
+
+
+"FEC.Acceptable.Unrecognizable.Title" = "We couldn’t recognize your ID type";
+"FEC.Acceptable.Unsupported.Title" = "This document is unsupported";
+"FEC.Acceptable.Description" = "Check what documents are acceptable in your country and try again";
+"FEC.Acceptable.TryAgain" = "Let’s Try Again";
+"FEC.Acceptable.SupportedDocumentType" = "Supported Document Type";
+"FEC.Acceptable.IssuingCountry" = "Issuing Country";
+
+
+

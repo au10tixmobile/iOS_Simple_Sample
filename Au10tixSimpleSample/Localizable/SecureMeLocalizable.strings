@@ -9,7 +9,7 @@
 
 //MARK: - TermsAndSignatureViewController
 
-"SecureMe.Terms.Title" = "Terms and Agreement";
+"SecureMe.Terms.Title" = "Terms and Conditions";
 "SecureMe.Terms.SubTitle" = "Please Read and Accept";
 "SecureMe.Signature.Title" = "Signature";
 "SecureMe.Signature.SubTitle" = "Please Sign Here";

@@ -182,6 +182,8 @@ extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSes
   public struct FECFeedback {
     public let countryCode: Swift.String?
     public let documentType: Swift.String?
+    public let isBlocked: Swift.Bool
+    public let is2ndSide: Swift.Bool
     public var isValid: Swift.Bool {
       get
     }

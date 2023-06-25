@@ -1,0 +1,42 @@
+//MARK: - VCIntroViewController
+"VCIntroViewController.Title" = "Voice Consent";
+"VCIntroViewController.Description" = "Read the sentence you will be presented in a clear voice. Make sure your face and your ID are clearly showing. Ready?";
+
+//MARK: - VCCaptureViewController
+"VCCaptureViewController.Title" = "Record your Voice";
+"VCCaptureViewController.Review.Title" = "Happy with the results?";
+"VCCaptureViewController.Alert.Timeout.Title" = "Session Timeout";
+"VCCaptureViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
+"VCCaptureViewController.Alert.AccessPermission.Title" = "Access Permission";
+"VCCaptureViewController.Alert.AccessPermission.Message" = "We need permission to record video and voice.";
+"VCCaptureViewController.Alert.AccessPermission.Next" = "Next";
+
+//MARK: - ActionSection
+"ActionSection.Button.Title.LetsGo" = "Let’s Go";
+"ActionSection.Button.Title.TryAgain" = "Try Again";
+"ActionSection.Button.Title.BackToHome" = "Back to home";
+
+//MARK: - Feedback
+"VCCaptureViewController.Feedback.SayHint" = "Say each word out loud";
+
+// MARK: - Camera/Mic Permissions
+"CameraIssueViewController.PermissionDenied.Title" = "Camera / Microphone Permission Denied";
+"CameraIssueViewController.PermissionDenied.Description" = "Please allow access to your camera";
+"CameraIssueViewController.PermissionDenied.Message" = "Please allow access to your camera and microphone.";
+"CameraIssueViewController.PermissionDenied.OpenSettings" = "Open Settings";
+"CameraIssueViewController.Unavailable.Title" = "Oops!";
+"CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera or microphone. Unfortunately we can't continue";
+
+//MARK: - VSIntroViewController
+"VSIntroViewController.Title" = "Now, let's take a video";
+"VSIntroViewController.Description" = "First, read the displayed text clearly. Then, present your ID. Make sure your face and your ID are clearly showing.";
+"VSIntroViewController.Permission.Checkbox" = "I agree to give my voice statement.";
+
+//MARK: - VSCaptureViewController
+"VSCaptureViewController.VoiceRecording.Title" = "Record your Voice";
+"VSCaptureViewController.IdRecording.Title" = "Present your ID";
+"VSCaptureViewController.Review.Title" = "Happy with the results?";
+"VSCaptureViewController.IdCapture.Tutorial" = "Please Position Your ID in the Frame";
+
+//MARK: - Action Section
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
