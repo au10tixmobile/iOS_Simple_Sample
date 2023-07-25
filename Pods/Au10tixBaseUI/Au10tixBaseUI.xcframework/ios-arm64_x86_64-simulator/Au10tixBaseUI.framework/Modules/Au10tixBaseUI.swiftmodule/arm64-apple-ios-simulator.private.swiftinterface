@@ -33,8 +33,7 @@ public class BulletsAlert : Au10tixBaseUI.Alert {
 public struct ToastViewDatasource {
   public init(text: Swift.String, font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, cornersRadius: CoreFoundation.CGFloat? = nil, shadowColor: UIKit.UIColor? = .black)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ImagePicker : ObjectiveC.NSObject {
-  public static var shared: Au10tixBaseUI.ImagePicker
+@objc @_inheritsConvenienceInitializers public class ImagePicker : ObjectiveC.NSObject {
   public struct LibraryImageResult {
     public let data: Foundation.Data
     public let exif: [Swift.String : Any]
@@ -53,6 +52,7 @@ public struct ToastViewDatasource {
   public typealias LibraryImageCompletion = (Swift.Result<Au10tixBaseUI.ImagePicker.LibraryImageResult, Au10tixBaseUI.ImagePicker.LibraryImageError>) -> Swift.Void
   public func selectImageFromLibrary(on presenter: UIKit.UIViewController, with completion: @escaping Au10tixBaseUI.ImagePicker.LibraryImageCompletion)
   @objc deinit
+  @objc override dynamic public init()
 }
 extension Au10tixBaseUI.ImagePicker : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
@@ -230,11 +230,11 @@ public struct ActionItem {
     case textSequence(strings: [Foundation.NSAttributedString], timeInterval: Foundation.TimeInterval, completion: (() -> ())?)
   }
 }
-@_hasMissingDesignatedInitializers public class FontGenerator {
+public struct FontGenerator {
   public static var shared: Au10tixBaseUI.FontGenerator
   public var fonts: [Au10tixBaseUI.FontFile]
   public func registerFonts()
-  @objc deinit
+  public func unregisterFonts()
 }
 public protocol CameraIssueViewControllerDelegate : AnyObject {
   func photoPermissionGranted(_ status: Au10tixBaseUI.PermissionStatus)
@@ -388,7 +388,7 @@ public struct AlertAction {
   @_Concurrency.MainActor(unsafe) open var previewViewDatasource: [Au10tixBaseUI.PreviewPage]? {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var customPreviewView: Au10tixBaseUI.BaseUIView? {
+  @_Concurrency.MainActor(unsafe) weak open var customPreviewView: Au10tixBaseUI.BaseUIView? {
     get
   }
   @_Concurrency.MainActor(unsafe) open var actionViewSection: [Au10tixBaseUI.ActionSection] {
@@ -411,14 +411,15 @@ public struct AlertAction {
   @_Concurrency.MainActor(unsafe) public func updateUI()
   @_Concurrency.MainActor(unsafe) public func presentNextPage()
   @_Concurrency.MainActor(unsafe) public func startScannerAnimation(color: Au10tixBaseUI.UIThemeColor? = nil, boundariesFrame: CoreFoundation.CGRect, duration: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func stopScannerAnimation()
   @_Concurrency.MainActor(unsafe) open func closeSreenHandler()
   @_Concurrency.MainActor(unsafe) open func firstButtonHandler()
   @_Concurrency.MainActor(unsafe) open func secondButtonHandler()
   @_Concurrency.MainActor(unsafe) open func thirdButtonHandler()
   @_Concurrency.MainActor(unsafe) open func leftTopButtonHandler()
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public struct ProgressBarDatasource {
   public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: Au10tixBaseUI.UIThemeColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreFoundation.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
@@ -650,7 +651,6 @@ public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
     get
   }
   public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, tutorialText: Swift.String? = nil, tutorialImage: UIKit.UIImage? = nil, issuesBarClicked: (() -> ())? = nil)
-  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, showIssuesBar: Swift.Bool = false, issuesBarText: Swift.String? = nil, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, placeholderImageAppearance: Au10tixBaseUI.CameraPreviewPlaceholderAppearance = .visible, recordingTime: Foundation.Date? = nil, recordingIndicatorEnabled: Swift.Bool = false, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, tutorialText: Swift.String? = nil, tutorialImage: UIKit.UIImage? = nil, issuesBarClicked: (() -> ())? = nil)
 }
 public enum ActionSectionType {
   case none
@@ -700,7 +700,7 @@ public enum CameraPreviewPlaceholderAppearance {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, camera: UIKit.UIView, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, issuesBarText: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreFoundation.CGFloat, estimatedHeight: CoreFoundation.CGFloat, camera: UIKit.UIView?, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil, issuesBarText: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreFoundation.CGRect)
   @objc deinit
 }

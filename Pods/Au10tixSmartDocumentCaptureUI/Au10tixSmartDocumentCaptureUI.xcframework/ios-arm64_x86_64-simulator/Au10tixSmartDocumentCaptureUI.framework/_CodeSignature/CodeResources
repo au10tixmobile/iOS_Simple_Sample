@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VcPB+Y+SLufAU8y4PZf8/8lIddw=
+		/N9Bqx9e56Ac6s5zGPP6ki8/VuA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hF5LMRq0ser/ifLN2mQgeol9vs0=
+		/OJNWdyisq0ekeaw9GM3mm5bCgA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		14Fpm6icBWPt0hNqV9FM2cnwS9E=
+		PiK3ROhna/R93tko/4jauNCGA0s=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		14Fpm6icBWPt0hNqV9FM2cnwS9E=
+		PiK3ROhna/R93tko/4jauNCGA0s=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pIuiu2Po+tCtU1uWNjHJ9rhvfcc=
+		EoizYAnau7aXSoq3wesnncSBHYk=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hF5LMRq0ser/ifLN2mQgeol9vs0=
+		/OJNWdyisq0ekeaw9GM3mm5bCgA=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yF+fbcm+3hxTa7KOPSt03JSjUtQ=
+		gh0yGdIsz0K/+kUC9mBk+Wc0jxs=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yF+fbcm+3hxTa7KOPSt03JSjUtQ=
+		gh0yGdIsz0K/+kUC9mBk+Wc0jxs=
 		</data>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		REnCbFOG/2Cj9wMON3lDQPuJY8U=
+		MY484zkRgPJwi+FWwDV8vvFawx8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D4ktkcAynhaFm4swH+z0KUdbB+nugMmirlw5Xnu3Ubs=
+			Om1iKeHNYXFwrqdFt6rRR3inf1meKZtzsPHmfQ+W+rQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wm9dRJPP+x2ntc4cKY6sUq2azfzt+3Dak2RyQVj9wO4=
+			JFg35fkQ2LXdxkwVxXTakZmHNwuCnciZN3rtTnsRXjM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -117,28 +117,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wm9dRJPP+x2ntc4cKY6sUq2azfzt+3Dak2RyQVj9wO4=
+			JFg35fkQ2LXdxkwVxXTakZmHNwuCnciZN3rtTnsRXjM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKb3VnJp91b8VR4Rtui7fydMlL3YT3DAHiakhkWxsmA=
+			kZFCZTGasMFxvAHZNHeilVuUeyfkVmpd2TehLKClwak=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D4ktkcAynhaFm4swH+z0KUdbB+nugMmirlw5Xnu3Ubs=
+			Om1iKeHNYXFwrqdFt6rRR3inf1meKZtzsPHmfQ+W+rQ=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IeRm2TjPoLBgWNSL7dp/E0aUBC9eo3f+B6IOX2ozQeQ=
+			fUM2lu9sDwJ6mJP6rlEavJepMd9IsthNY8M0zpan20U=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -152,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IeRm2TjPoLBgWNSL7dp/E0aUBC9eo3f+B6IOX2ozQeQ=
+			fUM2lu9sDwJ6mJP6rlEavJepMd9IsthNY8M0zpan20U=
 			</data>
 		</dict>
 		<key>Modules/Au10tixSmartDocumentCaptureUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bWno6wF3nAPb6C2kMSLzZx5Wsw+0+jQbQOpjFaMvH5c=
+			MX+UotVEtAzc4WWXzpi7wA7FqCELer0PYckrEllfoA8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

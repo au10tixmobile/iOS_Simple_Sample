@@ -21,9 +21,13 @@ import _StringProcessing
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) final public var localClassification: Swift.Bool {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) override final public func close()
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs = super, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate? = nil)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }

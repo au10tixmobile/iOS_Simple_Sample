@@ -2920,7 +2920,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(showIntro:enableFileUpload:sendFeatureResult:)",
+            "printedName": "init(showIntro:enableFileUpload:sendFeatureResult:localClassification:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2948,11 +2948,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResultACSb_S2btcfc",
-            "mangledName": "$s18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResultACSb_S2btcfc",
+            "usr": "s:18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResult19localClassificationACSb_S3btcfc",
+            "mangledName": "$s18Au10tixSecureMeKit0bC10FlowConfigV9showIntro16enableFileUpload17sendFeatureResult19localClassificationACSb_S3btcfc",
             "moduleName": "Au10tixSecureMeKit",
             "declAttributes": [
               "AccessControl",
@@ -4085,28 +4092,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 726,
+      "offset": 732,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1152,
+      "offset": 1158,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1348,
+      "offset": 1354,
       "length": 22,
       "value": "\"SecureMe.Terms.Title\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Internal\/UI\/ConsentPage\/SecureMeConsentViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1432,
+      "offset": 1438,
       "length": 25,
       "value": "\"SecureMe.Terms.SubTitle\""
     },
@@ -4337,21 +4344,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1079,
+      "offset": 1361,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1126,
+      "offset": 1408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1174,
+      "offset": 1456,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1506,
       "length": 4,
       "value": "true"
     },
