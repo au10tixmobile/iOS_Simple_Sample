@@ -63,6 +63,33 @@ public enum SDCSessionFlowType : Swift.Int {
     get
   }
 }
+public class SDCEventBILog : Au10tixCore.Log {
+  public init(module: Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module, frameSource: Au10tixCore.Au10ImageSource, side: Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide, idStatus: Swift.Int? = nil, isSelected: Swift.Bool? = nil)
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog {
+  public enum Module : Swift.String {
+    case server
+    case client
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog {
+  public enum ImageSide : Swift.String {
+    case front
+    case back
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
 @_hasMissingDesignatedInitializers public class SDCStatistics {
   weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCStatisticsDelegate?
   public static let shared: Au10tixSmartDocumentCaptureKit.SDCStatistics
@@ -122,6 +149,8 @@ public struct Au10MachineReadableCode {
   public var isAvailable: Swift.Bool {
     get
   }
+  public var localClassification: Swift.Bool
+  public var fallToServerWhenLocalFail: Swift.Bool
   public var isCameraActive: Swift.Bool {
     get
   }
@@ -203,7 +232,22 @@ extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSes
   @objc public var jsonString: Swift.String? {
     @objc get
   }
+  public var idStatus: Swift.Int? {
+    get
+  }
+  public var idRotation: Swift.Int? {
+    get
+  }
   @objc public var isValid: Swift.Bool {
+    @objc get
+  }
+  public var classifierDuration: Foundation.TimeInterval? {
+    get
+  }
+  public var locatorDuration: Foundation.TimeInterval? {
+    get
+  }
+  @objc public var isLocalClassification: Swift.Bool {
     @objc get
   }
   @objc deinit
@@ -226,6 +270,12 @@ extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.RawRepre
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Hashable {}
 extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.RawRepresentable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Equatable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Hashable {}
 extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning : Swift.Equatable {}

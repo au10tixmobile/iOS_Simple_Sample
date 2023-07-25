@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		QC2rj2kcqUJX8oecSeoihrO65G4=
+		eUHTzSJI0M4hLsUeKIZVrZVI/+U=
 		</data>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<data>
-		EwcgVGLFDtWD7w3E0i3y3logzRA=
+		s+xyqekWzkur8Rkhpibs5bQ9YEA=
 		</data>
 		<key>Headers/Au10tixBaseUI.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qt0HvYGf4nS+tUZVDLSl5vGKz/M=
+		iGzJamS7ish123X7nW0ysswD2+0=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MiGaX1jceTxu6wcgTCDby1j6VMY=
+		X147JwKMZJq/jhxL4PqWiEgE0B0=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/x8dQ+kYCU/t48b125nxaSku+nE=
+		5uWg9n3tIQAC+IQQIg2deEQeD9Q=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/x8dQ+kYCU/t48b125nxaSku+nE=
+		5uWg9n3tIQAC+IQQIg2deEQeD9Q=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IUUj9r/nfIwZm7S6YEK4YwYwwmM=
+		9+9sKzuzmaqozw2rsfeWkjoTcDQ=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MiGaX1jceTxu6wcgTCDby1j6VMY=
+		X147JwKMZJq/jhxL4PqWiEgE0B0=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gHVpRPTxKtfzuq4Cm7shVcfbBS4=
+		yjlKA5qeYmSckMNbLDZvoT7fXOo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gHVpRPTxKtfzuq4Cm7shVcfbBS4=
+		yjlKA5qeYmSckMNbLDZvoT7fXOo=
 		</data>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		w0q7Px6AJI4kZ1eYlrE0PETKKxE=
+		iCIicqE+KhvLmVg/nI2N9stl6as=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3bORcKAHZYPWKUmNFM/diG78rrkTb/35ybHCB9zvuc=
+			XjJp1FNOhk9u+wFo/Xtc9f8BdYXRBf98I3p5HNF5ceY=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			48d/ne0jTzej5FXYM2S0N9g/ukBvxoDQOsKblEVI+1s=
+			PUNeFOjP5JncLnYJhT7HndsgJcLr/Ns0L5LujNJliXo=
 			</data>
 		</dict>
 		<key>Headers/Au10tixBaseUI.h</key>
@@ -104,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nv62LHaEzl6r37gN5e//kx1Vu/LkOKPqYELbjTBH8Gg=
+			gzUW8ixRvifgjPPnAIQOW0/qMn590j0rAZRdMeIH4A0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JmWcGhYvPSeTd0DoMyqqp/vxSA8sxRAhL9MURCiuO6Q=
+			RuUNXwUKb443as8E9P86xi8NJZ0zlHMn+tkGGY/wdLM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -125,28 +125,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JmWcGhYvPSeTd0DoMyqqp/vxSA8sxRAhL9MURCiuO6Q=
+			RuUNXwUKb443as8E9P86xi8NJZ0zlHMn+tkGGY/wdLM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z8jOxyZgUc73dV65czjrpUe8bapnP5nzzy6Nk3/BESw=
+			fwS+b2SEwvYIX9vGOXaVRr6AldSSe0O/UaKOK3/QZzo=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nv62LHaEzl6r37gN5e//kx1Vu/LkOKPqYELbjTBH8Gg=
+			gzUW8ixRvifgjPPnAIQOW0/qMn590j0rAZRdMeIH4A0=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sgWkbtbYiEqMKYE6qrDqiPWu2iYzERP5y5izR6sKnHE=
+			qsZQ+srPjTQm1GmpHAXe05NuS3Jr3EcROFihEC9/CGw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -160,14 +160,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sgWkbtbYiEqMKYE6qrDqiPWu2iYzERP5y5izR6sKnHE=
+			qsZQ+srPjTQm1GmpHAXe05NuS3Jr3EcROFihEC9/CGw=
 			</data>
 		</dict>
 		<key>Modules/Au10tixBaseUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qefXOp+H0hhiUovm68BkD1tZSfz3jv6RYxIqv3gvUQQ=
+			ninQA+mIspPFrVSebpfRejPFNMe5gYdnlcFjrhXaN/g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

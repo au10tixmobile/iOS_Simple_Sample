@@ -713,6 +713,98 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "localClassification",
+            "printedName": "localClassification",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvp",
+            "mangledName": "$s23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvp",
+            "moduleName": "Au10tixProofOfAddressUI",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvg",
+                "mangledName": "$s23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvg",
+                "moduleName": "Au10tixProofOfAddressUI",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvs",
+                "mangledName": "$s23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvs",
+                "moduleName": "Au10tixProofOfAddressUI",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvM",
+                "mangledName": "$s23Au10tixProofOfAddressUI17POAViewControllerC19localClassificationSbvM",
+                "moduleName": "Au10tixProofOfAddressUI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "viewDidLoad",
             "printedName": "viewDidLoad()",
@@ -969,56 +1061,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1418,
+      "offset": 1417,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1463,
+      "offset": 1462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1502,
+      "offset": 1501,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1552,
+      "offset": 1551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/ViewModel\/POAScannerViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1598,
+      "offset": 1597,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Helpers\/SessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1651,
+      "offset": 1777,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1688,
+      "offset": 1814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Helpers\/SessionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2223,
+      "offset": 2349,
       "length": 4,
       "value": "true"
     },
@@ -1039,35 +1131,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/POAScannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1099,
+      "offset": 1148,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/POAScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3879,
+      "offset": 3928,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/Scanner\/POAScannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3902,
+      "offset": 3951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/POAViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1902,
+      "offset": 2446,
       "length": 17,
       "value": "\"Au10tixProofOfAddressUI.POAFlowController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixProofOfAddressUI\/Source\/POAViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1902,
+      "offset": 2446,
       "length": 17,
       "value": "\"Au10tixProofOfAddressUI.POAFlowController\""
     }

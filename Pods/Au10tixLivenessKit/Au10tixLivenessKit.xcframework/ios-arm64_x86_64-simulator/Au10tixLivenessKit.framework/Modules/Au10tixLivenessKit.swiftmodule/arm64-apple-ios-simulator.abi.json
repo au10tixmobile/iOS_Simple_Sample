@@ -1827,6 +1827,23 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixLivenessKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Au10tixLivenessKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3794,23 +3811,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Au10tixLivenessKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "Au10tixLivenessKit"
-      },
-      {
         "kind": "TypeDecl",
         "name": "AFLSessionResult",
         "printedName": "AFLSessionResult",
@@ -4281,53 +4281,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceLeftGesture.swift",
-      "kind": "FloatLiteral",
-      "offset": 416,
-      "length": 5,
-      "value": "180.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceLeftGesture.swift",
-      "kind": "FloatLiteral",
-      "offset": 433,
-      "length": 5,
-      "value": "360.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceLeftGesture.swift",
-      "kind": "BooleanLiteral",
-      "offset": 475,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/LivenessSession\/Analytics\/LivenessSessionEvent.swift",
       "kind": "Dictionary",
       "offset": 733,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceRightGesture.swift",
-      "kind": "FloatLiteral",
-      "offset": 424,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceRightGesture.swift",
-      "kind": "FloatLiteral",
-      "offset": 439,
-      "length": 5,
-      "value": "180.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceRightGesture.swift",
-      "kind": "BooleanLiteral",
-      "offset": 481,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/Sub Types\/ActiveFaceLivenessConfigs.swift",
@@ -4360,7 +4318,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/LivenessSession\/LivenessSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 13678,
+      "offset": 13778,
       "length": 4,
       "value": "true"
     },
@@ -4429,22 +4387,8 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceCenterGesture.swift",
-      "kind": "FloatLiteral",
-      "offset": 422,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceCenterGesture.swift",
-      "kind": "BooleanLiteral",
-      "offset": 462,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixLivenessKit\/Au10tixAFLKit\/AFLGesture\/Gesture Types\/AFLFaceCenterGesture.swift",
       "kind": "Array",
-      "offset": 554,
+      "offset": 460,
       "length": 2,
       "value": "[]"
     }

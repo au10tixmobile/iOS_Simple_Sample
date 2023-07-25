@@ -258,13 +258,16 @@ using UInt = size_t;
 #if defined(__OBJC__)
 @class CIImage;
 enum Au10ImageSource : NSInteger;
+@class CIContext;
 @class UIImage;
 @class NSData;
+@class UIColor;
 
 SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
-@interface Au10Image : NSObject
-@property (nonatomic, readonly, strong) CIImage * _Nonnull ciImage;
+@interface Au10Image : NSObject <NSCopying>
+@property (nonatomic, readonly, strong) CIImage * _Nullable ciImage;
 @property (nonatomic, readonly) enum Au10ImageSource source;
+@property (nonatomic, strong) CIContext * _Nullable context;
 @property (nonatomic, readonly, strong) UIImage * _Nonnull uiImage;
 @property (nonatomic, readonly) CVPixelBufferRef _Nullable pixelBuffer;
 @property (nonatomic, readonly) NSInteger width;
@@ -275,6 +278,10 @@ SWIFT_CLASS("_TtC11Au10tixCore9Au10Image")
 /// Convert the CIImage to binary data in order to send it to the BOS server
 - (NSData * _Nullable)convertImageToData SWIFT_WARN_UNUSED_RESULT;
 - (void)convertToMaximumWithSize:(CGSize)size;
+- (Au10Image * _Nonnull)resizeAndFillColorWithSize:(CGFloat)size fillColor:(UIColor * _Nonnull)fillColor;
+- (Au10Image * _Nonnull)cropAt:(CGRect)rect;
+- (Au10Image * _Nonnull)resizeTo:(CGSize)size;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -301,7 +308,7 @@ SWIFT_CLASS("_TtC11Au10tixCore10Au10Update")
 @property (nonatomic, strong) Au10Image * _Nullable originalImage;
 - (nonnull instancetype)initWithImage:(Au10Image * _Nullable)image originalImage:(Au10Image * _Nullable)originalImage OBJC_DESIGNATED_INITIALIZER;
 /// Returns the image cropped according to quad data
-- (Au10Image * _Nullable)croppedImage SWIFT_WARN_UNUSED_RESULT;
+- (Au10Image * _Nullable)croppedImageWithMarginFactor:(CGFloat)marginFactor SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
