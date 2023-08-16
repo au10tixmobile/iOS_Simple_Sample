@@ -1930,94 +1930,25 @@
         "printedName": "PhotoPermissionManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PermissionManager",
-                "printedName": "Au10tixBaseUI.PermissionManager",
-                "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+                "name": "PhotoPermissionManager",
+                "printedName": "Au10tixBaseUI.PhotoPermissionManager",
+                "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerC"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvpZ",
-            "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvpZ",
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerCACycfc",
+            "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerCACycfc",
             "moduleName": "Au10tixBaseUI",
-            "static": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvgZ",
-                "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvgZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvsZ",
-                "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvsZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvMZ",
-                "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV6sharedAA0eF0_pvMZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -2049,8 +1980,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV07requestE0yyyAA0E6StatusOcF",
-            "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV07requestE0yyyAA0E6StatusOcF",
+            "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerC07requestE0yyyAA0E6StatusOcF",
+            "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerC07requestE0yyyAA0E6StatusOcF",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -2058,9 +1989,9 @@
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerV",
-        "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerV",
+        "declKind": "Class",
+        "usr": "s:13Au10tixBaseUI22PhotoPermissionManagerC",
+        "mangledName": "$s13Au10tixBaseUI22PhotoPermissionManagerC",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "AccessControl"
@@ -11444,50 +11375,6 @@
         "printedName": "PermissionManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PermissionManager",
-                "printedName": "Au10tixBaseUI.PermissionManager",
-                "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13Au10tixBaseUI17PermissionManagerP6sharedAaB_pvpZ",
-            "mangledName": "$s13Au10tixBaseUI17PermissionManagerP6sharedAaB_pvpZ",
-            "moduleName": "Au10tixBaseUI",
-            "static": true,
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI17PermissionManagerP6sharedAaB_pvgZ",
-                "mangledName": "$s13Au10tixBaseUI17PermissionManagerP6sharedAaB_pvgZ",
-                "moduleName": "Au10tixBaseUI",
-                "genericSig": "<τ_0_0 where τ_0_0 : Au10tixBaseUI.PermissionManager>",
-                "sugared_genericSig": "<Self where Self : Au10tixBaseUI.PermissionManager>",
-                "static": true,
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "requestPermission",
             "printedName": "requestPermission(_:)",
@@ -13186,94 +13073,25 @@
         "printedName": "VideoPermissionManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PermissionManager",
-                "printedName": "Au10tixBaseUI.PermissionManager",
-                "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+                "name": "VideoPermissionManager",
+                "printedName": "Au10tixBaseUI.VideoPermissionManager",
+                "usr": "s:13Au10tixBaseUI22VideoPermissionManagerC"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvpZ",
-            "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvpZ",
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI22VideoPermissionManagerCACycfc",
+            "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerCACycfc",
             "moduleName": "Au10tixBaseUI",
-            "static": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvgZ",
-                "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvgZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvsZ",
-                "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvsZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvMZ",
-                "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV6sharedAA0eF0_pvMZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -13305,8 +13123,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV07requestE0yyyAA0E6StatusOcF",
-            "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV07requestE0yyyAA0E6StatusOcF",
+            "usr": "s:13Au10tixBaseUI22VideoPermissionManagerC07requestE0yyyAA0E6StatusOcF",
+            "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerC07requestE0yyyAA0E6StatusOcF",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -13314,9 +13132,9 @@
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:13Au10tixBaseUI22VideoPermissionManagerV",
-        "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerV",
+        "declKind": "Class",
+        "usr": "s:13Au10tixBaseUI22VideoPermissionManagerC",
+        "mangledName": "$s13Au10tixBaseUI22VideoPermissionManagerC",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "AccessControl"
@@ -18462,94 +18280,25 @@
         "printedName": "AudioPermissionManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PermissionManager",
-                "printedName": "Au10tixBaseUI.PermissionManager",
-                "usr": "s:13Au10tixBaseUI17PermissionManagerP"
+                "name": "AudioPermissionManager",
+                "printedName": "Au10tixBaseUI.AudioPermissionManager",
+                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerC"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvpZ",
-            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvpZ",
+            "declKind": "Constructor",
+            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerCACycfc",
+            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerCACycfc",
             "moduleName": "Au10tixBaseUI",
-            "static": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvgZ",
-                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvgZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PermissionManager",
-                    "printedName": "Au10tixBaseUI.PermissionManager",
-                    "usr": "s:13Au10tixBaseUI17PermissionManagerP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvsZ",
-                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvsZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvMZ",
-                "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV6sharedAA0eF0_pvMZ",
-                "moduleName": "Au10tixBaseUI",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -18581,8 +18330,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV07requestE0yyyAA0E6StatusOcF",
-            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV07requestE0yyyAA0E6StatusOcF",
+            "usr": "s:13Au10tixBaseUI22AudioPermissionManagerC07requestE0yyyAA0E6StatusOcF",
+            "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerC07requestE0yyyAA0E6StatusOcF",
             "moduleName": "Au10tixBaseUI",
             "declAttributes": [
               "AccessControl"
@@ -18590,9 +18339,9 @@
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:13Au10tixBaseUI22AudioPermissionManagerV",
-        "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerV",
+        "declKind": "Class",
+        "usr": "s:13Au10tixBaseUI22AudioPermissionManagerC",
+        "mangledName": "$s13Au10tixBaseUI22AudioPermissionManagerC",
         "moduleName": "Au10tixBaseUI",
         "declAttributes": [
           "AccessControl"
@@ -21609,7 +21358,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/View Model\/BaseUIViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2169,
+      "offset": 2262,
       "length": 1,
       "value": "0"
     },
@@ -22421,28 +22170,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 6126,
+      "offset": 6153,
       "length": 4,
       "value": "0.33"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6937,
+      "offset": 6964,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7045,
+      "offset": 7072,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixBaseUI\/Source\/Custom Views\/Preview View\/Collection Cell\/Custom Views\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7270,
+      "offset": 7297,
       "length": 4,
       "value": "true"
     },

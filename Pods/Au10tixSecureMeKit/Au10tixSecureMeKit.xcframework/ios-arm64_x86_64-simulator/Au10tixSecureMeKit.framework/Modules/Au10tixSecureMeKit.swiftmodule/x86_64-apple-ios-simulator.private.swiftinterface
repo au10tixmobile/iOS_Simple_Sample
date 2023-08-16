@@ -85,7 +85,7 @@ public enum SecureMeKitUpdate {
   }
 }
 public struct SecureMeFlowConfig {
-  public init(showIntro: Swift.Bool = true, enableFileUpload: Swift.Bool = true, sendFeatureResult: Swift.Bool = true, localClassification: Swift.Bool = true)
+  public init(showIntro: Swift.Bool = true, enableFileUpload: Swift.Bool = true, sendFeatureResult: Swift.Bool = true, localClassification: Swift.Bool = false)
 }
 public struct SecureMeConfig {
   public init(flows: [Au10tixSecureMeKit.SecureMeFlow], smConfig: Au10tixSecureMeKit.SecureMeFeaturesConfig)

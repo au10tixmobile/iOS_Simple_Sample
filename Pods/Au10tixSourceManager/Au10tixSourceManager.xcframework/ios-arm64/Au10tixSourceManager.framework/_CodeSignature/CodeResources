@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QTaUVYkci9wVzqk4bxWMEbvuA5E=
+		OMh4puTLPHmK4VVH3jWYlXrmaN4=
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Au10tixSourceManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GZPhz0lucuygu1HGE+DyyjpPATA=
+		+ejPUtCTthTVN5nQy72Mc8fzcus=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cNbt/N6sNMYy2lspwd69LyIkNzQMeV2bcOKy8bhxy3Q=
+			qFByHE1uMCldBAusguj0hK2yiZce1mpP8knVRPSv6Pw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
