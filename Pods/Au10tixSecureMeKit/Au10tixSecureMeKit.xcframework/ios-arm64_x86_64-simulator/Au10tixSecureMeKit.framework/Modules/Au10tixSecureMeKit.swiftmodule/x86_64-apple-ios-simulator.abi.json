@@ -4344,30 +4344,30 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1361,
+      "offset": 1355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1408,
+      "offset": 1402,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1450,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeFlowConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1506,
-      "length": 4,
-      "value": "true"
+      "offset": 1500,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
@@ -4378,8 +4378,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1001,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSecureMeKit\/Public\/SecureMeKit.swift",
       "kind": "Array",
-      "offset": 1424,
+      "offset": 1472,
       "length": 2,
       "value": "[]"
     },

@@ -8039,14 +8039,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 453,
       "length": 11,
       "value": "\"sdcModule\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 453,
       "length": 11,
       "value": "\"sdcModule\""
     },
@@ -8060,56 +8060,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1594,
       "length": 8,
       "value": "\"Server\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 1631,
+      "offset": 1625,
       "length": 8,
       "value": "\"Client\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1594,
       "length": 8,
       "value": "\"Server\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 1631,
+      "offset": 1625,
       "length": 8,
       "value": "\"Client\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 2043,
+      "offset": 2037,
       "length": 7,
       "value": "\"Front\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 2071,
+      "offset": 2065,
       "length": 6,
       "value": "\"Back\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 2043,
+      "offset": 2037,
       "length": 7,
       "value": "\"Front\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Logger\/SDCEventBILog.swift",
       "kind": "StringLiteral",
-      "offset": 2071,
+      "offset": 2065,
       "length": 6,
       "value": "\"Back\""
     },
@@ -8214,21 +8214,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "StringLiteral",
-      "offset": 5294,
+      "offset": 5293,
       "length": 29,
       "value": "\"com.au10tix.sdk.sdc-session\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 6178,
+      "offset": 6177,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 6313,
+      "offset": 6312,
       "length": 1,
       "value": "0"
     },
@@ -8249,14 +8249,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 25018,
+      "offset": 25108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/iOS_DebugApp\/Au10tixSmartDocumentCaptureKit\/Session\/SDCSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 25903,
+      "offset": 25993,
       "length": 5,
       "value": "false"
     },

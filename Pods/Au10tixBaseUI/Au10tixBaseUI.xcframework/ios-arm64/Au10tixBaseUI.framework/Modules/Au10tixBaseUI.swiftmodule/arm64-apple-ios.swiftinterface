@@ -83,9 +83,10 @@ extension Au10tixBaseUI.Alert {
     }
   }
 }
-public struct PhotoPermissionManager : Au10tixBaseUI.PermissionManager {
-  public static var shared: Au10tixBaseUI.PermissionManager
+public class PhotoPermissionManager : Au10tixBaseUI.PermissionManager {
+  public init()
   public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+  @objc deinit
 }
 public class ScheduledLock {
   public typealias Handler = ((Foundation.TimeInterval) -> ())
@@ -448,7 +449,6 @@ public enum PermissionStatus {
 }
 public protocol PermissionManager {
   typealias Handler = ((Au10tixBaseUI.PermissionStatus) -> ())
-  static var shared: Au10tixBaseUI.PermissionManager { get }
   func requestPermission(_ completion: @escaping Self.Handler)
   func openSettings()
 }
@@ -562,9 +562,10 @@ public struct BulletItem {
 public struct BulletBody {
   public init(title: Au10tixBaseUI.BulletItem?, messages: [Au10tixBaseUI.BulletItem]?)
 }
-public struct VideoPermissionManager : Au10tixBaseUI.PermissionManager {
-  public static var shared: Au10tixBaseUI.PermissionManager
+public class VideoPermissionManager : Au10tixBaseUI.PermissionManager {
+  public init()
   public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+  @objc deinit
 }
 public struct AlertManager {
   public static var shared: Au10tixBaseUI.AlertManager
@@ -704,9 +705,10 @@ public enum CameraPreviewPlaceholderAppearance {
   @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreFoundation.CGRect)
   @objc deinit
 }
-public struct AudioPermissionManager : Au10tixBaseUI.PermissionManager {
-  public static var shared: Au10tixBaseUI.PermissionManager
+public class AudioPermissionManager : Au10tixBaseUI.PermissionManager {
+  public init()
   public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+  @objc deinit
 }
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Equatable {}
 extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Hashable {}
