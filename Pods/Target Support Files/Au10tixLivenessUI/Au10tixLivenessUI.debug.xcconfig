@@ -2,7 +2,7 @@ CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/Au10tixLivenessUI
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Au10tixBaseUI" "${PODS_ROOT}/Au10tixCore" "${PODS_ROOT}/Au10tixDetectorManager" "${PODS_ROOT}/Au10tixLivenessKit" "${PODS_ROOT}/Au10tixLivenessUI" "${PODS_ROOT}/Au10tixPassiveFaceLivenessKit" "${PODS_ROOT}/Au10tixSourceManager" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixBaseUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixDetectorManager" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixLivenessUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixPassiveFaceLivenessKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Au10tixSourceManager"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
 OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Au10tixBaseUI" -framework "Au10tixCore" -framework "Au10tixDetectorManager" -framework "Au10tixLivenessKit" -framework "Au10tixPassiveFaceLivenessKit" -framework "Au10tixSourceManager" -framework "Foundation" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
