@@ -18,6 +18,11 @@ import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+extension Au10tixCore.Au10DataType {
+  public var asAu10ErrorEvent: Au10tixCore.Au10ErrorEvent {
+    get
+  }
+}
 public enum NetworkingError : Au10tixCore.Au10tixError {
   case request(factory: Au10tixCore.NetworkingError.Factory)
   case parsingIssue(factory: Au10tixCore.NetworkingError.Factory)
@@ -25,8 +30,8 @@ public enum NetworkingError : Au10tixCore.Au10tixError {
 }
 extension Au10tixCore.NetworkingError {
   public struct Factory {
-    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, code: Swift.Int? = nil, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil)
-    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, response: Foundation.HTTPURLResponse, discussion: Swift.String? = nil)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, code: Swift.Int? = nil, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil, event: Au10tixCore.Au10ErrorEvent? = nil)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, response: Foundation.HTTPURLResponse, discussion: Swift.String? = nil, event: Au10tixCore.Au10ErrorEvent? = nil)
   }
 }
 extension Au10tixCore.NetworkingError {
@@ -54,6 +59,21 @@ extension Au10tixCore.NetworkingError {
   public var description: Swift.String? {
     get
   }
+}
+extension Au10tixCore.Au10tixError {
+  public var code: Swift.Int? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+  public var discussion: Swift.String? {
+    get
+  }
+  public func report()
 }
 extension Foundation.NSNotification.Name {
   public static var au10tixCoreTokenExpiration: Foundation.Notification.Name {
@@ -189,6 +209,15 @@ public struct RequestData : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public enum Au10ErrorSeverity : Swift.String, Swift.Encodable {
+  case error
+  case warnig
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public protocol NFCPassportReaderSession {
   func readNFC(with mrz: Swift.String)
 }
@@ -267,6 +296,8 @@ open class Log : Swift.Encodable {
     case chipReadingSuccess
     case tryAgain
     case mrzReadingFail
+    case mrzReadingManual
+    case mrzReadingSuccess
     case chipReadingFail
     case uploadSDCFrontRequest
     case mediaServiceCreateRequest
@@ -569,7 +600,7 @@ public enum FlowError : Au10tixCore.Au10tixError {
 }
 extension Au10tixCore.FlowError {
   public struct Factory {
-    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil)
+    public init(domain: Au10tixCore.Au10ErrorDomain, severity: Au10tixCore.Au10ErrorSeverity, element: Swift.String? = nil, reason: Swift.String? = nil, recovery: Swift.String? = nil, discussion: Swift.String? = nil, event: Au10tixCore.Au10ErrorEvent? = nil)
   }
 }
 extension Au10tixCore.FlowError {
@@ -697,6 +728,7 @@ extension Au10tixCore.HTTPHeader {
     case userAgent
     case authorization
     case sessionID
+    case requestID
     case sdkVersion
     case sdkType
     case eventData
@@ -848,6 +880,34 @@ public struct Claim {
     get
   }
 }
+public enum Au10DataType : Swift.Int, Swift.CaseIterable {
+  case pfl
+  case idDocFront
+  case idDocBack
+  case imageForCompare
+  case poa
+  case nfcDG1
+  case personalDetails
+  case afl
+  case secondImageForCompare
+  case pflScreenRecording
+  case aflScreenRecording
+  case nfcDG2
+  case nfcDG7
+  case pc
+  case vc
+  case vs
+  case idData
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Au10tixCore.Au10DataType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Au10tixCore.Au10DataType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public class LogEvent : Au10tixCore.Log {
   public init(feature: Swift.String, category: Swift.String, action: Au10tixCore.Log.Action, logType: Au10tixCore.Log.LogType, attempt: Swift.Int? = nil, sessionId: Swift.String? = nil)
   override public func encode(to encoder: Swift.Encoder) throws
@@ -879,27 +939,27 @@ public class BELogEvent : Au10tixCore.LogEvent {
   @objc deinit
 }
 public enum DeviceError : Au10tixCore.Au10tixError {
-  public enum Permission : Swift.Int {
+  public enum Permission {
     case nfcScan
     case camera
     case photoLibrary
     case location
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
+    public static func == (a: Au10tixCore.DeviceError.Permission, b: Au10tixCore.DeviceError.Permission) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
       get
     }
   }
-  public enum Capability : Swift.Int {
+  public enum Capability {
     case backCamera
     case frontCamera
     case nfc
     case motion
     case gyro
     case location
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
+    public static func == (a: Au10tixCore.DeviceError.Capability, b: Au10tixCore.DeviceError.Capability) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
       get
     }
   }
@@ -1035,68 +1095,6 @@ public protocol Au10tixError : Swift.Error {
   var recoverySuggestion: Swift.String? { get }
   var discussion: Swift.String? { get }
 }
-extension Au10tixCore.Au10tixError {
-  public var code: Swift.Int? {
-    get
-  }
-  public var failureReason: Swift.String? {
-    get
-  }
-  public var recoverySuggestion: Swift.String? {
-    get
-  }
-  public var discussion: Swift.String? {
-    get
-  }
-}
-extension Au10tixCore.Au10tixError {
-  public func report()
-}
-public enum Au10ErrorCategory : Swift.String, Swift.Encodable {
-  case native
-  case network
-  case device
-  case flow
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum Au10ErrorDomain : Swift.String, Swift.Encodable {
-  case core
-  case be
-  case sm
-  case dm
-  case sdcKit
-  case sdcUi
-  case pflKit
-  case pflUi
-  case poaKit
-  case poaUi
-  case nfcKit
-  case nfcUi
-  case hdUi
-  case baseUi
-  case secureMeKit
-  case pcKit
-  case pcUi
-  case localDataInferennceKit
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum Au10ErrorSeverity : Swift.String, Swift.Encodable {
-  case error
-  case warnig
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
 open class TokenLifeCycleHandler {
   public init()
   @objc deinit
@@ -1185,6 +1183,17 @@ extension Au10tixCore.Reachability {
   final public func startNotifier() throws
   final public func stopNotifier()
   final public var description: Swift.String {
+    get
+  }
+}
+public enum Au10ErrorCategory : Swift.String, Swift.Encodable {
+  case native
+  case network
+  case device
+  case flow
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -1364,6 +1373,31 @@ public class RequestDataBuilder {
   public func use(optionalData: [Swift.String : Swift.String]) -> Au10tixCore.RequestDataBuilder
   @objc deinit
 }
+public enum Au10ErrorDomain : Swift.String, Swift.Encodable {
+  case core
+  case be
+  case sm
+  case dm
+  case sdcKit
+  case sdcUi
+  case pflKit
+  case pflUi
+  case poaKit
+  case poaUi
+  case nfcKit
+  case nfcUi
+  case hdUi
+  case baseUi
+  case secureMeKit
+  case pcKit
+  case pcUi
+  case localDataInferennceKit
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct Au10tixUIValidator {
   public static func isAu10tixUI(licenseKey: Swift.String) -> Swift.Bool
 }
@@ -1399,6 +1433,99 @@ public class AppLifeCycleSessionHandler {
 extension Foundation.Date {
   public static func - (lhs: Foundation.Date, rhs: Foundation.Date) -> Foundation.TimeInterval
 }
+public enum Au10ErrorEvent : Swift.Int, Swift.Encodable {
+  case deviceErrorPermissionNfcScan
+  case deviceErrorPermissionCamera
+  case deviceErrorPermissionPhotoLibrary
+  case deviceErrorPermissionLocation
+  case deviceErrorCapabilityBackCamera
+  case deviceErrorCapabilityFrontCamera
+  case deviceErrorCapabilityNfc
+  case deviceErrorCapabilityMotion
+  case deviceErrorCapabilityGyro
+  case deviceErrorCapabilityLocation
+  case deviceErrorMemmoryGeneral
+  case deviceErrorOSVersionGeneral
+  case networkingRequestGeneral
+  case noInternetConnection
+  case requestTimeout
+  case invalidURL
+  case badJWT
+  case missingPFLData
+  case missingIdDocFrontData
+  case missingIdDocBackData
+  case missingImageForCompareData
+  case missingPOAData
+  case missingNfcDG1Data
+  case missingPersonalDetailsData
+  case missingAFLData
+  case missingSecondImageForCompareData
+  case missingPflScreenRecordingData
+  case missingAflScreenRecordingData
+  case missingNfcDG2Data
+  case missingNfcDG7Data
+  case missingPCData
+  case missingVCData
+  case missingVSData
+  case missingIdDataData
+  case serverIsBusy
+  case requestCanceled
+  case networkingParsingIssueGeneral
+  case responseParsingFailed
+  case missingJWTExpiry
+  case missingJWTApiUrl
+  case missingJWTBosUrl
+  case missingJWTOrganizationId
+  case missingJWTScopes
+  case missingJWTAudience
+  case missingJWTIssuer
+  case missingJWTBaseUrl
+  case networkingServerErrorGeneral
+  case requestFailed
+  case badResponse
+  case flowErrorInputGeneral
+  case flowErrorSessionGeneral
+  case ocsConfigurations
+  case coreInactive
+  case failedToStartSession
+  case didNotRetainSessionID
+  case expiredJWT
+  case generalTokenSessionTimeout
+  case flowSessionTimeout
+  case coreIsOffline
+  case flowErrorTimeoutGeneral
+  case flowErrorGeneral
+  case missingSDCUIFramework
+  case missingPFLUIFramework
+  case missingPOAUIFramework
+  case missingPCUIFramework
+  case missingVCUIFramework
+  case localSDCClassificationFailed
+  case failedToRetreiveAssetFromGallery
+  case mrzKeyReadingFailed
+  case retriesLimitExceeded
+  case screenRecordingFailed
+  case methodCalledNotFromTheMainThread
+  case captureImageFailed
+  case nfcResponseError
+  case nfcNotSupported
+  case nfcNoConnectedTag
+  case nfcUnsupportedDataGroup
+  case nfcUnknownTag
+  case nfcMoreThanOneTagFound
+  case cameraRectInvalid
+  case quadrangleGenerationFailed
+  case missingTensorFlowLiteFramework
+  case missingCoreMLFramework
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Au10tixCore.Au10DataType : Swift.Equatable {}
+extension Au10tixCore.Au10DataType : Swift.Hashable {}
+extension Au10tixCore.Au10DataType : Swift.RawRepresentable {}
 extension Au10tixCore.BIFeature : Swift.Equatable {}
 extension Au10tixCore.BIFeature : Swift.Hashable {}
 extension Au10tixCore.BIFeature : Swift.RawRepresentable {}
@@ -1417,6 +1544,9 @@ extension Au10tixCore.BINFCPassportStage : Swift.RawRepresentable {}
 extension Au10tixCore.CoreLogManager.Category : Swift.Equatable {}
 extension Au10tixCore.CoreLogManager.Category : Swift.Hashable {}
 extension Au10tixCore.CoreLogManager.Category : Swift.RawRepresentable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.Equatable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorSeverity : Swift.RawRepresentable {}
 extension Au10tixCore.Log.LogType : Swift.Equatable {}
 extension Au10tixCore.Log.LogType : Swift.Hashable {}
 extension Au10tixCore.Log.LogType : Swift.RawRepresentable {}
@@ -1455,18 +1585,16 @@ extension Au10tixCore.HTTPHeader.Fields : Swift.Hashable {}
 extension Au10tixCore.HTTPHeader.Fields : Swift.RawRepresentable {}
 extension Au10tixCore.DeviceError.Permission : Swift.Equatable {}
 extension Au10tixCore.DeviceError.Permission : Swift.Hashable {}
-extension Au10tixCore.DeviceError.Permission : Swift.RawRepresentable {}
 extension Au10tixCore.DeviceError.Capability : Swift.Equatable {}
 extension Au10tixCore.DeviceError.Capability : Swift.Hashable {}
-extension Au10tixCore.DeviceError.Capability : Swift.RawRepresentable {}
+extension Au10tixCore.Reachability.Connection : Swift.Equatable {}
+extension Au10tixCore.Reachability.Connection : Swift.Hashable {}
 extension Au10tixCore.Au10ErrorCategory : Swift.Equatable {}
 extension Au10tixCore.Au10ErrorCategory : Swift.Hashable {}
 extension Au10tixCore.Au10ErrorCategory : Swift.RawRepresentable {}
 extension Au10tixCore.Au10ErrorDomain : Swift.Equatable {}
 extension Au10tixCore.Au10ErrorDomain : Swift.Hashable {}
 extension Au10tixCore.Au10ErrorDomain : Swift.RawRepresentable {}
-extension Au10tixCore.Au10ErrorSeverity : Swift.Equatable {}
-extension Au10tixCore.Au10ErrorSeverity : Swift.Hashable {}
-extension Au10tixCore.Au10ErrorSeverity : Swift.RawRepresentable {}
-extension Au10tixCore.Reachability.Connection : Swift.Equatable {}
-extension Au10tixCore.Reachability.Connection : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorEvent : Swift.Equatable {}
+extension Au10tixCore.Au10ErrorEvent : Swift.Hashable {}
+extension Au10tixCore.Au10ErrorEvent : Swift.RawRepresentable {}

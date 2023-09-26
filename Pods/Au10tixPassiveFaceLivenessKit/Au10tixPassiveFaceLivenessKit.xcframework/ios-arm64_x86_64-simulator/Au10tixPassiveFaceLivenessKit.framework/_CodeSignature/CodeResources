@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EYJ3R0j/K8iC/9aLrP5XGHyAeFI=
+		j/ut2y8ZM9FrP1g4fELbWiQeVLU=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wB9Aei3NR+b85+rG+5WufobyHvU=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2IXcSbck/QqhRtBOsc0ISYDup7I=
+		KUa12gXm5hjqq3IdKpg5ydBuUqU=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wB9Aei3NR+b85+rG+5WufobyHvU=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VPSV0csB+cp0aCj/R2/N7dIxFGY=
+		c00Z8xEu8nnOXqBPVJbG5bl94BI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0oYUdIAeOajjS3QpERpq1oLckHT1ZZKTsbW1/tvjX4=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2kL5UlmV6tX7rT8sUuUjF8wTTzUeH1/6BN+PlpvN2Bo=
+			sohbSujVtJLVTy17M0NYv7nVfE56uVIe0XvuVdLrZvI=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0oYUdIAeOajjS3QpERpq1oLckHT1ZZKTsbW1/tvjX4=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/Au10tixPassiveFaceLivenessKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1CJGMJqVHNtQWQHGfwzBtJPXQIKFWAENUNoT+hs5tgQ=
+			1pLaAp7Fyn8ZA1NGnfBlQBEyVV2RK67xtbQjfhPQ7rc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
