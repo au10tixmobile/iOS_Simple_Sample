@@ -1,4 +1,0 @@
-framework module Au10tixDetectorManager {
-  header "Au10tixDetectorManager-Swift.h"
-  requires objc
-}

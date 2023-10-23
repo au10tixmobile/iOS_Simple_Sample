@@ -138,9 +138,11 @@ private extension MainViewController {
      */
     
     func openNFCUIComponent() {
+        _ = SDCViewController()
         let configs = UIComponentConfigs()
         let controller = NFCViewController(configs: configs, navigationDelegate: self)
         controller.nfcDelegate = self
+        controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
     }
 
