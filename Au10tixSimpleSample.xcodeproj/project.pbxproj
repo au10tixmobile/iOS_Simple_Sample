@@ -16,7 +16,6 @@
 		25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */; };
 		257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7BD688FC88240783AA35AAF6 /* Pods_Au10tixSimpleSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD5E850A26BC3612CE6FE73 /* Pods_Au10tixSimpleSample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
 		9CA6D95E253749FC00E48DDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D95D253749FC00E48DDD /* MainViewController.swift */; };
@@ -74,7 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */,
-				7BD688FC88240783AA35AAF6 /* Pods_Au10tixSimpleSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
