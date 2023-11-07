@@ -7,20 +7,62 @@
 
 import UIKit
 import AVFoundation
+
+#if canImport(Au10tixCore)
 import Au10tixCore
+#endif
+
+#if canImport(Au10tixBaseUI)
 import Au10tixBaseUI
+#endif
+
+#if canImport(Au10tixProofOfAddressKit)
 import Au10tixProofOfAddressKit
+#endif
+
+#if canImport(Au10tixSmartDocumentCaptureKit)
 import Au10tixSmartDocumentCaptureKit
+#endif
+
+#if canImport(Au10tixPassiveFaceLivenessKit)
 import Au10tixPassiveFaceLivenessKit
+#endif
+
+#if canImport(Au10tixProofOfAddressUI)
 import Au10tixProofOfAddressUI
+#endif
+
+#if canImport(Au10tixSmartDocumentCaptureUI)
 import Au10tixSmartDocumentCaptureUI
+#endif
+
+#if canImport(Au10tixPassiveFaceLivenessUI)
 import Au10tixPassiveFaceLivenessUI
+#endif
+
+#if canImport(Au10tixBEKit)
 import Au10tixBEKit
+#endif
+
+#if canImport(Au10tixLivenessKit)
 import Au10tixLivenessKit
+#endif
+
+#if canImport(Au10tixLivenessUI)
 import Au10tixLivenessUI
+#endif
+
+#if canImport(Au10tixNFCPassportUI)
 import Au10tixNFCPassportUI
+#endif
+
+#if canImport(Au10tixNFCPassportKit)
 import Au10tixNFCPassportKit
+#endif
+
+#if canImport(Au10tixVoiceConsentUI)
 import Au10tixVoiceConsentUI
+#endif
 
 final class MainViewController: UIViewController {
     
@@ -71,8 +113,9 @@ private extension MainViewController {
     func prepare() {
         
         #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
-        let jwtToken = ""
+        let jwtToken = "eyJraWQiOiJSYW1XZlpMc3VZdVFwMzUzRV9ETmRQWWo0YnphUEhyT2JGLWNVMm9uSktNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULndEb0Q1WHNQR0UtZy1KU09acGdvZTBnTjdUNGlHMFlxSkRDYWh0TmEtZVUiLCJpc3MiOiJodHRwczovL2xvZ2luLmF1MTB0aXguY29tL29hdXRoMi9hdXMzbWx0czVzYmU5V0Q4VjM1NyIsImF1ZCI6ImF1MTB0aXgiLCJpYXQiOjE2OTkzNjc2MTcsImV4cCI6MTY5OTQ1NDAxNywiY2lkIjoiMG9hM25yNGI5Ym12NjBuQWUzNTciLCJzY3AiOlsib2NzL3Njb3BlOm1vYmlsZXNkayIsInNkYyIsIm1vYmlsZXNkayJdLCJnbG9iYWxBcGlVcmwiOiJodHRwczovL3dldS1jbS1hcGltLWRldi5henVyZS1hcGkubmV0Iiwic3ViIjoiMG9hM25yNGI5Ym12NjBuQWUzNTciLCJhcGlVcmwiOiJodHRwczovL3dldS1jbS1hcGltLWRldi5henVyZS1hcGkubmV0IiwiYm9zVXJsIjoiaHR0cHM6Ly9ib3Mtd2ViLmF1MTB0aXhzZXJ2aWNlc2Rldi5jb20iLCJjbGllbnRPcmdhbml6YXRpb25OYW1lIjoiQVUxMHRUSVgiLCJjbGllbnRPcmdhbml6YXRpb25JZCI6IjMyNiJ9.rVbxW724-UQhCsK50O473YkNGsd9Nx6EkqpMh0QhbpbtvPsiHiJSrvX_YHPYkM3u7UaoKXXVoiYdY6z82ngEpGRPaxDPEZ4AKni1mFgP_Plzih4K1XvILn1KbJEpG86xMIMZ7oNdzDq7AJc0Q0arUkfAuUTPRDhHnweoYqfL_TnbchbBEifo836EMP9aZ3U2Lplx2suYRcqLDGjMw9K0tZW48mkC_sYuK_YgK9WeIKoqTGTj4Y-_fWXsqnTfaiaJFI0INFawCjn_aGnjyYxAZhSwwDGcaha0ITYdiWZ5biP-_LtG2c0jlfdorfnv4ck0qnyzFSseeK4D5g1yP3hOow"
         
+#if canImport(Au10tixCore)
         Au10tix.shared.prepare(with: jwtToken) { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -82,6 +125,7 @@ private extension MainViewController {
                 self.showAlert(error.localizedDescription, isError: true)
             }
         }
+#endif
     }
     
     // MARK: - Open SMART DOCUMENT CAPTURING UI component
@@ -90,10 +134,14 @@ private extension MainViewController {
      */
     
     func openSDCUIComponent() {
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixSmartDocumentCaptureUI)
         let controller = SDCViewController(configs: configs, navigationDelegate: self)
         controller.sdcDelegate = self
         present(controller, animated: true, completion: nil)
+#endif
+#endif
     }
     
     // MARK: - Open PASSIVE FACE LIVENESS UI component.
@@ -102,10 +150,14 @@ private extension MainViewController {
      */
     
     func openPFLUIComponent() {
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixPassiveFaceLivenessUI)
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
         controller.pflDelegate = self
         present(controller, animated: true, completion: nil)
+#endif
+#endif
     }
     
     // MARK: - Open LIVENESS UI component.
@@ -114,10 +166,14 @@ private extension MainViewController {
      */
     
     func openLivenessUIComponent() {
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixLivenessUI)
         let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
         livenessVC.livenessSessionDelegate = self
         self.present(livenessVC, animated: true, completion: nil)
+#endif
+#endif
     }
     
     // MARK: - Open PROOF OF ADDRESS UI component.
@@ -126,10 +182,14 @@ private extension MainViewController {
      */
     
     func openPOAUIComponent() {
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixProofOfAddressUI)
         let controller = POAViewController(configs: configs, navigationDelegate: self)
         controller.poaDelegate = self
         present(controller, animated: true, completion: nil)
+#endif
+#endif
     }
 
     // MARK: - Open NFC UI component.
@@ -138,12 +198,18 @@ private extension MainViewController {
      */
     
     func openNFCUIComponent() {
-        _ = SDCViewController()
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixSmartDocumentCaptureUI)
+        _ = SDCViewController()
+#endif
+#if canImport(Au10tixNFCPassportUI)
         let controller = NFCViewController(configs: configs, navigationDelegate: self)
         controller.nfcDelegate = self
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
+#endif
+#endif
     }
 
     
@@ -153,10 +219,14 @@ private extension MainViewController {
      */
     
     func openVCUIComponent() {
+#if canImport(Au10tixBaseUI)
         let configs = UIComponentConfigs()
+#if canImport(Au10tixVoiceConsentUI)
         let controller = VCViewController(configs: configs, navigationDelegate: self)
         controller.vcDelegate = self
         present(controller, animated: true, completion: nil)
+#endif
+#endif
     }
 
     // MARK: - Open PFLViewController
@@ -206,6 +276,7 @@ private extension MainViewController {
     
     // MARK: - openSDCResults
     
+#if canImport(Au10tixCore)
     func openSDCResult(_ image: Au10Image) {
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
@@ -225,6 +296,7 @@ private extension MainViewController {
         controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
+#endif
     
     // MARK: - UIAlertController
     
@@ -249,8 +321,10 @@ private extension MainViewController {
     // MARK: - Observer
     
     func addObserver() {
+#if canImport(Au10tixCore)
         NotificationCenter.default.addObserver(self, selector: #selector(handleExpirationNotification(_:)),
                                                name: .au10tixCoreTokenExpiration, object: nil)
+#endif
     }
     
     @objc func handleExpirationNotification(_ sender: Notification) {
@@ -309,6 +383,7 @@ private extension MainViewController {
     @IBAction func sendIdvRequest(sender: UIButton) {
         let originalTitle = sender.title(for: .normal)
         sender.setTitle("Sending...", for: .normal)
+#if canImport(Au10tixBEKit)
         Au10tixBackendKit.shared.sendIDVerificationFlow { [weak self, weak sender] result in
             guard let self = self, let sender = sender else { return }
             sender.setTitle(originalTitle, for: .normal)
@@ -319,6 +394,7 @@ private extension MainViewController {
                 self.showAlert("❌ \(error)", isError: true)
             }
         }
+#endif
     }
     
     @IBAction func sendPoaRequest(sender: UIButton) {
@@ -348,6 +424,7 @@ private extension MainViewController {
             let originalTitle = sender.title(for: .normal)
             sender.setTitle("Sending...", for: .normal)
             
+#if canImport(Au10tixBEKit)
             Au10tixBackendKit.shared.sendProofOfAddress(firstName: firstName, lastName: lastName, address: address) { [weak self, weak sender](result) in
                 guard let self = self, let sender = sender else { return }
                 sender.setTitle(originalTitle, for: .normal)
@@ -358,6 +435,7 @@ private extension MainViewController {
                     self.showAlert("❌ \(error)", isError: true)
                 }
             }
+#endif
         }))
         
         self.present(alert, animated: true, completion: nil)
@@ -366,6 +444,7 @@ private extension MainViewController {
 
 //MARK: - POASessionDelegate
 
+#if canImport(Au10tixProofOfAddressKit)
 extension MainViewController: POASessionDelegate {
     
     /**
@@ -383,9 +462,11 @@ extension MainViewController: POASessionDelegate {
     }
     
 }
+#endif
 
 //MARK: - SDCSessionDelegate
 
+#if canImport(Au10tixSmartDocumentCaptureKit)
 extension MainViewController: SDCSessionDelegate {
     
     /**
@@ -423,9 +504,11 @@ extension MainViewController: SDCSessionDelegate {
         
     }
 }
+#endif
 
 //MARK: - PFLSessionDelegate
 
+#if canImport(Au10tixPassiveFaceLivenessKit)
 extension MainViewController: PFLSessionDelegate {
         
     /**
@@ -542,8 +625,9 @@ extension MainViewController: PFLSessionDelegate {
     }
     
 }
+#endif
 
-
+#if canImport(Au10tixLivenessKit)
 extension MainViewController: LivenessSessionDelegate {
     
     /**
@@ -583,7 +667,9 @@ extension MainViewController: LivenessSessionDelegate {
     }
     
 }
+#endif
 
+#if canImport(Au10tixBaseUI)
 extension MainViewController: UIComponentViewControllerNavigationDelegate {
     /**
      Gets called whenever an UI-Comp finished.
@@ -601,7 +687,9 @@ extension MainViewController: UIComponentViewControllerNavigationDelegate {
     
     
 }
+#endif
 
+#if canImport(Au10tixVoiceConsentUI)
 extension MainViewController: VCSessionDelegate {
     func vcSession(_ vcSession: Au10tixVoiceConsentUI.VCSession, didFailWith error: Au10tixVoiceConsentUI.VCSessionError) {
         
@@ -613,7 +701,9 @@ extension MainViewController: VCSessionDelegate {
     
     
 }
+#endif
 
+#if canImport(Au10tixNFCPassportKit)
 extension MainViewController: NFCPassportSessionDelegate {
     func nfcPassportSession(_ nfcPassportSession: Au10tixNFCPassportKit.NFCPassportSession, didScan passportMRZ: String, in frame: CIImage) {
         
@@ -636,3 +726,4 @@ extension MainViewController: NFCPassportSessionDelegate {
     }
     
 }
+#endif

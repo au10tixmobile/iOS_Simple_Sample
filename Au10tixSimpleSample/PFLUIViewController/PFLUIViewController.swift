@@ -6,12 +6,20 @@
 //
 
 import UIKit
+
+#if canImport(Au10tixCore)
 import Au10tixCore
+#endif
+
+#if canImport(Au10tixPassiveFaceLivenessKit)
 import Au10tixPassiveFaceLivenessKit
+#endif
 
 final class PFLUIViewController: UIViewController {
     
+#if canImport(Au10tixPassiveFaceLivenessKit)
     private let pflSession = PFLSession()
+#endif
     private var pflResultString: String?
     // MARK: - IBOutlets
     
@@ -37,7 +45,9 @@ final class PFLUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+#if canImport(Au10tixPassiveFaceLivenessKit)
         pflSession.stop()
+#endif
     }
 }
 
@@ -50,7 +60,9 @@ private extension PFLUIViewController {
      */
     
     func prepare() {
+#if canImport(Au10tixCore)
         guard let token = Au10tix.shared.bearerToken else { return }
+#if canImport(Au10tixPassiveFaceLivenessKit)
         pflSession.delegate = self
         pflSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
@@ -61,6 +73,8 @@ private extension PFLUIViewController {
                 debugPrint("start with sessionId: " + sessionId)
             }
         }
+#endif
+#endif
     }
     
     // MARK: - Show Preview Image
@@ -107,7 +121,7 @@ private extension PFLUIViewController {
     }
    
     // Get QualityFault String Value
-    
+#if canImport(Au10tixPassiveFaceLivenessKit)
     private func getQualityFaultStringValue(_ fault: QualityFault?) -> String {
         
         guard let fault = fault else {return "none"}
@@ -147,6 +161,7 @@ private extension PFLUIViewController {
             return ""
         }
     }
+#endif
     
     // MARK: - UIAlertController
     
@@ -167,7 +182,9 @@ private extension PFLUIViewController {
         }
         
         showActivityIndicator()
+#if canImport(Au10tixPassiveFaceLivenessKit)
         pflSession.validateImage(imageData)
+#endif
     }
     
     @IBAction func resumeCapturing() {
@@ -176,16 +193,21 @@ private extension PFLUIViewController {
         btnAgree.isHidden = true
         btnChooseAnother.isHidden = true
         btnStillImage.isHidden = false
+#if canImport(Au10tixPassiveFaceLivenessKit)
         pflSession.recapture()
+#endif
     }
     
     @IBAction func takeStillImage() {
+#if canImport(Au10tixPassiveFaceLivenessKit)
         pflSession.captureImage(.cameraCapture)
+#endif
     }
 }
 
 // MARK: - HANDLE SESSION EVENTS
 
+#if canImport(Au10tixPassiveFaceLivenessKit)
 extension PFLUIViewController: PFLSessionDelegate {
     
     /**
@@ -303,3 +325,4 @@ extension PFLUIViewController: PFLSessionDelegate {
     }
 
 }
+#endif
