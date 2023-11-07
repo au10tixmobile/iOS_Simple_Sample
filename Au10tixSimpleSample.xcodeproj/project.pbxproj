@@ -268,7 +268,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		055CC29EA1BBFF15965CBB2C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -278,7 +278,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
