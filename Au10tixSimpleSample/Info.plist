@@ -24,6 +24,8 @@
     <string>NFC Scan is needed to verify your identity</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera Permission</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Library Permission</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>Microphone access is needed for voice consent functionality</string>
     <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
@@ -33,6 +35,10 @@
     </array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>App_Name requires user’s location for better user experience.</string>
+    <key>NSLocationUsageDescription</key>
+    <string>please approve to use location</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>we need the location</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

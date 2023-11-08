@@ -6,12 +6,20 @@
 //
 
 import UIKit
+
+#if canImport(Au10tixCore)
 import Au10tixCore
+#endif
+
+#if canImport(Au10tixProofOfAddressKit)
 import Au10tixProofOfAddressKit
+#endif
 
 final class POAUIViewController: UIViewController {
     
+#if canImport(Au10tixProofOfAddressKit)
     private let poaSession = POASession()
+#endif
     // MARK: - IBOutlets
     @IBOutlet private weak var cameraView: UIView!
     
@@ -25,7 +33,9 @@ final class POAUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+#if canImport(Au10tixProofOfAddressKit)
         poaSession.stop()
+#endif
     }
 }
 
@@ -38,9 +48,10 @@ private extension POAUIViewController {
      */
     
     func prepare() {
+#if canImport(Au10tixCore)
         guard let token = Au10tix.shared.bearerToken else { return }
+#if canImport(Au10tixProofOfAddressKit)
         poaSession.delegate = self
-        
         self.poaSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
             switch result {
@@ -50,10 +61,13 @@ private extension POAUIViewController {
                 debugPrint("start with sessionId: " + sessionId)
             }
         }
+#endif
+#endif
     }
     
     // MARK: - openPOAResults
     
+#if canImport(Au10tixCore)
     func openPOAResult(image: Au10Image) {
         
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
@@ -63,6 +77,7 @@ private extension POAUIViewController {
         controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
+#endif
     
     // MARK: - UIAlertController
     
@@ -78,12 +93,15 @@ private extension POAUIViewController {
 private extension POAUIViewController {
     
     @IBAction func takeStillImage() {
+#if canImport(Au10tixProofOfAddressKit)
         poaSession.captureImage(.cameraCapture)
+#endif
     }
 }
 
 // MARK: - HANDLE SESSION EVENTS
 
+#if canImport(Au10tixProofOfAddressKit)
 extension POAUIViewController: POASessionDelegate {
     
     /**
@@ -101,3 +119,4 @@ extension POAUIViewController: POASessionDelegate {
     }
         
 }
+#endif

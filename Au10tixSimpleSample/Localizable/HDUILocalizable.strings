@@ -26,7 +26,7 @@
 "HDHelmetDetectorViewController.Alert.Timeout.Title" = "Session Timeout";
 "HDHelmetDetectorViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
 "HDHelmetDetectorViewController.Alert.AllowRecording.Title" = "Access Permission";
-"HDHelmetDetectorViewController.Alert.AllowRecording.Message" = "In order to continue, we need a premission to record video and voice.";
+"HDHelmetDetectorViewController.Alert.AllowRecording.Message" = "We need permission to record video and voice.";
 "HDHelmetDetectorViewController.Feedback.Center" = "Please position your face\nin the center";
 "HDHelmetDetectorViewController.Feedback.YourMobileDeviceIsUnstableHoldSteadyToDetectYourFace" = "Hold the device steady\nto detect your face";
 "HDHelmetDetectorViewController.Feedback.TooClose" = "Too Close";

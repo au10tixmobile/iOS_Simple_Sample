@@ -6,12 +6,20 @@
 //
 
 import UIKit
+
+#if canImport(Au10tixCore)
 import Au10tixCore
+#endif
+
+#if canImport(Au10tixSmartDocumentCaptureKit)
 import Au10tixSmartDocumentCaptureKit
+#endif
 
 final class SDCUIViewController: UIViewController {
     
+#if canImport(Au10tixSmartDocumentCaptureKit)
     private let sdcSession = SDCSession()
+#endif
     // MARK: - IBOutlets
     
     @IBOutlet private weak var cameraView: UIView!
@@ -27,7 +35,9 @@ final class SDCUIViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+#if canImport(Au10tixSmartDocumentCaptureKit)
         sdcSession.stop()
+#endif
     }
 }
 
@@ -40,7 +50,9 @@ private extension SDCUIViewController {
      */
     
     func prepare() {
+#if canImport(Au10tixCore)
         guard let token = Au10tix.shared.bearerToken else { return }
+#if canImport(Au10tixSmartDocumentCaptureKit)
         sdcSession.delegate = self
 
         /**
@@ -58,10 +70,13 @@ private extension SDCUIViewController {
                 debugPrint("start with sessionId: " + sessionId)
             }
         }
+#endif
+#endif
     }
     
     // MARK: - Open ResultViewController
     
+#if canImport(Au10tixCore)
     func openSDCResults(_ image: Au10Image) {
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
             return
@@ -70,15 +85,19 @@ private extension SDCUIViewController {
         controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
+#endif
     
     // MARK: - Show Updates
     
+#if canImport(Au10tixSmartDocumentCaptureKit)
     func showDetails(_ processingStatus: SDCProcessingStatus) {
         lblInfo.text = getUpdatesList(processingStatus)
     }
+#endif
     
     // MARK: - Updates List
     
+#if canImport(Au10tixSmartDocumentCaptureKit)
     func getUpdatesList(_ processingStatus: SDCProcessingStatus) -> String {
         
         var arr: [String] = []
@@ -91,6 +110,7 @@ private extension SDCUIViewController {
         
         return arr.joined(separator: "\n")
     }
+#endif
     
     // MARK: - UIAlertController
     
@@ -106,13 +126,16 @@ private extension SDCUIViewController {
 private extension SDCUIViewController {
     
     @IBAction func takeStillImage() {
+#if canImport(Au10tixSmartDocumentCaptureKit)
         sdcSession.captureImage(.cameraCapture)
+#endif
     }
     
 }
 
 // MARK: - HANDLE SESSION EVENTS
 
+#if canImport(Au10tixSmartDocumentCaptureKit)
 extension SDCUIViewController: SDCSessionDelegate {
     
     /**
@@ -150,3 +173,4 @@ extension SDCUIViewController: SDCSessionDelegate {
         
     }
 }
+#endif
