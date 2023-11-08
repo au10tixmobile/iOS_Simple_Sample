@@ -11,55 +11,42 @@ import AVFoundation
 #if canImport(Au10tixCore)
 import Au10tixCore
 #endif
-
 #if canImport(Au10tixBaseUI)
 import Au10tixBaseUI
 #endif
-
 #if canImport(Au10tixProofOfAddressKit)
 import Au10tixProofOfAddressKit
 #endif
-
 #if canImport(Au10tixSmartDocumentCaptureKit)
 import Au10tixSmartDocumentCaptureKit
 #endif
-
 #if canImport(Au10tixPassiveFaceLivenessKit)
 import Au10tixPassiveFaceLivenessKit
 #endif
-
 #if canImport(Au10tixProofOfAddressUI)
 import Au10tixProofOfAddressUI
 #endif
-
 #if canImport(Au10tixSmartDocumentCaptureUI)
 import Au10tixSmartDocumentCaptureUI
 #endif
-
 #if canImport(Au10tixPassiveFaceLivenessUI)
 import Au10tixPassiveFaceLivenessUI
 #endif
-
 #if canImport(Au10tixBEKit)
 import Au10tixBEKit
 #endif
-
 #if canImport(Au10tixLivenessKit)
 import Au10tixLivenessKit
 #endif
-
 #if canImport(Au10tixLivenessUI)
 import Au10tixLivenessUI
 #endif
-
 #if canImport(Au10tixNFCPassportUI)
 import Au10tixNFCPassportUI
 #endif
-
 #if canImport(Au10tixNFCPassportKit)
 import Au10tixNFCPassportKit
 #endif
-
 #if canImport(Au10tixVoiceConsentUI)
 import Au10tixVoiceConsentUI
 #endif
