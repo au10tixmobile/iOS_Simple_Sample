@@ -64,9 +64,14 @@ import Au10tixNFCPassportKit
 import Au10tixVoiceConsentUI
 #endif
 
+#if canImport(Au10tixLocalDataInferenceKit)
+import Au10tixLocalDataInferenceKit
+#endif
+
 final class MainViewController: UIViewController {
     
     private var pflResultString: String?
+    private var localClassification: Bool = false
     
     // MARK: - IBOutlets
     @IBOutlet private weak var stackView: UIStackView!
@@ -82,6 +87,35 @@ final class MainViewController: UIViewController {
         requestVideoPermission()
         addObserver()
     }
+    
+    private func present(controller: UIViewController) {
+        getTopMostViewController()?.present(controller, animated: true, completion: nil)
+    }
+    
+    private func getTopMostViewController() -> UIViewController? {
+        var topMostViewController = UIApplication.shared.windows.first?.rootViewController
+        while let presentedViewController = topMostViewController?.presentedViewController {
+            topMostViewController = presentedViewController
+        }
+        return topMostViewController
+    }
+    
+    private func presentLocalSDCModulesUpdatingLoader() -> UIAlertController {
+        let loader = loaderAlert("Updating modules...")
+        present(controller: loader)
+        return loader
+    }
+    
+    private func loaderAlert(_ message: String) -> UIAlertController {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.large
+        loadingIndicator.startAnimating()
+        alert.view.addSubview(loadingIndicator)
+        return alert
+    }
+    
 }
 
 // MARK: - Private Methods
@@ -139,7 +173,13 @@ private extension MainViewController {
 #if canImport(Au10tixSmartDocumentCaptureUI)
         let controller = SDCViewController(configs: configs, navigationDelegate: self)
         controller.sdcDelegate = self
-        present(controller, animated: true, completion: nil)
+        controller.localClassification = localClassification
+        updateModulesIfAvailable { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+                guard let self = self else { return }
+                self.present(controller: controller)
+            }
+        }
 #endif
 #endif
     }
@@ -155,7 +195,7 @@ private extension MainViewController {
 #if canImport(Au10tixPassiveFaceLivenessUI)
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
         controller.pflDelegate = self
-        present(controller, animated: true, completion: nil)
+        self.present(controller: controller)
 #endif
 #endif
     }
@@ -171,7 +211,7 @@ private extension MainViewController {
 #if canImport(Au10tixLivenessUI)
         let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
         livenessVC.livenessSessionDelegate = self
-        self.present(livenessVC, animated: true, completion: nil)
+        self.present(controller: livenessVC)
 #endif
 #endif
     }
@@ -187,7 +227,7 @@ private extension MainViewController {
 #if canImport(Au10tixProofOfAddressUI)
         let controller = POAViewController(configs: configs, navigationDelegate: self)
         controller.poaDelegate = self
-        present(controller, animated: true, completion: nil)
+        self.present(controller: controller)
 #endif
 #endif
     }
@@ -207,7 +247,7 @@ private extension MainViewController {
         let controller = NFCViewController(configs: configs, navigationDelegate: self)
         controller.nfcDelegate = self
         controller.modalPresentationStyle = .fullScreen
-        present(controller, animated: true, completion: nil)
+        self.present(controller: controller)
 #endif
 #endif
     }
@@ -224,7 +264,7 @@ private extension MainViewController {
 #if canImport(Au10tixVoiceConsentUI)
         let controller = VCViewController(configs: configs, navigationDelegate: self)
         controller.vcDelegate = self
-        present(controller, animated: true, completion: nil)
+        self.present(controller: controller)
 #endif
 #endif
     }
@@ -303,7 +343,7 @@ private extension MainViewController {
     func showAlert(_ text: String, isError: Bool) {
         let alert = UIAlertController(title: isError ? "Error ☹️" : "Success 😀", message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+        self.present(controller: alert)
     }
     
     // MARK: - Buttons Preparation
@@ -330,14 +370,27 @@ private extension MainViewController {
     @objc func handleExpirationNotification(_ sender: Notification) {
         let alert = UIAlertController(title: "Error", message: "Session Is Expired", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        if var topController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController {
-            if let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
+        self.present(controller: alert)
+    }
+    
+    private func updateModulesIfAvailable(_ completion: @escaping () -> ()) {
+        if localClassification {
+#if canImport(Au10tixLocalDataInferenceKit)
+            let loader = presentLocalSDCModulesUpdatingLoader()
+            Au10tixLocalDataInferenceManager.updateModules { result in
+                print("Au10tixLocalDataInferenceKit updateModules result:\(result)")
+                DispatchQueue.main.async {
+                    loader.dismiss(animated: false) { completion() }
+                }
             }
-            topController.present(alert, animated: true, completion: nil)
+#else
+            completion()
+#endif
+        } else {
+            completion()
         }
     }
+    
 }
 
 // MARK: - Actions
@@ -378,6 +431,14 @@ private extension MainViewController {
 
     @IBAction func btnVCWithUIAction() {
         openVCUIComponent()
+    }
+    
+    @IBAction func classificationSourceSegmentedChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            localClassification = false
+        } else {
+            localClassification = true
+        }
     }
 
     @IBAction func sendIdvRequest(sender: UIButton) {
@@ -438,7 +499,7 @@ private extension MainViewController {
 #endif
         }))
         
-        self.present(alert, animated: true, completion: nil)
+        self.present(controller: alert)
     }
 }
 
