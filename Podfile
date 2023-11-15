@@ -12,7 +12,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 #
 # ==============
 
-source 'https://github.com/au10tixmobile/iOS_Artifacts_cocoapods_spec.git'
+source 'https://au10tixmobile:{github_pat}@github.com/au10tixmobile/iOS_Artifacts_cocoapods_spec.git'
 
 target 'Au10tixSimpleSample' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -24,6 +24,7 @@ target 'Au10tixSimpleSample' do
   pod 'Au10tixLivenessUI'
   pod 'Au10tixBEKit'
   pod 'Au10tixVoiceConsentUI'
-  pod 'Au10tixNFCPassportUI' 
+  pod 'Au10tixNFCPassportUI'
+  pod 'Au10tixLocalDataInferenceKit'
   
 end
