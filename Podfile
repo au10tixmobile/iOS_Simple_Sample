@@ -23,8 +23,8 @@ target 'Au10tixSimpleSample' do
   pod 'Au10tixSmartDocumentCaptureUI'
   pod 'Au10tixLivenessUI'
   pod 'Au10tixBEKit'
-  pod 'Au10tixVoiceConsentUI'
-  pod 'Au10tixNFCPassportUI'
+#  pod 'Au10tixVoiceConsentUI'
+#  pod 'Au10tixNFCPassportUI'
   pod 'Au10tixLocalDataInferenceKit'
   
 end
