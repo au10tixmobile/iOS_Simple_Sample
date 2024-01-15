@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */; };
-		25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5928B7897900CC6F01 /* POAUILocalizable.strings */; };
-		25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */; };
-		25748C6228B7897900CC6F01 /* SDCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */; };
-		25748C6328B7897900CC6F01 /* NFCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */; };
-		25748C6428B7897900CC6F01 /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */; };
-		25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */; };
 		257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54BB51D52B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51C82B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets */; };
@@ -55,13 +48,6 @@
 /* Begin PBXFileReference section */
 		2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenSSL.xcframework; sourceTree = "<group>"; };
 		25446E952AE6E94300E64D7E /* Au10tixSimpleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Au10tixSimpleSample.entitlements; sourceTree = "<group>"; };
-		25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SecureMeLocalizable.strings; sourceTree = "<group>"; };
-		25748C5928B7897900CC6F01 /* POAUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = POAUILocalizable.strings; sourceTree = "<group>"; };
-		25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PFLUILocalizable.strings; sourceTree = "<group>"; };
-		25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SDCUILocalizable.strings; sourceTree = "<group>"; };
-		25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = NFCUILocalizable.strings; sourceTree = "<group>"; };
-		25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Au10tixLocalizable.strings; sourceTree = "<group>"; };
-		25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HDUILocalizable.strings; sourceTree = "<group>"; };
 		54BB51C82B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_BaseUIAssets.xcassets; sourceTree = "<group>"; };
 		54BB51C92B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_PFLUIAssets.xcassets; sourceTree = "<group>"; };
 		54BB51CA2B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_HDUIAssets.xcassets; sourceTree = "<group>"; };
@@ -98,20 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25748C5728B7897900CC6F01 /* Localizable */ = {
-			isa = PBXGroup;
-			children = (
-				25748C5828B7897900CC6F01 /* SecureMeLocalizable.strings */,
-				25748C5928B7897900CC6F01 /* POAUILocalizable.strings */,
-				25748C5A28B7897900CC6F01 /* PFLUILocalizable.strings */,
-				25748C5B28B7897900CC6F01 /* SDCUILocalizable.strings */,
-				25748C5C28B7897900CC6F01 /* NFCUILocalizable.strings */,
-				25748C5D28B7897900CC6F01 /* Au10tixLocalizable.strings */,
-				25748C5E28B7897900CC6F01 /* HDUILocalizable.strings */,
-			);
-			path = Localizable;
-			sourceTree = "<group>";
-		};
 		54BB51C62B55C89700BAFC43 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +185,6 @@
 				9C77473E25599DAB00D50830 /* MainViewController */,
 				9C9AD0092541842D004C8119 /* SDCUIViewController */,
 				9C9AD00A25418448004C8119 /* PFLUIViewController */,
-				25748C5728B7897900CC6F01 /* Localizable */,
 				9CA6D95F253749FC00E48DDD /* Main.storyboard */,
 				9CA6D959253749FC00E48DDD /* AppDelegate.swift */,
 				9CA6D962253749FE00E48DDD /* Assets.xcassets */,
@@ -291,25 +262,18 @@
 			files = (
 				54BB51DB2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets in Resources */,
 				54BB51D82B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets in Resources */,
-				25748C6128B7897900CC6F01 /* PFLUILocalizable.strings in Resources */,
 				9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */,
 				54BB51DC2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets in Resources */,
-				25748C6228B7897900CC6F01 /* SDCUILocalizable.strings in Resources */,
 				54BB51DF2B55C8CB00BAFC43 /* montserrat-regular.ttf in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
-				25748C5F28B7897900CC6F01 /* SecureMeLocalizable.strings in Resources */,
 				54BB51D72B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets in Resources */,
 				54BB51DD2B55C8CB00BAFC43 /* montserrat-medium.ttf in Resources */,
 				54BB51DA2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets in Resources */,
-				25748C6528B7897900CC6F01 /* HDUILocalizable.strings in Resources */,
-				25748C6428B7897900CC6F01 /* Au10tixLocalizable.strings in Resources */,
-				25748C6028B7897900CC6F01 /* POAUILocalizable.strings in Resources */,
 				54BB51DE2B55C8CB00BAFC43 /* montserrat-semiBold.ttf in Resources */,
 				54BB51D52B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets in Resources */,
 				9CA6D961253749FC00E48DDD /* Main.storyboard in Resources */,
 				54BB51D62B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets in Resources */,
 				54BB51D92B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets in Resources */,
-				25748C6328B7897900CC6F01 /* NFCUILocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
