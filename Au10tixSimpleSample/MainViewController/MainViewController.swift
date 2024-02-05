@@ -16,10 +16,6 @@ import Au10tixCore
 import Au10tixBaseUI
 #endif
 
-#if canImport(Au10tixProofOfAddressKit)
-import Au10tixProofOfAddressKit
-#endif
-
 #if canImport(Au10tixSmartDocumentCaptureKit)
 import Au10tixSmartDocumentCaptureKit
 #endif
@@ -502,28 +498,6 @@ private extension MainViewController {
         self.present(controller: alert)
     }
 }
-
-//MARK: - POASessionDelegate
-
-#if canImport(Au10tixProofOfAddressKit)
-extension MainViewController: POASessionDelegate {
-    
-    /**
-    Gets Called when Proof Of Address session failed
-     */
-    func poaSession(_ poaSession: POASession, didFailWith error: POASessionError) {
-        
-    }
-    
-    /**
-    Gets Called when Proof Of Address image was taken
-     */
-    func poaSession(_ poaSession: POASession, didCapture image: Au10Image, with frameData: Au10Update) {
-        openPOAResult(image)
-    }
-    
-}
-#endif
 
 //MARK: - SDCSessionDelegate
 
