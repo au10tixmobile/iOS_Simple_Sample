@@ -49,16 +49,16 @@ private extension POAUIViewController {
     
     func prepare() {
 #if canImport(Au10tixCore)
-        guard let token = Au10tix.shared.bearerToken else { return }
+        guard Au10tix.shared.workflowWrapper?.accessToken?.jwt != nil else { return }
 #if canImport(Au10tixProofOfAddressKit)
         poaSession.delegate = self
-        self.poaSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
+        self.poaSession.start(previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
             switch result {
             case .failure(let prepareError):
                 self.showAlert("Prepare Error: \(prepareError)")
-            case .success(let sessionId):
-                debugPrint("start with sessionId: " + sessionId)
+            case .success(let succeeded):
+                debugPrint("Did start succeeded: \(succeeded)")
             }
         }
 #endif
