@@ -142,11 +142,14 @@ private extension MainViewController {
      */
     func prepare() {
         
-        #warning("Use the JWT retrieved from your backend. See Au10tix guide for more info")
-        let jwtToken = ""
+        #warning("Use the createWorkFlow response data as .utf8 string.")
+        let workFlowResponse = "{\"sessionId\":\"{sessionId}\",\"response\":{\"session\":\"{sessionJWT}\",\"accessToken\":\"{accessTokenJWT}\",\"assets\":[{assets0},{{assets01},..]},\"statusCode\":200}"
         
 #if canImport(Au10tixCore)
-        Au10tix.shared.prepare(with: jwtToken) { [weak self] result in
+        guard let data = workFlowResponse.data(using: .utf8),
+              let responseDecoded = try? JSONDecoder().decode(Au10tixWorkflow.self, from: data) else { return }
+        Au10tix.shared.updateWorkflowWrapper(responseDecoded)
+        Au10tix.shared.prepare { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let sessionID):

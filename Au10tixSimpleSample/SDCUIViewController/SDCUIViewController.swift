@@ -51,7 +51,7 @@ private extension SDCUIViewController {
     
     func prepare() {
 #if canImport(Au10tixCore)
-        guard let token = Au10tix.shared.bearerToken else { return }
+        guard Au10tix.shared.workflowWrapper?.accessToken?.jwt != nil else { return }
 #if canImport(Au10tixSmartDocumentCaptureKit)
         sdcSession.delegate = self
 
@@ -61,13 +61,13 @@ private extension SDCUIViewController {
 
         try? sdcSession.setRectOfInterest(startX: 0.0, endX: 1.0, startY: 0.0, endY: 1.0)
         
-        sdcSession.start(with: token, previewView: self.cameraView) { [weak self](result) in
+        sdcSession.start(previewView: self.cameraView) { [weak self](result) in
             guard let self = self else { return }
             switch result {
             case .failure(let prepareError):
                 self.showAlert("Prepare Error: \(prepareError)")
-            case .success(let sessionId):
-                debugPrint("start with sessionId: " + sessionId)
+            case .success(let succeeded):
+                debugPrint("Did start succeeded: \(succeeded)")
             }
         }
 #endif
