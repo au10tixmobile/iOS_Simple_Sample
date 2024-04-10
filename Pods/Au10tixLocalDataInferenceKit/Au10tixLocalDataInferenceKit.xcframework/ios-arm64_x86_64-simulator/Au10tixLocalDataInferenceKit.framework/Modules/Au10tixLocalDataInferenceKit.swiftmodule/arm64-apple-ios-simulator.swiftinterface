@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLocalDataInferenceKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Accelerate
+import Au10tixCore
+@_exported import Au10tixLocalDataInferenceKit
+import CoreImage
+import CoreML
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc(Au10tixLocalRequester) final public class Au10tixLocalRequester : ObjectiveC.NSObject, Au10tixCore.Au10Requester {
+  final public var isAvailable: Swift.Bool {
+    get
+  }
+  final public func executeRequest(with image: Au10tixCore.Au10Image, finalWidth: Swift.Int?, cameraResolution: CoreFoundation.CGSize?, previousIOUInfo: Au10tixLocalDataInferenceKit.Au10tixLocalRequester.Au10IOUInfo?, progress: Au10tixLocalDataInferenceKit.Au10tixLocalRequester.Au10RequesterProgressResponse<Any>?, bypassClassifierValidations: Swift.Bool, completion: @escaping Au10tixLocalDataInferenceKit.Au10tixLocalRequester.Au10RequesterResponseCompletion<Any>)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct Au10tixLocalDataInferenceManager {
+  public static var filesState: Au10tixLocalDataInferenceKit.Au10tixFileManagementState {
+    get
+  }
+  public static var FilesStateNotificationKey: Swift.String {
+    get
+  }
+  public static func downloadModels(_ completion: Au10tixCore.Au10tixFileManagerCompletion? = nil)
+  public static func deleteModels(_ completion: Au10tixCore.Au10tixFileManagerCompletion? = nil)
+  public static func warmUpClassificationManager(_ completion: Au10tixCore.Au10tixFileManagerCompletion? = nil)
+  public static func updateModules(_ completion: Au10tixCore.Au10tixFileManagerCompletion? = nil)
+  public static var isModelsDownloaded: Swift.Bool {
+    get
+  }
+}
+public enum Au10tixFileManagementState {
+  case downloaded
+  case downloading
+  case deleted
+  case deleting
+  case warmingUp
+  case downloadedAndWarmedUp
+  case updating
+  public static func == (a: Au10tixLocalDataInferenceKit.Au10tixFileManagementState, b: Au10tixLocalDataInferenceKit.Au10tixFileManagementState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Au10tixLocalDataInferenceKit.Au10tixFileManagementState : Swift.Equatable {}
+extension Au10tixLocalDataInferenceKit.Au10tixFileManagementState : Swift.Hashable {}

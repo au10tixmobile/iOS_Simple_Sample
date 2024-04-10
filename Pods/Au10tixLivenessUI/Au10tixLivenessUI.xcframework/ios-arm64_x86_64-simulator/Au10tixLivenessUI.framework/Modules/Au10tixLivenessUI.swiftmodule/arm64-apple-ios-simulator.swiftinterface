@@ -1,0 +1,491 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Au10tixBaseUI
+import Au10tixCore
+import Au10tixLivenessKit
+@_exported import Au10tixLivenessUI
+import Au10tixPassiveFaceLivenessKit
+import Au10tixSourceManager
+import CoreGraphics
+import Foundation
+import PhotosUI
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension Au10tixLivenessUI.UIComponentOldBaseViewController {
+  public enum UIState : Swift.Equatable {
+    case capturing
+    case takingManualImage
+    case imageCaptured(image: UIKit.UIImage)
+    case badExternalImage(image: Au10tixCore.Au10Image, isFirstTime: Swift.Bool)
+    case timeout
+    public var isCapturing: Swift.Bool {
+      get
+    }
+    public var canShowErrorMessages: Swift.Bool {
+      get
+    }
+    public static func == (a: Au10tixLivenessUI.UIComponentOldBaseViewController.UIState, b: Au10tixLivenessUI.UIComponentOldBaseViewController.UIState) -> Swift.Bool
+  }
+}
+public protocol RecordingTimeStampViewHost : UIKit.UIViewController {
+  var previewView: UIKit.UIView! { get }
+}
+extension Au10tixLivenessUI.RecordingTimeStampViewHost {
+  public var isTimeStampHidden: Swift.Bool {
+    get
+    set
+  }
+  public func showRecordingIndication()
+  public func stopRecordingIndication()
+}
+public struct UICompsOCSConfigurations {
+  public var successColor: UIKit.UIColor
+  public var errorColor: UIKit.UIColor
+  public var infoColor: UIKit.UIColor
+}
+@_inheritsConvenienceInitializers @objc(Au10xOLDPFLViewController) @_Concurrency.MainActor(unsafe) final public class OLDPFLViewController : Au10tixLivenessUI.UIComponentOldBaseViewController {
+  @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var detectionDelay: Swift.Double? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var isMicrophoneEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override final public var lowerToast: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var pflDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate?
+  @_Concurrency.MainActor(unsafe) override final public var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override final public var maskParams: Au10tixLivenessUI.UIComponentOldBaseViewController.MaskParams? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override final public var isImageUploadAvailable: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var validationFlow: Au10tixPassiveFaceLivenessKit.ValidationFlow {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override final public var introVC: Au10tixLivenessUI.UICompsIntroViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override final public func showFeatureFeed()
+  @_Concurrency.MainActor(unsafe) override final public func timeoutViewShouldRefresh()
+  @_Concurrency.MainActor(unsafe) @objc override final public func mainButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func leftButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func closeButtonAction()
+  @_Concurrency.MainActor(unsafe) override final public func handle(state: Au10tixLivenessUI.UIComponentOldBaseViewController.UIState)
+  @_Concurrency.MainActor(unsafe) override final public func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixLivenessUI.UIOldComponentConfigs, navigationDelegate: Au10tixLivenessUI.UIComponentOldViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Au10tixLivenessUI.OLDPFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionDelegate {
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didCapture image: Foundation.Data, qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions, faceBoundingBox: CoreFoundation.CGRect?, isHelmet: Swift.Bool, asHat: Swift.Double, asHelmet: Swift.Double, asNone: Swift.Double)
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didRecieve qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didConcludeWith result: Au10tixPassiveFaceLivenessKit.PFLResponse, for image: Foundation.Data)
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didPassProbabilityThresholdFor image: Foundation.Data)
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didFailWith error: Au10tixPassiveFaceLivenessKit.PFLSessionError)
+  @_Concurrency.MainActor(unsafe) final public func pflSession(_ pflSession: Au10tixPassiveFaceLivenessKit.PFLSession, didStartValidating image: Foundation.Data)
+}
+extension Au10tixLivenessUI.OLDPFLViewController : Au10tixLivenessUI.UIComponentCameraUnavailableDelegate {
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableCameraPermissionGranted()
+  @_Concurrency.MainActor(unsafe) final public func uiCompsCameraUnavailableUploadFilePressed()
+}
+@_hasMissingDesignatedInitializers public class UICompsPreparationHandler : Au10tixLivenessUI.UICompsIntroDelegate {
+  public func startUserPreparation()
+  public func introShouldContinue()
+  @objc deinit
+}
+extension Au10tixLivenessUI.UICompsButtonsView {
+  public enum ActionButton {
+    case right
+    case left
+    case main
+    public static func == (a: Au10tixLivenessUI.UICompsButtonsView.ActionButton, b: Au10tixLivenessUI.UICompsButtonsView.ActionButton) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ActionButtonImage {
+    case capture
+    case refresh
+    case approve
+    case disabled
+    case retakeSmall
+    case upload
+    public static func == (a: Au10tixLivenessUI.UICompsButtonsView.ActionButtonImage, b: Au10tixLivenessUI.UICompsButtonsView.ActionButtonImage) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ActionButtonBehavior {
+    case visible
+    case hidden
+    case tempHidden
+    case tempVisible
+    public static func == (a: Au10tixLivenessUI.UICompsButtonsView.ActionButtonBehavior, b: Au10tixLivenessUI.UICompsButtonsView.ActionButtonBehavior) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension UIKit.UIColor {
+  public static var uiCompsAu10tixBlack: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixRed: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGreen: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixYellow: UIKit.UIColor? {
+    get
+  }
+  public static var uiCompsAu10tixGray: UIKit.UIColor? {
+    get
+  }
+  public static var colorSystemBackground: UIKit.UIColor {
+    get
+  }
+  public static var colorLabel: UIKit.UIColor {
+    get
+  }
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.String)
+  convenience public init(rgb: Swift.UInt)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UICompsIntroViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Au10tixLivenessUI.UICompsIntroDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var continuationButton: UIKit.UIButton?
+  @_Concurrency.MainActor(unsafe) open var introHeadline: Swift.String? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func buildUI()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc(Au10xOldUIComponentConfigs) final public class UIOldComponentConfigs : ObjectiveC.NSObject {
+  final public let showCloseButton: Swift.Bool
+  final public let showPrimaryButton: Swift.Bool
+  final public let canUploadImage: Swift.Bool
+  final public let shouldDisplayIntro: Swift.Bool
+  final public let flowConfig: [Swift.String : Any]?
+  @objc public init(showCloseButton: Swift.Bool = true, showPrimaryButton: Swift.Bool = true, canUploadImage: Swift.Bool = true, shouldDisplayIntro: Swift.Bool = true, flowConfig: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+public protocol UICompsIntroDelegate : AnyObject {
+  func introShouldContinue()
+}
+@objc public protocol UIComponentOldViewControllerNavigationDelegate {
+  @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixLivenessUI.UIComponentOldBaseViewController)
+  @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixLivenessUI.UIComponentOldBaseViewController)
+}
+@objc @_Concurrency.MainActor(unsafe) open class UIComponentOldBaseViewController : UIKit.UIViewController, Au10tixCore.Au10tixSDK {
+  @_Concurrency.MainActor(unsafe) weak public var previewView: UIKit.UIView! {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) weak public var salientAreaView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) weak open var capturedImageView: UIKit.UIImageView?
+  @_Concurrency.MainActor(unsafe) open var isCapturedImageViewShowing: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak public var instructionLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) weak public var rectangleOfInterestImageView: UIKit.UIImageView?
+  @_Concurrency.MainActor(unsafe) weak open var backButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) final public let configs: Au10tixLivenessUI.UIOldComponentConfigs
+  @_Concurrency.MainActor(unsafe) open var cameraSession: Au10tixCore.CameraSession? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) weak public var navigationDelegate: Au10tixLivenessUI.UIComponentOldViewControllerNavigationDelegate?
+  @_Concurrency.MainActor(unsafe) public var state: Au10tixLivenessUI.UIComponentOldBaseViewController.UIState {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var ocsConfigs: Au10tixLivenessUI.UICompsOCSConfigurations
+  @_Concurrency.MainActor(unsafe) public var userPreparationHandler: Au10tixLivenessUI.UICompsPreparationHandler {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var headline: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isImageUploadAvailable: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var subHeadline: Swift.String? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var capturedImageRequiredTransform: CoreFoundation.CGAffineTransform {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var timeoutMessage: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var lowerToast: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var introVC: Au10tixLivenessUI.UICompsIntroViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var rectangleOfInterestImage: UIKit.UIImage? {
+    get
+  }
+  public struct MaskParams {
+    public init(size: CoreFoundation.CGSize, cornerRadius: CoreFoundation.CGFloat? = nil, topMargin: CoreFoundation.CGFloat? = nil, imageOfInterestYOffest: CoreFoundation.CGFloat? = nil)
+  }
+  @_Concurrency.MainActor(unsafe) open var maskParams: Au10tixLivenessUI.UIComponentOldBaseViewController.MaskParams? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var shouldDimPreviewView: Swift.Bool {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) required public init(configs: Au10tixLivenessUI.UIOldComponentConfigs, navigationDelegate: Au10tixLivenessUI.UIComponentOldViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @objc @_Concurrency.MainActor(unsafe) open func leftButtonAction()
+  @objc @_Concurrency.MainActor(unsafe) open func rightButtonAction()
+  @objc @_Concurrency.MainActor(unsafe) open func mainButtonAction()
+  @objc @_Concurrency.MainActor(unsafe) open func closeButtonAction()
+  @objc @_Concurrency.MainActor(unsafe) open func backButtonAction()
+  @_Concurrency.MainActor(unsafe) open func showFeatureFeed()
+  @objc @_Concurrency.MainActor(unsafe) open func handleCameraDidOpen(_ note: Foundation.Notification)
+  @_Concurrency.MainActor(unsafe) open func didAddCameraIssuesUI()
+  @_Concurrency.MainActor(unsafe) open func didRemoveCameraIssuesUI()
+  @_Concurrency.MainActor(unsafe) open func handle(state: Au10tixLivenessUI.UIComponentOldBaseViewController.UIState)
+  @_Concurrency.MainActor(unsafe) open func displayTimeoutUI(_ shouldDisplayTimeout: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func timeoutViewShouldRefresh()
+  public typealias ActionButtonImage = Au10tixLivenessUI.UICompsButtonsView.ActionButtonImage
+  public typealias ActionButton = Au10tixLivenessUI.UICompsButtonsView.ActionButton
+  public typealias ActionButtonBehavior = Au10tixLivenessUI.UICompsButtonsView.ActionButtonBehavior
+  @_Concurrency.MainActor(unsafe) public func toggleEnable(_ isEnabled: Swift.Bool, for button: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButton)
+  @_Concurrency.MainActor(unsafe) public func temporaryDisable(button: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButton, for duration: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) public func update(image: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButtonImage, for button: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButton)
+  @_Concurrency.MainActor(unsafe) public func update(behavior: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButtonBehavior, for button: Au10tixLivenessUI.UIComponentOldBaseViewController.ActionButton)
+  @_Concurrency.MainActor(unsafe) public func showProgress(_ show: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func showToast(with text: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func hideToast()
+  @_Concurrency.MainActor(unsafe) public func show(instruction: Swift.String?, hideBackground: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func operationFinished()
+  @_Concurrency.MainActor(unsafe) public func uiComponentDidLoad(with configurations: Au10tixCore.Au10tix.Configurations)
+  @_Concurrency.MainActor(unsafe) public func showCaptured(image: UIKit.UIImage)
+}
+@_inheritsConvenienceInitializers @objc(Au10xLivenessViewController) @_Concurrency.MainActor(unsafe) @_objcRuntimeName(Au10xLivenessViewController) final public class LivenessViewController : Au10tixBaseUI.UIComponentBaseViewController {
+  @_Concurrency.MainActor(unsafe) weak final public var livenessSessionDelegate: Au10tixLivenessKit.LivenessSessionDelegate? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixBaseUI.UIComponentConfigs = super, navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.String {
+  public var localized: Swift.String {
+    get
+  }
+}
+extension Au10tixLivenessUI.UIComponentOldBaseViewController : UIKit.UINavigationControllerDelegate, UIKit.UIImagePickerControllerDelegate {
+  public struct LibraryImageResult {
+    public let data: Foundation.Data
+    public let exif: [Swift.String : Any]
+    public let orientation: ImageIO.CGImagePropertyOrientation
+  }
+  public enum LibraryImageError : Swift.Error {
+    case unAuthorized
+    case cancelled
+    case failedToRetreiveAsset
+    public static func == (a: Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageError, b: Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias LibraryImageCompletion = (Swift.Result<Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageResult, Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageError>) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) public func selectImageFromLibrary(with completion: @escaping Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageCompletion)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class UICompsButtonsView : UIKit.UIView {
+  @objc deinit
+}
+extension Au10tixLivenessUI.OLDPFLViewController : Au10tixPassiveFaceLivenessKit.PFLSessionRecordingDelegate, Au10tixLivenessUI.RecordingTimeStampViewHost {
+  @_Concurrency.MainActor(unsafe) final public func pflSessionRecorder(_ screenRecorder: Au10tixCore.ScreenRecorder, didFailToRecord error: Au10tixCore.ScreenRecorderError)
+  @_Concurrency.MainActor(unsafe) final public func pflSessionRecorderDidStart(_ screenRecorder: Au10tixCore.ScreenRecorder)
+  @_Concurrency.MainActor(unsafe) final public func pflSessionRecorderDidStop(_ screenRecorder: Au10tixCore.ScreenRecorder)
+}
+public protocol UIComponentCameraUnavailableDelegate : AnyObject {
+  func uiCompsCameraUnavailableCameraPermissionGranted()
+  func uiCompsCameraUnavailableUploadFilePressed()
+}
+extension Au10tixLivenessUI.UIComponentOldBaseViewController {
+  @_Concurrency.MainActor(unsafe) public var hasCameraIssues: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func showIfNeedsCameraUnavailableUI(with delegate: Au10tixLivenessUI.UIComponentCameraUnavailableDelegate)
+  @_Concurrency.MainActor(unsafe) public func removeCameraUnavailableUI()
+}
+extension Au10tixLivenessUI.UIComponentOldBaseViewController {
+  @_Concurrency.MainActor(unsafe) public func setupMask()
+  @_Concurrency.MainActor(unsafe) public func setupMask(with maskParams: Au10tixLivenessUI.UIComponentOldBaseViewController.MaskParams)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ScreenRecordingDeclinedViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var resumeSessionCallback: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var closeSessionCallback: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum MontserratFont : Swift.String, Au10tixLivenessUI.Font {
+  case regular
+  case bold
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class LivenessFlowViewController : Au10tixLivenessUI.UIComponentOldBaseViewController, Au10tixLivenessUI.RecordingTimeStampViewHost {
+  @_Concurrency.MainActor(unsafe) final public var showCaptureButton: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak final public var livenessSessionDelegate: Au10tixLivenessKit.LivenessSessionDelegate? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override final public var lowerToast: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func mainButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc override final public func closeButtonAction()
+  @_Concurrency.MainActor(unsafe) override final public func timeoutViewShouldRefresh()
+  @_Concurrency.MainActor(unsafe) @objc override final public func backButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc required public init(configs: Au10tixLivenessUI.UIOldComponentConfigs, navigationDelegate: Au10tixLivenessUI.UIComponentOldViewControllerNavigationDelegate)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Au10tixLivenessUI.LivenessFlowViewController : Au10tixLivenessUI.UIComponentOldViewControllerNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func uiComponentViewControllerDidFinish(_ controller: Au10tixLivenessUI.UIComponentOldBaseViewController)
+  @_Concurrency.MainActor(unsafe) @objc final public func uiComponentViewControllerDidPressClose(_ controller: Au10tixLivenessUI.UIComponentOldBaseViewController)
+}
+public struct Au10tixColor {
+  public static var black: UIKit.UIColor? {
+    get
+  }
+  public static var red: UIKit.UIColor? {
+    get
+  }
+  public static var green: UIKit.UIColor? {
+    get
+  }
+  public static var yellow: UIKit.UIColor? {
+    get
+  }
+  public static var gray: UIKit.UIColor? {
+    get
+  }
+  public static var blue: UIKit.UIColor? {
+    get
+  }
+  public static var blueGray: UIKit.UIColor? {
+    get
+  }
+  public static var fixedBlue: UIKit.UIColor? {
+    get
+  }
+  public static var fixedBlack: UIKit.UIColor? {
+    get
+  }
+  public static var lightRed: UIKit.UIColor? {
+    get
+  }
+}
+extension Au10tixLivenessUI.Au10tixColor {
+  public struct Selection {
+  }
+  public struct Approve {
+  }
+  public struct Retry {
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func aspectFit(in containingView: UIKit.UIView, ratio: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func embed(in superView: UIKit.UIView, insets: UIKit.UIEdgeInsets = .zero)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class PFLIntroViewController : Au10tixLivenessUI.UICompsIntroViewController {
+  @_Concurrency.MainActor(unsafe) override final public var introHeadline: Swift.String? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override final public func buildUI()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol Font {
+  func of(size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  func of(style: UIKit.UIFont.TextStyle, defaultSize: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+extension Au10tixLivenessUI.Font where Self : Swift.RawRepresentable, Self.RawValue == Swift.String {
+  public func of(size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public func of(style: UIKit.UIFont.TextStyle, defaultSize: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+public class PFLFeedbackPresenter {
+  public enum FaceIndication {
+    case none
+    case green
+    case red
+    case white
+    public func tint(_ ocsConfigs: Au10tixLivenessUI.UICompsOCSConfigurations) -> UIKit.UIColor?
+    public static func == (a: Au10tixLivenessUI.PFLFeedbackPresenter.FaceIndication, b: Au10tixLivenessUI.PFLFeedbackPresenter.FaceIndication) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(baseVC: Au10tixLivenessUI.UIComponentOldBaseViewController, faceInidicationImageView: UIKit.UIImageView, ocsConfigs: Au10tixLivenessUI.UICompsOCSConfigurations)
+  public func showRedFaceIndication()
+  public func handle(qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
+  public func show(qualityFeedback: Au10tixPassiveFaceLivenessKit.QualityFaultOptions)
+  @objc deinit
+}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButton : Swift.Equatable {}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButton : Swift.Hashable {}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButtonImage : Swift.Equatable {}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButtonImage : Swift.Hashable {}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButtonBehavior : Swift.Equatable {}
+extension Au10tixLivenessUI.UICompsButtonsView.ActionButtonBehavior : Swift.Hashable {}
+extension Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageError : Swift.Equatable {}
+extension Au10tixLivenessUI.UIComponentOldBaseViewController.LibraryImageError : Swift.Hashable {}
+extension Au10tixLivenessUI.MontserratFont : Swift.Equatable {}
+extension Au10tixLivenessUI.MontserratFont : Swift.Hashable {}
+extension Au10tixLivenessUI.MontserratFont : Swift.RawRepresentable {}
+extension Au10tixLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Equatable {}
+extension Au10tixLivenessUI.PFLFeedbackPresenter.FaceIndication : Swift.Hashable {}

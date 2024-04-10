@@ -1,0 +1,4 @@
+framework module Au10tixSourceManager {
+  header "Au10tixSourceManager-Swift.h"
+  requires objc
+}

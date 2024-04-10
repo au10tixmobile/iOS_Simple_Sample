@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15CD1BBA2BC6619100A4657B /* Au10tix_POAUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB22BC660EB00A4657B /* Au10tix_POAUIAssets.xcassets */; };
+		15CD1BBB2BC6619100A4657B /* Au10tix_NFCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB32BC6610D00A4657B /* Au10tix_NFCUIAssets.xcassets */; };
+		15CD1BBC2BC6619100A4657B /* Au10tix_BaseUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB42BC6611C00A4657B /* Au10tix_BaseUIAssets.xcassets */; };
+		15CD1BBD2BC6619100A4657B /* Au10tix_VC_VSUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB52BC6614600A4657B /* Au10tix_VC_VSUIAssets.xcassets */; };
+		15CD1BBE2BC6619100A4657B /* Au10tix_SDCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB62BC6616F00A4657B /* Au10tix_SDCUIAssets.xcassets */; };
+		15CD1BBF2BC6619100A4657B /* Au10tix_PFLUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB72BC6617C00A4657B /* Au10tix_PFLUIAssets.xcassets */; };
+		15CD1BC02BC6619100A4657B /* Au10tix_HDUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB82BC6618B00A4657B /* Au10tix_HDUIAssets.xcassets */; };
+		15CD1BC12BC6619100A4657B /* Au10tix_PCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB92BC6619100A4657B /* Au10tix_PCUIAssets.xcassets */; };
+		1B68DF18A7B623F40A532B0E /* Pods_Au10tixSimpleSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */; };
 		257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54BB51D52B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51C82B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets */; };
-		54BB51D62B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51C92B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets */; };
-		54BB51D72B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CA2B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets */; };
-		54BB51D82B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CB2B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets */; };
-		54BB51D92B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CC2B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets */; };
-		54BB51DA2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CD2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets */; };
-		54BB51DB2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CE2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets */; };
-		54BB51DC2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51CF2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets */; };
 		54BB51DD2B55C8CB00BAFC43 /* montserrat-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51D22B55C8CB00BAFC43 /* montserrat-medium.ttf */; };
 		54BB51DE2B55C8CB00BAFC43 /* montserrat-semiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51D32B55C8CB00BAFC43 /* montserrat-semiBold.ttf */; };
 		54BB51DF2B55C8CB00BAFC43 /* montserrat-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51D42B55C8CB00BAFC43 /* montserrat-regular.ttf */; };
@@ -46,16 +47,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07DB86FEFEBD79EFAFA59803 /* Pods-Au10tixSimpleSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10tixSimpleSample.release.xcconfig"; path = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.release.xcconfig"; sourceTree = "<group>"; };
+		15CD1BB22BC660EB00A4657B /* Au10tix_POAUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_POAUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB32BC6610D00A4657B /* Au10tix_NFCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_NFCUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB42BC6611C00A4657B /* Au10tix_BaseUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_BaseUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB52BC6614600A4657B /* Au10tix_VC_VSUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_VC_VSUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB62BC6616F00A4657B /* Au10tix_SDCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_SDCUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB72BC6617C00A4657B /* Au10tix_PFLUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_PFLUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB82BC6618B00A4657B /* Au10tix_HDUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_HDUIAssets.xcassets; sourceTree = "<group>"; };
+		15CD1BB92BC6619100A4657B /* Au10tix_PCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_PCUIAssets.xcassets; sourceTree = "<group>"; };
 		2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenSSL.xcframework; sourceTree = "<group>"; };
 		25446E952AE6E94300E64D7E /* Au10tixSimpleSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Au10tixSimpleSample.entitlements; sourceTree = "<group>"; };
-		54BB51C82B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_BaseUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51C92B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_PFLUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CA2B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_HDUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CB2B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_POAUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CC2B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_SDCUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CD2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_VC_VSUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CE2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_NFCUIAssets.xcassets; sourceTree = "<group>"; };
-		54BB51CF2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Au10tix_PCUIAssets.xcassets; sourceTree = "<group>"; };
 		54BB51D22B55C8CB00BAFC43 /* montserrat-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-medium.ttf"; sourceTree = "<group>"; };
 		54BB51D32B55C8CB00BAFC43 /* montserrat-semiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-semiBold.ttf"; sourceTree = "<group>"; };
 		54BB51D42B55C8CB00BAFC43 /* montserrat-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-regular.ttf"; sourceTree = "<group>"; };
@@ -70,6 +72,8 @@
 		9CAADCF925389AF60013F9DB /* SDCUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCUIViewController.swift; sourceTree = "<group>"; };
 		9CC2B69325712116006522D1 /* POAUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POAUIViewController.swift; sourceTree = "<group>"; };
 		9CE444D525601B700066A8BC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Au10tixSimpleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC39A674B292B905117577FB /* Pods-Au10tixSimpleSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Au10tixSimpleSample.debug.xcconfig"; path = "Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */,
+				1B68DF18A7B623F40A532B0E /* Pods_Au10tixSimpleSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,14 +101,14 @@
 		54BB51C72B55C8CB00BAFC43 /* Assets Catalogs */ = {
 			isa = PBXGroup;
 			children = (
-				54BB51C82B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets */,
-				54BB51C92B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets */,
-				54BB51CA2B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets */,
-				54BB51CB2B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets */,
-				54BB51CC2B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets */,
-				54BB51CD2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets */,
-				54BB51CE2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets */,
-				54BB51CF2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets */,
+				15CD1BB42BC6611C00A4657B /* Au10tix_BaseUIAssets.xcassets */,
+				15CD1BB82BC6618B00A4657B /* Au10tix_HDUIAssets.xcassets */,
+				15CD1BB32BC6610D00A4657B /* Au10tix_NFCUIAssets.xcassets */,
+				15CD1BB92BC6619100A4657B /* Au10tix_PCUIAssets.xcassets */,
+				15CD1BB72BC6617C00A4657B /* Au10tix_PFLUIAssets.xcassets */,
+				15CD1BB22BC660EB00A4657B /* Au10tix_POAUIAssets.xcassets */,
+				15CD1BB62BC6616F00A4657B /* Au10tix_SDCUIAssets.xcassets */,
+				15CD1BB52BC6614600A4657B /* Au10tix_VC_VSUIAssets.xcassets */,
 			);
 			path = "Assets Catalogs";
 			sourceTree = "<group>";
@@ -124,6 +129,23 @@
 				54BB51D42B55C8CB00BAFC43 /* montserrat-regular.ttf */,
 			);
 			path = montserrat;
+			sourceTree = "<group>";
+		};
+		5E4203E3D0DF8B21D55C4CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		880070FA580B1A78EA597695 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC39A674B292B905117577FB /* Pods-Au10tixSimpleSample.debug.xcconfig */,
+				07DB86FEFEBD79EFAFA59803 /* Pods-Au10tixSimpleSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		9C77473E25599DAB00D50830 /* MainViewController */ = {
@@ -163,6 +185,8 @@
 			children = (
 				9CA6D958253749FC00E48DDD /* Au10tixSimpleSample */,
 				9CA6D957253749FC00E48DDD /* Products */,
+				880070FA580B1A78EA597695 /* Pods */,
+				5E4203E3D0DF8B21D55C4CBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,10 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA6D980253749FE00E48DDD /* Build configuration list for PBXNativeTarget "Au10tixSimpleSample" */;
 			buildPhases = (
+				CBD9D3420C1A6922F667B12F /* [CP] Check Pods Manifest.lock */,
 				9CA6D952253749FC00E48DDD /* Sources */,
 				9CA6D953253749FC00E48DDD /* Frameworks */,
 				9CA6D954253749FC00E48DDD /* Resources */,
 				9C50E078256683EE00C28A22 /* Embed Frameworks */,
+				F51E2AEABC0575E993F9E158 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,24 +286,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BB51DB2B55C8CB00BAFC43 /* Au10tix_NFCUIAssets.xcassets in Resources */,
-				54BB51D82B55C8CB00BAFC43 /* Au10tix_POAUIAssets.xcassets in Resources */,
+				15CD1BBE2BC6619100A4657B /* Au10tix_SDCUIAssets.xcassets in Resources */,
+				15CD1BBA2BC6619100A4657B /* Au10tix_POAUIAssets.xcassets in Resources */,
 				9CA6D966253749FE00E48DDD /* LaunchScreen.storyboard in Resources */,
-				54BB51DC2B55C8CB00BAFC43 /* Au10tix_PCUIAssets.xcassets in Resources */,
 				54BB51DF2B55C8CB00BAFC43 /* montserrat-regular.ttf in Resources */,
+				15CD1BBB2BC6619100A4657B /* Au10tix_NFCUIAssets.xcassets in Resources */,
+				15CD1BC02BC6619100A4657B /* Au10tix_HDUIAssets.xcassets in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
-				54BB51D72B55C8CB00BAFC43 /* Au10tix_HDUIAssets.xcassets in Resources */,
+				15CD1BBC2BC6619100A4657B /* Au10tix_BaseUIAssets.xcassets in Resources */,
 				54BB51DD2B55C8CB00BAFC43 /* montserrat-medium.ttf in Resources */,
-				54BB51DA2B55C8CB00BAFC43 /* Au10tix_VC_VSUIAssets.xcassets in Resources */,
 				54BB51DE2B55C8CB00BAFC43 /* montserrat-semiBold.ttf in Resources */,
-				54BB51D52B55C8CB00BAFC43 /* Au10tix_BaseUIAssets.xcassets in Resources */,
+				15CD1BC12BC6619100A4657B /* Au10tix_PCUIAssets.xcassets in Resources */,
 				9CA6D961253749FC00E48DDD /* Main.storyboard in Resources */,
-				54BB51D62B55C8CB00BAFC43 /* Au10tix_PFLUIAssets.xcassets in Resources */,
-				54BB51D92B55C8CB00BAFC43 /* Au10tix_SDCUIAssets.xcassets in Resources */,
+				15CD1BBF2BC6619100A4657B /* Au10tix_PFLUIAssets.xcassets in Resources */,
+				15CD1BBD2BC6619100A4657B /* Au10tix_VC_VSUIAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBD9D3420C1A6922F667B12F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Au10tixSimpleSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51E2AEABC0575E993F9E158 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CA6D952253749FC00E48DDD /* Sources */ = {
@@ -433,6 +501,7 @@
 		};
 		9CA6D981253749FE00E48DDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC39A674B292B905117577FB /* Pods-Au10tixSimpleSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,7 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.25;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.au10tix.SimpleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SimpleSample Dev";
@@ -465,6 +534,7 @@
 		};
 		9CA6D982253749FE00E48DDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07DB86FEFEBD79EFAFA59803 /* Pods-Au10tixSimpleSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.25;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.au10tix.SimpleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SimpleSample AppStore";

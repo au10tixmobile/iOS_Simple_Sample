@@ -1,0 +1,168 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixLivenessKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Au10tixCore
+@_exported import Au10tixLivenessKit
+import Au10tixPassiveFaceLivenessKit
+import Au10tixSourceManager
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+public enum LivenessSessionError : Swift.Error {
+  case startPflFailed(error: Swift.Error)
+  case startAflFailed(error: Swift.Error)
+  case exceedRetries
+  case offline
+}
+public protocol AFLSessionDelegate : AnyObject {
+  func aflSession(_ session: Au10tixLivenessKit.AFLSession, update: Au10tixLivenessKit.AFLSessionUpdate)
+  func aflSession(_ session: Au10tixLivenessKit.AFLSession, didFailWith error: Au10tixLivenessKit.AFLSessionError, result: Au10tixLivenessKit.AFLSessionResult)
+  func aflSession(_ session: Au10tixLivenessKit.AFLSession, didFinishWith result: Au10tixLivenessKit.AFLSessionResult)
+}
+public struct LivenessSessionResult {
+  public let aflJsonDictionary: [Swift.String : Swift.String]
+  public let videoUrl: Foundation.URL
+  public let selfieImage: Foundation.Data
+}
+public protocol LivenessSessionDelegate : AnyObject {
+  func livenessSession(_ session: Au10tixLivenessKit.LivenessSession, didFinishWithResult result: Au10tixLivenessKit.LivenessSessionResult)
+  func livenessSession(_ session: Au10tixLivenessKit.LivenessSession, didReceiveAnUpdate update: Au10tixLivenessKit.LivenessSessionUpdate)
+  func livenessSession(_ session: Au10tixLivenessKit.LivenessSession, didFailWithError error: Au10tixLivenessKit.LivenessSessionError)
+  func livenessSession(_ session: Au10tixLivenessKit.LivenessSession, waitingForUserAction reason: Au10tixLivenessKit.LivenessSessionWaitingForUserReason)
+  func livenessSession(_ session: Au10tixLivenessKit.LivenessSession, didFailScreenRecordingWith error: Au10tixCore.ScreenRecorderError)
+}
+public enum LivenessSessionUpdate {
+  case recordingStarted
+  case pflStarted
+  case pflValidating
+  case pflFailed
+  case pflPassed
+  case aflStarted
+  case aflFailed
+  case aflPassed
+  case waitingForPflResult
+  case userInterrupted
+  public static func == (a: Au10tixLivenessKit.LivenessSessionUpdate, b: Au10tixLivenessKit.LivenessSessionUpdate) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LivenessSessionWaitingForUserReason {
+  case pendingStartAfl
+  case pendingRetryAfl
+  case pendingStartPfl
+  case pendingRetryPfl
+  public static func == (a: Au10tixLivenessKit.LivenessSessionWaitingForUserReason, b: Au10tixLivenessKit.LivenessSessionWaitingForUserReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum AFLSessionUpdate {
+  case onNextGesture(type: Au10tixLivenessKit.AFLGestureType)
+  case gesturePassed
+  case gestureTimeout
+  case wrongGestureDetected
+}
+extension Au10tixLivenessKit.AFLSessionResult {
+  public var json: [Swift.String : Swift.String] {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LivenessSession {
+  weak public var delegate: Au10tixLivenessKit.LivenessSessionDelegate?
+  final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  public var isMicrophoneEnabled: Swift.Bool
+  public var pflSessionDelegate: Au10tixPassiveFaceLivenessKit.PFLSessionDelegate? {
+    get
+    set
+  }
+  public var aflSessionDelegate: Au10tixLivenessKit.AFLSessionDelegate? {
+    get
+    set
+  }
+  public static var recordScreen: Swift.Bool
+  public var pflSession: Au10tixPassiveFaceLivenessKit.PFLSession? {
+    get
+  }
+  public var aflSession: Au10tixLivenessKit.AFLSession? {
+    get
+  }
+  convenience public init()
+  public func set(responseQueue: Dispatch.DispatchQueue)
+  public func proceedToNextStep()
+  @objc deinit
+}
+extension Au10tixLivenessKit.LivenessSession : Au10tixCore.Au10tixSession {
+  public var isAvailable: Swift.Bool {
+    get
+  }
+  public var isCameraActive: Swift.Bool {
+    get
+  }
+  public func start(previewView: UIKit.UIView, refresh: Swift.Bool = true, didStartHandler: @escaping (Swift.Result<Swift.Bool, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  public func stop()
+}
+extension Au10tixLivenessKit.LivenessSession {
+  public func reportUserInterruption()
+  public func canStart() -> Swift.Bool
+}
+public enum AFLSessionError : Swift.Error, Foundation.LocalizedError {
+  case exceedRetries
+  case sessionTokenExpired
+  case cameraFailure(error: Swift.Error)
+  case offline
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum AFLGestureType : Swift.Int, Swift.Codable {
+  case faceRight
+  case faceLeft
+  case faceCenter
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class AFLSession {
+  public var authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  convenience public init()
+  @objc deinit
+}
+extension Au10tixLivenessKit.AFLSession : Au10tixCore.Au10tixSession {
+  public var isAvailable: Swift.Bool {
+    get
+  }
+  public var isCameraActive: Swift.Bool {
+    get
+  }
+  public func stop()
+  public func start(previewView: UIKit.UIView, refresh: Swift.Bool = true, didStartHandler: @escaping (Swift.Result<Swift.Bool, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+}
+public struct AFLSessionResult : Swift.Codable {
+  public struct GesureResult : Swift.Codable {
+    public let gestureType: Au10tixLivenessKit.AFLGestureType
+    public let didPass: Swift.Bool
+    public let duration: Foundation.TimeInterval
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public let gesureResults: [Au10tixLivenessKit.AFLSessionResult.GesureResult]
+  public let faceMaintained: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Au10tixLivenessKit.LivenessSessionUpdate : Swift.Equatable {}
+extension Au10tixLivenessKit.LivenessSessionUpdate : Swift.Hashable {}
+extension Au10tixLivenessKit.LivenessSessionWaitingForUserReason : Swift.Equatable {}
+extension Au10tixLivenessKit.LivenessSessionWaitingForUserReason : Swift.Hashable {}
+extension Au10tixLivenessKit.AFLGestureType : Swift.Equatable {}
+extension Au10tixLivenessKit.AFLGestureType : Swift.Hashable {}
+extension Au10tixLivenessKit.AFLGestureType : Swift.RawRepresentable {}

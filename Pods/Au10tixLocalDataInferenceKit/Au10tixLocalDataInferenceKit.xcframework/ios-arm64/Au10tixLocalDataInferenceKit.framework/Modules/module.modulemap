@@ -1,0 +1,11 @@
+framework module Au10tixLocalDataInferenceKit {
+  umbrella header "Au10tixLocalDataInferenceKit.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixLocalDataInferenceKit.Swift {
+  header "Au10tixLocalDataInferenceKit-Swift.h"
+  requires objc
+}

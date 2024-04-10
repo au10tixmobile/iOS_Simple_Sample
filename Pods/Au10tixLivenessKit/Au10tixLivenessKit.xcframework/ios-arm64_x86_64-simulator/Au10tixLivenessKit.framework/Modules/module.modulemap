@@ -1,0 +1,11 @@
+framework module Au10tixLivenessKit {
+  umbrella header "Au10tixLivenessKit.h"
+
+  export *
+  module * { export * }
+}
+
+module Au10tixLivenessKit.Swift {
+  header "Au10tixLivenessKit-Swift.h"
+  requires objc
+}

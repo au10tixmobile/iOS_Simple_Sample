@@ -1,0 +1,656 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixBaseUI
+import AVFoundation
+import AVKit
+@_exported import Au10tixBaseUI
+import Au10tixCore
+import Foundation
+import PhotosUI
+import Swift
+import UIKit
+import _Concurrency
+extension Au10tixBaseUI.Font {
+  public var asUIFont: UIKit.UIFont {
+    get
+  }
+}
+public struct ToastViewDatasource {
+  public init(text: Swift.String, font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, cornersRadius: CoreGraphics.CGFloat? = nil, shadowColor: UIKit.UIColor? = .black)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ImagePicker : ObjectiveC.NSObject {
+  public static var shared: Au10tixBaseUI.ImagePicker
+  public struct LibraryImageResult {
+    public let data: Foundation.Data
+    public let exif: [Swift.String : Any]
+    public let orientation: ImageIO.CGImagePropertyOrientation
+  }
+  public enum LibraryImageError : Swift.Error {
+    case unAuthorized
+    case cancelled
+    case failedToRetreiveAsset
+    public static func == (a: Au10tixBaseUI.ImagePicker.LibraryImageError, b: Au10tixBaseUI.ImagePicker.LibraryImageError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias LibraryImageCompletion = (Swift.Result<Au10tixBaseUI.ImagePicker.LibraryImageResult, Au10tixBaseUI.ImagePicker.LibraryImageError>) -> Swift.Void
+  public func selectImageFromLibrary(on presenter: UIKit.UIViewController, with completion: @escaping Au10tixBaseUI.ImagePicker.LibraryImageCompletion)
+  @objc deinit
+}
+extension Au10tixBaseUI.ImagePicker : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+public struct Font {
+  public enum Suffix : Swift.String {
+    case ttf
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(style: Au10tixBaseUI.FontFile.Style = .montserrat, size: CoreGraphics.CGFloat = 20, weight: Au10tixBaseUI.FontFile.Weight = .regular)
+}
+public struct Alert {
+  public enum Icon {
+    case timeout
+    case custom(image: UIKit.UIImage?)
+  }
+  public enum Style {
+    case system
+    case custom
+    public static func == (a: Au10tixBaseUI.Alert.Style, b: Au10tixBaseUI.Alert.Style) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(style: Au10tixBaseUI.Alert.Style, title: Swift.String? = nil, icon: Au10tixBaseUI.Alert.Icon? = nil, message: Swift.String? = nil, actions: [Au10tixBaseUI.AlertAction] = [])
+}
+public struct PhotoPermissionManager : Au10tixBaseUI.PermissionManager {
+  public static var shared: Au10tixBaseUI.PermissionManager
+  public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+}
+public class ScheduledLock {
+  public typealias Handler = ((Foundation.TimeInterval) -> ())
+  public var isLocked: Swift.Bool
+  public var remaining: Swift.Double {
+    get
+  }
+  public init()
+  public func lockFor(_ seconds: Foundation.TimeInterval, progress: Au10tixBaseUI.ScheduledLock.Handler? = nil, completion: Au10tixBaseUI.ScheduledLock.Handler? = nil)
+  public func stop()
+  public func clear()
+  @objc deinit
+}
+public struct PreviewPage {
+  public init(items: [Au10tixBaseUI.PreviewItem], sidePadding: CoreGraphics.CGFloat = 0)
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isDarkMode: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func appearanceColor(_ themeColor: Au10tixBaseUI.UIThemeColor?) -> UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) public func connect(to view: UIKit.UIView? = nil, with constraints: [Au10tixBaseUI.UIConnection])
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func roundCorners(radius: CoreGraphics.CGFloat, corners: UIKit.UIRectCorner = .allCorners)
+  @_Concurrency.MainActor(unsafe) public func putStroke(width: CoreGraphics.CGFloat, color: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func dropShadow(radius: CoreGraphics.CGFloat, shadowColor: CoreGraphics.CGColor = UIColor.black.cgColor)
+  @_Concurrency.MainActor(unsafe) public func addGradient(_ gradient: Au10tixBaseUI.Gradient, mask: QuartzCore.CAShapeLayer? = nil)
+  @_Concurrency.MainActor(unsafe) public func addShape(color: UIKit.UIColor, mask: QuartzCore.CAShapeLayer)
+  @_Concurrency.MainActor(unsafe) public func addSubviewIfNedded(_ subview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) public func removeSubviewsExcept(views: [UIKit.UIView])
+}
+public struct UITheme {
+  public static var shared: Au10tixBaseUI.UITheme
+}
+extension UIKit.UIColor {
+  public static var successColor: UIKit.UIColor {
+    get
+  }
+  public static var errorColor: UIKit.UIColor {
+    get
+  }
+}
+extension Au10tixBaseUI.UIThemeColor {
+  public static var infoColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var backgroundColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var primaryColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var titleColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+  public static var buttonTextColor: Au10tixBaseUI.UIThemeColor {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class DescriptionPreviewView : Au10tixBaseUI.BaseUIView {
+  @_Concurrency.MainActor(unsafe) final public var text: Swift.String? {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc(Au10xUIComponentConfigs) final public class UIComponentConfigs : ObjectiveC.NSObject {
+  final public let showCloseButton: Swift.Bool
+  final public let showPrimaryButton: Swift.Bool
+  final public let canUploadImage: Swift.Bool
+  final public let shouldDisplayIntro: Swift.Bool
+  final public let flowConfig: [Swift.String : Any]?
+  @objc public init(showCloseButton: Swift.Bool = true, showPrimaryButton: Swift.Bool = true, canUploadImage: Swift.Bool = true, shouldDisplayIntro: Swift.Bool = true, flowConfig: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+public struct Gradient {
+  public let colors: [UIKit.UIColor]
+  public init(colors: [UIKit.UIColor], startPoint: CoreGraphics.CGPoint = CGPoint.topCenter, endPoint: CoreGraphics.CGPoint = CGPoint.bottomCenter)
+}
+extension Foundation.Data {
+  public var asImage: UIKit.UIImage? {
+    get
+  }
+}
+public struct ActionItem {
+  public enum Action : Swift.Equatable {
+    case none
+    case empty
+    case captureDisabled
+    case captuteEnabled
+    case approval
+    case refresh
+    case largeRefresh
+    case openGallery
+    case time
+    case custom(_: UIKit.UIImage?)
+    public static func == (a: Au10tixBaseUI.ActionItem.Action, b: Au10tixBaseUI.ActionItem.Action) -> Swift.Bool
+  }
+  public enum ButtonType {
+    case rounded
+    case underlined
+    case circled
+    case placeholder
+    public static func == (a: Au10tixBaseUI.ActionItem.ButtonType, b: Au10tixBaseUI.ActionItem.ButtonType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(type: Au10tixBaseUI.ActionItem.ButtonType, height: CoreGraphics.CGFloat? = nil, width: CoreGraphics.CGFloat? = nil, centered: Swift.Bool? = nil, title: Swift.String? = nil, cornerRadius: Swift.Int = 0, backgroundColor: Au10tixBaseUI.UIThemeColor? = nil, strokeColor: Au10tixBaseUI.UIThemeColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, shadowColor: UIKit.UIColor? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil, action: Au10tixBaseUI.ActionItem.Action? = nil)
+}
+@_hasMissingDesignatedInitializers public class FontGenerator {
+  public static var shared: Au10tixBaseUI.FontGenerator
+  public var fonts: [Au10tixBaseUI.FontFile] {
+    get
+  }
+  public func registerFonts()
+  @objc deinit
+}
+public protocol CameraIssueViewControllerDelegate : AnyObject {
+  func photoPermissionGranted(_ status: Au10tixBaseUI.PermissionStatus)
+  func didCloseScreen()
+}
+extension Au10tixBaseUI.CameraIssueViewControllerDelegate {
+  public func photoPermissionGranted(_ status: Au10tixBaseUI.PermissionStatus)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CameraIssueViewController : Au10tixBaseUI.BaseUIViewController {
+  @_Concurrency.MainActor(unsafe) override public var screenTitle: Swift.String {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override public var previewViewDatasource: [Au10tixBaseUI.PreviewPage]? {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override public var actionSectionType: Au10tixBaseUI.ActionSectionType {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override public var actionViewSection: [Au10tixBaseUI.ActionSection] {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Au10tixBaseUI.CameraIssueViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) public var headTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var screenDescription: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var firstButtonTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var secondButtonTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var imageType: Au10tixBaseUI.CameraIssueViewController.ImageType
+  @_Concurrency.MainActor(unsafe) public var firstButtonType: Au10tixBaseUI.CameraIssueViewController.ActionType
+  @_Concurrency.MainActor(unsafe) public var secondButtonType: Au10tixBaseUI.CameraIssueViewController.ActionType
+  @_Concurrency.MainActor(unsafe) override public func firstButtonHandler()
+  @_Concurrency.MainActor(unsafe) override public func secondButtonHandler()
+  @_Concurrency.MainActor(unsafe) override public func closeSreenHandler()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Au10tixBaseUI.CameraIssueViewController {
+  public enum ActionType {
+    case openSettings
+    case uploadFile
+    case close
+    public static func == (a: Au10tixBaseUI.CameraIssueViewController.ActionType, b: Au10tixBaseUI.CameraIssueViewController.ActionType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ImageType {
+    case cameraPermissionDenied
+    case cameraUnavailable
+    public static func == (a: Au10tixBaseUI.CameraIssueViewController.ImageType, b: Au10tixBaseUI.CameraIssueViewController.ImageType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct UIConnection {
+  public enum Iteration : Swift.String {
+    case equal
+    case greaterOrEqual
+    case lessOrEqual
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ConnectionType : Swift.String {
+    case leading
+    case trailing
+    case left
+    case right
+    case top
+    case bottom
+    case width
+    case height
+    case centerX
+    case centerY
+    case firstBaseline
+    case lastBaseline
+    case widthRatio
+    case heightRatio
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(type: Au10tixBaseUI.UIConnection.ConnectionType, margin: CoreGraphics.CGFloat = 0, iteration: Au10tixBaseUI.UIConnection.Iteration = .equal, fromSafeArea: Swift.Bool = false, toSafeArea: Swift.Bool = false)
+  public func constraint(from firstView: UIKit.UIView, to secondView: UIKit.UIView? = nil) -> UIKit.NSLayoutConstraint?
+}
+extension Swift.String {
+  public var asImage: UIKit.UIImage? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class BaseUIView : UIKit.UIView {
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CoreGraphics.CGPoint {
+  public static let topLeft: CoreGraphics.CGPoint
+  public static let topCenter: CoreGraphics.CGPoint
+  public static let topRight: CoreGraphics.CGPoint
+  public static let centerLeft: CoreGraphics.CGPoint
+  public static let center: CoreGraphics.CGPoint
+  public static let centerRight: CoreGraphics.CGPoint
+  public static let bottomLeft: CoreGraphics.CGPoint
+  public static let bottomCenter: CoreGraphics.CGPoint
+  public static let bottomRight: CoreGraphics.CGPoint
+}
+public struct AlertAction {
+  public enum Style {
+    case regular
+    case cancel
+    public static func == (a: Au10tixBaseUI.AlertAction.Style, b: Au10tixBaseUI.AlertAction.Style) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var handler: (() -> ())?
+  public init(title: Swift.String? = nil, style: Au10tixBaseUI.AlertAction.Style = .regular)
+  public var systemAlertAction: UIKit.UIAlertAction {
+    get
+  }
+}
+@objc public protocol UIComponentViewControllerNavigationDelegate {
+  @objc func uiComponentViewControllerDidFinish(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+  @objc func uiComponentViewControllerDidPressClose(_ controller: Au10tixBaseUI.UIComponentBaseViewController)
+}
+@objc @_Concurrency.MainActor(unsafe) open class UIComponentBaseViewController : UIKit.UIViewController, Au10tixCore.Au10tixSDK {
+  @_Concurrency.MainActor(unsafe) final public let configs: Au10tixBaseUI.UIComponentConfigs
+  @_Concurrency.MainActor(unsafe) weak public var navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate?
+  @objc @_Concurrency.MainActor(unsafe) required public init(configs: Au10tixBaseUI.UIComponentConfigs = UIComponentConfigs(), navigationDelegate: Au10tixBaseUI.UIComponentViewControllerNavigationDelegate? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseUIViewController : Au10tixBaseUI.BaseViewController {
+  @_Concurrency.MainActor(unsafe) open var topLogoImage: UIKit.UIImage? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var screenTitle: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var previewViewDatasource: [Au10tixBaseUI.PreviewPage]? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var customPreviewView: Au10tixBaseUI.BaseUIView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var actionViewSection: [Au10tixBaseUI.ActionSection] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var bottomLogoImage: UIKit.UIImage? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var actionSectionType: Au10tixBaseUI.ActionSectionType {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var estimatedPreviewViewHeight: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var estimatedPreviewViewWidth: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public func updateUI()
+  @_Concurrency.MainActor(unsafe) public func presentNextPage()
+  @_Concurrency.MainActor(unsafe) public func startScannerAnimation(color: Au10tixBaseUI.UIThemeColor? = nil, boundariesFrame: CoreGraphics.CGRect, duration: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) open func closeSreenHandler()
+  @_Concurrency.MainActor(unsafe) open func firstButtonHandler()
+  @_Concurrency.MainActor(unsafe) open func secondButtonHandler()
+  @_Concurrency.MainActor(unsafe) open func thirdButtonHandler()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct ProgressBarDatasource {
+  public init(infinite: Swift.Bool, progress: Swift.Float? = nil, progressColor: Au10tixBaseUI.UIThemeColor? = nil, trackColor: UIKit.UIColor? = nil, strokeWidth: CoreGraphics.CGFloat? = nil, strokeColor: UIKit.UIColor? = nil)
+}
+public struct UIThemeColor {
+  public init(dark: UIKit.UIColor?, light: UIKit.UIColor?)
+}
+public enum PermissionStatus {
+  case authorized
+  case denied
+  case restricted
+  case limited
+  case notDetermined
+  case other
+  public static func == (a: Au10tixBaseUI.PermissionStatus, b: Au10tixBaseUI.PermissionStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol PermissionManager {
+  typealias Handler = ((Au10tixBaseUI.PermissionStatus) -> ())
+  static var shared: Au10tixBaseUI.PermissionManager { get }
+  func requestPermission(_ completion: @escaping Self.Handler)
+}
+public struct ColorGenerator {
+  public static var blue181244: UIKit.UIColor {
+    get
+  }
+  public static var blue181244_whiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var blue1F1756_WhiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var blue3B5CCE_whiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_blue181244: UIKit.UIColor {
+    get
+  }
+  public static var black1B1C1D_WhiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_black000000: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_blue101F39: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_blue0C1143: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_blue000120: UIKit.UIColor {
+    get
+  }
+  public static var gray6C6C6C_whiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var grayACB5BD: UIKit.UIColor {
+    get
+  }
+  public static var grayD2CBB6: UIKit.UIColor {
+    get
+  }
+  public static var orangeF2C94C: UIKit.UIColor {
+    get
+  }
+  public static var orangeFFA53A: UIKit.UIColor {
+    get
+  }
+  public static var orangeF2C94C_whiteFFFFFF: UIKit.UIColor {
+    get
+  }
+  public static var green42CF8B: UIKit.UIColor {
+    get
+  }
+  public static var greenA9FF80: UIKit.UIColor {
+    get
+  }
+  public static var whiteFFFFFF_gray9D9D9D: UIKit.UIColor {
+    get
+  }
+  public static var gray6C6C6C_gray9D9D9D: UIKit.UIColor {
+    get
+  }
+  public static var gray313C4F: UIKit.UIColor {
+    get
+  }
+  public static var grayF8F8FB_blue181244: UIKit.UIColor {
+    get
+  }
+  public static var grayDDE2E5_blue4F4A74: UIKit.UIColor {
+    get
+  }
+  public static var blue181244_grayF8F8FB: UIKit.UIColor {
+    get
+  }
+  public static var black1B1C1D: UIKit.UIColor {
+    get
+  }
+  public static var grayF8F8FB: UIKit.UIColor {
+    get
+  }
+  public static var redF95D5C: UIKit.UIColor {
+    get
+  }
+  public static var blue000120: UIKit.UIColor {
+    get
+  }
+}
+public struct VideoPermissionManager : Au10tixBaseUI.PermissionManager {
+  public static var shared: Au10tixBaseUI.PermissionManager
+  public func requestPermission(_ completion: @escaping (Au10tixBaseUI.PermissionStatus) -> ())
+}
+public struct AlertManager {
+  public static var shared: Au10tixBaseUI.AlertManager
+  public func present(_ alert: Au10tixBaseUI.Alert, on controller: UIKit.UIViewController? = nil)
+  public func dismiss()
+}
+public struct FontFile {
+  public enum Style : Swift.String {
+    case montserrat
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Weight : Swift.String {
+    case regular
+    case medium
+    case semiBold
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Suffix : Swift.String {
+    case ttf
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(style: Au10tixBaseUI.FontFile.Style, weight: Au10tixBaseUI.FontFile.Weight = .regular, suffix: Au10tixBaseUI.FontFile.Suffix = .ttf, bundle: Foundation.Bundle? = nil)
+}
+public enum PreviewItemType {
+  case imageNumberText
+  case animativeImage
+  case description
+  case cameraView
+  case space
+  public static func == (a: Au10tixBaseUI.PreviewItemType, b: Au10tixBaseUI.PreviewItemType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PreviewItemMargin : Swift.Equatable {
+  case top(space: CoreGraphics.CGFloat)
+  case bottom(space: CoreGraphics.CGFloat)
+  public static func == (a: Au10tixBaseUI.PreviewItemMargin, b: Au10tixBaseUI.PreviewItemMargin) -> Swift.Bool
+}
+public protocol PreviewItem {
+  var type: Au10tixBaseUI.PreviewItemType { get set }
+  var margins: [Au10tixBaseUI.PreviewItemMargin] { get set }
+  var view: UIKit.UIView { get }
+}
+public struct ImageNumberTextPreviewItem : Au10tixBaseUI.PreviewItem {
+  public var type: Au10tixBaseUI.PreviewItemType
+  public var margins: [Au10tixBaseUI.PreviewItemMargin]
+  public var view: UIKit.UIView {
+    get
+  }
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], images: [UIKit.UIImage]? = nil, text: Swift.String? = nil)
+}
+public struct AnimativeImagePreviewItem : Au10tixBaseUI.PreviewItem {
+  public var type: Au10tixBaseUI.PreviewItemType
+  public var margins: [Au10tixBaseUI.PreviewItemMargin]
+  public var view: UIKit.UIView {
+    get
+  }
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], images: [UIKit.UIImage]? = nil, frameDuration: Foundation.TimeInterval? = nil)
+}
+public struct DescriptionPreviewItem : Au10tixBaseUI.PreviewItem {
+  public var type: Au10tixBaseUI.PreviewItemType
+  public var margins: [Au10tixBaseUI.PreviewItemMargin]
+  public var view: UIKit.UIView {
+    get
+  }
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], text: Swift.String? = nil, textColor: Au10tixBaseUI.UIThemeColor? = nil)
+}
+public struct CameraPreviewItem : Au10tixBaseUI.PreviewItem {
+  public var type: Au10tixBaseUI.PreviewItemType
+  public var margins: [Au10tixBaseUI.PreviewItemMargin]
+  public var view: UIKit.UIView {
+    get
+  }
+  public init(cameraPreviewView: Au10tixBaseUI.CameraPreviewView, margins: [Au10tixBaseUI.PreviewItemMargin] = [], state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, showPlaceholderImage: Swift.Bool = true)
+  public init(margins: [Au10tixBaseUI.PreviewItemMargin] = [], estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, cameraView: UIKit.UIView, state: Au10tixBaseUI.CameraPreviewViewState, captureViewTintColor: UIKit.UIColor? = nil, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, progressBarInfo: Au10tixBaseUI.ProgressBarDatasource? = nil, middleToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, bottomToastDatasource: Au10tixBaseUI.ToastViewDatasource? = nil, showPlaceholderImage: Swift.Bool = true, recordingTime: Foundation.Date? = nil, capturedImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
+}
+public enum ActionSectionType {
+  case none
+  case rounded
+  case roundedAndUnderlined
+  case circled
+  public static func == (a: Au10tixBaseUI.ActionSectionType, b: Au10tixBaseUI.ActionSectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ActionSection {
+  public init(actionViewAlignment: UIKit.NSLayoutConstraint.Axis, spacing: CoreGraphics.CGFloat? = nil, actionViewFirstItem: Au10tixBaseUI.ActionItem? = nil, actionViewSecondItem: Au10tixBaseUI.ActionItem? = nil, actionViewThirdItem: Au10tixBaseUI.ActionItem? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum CameraPreviewViewState : Swift.Equatable {
+  case none
+  case capturing
+  case takingManualImage
+  case imageCaptured(_: UIKit.UIImage)
+  case badExternalImage(_: Au10tixCore.Au10Image, _: Swift.Bool)
+  case badImage
+  case timeout
+  public static func == (a: Au10tixBaseUI.CameraPreviewViewState, b: Au10tixBaseUI.CameraPreviewViewState) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class CameraPreviewView : Au10tixBaseUI.BaseUIView {
+  @_Concurrency.MainActor(unsafe) final public var boundariesFrame: CoreGraphics.CGRect {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var showPlaceholderImage: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(estimatedWidth: CoreGraphics.CGFloat, estimatedHeight: CoreGraphics.CGFloat, camera: UIKit.UIView, boundariesImage: UIKit.UIImage? = nil, placeHolderImage: UIKit.UIImage? = nil, successImage: UIKit.UIImage? = nil, cornerRadius: CoreGraphics.CGFloat? = nil, placeholderInsetsRatio: UIKit.UIEdgeInsets? = nil, boundariesInsetsRatio: UIKit.UIEdgeInsets? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override final public func draw(_ rect: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Equatable {}
+extension Au10tixBaseUI.ImagePicker.LibraryImageError : Swift.Hashable {}
+extension Au10tixBaseUI.Font.Suffix : Swift.Equatable {}
+extension Au10tixBaseUI.Font.Suffix : Swift.Hashable {}
+extension Au10tixBaseUI.Font.Suffix : Swift.RawRepresentable {}
+extension Au10tixBaseUI.Alert.Style : Swift.Equatable {}
+extension Au10tixBaseUI.Alert.Style : Swift.Hashable {}
+extension Au10tixBaseUI.ActionItem.ButtonType : Swift.Equatable {}
+extension Au10tixBaseUI.ActionItem.ButtonType : Swift.Hashable {}
+extension Au10tixBaseUI.CameraIssueViewController.ActionType : Swift.Equatable {}
+extension Au10tixBaseUI.CameraIssueViewController.ActionType : Swift.Hashable {}
+extension Au10tixBaseUI.CameraIssueViewController.ImageType : Swift.Equatable {}
+extension Au10tixBaseUI.CameraIssueViewController.ImageType : Swift.Hashable {}
+extension Au10tixBaseUI.UIConnection.Iteration : Swift.Equatable {}
+extension Au10tixBaseUI.UIConnection.Iteration : Swift.Hashable {}
+extension Au10tixBaseUI.UIConnection.Iteration : Swift.RawRepresentable {}
+extension Au10tixBaseUI.UIConnection.ConnectionType : Swift.Equatable {}
+extension Au10tixBaseUI.UIConnection.ConnectionType : Swift.Hashable {}
+extension Au10tixBaseUI.UIConnection.ConnectionType : Swift.RawRepresentable {}
+extension Au10tixBaseUI.AlertAction.Style : Swift.Equatable {}
+extension Au10tixBaseUI.AlertAction.Style : Swift.Hashable {}
+extension Au10tixBaseUI.PermissionStatus : Swift.Equatable {}
+extension Au10tixBaseUI.PermissionStatus : Swift.Hashable {}
+extension Au10tixBaseUI.FontFile.Style : Swift.Equatable {}
+extension Au10tixBaseUI.FontFile.Style : Swift.Hashable {}
+extension Au10tixBaseUI.FontFile.Style : Swift.RawRepresentable {}
+extension Au10tixBaseUI.FontFile.Weight : Swift.Equatable {}
+extension Au10tixBaseUI.FontFile.Weight : Swift.Hashable {}
+extension Au10tixBaseUI.FontFile.Weight : Swift.RawRepresentable {}
+extension Au10tixBaseUI.FontFile.Suffix : Swift.Equatable {}
+extension Au10tixBaseUI.FontFile.Suffix : Swift.Hashable {}
+extension Au10tixBaseUI.FontFile.Suffix : Swift.RawRepresentable {}
+extension Au10tixBaseUI.PreviewItemType : Swift.Equatable {}
+extension Au10tixBaseUI.PreviewItemType : Swift.Hashable {}
+extension Au10tixBaseUI.ActionSectionType : Swift.Equatable {}
+extension Au10tixBaseUI.ActionSectionType : Swift.Hashable {}

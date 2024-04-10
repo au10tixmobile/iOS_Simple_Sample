@@ -1,0 +1,427 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Au10tixSmartDocumentCaptureKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Au10tixCore
+@_exported import Au10tixSmartDocumentCaptureKit
+import Au10tixSourceManager
+import CoreGraphics
+import Foundation
+import ImageIO
+import Swift
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+public enum MachineReadableCodeType : Swift.String {
+  case code39
+  case code39Mod43
+  case code93
+  case code128
+  case ean8
+  case ean13
+  case interleaved2of5
+  case itf14
+  case upce
+  case aztec
+  case dataMatrix
+  case pdf417
+  case qr
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SDCLogManager {
+  public static var shared: Au10tixSmartDocumentCaptureKit.SDCLogManager
+  public enum Category : Swift.String {
+    case error
+    case introPage
+    case scanner
+    case docReplay
+    case imageReview
+    case fec
+    public var rawValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+  }
+}
+extension Au10tixCore.SDKLogEvent {
+  convenience public init(category: Au10tixSmartDocumentCaptureKit.SDCLogManager.Category, action: Au10tixCore.Log.Action, isUi: Swift.Bool = false)
+}
+public struct SmartDocumentCaptureConfiguration {
+}
+public enum SDCSessionFlowType : Swift.Int {
+  case sdc
+  case poa
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class SDCEventBILog : Au10tixCore.Log {
+  public init(module: Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module, frameSource: Au10tixCore.Au10ImageSource, side: Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide, idStatus: Swift.Int? = nil, isSelected: Swift.Bool? = nil, localSdcFailover: Swift.Bool? = nil)
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog {
+  public enum Module : Swift.String {
+    case server
+    case client
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog {
+  public enum ImageSide : Swift.String {
+    case front
+    case back
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+@_hasMissingDesignatedInitializers public class SDCStatistics {
+  weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCStatisticsDelegate?
+  public static let shared: Au10tixSmartDocumentCaptureKit.SDCStatistics
+  public func willStartSession()
+  public func willStartRoundTrip()
+  public func didFinishRoundTrip()
+  public func willStartParsing()
+  public func didFinishParsing()
+  public func willStartStability()
+  public func didPassStability()
+  public func getSessionData() -> Au10tixSmartDocumentCaptureKit.SDCStatisticsSessionData
+  @objc deinit
+}
+public struct SDCStatisticsLiveData {
+  public var singleFrameRoundTripTime: Foundation.TimeInterval?
+  public var singleResponseParsingTime: Foundation.TimeInterval?
+}
+public struct SDCStatisticsSessionData {
+  public var averageFrameRoundTripTime: Foundation.TimeInterval?
+  public var stabilityResponseTime: Foundation.TimeInterval?
+  public var averageParsingTime: Foundation.TimeInterval?
+  public var averageProcessingFramesPreSession: Swift.Double?
+}
+public protocol SDCStatisticsDelegate : AnyObject {
+  func sdcStatisticsDidUpdate(_ liveStatistics: Au10tixSmartDocumentCaptureKit.SDCStatisticsLiveData)
+}
+public enum FECResultType : Swift.String, Swift.Codable {
+  case unsupported
+  case requiredBothSides
+  case notRequiredBothSides
+  case unrecognized
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct FECResponse : Swift.Codable {
+  public let result: Au10tixSmartDocumentCaptureKit.FECResultType?
+  public let countryIso3: Swift.String?
+  public let documentType: Swift.String?
+  public let documentVersion: Swift.String?
+  public let state: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct OCRConfirmation : Swift.Codable, Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public let ocr: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation?
+  public let classification: Au10tixSmartDocumentCaptureKit.OCRConfirmation.Classification?
+  public init(ocr: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation? = nil, classification: Au10tixSmartDocumentCaptureKit.OCRConfirmation.Classification? = nil)
+  public struct OCRInformation : Swift.Codable {
+    public let fullName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let firstName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let lastName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let dateOfBirth: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?
+    public let documentNumber: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let personalNumber: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let dateOfIssue: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?
+    public let dateOfExpiry: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?
+    public let address: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let gender: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public let countryIso3: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?
+    public enum CodingKeys : Swift.String, Swift.CodingKey, Swift.Codable, Swift.CaseIterable {
+      case fullName
+      case firstName
+      case lastName
+      case dateOfBirth
+      case documentNumber
+      case personalNumber
+      case dateOfIssue
+      case dateOfExpiry
+      case address
+      case gender
+      case countryIso3
+      public var keyName: Swift.String {
+        get
+      }
+      public static var mandatoryFields: [Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys] {
+        get
+      }
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias AllCases = [Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys]
+      public typealias RawValue = Swift.String
+      public static var allCases: [Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys] {
+        get
+      }
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public init(fullName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, firstName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, lastName: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, dateOfBirth: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?, documentNumber: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, personalNumber: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, dateOfIssue: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?, dateOfExpiry: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRDate?, address: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, gender: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?, countryIso3: Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.OCRProperty?)
+    public struct OCRProperty : Swift.Codable {
+      public let value: Swift.String?
+      public init(value: Swift.String?)
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+    }
+    public struct OCRDate : Swift.Codable {
+      public let value: Foundation.Date?
+      public init(value: Foundation.Date?)
+      public init(from decoder: Swift.Decoder) throws
+      public func encode(to encoder: Swift.Encoder) throws
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct Classification : Swift.Codable {
+    public let countryIso3: Swift.String?
+    public let documentType: Swift.String?
+    public init(countryIso3: Swift.String?, documentType: Swift.String?)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SDCSessionError : Swift.Error {
+  case timedout
+  case sessionTokenExpired
+  case smartDocumentCheckFailed(error: Swift.Error)
+  case smartDocumentCheckTimeout
+  case offline
+  case unavailable
+}
+public protocol SDCSessionDelegate : AnyObject {
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFailWithError error: Au10tixSmartDocumentCaptureKit.SDCSessionError)
+  func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, isProcessing image: Au10tixCore.Au10Image)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didTake image: Au10tixCore.Au10Image)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didProcess processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didCapture image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+  func sdcSession(willRequestFrontEndClassificationFor sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didComplete ocrConfirmation: Au10tixSmartDocumentCaptureKit.OCRConfirmation)
+  func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish frontEndClassification: Au10tixSmartDocumentCaptureKit.FECResponse?)
+}
+extension Au10tixSmartDocumentCaptureKit.SDCSessionDelegate {
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didDetect machineReadableCodes: [Au10tixSmartDocumentCaptureKit.Au10MachineReadableCode])
+  public func sdcSessionWillTakeImage(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, isProcessing image: Au10tixCore.Au10Image)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish image: Au10tixCore.Au10Image, croppedImage: Au10tixCore.Au10Image?, with processingStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus)
+  public func sdcSession(willRequestFrontEndClassificationFor sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didComplete ocrConfirmation: Au10tixSmartDocumentCaptureKit.OCRConfirmation)
+  public func sdcSession(_ sdcSession: Au10tixSmartDocumentCaptureKit.SDCSession, didFinish frontEndClassification: Au10tixSmartDocumentCaptureKit.FECResponse?)
+}
+public struct Au10MachineReadableCode {
+  public let type: Au10tixSmartDocumentCaptureKit.MachineReadableCodeType?
+  public let corners: [CoreFoundation.CGPoint]
+  public let value: Swift.String?
+}
+@_hasMissingDesignatedInitializers public class SDCSession : Au10tixCore.FrontSideSupporter, Au10tixCore.Au10tixSession, Au10tixCore.CameraSession, Au10tixCore.ImageProvidableSession {
+  public var isAvailable: Swift.Bool {
+    get
+  }
+  public var localClassification: Swift.Bool
+  public var fallToServerWhenLocalFail: Swift.Bool
+  public var bypassClassifierValidations: Swift.Bool
+  public var isCameraActive: Swift.Bool {
+    get
+  }
+  final public let authenticator: Au10tixCore.Au10tixSessionAuthenticator
+  public var isFrontSide: Swift.Bool {
+    get
+    set
+  }
+  public var flowType: Au10tixSmartDocumentCaptureKit.SDCSessionFlowType {
+    get
+    set
+  }
+  public var uiLicenseKey: Swift.String {
+    get
+    set
+  }
+  public var isAutoClassificationEnabled: Swift.Bool {
+    get
+  }
+  public var isManualClassificationEnabled: Swift.Bool {
+    get
+  }
+  public var sourceType: Au10tixSourceManager.SourceType
+  weak public var delegate: Au10tixSmartDocumentCaptureKit.SDCSessionDelegate?
+  convenience public init()
+  @objc deinit
+  public func set(responseQueue: Dispatch.DispatchQueue)
+  public func setRectOfInterest(startX: CoreFoundation.CGFloat, endX: CoreFoundation.CGFloat, startY: CoreFoundation.CGFloat, endY: CoreFoundation.CGFloat) throws
+  public func start(previewView: UIKit.UIView, refresh: Swift.Bool = true, didStartHandler: @escaping (Swift.Result<Swift.Bool, Au10tixCore.Au10tixCorePrepareError>) -> Swift.Void)
+  public func stop()
+  public func captureImage(_ source: Au10tixCore.Au10ImageSource)
+  public func pauseCamera()
+  public func resumeCamera(_ refresh: Swift.Bool = true)
+  public func provide(image: Foundation.Data, exif: [Swift.String : Any], orientation: ImageIO.CGImagePropertyOrientation)
+  public func prefersAspectFillCameraPreview()
+  public func getClassification(image: Foundation.Data, completion: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void)
+  public func getOcr(images: [Foundation.Data], completion: @escaping (Swift.Result<Au10tixSmartDocumentCaptureKit.OCRConfirmation, Swift.Error>) -> Swift.Void)
+}
+extension Au10tixSmartDocumentCaptureKit.SDCSession : Au10tixCore.TimeoutableSessionDelegate {
+  public func sessionTimedout(_ timeoutable: Au10tixCore.Timeoutable)
+}
+@_hasMissingDesignatedInitializers public class SDCProcessingStatus : Au10tixCore.Au10Update {
+  public enum Feedback : Swift.Equatable {
+    case badQuality
+    case good
+    case noIdFound
+    case tooClose
+    case tooFar
+    case outOfFrame
+    case verticallyAligned
+    case saturationStatus
+    case blurStatus
+    case reflectionStatus
+    case darkStatus
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback, b: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Warning {
+    case fromScreen
+    case paperCopy
+    public static func == (a: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning, b: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct FECFeedback {
+    public let countryCode: Swift.String?
+    public let documentType: Swift.String?
+    public let isBlocked: Swift.Bool
+    public let is2ndSide: Swift.Bool
+    public var isValid: Swift.Bool {
+      get
+    }
+  }
+  public var warnings: [Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning] {
+    get
+  }
+  public var sdcFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
+    get
+  }
+  public var fecFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.FECFeedback? {
+    get
+  }
+  public var poaFeedback: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
+    get
+  }
+  @objc public var jsonString: Swift.String? {
+    @objc get
+  }
+  public var idStatus: Swift.Int? {
+    get
+  }
+  public var badQualityStatus: Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback? {
+    get
+  }
+  public var idRotation: Swift.Int? {
+    get
+  }
+  @objc public var isValid: Swift.Bool {
+    @objc get
+  }
+  public var classifierDuration: Foundation.TimeInterval? {
+    get
+  }
+  public var locatorDuration: Foundation.TimeInterval? {
+    get
+  }
+  @objc public var isLocalClassification: Swift.Bool {
+    @objc get
+  }
+  public var darkStatus: Swift.Int? {
+    get
+  }
+  public var blurStatus: Swift.Int? {
+    get
+  }
+  public var reflectionStatus: Swift.Int? {
+    get
+  }
+  public var saturationStatus: Swift.Int? {
+    get
+  }
+  @objc public var badQualityStatusByPriority: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+public enum RectOfInterestError : Swift.Error {
+  case rectExceededRange
+  case rectReversedValues
+  public static func == (a: Au10tixSmartDocumentCaptureKit.RectOfInterestError, b: Au10tixSmartDocumentCaptureKit.RectOfInterestError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.MachineReadableCodeType : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCLogManager.Category : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCSessionFlowType : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.Module : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCEventBILog.ImageSide : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.FECResultType : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.FECResultType : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.FECResultType : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.OCRConfirmation.OCRInformation.CodingKeys : Swift.RawRepresentable {}
+extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Feedback : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.SDCProcessingStatus.Warning : Swift.Hashable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Equatable {}
+extension Au10tixSmartDocumentCaptureKit.RectOfInterestError : Swift.Hashable {}
