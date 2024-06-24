@@ -15,7 +15,6 @@
 		15CD1BBF2BC6619100A4657B /* Au10tix_PFLUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB72BC6617C00A4657B /* Au10tix_PFLUIAssets.xcassets */; };
 		15CD1BC02BC6619100A4657B /* Au10tix_HDUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB82BC6618B00A4657B /* Au10tix_HDUIAssets.xcassets */; };
 		15CD1BC12BC6619100A4657B /* Au10tix_PCUIAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CD1BB92BC6619100A4657B /* Au10tix_PCUIAssets.xcassets */; };
-		1B68DF18A7B623F40A532B0E /* Pods_Au10tixSimpleSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */; };
 		257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; };
 		257671112A433CE800436607 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2511F53A2A1BCFE5004BEE6D /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54BB51DD2B55C8CB00BAFC43 /* montserrat-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54BB51D22B55C8CB00BAFC43 /* montserrat-medium.ttf */; };
@@ -80,7 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				257671102A433CE800436607 /* OpenSSL.xcframework in Frameworks */,
-				1B68DF18A7B623F40A532B0E /* Pods_Au10tixSimpleSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +219,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA6D980253749FE00E48DDD /* Build configuration list for PBXNativeTarget "Au10tixSimpleSample" */;
 			buildPhases = (
-				CBD9D3420C1A6922F667B12F /* [CP] Check Pods Manifest.lock */,
 				9CA6D952253749FC00E48DDD /* Sources */,
 				9CA6D953253749FC00E48DDD /* Frameworks */,
 				9CA6D954253749FC00E48DDD /* Resources */,
 				9C50E078256683EE00C28A22 /* Embed Frameworks */,
-				F51E2AEABC0575E993F9E158 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,48 +288,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CBD9D3420C1A6922F667B12F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Au10tixSimpleSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F51E2AEABC0575E993F9E158 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Au10tixSimpleSample/Pods-Au10tixSimpleSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CA6D952253749FC00E48DDD /* Sources */ = {
@@ -510,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.au10tix.SimpleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SimpleSample Dev";
@@ -542,7 +496,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.au10tix.SimpleSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "SimpleSample AppStore";
