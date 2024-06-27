@@ -70,7 +70,6 @@
 		9CAADCF925389AF60013F9DB /* SDCUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCUIViewController.swift; sourceTree = "<group>"; };
 		9CC2B69325712116006522D1 /* POAUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POAUIViewController.swift; sourceTree = "<group>"; };
 		9CE444D525601B700066A8BC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Au10tixSimpleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,14 +126,6 @@
 			path = montserrat;
 			sourceTree = "<group>";
 		};
-		5E4203E3D0DF8B21D55C4CBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A59FC7DF033CA15864B0C3A4 /* Pods_Au10tixSimpleSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9C77473E25599DAB00D50830 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +163,6 @@
 			children = (
 				9CA6D958253749FC00E48DDD /* Au10tixSimpleSample */,
 				9CA6D957253749FC00E48DDD /* Products */,
-				5E4203E3D0DF8B21D55C4CBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
