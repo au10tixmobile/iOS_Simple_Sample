@@ -142,8 +142,8 @@ private extension MainViewController {
      */
     func prepare() {
         
-        #warning("Use the createWorkFlow response data as .utf8 string.")
         let workFlowResponse = "{\"sessionId\":\"{sessionId}\",\"response\":{\"session\":\"{sessionJWT}\",\"accessToken\":\"{accessTokenJWT}\",\"assets\":[{assets0},{{assets01},..]},\"statusCode\":200}"
+        #warning("Replace workFlowResponse with string form 'create workflow' response data as .utf8 string.")
         
 #if canImport(Au10tixCore)
         guard let data = workFlowResponse.data(using: .utf8),
