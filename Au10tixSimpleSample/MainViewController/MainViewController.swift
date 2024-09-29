@@ -376,7 +376,7 @@ private extension MainViewController {
         if localClassification {
 #if canImport(Au10tixLocalDataInferenceKit)
             let loader = presentLocalSDCModulesUpdatingLoader()
-            Au10tixLocalDataInferenceManager.updateModules { result in
+            Au10tixLocalDataInferenceManager.downloadModules() { result in
                 print("Au10tixLocalDataInferenceKit updateModules result:\(result)")
                 DispatchQueue.main.async {
                     loader.dismiss(animated: false) { completion() }
