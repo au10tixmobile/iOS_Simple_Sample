@@ -465,7 +465,10 @@ private extension MainViewController {
     
     
     @IBAction func btnDetectRisksAction() {
+#if canImport(Au10tixCore)
         detectRisks()
+#endif
+
     }
     
     @IBAction func classificationSourceSegmentedChanged(_ sender: UISegmentedControl) {
