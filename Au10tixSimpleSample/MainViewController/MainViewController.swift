@@ -36,18 +36,6 @@ import Au10tixSmartDocumentCaptureUI
 import Au10tixPassiveFaceLivenessUI
 #endif
 
-#if canImport(Au10tixBEKit)
-import Au10tixBEKit
-#endif
-
-#if canImport(Au10tixLivenessKit)
-import Au10tixLivenessKit
-#endif
-
-#if canImport(Au10tixLivenessUI)
-import Au10tixLivenessUI
-#endif
-
 #if canImport(Au10tixNFCPassportUI)
 import Au10tixNFCPassportUI
 #endif
@@ -89,7 +77,12 @@ final class MainViewController: UIViewController {
     }
     
     private func getTopMostViewController() -> UIViewController? {
-        var topMostViewController = UIApplication.shared.windows.first?.rootViewController
+        var topMostViewController = UIApplication.shared
+            .connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap { $0.windows }
+            .first { $0.isKeyWindow }?
+            .rootViewController
         while let presentedViewController = topMostViewController?.presentedViewController {
             topMostViewController = presentedViewController
         }
@@ -123,7 +116,7 @@ private extension MainViewController {
         case .authorized:
             self.prepare()
         case .denied, .restricted:
-            self.showAlert("Video Permission was not granted", isError: true)
+            self.showAlert("Error ☹️", "Video Permission was not granted")
         case .notDetermined:
             AVCaptureDevice.requestAccess(for: .video) { [weak self] _ in
                 DispatchQueue.main.async {
@@ -155,7 +148,7 @@ private extension MainViewController {
             case .success(let sessionID):
                 debugPrint("sessionID -\(sessionID)")
             case .failure(let error):
-                self.showAlert(error.localizedDescription, isError: true)
+                self.showAlert("Error ☹️", error.localizedDescription)
             }
         }
 #endif
@@ -195,22 +188,6 @@ private extension MainViewController {
         let controller = PFLViewController(configs: configs, navigationDelegate: self)
         controller.pflDelegate = self
         self.present(controller: controller)
-#endif
-#endif
-    }
-    
-    // MARK: - Open LIVENESS UI component.
-    /**
-     Use this method to initialize the LIVENESS UI component.
-     */
-    
-    func openLivenessUIComponent() {
-#if canImport(Au10tixBaseUI)
-        let configs = UIComponentConfigs()
-#if canImport(Au10tixLivenessUI)
-        let livenessVC = LivenessViewController(configs: configs, navigationDelegate: self)
-        livenessVC.livenessSessionDelegate = self
-        self.present(controller: livenessVC)
 #endif
 #endif
     }
@@ -263,6 +240,48 @@ private extension MainViewController {
 #if canImport(Au10tixVoiceConsentUI)
         let controller = VCViewController(configs: configs, navigationDelegate: self)
         controller.vcDelegate = self
+        controller.consentText = "Say each word out loud"
+        controller.vcSessionTime = 5
+        self.present(controller: controller)
+#endif
+#endif
+    }
+    
+    // MARK: - Open Video Session UI component.
+    /**
+     Use this method to initialize the VS UI component.
+     */
+    
+    func openVSUIComponent() {
+#if canImport(Au10tixBaseUI)
+        let configs = UIComponentConfigs()
+#if canImport(Au10tixVoiceConsentUI)
+        let controller = VSViewController(configs: configs, navigationDelegate: self)
+        controller.vcDelegate = self
+        controller.consentText = "Say each word out loud"
+        controller.vcSessionTime = 7
+        controller.idSessionTime = 5
+        self.present(controller: controller)
+#endif
+#endif
+    }
+    
+    // MARK: - Open Video Session UI component.
+    /**
+     Use this method to initialize the VS UI component.
+     */
+    
+    func openIDLivenessUIComponent() {
+#if canImport(Au10tixBaseUI)
+        let configs = UIComponentConfigs()
+#if canImport(Au10tixVoiceConsentUI)
+        let controller = IDLivenessViewController(configs: configs, navigationDelegate: self)
+        controller.vcDelegate = self
+        controller.frontTime = 8
+        controller.tiltedTime = 8
+        controller.backTime = 8
+        controller.instructionsDuration = 3
+        controller.showConsent = true
         self.present(controller: controller)
 #endif
 #endif
@@ -335,12 +354,19 @@ private extension MainViewController {
         controller.resultImage = image.uiImage
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    func detectRisks() {
+        let risks = DeviceSniffer.analyzePotentialRisks()
+        let title = risks.count > 0 ? "Risks" : "No Risks Detected!"
+        let text = risks.count > 0 ? risks.description : nil
+        showAlert(title, text)
+    }
 #endif
     
     // MARK: - UIAlertController
     
-    func showAlert(_ text: String, isError: Bool) {
-        let alert = UIAlertController(title: isError ? "Error ☹️" : "Success 😀", message: text, preferredStyle: .alert)
+    func showAlert(_ title: String?, _ text: String? = nil) {
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(controller: alert)
     }
@@ -419,10 +445,6 @@ private extension MainViewController {
     @IBAction func btnPOAwithUIAction() {
         openPOAUIComponent()
     }
-    
-    @IBAction func btnLivenessWithUIAction() {
-        openLivenessUIComponent()
-    }
 
     @IBAction func btnNFCWithUIAction() {
         openNFCUIComponent()
@@ -430,6 +452,23 @@ private extension MainViewController {
 
     @IBAction func btnVCWithUIAction() {
         openVCUIComponent()
+    }
+    
+    
+    @IBAction func btnVSWithUIAction() {
+        openVSUIComponent()
+    }
+    
+    @IBAction func idLivenessWithUIAction() {
+        openIDLivenessUIComponent()
+    }
+    
+    
+    @IBAction func btnDetectRisksAction() {
+#if canImport(Au10tixCore)
+        detectRisks()
+#endif
+
     }
     
     @IBAction func classificationSourceSegmentedChanged(_ sender: UISegmentedControl) {
@@ -443,63 +482,20 @@ private extension MainViewController {
     @IBAction func sendIdvRequest(sender: UIButton) {
         let originalTitle = sender.title(for: .normal)
         sender.setTitle("Sending...", for: .normal)
-#if canImport(Au10tixBEKit)
-        Au10tixBackendKit.shared.sendIDVerificationFlow { [weak self, weak sender] result in
+#if canImport(Au10tixCore)
+        Au10tixBackendKit.shared.beginProcessing { [weak self, weak sender] result in
             guard let self = self, let sender = sender else { return }
             sender.setTitle(originalTitle, for: .normal)
             switch result {
             case .success(let requestId):
-                self.showAlert("✅ RequestId: " + requestId, isError: false)
+                self.showAlert("All media uploaded successfully", "✅ RequestId: \(requestId)")
             case .failure(let error):
-                self.showAlert("❌ \(error)", isError: true)
+                self.showAlert("Error ☹️", "❌ \(error)")
             }
         }
 #endif
     }
     
-    @IBAction func sendPoaRequest(sender: UIButton) {
-        let alert = UIAlertController(title: "Proof Of Address Validation", message: "Fill details for comparison", preferredStyle: .alert)
-        alert.addTextField {
-            $0.placeholder = "First Name"
-            $0.textContentType = .givenName
-        }
-        
-        alert.addTextField {
-            $0.placeholder = "Last Name"
-            $0.textContentType = .familyName
-        }
-        
-        alert.addTextField {
-            $0.placeholder = "Address"
-            $0.textContentType = .fullStreetAddress
-        }
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
-        alert.addAction(UIAlertAction(title: "🚀 Send", style: .default, handler: { [weak self, weak sender](_) in
-            guard let self = self, let sender = sender else { return }
-            guard let firstName = alert.textFields?[0].text,
-                  let lastName = alert.textFields?[1].text,
-                  let address = alert.textFields?[2].text else { return }
-            
-            let originalTitle = sender.title(for: .normal)
-            sender.setTitle("Sending...", for: .normal)
-            
-#if canImport(Au10tixBEKit)
-            Au10tixBackendKit.shared.sendProofOfAddress(firstName: firstName, lastName: lastName, address: address) { [weak self, weak sender](result) in
-                guard let self = self, let sender = sender else { return }
-                sender.setTitle(originalTitle, for: .normal)
-                switch result {
-                case .success(let requestId):
-                    self.showAlert("✅ RequestId: " + requestId, isError: false)
-                case .failure(let error):
-                    self.showAlert("❌ \(error)", isError: true)
-                }
-            }
-#endif
-        }))
-        
-        self.present(controller: alert)
-    }
 }
 
 //MARK: - SDCSessionDelegate
@@ -541,6 +537,11 @@ extension MainViewController: SDCSessionDelegate {
     func sdcSession(_ sdcSession: SDCSession, didTake image: Au10Image) {
         
     }
+    
+    func suspiciousBehaviorDetected(_ sdcSession: SDCSession) {
+        self.showAlert("Suspicious behavior detected!")
+    }
+    
 }
 #endif
 
@@ -659,48 +660,6 @@ extension MainViewController: PFLSessionDelegate {
     Gets Called when Helmet detection result delivered
      */
     func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, isHelmet: Bool, asHat: Double, asHelmet: Double, asNone: Double) {
-        
-    }
-    
-}
-#endif
-
-#if canImport(Au10tixLivenessKit)
-extension MainViewController: LivenessSessionDelegate {
-    
-    /**
-    Gets Called when Liveness finished
-     */
-    func livenessSession(_ session: LivenessSession, didFinishWithResult result: LivenessSessionResult) {
-        
-    }
-    
-    /**
-    Gets Called when Liveness has an update
-     */
-    func livenessSession(_ session: LivenessSession, didReceiveAnUpdate update: LivenessSessionUpdate) {
-        
-    }
-    
-    /**
-    Gets Called when Liveness failed
-     */
-    func livenessSession(_ session: LivenessSession, didFailWithError error: LivenessSessionError) {
-        
-    }
-    
-    /**
-    Gets Called when Liveness waiting for user action due to 'reason'
-     */
-    func livenessSession(_ session: LivenessSession, waitingForUserAction reason: LivenessSessionWaitingForUserReason) {
-        //you can show some UI prior to proceedToNextStep invokation
-        session.proceedToNextStep()
-    }
-    
-    /**
-    Gets Called when Liveness session screen recording failed
-     */
-    func livenessSession(_ session: LivenessSession, didFailScreenRecordingWith error: ScreenRecorderError) {
         
     }
     
