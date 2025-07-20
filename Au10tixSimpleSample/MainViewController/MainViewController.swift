@@ -522,6 +522,9 @@ extension MainViewController: SDCSessionDelegate {
      */
     func sdcSession(_ sdcSession: SDCSession, didCapture image: Au10Image, croppedImage: Au10Image?, with processingStatus: SDCProcessingStatus) {
         openSDCResult(croppedImage ?? image)
+        if processingStatus.suspiciousBehaviorDetected {
+            self.showAlert("Suspicious behavior detected!")
+        }
     }
     
     /**
@@ -536,10 +539,6 @@ extension MainViewController: SDCSessionDelegate {
      */
     func sdcSession(_ sdcSession: SDCSession, didTake image: Au10Image) {
         
-    }
-    
-    func suspiciousBehaviorDetected(_ sdcSession: SDCSession) {
-        self.showAlert("Suspicious behavior detected!")
     }
     
 }
