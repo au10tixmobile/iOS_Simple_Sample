@@ -160,13 +160,6 @@ extension SDCUIViewController: SDCSessionDelegate {
     }
     
     /**
-    Gets Called when a barcode was detected
-     */
-    func sdcSession(_ sdcSession: SDCSession, didDetect machineReadableCodes: [Au10MachineReadableCode]) {
-        
-    }
-    
-    /**
     Gets Called when an image was taken
      */
     func sdcSession(_ sdcSession: SDCSession, didTake image: Au10Image) {

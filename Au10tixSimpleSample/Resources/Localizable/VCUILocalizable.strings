@@ -4,9 +4,9 @@
 
 //MARK: - VCCaptureViewController
 "VCCaptureViewController.Title" = "Record your Voice";
-"VCCaptureViewController.Review.Title" = "Happy with the results?";
+"VCCaptureViewController.Review.Title" = "Review and Approve";
 "VCCaptureViewController.Alert.Timeout.Title" = "Session Timeout";
-"VCCaptureViewController.Alert.Timeout.Message" = "Your session has expired, Let’s try again.";
+"VCCaptureViewController.Alert.Timeout.Message" = "Your session has expired. Let’s try again.";
 "VCCaptureViewController.Alert.AccessPermission.Title" = "Access Permission";
 "VCCaptureViewController.Alert.AccessPermission.Message" = "We need permission to record video and voice.";
 "VCCaptureViewController.Alert.AccessPermission.Next" = "Next";
@@ -35,8 +35,28 @@
 //MARK: - VSCaptureViewController
 "VSCaptureViewController.VoiceRecording.Title" = "Record your Voice";
 "VSCaptureViewController.IdRecording.Title" = "Present your ID";
-"VSCaptureViewController.Review.Title" = "Happy with the results?";
+"VSCaptureViewController.Review.Title" = "Review and Approve";
 "VSCaptureViewController.IdCapture.Tutorial" = "Please Position Your ID in the Frame";
+
+//MARK: - IDLivenessIntroViewController
+"IDLivenessIntroViewController.Title" = "Capture ID at Several Angles";
+"IDLivenessIntroViewController.Description" = "Take a video of your ID being rotated at the requested angles without it leaving the frame.";
+"IDLivenessIntroViewController.Permission.Checkbox" = "I agree to continue with the recorded session.";
+"IDLivenessIntroViewController.TutorialAlert.Title" = "Get Ready!";
+"IDLivenessIntroViewController.TutorialAlert.FirstMessage" = "Place your ID on a flat surface";
+"IDLivenessIntroViewController.TutorialAlert.SecondMessage" = "Make sure your ID stays in frame throughout the process";
+"IDLivenessIntroViewController.TutorialAlert.ThirdMessage" = "You will have couple of seconds to capture each specific angle as shown";
+"IDLivenessIntroViewController.TutorialAlert.Action" = "Got it!";
+
+//MARK: - IDLivenessCaptureViewController
+"IDLivenessCaptureViewController.Title" = "Capture ID at Several Angles";
+"IDLivenessCaptureViewController.Review.Title" = "Review and Approve";
+
+//MARK: - Feedback
+"IDLivenessCaptureViewController.Feedback.CaptureFront" = "Capture the FRONT SIDE of your ID";
+"IDLivenessCaptureViewController.Feedback.CaptureTilted" = "Capture your ID at a 45° angle";
+"IDLivenessCaptureViewController.Feedback.CaptureBack" = "Flip to the BACK SIDE of your ID while keeping it stay in frame";
+"IDLivenessCaptureViewController.Feedback.Review" = "Make sure your ID stays in frame throughout the process.\nIf not – please retry.";
 
 //MARK: - Action Section
 "ActionSection.Button.Title.OpenSettings" = "Open Settings";
