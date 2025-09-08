@@ -21,7 +21,6 @@ target 'Au10tixSimpleSample' do
   pod 'Au10tixPassiveFaceLivenessUI'
   pod 'Au10tixProofOfAddressUI'
   pod 'Au10tixSmartDocumentCaptureUI'
-  pod 'Au10tixLivenessUI'
   pod 'Au10tixVoiceConsentUI'
   pod 'Au10tixNFCPassportUI'
   pod 'Au10tixLocalDataInferenceKit'

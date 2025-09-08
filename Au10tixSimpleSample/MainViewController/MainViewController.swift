@@ -528,13 +528,6 @@ extension MainViewController: SDCSessionDelegate {
     }
     
     /**
-    Gets Called when a barcode was detected
-     */
-    func sdcSession(_ sdcSession: SDCSession, didDetect machineReadableCodes: [Au10MachineReadableCode]) {
-        
-    }
-    
-    /**
     Gets Called when an image was taken
      */
     func sdcSession(_ sdcSession: SDCSession, didTake image: Au10Image) {
@@ -547,6 +540,7 @@ extension MainViewController: SDCSessionDelegate {
 //MARK: - PFLSessionDelegate
 
 #if canImport(Au10tixPassiveFaceLivenessKit)
+
 extension MainViewController: PFLSessionDelegate {
         
     /**
@@ -658,7 +652,7 @@ extension MainViewController: PFLSessionDelegate {
     /**
     Gets Called when Helmet detection result delivered
      */
-    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, isHelmet: Bool, asHat: Double, asHelmet: Double, asNone: Double) {
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, helmetResult: HelmetResult?, suspiciousBehaviorDetected: Bool) {
         
     }
     

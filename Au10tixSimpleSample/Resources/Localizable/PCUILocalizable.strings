@@ -1,0 +1,46 @@
+/* 
+  PCUILocalizable.strings
+  Au10tixPayCardUI
+
+  Created by Mohammad Kittany on 8/11/2022.
+  Copyright © 2022 Au10tix. All rights reserved.
+*/
+
+//MARK: - ActionSection
+
+"ActionSection.Button.Title.LetsGo" = "Let’s Go";
+"ActionSection.Button.Title.TryAgain" = "Try Again";
+"ActionSection.Button.Title.UploadFile" = "Upload File";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+"ActionSection.Button.Title.BackToHome" = "Back to home";
+
+//MARK: - Feedback
+"PCScannerViewController.Feedback.PositionDocument" = "Position your payment card in the frame";
+"PCScannerViewController.Feedback.BadQuality" = "Bad image quality";
+"PCScannerViewController.Feedback.NoPCFound" = "Auto capture mode.\nSearching for document…";
+"PCScannerViewController.Feedback.BadQualityExternalFirstTry" = "Please try again";
+"PCScannerViewController.Feedback.NoPCFoundExternalFirstTry" = "No document detected,\nPlease try again";
+"PCScannerViewController.Feedback.HappyWithTheResults" = "Happy with the result?\nIf not, try again";
+"PCScannerViewController.Feedback.HoldSteady" = "Hold steady";
+
+"PCScannerViewController.Feedback.PhotoLibraryImageFeedback" = "We can't detect document in the frame.\nPlease make sure to use a correct image.";
+
+//MARK: - PCIntroViewController
+
+"PCIntroViewController.Title" = "Capture your payment card number";
+
+//MARK: - PCScannerViewController
+
+"PCScannerViewController.Title" = "Capture your payment card number";
+"PCScannerViewController.Title.ImageReview" = "Payment Card Review";
+"PCScannerViewController.Alert.Timeout.Title" = "Session Timeout";
+"PCScannerViewController.Alert.Timeout.Message" = "Your session has expired. Let’s try again.";
+
+//MARK: - PCCameraIssueViewController
+
+"CameraIssueViewController.PermissionDenied.Title" = "Camera Permission Denied";
+"CameraIssueViewController.PermissionDenied.AllowUploadDescription" = "Please allow access to your camera or upload a file";
+"CameraIssueViewController.PermissionDenied.Description" = "Please allow access to your camera";
+"CameraIssueViewController.Unavailable.Title" = "Oops!";
+"CameraIssueViewController.Unavailable.AllowUploadDescription" = "We couldn’t find your camera, go back home or upload a file.";
+"CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera.";

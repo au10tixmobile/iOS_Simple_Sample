@@ -320,7 +320,7 @@ extension PFLUIViewController: PFLSessionDelegate {
     /**
     Gets Called when Helmet detection result delivered
      */
-    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, isHelmet: Bool, asHat: Double, asHelmet: Double, asNone: Double) {
+    func pflSession(_ pflSession: PFLSession, didCapture image: Data, qualityFeedback: QualityFaultOptions, faceBoundingBox: CGRect?, helmetResult: HelmetResult?, suspiciousBehaviorDetected: Bool) {
         
     }
 

@@ -1,0 +1,118 @@
+/* 
+  SDCUILocalizable.strings
+  DebugApp
+
+  Created by Mohammad Kittany on 26/05/2022.
+  Copyright © 2022 Au10tix. All rights reserved.
+*/
+
+//MARK: - ActionSection
+
+"ActionSection.Button.Title.LetsGo" = "Let’s Go";
+"ActionSection.Button.Title.TryAgain" = "Try Again";
+"ActionSection.Button.Title.GotIt" = "Got it";
+"ActionSection.Button.Title.UploadFile" = "Upload File";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+"ActionSection.Button.Title.OpenSettings" = "Open Settings";
+"ActionSection.Button.Title.BackToHome" = "Back to home";
+
+//MARK: - SDCIntoViewController
+
+"SDCIntroViewController.Title" = "Capture Your Document";
+
+//MARK: - SDCScannerViewController
+
+"SDCScannerViewController.Title.Front" = "Capture The front of your ID";
+"SDCScannerViewController.Title.Back" = "Back Side";
+"SDCScannerViewController.Title.ImageReview" = "Image Review";
+"SDCScannerViewController.Title.ImageReview.HappyWithResults" = "Happy with the result?";
+"SDCScannerViewController.Alert.Timeout.Title" = "Session Timeout";
+"SDCScannerViewController.Alert.Timeout.Message" = "Your session has expired. Let’s try again.";
+"SDCScannerViewController.Feedback.TakeAPictureOfYourIdFormat" = "Position your ID in the frame";
+"SDCScannerViewController.Feedback.BadQuality" = "Bad image quality";
+"SDCScannerViewController.Feedback.NoIdFound" = "Position your ID here";
+"SDCScannerViewController.Feedback.BadQualityExternalFirstTry" = "Please try again";
+"SDCScannerViewController.Feedback.NoIdFoundExternalFirstTry" = "No ID detected, Please try again";
+"SDCScannerViewController.Feedback.HappyWithTheResults" = "Happy with the result? If not, try again";
+"SDCScannerViewController.Feedback.HoldSteady" = "Hold steady";
+"SDCScannerViewController.Feedback.Processing" = "Your image is being processed...";
+"SDCScannerViewController.Feedback.PhotoLibraryImageFeedback" = "We can't detect ID in the frame. Please make sure to use an image with an ID.";
+"SDCScannerViewController.Feedback.TooFar" = "Get closer";
+"SDCScannerViewController.Feedback.TooClose" = "Too close";
+"SDCScannerViewController.Feedback.OutOfFrame" = "Make sure your document is visible and clear";
+"SDCScannerViewController.Feedback.IDBackOutOfFrame" = "Make sure your document is visible and clear";
+"SDCScannerViewController.Feedback.FromScreen" = "Avoid capturing another screen, Please try again";
+"SDCScannerViewController.Feedback.PaperCopy" = "The image appears to be from a paper copy. Please capture your original document.";
+"SDCScannerViewController.Feedback.TooDark" = "Move to a lighter area";
+"SDCScannerViewController.Feedback.Blurry" = "Too blurry - Hold still";
+"SDCScannerViewController.Feedback.Relctive" = "Avoid glare on the document";
+"SDCScannerViewController.Feedback.Saturated" = "Move to a darker area";
+"SDCScannerViewController.Feedback.Uploading" = "Uploading...";
+"SDCScannerViewController.Feedback.ManualCapturing" = "Capturing..";
+"SDCScannerViewController.IssuesBar.Text" = "Some issues were found";
+"SDCScannerViewController.Message.BadQuality" = "The image quality is low. Please hold your ID steady";
+"SDCScannerViewController.Message.NoIdFound" = "No ID detected. Please follow the guidelines";
+"SDCScannerViewController.Message.TooClose" = "The ID is too close to the camera. Please try capturing from further away";
+"SDCScannerViewController.Message.TooFar" = "The ID is too far from the camera. Please try capturing from a little closer";
+"SDCScannerViewController.Message.OutOfFrame" = "The ID seems to be out of frame. Please align it within the frame";
+"SDCScannerViewController.Message.Front.FromScreen" = "No Physical ID detected for the front side. please use your original ID front side";
+"SDCScannerViewController.Message.Back.FromScreen" = "No Physical ID detected for the back side. please use your original ID back side";
+"SDCScannerViewController.Message.PaperCopy" = "The image appears to be from a paper copy. Please capture your original document";
+
+//MARK: - CameraIssueViewController
+
+"CameraIssueViewController.PermissionDenied.Title" = "Camera Permission Denied";
+"CameraIssueViewController.PermissionDenied.AllowUploadDescription" = "Please allow access to your camera or upload a file";
+"CameraIssueViewController.PermissionDenied.Description" = "Please allow access to your camera";
+"CameraIssueViewController.Unavailable.Title" = "Oops!";
+"CameraIssueViewController.Unavailable.AllowUploadDescription" = "We couldn’t find your camera, go back home or upload a file.";
+"CameraIssueViewController.Unavailable.Description" = "We couldn’t find your camera.";
+
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Title" = "Access Permission";
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Message" = "We need permission to access your photo gallery.";
+"SDCScannerViewController.Alert.AllowPhotoGalleryAccess.Allow" = "Allow";
+
+//MARK: - FECDeclarationViewController
+
+"FEC.Declaration.Intro.Title" = "About your ID...";
+"FEC.Declaration.Intro.Continue" = "Continue";
+
+"FEC.Declaration.Intro.Retry.Title" = "Oops we couldn’t recognize your ID type";
+"FEC.Declaration.Intro.Description" = "Please fill the type of ID you are using and the country it was issued";
+
+"FEC.Declaration.Selection.Country.Title" = "Select issuing country";
+"FEC.Declaration.Selection.DocumentType.Title" = "Select document type";
+
+"FEC.Declaration.Country" = "Country";
+"FEC.Declaration.IDType" = "ID Type";
+
+"FEC.Declaration.SuggestedCountry" = "Suggested Country";
+"FEC.Declaration.AllCountries" = "All Countries";
+"FEC.Declaration.SuggestedDocumentType" = "Suggested Document Type";
+"FEC.Declaration.AllDocumentType" = "All Document Type";
+
+
+"FEC.Acceptable.Unrecognizable.Title" = "We couldn’t recognize your ID type";
+"FEC.Acceptable.Unsupported.Title" = "This document is unsupported";
+"FEC.Acceptable.Description" = "Check what documents are acceptable in your country and try again";
+"FEC.Acceptable.TryAgain" = "Let’s Try Again";
+"FEC.Acceptable.SupportedDocumentType" = "Supported Document Type";
+"FEC.Acceptable.IssuingCountry" = "Issuing Country";
+
+//MARK: - OCRConfirmationViewController
+"OCR.Confirmation.Title" = "Check & fill your data";
+"OCR.Confirmation.Description" = "Please make sure the data we collected from your document is matching.";
+"OCR.Confirmation.Continue" = "Continue";
+"OCR.Confirmation.FirstName" = "First Name";
+"OCR.Confirmation.LastName" = "Last Name";
+"OCR.Confirmation.DateOfBirth" = "Date of Birth";
+"OCR.Confirmation.Address" = "Address";
+"OCR.Confirmation.Email" = "E-mail";
+"OCR.Confirmation.Phone" = "Phone";
+"OCR.Confirmation.Error" = "Some errors were found in the form. Please review and correct.";
+
+"OCR.Confirmation.Error.FirstName" = "Please fill out your first name";
+"OCR.Confirmation.Error.LastName" = "Please fill out your last name";
+"OCR.Confirmation.Error.DateOfBirth" = "Please fill out your date of birth";
+"OCR.Confirmation.Error.Address" = "Please fill out your address";
+
