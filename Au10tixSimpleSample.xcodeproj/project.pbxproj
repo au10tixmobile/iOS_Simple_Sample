@@ -26,8 +26,6 @@
 		54D6DCE62E39FFEC00110BEE /* PCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCDC2E39FFEC00110BEE /* PCUILocalizable.strings */; };
 		54D6DCE72E39FFEC00110BEE /* SDCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCDF2E39FFEC00110BEE /* SDCUILocalizable.strings */; };
 		54D6DCE82E39FFEC00110BEE /* VCUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCE12E39FFEC00110BEE /* VCUILocalizable.strings */; };
-		54D6DCE92E39FFEC00110BEE /* Au10tixLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCD92E39FFEC00110BEE /* Au10tixLocalizable.strings */; };
-		54D6DCEA2E39FFEC00110BEE /* HDUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCDA2E39FFEC00110BEE /* HDUILocalizable.strings */; };
 		54D6DCEB2E39FFEC00110BEE /* POAUILocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D6DCDE2E39FFEC00110BEE /* POAUILocalizable.strings */; };
 		9C8F7D1A25389EDE009CFAC6 /* PFLUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F7D1925389EDE009CFAC6 /* PFLUIViewController.swift */; };
 		9CA6D95A253749FC00E48DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D959253749FC00E48DDD /* AppDelegate.swift */; };
@@ -68,8 +66,6 @@
 		54BB51D22B55C8CB00BAFC43 /* montserrat-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-medium.ttf"; sourceTree = "<group>"; };
 		54BB51D32B55C8CB00BAFC43 /* montserrat-semiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-semiBold.ttf"; sourceTree = "<group>"; };
 		54BB51D42B55C8CB00BAFC43 /* montserrat-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-regular.ttf"; sourceTree = "<group>"; };
-		54D6DCD92E39FFEC00110BEE /* Au10tixLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Au10tixLocalizable.strings; sourceTree = "<group>"; };
-		54D6DCDA2E39FFEC00110BEE /* HDUILocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HDUILocalizable.strings; sourceTree = "<group>"; };
 		54D6DCDB2E39FFEC00110BEE /* NFCUILocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = NFCUILocalizable.strings; sourceTree = "<group>"; };
 		54D6DCDC2E39FFEC00110BEE /* PCUILocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PCUILocalizable.strings; sourceTree = "<group>"; };
 		54D6DCDD2E39FFEC00110BEE /* PFLUILocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PFLUILocalizable.strings; sourceTree = "<group>"; };
@@ -148,8 +144,6 @@
 		54D6DCE22E39FFEC00110BEE /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
-				54D6DCD92E39FFEC00110BEE /* Au10tixLocalizable.strings */,
-				54D6DCDA2E39FFEC00110BEE /* HDUILocalizable.strings */,
 				54D6DCDB2E39FFEC00110BEE /* NFCUILocalizable.strings */,
 				54D6DCDC2E39FFEC00110BEE /* PCUILocalizable.strings */,
 				54D6DCDD2E39FFEC00110BEE /* PFLUILocalizable.strings */,
@@ -306,8 +300,6 @@
 				54D6DCE62E39FFEC00110BEE /* PCUILocalizable.strings in Resources */,
 				54D6DCE72E39FFEC00110BEE /* SDCUILocalizable.strings in Resources */,
 				54D6DCE82E39FFEC00110BEE /* VCUILocalizable.strings in Resources */,
-				54D6DCE92E39FFEC00110BEE /* Au10tixLocalizable.strings in Resources */,
-				54D6DCEA2E39FFEC00110BEE /* HDUILocalizable.strings in Resources */,
 				54D6DCEB2E39FFEC00110BEE /* POAUILocalizable.strings in Resources */,
 				15CD1BC02BC6619100A4657B /* Au10tix_HDUIAssets.xcassets in Resources */,
 				9CA6D963253749FE00E48DDD /* Assets.xcassets in Resources */,
